@@ -1,0 +1,72 @@
+STEP 05 - EXPLORATORY DATA ANALYSIS REPORT
+==========================================================================================
+
+Input dataset: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_preprocessed_base.csv
+
+LOCKBOX POLICY
+------------------------------------------------------------------------------------------
+Model-development EDA period: 2015-2024
+Development rows: 21,940
+Final lockbox year: 2025
+2025 rows held out from modeling-oriented EDA: 2,194
+
+TARGET SUMMARY - 2015-2024
+------------------------------------------------------------------------------------------
+Mean LST_C: 35.621352
+Median LST_C: 35.610284
+Std LST_C: 3.796816
+Minimum LST_C: 13.603583
+Maximum LST_C: 55.461864
+
+STRONGLY SKEWED VARIABLES (|skew| >= 1)
+------------------------------------------------------------------------------------------
+Albedo, dist_road, NDWI, dist_main_road, LCZ, road_mask, NDVI, NDVI_ADJ
+
+TOP POSITIVE PEARSON RELATIONSHIPS WITH LST_C
+------------------------------------------------------------------------------------------
+NDBI: 0.325412
+NDBI_ADJ: 0.295497
+NDVI_ADJ: 0.238249
+NDVI: 0.211270
+NightLights: 0.152987
+
+TOP NEGATIVE PEARSON RELATIONSHIPS WITH LST_C
+------------------------------------------------------------------------------------------
+Albedo: -0.430623
+NDWI: -0.282165
+LCZ: -0.264678
+dist_main_road: -0.163380
+year: -0.107480
+
+AREA EDA
+------------------------------------------------------------------------------------------
+Number of areas: 57
+Highest mean-LST area: Udumulla2
+Highest area mean LST: 40.405032
+Lowest mean-LST area: Athurugiriya South
+Lowest area mean LST: 33.804122
+
+LCZ
+------------------------------------------------------------------------------------------
+Fractional LCZ rows in 2015-2024: 6,670
+LCZ was not rounded or reclassified in Step 05.
+
+2017
+------------------------------------------------------------------------------------------
+2017 remains in the development dataset.
+It is visualized and documented but not removed.
+Formal robustness/sensitivity testing will be done later.
+
+SPATIAL EDA
+------------------------------------------------------------------------------------------
+Spatial maps created: 2
+Moran's I was NOT run in Step 05.
+
+IMPORTANT INTERPRETATION RULES
+------------------------------------------------------------------------------------------
+Correlation does not prove causation.
+EDA relationships do not automatically determine feature selection.
+No row, outlier, or feature was removed in Step 05.
+No train/test split or model fitting was performed.
+Mann-Kendall and Sen's slope are reserved for the formal trend-analysis stage.
+Moran's I is reserved for Step 06 spatial-temporal analysis.
