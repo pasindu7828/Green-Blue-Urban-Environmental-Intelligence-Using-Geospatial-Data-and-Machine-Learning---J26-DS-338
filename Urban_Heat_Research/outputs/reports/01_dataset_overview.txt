@@ -1,0 +1,54 @@
+STEP 01 - DATA UNDERSTANDING REPORT
+================================================================================
+
+Input file: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\raw\kaduwela_master_raw.csv
+Rows: 24,134
+Columns: 19
+Memory usage: 5.85 MB
+
+COLUMNS
+--------------------------------------------------------------------------------
+ 1. grid_id [object]
+ 2. year [int64]
+ 3. LST_C [float64]
+ 4. NDVI [float64]
+ 5. NDBI [float64]
+ 6. NDWI [float64]
+ 7. EVI [float64]
+ 8. Albedo [float64]
+ 9. NDBI_ADJ [float64]
+10. NDVI_ADJ [float64]
+11. NightLights [float64]
+12. green_mask [float64]
+13. building_mask [float64]
+14. road_mask [float64]
+15. dist_road [float64]
+16. dist_main_road [float64]
+17. dist_water [float64]
+18. LCZ [float64]
+19. area_name [object]
+
+CORE STRUCTURE
+--------------------------------------------------------------------------------
+Fully duplicated rows: 0
+Total missing cells: 0
+Constant columns: []
+Low-uniqueness columns (2-10 values): ['building_mask', 'road_mask']
+Unique grid cells: 2,194
+Years: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Unique area names: 57
+Rows involved in duplicate grid_id + year keys: 0
+
+TARGET - LST_C
+--------------------------------------------------------------------------------
+Minimum: 13.603583
+Maximum: 55.461864
+Mean: 35.511272
+Median: 35.492908
+Std. deviation: 3.734317
+
+IMPORTANT
+--------------------------------------------------------------------------------
+No cleaning, imputation, scaling, feature engineering, splitting,
+outlier removal, or model training was performed in Step 01.
+The raw dataset was read only.
