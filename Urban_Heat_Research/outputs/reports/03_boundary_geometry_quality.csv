@@ -1,0 +1,6 @@
+metric,value,status,note
+boundary_feature_count,1,INFO,
+boundary_invalid_geometries,0,PASS,
+boundary_empty_geometries,0,PASS,
+boundary_reported_crs,EPSG:4326,INFO,
+boundary_geometry_types,Polygon,INFO,
