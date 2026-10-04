@@ -1,0 +1,67 @@
+STEP 02 - TARGET VALIDATION REPORT
+================================================================================
+
+Input file: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\raw\kaduwela_master_raw.csv
+Target variable: LST_C
+
+TARGET INTEGRITY
+--------------------------------------------------------------------------------
+Rows: 24,134
+Numeric parse failures: 0
+Missing target values: 0
+Positive infinity count: 0
+Negative infinity count: 0
+Finite target values: 24,134
+
+OVERALL TARGET STATISTICS
+--------------------------------------------------------------------------------
+Mean: 35.511272
+Median: 35.492908
+Std: 3.734317
+Min: 13.603583
+Q01: 23.597626
+Q05: 29.985502
+Q25: 33.487451
+Q75: 37.658172
+Q95: 41.464464
+Q99: 44.547890
+Max: 55.461864
+IQR: 4.170721
+Skewness: -0.506179
+Excess kurtosis: 2.809773
+
+GLOBAL OUTLIER DIAGNOSTICS
+--------------------------------------------------------------------------------
+1.5x IQR lower fence: 27.231370
+1.5x IQR upper fence: 43.914253
+1.5x IQR candidates: 934
+3.0x IQR candidates: 124
+MAD candidates (|modified z| > 3.5): 397
+Rows flagged by at least one diagnostic: 1,210
+
+NORMALITY DIAGNOSTIC
+--------------------------------------------------------------------------------
+D'Agostino K2 statistic: 2518.9788654809527
+D'Agostino p-value: 0.0
+Normality is NOT required for the planned tree-based regression models.
+
+IMPORTANT INTERPRETATION RULE
+--------------------------------------------------------------------------------
+Statistical outliers are investigation candidates, not automatic errors.
+No LST_C value was deleted, capped, winsorized, transformed, or imputed in Step 02.
+Extreme observations should be checked using year, grid, area, and spatial context.
+
+TEMPORAL VALIDATION
+--------------------------------------------------------------------------------
+Years assessed: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Year-to-year grid comparisons: 21,940
+Mean absolute grid-level yearly change: 3.426879
+95th percentile absolute yearly change: 9.393245
+99th percentile absolute yearly change: 15.208675
+Maximum absolute yearly change: 23.364868
+
+MODEL-DEVELOPMENT SAFEGUARD
+--------------------------------------------------------------------------------
+This step validates the raw target only.
+No train/validation/test split, tuning, feature selection, or model fitting was performed.
+The final 2025 lockbox rule still applies during model development.
