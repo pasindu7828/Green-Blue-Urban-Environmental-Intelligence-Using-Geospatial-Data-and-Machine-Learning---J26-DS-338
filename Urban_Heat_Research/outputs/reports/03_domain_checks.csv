@@ -1,0 +1,18 @@
+column,check,severity,lower_expected,upper_expected,violation_count,violation_percent,observed_min,observed_max,note
+NDVI,range_check,warning,-1,1.0,0,0.0,-0.6924596852339677,0.8706288875059536,Standard normalized-difference range.
+NDBI,range_check,warning,-1,1.0,0,0.0,-0.705228524521974,0.1727837165816878,Standard normalized-difference range.
+NDWI,range_check,warning,-1,1.0,0,0.0,-0.765913436071999,0.6871104649383656,Standard normalized-difference range.
+NDBI_ADJ,range_check,warning,-1,1.0,0,0.0,-0.3853243335088094,0.0110947472046323,"Neighbourhood mean of NDBI should remain in [-1,1]."
+NDVI_ADJ,range_check,warning,-1,1.0,0,0.0,0.0367780372565879,0.8398390537719309,"Neighbourhood mean of NDVI should remain in [-1,1]."
+EVI,broad_plausibility_range,warning,-1,2.0,0,0.0,-0.129792263484783,0.7407382182701534,Wide diagnostic range; no automatic deletion if violated.
+Albedo,range_check,warning,0,1.0,0,0.0,0.0032130409173937,0.8455313931921371,Physical proportion/reflection diagnostic.
+NightLights,range_check,warning,0,,0,0.0,1.29204523563385,22.684999465942383,Negative radiance values would require investigation.
+green_mask,range_check,warning,0,1.0,0,0.0,0.0,1.0,Grid-aggregated green proportion should remain between 0 and 1.
+dist_road,range_check,warning,0,,0,0.0,0.0,1969.249964596968,Distances must not be negative.
+dist_main_road,range_check,warning,0,,0,0.0,0.0,1969.249964596968,Distances must not be negative.
+dist_water,range_check,warning,0,,0,0.0,0.0,4175.450888860844,Distances must not be negative.
+LCZ,range_check,warning,1,17.0,0,0.0,4.057771773680865,17.0,LCZ source classes are in the 1-17 range; fractional values are checked separately.
+LST_C,broad_temperature_sanity_range,warning,-20,80.0,0,0.0,13.603582696967676,55.461864030226494,Broad Celsius sanity check only; statistical extremes are handled separately.
+building_mask,binary_0_1_check,warning,0,1.0,0,0.0,0.0,1.0,Expected binary GIS indicator.
+road_mask,binary_0_1_check,warning,0,1.0,0,0.0,0.0,1.0,Expected binary GIS indicator.
+year,research_period_check,warning,2015,2025.0,0,0.0,2015.0,2025.0,Expected study period is 2015-2025.

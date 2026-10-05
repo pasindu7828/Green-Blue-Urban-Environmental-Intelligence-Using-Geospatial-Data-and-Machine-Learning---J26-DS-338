@@ -1,0 +1,81 @@
+STEP 03 - DATA QUALITY ANALYSIS REPORT
+==========================================================================================
+
+Input file: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\raw\kaduwela_master_raw.csv
+Rows: 24,134
+Columns: 19
+Overall status: PASS_WITH_INVESTIGATION_FLAGS
+
+STRUCTURAL QUALITY
+------------------------------------------------------------------------------------------
+Missing expected columns: []
+Unexpected columns: []
+Total missing cells: 0
+Numeric parse failures: 0
+Positive infinity values: 0
+Negative infinity values: 0
+Full duplicate rows: 0
+Duplicate grid-year rows: 0
+
+DOMAIN CHECKS
+------------------------------------------------------------------------------------------
+Total flagged domain/range violations: 0
+No value was automatically changed because of a range diagnostic.
+
+LCZ QUALITY
+------------------------------------------------------------------------------------------
+Fractional LCZ values: 7,337
+Fractional LCZ percent: 30.4011%
+Fractional LCZ suggests grid aggregation of categorical LCZ values.
+This is a methodological investigation flag, not an automatic data error.
+
+STATIC FEATURE CONSISTENCY
+------------------------------------------------------------------------------------------
+area_name: grids changing = 0
+dist_road: grids changing = 0
+dist_main_road: grids changing = 0
+dist_water: grids changing = 0
+building_mask: grids changing = 0
+road_mask: grids changing = 0
+
+2017 TARGET ANOMALY INVESTIGATION
+------------------------------------------------------------------------------------------
+2017 low-LST IQR candidate grids: 144
+2017 lower IQR fence: 23.081635797752945
+The affected grids were compared across 2016, 2017 and 2018.
+Dynamic satellite features were also compared to determine whether the unusual
+LST behaviour is isolated to LST or accompanied by broader feature changes.
+
+TEMPORAL JUMPS
+------------------------------------------------------------------------------------------
+99th percentile absolute LST jump threshold: 15.208674928919256
+Large temporal jump candidates: 220
+
+PERSISTENT HOTSPOTS
+------------------------------------------------------------------------------------------
+Persistent-hotspot candidates: 32
+Rule: hottest 1% within year for at least 3 separate years.
+
+SPATIAL FILE ALIGNMENT
+------------------------------------------------------------------------------------------
+CSV grids missing geometry: 0
+Geometry grids missing CSV data: 0
+Invalid grid geometries: 0
+Empty grid geometries: 0
+Grid CRS metadata suspect: True
+
+INVESTIGATION FLAGS
+------------------------------------------------------------------------------------------
+1. LCZ contains fractional grid-aggregated values.
+2. 2017 has 144 low-LST IQR candidate grids.
+3. 220 grid-year rows are in the top 1% of absolute LST jumps.
+4. Grid GeoJSON CRS metadata appears inconsistent with coordinate magnitudes.
+5. 32 persistent-hotspot candidates were identified.
+
+IMPORTANT
+------------------------------------------------------------------------------------------
+Step 03 is diagnostic only.
+No raw value was deleted, imputed, capped, scaled, normalized, transformed,
+or otherwise modified.
+Any corrective action must be justified in Step 04 preprocessing after
+reviewing these quality findings.

@@ -1,0 +1,33 @@
+{
+  "step": "04_base_preprocessing",
+  "raw_dataset": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\data\\raw\\kaduwela_master_raw.csv",
+  "processed_dataset": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\data\\processed\\kaduwela_preprocessed_base.csv",
+  "rows_before": 24134,
+  "rows_after": 24134,
+  "columns_before": 19,
+  "columns_after": 19,
+  "unique_grids": 2194,
+  "unique_years": 11,
+  "study_period": [
+    2015,
+    2025
+  ],
+  "target": "LST_C",
+  "raw_modified": false,
+  "rows_removed": 0,
+  "outliers_removed": 0,
+  "2017_rows_removed": 0,
+  "imputation_performed": false,
+  "scaling_performed": false,
+  "feature_selection_performed": false,
+  "train_test_split_performed": false,
+  "lcz_rounded_or_reclassified": false,
+  "grid_corrected_projected_crs": "EPSG:32644",
+  "grid_web_map_crs": "EPSG:4326",
+  "notes": [
+    "2017 anomaly intentionally preserved for later sensitivity analysis.",
+    "Persistent high-LST grids intentionally preserved.",
+    "LCZ fractional values intentionally preserved pending feature-analysis decision.",
+    "Any fitted preprocessing must later be trained on training data only."
+  ]
+}

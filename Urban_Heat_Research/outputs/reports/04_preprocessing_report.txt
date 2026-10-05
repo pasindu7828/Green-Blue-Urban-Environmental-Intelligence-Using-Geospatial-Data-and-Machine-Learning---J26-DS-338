@@ -1,0 +1,65 @@
+STEP 04 - BASE PREPROCESSING REPORT
+==========================================================================================
+
+Raw input: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\raw\kaduwela_master_raw.csv
+Processed output: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_preprocessed_base.csv
+
+DATASET PRESERVATION
+------------------------------------------------------------------------------------------
+Rows before: 24,134
+Rows after: 24,134
+Columns before: 19
+Columns after: 19
+Unique grids: 2,194
+Unique years: 11
+Duplicate grid-year rows after: 0
+Missing cells after: 0
+
+SAFE TRANSFORMATIONS
+------------------------------------------------------------------------------------------
+grid_id whitespace-only changes: 0
+area_name whitespace-only changes: 0
+Numeric parsing validated.
+Year validated as integer in 2015-2025.
+
+OUTLIER POLICY
+------------------------------------------------------------------------------------------
+LST minimum preserved: 13.603583
+LST maximum preserved: 55.461864
+2017 rows preserved: 2,194
+No statistical outlier was removed or capped.
+No target-derived anomaly flag was added to the modeling dataset.
+
+LCZ POLICY
+------------------------------------------------------------------------------------------
+Fractional LCZ rows preserved: 7,337
+LCZ was not rounded, reclassified, or converted to a dominant class.
+That decision is postponed to feature analysis.
+
+SPATIAL PREPROCESSING
+------------------------------------------------------------------------------------------
+Grid processed successfully: True
+Corrected grid CRS in processed copy: EPSG:32644
+Web-map grid CRS: EPSG:4326
+Boundary processed successfully: True
+
+LEAKAGE SAFEGUARDS
+------------------------------------------------------------------------------------------
+No scaler fitted.
+No imputer fitted.
+No feature selection performed.
+No target encoding performed.
+No model fitted.
+No train/validation/test split performed.
+2025 remains reserved for later final model evaluation.
+
+RAW IMMUTABILITY
+------------------------------------------------------------------------------------------
+Raw SHA256 before: 927142c0c61b1fbda9734bc458026c7826f45c8945adfc661e71994f7f82a50e
+Raw SHA256 after: 927142c0c61b1fbda9734bc458026c7826f45c8945adfc661e71994f7f82a50e
+Raw file unchanged: True
+
+STATUS
+------------------------------------------------------------------------------------------
+BASE PREPROCESSING COMPLETE.
+The processed base dataset is suitable for Step 05 EDA.
