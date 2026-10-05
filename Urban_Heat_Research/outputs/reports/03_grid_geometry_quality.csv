@@ -1,0 +1,14 @@
+metric,value,status,note
+geojson_row_count,2194,INFO,
+geojson_unique_grid_ids,2194,INFO,
+duplicate_geojson_grid_id_rows,0,PASS,
+invalid_geometries,0,PASS,
+empty_geometries,0,PASS,
+geometry_types,Polygon,INFO,
+reported_crs,EPSG:4326,INVESTIGATE,CRS metadata appears geographic but coordinate magnitudes look projected.
+bounds_minx,378420.0,INFO,
+bounds_miny,758100.0,INFO,
+bounds_maxx,394590.0,INFO,
+bounds_maxy,768180.0,INFO,
+csv_grids_missing_geometry,0,PASS,
+geometry_grids_missing_csv,0,PASS,

@@ -1,0 +1,8 @@
+{
+  "raw_master_csv_sha256": "927142c0c61b1fbda9734bc458026c7826f45c8945adfc661e71994f7f82a50e",
+  "processed_base_csv_sha256": "0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46",
+  "raw_grid_geojson_sha256": "04b9fabad017be557891cabf7c38b37dc58dc1d130538b88c1415cf73af81992",
+  "raw_boundary_kml_sha256": "947c5fb1c5cd162de748c7e65f0146ff42fc96d5386e3c7dc4d688b5358f4c89",
+  "processed_grid_utm44n_sha256": "7345bc0b6adc3e06643a841612fb85a2dc2294accc83416d6f545fd25fdb7501",
+  "processed_grid_wgs84_sha256": "6b758ddaae19b54219404b86740472038cfd21391cf349ea766124678050f608"
+}

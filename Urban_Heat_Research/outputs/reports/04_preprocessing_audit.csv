@@ -1,0 +1,14 @@
+check,before,after,status,action,note
+row_count,24134,24134,PASS,preserved,
+column_count,19,19,PASS,preserved,
+missing_cells,0,0,PASS,no imputation,
+duplicate_grid_year_rows,0,0,PASS,no duplicate removal required,
+grid_id_whitespace_changes,0,0,PASS,trim only,Identifier text otherwise preserved.
+area_name_whitespace_changes,0,0,PASS,trim only,No spelling correction applied.
+LST_min,13.603582696967676,13.603582696967676,PASS,preserved,
+LST_max,55.461864030226494,55.461864030226494,PASS,preserved,
+2017_rows,2194,2194,PASS,preserved,No anomaly removal.
+LCZ_fractional_rows,7337,7337,PASS_WITH_NOTE,preserved,LCZ representation decision postponed.
+raw_file_hash,927142c0c61b1fbda9734bc458026c7826f45c8945adfc661e71994f7f82a50e,927142c0c61b1fbda9734bc458026c7826f45c8945adfc661e71994f7f82a50e,PASS,read only,
+grid_geometry_processed,True,True,PASS,processed-copy CRS correction,Raw geometry not modified.
+boundary_processed,True,True,PASS,GeoJSON conversion,Raw boundary not modified.
