@@ -7,9 +7,8 @@
 *.pyo
 
 # Environment secrets
-.env
-.env.*
 
 # Frontend dependencies/build
 **/node_modules/
 **/dist/
+config.bat
