@@ -1,0 +1,8 @@
+check,status,details
+2015_2017_used_as_model_samples,PASS,No. They are retained only as history context.
+training_years,PASS,2018-2023.
+2024_reserved_validation,PASS,2024 separated and not evaluated in Step 09.
+2025_final_lockbox,PASS,2025 separated and not evaluated in Step 09.
+temporal_split_overlap,PASS,"Tree={'train_validation_overlap': 0, 'train_test_overlap': 0, 'validation_test_overlap': 0}; Linear={'train_validation_overlap': 0, 'train_test_overlap': 0, 'validation_test_overlap': 0}"
+predictor_missingness_2018_2025,PASS,tree_missing=0; linear_missing=0
+preprocessing_fitted_in_step09,PASS,No imputation/scaling/model fitting performed.

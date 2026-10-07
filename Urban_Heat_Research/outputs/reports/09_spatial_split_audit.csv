@@ -1,0 +1,7 @@
+check,status,details
+spatial_fold_target_used,PASS,No. Folds created from UTM centroid coordinates only.
+spatial_fold_predictors_used,PASS,No environmental/model predictors used.
+spatial_fold_count,PASS,5 spatial folds.
+spatial_fold_missing_assignments,PASS,tree=0; linear=0
+spatial_fold_balance,PASS,min_fraction=0.1741; max_fraction=0.2420
+geometry_integrity,PASS,Unique valid non-empty geometry for every dataset grid.
