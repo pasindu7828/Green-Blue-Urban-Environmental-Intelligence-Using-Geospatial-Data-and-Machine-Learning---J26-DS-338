@@ -1,3 +1,18 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Large/generated research outputs
+Urban_Heat_Research/outputs/predictions/**/*.csv
+
+# Optional large intermediate exports
+Urban_Heat_Research/outputs/maps/**/*.csv
+
+# Python/cache
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# Ignore temporary generated figures only
+Urban_Heat_Research/outputs/figures/temp/
+Urban_Heat_Research/outputs/figures/debug/
