@@ -1,0 +1,53 @@
+STEP 10 - TRAIN-ONLY PREPROCESSING REPORT
+========================================================================================================
+
+TREE / NONLINEAR BRANCH
+--------------------------------------------------------------------------------------------------------
+Predictor count: 93
+Scaling: none
+Imputation: none
+Reason: tree models do not require scaling and Step 09 confirmed zero
+predictor missingness in 2018-2025.
+
+LINEAR BASELINE BRANCH
+--------------------------------------------------------------------------------------------------------
+Total predictor count: 23
+Scaled predictor count: 22
+Preserved unscaled predictor(s): ['year']
+Transformation: StandardScaler on non-year predictors
+Scaler fit years: 2018-2023 ONLY
+Raw year: preserved unchanged as temporal key and model predictor
+2024: non-year predictors transformed with frozen training scaler
+2025: non-year predictors transformed with frozen training scaler
+Target LST_C: not scaled
+
+SCALER VALIDATION
+--------------------------------------------------------------------------------------------------------
+Maximum absolute scaled training mean: 0.000000000000
+Maximum |scaled std - 1|: 0.000000000000
+
+ROLLING-ORIGIN LEAKAGE RULE
+--------------------------------------------------------------------------------------------------------
+The saved 2018-2023 scaler MUST NOT be reused inside earlier rolling folds.
+Each rolling fold must fit preprocessing only on that fold's historical
+training years before transforming its validation year.
+
+LOCKBOX
+--------------------------------------------------------------------------------------------------------
+2025 target was not used to fit preprocessing.
+2025 target performance was not evaluated.
+2025 target statistics were not printed.
+
+MODEL-READY OUTPUTS
+--------------------------------------------------------------------------------------------------------
+Tree train: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\model_ready\tree\tree_train_2018_2023_ready.csv
+Tree validation: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\model_ready\tree\tree_validation_2024_ready.csv
+Tree test LOCKED: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\model_ready\tree\tree_test_2025_LOCKED_ready.csv
+Linear train scaled: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\model_ready\linear\linear_train_2018_2023_scaled.csv
+Linear validation scaled: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\model_ready\linear\linear_validation_2024_scaled.csv
+Linear test LOCKED scaled: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\model_ready\linear\linear_test_2025_LOCKED_scaled.csv
+
+NEXT
+--------------------------------------------------------------------------------------------------------
+Proceed to Step 11 baseline model development only after reviewing
+the complete Step 10 audit and model-ready files.

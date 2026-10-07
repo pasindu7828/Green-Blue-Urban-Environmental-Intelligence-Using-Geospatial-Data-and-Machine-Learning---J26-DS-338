@@ -1,0 +1,13 @@
+check,status,details
+tree_scaler_fitted,PASS,No scaler fitted for tree/nonlinear branch.
+tree_imputation_fitted,PASS,No imputer fitted; no missing predictors in fixed modeling years.
+linear_scaler_fit_scope,PASS,StandardScaler fitted only on 2018-2023 non-year training predictors; raw year is preserved as the temporal key.
+linear_year_preserved,PASS,"Raw year remains unchanged in train, validation, and test files."
+validation_used_to_fit_scaler,PASS,No. 2024 transformed using frozen training scaler.
+test_used_to_fit_scaler,PASS,No. 2025 transformed using frozen training scaler.
+target_scaled_or_transformed,PASS,No. LST_C preserved unchanged.
+identifiers_used_as_predictors,PASS,grid_id and area_name excluded.
+rolling_origin_leakage_policy,PASS,Saved 2018-2023 scaler explicitly prohibited inside earlier rolling-origin folds; fold-local fitting required.
+2024_model_evaluation_in_step10,PASS,No model evaluation performed.
+2025_model_evaluation_in_step10,PASS,No model evaluation performed; lockbox preserved.
+2025_target_statistics_inspected,PASS,No 2025 target statistics printed or used.
