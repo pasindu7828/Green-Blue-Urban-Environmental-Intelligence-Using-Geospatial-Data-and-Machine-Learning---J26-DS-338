@@ -1,0 +1,10 @@
+feature_source,lag1_mismatch_count,causal_shift_verified
+NDVI,0,True
+NDBI,0,True
+NDWI,0,True
+EVI,0,True
+Albedo,0,True
+NDBI_ADJ,0,True
+NDVI_ADJ,0,True
+NightLights,0,True
+green_mask,0,True

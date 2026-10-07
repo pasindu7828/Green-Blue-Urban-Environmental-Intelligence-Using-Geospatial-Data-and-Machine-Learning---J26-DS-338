@@ -1,0 +1,9 @@
+check,status,details
+current_or_future_LST_used_to_create_predictors,PASS,No engineered predictor uses LST_C.
+same_year_neighbor_LST_used,PASS,No neighbor/spatial lag of LST_C exists in engineered predictors.
+future_predictor_values_used_in_temporal_features,PASS,"Lag/history features use shift(1), shift(2), shift(3) only."
+rolling_windows_include_current_predictor,PASS,"Historical mean/std/slope are based on t-1,t-2,t-3 only."
+2025_target_used_for_feature_decisions,PASS,2025 target was not inspected for feature engineering decisions.
+scaling_or_imputation_fitted_before_split,PASS,No fitted preprocessing was performed.
+grid_id_used_as_numeric_predictor,PASS,grid_id is retained only as an identifier.
+area_name_encoded_as_predictor,PASS,area_name is retained for reporting only and is not encoded.
