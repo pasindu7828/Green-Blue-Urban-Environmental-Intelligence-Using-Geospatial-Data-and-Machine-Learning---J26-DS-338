@@ -1,0 +1,12 @@
+check,status,details
+2024_target_used_for_supervised_selection,PASS,No. 2024 remains reserved.
+2025_target_used_for_supervised_selection,PASS,No. 2025 remains final lockbox.
+rolling_origin_importance,PASS,Five chronological RF validation folds retained.
+negative_r2_hidden_or_corrected,PASS,No. Negative R² values remain reported as temporal-shift evidence.
+tree_delta_features_retained,PASS,Tree pool contains delta features = True.
+tree_neighbor_contrasts_retained,PASS,Tree pool contains neighbor contrasts = True.
+linear_delta_exact_dependencies_removed,PASS,Linear final set contains delta features = False.
+linear_neighbor_contrast_dependencies_removed,PASS,Linear final set contains neighbor contrasts = False.
+linear_infinite_vif,PASS,Infinite VIF count = 0.
+linear_max_vif_target,PASS,Maximum VIF = 9.452310; target <= 10.0.
+target_derived_spatial_features,PASS,No LST-derived spatial predictor is present.

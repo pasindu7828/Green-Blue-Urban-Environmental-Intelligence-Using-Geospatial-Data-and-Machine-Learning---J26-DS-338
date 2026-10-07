@@ -1,0 +1,50 @@
+STEP 08 STRICT v3 - MODEL-SPECIFIC FEATURE ANALYSIS REPORT
+========================================================================================================
+
+Input: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_engineered_features.csv
+
+WHY v3
+--------------------------------------------------------------------------------------------------------
+One feature set is no longer forced onto both nonlinear and linear models.
+Useful delta and neighborhood-contrast features are retained for tree models.
+Exact/reconstructable features are removed from the compact linear baseline.
+
+TREE / NONLINEAR FEATURE SET
+--------------------------------------------------------------------------------------------------------
+Tree candidate features: 93
+Tree priority subset: 57
+Contains delta features: True
+Contains neighborhood contrasts: True
+
+COMPACT LINEAR FEATURE SET
+--------------------------------------------------------------------------------------------------------
+Linear initial evidence/domain union: 56
+Linear exact-dependency removals after union: 1
+VIF-pruning removals: 32
+Final linear feature count: 23
+Final maximum VIF: 9.452310
+Final infinite VIF count: 0
+
+ROLLING-ORIGIN RF DIAGNOSTIC
+--------------------------------------------------------------------------------------------------------
+Mean R2: -0.609374
+Median R2: 0.132131
+Negative-R2 folds: 2/5
+Negative R² values were retained, not corrected or hidden.
+
+YEAR PROTECTION
+--------------------------------------------------------------------------------------------------------
+2024 target not used for supervised feature selection.
+2025 target not used for supervised feature selection.
+
+OUTPUTS FOR STEP 09
+--------------------------------------------------------------------------------------------------------
+Tree dataset: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_tree_model_features.csv
+Linear dataset: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_linear_model_features.csv
+Tree feature list: E:\Git Research\J26-DS-338\Urban_Heat_Research\outputs\reports\08_tree_feature_list.csv
+Linear feature list: E:\Git Research\J26-DS-338\Urban_Heat_Research\outputs\reports\08_linear_feature_list.csv
+
+NOTE
+--------------------------------------------------------------------------------------------------------
+The old kaduwela_selected_features.csv from Step 08 v2 is now superseded.
+Step 09 should use the v3 tree/linear model-specific outputs instead.

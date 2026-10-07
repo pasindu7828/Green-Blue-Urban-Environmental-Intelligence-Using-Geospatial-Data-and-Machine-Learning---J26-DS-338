@@ -1,0 +1,34 @@
+STEP 08 v3 - MODEL-SPECIFIC FEATURE STRATEGY
+============================================================================================
+
+TREE / NONLINEAR MODELS
+--------------------------------------------------------------------------------------------
+Models: Random Forest, XGBoost, LightGBM, NGBoost/tree base learners.
+Feature count: 93
+Includes leakage-safe delta/change features.
+Includes leakage-safe neighborhood-contrast features.
+Includes lag/history/interactions and original environmental predictors.
+Only trivial one-to-one/monotonic duplicate representations were removed.
+
+LINEAR BASELINE
+--------------------------------------------------------------------------------------------
+Model: Linear Regression baseline / linear diagnostics.
+Feature count: 23
+Exact algebraic/reconstructable features removed.
+Training-period VIF pruning target: <= 10.0
+Final maximum VIF: 9.452310
+Infinite VIF count: 0
+
+YEAR PROTECTION
+--------------------------------------------------------------------------------------------
+2018-2023 used for feature evidence.
+2024 target reserved for later validation.
+2025 target remains final lockbox.
+
+IMPORTANT
+--------------------------------------------------------------------------------------------
+The tree feature set is intentionally broad so engineered change/context signals
+can be tested rather than discarded prematurely.
+The linear feature set is intentionally compact for stable baseline estimation.
+Later temporal/spatial validation and ablation decide whether individual tree
+features truly improve generalization.

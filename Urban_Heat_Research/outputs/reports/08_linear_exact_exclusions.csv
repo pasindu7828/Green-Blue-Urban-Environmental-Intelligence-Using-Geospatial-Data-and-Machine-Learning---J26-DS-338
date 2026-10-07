@@ -1,0 +1,20 @@
+feature,reason
+ndbi_minus_ndvi,exactly NDBI - NDVI
+NDVI_delta1,exactly current predictor - lag1; creates exact linear dependence
+NDBI_delta1,exactly current predictor - lag1; creates exact linear dependence
+NDWI_delta1,exactly current predictor - lag1; creates exact linear dependence
+EVI_delta1,exactly current predictor - lag1; creates exact linear dependence
+Albedo_delta1,exactly current predictor - lag1; creates exact linear dependence
+NDBI_ADJ_delta1,exactly current predictor - lag1; creates exact linear dependence
+NDVI_ADJ_delta1,exactly current predictor - lag1; creates exact linear dependence
+NightLights_delta1,exactly current predictor - lag1; creates exact linear dependence
+green_mask_delta1,exactly current predictor - lag1; creates exact linear dependence
+NDVI_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+NDBI_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+NDWI_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+EVI_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+Albedo_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+NDBI_ADJ_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+NDVI_ADJ_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+NightLights_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
+green_mask_nbr_contrast,exactly source predictor - neighbor mean; creates exact linear dependence
