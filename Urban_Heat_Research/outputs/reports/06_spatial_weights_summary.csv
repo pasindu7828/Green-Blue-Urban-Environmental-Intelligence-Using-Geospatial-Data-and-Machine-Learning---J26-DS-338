@@ -1,0 +1,3 @@
+weights,n,n_components,island_count,mean_neighbors,median_neighbors,min_neighbors,max_neighbors,pct_nonzero,transformation
+Queen_contiguity_primary,2194,1,0,7.650865998176846,8.0,3.0,8.0,0.34871768451125096,R
+KNN_k8_sensitivity,2194,1,0,8.0,8.0,8.0,8.0,0.3646308113035551,R
