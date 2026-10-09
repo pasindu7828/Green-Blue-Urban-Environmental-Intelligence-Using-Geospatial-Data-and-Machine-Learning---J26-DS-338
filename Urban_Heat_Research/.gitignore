@@ -16,3 +16,11 @@ Urban_Heat_Research/outputs/maps/**/*.csv
 # Ignore temporary generated figures only
 Urban_Heat_Research/outputs/figures/temp/
 Urban_Heat_Research/outputs/figures/debug/
+
+# Generated candidate model artifacts
+Urban_Heat_Research/models/candidates/**/*.joblib
+Urban_Heat_Research/models/candidates/*.joblib
+
+# Generated candidate model artifacts
+models/candidates/*.joblib
+models/candidates/**/*.joblib

@@ -1,0 +1,13 @@
+check,status,details
+development_input_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+2024_loaded_or_used,PASS,No. 2024 validation data was not loaded.
+2025_loaded_or_used,PASS,No. 2025 lockbox data was not loaded.
+rolling_validation_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+expected_fold_rows,PASS,"actual=5, expected=5"
+target_in_predictors,PASS,No. LST_C excluded from RF predictors.
+identifiers_in_predictors,PASS,No. grid_id and area_name excluded.
+scaling_or_imputation,PASS,None applied to RF branch.
+hyperparameter_search,PASS,No. Fixed candidate configuration only.
+finite_predictions,PASS,True
+baseline_comparison_available,PASS,rows=5
+final_model_selected,PASS,No. Random Forest remains a candidate model.

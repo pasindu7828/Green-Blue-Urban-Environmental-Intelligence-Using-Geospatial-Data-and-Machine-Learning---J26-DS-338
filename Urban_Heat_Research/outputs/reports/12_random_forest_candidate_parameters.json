@@ -1,0 +1,22 @@
+{
+  "model": "RandomForestRegressor",
+  "purpose": "untuned candidate analysis",
+  "parameters": {
+    "n_estimators": 500,
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "hyperparameter_search_performed": false,
+  "development_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "2024_used": false,
+  "2025_used": false
+}
