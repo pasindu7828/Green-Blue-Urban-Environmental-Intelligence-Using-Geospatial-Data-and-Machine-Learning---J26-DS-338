@@ -1,0 +1,31 @@
+{
+  "model": "XGBRegressor",
+  "purpose": "untuned candidate analysis",
+  "parameters": {
+    "objective": "reg:squarederror",
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "min_child_weight": 1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "eval_metric": "rmse"
+  },
+  "hyperparameter_search_performed": false,
+  "early_stopping_optimization_performed": false,
+  "development_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "2024_used": false,
+  "2025_used": false
+}
