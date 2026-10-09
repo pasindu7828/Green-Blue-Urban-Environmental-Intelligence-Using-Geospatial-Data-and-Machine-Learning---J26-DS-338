@@ -1,0 +1,12 @@
+check,status,details
+development_input_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+2024_loaded_or_used,PASS,No. 2024 file was not loaded.
+2025_loaded_or_used,PASS,No. 2025 file was not loaded.
+rolling_validation_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+all_baselines_present,PASS,"['3-Year Grid Moving Average', 'Global Historical Mean', 'Grid Historical Mean', 'Last-Year Persistence', 'Linear Regression']"
+expected_metric_rows,PASS,"actual=25, expected=25"
+fold_local_scaling,PASS,Each Linear Regression fold fits StandardScaler only on that fold's training rows.
+year_preserved_unscaled,PASS,Raw year remains unscaled in Linear Regression.
+target_as_linear_predictor,PASS,No. LST_C is excluded from the Linear Regression predictors.
+identifier_as_linear_predictor,PASS,No. grid_id and area_name are excluded.
+final_model_selected,PASS,No. Step 11 establishes baselines only.
