@@ -1,0 +1,9 @@
+check,status,details
+Known wetland count,PASS,25 wetlands found
+Trusted pair count,PASS,89 trusted pairs found
+Spatial pair count,PASS,"89 spatial pairs, 89 trusted pairs"
+GN assignment coverage,PASS,25 wetlands assigned to GN divisions
+Missing primary GN,PASS,0 wetlands missing primary GN
+Spatial identity error,PASS,Maximum error = 0.000000001 m²
+Duplicate summary IDs,PASS,0 duplicate wetland IDs
+Trusted/spatial pair correspondence,PASS,"Missing = 0, extra = 0"
