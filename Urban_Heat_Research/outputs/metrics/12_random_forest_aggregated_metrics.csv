@@ -1,0 +1,2 @@
+model,folds,mean_train_mae,mean_validation_mae,median_validation_mae,std_validation_mae,mean_validation_rmse,median_validation_rmse,mean_validation_r2,median_validation_r2,negative_r2_folds,mean_validation_mape_percent,mean_mae_generalization_gap,mean_rmse_generalization_gap,mean_r2_generalization_gap
+Random Forest,5,0.45425823193187276,2.968689548378541,2.7525441945224927,1.538860520253233,3.389400521140881,3.0857087179643465,-0.6246643522697509,0.13268709379178467,2,8.410971132508646,2.514431316446669,2.709127015384452,1.5838708093019842

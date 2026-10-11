@@ -1,0 +1,52 @@
+STEP 09 - STRICT TEMPORAL + SPATIAL SPLIT REPORT
+========================================================================================================
+
+TEMPORAL PROTOCOL
+--------------------------------------------------------------------------------------------------------
+2015-2017: history context only
+2018-2023: development/training period
+2024: reserved temporal validation
+2025: final lockbox test
+
+History-context rows: 6,582
+Training rows: 13,164
+2024 validation rows: 2,194
+2025 lockbox rows: 2,194
+
+WHY 2023 IS IN TRAINING
+--------------------------------------------------------------------------------------------------------
+Step 08 feature evidence already used 2023 target information through
+rolling permutation importance and cross-year stability. Therefore 2023
+is not treated as an untouched validation year. The first untouched
+temporal validation year is 2024.
+
+SPATIAL PROTOCOL
+--------------------------------------------------------------------------------------------------------
+Spatial folds: 5
+Method: KMeans on projected UTM grid-centroid coordinates only
+Target used for fold assignment: No
+Predictors used for fold assignment: No
+Smallest fold fraction: 0.1741
+Largest fold fraction: 0.2420
+
+MODEL-SPECIFIC INPUTS
+--------------------------------------------------------------------------------------------------------
+Tree features input columns: 96
+Linear features input columns: 26
+
+MISSINGNESS
+--------------------------------------------------------------------------------------------------------
+Tree predictor missing cells 2018-2025: 0
+Linear predictor missing cells 2018-2025: 0
+
+LEAKAGE CONTROL
+--------------------------------------------------------------------------------------------------------
+No scaling, imputation, model fitting, tuning, or evaluation occurred.
+2024 was split but not evaluated.
+2025 was split and saved as LOCKED but not evaluated.
+
+NEXT
+--------------------------------------------------------------------------------------------------------
+Step 10 should fit any required preprocessing on the 2018-2023 training
+split only, then apply the fitted transformations unchanged to 2024 and
+2025. Spatial fold assignments should be preserved for later spatial CV.

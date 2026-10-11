@@ -1,0 +1,2 @@
+model,folds,mean_train_mae,mean_validation_mae,median_validation_mae,std_validation_mae,mean_validation_rmse,median_validation_rmse,mean_validation_r2,median_validation_r2,negative_r2_folds,mean_validation_mape_percent,mean_mae_generalization_gap,mean_rmse_generalization_gap,mean_r2_generalization_gap
+XGBoost,5,0.3752094073223294,3.418440566993894,4.350421174143008,1.6847531333819081,3.7976659526680194,4.568980004447242,-1.1930014781522638,0.11042280817799299,2,9.623839042387438,3.0432311596715644,3.3056157257500223,2.1715476008238483

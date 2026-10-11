@@ -1,0 +1,7 @@
+feature_group,count
+original_columns,19
+deterministic_derived,10
+temporal_history_and_change,54
+spatial_predictor_context,18
+new_engineered_features_total,82
+final_columns_total,101

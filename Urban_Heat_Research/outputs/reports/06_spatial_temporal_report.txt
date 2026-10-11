@@ -1,0 +1,61 @@
+STEP 06 - SPATIAL & TEMPORAL ANALYSIS REPORT
+===============================================================================================
+
+Input dataset: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_preprocessed_base.csv
+Input grid: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_grid_geometry_utm44n.geojson
+
+LOCKBOX POLICY
+-----------------------------------------------------------------------------------------------
+Analysis period: 2015-2024
+2025 lockbox rows excluded: 2,194
+
+SPATIAL WEIGHTS
+-----------------------------------------------------------------------------------------------
+Primary weights: Queen contiguity, row standardized.
+Queen islands: 0
+Queen connected components: 1
+Queen mean neighbors: 7.6509
+Sensitivity weights: KNN k=8, row standardized.
+KNN islands: 0
+
+GLOBAL MORAN'S I - LST_C
+-----------------------------------------------------------------------------------------------
+Highest Moran's I year: 2017
+Highest Moran's I: 0.807167
+Lowest Moran's I year: 2023
+Lowest Moran's I: 0.621407
+Full yearly results are stored in 06_global_moran_lst_by_year.csv.
+
+WEIGHTS SENSITIVITY
+-----------------------------------------------------------------------------------------------
+Queen and KNN8 Moran's I values were both calculated for every development year.
+This checks whether the spatial conclusion is sensitive to one neighbor definition.
+
+BIVARIATE MORAN'S I
+-----------------------------------------------------------------------------------------------
+Bivariate tests assess each feature value at a grid against spatially lagged
+LST_C in neighboring grids. They are spatial association diagnostics only.
+
+LOCAL MORAN / LISA - 2024
+-----------------------------------------------------------------------------------------------
+Raw p<=0.05 significant grids: 913
+BH-FDR 0.05 significant grids: 575
+FDR correction was applied because many local tests were performed simultaneously.
+
+TEMPORAL PERSISTENCE
+-----------------------------------------------------------------------------------------------
+Same-grid year-to-year Pearson and Spearman persistence was calculated for
+every transition from 2015->2016 through 2023->2024.
+
+LEAKAGE SAFEGUARD
+-----------------------------------------------------------------------------------------------
+Spatial lag of LST_C and neighbor mean LST_C are diagnostic outputs only.
+They must not be used as same-year predictors of LST_C in the ML pipeline.
+
+NOT PERFORMED HERE
+-----------------------------------------------------------------------------------------------
+No model training.
+No feature selection.
+No preprocessing fit.
+No 2025 analysis.
+No Mann-Kendall or Sen's slope.

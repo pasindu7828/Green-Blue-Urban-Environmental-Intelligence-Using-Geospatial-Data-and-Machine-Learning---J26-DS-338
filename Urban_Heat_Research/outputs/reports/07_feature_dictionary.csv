@@ -1,0 +1,102 @@
+feature,category,source_features,formula_or_definition,leakage_status,availability_note,column_order
+grid_id,identifier,grid_id,Original Step 04 column,exclude_from_model,Grid identifier; retain for joins only.,0
+year,time,year,Original Step 04 column,safe_deterministic,Calendar year.,1
+LST_C,target,LST_C,Original Step 04 column,target_only,Prediction target; never used to create engineered predictors in Step 07.,2
+NDVI,original_predictor,NDVI,Original Step 04 column,candidate_predictor,Original processed predictor.,3
+NDBI,original_predictor,NDBI,Original Step 04 column,candidate_predictor,Original processed predictor.,4
+NDWI,original_predictor,NDWI,Original Step 04 column,candidate_predictor,Original processed predictor.,5
+EVI,original_predictor,EVI,Original Step 04 column,candidate_predictor,Original processed predictor.,6
+Albedo,original_predictor,Albedo,Original Step 04 column,candidate_predictor,Original processed predictor.,7
+NDBI_ADJ,original_predictor,NDBI_ADJ,Original Step 04 column,candidate_predictor,Original processed predictor.,8
+NDVI_ADJ,original_predictor,NDVI_ADJ,Original Step 04 column,candidate_predictor,Original processed predictor.,9
+NightLights,original_predictor,NightLights,Original Step 04 column,candidate_predictor,Original processed predictor.,10
+green_mask,original_predictor,green_mask,Original Step 04 column,candidate_predictor,Original processed predictor.,11
+building_mask,original_predictor,building_mask,Original Step 04 column,candidate_predictor,Original processed predictor.,12
+road_mask,original_predictor,road_mask,Original Step 04 column,candidate_predictor,Original processed predictor.,13
+dist_road,original_predictor,dist_road,Original Step 04 column,candidate_predictor,Original processed predictor.,14
+dist_main_road,original_predictor,dist_main_road,Original Step 04 column,candidate_predictor,Original processed predictor.,15
+dist_water,original_predictor,dist_water,Original Step 04 column,candidate_predictor,Original processed predictor.,16
+LCZ,original_predictor,LCZ,Original Step 04 column,candidate_predictor,Original processed predictor.,17
+area_name,reporting_group,area_name,Original Step 04 column,exclude_from_model_by_default,GN/area label retained for reporting; do not encode automatically.,18
+year_index,temporal_deterministic,year,year - 2015,safe_deterministic,Available for all rows including 2025 without using target information.,19
+vegetation_deficit,environmental_derived,green_mask,1 - green_mask,safe_deterministic,Higher values indicate lower grid-level green proportion.,20
+ndbi_minus_ndvi,environmental_interaction,"NDBI, NDVI",NDBI - NDVI,safe_deterministic,Contrast feature only; not treated as a named established index.,21
+ndbi_x_vegetation_deficit,environmental_interaction,"NDBI, vegetation_deficit",NDBI * vegetation_deficit,safe_deterministic,Interaction between built-up spectral signal and vegetation deficit.,22
+ndvi_x_green_mask,environmental_interaction,"NDVI, green_mask",NDVI * green_mask,safe_deterministic,Interaction between vegetation index and green proportion.,23
+ndbi_x_building_mask,environmental_interaction,"NDBI, building_mask",NDBI * building_mask,safe_deterministic,Built spectral signal conditioned by mapped building presence.,24
+nightlights_x_building_mask,environmental_interaction,"NightLights, building_mask",NightLights * building_mask,safe_deterministic,Urban-activity proxy conditioned by building presence.,25
+log1p_dist_road,distance_transform,dist_road,log(1 + dist_road),safe_deterministic,Fixed monotonic transform; no train/test statistics are learned.,26
+log1p_dist_main_road,distance_transform,dist_main_road,log(1 + dist_main_road),safe_deterministic,Fixed monotonic transform; no train/test statistics are learned.,27
+log1p_dist_water,distance_transform,dist_water,log(1 + dist_water),safe_deterministic,Fixed monotonic transform; no train/test statistics are learned.,28
+NDVI_lag1,temporal_history,NDVI,NDVI(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,29
+NDVI_lag2,temporal_history,NDVI,NDVI(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,30
+NDVI_hist3_mean,temporal_history,NDVI,"mean of available NDVI(t-1), NDVI(t-2), NDVI(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,31
+NDVI_hist3_std,temporal_history,NDVI,"sample std of available NDVI(t-1), NDVI(t-2), NDVI(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,32
+NDVI_hist3_slope,temporal_history,NDVI,3-year historical slope from t-3 to t-1 = (NDVI(t-1)-NDVI(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,33
+NDVI_delta1,temporal_change,NDVI,NDVI(t) - NDVI(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,34
+NDBI_lag1,temporal_history,NDBI,NDBI(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,35
+NDBI_lag2,temporal_history,NDBI,NDBI(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,36
+NDBI_hist3_mean,temporal_history,NDBI,"mean of available NDBI(t-1), NDBI(t-2), NDBI(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,37
+NDBI_hist3_std,temporal_history,NDBI,"sample std of available NDBI(t-1), NDBI(t-2), NDBI(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,38
+NDBI_hist3_slope,temporal_history,NDBI,3-year historical slope from t-3 to t-1 = (NDBI(t-1)-NDBI(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,39
+NDBI_delta1,temporal_change,NDBI,NDBI(t) - NDBI(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,40
+NDWI_lag1,temporal_history,NDWI,NDWI(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,41
+NDWI_lag2,temporal_history,NDWI,NDWI(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,42
+NDWI_hist3_mean,temporal_history,NDWI,"mean of available NDWI(t-1), NDWI(t-2), NDWI(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,43
+NDWI_hist3_std,temporal_history,NDWI,"sample std of available NDWI(t-1), NDWI(t-2), NDWI(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,44
+NDWI_hist3_slope,temporal_history,NDWI,3-year historical slope from t-3 to t-1 = (NDWI(t-1)-NDWI(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,45
+NDWI_delta1,temporal_change,NDWI,NDWI(t) - NDWI(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,46
+EVI_lag1,temporal_history,EVI,EVI(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,47
+EVI_lag2,temporal_history,EVI,EVI(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,48
+EVI_hist3_mean,temporal_history,EVI,"mean of available EVI(t-1), EVI(t-2), EVI(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,49
+EVI_hist3_std,temporal_history,EVI,"sample std of available EVI(t-1), EVI(t-2), EVI(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,50
+EVI_hist3_slope,temporal_history,EVI,3-year historical slope from t-3 to t-1 = (EVI(t-1)-EVI(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,51
+EVI_delta1,temporal_change,EVI,EVI(t) - EVI(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,52
+Albedo_lag1,temporal_history,Albedo,Albedo(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,53
+Albedo_lag2,temporal_history,Albedo,Albedo(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,54
+Albedo_hist3_mean,temporal_history,Albedo,"mean of available Albedo(t-1), Albedo(t-2), Albedo(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,55
+Albedo_hist3_std,temporal_history,Albedo,"sample std of available Albedo(t-1), Albedo(t-2), Albedo(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,56
+Albedo_hist3_slope,temporal_history,Albedo,3-year historical slope from t-3 to t-1 = (Albedo(t-1)-Albedo(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,57
+Albedo_delta1,temporal_change,Albedo,Albedo(t) - Albedo(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,58
+NDBI_ADJ_lag1,temporal_history,NDBI_ADJ,NDBI_ADJ(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,59
+NDBI_ADJ_lag2,temporal_history,NDBI_ADJ,NDBI_ADJ(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,60
+NDBI_ADJ_hist3_mean,temporal_history,NDBI_ADJ,"mean of available NDBI_ADJ(t-1), NDBI_ADJ(t-2), NDBI_ADJ(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,61
+NDBI_ADJ_hist3_std,temporal_history,NDBI_ADJ,"sample std of available NDBI_ADJ(t-1), NDBI_ADJ(t-2), NDBI_ADJ(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,62
+NDBI_ADJ_hist3_slope,temporal_history,NDBI_ADJ,3-year historical slope from t-3 to t-1 = (NDBI_ADJ(t-1)-NDBI_ADJ(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,63
+NDBI_ADJ_delta1,temporal_change,NDBI_ADJ,NDBI_ADJ(t) - NDBI_ADJ(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,64
+NDVI_ADJ_lag1,temporal_history,NDVI_ADJ,NDVI_ADJ(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,65
+NDVI_ADJ_lag2,temporal_history,NDVI_ADJ,NDVI_ADJ(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,66
+NDVI_ADJ_hist3_mean,temporal_history,NDVI_ADJ,"mean of available NDVI_ADJ(t-1), NDVI_ADJ(t-2), NDVI_ADJ(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,67
+NDVI_ADJ_hist3_std,temporal_history,NDVI_ADJ,"sample std of available NDVI_ADJ(t-1), NDVI_ADJ(t-2), NDVI_ADJ(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,68
+NDVI_ADJ_hist3_slope,temporal_history,NDVI_ADJ,3-year historical slope from t-3 to t-1 = (NDVI_ADJ(t-1)-NDVI_ADJ(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,69
+NDVI_ADJ_delta1,temporal_change,NDVI_ADJ,NDVI_ADJ(t) - NDVI_ADJ(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,70
+NightLights_lag1,temporal_history,NightLights,NightLights(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,71
+NightLights_lag2,temporal_history,NightLights,NightLights(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,72
+NightLights_hist3_mean,temporal_history,NightLights,"mean of available NightLights(t-1), NightLights(t-2), NightLights(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,73
+NightLights_hist3_std,temporal_history,NightLights,"sample std of available NightLights(t-1), NightLights(t-2), NightLights(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,74
+NightLights_hist3_slope,temporal_history,NightLights,3-year historical slope from t-3 to t-1 = (NightLights(t-1)-NightLights(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,75
+NightLights_delta1,temporal_change,NightLights,NightLights(t) - NightLights(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,76
+green_mask_lag1,temporal_history,green_mask,green_mask(t-1),safe_historical_predictor,Unavailable for the first year of each grid.,77
+green_mask_lag2,temporal_history,green_mask,green_mask(t-2),safe_historical_predictor,Unavailable for the first two years of each grid.,78
+green_mask_hist3_mean,temporal_history,green_mask,"mean of available green_mask(t-1), green_mask(t-2), green_mask(t-3)",safe_historical_predictor,Uses only prior-year predictor values; first year is structurally missing.,79
+green_mask_hist3_std,temporal_history,green_mask,"sample std of available green_mask(t-1), green_mask(t-2), green_mask(t-3)",safe_historical_predictor,Requires at least two historical predictor observations.,80
+green_mask_hist3_slope,temporal_history,green_mask,3-year historical slope from t-3 to t-1 = (green_mask(t-1)-green_mask(t-3))/2,safe_historical_predictor,Requires three previous annual predictor observations.,81
+green_mask_delta1,temporal_change,green_mask,green_mask(t) - green_mask(t-1),safe_predictor_change,Uses current predictor plus previous predictor; first year is structurally missing.,82
+NDVI_nbr_mean,spatial_predictor_context,NDVI,Queen row-standardized mean of neighboring-grid NDVI,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,83
+NDVI_nbr_contrast,spatial_predictor_context,NDVI,NDVI - neighboring mean NDVI,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,84
+NDBI_nbr_mean,spatial_predictor_context,NDBI,Queen row-standardized mean of neighboring-grid NDBI,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,85
+NDBI_nbr_contrast,spatial_predictor_context,NDBI,NDBI - neighboring mean NDBI,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,86
+NDWI_nbr_mean,spatial_predictor_context,NDWI,Queen row-standardized mean of neighboring-grid NDWI,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,87
+NDWI_nbr_contrast,spatial_predictor_context,NDWI,NDWI - neighboring mean NDWI,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,88
+EVI_nbr_mean,spatial_predictor_context,EVI,Queen row-standardized mean of neighboring-grid EVI,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,89
+EVI_nbr_contrast,spatial_predictor_context,EVI,EVI - neighboring mean EVI,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,90
+Albedo_nbr_mean,spatial_predictor_context,Albedo,Queen row-standardized mean of neighboring-grid Albedo,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,91
+Albedo_nbr_contrast,spatial_predictor_context,Albedo,Albedo - neighboring mean Albedo,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,92
+NDBI_ADJ_nbr_mean,spatial_predictor_context,NDBI_ADJ,Queen row-standardized mean of neighboring-grid NDBI_ADJ,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,93
+NDBI_ADJ_nbr_contrast,spatial_predictor_context,NDBI_ADJ,NDBI_ADJ - neighboring mean NDBI_ADJ,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,94
+NDVI_ADJ_nbr_mean,spatial_predictor_context,NDVI_ADJ,Queen row-standardized mean of neighboring-grid NDVI_ADJ,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,95
+NDVI_ADJ_nbr_contrast,spatial_predictor_context,NDVI_ADJ,NDVI_ADJ - neighboring mean NDVI_ADJ,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,96
+NightLights_nbr_mean,spatial_predictor_context,NightLights,Queen row-standardized mean of neighboring-grid NightLights,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,97
+NightLights_nbr_contrast,spatial_predictor_context,NightLights,NightLights - neighboring mean NightLights,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,98
+green_mask_nbr_mean,spatial_predictor_context,green_mask,Queen row-standardized mean of neighboring-grid green_mask,safe_non_target_spatial,Uses same-year non-target predictor values from adjacent grids.,99
+green_mask_nbr_contrast,spatial_predictor_context,green_mask,green_mask - neighboring mean green_mask,safe_non_target_spatial,Local predictor contrast; contains no LST target information.,100
