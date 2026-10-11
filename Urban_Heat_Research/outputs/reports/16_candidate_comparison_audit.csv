@@ -1,0 +1,15 @@
+check,status,details
+candidate_models_complete,PASS,"['LightGBM', 'NGBoost', 'Random Forest', 'XGBoost']"
+candidate_validation_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+candidate_row_count,PASS,"actual=20, expected=20"
+baseline_validation_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+2024_loaded_or_used,PASS,No. Step 16 loads only Step 11-15 development metric files.
+2025_loaded_or_used,PASS,No. Step 16 loads only Step 11-15 development metric files.
+model_training_performed,PASS,No model training occurs in Step 16.
+hyperparameter_tuning_performed,PASS,No tuning occurs in Step 16.
+all_candidate_metrics_finite,PASS,True
+summary_candidate_count,PASS,rows=4
+pairwise_comparisons_complete,PASS,"rows=6, expected=6"
+ngboost_uncertainty_reference_complete,PASS,rows=3
+composite_final_score_created,PASS,No. Metrics are kept separate.
+final_model_selected,PASS,No. Step 16 provides development comparison only.
