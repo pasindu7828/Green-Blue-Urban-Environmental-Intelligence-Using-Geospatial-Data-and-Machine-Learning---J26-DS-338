@@ -1,0 +1,16 @@
+check,status,details
+development_input_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+predictor_count,PASS,"actual=93, expected=93"
+input_representation,PASS,Pandas/DataFrame numeric representation preserved; no global float32 conversion.
+untuned_reference_reproduction,PASS,all four models within tolerance 1e-06
+2024_loaded_or_used,PASS,No. Only the 2018-2023 development input was loaded.
+2025_loaded_or_used,PASS,No. Only the 2018-2023 development input was loaded.
+random_kfold_used,PASS,No. Strict expanding rolling-origin folds only.
+rolling_validation_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+best_fold_metric_rows,PASS,"actual=20, expected=20"
+all_searches_have_success,PASS,"[{""model"":""Random Forest"",""total_trials_including_reference"":7,""successful_trials"":7,""failed_trials"":0,""untuned_reference_present"":true,""focused_trials"":6},{""model"":""XGBoost"",""total_trials_including_reference"":7,""successful_trials"":7,""failed_trials"":0,""untuned_reference_present"":true,""focused_trials"":6},{""model"":""LightGBM"",""total_trials_including_reference"":7,""successful_trials"":7,""failed_trials"":0,""untuned_reference_present"":true,""focused_trials"":6},{""model"":""NGBoost"",""total_trials_including_reference"":7,""successful_trials"":7,""failed_trials"":0,""untuned_reference_present"":true,""focused_trials"":6}]"
+untuned_reference_in_each_search,PASS,True
+best_fold_metrics_finite,PASS,True
+early_stopping_used,PASS,No. Reserved 2024 was not used for early stopping.
+uncertainty_calibration,PASS,No uncertainty calibration performed in Step 17.
+final_model_selected,PASS,No. Step 17 creates tuned development candidates only.
