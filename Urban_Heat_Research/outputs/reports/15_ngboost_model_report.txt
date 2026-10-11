@@ -1,0 +1,72 @@
+STEP 15 - NGBOOST CANDIDATE MODEL REPORT
+============================================================================================================
+
+DATA PROTECTION
+------------------------------------------------------------------------------------------------------------
+Used: 2018-2023 development data only.
+2024: NOT loaded.
+2025: NOT loaded.
+
+MODEL
+------------------------------------------------------------------------------------------------------------
+NGBRegressor
+NGBoost version: 0.5.11
+Distribution: Normal
+Score: LogScore
+Status: UNTUNED probabilistic candidate model
+Base learner parameters: {'criterion': 'squared_error', 'max_depth': 3, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42}
+NGBoost parameters: {'Dist': 'Normal', 'Score': 'LogScore', 'natural_gradient': True, 'n_estimators': 500, 'learning_rate': 0.01, 'minibatch_frac': 1.0, 'col_sample': 1.0, 'verbose': False, 'random_state': 42}
+
+ROLLING-ORIGIN DEVELOPMENT VALIDATION
+------------------------------------------------------------------------------------------------------------
+2018 -> 2019
+2018-2019 -> 2020
+2018-2020 -> 2021
+2018-2021 -> 2022
+2018-2022 -> 2023
+
+AGGREGATED POINT PERFORMANCE
+------------------------------------------------------------------------------------------------------------
+Mean validation MAE: 3.316153
+Median validation MAE: 4.032515
+Mean validation RMSE: 3.716785
+Mean validation R²: -1.056150
+Median validation R²: 0.113087
+Negative-R² folds: 2
+Mean MAE generalization gap: 2.260863
+
+PROBABILISTIC CANDIDATE DIAGNOSTICS
+------------------------------------------------------------------------------------------------------------
+Mean validation NLL: 5.483909
+Mean predicted std: 1.492109 °C
+Mean observed coverage for nominal 80% interval: 31.93%
+Mean observed coverage for nominal 90% interval: 39.76%
+Mean observed coverage for nominal 95% interval: 47.27%
+Mean width of nominal 80% interval: 3.824428 °C
+Mean width of nominal 90% interval: 4.908600 °C
+Mean width of nominal 95% interval: 5.848958 °C
+
+BASELINE COMPARISON
+------------------------------------------------------------------------------------------------------------
+NGBoost beats the best Step 11 baseline by validation MAE in 2/5 folds.
+NGBoost beats Grid Historical Mean by validation MAE in 3/5 folds.
+
+DEVELOPMENT REFERENCES
+------------------------------------------------------------------------------------------------------------
+NGBoost has lower validation MAE than Random Forest in 1/5 folds.
+NGBoost has lower validation MAE than XGBoost in 4/5 folds.
+NGBoost has lower validation MAE than LightGBM in 3/5 folds.
+These are descriptive only. Formal candidate comparison is Step 16.
+
+IMPORTANT
+------------------------------------------------------------------------------------------------------------
+This step does NOT tune NGBoost.
+This step does NOT calibrate NGBoost uncertainty.
+Raw NGBoost intervals must not be treated as final uncertainty intervals.
+This step does NOT select NGBoost as the final model or final uncertainty method.
+Negative R², poor coverage, wide intervals or generalization gaps are retained as research findings.
+
+NEXT
+------------------------------------------------------------------------------------------------------------
+Proceed to Step 16 Candidate Model Comparison only after reviewing
+the complete Step 15 output and resolving any Step 15 issues.
