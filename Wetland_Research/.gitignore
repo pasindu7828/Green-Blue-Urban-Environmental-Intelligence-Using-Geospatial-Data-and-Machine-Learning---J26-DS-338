@@ -1,0 +1,74 @@
+# =========================================================
+# Wetland Research - Git Ignore
+# =========================================================
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================================================
+# RAW RESEARCH DATA
+# Raw datasets remain local due to size / source licensing.
+# =========================================================
+data/raw/
+
+# Temporary / intermediate data
+data/interim/
+
+# Large raster and geospatial files
+*.tif
+*.tiff
+*.img
+*.vrt
+*.nc
+*.hdf
+*.h5
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Google Earth / GIS source files
+*.kmz
+
+# Large GIS databases
+*.gpkg
+
+# =========================================================
+# TRAINED MODEL BINARIES
+# =========================================================
+*.pkl
+*.pickle
+*.joblib
+*.model
+
+# =========================================================
+# TEMPORARY FILES
+# =========================================================
+*.tmp
+*.log
+~$*
+
+*.gpkg-shm
+*.gpkg-wal
