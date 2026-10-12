@@ -1,0 +1,16 @@
+check,status,details
+historical_input_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+row_count,PASS,"actual=24134, expected=24134"
+unique_grid_count,PASS,"actual=2194, expected=2194"
+complete_year_range,PASS,"[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+complete_11_year_series_per_grid,PASS,"min=11, max=11"
+2017_preserved_primary,PASS,2017 rows=2194
+primary_grid_result_count,PASS,"actual=2194, expected=2194"
+primary_statistics_finite,PASS,True
+fdr_q_values_valid,PASS,True
+multiple_testing_control,PASS,"Benjamini-Hochberg FDR applied across all 2,194 primary grid tests."
+2017_sensitivity_secondary_only,PASS,No-2017 analysis saved separately and does not replace primary result.
+geometry_alignment,PASS,"Data, trend table, and map have identical grid-ID sets."
+map_rows,PASS,"actual=2194, expected=2194"
+forecast_predictions_used,PASS,No. Step 23 uses observed historical LST_C only.
+forecast_model_modified,PASS,No. Step 23 is independent of forecasting-model training.

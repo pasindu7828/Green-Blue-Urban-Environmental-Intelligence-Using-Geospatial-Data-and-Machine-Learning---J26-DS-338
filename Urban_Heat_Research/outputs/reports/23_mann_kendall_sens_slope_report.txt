@@ -1,0 +1,47 @@
+STEP 23 - GRID-LEVEL MANN-KENDALL TREND TEST + SEN'S SLOPE
+====================================================================================================================
+
+PRIMARY ANALYSIS
+--------------------------------------------------------------------------------------------------------------------
+Observed LST period: 2015-2025
+Grid cells: 2,194
+Observations per grid: 11 annual values
+2017: preserved in primary analysis
+Trend test: original two-sided Mann-Kendall with tie correction
+Magnitude: Sen's slope (°C/year), 95% CI
+Multiple testing: Benjamini-Hochberg FDR at q<0.05
+
+PRIMARY GRID RESULTS
+--------------------------------------------------------------------------------------------------------------------
+Raw p<0.05 significant grids: 116
+FDR q<0.05 significant grids: 0
+
+         trend_class  grid_count  percent_of_grids
+No Significant Trend        2194             100.0
+
+SEN'S SLOPE DISTRIBUTION
+--------------------------------------------------------------------------------------------------------------------
+count    2194.000000
+mean       -0.210193
+std         0.166756
+min        -0.829146
+25%        -0.318880
+50%        -0.210848
+75%        -0.097310
+max         0.610944
+
+CITYWIDE TREND
+--------------------------------------------------------------------------------------------------------------------
+                         analysis  start_year  end_year  n_years  mk_s  mk_var_s      mk_z  mk_p_value    mk_tau  sen_slope_c_per_year  sen_intercept_c  sen_slope_ci95_low  sen_slope_ci95_high trend_raw_alpha_0_05
+Kaduwela citywide annual mean LST        2015      2025       11   -13     165.0 -0.934199    0.350201 -0.236364             -0.211569       462.913339            -0.73498             0.431244 No Significant Trend
+
+2017 SENSITIVITY
+--------------------------------------------------------------------------------------------------------------------
+ grid_count  primary_includes_2017  secondary_excludes_2017  pct_same_sen_slope_sign  pct_same_fdr_trend_class  median_abs_slope_difference_c_per_year  mean_abs_slope_difference_c_per_year
+       2194                   True                     True                93.482224                     100.0                                0.075571                              0.084335
+
+INTERPRETATION POLICY
+--------------------------------------------------------------------------------------------------------------------
+FDR-controlled trend class is the primary significance layer. Sen's slope gives direction and magnitude of historical change.
+The no-2017 result is sensitivity evidence only and must not silently replace the approved primary 2015-2025 analysis.
+The five heat-trajectory labels are intentionally not assigned inside Step 23. They should be defined next using these objective trend statistics plus a predeclared heat-status rule.

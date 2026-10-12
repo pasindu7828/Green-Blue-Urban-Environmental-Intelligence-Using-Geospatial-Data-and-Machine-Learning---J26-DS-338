@@ -1,0 +1,32 @@
+{
+  "step": 23,
+  "analysis": "Grid-level historical observed LST trend analysis",
+  "period": "2015-2025",
+  "grid_count": 2194,
+  "observations_per_grid": 11,
+  "target": "LST_C",
+  "mann_kendall": {
+    "type": "original",
+    "alternative": "two-sided",
+    "variance": "tie-corrected",
+    "alpha": 0.05
+  },
+  "sen_slope": {
+    "unit": "degrees Celsius per year",
+    "confidence_interval": "95%"
+  },
+  "multiple_testing": {
+    "method": "Benjamini-Hochberg FDR",
+    "family": "all 2,194 primary grid-level Mann-Kendall tests",
+    "fdr_alpha": 0.05
+  },
+  "2017_policy": {
+    "primary": "2017 retained exactly as observed",
+    "secondary_sensitivity": "repeat grid trend analysis with 2017 omitted",
+    "secondary_role": "diagnostic only; does not replace primary result"
+  },
+  "forecast_model_used": false,
+  "forecast_predictions_used": false,
+  "five_trajectory_classes_assigned_here": false,
+  "next_note": "Persistent Hot / Intensifying / Emerging / Diminishing / Persistent Cool should be defined after reviewing the objective trend results and using a predeclared heat-status rule."
+}
