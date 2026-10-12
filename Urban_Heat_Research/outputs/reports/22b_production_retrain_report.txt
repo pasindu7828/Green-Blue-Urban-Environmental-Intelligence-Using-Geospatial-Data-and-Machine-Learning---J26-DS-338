@@ -1,0 +1,43 @@
+STEP 22B - PRODUCTION RETRAIN ON 2018-2025
+====================================================================================================================
+
+PURPOSE
+--------------------------------------------------------------------------------------------------------------------
+Retrain the exact final frozen LightGBM spatial-anomaly strategy on all observed modeling years after the one-time 2025 lockbox test.
+
+PRODUCTION MODEL
+--------------------------------------------------------------------------------------------------------------------
+Strategy: lgbm_anomaly_plus_prior_mean_level
+Base model: LightGBM
+Training years: 2018-2025
+Training rows: 17,552
+Unique grids: 2,194
+Frozen predictors: 93
+Target: within-year spatial LST anomaly
+Hyperparameter retuning: NO
+Feature reselection: NO
+Strategy change: NO
+
+FINAL TEST PRESERVATION
+--------------------------------------------------------------------------------------------------------------------
+The Step-22 unseen 2025 lockbox result remains the final independent test evidence. It is not recomputed after production retraining.
+
+FUTURE FORECASTING
+--------------------------------------------------------------------------------------------------------------------
+This production model predicts future spatial anomalies once future predictor values are available.
+A future annual thermal level is NOT selected in Step 22B. Annual-level forecasting and future predictor forecasting must be developed and validated in the later forecasting stages.
+
+ANNUAL HISTORY
+--------------------------------------------------------------------------------------------------------------------
+ year  annual_mean_lst_c  annual_median_lst_c  annual_std_lst_c  rows  anomaly_mean_c  anomaly_std_c  used_for_production_spatial_model                                                   future_annual_level_forecast_role
+ 2018          34.986171            34.821419          2.667758  2194    1.128642e-15       2.667758                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+ 2019          35.543625            35.385463          2.541933  2194   -1.593378e-15       2.541933                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+ 2020          38.307315            39.483116          5.793250  2194    2.134219e-15       5.793250                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+ 2021          35.938763            35.730118          2.359177  2194    3.989921e-15       2.359177                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+ 2022          36.837356            36.908287          3.336542  2194   -3.369734e-15       3.336542                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+ 2023          32.762168            32.681442          2.082859  2194   -1.295429e-16       2.082859                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+ 2024          35.208990            35.073576          2.226838  2194    1.765022e-16       2.226838                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+ 2025          34.410479            34.396226          2.812318  2194    3.594815e-16       2.812318                               True historical input for later forecasting stage; no future level is chosen in Step 22B
+
+Production model: E:\Git Research\J26-DS-338\Urban_Heat_Research\models\final\22b_production_lightgbm_anomaly_trained_2018_2025.joblib
+Production model SHA256: a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f

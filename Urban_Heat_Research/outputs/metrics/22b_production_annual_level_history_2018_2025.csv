@@ -1,0 +1,9 @@
+year,annual_mean_lst_c,annual_median_lst_c,annual_std_lst_c,rows,anomaly_mean_c,anomaly_std_c,used_for_production_spatial_model,future_annual_level_forecast_role
+2018,34.98617066179027,34.82141937516597,2.667758415905031,2194,1.1286424038851182e-15,2.6677584159050336,True,historical input for later forecasting stage; no future level is chosen in Step 22B
+2019,35.5436252198628,35.38546275346153,2.541932861613216,2194,-1.5933775113672256e-15,2.541932861613219,True,historical input for later forecasting stage; no future level is chosen in Step 22B
+2020,38.307315451437454,39.483115637362275,5.793250420510118,2194,2.134219065022361e-15,5.793250420510119,True,historical input for later forecasting stage; no future level is chosen in Step 22B
+2021,35.93876307708523,35.73011760412802,2.359177096786864,2194,3.989920922773215e-15,2.359177096786883,True,historical input for later forecasting stage; no future level is chosen in Step 22B
+2022,36.837356250847094,36.90828672219508,3.336541679785863,2194,-3.369734350767476e-15,3.3365416797858636,True,historical input for later forecasting stage; no future level is chosen in Step 22B
+2023,32.76216780982794,32.68144197498056,2.082858866271314,2194,-1.2954288710302646e-16,2.0828588662713186,True,historical input for later forecasting stage; no future level is chosen in Step 22B
+2024,35.208990409522876,35.073575556335115,2.2268381249764975,2194,1.7650218367787357e-16,2.2268381249765055,True,historical input for later forecasting stage; no future level is chosen in Step 22B
+2025,34.41047911777772,34.396225985759926,2.8123177095515786,2194,3.5948151171089844e-16,2.8123177095515803,True,historical input for later forecasting stage; no future level is chosen in Step 22B
