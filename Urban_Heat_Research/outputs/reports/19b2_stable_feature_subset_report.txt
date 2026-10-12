@@ -1,0 +1,59 @@
+STEP 19B2 - TRAIN-ONLY STABLE FEATURE SUBSET
+================================================================================================================
+
+PURPOSE
+----------------------------------------------------------------------------------------------------------------
+Test whether removing temporally unstable predictors improves
+strict rolling-origin development generalization.
+
+LEAKAGE CONTROL
+----------------------------------------------------------------------------------------------------------------
+Feature stability for validation year t was estimated only from
+training years strictly earlier than t.
+2024 was not loaded.
+2025 was not loaded.
+
+STABILITY RULE
+----------------------------------------------------------------------------------------------------------------
+Minimum training years: 3
+Maximum allowed Spearman rho range: 0.4
+Meaningful sign threshold: |rho| >= 0.05
+Meaningful sign flip count must equal 0.
+year is retained by policy.
+
+EARLY-FOLD POLICY
+----------------------------------------------------------------------------------------------------------------
+2019 and 2020 do not have at least 3 earlier training years.
+Those folds therefore use the full 93-feature reference as a
+predeclared fallback. Primary subset comparison uses 2021-2023.
+
+STRATEGIES
+----------------------------------------------------------------------------------------------------------------
+full_93_reference
+train_only_stable
+train_only_stable_plus_core
+
+HYPERPARAMETERS
+----------------------------------------------------------------------------------------------------------------
+Frozen Step 17 tuned hyperparameters were reused without retuning.
+
+DESCRIPTIVE 19B2 RESULTS BY MODEL
+----------------------------------------------------------------------------------------------------------------
+LightGBM: full_93_reference | 2021-2023 mean MAE=3.040720 °C | mean RMSE=3.371514 °C | mean R²=-1.374713 | negative-R² folds=2 | worst MAE=4.034229 °C | mean selected features=93.00 | MAE improvement vs full=0.000000 °C.
+NGBoost: full_93_reference | 2021-2023 mean MAE=3.063259 °C | mean RMSE=3.439852 °C | mean R²=-1.416448 | negative-R² folds=2 | worst MAE=4.141867 °C | mean selected features=93.00 | MAE improvement vs full=0.000000 °C.
+Random Forest: full_93_reference | 2021-2023 mean MAE=2.703941 °C | mean RMSE=3.083621 °C | mean R²=-1.066551 | negative-R² folds=2 | worst MAE=4.178418 °C | mean selected features=93.00 | MAE improvement vs full=0.000000 °C.
+XGBoost: full_93_reference | 2021-2023 mean MAE=2.986625 °C | mean RMSE=3.370846 °C | mean R²=-1.323841 | negative-R² folds=2 | worst MAE=4.128362 °C | mean selected features=93.00 | MAE improvement vs full=0.000000 °C.
+
+INTERPRETATION POLICY
+----------------------------------------------------------------------------------------------------------------
+A stable subset is not automatically accepted because it has fewer
+features. It must improve or robustly preserve future-year metrics.
+A negative result is valid evidence that feature instability alone
+does not explain the temporal failure.
+
+NO FINAL MODEL SELECTION
+----------------------------------------------------------------------------------------------------------------
+Step 19B2 remains a development experiment.
+Its results must later be compared with bias correction,
+recent-year weighting, ensemble, and optional level/anomaly
+experiments in Step 19C before reserved-2024 validation.

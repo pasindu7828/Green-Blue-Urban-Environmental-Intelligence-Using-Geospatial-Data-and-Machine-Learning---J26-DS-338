@@ -1,0 +1,58 @@
+STEP 19B3 - RECENT-YEAR WEIGHTING
+================================================================================================================
+
+PURPOSE
+----------------------------------------------------------------------------------------------------------------
+Test whether giving more training importance to recent years improves
+strict rolling-origin development generalization.
+
+DATA POLICY
+----------------------------------------------------------------------------------------------------------------
+Development data: 2018-2023 only.
+2024 reserved validation: NOT loaded.
+2025 final lockbox: NOT loaded.
+
+FEATURE / MODEL POLICY
+----------------------------------------------------------------------------------------------------------------
+All 93 predictors were retained.
+Frozen Step 17 tuned hyperparameters were reused.
+No retuning, feature filtering, bias correction, or ensemble occurred.
+
+PREDECLARED WEIGHTING STRATEGIES
+----------------------------------------------------------------------------------------------------------------
+uniform_reference
+exp_half_life_4y
+exp_half_life_2y
+exp_half_life_1y
+
+WEIGHT FORMULA
+----------------------------------------------------------------------------------------------------------------
+age = latest_training_year - row_year
+raw weight = 0.5 ** (age / half_life)
+weights are normalized to mean 1 inside each fold.
+
+PRIMARY COMPARISON WINDOW
+----------------------------------------------------------------------------------------------------------------
+2019 has only one training year, so all weight strategies are identical.
+The active recency-weighting comparison is therefore 2020-2023.
+
+DESCRIPTIVE BEST 19B3 STRATEGY BY MODEL
+----------------------------------------------------------------------------------------------------------------
+LightGBM: exp_half_life_2y | 2020-2023 mean MAE=3.467983 °C | mean RMSE=3.862462 °C | mean R²=-0.967273 | negative-R² folds=2 | worst MAE=4.910917 °C | mean absolute annual bias=2.880240 °C | MAE improvement vs uniform=0.043443 °C.
+NGBoost: exp_half_life_1y | 2020-2023 mean MAE=3.536548 °C | mean RMSE=3.979696 °C | mean R²=-0.982496 | negative-R² folds=2 | worst MAE=5.096881 °C | mean absolute annual bias=2.767098 °C | MAE improvement vs uniform=0.032720 °C.
+Random Forest: exp_half_life_2y | 2020-2023 mean MAE=3.285134 °C | mean RMSE=3.714492 °C | mean R²=-0.764808 | negative-R² folds=2 | worst MAE=5.032605 °C | mean absolute annual bias=2.592636 °C | MAE improvement vs uniform=0.009845 °C.
+XGBoost: exp_half_life_1y | 2020-2023 mean MAE=3.486752 °C | mean RMSE=3.935913 °C | mean R²=-0.931121 | negative-R² folds=2 | worst MAE=5.099761 °C | mean absolute annual bias=2.682368 °C | MAE improvement vs uniform=0.027614 °C.
+
+INTERPRETATION POLICY
+----------------------------------------------------------------------------------------------------------------
+A recency-weighted strategy is not accepted merely because recent
+years receive larger weights. It must improve rolling-origin metrics
+without creating worse instability.
+If uniform weighting remains better, that is valid evidence that
+simple recency emphasis does not solve the temporal regime problem.
+
+NO FINAL MODEL SELECTION
+----------------------------------------------------------------------------------------------------------------
+Step 19B3 is a development experiment only.
+Results must later be compared with the other Step 19B strategies
+inside Step 19C before reserved-2024 validation.

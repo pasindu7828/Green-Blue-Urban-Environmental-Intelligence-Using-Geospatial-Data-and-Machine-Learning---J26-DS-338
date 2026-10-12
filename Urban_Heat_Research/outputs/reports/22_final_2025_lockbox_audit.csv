@@ -1,0 +1,23 @@
+check,status,details
+step21_audit,PASS,Step 21 audit loaded and fully PASS before 2025 evaluation.
+step21_freeze_manifest_hash,PASS,2cd2fb44f0780287d7ff5ddba6b44410ef6966c8cc9cf554c0fff83c71989a8c
+step21_final_model_hash,PASS,0531dc08c3f488a82ac3e8b4a7f4e17a22ac9a9a8b3c3a1ad879ef23ecb8bb7c
+step21_feature_list_hash,PASS,6769a195b5027850ebd458a4bef7c9da0ecc43c4969bcc81f746e46bce3be9c0
+step21_audit_hash,PASS,f03fc7b4cbf09f91a044c0388fce42f34e9df919867adf99faad3986f2f2b649
+2025_locked_input_hash,PASS,37d6403434e9341077c8f5d75d10ea5a4904915b924fc2dbba4581dbe5ad9464
+final_strategy_unchanged,PASS,lgbm_anomaly_plus_prior_mean_level
+final_base_model_unchanged,PASS,LightGBM
+test_year,PASS,[2025]
+test_rows,PASS,"actual=2194, expected=2194"
+unique_grids,PASS,"actual=2194, expected=2194"
+frozen_feature_count,PASS,"actual=93, expected=93"
+model_retrained_in_step22,PASS,No. Final Step-21 model artifact loaded and predict() only.
+hyperparameters_changed_in_step22,PASS,No. Step-22 contains no tuning or parameter search.
+features_changed_in_step22,PASS,No. Exact frozen feature-list order used.
+annual_level_rule_changed,PASS,No. Used frozen prior-mean annual level=35.654913 °C.
+2025_anomaly_recentering_target_used,PASS,No. Re-centering used only the mean of 2025 model predictions.
+centered_predicted_anomaly_mean_zero,PASS,mean=+0.000000000000 °C
+prediction_mean_equals_frozen_level,PASS,"prediction_mean=35.654912697196, frozen_level=35.654912697196"
+predictions_constructed_before_target_evaluation,PASS,Yes. Frozen predictions were constructed and copied before y_test was assigned for final metrics.
+all_final_metrics_finite,PASS,True
+post_2025_model_changes_allowed,PASS,No. Final lockbox result must be reported as observed; it must not trigger tuning or strategy replacement.

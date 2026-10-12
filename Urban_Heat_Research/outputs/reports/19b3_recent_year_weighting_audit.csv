@@ -1,0 +1,28 @@
+check,status,details
+step17_audit,PASS,Step 17 audit loaded and fully PASS.
+step19a_audit,PASS,Step 19A audit loaded and fully PASS.
+step19b1_audit,PASS,Step 19B1 audit loaded and fully PASS.
+step19b2_audit,PASS,Step 19B2 audit loaded and fully PASS.
+development_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+predictor_count,PASS,"actual=93, expected=93"
+sample_weight_support_all_models,PASS,supported=4/4
+step17_reference_reproduction,PASS,"actual=20, expected=20"
+weight_table_rows,PASS,"actual=60, expected=60"
+weights_use_training_years_only,PASS,Every weight source year is earlier than its validation year.
+normalized_weight_mean_is_one,PASS,Every fold-strategy normalized weight vector has mean 1.
+all_weights_positive,PASS,True
+uniform_strategy_weights_are_one,PASS,uniform_reference uses weight=1 for all training rows.
+2019_all_weight_vectors_identity,PASS,"2019 has only 2018 training rows, so every recency strategy uses the same all-ones weights."
+2019_all_strategy_predictions_identity,PASS,max_abs_prediction_difference=0.000000000000
+uniform_sample_weight_vs_step17_recorded,PASS,Step 17 remains the external unweighted reference; the 19B3 uniform baseline is refit through the same sample_weight path as weighted strategies.
+fold_metric_rows,PASS,"actual=80, expected=80"
+prediction_rows,PASS,"actual=175520, expected=175520"
+summary_rows,PASS,"actual=16, expected=16"
+all_metrics_finite,PASS,True
+2024_loaded_or_used,PASS,No. 2024 was not loaded by Step 19B3.
+2025_loaded_or_used,PASS,No. 2025 was not loaded by Step 19B3.
+hyperparameters_retuned,PASS,No. Frozen Step 17 tuned hyperparameters were reused.
+feature_subset_applied,PASS,No. All 93 predictors are retained.
+bias_correction_applied,PASS,No bias correction occurs.
+ensemble_applied,PASS,No ensemble occurs.
+final_model_selected,PASS,No. Rankings are descriptive within Step 19B3 only.

@@ -1,0 +1,29 @@
+check,status,details
+all_prerequisite_audits,PASS,Step 17 and Steps 19A-19B4 were loaded and fully PASS.
+development_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+predictor_count,PASS,"actual=93, expected=93"
+step17_reference_reproduction,PASS,"actual=10, expected=10"
+annual_level_forecast_rows,PASS,"actual=15, expected=15"
+annual_level_prior_years_only,PASS,Every eligible annual-level forecast uses annual target history strictly earlier than its validation year.
+annual_level_current_target_not_used,PASS,Validation-year actual level appears only as an evaluation field.
+spatial_anomaly_metric_rows,PASS,"actual=10, expected=10"
+training_anomaly_zero_mean_within_year,PASS,Historical anomaly targets are centered separately within each training year.
+anomaly_training_validation_target_not_used,PASS,Anomaly model fitting uses training years only.
+predicted_anomaly_recentered_without_target,PASS,Validation predicted anomalies are centered using their prediction mean only.
+eligible_strategy_set,PASS,"['lgbm_anomaly_plus_linear_trend_level', 'lgbm_anomaly_plus_persistence_level', 'lgbm_anomaly_plus_prior_mean_level', 'lightgbm_raw_reference', 'random_forest_raw_reference', 'rf_anomaly_plus_linear_trend_level', 'rf_anomaly_plus_persistence_level', 'rf_anomaly_plus_prior_mean_level']"
+eligible_fold_metric_rows,PASS,"actual=40, expected=40"
+eligible_prediction_rows,PASS,"actual=87760, expected=87760"
+eligible_predictions_current_target_not_used,PASS,No eligible final prediction uses validation-year target information.
+oracle_strategy_set,PASS,"['lgbm_anomaly_plus_oracle_actual_level', 'rf_anomaly_plus_oracle_actual_level']"
+oracle_metric_rows,PASS,"actual=10, expected=10"
+oracle_prediction_rows,PASS,"actual=21940, expected=21940"
+oracle_ineligible_and_target_leaking_flagged,PASS,Oracle current-year level is explicitly target-leaking and excluded from eligible comparisons.
+eligible_summary_rows,PASS,"actual=8, expected=8"
+eligible_metrics_finite,PASS,True
+anomaly_metrics_finite,PASS,True
+oracle_metrics_finite,PASS,True
+2024_loaded_or_used,PASS,No. 2024 was not loaded by Step 19B5.
+2025_loaded_or_used,PASS,No. 2025 was not loaded by Step 19B5.
+hyperparameters_retuned,PASS,No. Frozen Step 17 RF/LightGBM hyperparameters were reused.
+broad_annual_level_search_performed,PASS,No. Only three predeclared simple annual-level rules were tested.
+final_model_selected,PASS,No. Step 19B5 is a development structural experiment only.

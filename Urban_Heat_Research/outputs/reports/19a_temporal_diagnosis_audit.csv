@@ -1,0 +1,24 @@
+check,status,details
+step17_audit,PASS,Step 17 audit loaded and fully PASS.
+step18_audit,PASS,Step 18 audit loaded and fully PASS.
+development_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+predictor_count,PASS,"actual=93, expected=93"
+prediction_row_count,PASS,"actual=43880, expected=43880"
+prediction_target_matches_source,PASS,max_abs_difference=0.000000000000
+step17_fold_metric_reproduction,PASS,PASS rows=20/20
+year_diagnostic_rows,PASS,"actual=20, expected=20"
+feature_shift_rows,PASS,"actual=465, expected=465"
+feature_year_association_rows,PASS,"actual=558, expected=558"
+feature_stability_rows,PASS,"actual=93, expected=93"
+residual_feature_association_rows,PASS,"actual=1860, expected=1860"
+residual_moran_rows,PASS,"actual=20, expected=20"
+core_diagnostics_finite,PASS,True
+negative_r2_preserved,PASS,"actual_negative_rows=8, expected=8; negative R² was diagnosed, not altered."
+problem_year_negative_r2_rows,PASS,"2021/2023 negative model-year rows=8, expected=8"
+2024_loaded_or_used,PASS,No. 2024 was not loaded by Step 19A.
+2025_loaded_or_used,PASS,No. 2025 was not loaded by Step 19A.
+model_training_performed,PASS,No. Step 19A uses finalized Step 17 saved predictions.
+hyperparameter_tuning_performed,PASS,No tuning occurs in Step 19A.
+temporal_improvement_applied,PASS,"No weighting, feature reduction, bias correction, ensemble, or level/anomaly strategy was applied."
+feature_selection_performed,PASS,No. Instability flags are diagnostic heuristics only.
+final_model_selected,PASS,No. Step 19A performs diagnosis only.

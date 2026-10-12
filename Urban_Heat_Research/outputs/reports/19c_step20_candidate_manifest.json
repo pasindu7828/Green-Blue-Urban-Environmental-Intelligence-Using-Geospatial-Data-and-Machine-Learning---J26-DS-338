@@ -1,0 +1,122 @@
+{
+  "step": "19C",
+  "purpose": "Frozen candidate shortlist for first reserved-2024 temporal validation in Step 20.",
+  "development_years_used_for_selection": "2018-2023",
+  "rolling_validation_years_used_for_selection": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "reserved_2024_loaded": false,
+  "final_2025_lockbox_loaded": false,
+  "candidate_count": 3,
+  "candidate_cap": 3,
+  "selection_rule": {
+    "raw_rf_anchor_always_retained": true,
+    "improvement_gate": [
+      "mean_mae < raw_rf_mean_mae",
+      "mean_rmse < raw_rf_mean_rmse",
+      "mean_r2 > raw_rf_mean_r2",
+      "negative_r2_count <= raw_rf_negative_r2_count",
+      "worst_year_mae < raw_rf_worst_year_mae"
+    ],
+    "max_additional_candidates": 2,
+    "oracle_diagnostics_eligible": false
+  },
+  "candidates": [
+    {
+      "shortlist_order": 1,
+      "source_step": "Step17",
+      "strategy": "raw_step17",
+      "display_name": "Random Forest raw tuned",
+      "base_model": "Random Forest",
+      "development_mean_mae": 2.919948396684437,
+      "development_mean_rmse": 3.3645729611649786,
+      "development_mean_r2": -0.5473928107110521,
+      "development_negative_r2_count": 2,
+      "development_worst_year_mae": 5.0172475814242095,
+      "implementation": {
+        "target": "LST_C",
+        "feature_configuration": "full_93",
+        "fit_years_for_step20": "2018-2023",
+        "validation_year_for_step20": 2024,
+        "method": "Fit the frozen tuned Random Forest directly to LST_C using all 2018-2023 development rows, then predict 2024.",
+        "hyperparameters": {
+          "bootstrap": true,
+          "max_depth": null,
+          "max_features": "sqrt",
+          "max_samples": 0.7,
+          "min_samples_leaf": 30,
+          "min_samples_split": 5,
+          "n_estimators": 900
+        }
+      }
+    },
+    {
+      "shortlist_order": 2,
+      "source_step": "19B5",
+      "strategy": "lgbm_anomaly_plus_prior_mean_level",
+      "display_name": "lgbm_anomaly_plus_prior_mean_level",
+      "base_model": "LightGBM",
+      "development_mean_mae": 2.4252516895788427,
+      "development_mean_rmse": 2.8366901305384906,
+      "development_mean_r2": -0.0969452068270243,
+      "development_negative_r2_count": 1,
+      "development_worst_year_mae": 4.218759605504372,
+      "implementation": {
+        "target": "within-year spatial anomaly: LST_C - training-year mean LST_C",
+        "feature_configuration": "full_93",
+        "fit_years_for_step20": "2018-2023",
+        "validation_year_for_step20": 2024,
+        "anomaly_model": "LightGBM",
+        "level_rule": "prior_mean_level",
+        "validation_anomaly_recentering": "subtract mean of 2024 predicted anomalies only; do not use 2024 target",
+        "final_prediction": "forecast_2024_annual_level + centered_2024_predicted_spatial_anomaly",
+        "hyperparameters": {
+          "colsample_bytree": 0.4,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_samples": 40,
+          "n_estimators": 250,
+          "num_leaves": 31,
+          "reg_alpha": 0.5,
+          "reg_lambda": 5.0,
+          "subsample": 0.6
+        }
+      }
+    },
+    {
+      "shortlist_order": 3,
+      "source_step": "19B5",
+      "strategy": "rf_anomaly_plus_prior_mean_level",
+      "display_name": "rf_anomaly_plus_prior_mean_level",
+      "base_model": "Random Forest",
+      "development_mean_mae": 2.52198005624818,
+      "development_mean_rmse": 2.9578969183635406,
+      "development_mean_r2": -0.139315671475775,
+      "development_negative_r2_count": 1,
+      "development_worst_year_mae": 4.58215123443472,
+      "implementation": {
+        "target": "within-year spatial anomaly: LST_C - training-year mean LST_C",
+        "feature_configuration": "full_93",
+        "fit_years_for_step20": "2018-2023",
+        "validation_year_for_step20": 2024,
+        "anomaly_model": "Random Forest",
+        "level_rule": "prior_mean_level",
+        "validation_anomaly_recentering": "subtract mean of 2024 predicted anomalies only; do not use 2024 target",
+        "final_prediction": "forecast_2024_annual_level + centered_2024_predicted_spatial_anomaly",
+        "hyperparameters": {
+          "bootstrap": true,
+          "max_depth": null,
+          "max_features": "sqrt",
+          "max_samples": 0.7,
+          "min_samples_leaf": 30,
+          "min_samples_split": 5,
+          "n_estimators": 900
+        }
+      }
+    }
+  ]
+}

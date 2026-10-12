@@ -1,0 +1,25 @@
+check,status,details
+step17_audit,PASS,Step 17 audit loaded and fully PASS.
+step19a_audit,PASS,Step 19A audit loaded and fully PASS.
+raw_prediction_rows,PASS,"actual=43880, expected=43880"
+raw_step17_metric_reproduction,PASS,PASS rows=20/20
+residual_reconstruction,PASS,max_abs_error=0.000000000000
+correction_history_rows,PASS,"actual=100, expected=100"
+strict_prior_year_source_only,PASS,Every eligible correction source year is earlier than its validation year.
+eligible_current_year_target_used,PASS,No eligible correction uses the current validation year target.
+2019_no_prior_history_zero_correction,PASS,All eligible strategies use zero correction in 2019.
+fold_metric_rows,PASS,"actual=100, expected=100"
+prediction_rows,PASS,"actual=219400, expected=219400"
+summary_rows,PASS,"actual=20, expected=20"
+best_rule_rows,PASS,"actual=4, expected=4"
+all_eligible_metrics_finite,PASS,True
+raw_strategy_is_identity,PASS,raw_no_correction exactly reproduces raw predictions.
+oracle_rows,PASS,"actual=20, expected=20"
+oracle_excluded_from_eligible_ranking,PASS,Oracle current-year correction is diagnostic only.
+oracle_reproduces_19a_centered_r2,PASS,max_abs_difference=0.000000000000
+2024_loaded_or_used,PASS,No. 2024 was not loaded by Step 19B1.
+2025_loaded_or_used,PASS,No. 2025 was not loaded by Step 19B1.
+model_retraining_performed,PASS,No. Step 19B1 is a post-processing experiment on finalized Step 17 rolling predictions.
+hyperparameter_tuning_performed,PASS,No hyperparameter tuning occurs.
+feature_selection_performed,PASS,No feature selection occurs.
+final_model_selected,PASS,No final model is selected. Best rule is only within the predefined 19B1 development experiment.

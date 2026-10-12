@@ -1,0 +1,24 @@
+check,status,details
+step19c_audit,PASS,Step 19C audit loaded and fully PASS.
+step19c_manifest_shortlist_match,PASS,Frozen candidate manifest and shortlist CSV agree exactly.
+frozen_candidate_set,PASS,"['raw_step17', 'lgbm_anomaly_plus_prior_mean_level', 'rf_anomaly_plus_prior_mean_level']"
+training_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+validation_year,PASS,[2024]
+training_rows,PASS,"actual=13164, expected=13164"
+validation_rows,PASS,"actual=2194, expected=2194"
+predictor_count,PASS,"actual=93, expected=93"
+train_validation_predictor_schema,PASS,Training and 2024 predictor names/order are identical.
+b5_2024_level_training_history_only,PASS,Both B5 candidates use the mean of 2018-2023 annual training levels only.
+training_anomaly_zero_mean_by_year,PASS,max_abs_year_mean=0.000000000000
+validation_anomaly_recentering,PASS,B5 validation anomaly centering uses only the mean of 2024 model predictions; no 2024 target is used.
+predictions_constructed_before_target_evaluation,PASS,All three prediction arrays were constructed and frozen before y_val_2024 was assigned for metric evaluation.
+metric_rows,PASS,"actual=3, expected=3"
+prediction_rows,PASS,"actual=6582, expected=6582"
+all_metrics_finite,PASS,True
+all_predictions_finite,PASS,True
+saved_candidate_models,PASS,All 2018-2023 Step 20 validation-fit model artifacts saved.
+hyperparameter_retuning_on_2024,PASS,No 2024-driven hyperparameter tuning occurred.
+new_strategy_search_after_2024,PASS,No new strategy was created after opening 2024.
+2018_2024_retraining_performed,PASS,No. Retraining on 2018-2024 is intentionally deferred until after Step 21 final strategy freeze.
+2025_loaded_or_used,PASS,No. The 2025 lockbox is not loaded or evaluated.
+final_model_selected,PASS,No final model is selected in Step 20; descriptive 2024 ranking only.
