@@ -1,0 +1,7 @@
+step,experiment,development_result,carry_to_step20
+19A,Temporal diagnosis,Annual-level error is a major signal; centered/spatial pattern remains useful.,diagnostic_basis_only
+19B1,Historical residual bias correction,Raw/no-correction ranked first for all models.,no_corrected_strategy
+19B2,Train-only stable feature subset,Full 93-feature reference ranked first for all models.,no_reduced_feature_strategy
+19B3,Recent-year weighting,4/4 model-specific best rows use recency weighting; maximum eligible mean-MAE improvement vs own uniform=0.043443 °C.,eligible_for_cross_family_gate
+19B4,Temporal ensemble,Random Forest single reference remained best.,no_ensemble_strategy
+19B5,Annual-level + spatial-anomaly decomposition,Best eligible strategy=lgbm_anomaly_plus_prior_mean_level; mean MAE=2.425252 °C; mean R²=-0.096945; negative-R² folds=1.,eligible_for_cross_family_gate

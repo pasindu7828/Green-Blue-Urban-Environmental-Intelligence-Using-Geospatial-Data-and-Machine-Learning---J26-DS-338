@@ -1,0 +1,68 @@
+STEP 19C - TEMPORAL STRATEGY COMPARISON + STEP 20 CANDIDATE FREEZE
+====================================================================================================================
+
+PURPOSE
+--------------------------------------------------------------------------------------------------------------------
+Consolidate Steps 19A-19B5 and freeze a small leakage-safe candidate set for the first untouched 2024 temporal validation.
+
+DATA POLICY
+--------------------------------------------------------------------------------------------------------------------
+Development evidence only: 2019-2023 rolling validation folds.
+2024 reserved validation: NOT loaded.
+2025 final lockbox: NOT loaded.
+
+FAMILY EVIDENCE
+--------------------------------------------------------------------------------------------------------------------
+step                                   experiment                                                                                                       development_result                carry_to_step20
+ 19A                           Temporal diagnosis                                           Annual-level error is a major signal; centered/spatial pattern remains useful.          diagnostic_basis_only
+19B1          Historical residual bias correction                                                                           Raw/no-correction ranked first for all models.          no_corrected_strategy
+19B2             Train-only stable feature subset                                                                   Full 93-feature reference ranked first for all models.    no_reduced_feature_strategy
+19B3                        Recent-year weighting    4/4 model-specific best rows use recency weighting; maximum eligible mean-MAE improvement vs own uniform=0.043443 °C. eligible_for_cross_family_gate
+19B4                            Temporal ensemble                                                                            Random Forest single reference remained best.           no_ensemble_strategy
+19B5 Annual-level + spatial-anomaly decomposition Best eligible strategy=lgbm_anomaly_plus_prior_mean_level; mean MAE=2.425252 °C; mean R²=-0.096945; negative-R² folds=1. eligible_for_cross_family_gate
+
+RAW RF REFERENCE
+--------------------------------------------------------------------------------------------------------------------
+Mean MAE=2.919948 °C; Mean RMSE=3.364573 °C; Mean R²=-0.547393; Negative-R² years=2; Worst-year MAE=5.017248 °C.
+
+STEP 20 IMPROVEMENT GATE
+--------------------------------------------------------------------------------------------------------------------
+A candidate must improve mean MAE, mean RMSE, mean R², and worst-year MAE
+relative to raw RF, while not increasing the negative-R² year count.
+
+STEP 20 FROZEN SHORTLIST
+--------------------------------------------------------------------------------------------------------------------
+ shortlist_order source_step                       display_name    base_model  mean_mae  mean_rmse   mean_r2  negative_r2_count  worst_year_mae                    shortlist_role
+               1      Step17            Random Forest raw tuned Random Forest  2.919948   3.364573 -0.547393                  2        5.017248              raw_reference_anchor
+               2        19B5 lgbm_anomaly_plus_prior_mean_level      LightGBM  2.425252   2.836690 -0.096945                  1        4.218760 development_improvement_candidate
+               3        19B5   rf_anomaly_plus_prior_mean_level Random Forest  2.521980   2.957897 -0.139316                  1        4.582151 development_improvement_candidate
+
+YEAR-BY-YEAR DEVELOPMENT COMPARISON
+--------------------------------------------------------------------------------------------------------------------
+source_step                           strategy                       display_name    base_model  validation_year      mae     rmse        r2
+     Step17                         raw_step17            Random Forest raw tuned Random Forest             2019 1.470673 1.973319  0.397073
+     Step17                         raw_step17            Random Forest raw tuned Random Forest             2020 5.017248 5.598683  0.065617
+     Step17                         raw_step17            Random Forest raw tuned Random Forest             2021 2.297940 2.656298 -0.268325
+     Step17                         raw_step17            Random Forest raw tuned Random Forest             2022 1.635464 2.173912  0.575294
+     Step17                         raw_step17            Random Forest raw tuned Random Forest             2023 4.178418 4.420653 -3.506623
+       19B5 lgbm_anomaly_plus_prior_mean_level lgbm_anomaly_plus_prior_mean_level      LightGBM             2019 1.392539 1.848698  0.470822
+       19B5 lgbm_anomaly_plus_prior_mean_level lgbm_anomaly_plus_prior_mean_level      LightGBM             2020 4.218760 4.774221  0.320549
+       19B5 lgbm_anomaly_plus_prior_mean_level lgbm_anomaly_plus_prior_mean_level      LightGBM             2021 1.239970 1.587592  0.546941
+       19B5 lgbm_anomaly_plus_prior_mean_level lgbm_anomaly_plus_prior_mean_level      LightGBM             2022 1.688923 2.123086  0.594921
+       19B5 lgbm_anomaly_plus_prior_mean_level lgbm_anomaly_plus_prior_mean_level      LightGBM             2023 3.586067 3.849854 -2.417959
+       19B5   rf_anomaly_plus_prior_mean_level   rf_anomaly_plus_prior_mean_level Random Forest             2019 1.483553 1.992995  0.384990
+       19B5   rf_anomaly_plus_prior_mean_level   rf_anomaly_plus_prior_mean_level Random Forest             2020 4.582151 5.194351  0.195704
+       19B5   rf_anomaly_plus_prior_mean_level   rf_anomaly_plus_prior_mean_level Random Forest             2021 1.221097 1.588351  0.546508
+       19B5   rf_anomaly_plus_prior_mean_level   rf_anomaly_plus_prior_mean_level Random Forest             2022 1.740741 2.174775  0.574956
+       19B5   rf_anomaly_plus_prior_mean_level   rf_anomaly_plus_prior_mean_level Random Forest             2023 3.582359 3.839013 -2.398736
+
+INTERPRETATION
+--------------------------------------------------------------------------------------------------------------------
+19C does not declare a final model. It freezes a small development candidate set so Step 20 can provide the first reserved 2024 out-of-time comparison without further tuning.
+If the annual-level + anomaly candidates remain stronger on 2024, that will provide independent support for the structural reformulation.
+If they fail on 2024, the raw RF anchor remains available and the development improvement will be reported as non-generalizing.
+
+NEXT
+--------------------------------------------------------------------------------------------------------------------
+Step 20: fit each frozen shortlisted strategy on all 2018-2023 development
+data and evaluate once on reserved 2024. Do not tune on 2024.

@@ -1,0 +1,16 @@
+source_step,strategy,display_name,base_model,validation_year,mae,rmse,r2
+Step17,raw_step17,Random Forest raw tuned,Random Forest,2019,1.470672648190363,1.9733189758820755,0.3970734276355665
+Step17,raw_step17,Random Forest raw tuned,Random Forest,2020,5.0172475814242095,5.598682682404533,0.0656166412453965
+Step17,raw_step17,Random Forest raw tuned,Random Forest,2021,2.297939511194329,2.656298107260709,-0.268324934334972
+Step17,raw_step17,Random Forest raw tuned,Random Forest,2022,1.635463821852512,2.173911726605162,0.5752937097850048
+Step17,raw_step17,Random Forest raw tuned,Random Forest,2023,4.17841842076077,4.420653313672414,-3.506622897886256
+19B5,lgbm_anomaly_plus_prior_mean_level,lgbm_anomaly_plus_prior_mean_level,LightGBM,2019,1.3925388800465757,1.848697623530544,0.470822212498424
+19B5,lgbm_anomaly_plus_prior_mean_level,lgbm_anomaly_plus_prior_mean_level,LightGBM,2020,4.218759605504372,4.774221185468649,0.32054850408758
+19B5,lgbm_anomaly_plus_prior_mean_level,lgbm_anomaly_plus_prior_mean_level,LightGBM,2021,1.2399699829921265,1.5875917695329185,0.5469411875211678
+19B5,lgbm_anomaly_plus_prior_mean_level,lgbm_anomaly_plus_prior_mean_level,LightGBM,2022,1.6889225148465108,2.123086220533738,0.5949206111803864
+19B5,lgbm_anomaly_plus_prior_mean_level,lgbm_anomaly_plus_prior_mean_level,LightGBM,2023,3.586067464504629,3.849853853626605,-2.41795854942268
+19B5,rf_anomaly_plus_prior_mean_level,rf_anomaly_plus_prior_mean_level,Random Forest,2019,1.4835525161756864,1.9929950466156607,0.3849898562863071
+19B5,rf_anomaly_plus_prior_mean_level,rf_anomaly_plus_prior_mean_level,Random Forest,2020,4.58215123443472,5.194350673232631,0.195703980525118
+19B5,rf_anomaly_plus_prior_mean_level,rf_anomaly_plus_prior_mean_level,Random Forest,2021,1.221097263391885,1.588351218452878,0.5465076285556858
+19B5,rf_anomaly_plus_prior_mean_level,rf_anomaly_plus_prior_mean_level,Random Forest,2022,1.740740616093508,2.174774660390361,0.5749564687260736
+19B5,rf_anomaly_plus_prior_mean_level,rf_anomaly_plus_prior_mean_level,Random Forest,2023,3.5823586511451,3.839012993126174,-2.39873629147206
