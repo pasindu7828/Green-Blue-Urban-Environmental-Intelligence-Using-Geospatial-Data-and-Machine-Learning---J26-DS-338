@@ -14,7 +14,7 @@ final_anomaly_zero_mean_within_year,PASS,max_abs_year_mean=0.000000000000
 hyperparameters_retuned_after_2024,PASS,No. Exact Step-19C-frozen hyperparameters reused.
 feature_selection_changed_after_2024,PASS,No. Frozen full-93 feature configuration retained.
 new_strategy_created_after_2024,PASS,No. Final strategy is one of the candidates frozen before 2024.
-final_model_artifact_saved,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\models\final\21_final_lightgbm_anomaly_trained_2018_2024.joblib
-final_feature_list_saved,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\outputs\reports\21_final_feature_list.csv
+final_model_artifact_saved,PASS,E:\Urban_Heat_Research\models\final\21_final_lightgbm_anomaly_trained_2018_2024.joblib
+final_feature_list_saved,PASS,E:\Urban_Heat_Research\outputs\reports\21_final_feature_list.csv
 2025_loaded_or_used,PASS,"No. The 2025 final lockbox was not loaded, predicted, evaluated, or used for selection in Step 21."
 final_strategy_frozen_before_2025,PASS,"Yes. Model, features, hyperparameters, annual-level rule, and 2025 inference rule are frozen before Step 22."

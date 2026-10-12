@@ -59,8 +59,8 @@
       2024
     ],
     "training_rows": 15358,
-    "model_artifact": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\models\\final\\21_final_lightgbm_anomaly_trained_2018_2024.joblib",
-    "feature_list_artifact": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\outputs\\reports\\21_final_feature_list.csv"
+    "model_artifact": "E:\\Urban_Heat_Research\\models\\final\\21_final_lightgbm_anomaly_trained_2018_2024.joblib",
+    "feature_list_artifact": "E:\\Urban_Heat_Research\\outputs\\reports\\21_final_feature_list.csv"
   },
   "frozen_2025_inference_rule": {
     "annual_level_rule": "prior_mean_level",
