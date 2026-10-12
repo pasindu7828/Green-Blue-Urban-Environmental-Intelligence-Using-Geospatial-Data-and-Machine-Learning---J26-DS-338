@@ -1,0 +1,43 @@
+STEP 21 - FINAL STRATEGY SELECTION, FREEZE, AND 2018-2024 RETRAINING
+====================================================================================================================
+
+FINAL STRATEGY
+--------------------------------------------------------------------------------------------------------------------
+Selected strategy: lgbm_anomaly_plus_prior_mean_level
+Base model: LightGBM
+Feature configuration: full 93 predictors
+Target: within-year spatial anomaly (LST_C - same-year mean LST_C)
+Annual-level rule: prior mean of historical annual LST means
+
+SELECTION REASON
+--------------------------------------------------------------------------------------------------------------------
+The candidate independently beat raw tuned RF on reserved-2024 MAE, RMSE and R². Among all structural candidates that passed that independent gate, it had the lowest PRE-2024 2019-2023 development mean MAE.
+
+PRE-2024 DEVELOPMENT EVIDENCE (2019-2023 ROLLING VALIDATION)
+--------------------------------------------------------------------------------------------------------------------
+Mean MAE: 2.425252 °C
+Mean RMSE: 2.836690 °C
+Mean R²: -0.096945
+
+RESERVED 2024 CONFIRMATION
+--------------------------------------------------------------------------------------------------------------------
+MAE: 0.958146 °C
+RMSE: 1.270647 °C
+R²: 0.674260
+MAPE: 2.761722%
+Centered spatial R²: 0.728865
+
+FINAL PRE-TEST RETRAINING
+--------------------------------------------------------------------------------------------------------------------
+Retraining years: 2018-2024
+Retraining rows: 15,358
+Unique grids: 2,194
+Predictors: 93
+Frozen 2025 prior-mean annual level: 35.654913 °C
+Final model artifact: E:\Git Research\J26-DS-338\Urban_Heat_Research\models\final\21_final_lightgbm_anomaly_trained_2018_2024.joblib
+
+2025 LOCKBOX POLICY
+--------------------------------------------------------------------------------------------------------------------
+2025 was NOT loaded or used in Step 21.
+Step 22 may load 2025 once and apply only the frozen inference rule.
+No tuning, model change, feature change, level-rule change, or new strategy is allowed after opening 2025.
