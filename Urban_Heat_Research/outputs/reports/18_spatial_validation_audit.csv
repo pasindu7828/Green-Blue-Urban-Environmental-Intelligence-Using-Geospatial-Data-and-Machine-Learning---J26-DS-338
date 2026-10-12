@@ -1,0 +1,22 @@
+check,status,details
+step09_spatial_split_audit,PASS,Step 09 audit loaded and fully PASS.
+step17_tuning_audit,PASS,Step 17 audit loaded and fully PASS.
+development_input_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+predictor_count,PASS,"actual=93, expected=93"
+unique_grid_count,PASS,"actual=2194, expected=2194"
+frozen_step09_fold_counts,PASS,"actual={1: 484, 2: 415, 3: 531, 4: 382, 5: 382}, expected={1: 484, 2: 415, 3: 531, 4: 382, 5: 382}"
+grid_fold_consistency,PASS,Each grid has exactly one fold across all years.
+2024_loaded_or_used,PASS,No. Only 2018-2023 development rows were loaded.
+2025_loaded_or_used,PASS,No. Only 2018-2023 development rows were loaded.
+hyperparameters_retuned,PASS,No. Step 17 tuned configurations were reused exactly.
+primary_fold_metric_rows,PASS,"actual=20, expected=20"
+primary_prediction_rows,PASS,"actual=52656, expected=52656"
+each_grid_year_predicted_once_per_model,PASS,True
+primary_metrics_finite,PASS,True
+spatial_context_feature_count,PASS,"actual=18, expected=18"
+spatial_neighbor_mean_count,PASS,"actual=9, expected=9"
+spatial_neighbor_contrast_count,PASS,"actual=9, expected=9"
+spatial_context_target_name_audit,PASS,No detected spatial-context predictor contains LST target naming.
+buffer_sensitivity,PASS,"rows=20, expected=20, finite=True, buffer=210.0m"
+final_model_selected,PASS,No. Step 18 provides spatial development robustness evidence only.
+nested_feature_selection_claim,PASS,No fully nested spatial feature-selection claim is made; Step 08 frozen features are treated as development-frozen.
