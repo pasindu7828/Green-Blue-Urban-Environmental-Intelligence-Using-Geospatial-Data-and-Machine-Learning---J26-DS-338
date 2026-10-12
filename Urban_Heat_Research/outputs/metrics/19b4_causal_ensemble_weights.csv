@@ -1,0 +1,41 @@
+validation_year,strategy,prior_oof_year_count,prior_oof_years,max_source_year,source_metric,model,weight,uses_current_validation_year_target
+2019,causal_inverse_mae_all4,0,,,equal_fallback_no_prior_oof_history,Random Forest,0.25,False
+2019,causal_inverse_mae_all4,0,,,equal_fallback_no_prior_oof_history,XGBoost,0.25,False
+2019,causal_inverse_mae_all4,0,,,equal_fallback_no_prior_oof_history,LightGBM,0.25,False
+2019,causal_inverse_mae_all4,0,,,equal_fallback_no_prior_oof_history,NGBoost,0.25,False
+2019,causal_inverse_rmse_all4,0,,,equal_fallback_no_prior_oof_history,Random Forest,0.25,False
+2019,causal_inverse_rmse_all4,0,,,equal_fallback_no_prior_oof_history,XGBoost,0.25,False
+2019,causal_inverse_rmse_all4,0,,,equal_fallback_no_prior_oof_history,LightGBM,0.25,False
+2019,causal_inverse_rmse_all4,0,,,equal_fallback_no_prior_oof_history,NGBoost,0.25,False
+2020,causal_inverse_mae_all4,1,2019,2019.0,prior_year_mean_oof_mae,Random Forest,0.2433033964270474,False
+2020,causal_inverse_mae_all4,1,2019,2019.0,prior_year_mean_oof_mae,XGBoost,0.2507794943244144,False
+2020,causal_inverse_mae_all4,1,2019,2019.0,prior_year_mean_oof_mae,LightGBM,0.25516075570106556,False
+2020,causal_inverse_mae_all4,1,2019,2019.0,prior_year_mean_oof_mae,NGBoost,0.25075635354747267,False
+2020,causal_inverse_rmse_all4,1,2019,2019.0,prior_year_mean_oof_rmse,Random Forest,0.24254987399656763,False
+2020,causal_inverse_rmse_all4,1,2019,2019.0,prior_year_mean_oof_rmse,XGBoost,0.2500455795029759,False
+2020,causal_inverse_rmse_all4,1,2019,2019.0,prior_year_mean_oof_rmse,LightGBM,0.2569472453312118,False
+2020,causal_inverse_rmse_all4,1,2019,2019.0,prior_year_mean_oof_rmse,NGBoost,0.2504573011692446,False
+2021,causal_inverse_mae_all4,2,"2019,2020",2020.0,prior_year_mean_oof_mae,Random Forest,0.24900524095526988,False
+2021,causal_inverse_mae_all4,2,"2019,2020",2020.0,prior_year_mean_oof_mae,XGBoost,0.24761216877611372,False
+2021,causal_inverse_mae_all4,2,"2019,2020",2020.0,prior_year_mean_oof_mae,LightGBM,0.2553839626400298,False
+2021,causal_inverse_mae_all4,2,"2019,2020",2020.0,prior_year_mean_oof_mae,NGBoost,0.24799862762858668,False
+2021,causal_inverse_rmse_all4,2,"2019,2020",2020.0,prior_year_mean_oof_rmse,Random Forest,0.2484493885297116,False
+2021,causal_inverse_rmse_all4,2,"2019,2020",2020.0,prior_year_mean_oof_rmse,XGBoost,0.24721547431104893,False
+2021,causal_inverse_rmse_all4,2,"2019,2020",2020.0,prior_year_mean_oof_rmse,LightGBM,0.2566598893673371,False
+2021,causal_inverse_rmse_all4,2,"2019,2020",2020.0,prior_year_mean_oof_rmse,NGBoost,0.24767524779190248,False
+2022,causal_inverse_mae_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_mae,Random Forest,0.268739574267414,False
+2022,causal_inverse_mae_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_mae,XGBoost,0.2472786677111366,False
+2022,causal_inverse_mae_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_mae,LightGBM,0.24201213548737058,False
+2022,causal_inverse_mae_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_mae,NGBoost,0.24196962253407878,False
+2022,causal_inverse_rmse_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_rmse,Random Forest,0.26531426874580927,False
+2022,causal_inverse_rmse_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_rmse,XGBoost,0.24679633552056834,False
+2022,causal_inverse_rmse_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_rmse,LightGBM,0.2452988710228773,False
+2022,causal_inverse_rmse_all4,3,"2019,2020,2021",2021.0,prior_year_mean_oof_rmse,NGBoost,0.24259052471074508,False
+2023,causal_inverse_mae_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_mae,Random Forest,0.2679475308281473,False
+2023,causal_inverse_mae_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_mae,XGBoost,0.24589506811783685,False
+2023,causal_inverse_mae_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_mae,LightGBM,0.2446483110618974,False
+2023,causal_inverse_mae_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_mae,NGBoost,0.24150908999211837,False
+2023,causal_inverse_rmse_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_rmse,Random Forest,0.26399302832971544,False
+2023,causal_inverse_rmse_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_rmse,XGBoost,0.2452964207758175,False
+2023,causal_inverse_rmse_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_rmse,LightGBM,0.24868406312607155,False
+2023,causal_inverse_rmse_all4,4,"2019,2020,2021,2022",2022.0,prior_year_mean_oof_rmse,NGBoost,0.24202648776839542,False
