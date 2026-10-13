@@ -1,0 +1,93 @@
+{
+  "step": "26B",
+  "analysis": "Dynamic base-predictor forecast model development",
+  "future_pipeline": "future base predictors -> reconstructed engineered features -> frozen Step-22B LightGBM spatial anomaly -> annual level + anomaly -> future LST",
+  "development_target_year_max": 2023,
+  "reserved_validation_target_years": [
+    2024,
+    2025
+  ],
+  "dynamic_predictor_audit_source_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "dynamic_change_threshold": {
+    "absolute_transition_tolerance": 1e-08,
+    "minimum_changed_transition_fraction": 0.001
+  },
+  "dynamic_predictors": [
+    "NDVI",
+    "NDBI",
+    "NDWI",
+    "EVI",
+    "Albedo",
+    "NDBI_ADJ",
+    "NDVI_ADJ",
+    "NightLights",
+    "green_mask"
+  ],
+  "candidate_methods": [
+    "Persistence",
+    "Rolling-3 Mean",
+    "Bounded OLS Trend",
+    "Bounded Theil-Sen Trend"
+  ],
+  "metrics": [
+    "MAE",
+    "RMSE",
+    "R2",
+    "Bias",
+    "NMAE_SD",
+    "NRMSE_SD"
+  ],
+  "why_no_mape": "Several environmental indices can be zero or negative, making MAPE unstable or undefined.",
+  "constraint_rule": "Candidate forecasts are clipped to the predictor's min/max observed in training history available at that origin; reserved/future values are never used for clipping.",
+  "binary_rule": "Binary-like predictors are thresholded at 0.5 after clipping.",
+  "structural_policy": [
+    {
+      "predictor": "dist_road",
+      "policy": "freeze_latest_observed_or_keep_structural",
+      "reason": "structural/location context; not forecast as a dynamic annual environmental variable in Step 26B"
+    },
+    {
+      "predictor": "dist_main_road",
+      "policy": "freeze_latest_observed_or_keep_structural",
+      "reason": "structural/location context; not forecast as a dynamic annual environmental variable in Step 26B"
+    },
+    {
+      "predictor": "dist_water",
+      "policy": "freeze_latest_observed_or_keep_structural",
+      "reason": "structural/location context; not forecast as a dynamic annual environmental variable in Step 26B"
+    },
+    {
+      "predictor": "LCZ",
+      "policy": "freeze_latest_observed_or_keep_structural",
+      "reason": "structural/location context; not forecast as a dynamic annual environmental variable in Step 26B"
+    },
+    {
+      "predictor": "area_name",
+      "policy": "freeze_latest_observed_or_keep_structural",
+      "reason": "structural/location context; not forecast as a dynamic annual environmental variable in Step 26B"
+    },
+    {
+      "predictor": "building_mask",
+      "policy": "freeze_latest_observed",
+      "reason": "no substantive temporal variation detected in 2015-2023 development history"
+    },
+    {
+      "predictor": "road_mask",
+      "policy": "freeze_latest_observed",
+      "reason": "no substantive temporal variation detected in 2015-2023 development history"
+    }
+  ],
+  "engineered_feature_policy": "Future lag/history/delta/interaction/neighbour variables are computed later from the future base-predictor sequence; they are not separately forecast.",
+  "selection_policy": "Development leaders are reference only. All candidate methods are frozen and evaluated on reserved 2024-2025 targets in Step 27.",
+  "future_prediction_policy": "No 2026-2030 predictor maps or future LST predictions are produced in Step 26B."
+}

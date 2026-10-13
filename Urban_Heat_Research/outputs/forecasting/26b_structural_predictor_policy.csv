@@ -1,0 +1,8 @@
+predictor,policy,reason
+dist_road,freeze_latest_observed_or_keep_structural,structural/location context; not forecast as a dynamic annual environmental variable in Step 26B
+dist_main_road,freeze_latest_observed_or_keep_structural,structural/location context; not forecast as a dynamic annual environmental variable in Step 26B
+dist_water,freeze_latest_observed_or_keep_structural,structural/location context; not forecast as a dynamic annual environmental variable in Step 26B
+LCZ,freeze_latest_observed_or_keep_structural,structural/location context; not forecast as a dynamic annual environmental variable in Step 26B
+area_name,freeze_latest_observed_or_keep_structural,structural/location context; not forecast as a dynamic annual environmental variable in Step 26B
+building_mask,freeze_latest_observed,no substantive temporal variation detected in 2015-2023 development history
+road_mask,freeze_latest_observed,no substantive temporal variation detected in 2015-2023 development history

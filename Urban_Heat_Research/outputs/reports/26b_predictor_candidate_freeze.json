@@ -1,0 +1,83 @@
+{
+  "step": "26B",
+  "purpose": "dynamic base-predictor forecast model development",
+  "observed_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "development_target_year_max": 2023,
+  "reserved_validation_target_years": [
+    2024,
+    2025
+  ],
+  "horizons_years": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "minimum_origin_year": 2018,
+  "dynamic_predictors": [
+    "NDVI",
+    "NDBI",
+    "NDWI",
+    "EVI",
+    "Albedo",
+    "NDBI_ADJ",
+    "NDVI_ADJ",
+    "NightLights",
+    "green_mask"
+  ],
+  "static_or_frozen_from_candidate_pool": [
+    "building_mask",
+    "road_mask"
+  ],
+  "structural_predictors_not_forecast": [
+    "dist_road",
+    "dist_main_road",
+    "dist_water",
+    "LCZ",
+    "area_name"
+  ],
+  "candidate_methods": {
+    "Persistence": {
+      "definition": "last observed grid value at forecast origin"
+    },
+    "Rolling-3 Mean": {
+      "definition": "mean of latest up-to-3 observed grid values"
+    },
+    "Bounded OLS Trend": {
+      "definition": "per-grid OLS trend using all history available at origin; target-year extrapolation clipped to training-history global min/max"
+    },
+    "Bounded Theil-Sen Trend": {
+      "definition": "per-grid median pairwise-slope robust trend using all history available at origin; target-year extrapolation clipped to training-history global min/max"
+    }
+  },
+  "binary_rule": "If development values are genuinely binary {0,1}, candidate forecasts are clipped then thresholded at 0.5.",
+  "metric_policy": {
+    "MAPE": "not used because predictor values may be zero or negative",
+    "primary_scale_aware_metric": "NMAE_SD",
+    "saved_metrics": [
+      "MAE",
+      "RMSE",
+      "R2",
+      "Bias",
+      "NMAE_SD",
+      "NRMSE_SD"
+    ]
+  },
+  "engineered_feature_policy": "Do not forecast engineered lag/delta/history/interaction/neighbour features independently. Reconstruct them later from forecast base predictors using the original feature-engineering logic.",
+  "selection_policy": "No final predictor forecasting method selected in Step 26B. All frozen candidate definitions proceed to Step 27.",
+  "step22b_model_changed": false,
+  "future_2026_2030_generated": false
+}

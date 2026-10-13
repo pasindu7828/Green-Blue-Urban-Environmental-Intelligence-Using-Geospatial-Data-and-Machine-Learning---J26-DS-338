@@ -1,0 +1,21 @@
+check,status,details
+canonical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+frozen_feature_list_hash,PASS,6769a195b5027850ebd458a4bef7c9da0ecc43c4969bcc81f746e46bce3be9c0
+step25_audit,PASS,Step-25 strict audit verified fully PASS.
+base_rows,PASS,"actual=24134, expected=24134"
+grid_count,PASS,"actual=2194, expected=2194"
+observed_years,PASS,"[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+dynamic_audit_uses_development_only,PASS,Temporal dynamic/static classification uses only 2015-2023.
+at_least_one_dynamic_predictor,PASS,dynamic_predictor_count=9
+candidate_targets_stop_at_2023,PASS,max_target=2023
+reserved_2024_2025_not_used_as_targets,PASS,2024 and 2025 reserved for Step 27.
+training_precedes_target,PASS,All candidate histories end before target year.
+origin_matches_training_cutoff,PASS,Each origin equals final year in its available history.
+all_methods_all_horizons_per_dynamic_predictor,PASS,4 candidates across H1-H5 for each dynamic predictor.
+expected_fold_metric_rows,PASS,"actual=540, expected=540"
+training_history_range_constraints,PASS,All bounded predictions remain inside origin-known training range.
+mape_not_used_for_dynamic_predictors,PASS,Predictors can be zero/negative; scale-aware NMAE/NRMSE are used instead.
+engineered_features_not_independently_forecast,PASS,Lag/delta/history/interaction/neighbour features are deferred to future reconstruction.
+candidate_definitions_frozen_for_step27,PASS,Step-26B candidate definitions frozen before reserved validation.
+no_2026_2030_forecast,PASS,No operational future predictor values/maps created.
+step22b_model_untouched,PASS,Frozen production LightGBM is not loaded/retrained/modified.
