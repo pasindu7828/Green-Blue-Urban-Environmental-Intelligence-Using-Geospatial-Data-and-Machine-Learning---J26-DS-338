@@ -1,0 +1,10 @@
+{
+    "qa_records": 60,
+    "all_candidate_records": 1097,
+    "analysis_type": "descriptive_only",
+    "trained_secondary_classifier": false,
+    "changed_xgboost_model": false,
+    "changed_frozen_probability_threshold": false,
+    "automatically_removed_candidates": false,
+    "important_warning": "The 60-object visual QA set was selected using a stratified design. Percentages in the diagnostic bins describe the reviewed sample only and must not be treated as unbiased population-wide probabilities."
+}

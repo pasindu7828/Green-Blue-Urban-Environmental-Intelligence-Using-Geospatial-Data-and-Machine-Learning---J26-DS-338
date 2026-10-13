@@ -1,0 +1,6 @@
+fold,fit_samples,calibration_samples,fit_positive,fit_negative,calibration_positive,calibration_negative,fit_spatial_groups,calibration_spatial_groups,overlapping_spatial_groups
+1,299,168,145,154,118,50,30,1,0
+2,394,73,227,167,36,37,24,7,0
+3,382,85,214,168,49,36,24,7,0
+4,389,78,228,161,35,43,22,9,0
+5,404,63,238,166,25,38,24,7,0

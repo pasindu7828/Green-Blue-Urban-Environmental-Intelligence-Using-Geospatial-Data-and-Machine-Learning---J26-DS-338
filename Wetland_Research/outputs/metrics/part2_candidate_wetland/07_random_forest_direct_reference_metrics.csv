@@ -1,0 +1,2 @@
+candidate,threshold,samples,accuracy,balanced_accuracy,precision,recall,f1,roc_auc,pr_auc,tn,fp,fn,tp,evaluation_subset
+RF_04,0.5,50,0.88,0.8779761904761905,0.5833333333333334,0.875,0.7,0.9166666666666667,0.5308035714285715,37,5,1,7,direct_2025_lulc_reference

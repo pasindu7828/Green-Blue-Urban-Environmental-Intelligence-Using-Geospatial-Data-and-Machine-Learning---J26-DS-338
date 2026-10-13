@@ -1,0 +1,14 @@
+{
+    "selected_model": "XGB_03",
+    "frozen_threshold": 0.5,
+    "feature_count": 27,
+    "valid_prediction_pixels": 849871,
+    "valid_prediction_area_km2": 84.9871,
+    "model_positive_pixels_at_0_50": 123188,
+    "model_positive_area_ha_at_0_50": 1231.88,
+    "probability_min": 0.00022688237368129194,
+    "probability_max": 0.9995972514152527,
+    "probability_mean": 0.18051430583000183,
+    "probability_median": 0.03767675533890724,
+    "important_note": "The 0.50 model-positive mask is not yet the final candidate-wetland polygon layer. Known wetlands and likely open-water confusion have not yet been removed."
+}

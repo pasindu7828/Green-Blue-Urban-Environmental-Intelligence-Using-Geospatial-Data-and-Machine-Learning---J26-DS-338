@@ -1,0 +1,13 @@
+{
+    "input_candidates": 1097,
+    "manual_qa_reviewed": 60,
+    "high_priority_rule": "area_ha >= 5.0 AND mean_probability >= 0.75",
+    "medium_priority_rule": "(area_ha >= 1.0 AND mean_probability >= 0.75) OR (area_ha >= 5.0 AND mean_probability >= 0.65)",
+    "review_priority_rule": "all remaining MMU-filtered candidates",
+    "xgboost_threshold_changed": false,
+    "model_retrained": false,
+    "secondary_classifier_trained": false,
+    "automatic_open_water_removal": false,
+    "important_note": "Priority tiers are screening and reporting categories only. They do not represent official wetland confirmation.",
+    "manual_qa_note": "Only the 60 polygons in the stratified visual-QA sample receive manual visual retain/false-positive flags."
+}
