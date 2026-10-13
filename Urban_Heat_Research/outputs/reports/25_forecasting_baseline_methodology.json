@@ -1,0 +1,46 @@
+{
+  "step": 25,
+  "analysis": "Annual thermal-level forecasting baseline",
+  "future_framework": "future grid LST = forecast annual thermal level + forecast centered spatial anomaly",
+  "component_addressed_here": "annual thermal level only",
+  "observed_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "primary_2017_policy": "retained",
+  "secondary_2017_sensitivity": "training-year exclusion only",
+  "rolling_origin_min_origin_year": 2018,
+  "forecast_horizons_years": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "baselines": [
+    "Persistence",
+    "Expanding Mean",
+    "Rolling-3 Mean",
+    "Drift",
+    "OLS Linear Trend"
+  ],
+  "metrics": [
+    "MAE",
+    "RMSE",
+    "MAPE",
+    "R2",
+    "Bias"
+  ],
+  "selection_policy": "No final future model is selected in Step 25. Baseline leaders are reference benchmarks for Step 26/27.",
+  "post_lockbox_policy": "2025 may be used for forecasting-method development only because Step-22 independent final testing is already frozen. Step-22 claims are not revised or re-tested.",
+  "future_prediction_policy": "No final 2026-2030 grid-level LST prediction is created in Step 25."
+}
