@@ -1,0 +1,64 @@
+{
+  "step": 28,
+  "analysis": "Operational future heat prediction 2026-2030",
+  "forecast_origin_year": 2025,
+  "future_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "annual_level_method": "Expanding Mean",
+  "dynamic_predictor_methods": {
+    "NDVI": "Rolling-3 Mean",
+    "NDBI": "Rolling-3 Mean",
+    "NDWI": "Rolling-3 Mean",
+    "EVI": "Rolling-3 Mean",
+    "Albedo": "Bounded Theil-Sen Trend",
+    "NDBI_ADJ": "Rolling-3 Mean",
+    "NDVI_ADJ": "Rolling-3 Mean",
+    "NightLights": "Rolling-3 Mean",
+    "green_mask": "Rolling-3 Mean"
+  },
+  "static_predictors": [
+    "building_mask",
+    "road_mask"
+  ],
+  "structural_predictors": [
+    "dist_road",
+    "dist_main_road",
+    "dist_water",
+    "LCZ",
+    "area_name"
+  ],
+  "predictor_forecast_semantics": "Direct H1-H5 forecasts from observed history through 2025, matching Step-27 validation. Forecast future values are subsequently used to reconstruct future temporal features.",
+  "feature_engineering": {
+    "historical_reproduction_required": true,
+    "reconstruction_tolerance": 1e-08,
+    "temporal_sources": [
+      "NDVI",
+      "NDBI",
+      "NDWI",
+      "EVI",
+      "Albedo",
+      "NDBI_ADJ",
+      "NDVI_ADJ",
+      "NightLights",
+      "green_mask"
+    ],
+    "history_rule": "lag/history features are based on prior predictor values",
+    "spatial_rule": "same-year predictor-only Queen neighbour means/contrasts",
+    "target_derived_spatial_features": false
+  },
+  "production_model": {
+    "artifact": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\models\\final\\22b_production_lightgbm_anomaly_trained_2018_2025.joblib",
+    "sha256": "a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f",
+    "retrained_in_step28": false,
+    "feature_count": 93
+  },
+  "spatial_anomaly_centering": "Subtract the mean raw anomaly prediction across all 2,194 grids separately in every future year.",
+  "final_equation": "predicted grid LST = forecast annual Kaduwela thermal level + centered spatial anomaly",
+  "uncertainty_note": "Step 28 is point forecasting. Formal calibrated forecast uncertainty is handled in the later uncertainty stage; predictor and annual-level forecast errors can compound.",
+  "interpretation_note": "2026-2030 results are model-based projections under the frozen historical forecasting assumptions, not observed future temperatures."
+}
