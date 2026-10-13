@@ -1,0 +1,42 @@
+{
+  "step": "26A",
+  "analysis": "Annual thermal-level forecast model development",
+  "observed_series_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "development_targets": "2019-2023 depending on horizon",
+  "reserved_validation_target_years": [
+    2024,
+    2025
+  ],
+  "minimum_origin_year": 2018,
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "candidate_models": [
+    "Simple Exponential Smoothing",
+    "Damped Holt Trend",
+    "Theil-Sen Robust Trend"
+  ],
+  "primary_2017_policy": "retained",
+  "no2017_policy": "secondary sensitivity only; folds with fewer than four observations after removing 2017 are skipped, and comparisons use identical common folds",
+  "baseline_reference": "Exact Step-25 rolling-origin predictions filtered to the same development target years.",
+  "parameter_estimation_note": "SES and damped Holt estimate smoothing parameters using only the training history available at each rolling origin. This is ordinary within-fit parameter estimation, not a cross-origin hyperparameter search.",
+  "selection_policy": "No final model selected in Step 26A; all candidates proceed unchanged to Step 27 reserved 2024-2025 forecast validation.",
+  "future_prediction_policy": "No 2026-2030 annual-level forecast is produced in Step 26A.",
+  "spatial_model_policy": "The Step-22B LightGBM spatial-anomaly production model is not loaded, retrained, or modified."
+}

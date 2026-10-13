@@ -1,0 +1,2 @@
+model_group,method,horizon_count,mean_horizon_MAE_C,mean_horizon_RMSE_C,mean_horizon_MAPE_pct,mean_horizon_R2,mean_abs_horizon_Bias_C,selection_status,selection_rule
+Step25 baseline,Expanding Mean,5,1.0002796295785323,1.0946275622869543,2.8877227187872796,-6.596985052716905,1.0002796295785323,selected_for_step28,lowest reserved mean-horizon MAE; tie-break RMSE then absolute bias

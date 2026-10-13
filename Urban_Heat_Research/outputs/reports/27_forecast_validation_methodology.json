@@ -1,0 +1,51 @@
+{
+  "step": 27,
+  "analysis": "Reserved forecast validation",
+  "reserved_target_years": [
+    2024,
+    2025
+  ],
+  "forecast_horizons_years": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "rolling_origin_rule": "For every target/horizon pair, training history stops at origin = target year - horizon.",
+  "2025_h1_note": "The 2025 H1 forecast may use observed 2024 history because 2024 is known at the 2025 forecast origin. This is valid rolling-origin forecasting.",
+  "annual_candidates": [
+    "Persistence",
+    "Expanding Mean",
+    "Rolling-3 Mean",
+    "Drift",
+    "OLS Linear Trend",
+    "Simple Exponential Smoothing",
+    "Damped Holt Trend",
+    "Theil-Sen Robust Trend"
+  ],
+  "annual_selection_rule": "Select one method across H1-H5 by reserved mean-horizon MAE; tie-break RMSE and absolute bias.",
+  "dynamic_predictors": [
+    "NDVI",
+    "NDBI",
+    "NDWI",
+    "EVI",
+    "Albedo",
+    "NDBI_ADJ",
+    "NDVI_ADJ",
+    "NightLights",
+    "green_mask"
+  ],
+  "predictor_candidates": [
+    "Persistence",
+    "Rolling-3 Mean",
+    "Bounded OLS Trend",
+    "Bounded Theil-Sen Trend"
+  ],
+  "predictor_selection_rule": "Select one method per predictor across H1-H5 by reserved mean-horizon NMAE_SD; tie-break NRMSE_SD and absolute bias.",
+  "why_one_method_per_predictor": "Only two reserved target years are available per horizon. A single method per predictor avoids overfitting a separate method to each horizon and produces a more coherent 2026-2030 predictor path.",
+  "mape_predictors": "Not used because indices can be zero or negative.",
+  "post_step27_status": "After Step 27, 2024-2025 are validation evidence and are no longer held out. Step 28 may use all actual observations through 2025 for operational forecasting.",
+  "step22b_policy": "Production LightGBM remains frozen and is not re-tested/retrained here.",
+  "future_forecast_policy": "No 2026-2030 operational forecast is generated until Step 28."
+}

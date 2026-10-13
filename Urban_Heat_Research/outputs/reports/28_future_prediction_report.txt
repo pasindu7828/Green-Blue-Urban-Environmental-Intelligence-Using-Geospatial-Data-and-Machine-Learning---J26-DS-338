@@ -1,0 +1,45 @@
+STEP 28 - OPERATIONAL 2026-2030 FUTURE HEAT PREDICTION
+======================================================================================================================
+
+FROZEN STRATEGY
+----------------------------------------------------------------------------------------------------------------------
+Annual level: Expanding Mean
+{
+  "NDVI": "Rolling-3 Mean",
+  "NDBI": "Rolling-3 Mean",
+  "NDWI": "Rolling-3 Mean",
+  "EVI": "Rolling-3 Mean",
+  "Albedo": "Bounded Theil-Sen Trend",
+  "NDBI_ADJ": "Rolling-3 Mean",
+  "NDVI_ADJ": "Rolling-3 Mean",
+  "NightLights": "Rolling-3 Mean",
+  "green_mask": "Rolling-3 Mean"
+}
+
+ANNUAL THERMAL-LEVEL FORECAST
+----------------------------------------------------------------------------------------------------------------------
+ year  forecast_origin_year  horizon_years annual_level_method  forecast_annual_mean_lst_c
+ 2026                  2025              1      Expanding Mean                   35.511272
+ 2027                  2025              2      Expanding Mean                   35.511272
+ 2028                  2025              3      Expanding Mean                   35.511272
+ 2029                  2025              4      Expanding Mean                   35.511272
+ 2030                  2025              5      Expanding Mean                   35.511272
+
+FUTURE YEAR SUMMARY
+----------------------------------------------------------------------------------------------------------------------
+ year  grid_count  annual_level_forecast_c  mean_raw_anomaly_c  mean_centered_anomaly_c  mean_final_predicted_lst_c  median_final_predicted_lst_c  min_final_predicted_lst_c  max_final_predicted_lst_c  std_final_predicted_lst_c
+ 2026        2194                35.511272            0.303405             0.000000e+00                   35.511272                     35.340374                  29.773074                  40.494868                   1.824105
+ 2027        2194                35.511272            0.432022             0.000000e+00                   35.511272                     35.365282                  30.702580                  40.398838                   1.733548
+ 2028        2194                35.511272            0.379802            -5.181715e-17                   35.511272                     35.384774                  30.603269                  40.167033                   1.671888
+ 2029        2194                35.511272            0.470656            -5.181715e-17                   35.511272                     35.303067                  31.320412                  40.467893                   1.719049
+ 2030        2194                35.511272            0.465899             0.000000e+00                   35.511272                     35.306948                  31.325170                  40.450480                   1.720253
+
+FEATURE RECONSTRUCTION
+----------------------------------------------------------------------------------------------------------------------
+Historical 2025 engineered features reproduced: 82 checked; max absolute error=4.095421240633e-13
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------------
+Future grid LST is the frozen annual Kaduwela thermal-level forecast plus the centered Step-22B production LightGBM spatial anomaly.
+The production LightGBM was not retrained on 2026-2030 pseudo-future data.
+Future predictor values are forecasts. Therefore future LST inherits uncertainty from both predictor forecasting and annual-level forecasting.
