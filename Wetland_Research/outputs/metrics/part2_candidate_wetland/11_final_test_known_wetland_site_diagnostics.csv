@@ -1,0 +1,4 @@
+wetland_id,samples,mean_probability,min_probability,max_probability,predicted_positive,predicted_negative,positive_fraction
+W015,20,0.21496007,0.0024194138,0.77480274,5,15,0.25
+W016,19,0.5431358,0.055206936,0.9633774,9,10,0.47368421052631576
+W024,11,0.8307098,0.48073906,0.99698526,10,1,0.9090909090909091

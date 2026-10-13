@@ -1,0 +1,6 @@
+visual_qa_sample_group,flag_false_positive,retain_candidate,sample_group_total,retain_percentage_within_group
+A_top_priority,2,13,15,86.66666666666667
+B_water_signal,10,2,12,16.666666666666668
+C_vegetation_signal,11,1,12,8.333333333333334
+D_mixed_signal,12,0,12,0.0
+E_lower_support,9,0,9,0.0

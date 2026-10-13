@@ -1,0 +1,28 @@
+band,feature,source
+1,dry_blue,Sentinel-2 dry composite
+2,dry_green,Sentinel-2 dry composite
+3,dry_red,Sentinel-2 dry composite
+4,dry_nir,Sentinel-2 dry composite
+5,dry_swir1,Sentinel-2 dry composite
+6,dry_swir2,Sentinel-2 dry composite
+7,dry_ndvi,Sentinel-2 dry composite
+8,dry_mndwi,Sentinel-2 dry composite
+9,dry_ndbi,Sentinel-2 dry composite
+10,wet_blue,Sentinel-2 wet composite
+11,wet_green,Sentinel-2 wet composite
+12,wet_red,Sentinel-2 wet composite
+13,wet_nir,Sentinel-2 wet composite
+14,wet_swir1,Sentinel-2 wet composite
+15,wet_swir2,Sentinel-2 wet composite
+16,wet_ndvi,Sentinel-2 wet composite
+17,wet_mndwi,Sentinel-2 wet composite
+18,wet_ndbi,Sentinel-2 wet composite
+19,delta_ndvi_wet_minus_dry,Derived Sentinel seasonal change
+20,delta_mndwi_wet_minus_dry,Derived Sentinel seasonal change
+21,delta_ndbi_wet_minus_dry,Derived Sentinel seasonal change
+22,elevation_m,GEDTM30
+23,slope_degrees,Derived from GEDTM30
+24,distance_to_drainage_m,OSM water/drainage
+25,distance_to_road_m,OSM highways
+26,distance_to_building_m,OSM buildings
+27,building_fraction_300m,OSM buildings

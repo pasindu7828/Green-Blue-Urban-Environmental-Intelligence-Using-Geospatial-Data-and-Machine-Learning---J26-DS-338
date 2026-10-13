@@ -1,0 +1,5 @@
+analysis_probability_bin,flag_false_positive,retain_candidate,reviewed_total,retain_percentage_in_reviewed_sample
+<0.65,10,1,11,9.090909090909092
+0.65-<0.75,23,2,25,8.0
+0.75-<0.85,9,9,18,50.0
+>=0.85,2,4,6,66.66666666666667

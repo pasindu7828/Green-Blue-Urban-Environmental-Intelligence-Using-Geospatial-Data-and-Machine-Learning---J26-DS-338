@@ -1,0 +1,4 @@
+qa_surface_signal,flag_false_positive,retain_candidate,signal_total,retain_percentage_within_signal
+mixed_signal,19,11,30,36.666666666666664
+vegetation_signal,12,3,15,20.0
+water_signal,13,2,15,13.333333333333334

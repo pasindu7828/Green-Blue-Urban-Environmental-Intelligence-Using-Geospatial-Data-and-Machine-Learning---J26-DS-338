@@ -1,0 +1,2 @@
+candidate,threshold,samples,accuracy,balanced_accuracy,precision,recall,f1,roc_auc,pr_auc,tn,fp,fn,tp,evaluation_subset
+SVM_05,0.5,50,0.8,0.8809523809523809,0.4444444444444444,1.0,0.6153846153846154,0.9107142857142857,0.5166326728826729,32,10,0,8,direct_2025_lulc_reference

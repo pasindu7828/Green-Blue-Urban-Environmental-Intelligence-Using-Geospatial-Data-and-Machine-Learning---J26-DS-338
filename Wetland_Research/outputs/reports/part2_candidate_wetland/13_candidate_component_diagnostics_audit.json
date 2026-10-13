@@ -1,0 +1,19 @@
+{
+    "frozen_probability_threshold": 0.5,
+    "connectivity": 8,
+    "pixel_area_ha": 0.01,
+    "valid_study_pixels": 849871,
+    "raw_model_positive_pixels": 123188,
+    "raw_model_positive_area_ha": 1231.88,
+    "model_positive_inside_known_wetlands_pixels": 1715,
+    "model_positive_inside_known_wetlands_area_ha": 17.150000000000002,
+    "preliminary_candidate_pixels_outside_known": 121473,
+    "preliminary_candidate_area_ha_outside_known": 1214.73,
+    "preliminary_pixels_within_20m_of_known": 1659,
+    "connected_component_count": 10425,
+    "components_near_known_wetland_20m": 91,
+    "single_pixel_component_count": 4726,
+    "largest_component_area_ha": 95.78,
+    "median_component_area_ha": 0.02,
+    "important_note": "This script does not define the final candidate wetland layer. Existing known wetland pixels are excluded, while MMU selection and open-water ambiguity remain for later evidence-based post-processing."
+}

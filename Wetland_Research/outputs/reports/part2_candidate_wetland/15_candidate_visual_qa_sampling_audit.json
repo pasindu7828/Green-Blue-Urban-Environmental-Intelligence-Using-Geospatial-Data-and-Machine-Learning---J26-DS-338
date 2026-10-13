@@ -1,0 +1,32 @@
+{
+    "random_seed": 42,
+    "all_candidate_count": 1097,
+    "target_visual_qa_sample_size": 60,
+    "actual_visual_qa_sample_size": 60,
+    "already_reviewed_anchor_count": 3,
+    "manual_anchor_candidate_ids": [
+        "CW_01849",
+        "CW_05540",
+        "CW_03482"
+    ],
+    "sampling_design": {
+        "top_priority": 15,
+        "water_signal": 12,
+        "vegetation_signal": 12,
+        "mixed_signal": 12,
+        "lower_support": 9
+    },
+    "dataset_relative_thresholds": {
+        "ndvi_q25": 0.6540131243792446,
+        "ndvi_q50": 0.6748663810166446,
+        "ndvi_q75": 0.6944822431191761,
+        "mndwi_q25": -0.4855933839624578,
+        "mndwi_q50": -0.4593239086014883,
+        "mndwi_q75": -0.4172683892578914,
+        "probability_q25": 0.6691974103450775,
+        "probability_q75": 0.7475522357364034,
+        "area_q25_ha": 0.13,
+        "area_q75_ha": 0.34
+    },
+    "important_note": "QA strata are dataset-relative sampling groups only. They are not wetland classes and must not be interpreted as automatic confirmation or rejection rules."
+}

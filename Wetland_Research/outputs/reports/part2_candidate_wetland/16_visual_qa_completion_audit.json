@@ -1,0 +1,10 @@
+{
+    "visual_qa_sample_size": 60,
+    "all_sample_records_reviewed": true,
+    "retained_in_visual_qa": 16,
+    "flagged_false_positive_in_visual_qa": 44,
+    "sampling_design": "stratified_visual_qa_sample",
+    "important_statistical_warning": "The overall retained/flagged percentages from this 60-polygon sample MUST NOT be treated as population-wide false-positive or accuracy estimates for all 1,097 candidate polygons because the sample was intentionally stratified by priority, spectral signal and model support.",
+    "important_interpretation_warning": "retain_candidate means visually plausible candidate only. It does not mean confirmed or officially recognized wetland.",
+    "model_tuning_after_test": false
+}

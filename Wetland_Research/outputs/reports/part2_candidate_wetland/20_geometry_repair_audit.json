@@ -1,0 +1,37 @@
+{
+    "input_candidate_count": 1097,
+    "invalid_before_repair": 852,
+    "invalid_after_repair": 0,
+    "empty_before_repair": 0,
+    "empty_after_repair": 0,
+    "total_area_before_ha": 999.77,
+    "total_area_after_ha": 999.77,
+    "total_area_change_ha": 0.0,
+    "maximum_candidate_area_change_ha": 0.0,
+    "final_counts": {
+        "full": 1097,
+        "primary": 48,
+        "review": 1005,
+        "manual_false_positive": 44
+    },
+    "disk_validation": {
+        "full_utm_valid": true,
+        "full_utm_nonempty": true,
+        "full_wgs84_valid": true,
+        "full_wgs84_nonempty": true,
+        "primary_utm_valid": true,
+        "primary_utm_nonempty": true,
+        "primary_wgs84_valid": true,
+        "primary_wgs84_nonempty": true,
+        "review_utm_valid": true,
+        "review_utm_nonempty": true,
+        "false_positive_utm_valid": true,
+        "false_positive_utm_nonempty": true
+    },
+    "candidate_ids_changed": false,
+    "attributes_changed": false,
+    "model_changed": false,
+    "threshold_changed": false,
+    "priority_rules_changed": false,
+    "manual_qa_decisions_changed": false
+}
