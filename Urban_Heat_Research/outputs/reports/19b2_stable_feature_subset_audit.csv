@@ -1,0 +1,24 @@
+check,status,details
+step17_audit,PASS,Step 17 audit loaded and fully PASS.
+step19a_audit,PASS,Step 19A audit loaded and fully PASS.
+development_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+predictor_count,PASS,"actual=93, expected=93"
+domain_core_count,PASS,"actual=16, expected=16"
+step17_reference_reproduction_rows,PASS,"actual=20, expected=20"
+full_reference_exactly_matches_step17,PASS,full_93_reference reproduces finalized Step 17 fold metrics.
+stability_table_rows,PASS,"actual=465, expected=465"
+selection_decision_rows,PASS,"actual=1395, expected=1395"
+strict_train_years_only_for_feature_selection,PASS,Every feature-selection training end year is earlier than its validation year.
+minimum_three_year_selection_policy,PASS,2019/2020 use full-feature fallback; 2021-2023 apply train-only stability selection.
+year_predictor_always_retained,PASS,year is retained by policy in every strategy/fold.
+plus_core_domain_features_protected,PASS,All 16 domain-core predictors remain in train_only_stable_plus_core for eligible folds.
+fold_metric_rows,PASS,"actual=60, expected=60"
+prediction_rows,PASS,"actual=131640, expected=131640"
+summary_rows,PASS,"actual=12, expected=12"
+all_metrics_finite,PASS,True
+2024_loaded_or_used,PASS,No. 2024 was not loaded by Step 19B2.
+2025_loaded_or_used,PASS,No. 2025 was not loaded by Step 19B2.
+hyperparameters_retuned,PASS,No. Frozen Step 17 tuned hyperparameters were reused.
+bias_correction_applied,PASS,No bias correction occurs in Step 19B2.
+recent_year_weighting_applied,PASS,No sample weighting occurs in Step 19B2.
+final_model_selected,PASS,No. Rankings are descriptive within 19B2 only.

@@ -1,0 +1,6 @@
+spatial_fold,buffer_distance_m,heldout_grids,candidate_training_grids_before_buffer,excluded_training_grids_due_to_buffer,training_grids_after_buffer
+1,210.0,484,1710,68,1642
+2,210.0,415,1779,118,1661
+3,210.0,531,1663,109,1554
+4,210.0,382,1812,102,1710
+5,210.0,382,1812,70,1742

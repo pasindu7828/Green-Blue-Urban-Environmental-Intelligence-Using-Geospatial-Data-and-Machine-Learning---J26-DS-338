@@ -1,0 +1,5 @@
+model,development_mean_mae_rank,development_mean_rmse_rank,development_mean_r2_rank,mean_mae_rank,mae_year_wins,negative_r2_folds
+Random Forest,1,1,1,1.6,3,2
+NGBoost,2,3,2,2.4,1,2
+LightGBM,3,2,3,2.4,1,2
+XGBoost,4,4,4,3.6,0,2

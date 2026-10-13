@@ -1,0 +1,57 @@
+STEP 17 - CORRECTED + FOCUSED HYPERPARAMETER TUNING
+================================================================================================================
+
+WHY THIS VERSION WAS RUN
+----------------------------------------------------------------------------------------------------------------
+1. Preserve the original pandas/DataFrame numeric representation so the
+   untuned candidate references reproduce Step 16.
+2. Run a small focused refinement around promising boundary regions found
+   in the first broad development search.
+
+DATA POLICY
+----------------------------------------------------------------------------------------------------------------
+2015-2017: historical context used upstream for temporal feature creation.
+2018-2023: direct development/tuning rows.
+2024: NOT loaded; reserved validation remains untouched.
+2025: NOT loaded; final lockbox remains untouched.
+
+REFERENCE REPRODUCTION
+----------------------------------------------------------------------------------------------------------------
+Random Forest: PASS | MAE diff=-0.000000000000, RMSE diff=+0.000000000000, R² diff=+0.000000000000.
+XGBoost: PASS | MAE diff=+0.000000000000, RMSE diff=+0.000000000000, R² diff=+0.000000000000.
+LightGBM: PASS | MAE diff=+0.000000000000, RMSE diff=+0.000000000000, R² diff=+0.000000000000.
+NGBoost: PASS | MAE diff=+0.000000000000, RMSE diff=-0.000000000000, R² diff=-0.000000000000.
+
+VALIDATION
+----------------------------------------------------------------------------------------------------------------
+Strict expanding rolling-origin folds:
+2018 -> 2019
+2018-2019 -> 2020
+2018-2020 -> 2021
+2018-2021 -> 2022
+2018-2022 -> 2023
+
+PRIMARY OBJECTIVE
+----------------------------------------------------------------------------------------------------------------
+Mean rolling-origin validation MAE.
+
+BEST DEVELOPMENT HYPERPARAMETERS
+----------------------------------------------------------------------------------------------------------------
+Random Forest: {"bootstrap": true, "max_depth": null, "max_features": "sqrt", "max_samples": 0.7, "min_samples_leaf": 30, "min_samples_split": 5, "n_estimators": 900}
+XGBoost: {"colsample_bytree": 0.65, "gamma": 0.0, "learning_rate": 0.03, "max_depth": 1, "min_child_weight": 12, "n_estimators": 200, "reg_alpha": 0.5, "reg_lambda": 5.0, "subsample": 0.75}
+LightGBM: {"colsample_bytree": 0.4, "learning_rate": 0.03, "max_depth": 4, "min_child_samples": 40, "n_estimators": 250, "num_leaves": 31, "reg_alpha": 0.5, "reg_lambda": 5.0, "subsample": 0.6}
+NGBoost: {"base_max_depth": 1, "base_min_samples_leaf": 3, "base_min_samples_split": 10, "col_sample": 1.0, "learning_rate": 0.03, "minibatch_frac": 1.0, "n_estimators": 200}
+
+TUNED DEVELOPMENT RESULTS
+----------------------------------------------------------------------------------------------------------------
+Random Forest: mean MAE=2.919948 °C, mean RMSE=3.364573 °C, mean R²=-0.547393, negative-R² folds=2, worst-year MAE=5.017248 °C, mean MAE gap=1.748743 °C.
+LightGBM: mean MAE=3.089607 °C, mean RMSE=3.488863 °C, mean R²=-0.710469, negative-R² folds=2, worst-year MAE=4.923541 °C, mean MAE gap=2.161215 °C.
+XGBoost: mean MAE=3.096859 °C, mean RMSE=3.544467 °C, mean R²=-0.701174, negative-R² folds=2, worst-year MAE=5.097592 °C, mean MAE gap=1.561104 °C.
+NGBoost: mean MAE=3.140806 °C, mean RMSE=3.583045 °C, mean R²=-0.755620, negative-R² folds=2, worst-year MAE=5.087293 °C, mean MAE gap=1.634289 °C.
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------
+These remain tuned DEVELOPMENT candidates only.
+No final model has been selected.
+Do not use 2024 or 2025 to modify these hyperparameters.
+Next step: spatial validation of the tuned candidate configurations.

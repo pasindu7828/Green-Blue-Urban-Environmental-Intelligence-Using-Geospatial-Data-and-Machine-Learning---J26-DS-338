@@ -1,0 +1,19 @@
+check,status,details
+development_input_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+2024_loaded_or_used,PASS,No. 2024 validation data was not loaded.
+2025_loaded_or_used,PASS,No. 2025 lockbox data was not loaded.
+rolling_validation_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+expected_fold_rows,PASS,"actual=5, expected=5"
+target_in_predictors,PASS,No. LST_C excluded from NGBoost predictors.
+identifiers_in_predictors,PASS,No. grid_id and area_name excluded.
+scaling_or_imputation,PASS,None applied to NGBoost branch.
+hyperparameter_search,PASS,No. Fixed candidate configuration only.
+uncertainty_calibration,PASS,No. Raw candidate-stage NGBoost uncertainty only.
+finite_point_predictions,PASS,True
+finite_uncertainty_outputs,PASS,True
+positive_predictive_std,PASS,True
+interval_bounds_ordered,PASS,True
+coverage_values_valid,PASS,True
+probabilistic_metrics_complete,PASS,rows=5
+prior_model_reference_complete,PASS,rows=5
+final_model_selected,PASS,No. NGBoost remains a candidate model.

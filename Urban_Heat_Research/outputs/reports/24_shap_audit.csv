@@ -1,0 +1,23 @@
+check,status,details
+step23b_audit,PASS,Step-23B v2 audit verified fully PASS.
+production_model_hash,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+trajectory_input_hash,PASS,9f6e039329934bd6a4d4d020c01223f4be7ef932c0ec69dea47e4902893546a8
+production_rows,PASS,"actual=17552, expected=17552"
+production_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+unique_grids,PASS,"actual=2194, expected=2194"
+frozen_feature_count,PASS,"actual=93, expected=93"
+raw_shap_reconstruction,PASS,max_error_c=2.309263891220e-14
+centered_shap_reconstruction,PASS,max_error_c=3.019806626980e-14
+2025_local_grid_count,PASS,"rows=2194, unique_grids=2194"
+2025_top10_rows_per_grid,PASS,expected_per_grid=10
+2025_local_reconstruction,PASS,max_error_c=9.769962616701e-15
+trajectory_class_counts_preserved,PASS,2025 SHAP grid counts match Step-23B v2 class counts.
+trajectory_shap_aggregation_reconstruction,PASS,max_error=2.775557561563e-17
+trajectory_conditioned_shap_saved,PASS,"All-year, 2025, heating and cooling trajectory SHAP summaries saved."
+trajectory_figures_saved,PASS,"saved=5, expected=5"
+trajectory_shap_not_causal_claim,PASS,"Trajectory SHAP is explicitly documented as model association, not causation."
+real_boundary_loaded,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\raw\boundary\kaduwela_kmc_boundary.kml; overlap=0.9181
+map_geometry_alignment,PASS,"map_rows=2194, expected=2194"
+report_quality_spatial_pngs_saved,PASS,anomaly map + 3 top-feature maps
+future_predictions_or_future_shap_created,PASS,No. Future SHAP remains deferred until forecasting stages.
+new_test_score_created,PASS,No. Step 24 is explainability only.

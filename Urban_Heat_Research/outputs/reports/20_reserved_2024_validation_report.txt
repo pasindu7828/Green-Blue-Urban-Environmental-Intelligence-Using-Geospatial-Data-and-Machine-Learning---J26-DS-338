@@ -1,0 +1,39 @@
+STEP 20 - RESERVED 2024 TEMPORAL VALIDATION
+====================================================================================================================
+
+PURPOSE
+--------------------------------------------------------------------------------------------------------------------
+Evaluate the exact three candidates frozen in Step 19C on the first reserved unseen temporal validation year, 2024.
+
+TRAIN / VALIDATION POLICY
+--------------------------------------------------------------------------------------------------------------------
+Fit years: 2018-2023.
+Reserved validation year: 2024.
+2025 final lockbox: NOT loaded.
+No hyperparameter retuning.
+No new strategy search.
+No final model selection in Step 20.
+
+FROZEN CANDIDATES
+--------------------------------------------------------------------------------------------------------------------
+1. Random Forest raw tuned
+2. lgbm_anomaly_plus_prior_mean_level
+3. rf_anomaly_plus_prior_mean_level
+
+B5 2024 ANNUAL LEVEL
+--------------------------------------------------------------------------------------------------------------------
+Prior-mean level from 2018-2023 only = 35.729233 °C
+Actual 2024 annual mean (evaluation only, after predictions) = 35.208990 °C
+
+RESERVED 2024 RESULTS
+--------------------------------------------------------------------------------------------------------------------
+ descriptive_2024_mae_rank                       display_name      mae     rmse       r2  mape_percent  mean_prediction_bias_pred_minus_actual_c  centered_spatial_r2_evaluation_only
+                         1   rf_anomaly_plus_prior_mean_level 0.954734 1.293612 0.662380      2.763080                                  0.520243                             0.716985
+                         2 lgbm_anomaly_plus_prior_mean_level 0.958146 1.270647 0.674260      2.761722                                  0.520243                             0.728865
+                         3            Random Forest raw tuned 1.247372 1.599347 0.483933      3.465242                                 -0.872002                             0.637344
+
+INTERPRETATION POLICY
+--------------------------------------------------------------------------------------------------------------------
+These results are the first reserved 2024 temporal evidence. They must not trigger retuning or creation of a new strategy.
+Step 21 should combine pre-2024 development evidence with this reserved 2024 evidence and freeze one final strategy.
+Only after Step 21 freeze should the final strategy be retrained on 2018-2024 for the one-time 2025 test.

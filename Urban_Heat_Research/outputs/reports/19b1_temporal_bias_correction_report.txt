@@ -1,0 +1,63 @@
+STEP 19B1 - LEAKAGE-SAFE TEMPORAL BIAS CORRECTION
+================================================================================================================
+
+PURPOSE
+----------------------------------------------------------------------------------------------------------------
+Test whether annual-level temporal bias can be reduced using only
+earlier out-of-sample rolling-origin residual bias.
+
+DATA POLICY
+----------------------------------------------------------------------------------------------------------------
+Step 17 finalized rolling predictions: 2019-2023 only.
+2024 reserved validation: NOT loaded.
+2025 final lockbox: NOT loaded.
+
+ELIGIBLE STRATEGIES
+----------------------------------------------------------------------------------------------------------------
+raw_no_correction
+prior_mean_residual
+prior_median_residual
+last_prior_residual
+prior_ewma_residual_alpha_0_50
+
+CORRECTION RULE
+----------------------------------------------------------------------------------------------------------------
+For validation year t, eligible corrections use only annual
+actual-minus-predicted residual means from earlier validation years.
+The current validation year's target is never used to construct an
+eligible correction.
+
+2019 HANDLING
+----------------------------------------------------------------------------------------------------------------
+2019 has no earlier out-of-sample rolling-origin residual history.
+Therefore every eligible strategy uses zero correction in 2019.
+Primary within-experiment comparison also reports 2020-2023 separately.
+
+BEST PREDEFINED RULE WITHIN EACH MODEL
+----------------------------------------------------------------------------------------------------------------
+LightGBM: raw_no_correction | 2020-2023 mean MAE=3.511426 °C | mean RMSE=3.895392 °C | mean R²=-1.003773 | negative-R² folds=2 | worst MAE=4.923541 °C | mean MAE improvement vs raw=0.000000 °C.
+NGBoost: raw_no_correction | 2020-2023 mean MAE=3.569268 °C | mean RMSE=4.001052 °C | mean R²=-1.053161 | negative-R² folds=2 | worst MAE=5.087293 °C | mean MAE improvement vs raw=0.000000 °C.
+Random Forest: raw_no_correction | 2020-2023 mean MAE=3.282267 °C | mean RMSE=3.712386 °C | mean R²=-0.783509 | negative-R² folds=2 | worst MAE=5.017248 °C | mean MAE improvement vs raw=0.000000 °C.
+XGBoost: raw_no_correction | 2020-2023 mean MAE=3.514366 °C | mean RMSE=3.952042 °C | mean R²=-0.984637 | negative-R² folds=2 | worst MAE=5.097592 °C | mean MAE improvement vs raw=0.000000 °C.
+
+ORACLE DIAGNOSTIC
+----------------------------------------------------------------------------------------------------------------
+The oracle current-year mean-residual correction uses the current
+year target and is therefore INVALID for deployment or strategy
+selection. It is included only to quantify the theoretical benefit
+of perfectly knowing the annual thermal-level offset.
+Maximum difference between oracle R² and Step 19A centered R²: 0.000000000000.
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------
+A leakage-safe correction is useful only if historical bias carries
+forward reliably. If eligible corrections fail or worsen performance,
+that is a genuine finding that annual bias changes too abruptly to be
+fixed by simple historical residual calibration.
+
+NO FINAL SELECTION
+----------------------------------------------------------------------------------------------------------------
+Any within-model best rule reported here is only the best predefined
+19B1 development rule. It must later be compared against the stable
+feature, recent-year weighting, ensemble, and optional level/anomaly
+experiments in Step 19C before reserved-2024 validation.

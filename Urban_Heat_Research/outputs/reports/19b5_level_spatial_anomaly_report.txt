@@ -1,0 +1,77 @@
+STEP 19B5 - CAUSAL ANNUAL-LEVEL + SPATIAL-ANOMALY DECOMPOSITION
+====================================================================================================================
+
+PURPOSE
+--------------------------------------------------------------------------------------------------------------------
+Test whether weak temporal generalization is driven mainly by difficulty forecasting the annual thermal level while spatial heat pattern remains learnable.
+
+FORMULATION
+--------------------------------------------------------------------------------------------------------------------
+LST(grid, year) = annual thermal level(year) + spatial anomaly(grid, year)
+
+DATA POLICY
+--------------------------------------------------------------------------------------------------------------------
+Development rows: 2018-2023 only.
+2024 reserved validation: NOT loaded.
+2025 final lockbox: NOT loaded.
+
+ANNUAL LEVEL
+--------------------------------------------------------------------------------------------------------------------
+Eligible level forecasts use prior annual target means only.
+Rules: persistence, prior-mean, and simple OLS trend.
+Linear trend requires at least 3 prior annual years; otherwise it falls back to persistence.
+
+SPATIAL ANOMALY
+--------------------------------------------------------------------------------------------------------------------
+Random Forest and LightGBM reuse frozen Step 17 hyperparameters.
+Training anomaly targets are centered separately inside each historical training year.
+Validation predicted anomalies are re-centered using prediction mean only.
+
+ELIGIBLE STRATEGY SUMMARY
+--------------------------------------------------------------------------------------------------------------------
+                            strategy anomaly_model           level_strategy  mean_mae  std_mae  mean_rmse   mean_r2  negative_r2_count  worst_year_mae  minimum_r2  mean_abs_level_error_c  mean_abs_prediction_bias_c  descriptive_mean_mae_rank
+  lgbm_anomaly_plus_prior_mean_level      LightGBM         prior_mean_level  2.425252 1.231075   2.836690 -0.096945                  1        4.218760   -2.417959                1.628802                    1.628802                          1
+    rf_anomaly_plus_prior_mean_level Random Forest         prior_mean_level  2.521980 1.322851   2.957897 -0.139316                  1        4.582151   -2.398736                1.628802                    1.628802                          2
+ lgbm_anomaly_plus_persistence_level      LightGBM        persistence_level  2.761827 1.122763   3.165093 -0.473159                  2        4.095462   -3.324292                2.132696                    2.132696                          3
+   rf_anomaly_plus_persistence_level Random Forest        persistence_level  2.864505 1.181554   3.288944 -0.515529                  2        4.405216   -3.305070                2.132696                    2.132696                          4
+         random_forest_raw_reference Random Forest implicit_raw_model_level  2.919948 1.422646   3.364573 -0.547393                  2        5.017248   -3.506623                2.180221                    2.180221                          5
+              lightgbm_raw_reference      LightGBM implicit_raw_model_level  3.089607 1.361550   3.488863 -0.710469                  2        4.923541   -3.221697                2.497335                    2.497335                          6
+lgbm_anomaly_plus_linear_trend_level      LightGBM       linear_trend_level  3.109527 1.363600   3.519427 -1.041504                  2        4.806648   -4.785060                2.506855                    2.506855                          7
+  rf_anomaly_plus_linear_trend_level Random Forest       linear_trend_level  3.212234 1.386757   3.643748 -1.083875                  2        4.806173   -4.765838                2.506855                    2.506855                          8
+
+SPATIAL ANOMALY METRICS
+--------------------------------------------------------------------------------------------------------------------
+        model  validation_year  train_start_year  train_end_year  training_year_count  train_rows  validation_rows  predictor_count  max_abs_training_year_anomaly_mean_c  raw_predicted_anomaly_mean_c  centered_predicted_anomaly_mean_c  actual_validation_anomaly_mean_c_evaluation_only  anomaly_mae_c  anomaly_rmse_c  anomaly_r2  anomaly_negative_r2  validation_target_used_for_anomaly_training  validation_target_used_for_prediction_recentering
+Random Forest             2019              2018            2018                    1        2194             2194               93                          1.139977e-15                      0.075402                       0.000000e+00                                     -1.554515e-15       1.452317        1.913445    0.433106                False                                        False                                              False
+Random Forest             2020              2018            2019                    2        4388             2194               93                          1.554515e-15                     -0.714784                      -2.072686e-16                                      2.176321e-15       3.100956        4.210104    0.471629                False                                        False                                              False
+Random Forest             2021              2018            2020                    3        6582             2194               93                          2.176321e-15                      1.154338                       0.000000e+00                                     -3.109029e-15       1.155229        1.551475    0.567321                False                                        False                                              False
+Random Forest             2022              2018            2021                    4        8776             2194               93                          3.989921e-15                      0.386877                      -5.181715e-17                                     -3.264481e-15       1.607213        2.077426    0.612157                False                                        False                                              False
+Random Forest             2023              2018            2022                    5       10970             2194               93                          3.989921e-15                      0.583747                       5.181715e-17                                     -1.554515e-16       1.057953        1.435624    0.524709                False                                        False                                              False
+     LightGBM             2019              2018            2018                    1        2194             2194               93                          1.139977e-15                     -0.044963                      -5.181715e-17                                     -1.554515e-15       1.356717        1.762648    0.518938                False                                        False                                              False
+     LightGBM             2020              2018            2019                    2        4388             2194               93                          1.554515e-15                     -1.063290                      -2.072686e-16                                      2.176321e-15       2.746466        3.679250    0.596473                False                                        False                                              False
+     LightGBM             2021              2018            2020                    3        6582             2194               93                          2.176321e-15                      1.809412                       2.072686e-16                                     -3.109029e-15       1.177616        1.550697    0.567754                False                                        False                                              False
+     LightGBM             2022              2018            2021                    4        8776             2194               93                          3.989921e-15                      0.016148                       5.181715e-17                                     -3.264481e-15       1.546683        2.023252    0.632121                False                                        False                                              False
+     LightGBM             2023              2018            2022                    5       10970             2194               93                          3.989921e-15                      0.428905                       0.000000e+00                                     -1.554515e-16       1.071974        1.464366    0.505487                False                                        False                                              False
+
+ORACLE DIAGNOSTIC - INELIGIBLE
+--------------------------------------------------------------------------------------------------------------------
+The oracle uses the actual current validation-year mean LST and is target-leaking by design.
+                             strategy anomaly_model  mean_mae  mean_rmse  mean_r2  minimum_r2
+lgbm_anomaly_plus_oracle_actual_level      LightGBM  1.579891   2.096043 0.564155    0.505487
+  rf_anomaly_plus_oracle_actual_level Random Forest  1.674734   2.237615 0.521784    0.433106
+
+STRUCTURAL DIAGNOSTIC SUMMARY
+--------------------------------------------------------------------------------------------------------------------
+        model  raw_mean_mae  raw_mean_r2  mean_spatial_anomaly_mae_c  mean_spatial_anomaly_r2  oracle_level_mean_mae_ineligible  oracle_level_mean_r2_ineligible  persistence_level_mean_mae  persistence_level_mean_r2  persistence_level_mean_abs_level_error_c  prior_mean_level_mean_mae  prior_mean_level_mean_r2  prior_mean_level_mean_abs_level_error_c  linear_trend_level_mean_mae  linear_trend_level_mean_r2  linear_trend_level_mean_abs_level_error_c
+Random Forest      2.919948    -0.547393                    1.674734                 0.521784                          1.674734                         0.521784                    2.864505                  -0.515529                                  2.132696                   2.521980                 -0.139316                                 1.628802                     3.212234                   -1.083875                                   2.506855
+     LightGBM      3.089607    -0.710469                    1.579891                 0.564155                          1.579891                         0.564155                    2.761827                  -0.473159                                  2.132696                   2.425252                 -0.096945                                 1.628802                     3.109527                   -1.041504                                   2.506855
+
+INTERPRETATION
+--------------------------------------------------------------------------------------------------------------------
+If anomaly R² stays positive while causal final-LST R² remains weak because annual-level forecast error is large, annual thermal level is supported as a major operational bottleneck.
+If oracle-level predictions are strong but causal level forecasts are weak, the decomposition is informative but does not yet solve future absolute-LST forecasting.
+If anomaly skill itself is weak, the annual-level hypothesis alone is insufficient.
+
+NO FINAL MODEL SELECTION
+--------------------------------------------------------------------------------------------------------------------
+Step 19B5 remains development evidence only. Step 19C must compare legitimate Step 19 strategies before 2024.

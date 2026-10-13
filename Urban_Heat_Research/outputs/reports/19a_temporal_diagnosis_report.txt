@@ -1,0 +1,70 @@
+STEP 19A - TEMPORAL DIAGNOSIS
+================================================================================================================
+
+SCOPE
+----------------------------------------------------------------------------------------------------------------
+Diagnosis only. No temporal improvement strategy was applied.
+2018-2023 development data only.
+2024 reserved validation was NOT loaded.
+2025 final lockbox was NOT loaded.
+
+WHY NEGATIVE R2 MATTERS
+----------------------------------------------------------------------------------------------------------------
+R² = 1 - SSE/TSS.
+A negative R² occurs when model squared error (SSE) exceeds the
+within-year total variation around that year's observed mean (TSS).
+
+PROBLEM-YEAR MODEL EVIDENCE
+----------------------------------------------------------------------------------------------------------------
+2021 | Random Forest: raw R²=-0.268325, SSE/TSS=1.268325, bias=+2.082300 °C, bias MSE share=0.614516, centered spatial R²=0.511081, residual Moran I=0.560895, p=0.001000.
+2021 | XGBoost: raw R²=-1.060831, SSE/TSS=2.060831, bias=+2.891864 °C, bias MSE share=0.729441, centered spatial R²=0.442424, residual Moran I=0.579340, p=0.001000.
+2021 | LightGBM: raw R²=-1.505066, SSE/TSS=2.505066, bias=+3.373606 °C, bias MSE share=0.816670, centered spatial R²=0.540746, residual Moran I=0.560408, p=0.001000.
+2021 | NGBoost: raw R²=-1.317618, SSE/TSS=2.317618, bias=+3.146919 °C, bias MSE share=0.768080, centered spatial R²=0.462497, residual Moran I=0.574959, p=0.001000.
+2023 | Random Forest: raw R²=-3.506623, SSE/TSS=4.506623, bias=+4.158907 °C, bias MSE share=0.885086, centered spatial R²=0.482125, residual Moran I=0.561909, p=0.001000.
+2023 | XGBoost: raw R²=-3.413657, SSE/TSS=4.413657, bias=+4.106557 °C, bias MSE share=0.881121, centered spatial R²=0.475307, residual Moran I=0.500725, p=0.001000.
+2023 | LightGBM: raw R²=-3.221697, SSE/TSS=4.221697, bias=+4.014027 °C, bias MSE share=0.880140, centered spatial R²=0.493988, residual Moran I=0.537745, p=0.001000.
+2023 | NGBoost: raw R²=-3.439036, SSE/TSS=4.439036, bias=+4.120624 °C, bias MSE share=0.882096, centered spatial R²=0.476618, residual Moran I=0.497463, p=0.001000.
+
+YEAR-LEVEL DISTRIBUTION SHIFT
+----------------------------------------------------------------------------------------------------------------
+2019: mean PSI=0.313550, max PSI=3.122547, features PSI>=0.25=29, features |SMD|>=0.50=15.
+2020: mean PSI=0.250731, max PSI=2.476085, features PSI>=0.25=22, features |SMD|>=0.50=18.
+2021: mean PSI=0.160845, max PSI=2.002398, features PSI>=0.25=14, features |SMD|>=0.50=5.
+2022: mean PSI=0.267594, max PSI=3.485683, features PSI>=0.25=24, features |SMD|>=0.50=5.
+2023: mean PSI=0.132971, max PSI=2.889620, features PSI>=0.25=14, features |SMD|>=0.50=5.
+
+TOP DIAGNOSTICALLY UNSTABLE FEATURES
+----------------------------------------------------------------------------------------------------------------
+These are evidence flags only; they are NOT selected or removed in 19A.
+green_mask_delta1: signals=3, rho range=0.891033, sign flips=3, 2021 rho jump=-0.419407, 2023 rho jump=-0.209526, mean PSI=0.426680, max PSI=0.695249.
+NDVI_ADJ_nbr_mean: signals=3, rho range=0.795748, sign flips=2, 2021 rho jump=-0.367845, 2023 rho jump=-0.187114, mean PSI=0.237458, max PSI=0.507886.
+NDVI_ADJ: signals=3, rho range=0.785958, sign flips=2, 2021 rho jump=-0.345444, 2023 rho jump=-0.190793, mean PSI=0.182290, max PSI=0.372851.
+NDVI_nbr_mean: signals=3, rho range=0.741453, sign flips=2, 2021 rho jump=-0.318835, 2023 rho jump=-0.181336, mean PSI=0.182512, max PSI=0.369966.
+NDBI_ADJ_delta1: signals=3, rho range=0.514090, sign flips=4, 2021 rho jump=0.324353, 2023 rho jump=0.185219, mean PSI=0.966732, max PSI=3.122547.
+Albedo_delta1: signals=3, rho range=0.432560, sign flips=0, 2021 rho jump=0.300024, 2023 rho jump=0.096897, mean PSI=0.512528, max PSI=1.063225.
+green_mask_nbr_mean: signals=2, rho range=0.801656, sign flips=2, 2021 rho jump=-0.352897, 2023 rho jump=-0.223927, mean PSI=0.046304, max PSI=0.087681.
+green_mask: signals=2, rho range=0.769125, sign flips=2, 2021 rho jump=-0.319536, 2023 rho jump=-0.227609, mean PSI=0.035552, max PSI=0.088605.
+ndvi_x_green_mask: signals=2, rho range=0.757357, sign flips=2, 2021 rho jump=-0.312643, 2023 rho jump=-0.221264, mean PSI=0.026162, max PSI=0.053715.
+NDWI_nbr_mean: signals=2, rho range=0.736513, sign flips=2, 2021 rho jump=0.299205, 2023 rho jump=0.169342, mean PSI=0.153952, max PSI=0.315411.
+NDBI_ADJ_hist3_slope: signals=2, rho range=0.619586, sign flips=4, 2021 rho jump=0.016929, 2023 rho jump=0.010141, mean PSI=0.484937, max PSI=0.959325.
+NDBI_hist3_slope: signals=2, rho range=0.596379, sign flips=3, 2021 rho jump=0.032274, 2023 rho jump=0.030393, mean PSI=0.262447, max PSI=0.554170.
+ndbi_x_vegetation_deficit: signals=2, rho range=0.529939, sign flips=3, 2021 rho jump=-0.236039, 2023 rho jump=-0.220860, mean PSI=0.161852, max PSI=0.277873.
+green_mask_lag2: signals=2, rho range=0.522278, sign flips=0, 2021 rho jump=-0.260918, 2023 rho jump=-0.254231, mean PSI=0.129403, max PSI=0.317803.
+NDVI_ADJ_lag2: signals=2, rho range=0.519544, sign flips=0, 2021 rho jump=-0.297642, 2023 rho jump=-0.205697, mean PSI=0.330142, max PSI=0.778399.
+NightLights_hist3_slope: signals=2, rho range=0.500947, sign flips=1, 2021 rho jump=-0.006415, 2023 rho jump=-0.287746, mean PSI=0.868548, max PSI=2.889620.
+NDVI_ADJ_delta1: signals=2, rho range=0.487710, sign flips=0, 2021 rho jump=-0.243079, 2023 rho jump=-0.201630, mean PSI=1.125583, max PSI=2.023714.
+NDWI_delta1: signals=2, rho range=0.458272, sign flips=0, 2021 rho jump=0.211236, 2023 rho jump=0.287371, mean PSI=0.605098, max PSI=0.911243.
+NDBI_delta1: signals=2, rho range=0.455822, sign flips=4, 2021 rho jump=0.285950, 2023 rho jump=0.180285, mean PSI=0.532878, max PSI=1.732926.
+NDVI_lag2: signals=2, rho range=0.455045, sign flips=0, 2021 rho jump=-0.270221, 2023 rho jump=-0.207897, mean PSI=0.206196, max PSI=0.533222.
+
+INTERPRETATION POLICY
+----------------------------------------------------------------------------------------------------------------
+Step 19A does not automatically claim one cause.
+The outputs separate annual-level bias, within-year spatial-pattern error,
+feature distribution shift, changing feature-LST relationships,
+residual-feature structure, and residual spatial clustering.
+
+NEXT
+----------------------------------------------------------------------------------------------------------------
+Use this diagnosis to predefine justified Step 19B experiments.
+Do not use 2024 or 2025 to design those experiments.

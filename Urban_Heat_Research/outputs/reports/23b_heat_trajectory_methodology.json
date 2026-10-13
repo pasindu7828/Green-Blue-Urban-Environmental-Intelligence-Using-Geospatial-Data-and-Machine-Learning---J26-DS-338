@@ -1,0 +1,63 @@
+{
+  "step": "23B",
+  "version": "relative_sen_v2",
+  "analysis": "Robust five-class relative spatial heat trajectory classification",
+  "historical_period": "2015-2025",
+  "classes": [
+    "Persistent Cool",
+    "Diminishing",
+    "Emerging",
+    "Intensifying",
+    "Persistent Hot"
+  ],
+  "classification_scope": "relative spatial heat trajectory within Kaduwela; not an absolute warming/cooling significance claim",
+  "relative_heat_definition": "within-year percentile rank of observed LST_C among all 2,194 grids",
+  "direction_definition": "Theil-Sen slope of yearly relative heat percentile across all available years",
+  "baseline_status_window": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "recent_status_window": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "status_statistic": "median",
+  "reference_thresholds": {
+    "hot_threshold": 0.75,
+    "stable_warm_cool_split": 0.5,
+    "relative_sen_slope_threshold_percentile_per_year": 0.01,
+    "approximate_decadal_relative_change_equivalent": 0.1
+  },
+  "rules": [
+    "Emerging: relative Sen slope >= +0.01/year, baseline < 0.75, recent >= 0.75",
+    "Intensifying: relative Sen slope >= +0.01/year and not Emerging",
+    "Diminishing: relative Sen slope <= -0.01/year",
+    "Persistent Hot: abs(relative Sen slope) < 0.01/year and long-term relative heat median >= 0.50",
+    "Persistent Cool: abs(relative Sen slope) < 0.01/year and long-term relative heat median < 0.50"
+  ],
+  "step23_absolute_lst_role": "Mann-Kendall p/q and absolute LST Sen slope retained as separate inferential/descriptive evidence; not overwritten by trajectory labels",
+  "2017_policy": {
+    "primary": "2017 retained",
+    "secondary": "full relative-trajectory method repeated with 2017 omitted"
+  },
+  "threshold_sensitivity": {
+    "hot_thresholds": [
+      0.7,
+      0.75,
+      0.8
+    ],
+    "relative_slope_thresholds": [
+      0.008,
+      0.01,
+      0.012
+    ],
+    "stable_split": 0.5,
+    "purpose": "robustness only; reference thresholds are not selected by optimizing class counts"
+  }
+}

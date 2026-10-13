@@ -1,0 +1,273 @@
+{
+  "2024_used": false,
+  "2025_used": false,
+  "development_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "focused_configs": {
+    "LightGBM": [
+      {
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_samples": 20,
+        "n_estimators": 200,
+        "num_leaves": 31,
+        "reg_alpha": 0.5,
+        "reg_lambda": 3.0,
+        "subsample": 0.6
+      },
+      {
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_samples": 20,
+        "n_estimators": 150,
+        "num_leaves": 15,
+        "reg_alpha": 0.5,
+        "reg_lambda": 3.0,
+        "subsample": 0.6
+      },
+      {
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_samples": 40,
+        "n_estimators": 200,
+        "num_leaves": 15,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.6
+      },
+      {
+        "colsample_bytree": 0.4,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_samples": 40,
+        "n_estimators": 150,
+        "num_leaves": 15,
+        "reg_alpha": 1.0,
+        "reg_lambda": 5.0,
+        "subsample": 0.5
+      },
+      {
+        "colsample_bytree": 0.4,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_samples": 40,
+        "n_estimators": 250,
+        "num_leaves": 31,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.6
+      },
+      {
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_samples": 40,
+        "n_estimators": 200,
+        "num_leaves": 31,
+        "reg_alpha": 1.0,
+        "reg_lambda": 5.0,
+        "subsample": 0.6
+      }
+    ],
+    "NGBoost": [
+      {
+        "base_max_depth": 2,
+        "base_min_samples_leaf": 3,
+        "base_min_samples_split": 10,
+        "col_sample": 1.0,
+        "learning_rate": 0.03,
+        "minibatch_frac": 1.0,
+        "n_estimators": 250
+      },
+      {
+        "base_max_depth": 1,
+        "base_min_samples_leaf": 3,
+        "base_min_samples_split": 10,
+        "col_sample": 1.0,
+        "learning_rate": 0.03,
+        "minibatch_frac": 1.0,
+        "n_estimators": 200
+      },
+      {
+        "base_max_depth": 2,
+        "base_min_samples_leaf": 5,
+        "base_min_samples_split": 10,
+        "col_sample": 1.0,
+        "learning_rate": 0.03,
+        "minibatch_frac": 1.0,
+        "n_estimators": 200
+      },
+      {
+        "base_max_depth": 2,
+        "base_min_samples_leaf": 10,
+        "base_min_samples_split": 20,
+        "col_sample": 1.0,
+        "learning_rate": 0.02,
+        "minibatch_frac": 1.0,
+        "n_estimators": 200
+      },
+      {
+        "base_max_depth": 1,
+        "base_min_samples_leaf": 5,
+        "base_min_samples_split": 10,
+        "col_sample": 1.0,
+        "learning_rate": 0.02,
+        "minibatch_frac": 1.0,
+        "n_estimators": 300
+      },
+      {
+        "base_max_depth": 2,
+        "base_min_samples_leaf": 5,
+        "base_min_samples_split": 20,
+        "col_sample": 1.0,
+        "learning_rate": 0.03,
+        "minibatch_frac": 1.0,
+        "n_estimators": 150
+      }
+    ],
+    "Random Forest": [
+      {
+        "bootstrap": true,
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_samples": 0.7,
+        "min_samples_leaf": 20,
+        "min_samples_split": 5,
+        "n_estimators": 900
+      },
+      {
+        "bootstrap": true,
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_samples": 0.7,
+        "min_samples_leaf": 30,
+        "min_samples_split": 5,
+        "n_estimators": 900
+      },
+      {
+        "bootstrap": true,
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_samples": 0.6,
+        "min_samples_leaf": 40,
+        "min_samples_split": 10,
+        "n_estimators": 700
+      },
+      {
+        "bootstrap": true,
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_samples": 0.6,
+        "min_samples_leaf": 30,
+        "min_samples_split": 10,
+        "n_estimators": 700
+      },
+      {
+        "bootstrap": true,
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_samples": 0.6,
+        "min_samples_leaf": 20,
+        "min_samples_split": 10,
+        "n_estimators": 700
+      },
+      {
+        "bootstrap": true,
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_samples": 0.5,
+        "min_samples_leaf": 30,
+        "min_samples_split": 20,
+        "n_estimators": 500
+      }
+    ],
+    "XGBoost": [
+      {
+        "colsample_bytree": 0.65,
+        "gamma": 0.0,
+        "learning_rate": 0.03,
+        "max_depth": 2,
+        "min_child_weight": 12,
+        "n_estimators": 200,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.75
+      },
+      {
+        "colsample_bytree": 0.65,
+        "gamma": 0.0,
+        "learning_rate": 0.03,
+        "max_depth": 1,
+        "min_child_weight": 12,
+        "n_estimators": 200,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.75
+      },
+      {
+        "colsample_bytree": 0.65,
+        "gamma": 0.0,
+        "learning_rate": 0.03,
+        "max_depth": 2,
+        "min_child_weight": 16,
+        "n_estimators": 200,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.75
+      },
+      {
+        "colsample_bytree": 0.6,
+        "gamma": 0.0,
+        "learning_rate": 0.02,
+        "max_depth": 2,
+        "min_child_weight": 20,
+        "n_estimators": 250,
+        "reg_alpha": 0.5,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      {
+        "colsample_bytree": 0.65,
+        "gamma": 0.05,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 16,
+        "n_estimators": 150,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.75
+      },
+      {
+        "colsample_bytree": 0.6,
+        "gamma": 0.05,
+        "learning_rate": 0.02,
+        "max_depth": 3,
+        "min_child_weight": 16,
+        "n_estimators": 200,
+        "reg_alpha": 1.0,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      }
+    ]
+  },
+  "primary_objective": "mean rolling-origin validation MAE",
+  "repro_tolerance": 1e-06,
+  "rolling_validation_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "step": 17,
+  "version": "corrected_focused_v2"
+}

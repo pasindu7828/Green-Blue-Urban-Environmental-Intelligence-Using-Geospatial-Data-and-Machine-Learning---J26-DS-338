@@ -1,0 +1,35 @@
+STEP 22 - FINAL UNSEEN 2025 LOCKBOX TEST
+====================================================================================================================
+
+FINAL FROZEN STRATEGY
+--------------------------------------------------------------------------------------------------------------------
+Strategy: lgbm_anomaly_plus_prior_mean_level
+Base model: LightGBM
+Model training years: 2018-2024
+Target: within-year spatial LST anomaly
+Frozen feature count: 93
+Annual-level rule: prior mean
+Frozen 2025 annual-level forecast: 35.654913 °C
+
+FINAL UNSEEN 2025 PERFORMANCE
+--------------------------------------------------------------------------------------------------------------------
+MAE: 1.515554 °C
+RMSE: 1.940721 °C
+R²: 0.523574
+MAPE: 4.544579%
+Bias (predicted - actual): +1.244434 °C
+Centered spatial R²: 0.719464
+
+ANNUAL LEVEL
+--------------------------------------------------------------------------------------------------------------------
+Frozen forecast annual mean: 35.654913 °C
+Actual 2025 annual mean: 34.410479 °C
+Annual-level forecast error: +1.244434 °C
+
+LOCKBOX POLICY
+--------------------------------------------------------------------------------------------------------------------
+The 2025 result is the final one-time untouched test result. No model, feature, hyperparameter, or annual-level-rule changes may be made in response to this result.
+
+INTERPRETATION NOTE
+--------------------------------------------------------------------------------------------------------------------
+This test evaluates the frozen LST strategy using the prepared 2025 predictor set. Future 2026+ forecasting requires future predictor forecasting/scenarios before the LST model is applied.
