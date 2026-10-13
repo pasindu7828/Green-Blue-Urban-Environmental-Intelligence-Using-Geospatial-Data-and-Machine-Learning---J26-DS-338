@@ -1,0 +1,40 @@
+STEP 23B v2 - ROBUST FIVE-CLASS RELATIVE HEAT TRAJECTORY CLASSIFICATION
+====================================================================================================================
+
+METHOD
+--------------------------------------------------------------------------------------------------------------------
+Relative heat = within-year percentile rank of observed LST_C.
+Trajectory direction = Theil-Sen slope across all years 2015-2025.
+Baseline heat status = median percentile over 2015-2019.
+Recent heat status = median percentile over 2021-2025.
+Hot threshold = 0.75.
+Stable split = 0.50.
+Operational direction threshold = ±0.010 percentile/year.
+
+CLASS DISTRIBUTION
+--------------------------------------------------------------------------------------------------------------------
+trajectory_class  grid_count  percent_of_grids
+ Persistent Cool         514         23.427530
+     Diminishing         560         25.524157
+        Emerging          85          3.874202
+    Intensifying         456         20.783956
+  Persistent Hot         579         26.390155
+
+EVIDENCE DIAGNOSTICS
+--------------------------------------------------------------------------------------------------------------------
+trajectory_class  grid_count  mean_relative_sen_slope  median_relative_sen_slope  relative_slope_ci_excludes_zero_count  mean_absolute_lst_sen_slope_c_per_year  median_absolute_lst_sen_slope_c_per_year  raw_absolute_mk_significant_count  fdr_absolute_mk_significant_count  relative_vs_absolute_direction_agree_count  relative_slope_ci_excludes_zero_percent  relative_vs_absolute_direction_agree_percent
+     Diminishing         560                -0.020551                  -0.017965                                     35                               -0.380746                                 -0.370235                                 97                                  0                                         560                                 6.250000                                    100.000000
+        Emerging          85                 0.024944                   0.021675                                     14                                0.033070                                  0.016376                                  0                                  0                                          52                                16.470588                                     61.176471
+    Intensifying         456                 0.022126                   0.018543                                     26                               -0.051246                                 -0.058971                                  0                                  0                                         141                                 5.701754                                     30.921053
+ Persistent Cool         514                -0.000257                  -0.000456                                      0                               -0.220322                                 -0.217922                                 14                                  0                                         514                                 0.000000                                    100.000000
+  Persistent Hot         579                -0.000360                  -0.000285                                      1                               -0.197137                                 -0.194755                                  5                                  0                                         579                                 0.172712                                    100.000000
+
+NO-2017 ROBUSTNESS
+--------------------------------------------------------------------------------------------------------------------
+Trajectory class unchanged without 2017: 80.40%
+Median absolute relative-Sen-slope change without 2017: 0.003646 percentile/year
+
+INTERPRETATION
+--------------------------------------------------------------------------------------------------------------------
+These labels describe each grid's relative spatial heat trajectory inside Kaduwela. They do not claim statistically significant absolute LST warming/cooling.
+Step-23 absolute LST Mann-Kendall and Sen-slope evidence is preserved in the per-grid output and should be reported separately.

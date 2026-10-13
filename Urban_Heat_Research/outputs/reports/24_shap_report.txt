@@ -1,0 +1,64 @@
+STEP 24 - SHAP EXPLAINABILITY
+====================================================================================================================
+
+MODEL SCOPE
+--------------------------------------------------------------------------------------------------------------------
+Production model: LightGBM spatial-anomaly model trained on 2018-2025.
+Target: within-year spatial LST anomaly.
+SHAP does not explain the annual thermal-level component in this step.
+Future 2026-2030 SHAP is deferred until future forecasts exist.
+
+CENTERED SHAP
+--------------------------------------------------------------------------------------------------------------------
+Year-centered SHAP contributions were calculated so their row sum reconstructs the frozen centered spatial-anomaly prediction.
+Positive contribution = pushes the grid hotter relative to Kaduwela's annual thermal level.
+Negative contribution = pushes the grid cooler relative to Kaduwela's annual thermal level.
+
+TOP 10 GLOBAL FEATURES
+--------------------------------------------------------------------------------------------------------------------
+ rank                   feature  mean_abs_centered_shap_c  mean_centered_shap_c  mean_abs_raw_shap_c
+    1           NDBI_hist3_mean                  0.471481          1.429526e-18             0.471601
+    2 ndbi_x_vegetation_deficit                  0.255115         -2.711039e-17             0.261641
+    3             NDBI_ADJ_lag2                  0.248825         -5.491341e-17             0.253009
+    4               NDWI_delta1                  0.216376         -4.162308e-17             0.226993
+    5           NDVI_ADJ_delta1                  0.213792         -1.663801e-16             0.234436
+    6                      NDBI                  0.201121         -1.320414e-18             0.205137
+    7                EVI_delta1                  0.129202         -5.569459e-18             0.136880
+    8       NDBI_ADJ_hist3_mean                  0.126053         -1.614384e-17             0.125098
+    9         green_mask_delta1                  0.125510         -1.142277e-17             0.139778
+   10                 NDBI_lag2                  0.125060          1.876253e-17             0.124303
+
+TRAJECTORY CLASS COUNTS JOINED TO 2025 SHAP
+--------------------------------------------------------------------------------------------------------------------
+trajectory_class  grid_count
+ Persistent Cool         514
+     Diminishing         560
+        Emerging          85
+    Intensifying         456
+  Persistent Hot         579
+
+TRAJECTORY-CONDITIONED SHAP
+--------------------------------------------------------------------------------------------------------------------
+SHAP patterns are summarized separately for Persistent Hot, Intensifying, Emerging, Diminishing and Persistent Cool grids.
+These are model-based associations with each trajectory class. They are not causal explanations of how the trajectory formed.
+
+SHAP RECONSTRUCTION AUDIT
+--------------------------------------------------------------------------------------------------------------------
+ year  rows  raw_prediction_mean_c  centered_prediction_mean_c  centered_shap_sum_mean_c  max_centered_reconstruction_error_c
+ 2018  2194               0.059912               -5.181715e-17             -3.627201e-16                         1.332268e-14
+ 2019  2194              -0.042890               -5.181715e-17              5.181715e-17                         1.598721e-14
+ 2020  2194              -0.234877               -1.036343e-16             -3.419932e-15                         3.019807e-14
+ 2021  2194               0.145685                0.000000e+00             -5.181715e-16                         1.243450e-14
+ 2022  2194              -0.113884                0.000000e+00              1.036343e-16                         1.243450e-14
+ 2023  2194               0.038324                1.036343e-16              2.590858e-16                         8.881784e-15
+ 2024  2194               0.123750               -5.181715e-17             -4.145372e-16                         9.769963e-15
+ 2025  2194               0.029250                1.036343e-16              0.000000e+00                         9.769963e-15
+
+REAL KADUWELA BOUNDARY
+--------------------------------------------------------------------------------------------------------------------
+Boundary source: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\raw\boundary\kaduwela_kmc_boundary.kml
+Grid overlap fraction: 0.9181
+
+IMPORTANT
+--------------------------------------------------------------------------------------------------------------------
+Step 24 explains the final production model. It does not create a new held-out accuracy result.
