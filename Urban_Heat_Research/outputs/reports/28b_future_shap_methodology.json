@@ -1,0 +1,32 @@
+{
+  "step": "28B",
+  "version": "future_centered_shap_v1",
+  "analysis": "Future SHAP explainability for 2026-2030",
+  "explained_model": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\models\\final\\22b_production_lightgbm_anomaly_trained_2018_2025.joblib",
+  "model_type": "LGBMRegressor",
+  "model_target": "within-year spatial LST anomaly",
+  "feature_count": 93,
+  "future_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "future_rows": 10970,
+  "unique_grids": 2194,
+  "shap_method": "TreeSHAP",
+  "raw_shap_definition": "Feature contributions to the raw Step-22B LightGBM spatial-anomaly output.",
+  "centered_shap_definition": "Within-year raw SHAP contribution minus the same feature's mean raw SHAP contribution across all 2,194 grids in that year.",
+  "centered_shap_identity": "sum(centered feature SHAP values) = Step-28 centered model-predicted spatial anomaly.",
+  "future_lst_identity": "Step-28 final grid LST = forecast annual Kaduwela thermal level + centered spatial anomaly.",
+  "annual_level_explanation": "Not attributed by SHAP. The citywide annual level is produced by the separate frozen annual forecasting branch.",
+  "global_importance_definition": "Mean absolute centered SHAP contribution across all 10,970 2026-2030 future grid-year rows.",
+  "yearly_importance_definition": "Mean absolute centered SHAP contribution across 2,194 grids within each future year.",
+  "local_top_k": 10,
+  "spatial_map_top_feature_count_per_year": 3,
+  "interpretation": "Positive centered SHAP pushes a grid hotter relative to Kaduwela's annual thermal level; negative centered SHAP pushes it cooler relative to that level.",
+  "causal_warning": "SHAP explains the fitted model and forecast inputs. It does not prove causal environmental effects.",
+  "forecast_input_warning": "2026-2030 predictor values are forecasts rather than observed future measurements, so future SHAP explanations inherit forecast-input uncertainty.",
+  "evaluation_warning": "Step 28B creates no new accuracy, validation, or test score."
+}

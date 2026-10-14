@@ -1,0 +1,22 @@
+check,status,details
+canonical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+step26a_audit,PASS,Step-26A audit verified fully PASS.
+step26b_audit,PASS,Step-26B audit verified fully PASS.
+annual_reserved_targets_only,PASS,"[2024, 2025]"
+annual_training_precedes_target,PASS,All annual training histories stop before target year.
+annual_origin_matches_cutoff,PASS,Annual origin equals final observed training year.
+annual_methods_complete,PASS,8 fixed annual methods evaluated.
+annual_horizons_complete,PASS,H1-H5 evaluated.
+annual_expected_reserved_rows,PASS,"actual=80, expected=80"
+annual_final_selection_unique,PASS,selected=Expanding Mean
+predictor_reserved_targets_only,PASS,"[2024, 2025]"
+predictor_training_precedes_target,PASS,All predictor histories stop before target year.
+predictor_origin_matches_cutoff,PASS,Predictor origin equals final observed training year.
+predictor_expected_fold_rows,PASS,"actual=360, expected=360"
+predictor_methods_horizons_complete,PASS,All frozen methods evaluated across H1-H5 for every dynamic predictor.
+predictor_range_constraints,PASS,All bounded predictor forecasts remain inside origin-known range.
+one_final_method_per_dynamic_predictor,PASS,"selected_predictors=9, expected=9"
+no_hyperparameter_tuning,PASS,Step 27 evaluates only previously frozen definitions.
+final_strategy_freeze_written,PASS,Selected forecast strategies frozen for Step 28.
+no_2026_2030_operational_forecast,PASS,Step 27 contains validation only.
+step22b_model_untouched,PASS,Production spatial-anomaly LightGBM is not loaded or changed.

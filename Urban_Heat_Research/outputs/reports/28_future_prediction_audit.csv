@@ -1,0 +1,19 @@
+check,status,details
+step27_audit,PASS,Step-27 strict audit verified fully PASS.
+step27_strategy_hash,PASS,2d7ffeccc409d3300d0f261c79735ac14fe37fc93b6ac9631ebb4dfc542afc9b
+production_model_hash_before_after,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+historical_feature_reconstruction,PASS,"features_checked=82, max_error=4.095421240633e-13"
+future_years,PASS,"[2026, 2027, 2028, 2029, 2030]"
+future_base_rows,PASS,"actual=10970, expected=10970"
+future_rows_per_year,PASS,2194 grids/year
+frozen_feature_count,PASS,"actual=93, expected=93"
+future_feature_matrix_finite,PASS,"rows=10970, cols=93"
+future_feature_matrix_no_missing,PASS,missing_cells=0
+future_feature_export_unique_columns,PASS,"export_columns=95, duplicate_columns=0"
+centered_anomaly_zero_mean_each_year,PASS,max_abs_year_mean=4.048215221970e-17
+final_year_mean_equals_annual_level,PASS,max_abs_error=7.105427357601e-15
+annual_method_frozen,PASS,Expanding Mean
+dynamic_methods_match_step27,PASS,"{""NDVI"": ""Rolling-3 Mean"", ""NDBI"": ""Rolling-3 Mean"", ""NDWI"": ""Rolling-3 Mean"", ""EVI"": ""Rolling-3 Mean"", ""Albedo"": ""Bounded Theil-Sen Trend"", ""NDBI_ADJ"": ""Rolling-3 Mean"", ""NDVI_ADJ"": ""Rolling-3 Mean"", ""NightLights"": ""Rolling-3 Mean"", ""green_mask"": ""Rolling-3 Mean""}"
+production_model_retraining,PASS,None. Existing Step-22B model loaded for inference only.
+future_rows_treated_as_observed,PASS,No. 2026-2030 rows are explicitly forecast/pseudo-future inputs.
+engineered_features_independently_forecast,PASS,No. They were reconstructed from base predictor history.

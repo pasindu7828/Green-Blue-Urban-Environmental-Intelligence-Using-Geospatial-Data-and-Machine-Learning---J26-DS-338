@@ -1,0 +1,44 @@
+STEP 27 - RESERVED FORECAST VALIDATION AND STRATEGY FREEZE
+====================================================================================================================
+
+RESERVED VALIDATION YEARS
+--------------------------------------------------------------------------------------------------------------------
+2024 and 2025 only.
+
+ANNUAL THERMAL-LEVEL VALIDATION
+--------------------------------------------------------------------------------------------------------------------
+      model_group                       method  horizon_count  mean_horizon_MAE_C  mean_horizon_RMSE_C  mean_horizon_MAPE_pct  mean_horizon_R2  mean_abs_horizon_Bias_C
+  Step25 baseline               Expanding Mean              5            1.000280             1.094628               2.887723        -6.596985                 1.000280
+Step26A candidate            Damped Holt Trend              5            1.198565             1.259829               3.445259       -12.659023                 0.680957
+  Step25 baseline               Rolling-3 Mean              5            1.337599             1.423765               3.851534       -13.795844                 1.111014
+  Step25 baseline             OLS Linear Trend              5            1.380196             1.531393               3.959313       -20.927967                 1.002001
+Step26A candidate Simple Exponential Smoothing              5            1.381337             1.553701               3.982553       -16.416900                 1.381337
+Step26A candidate       Theil-Sen Robust Trend              5            1.483344             1.657624               4.257272       -23.631669                 1.143691
+  Step25 baseline                  Persistence              5            1.853674             2.091760               5.332652       -27.636449                 1.368299
+  Step25 baseline                        Drift              5            2.025632             2.315617               5.813975       -35.788826                 0.963605
+
+FINAL ANNUAL-LEVEL SELECTION
+--------------------------------------------------------------------------------------------------------------------
+    model_group         method  horizon_count  mean_horizon_MAE_C  mean_horizon_RMSE_C  mean_horizon_MAPE_pct  mean_horizon_R2  mean_abs_horizon_Bias_C    selection_status                                                      selection_rule
+Step25 baseline Expanding Mean              5             1.00028             1.094628               2.887723        -6.596985                  1.00028 selected_for_step28 lowest reserved mean-horizon MAE; tie-break RMSE then absolute bias
+
+FINAL DYNAMIC-PREDICTOR METHOD SELECTIONS
+--------------------------------------------------------------------------------------------------------------------
+  predictor                  method  mean_horizon_MAE  mean_horizon_RMSE  mean_horizon_R2  mean_horizon_NMAE_SD  mean_horizon_NRMSE_SD
+       NDVI          Rolling-3 Mean          0.060055           0.088819         0.322355              0.549668               0.811169
+       NDBI          Rolling-3 Mean          0.023682           0.033006         0.806862              0.310270               0.432464
+       NDWI          Rolling-3 Mean          0.049365           0.074989         0.475960              0.469799               0.712747
+        EVI          Rolling-3 Mean          0.038857           0.052976         0.594792              0.460928               0.628423
+     Albedo Bounded Theil-Sen Trend          0.027983           0.041532        -1.526277              0.998256               1.425969
+   NDBI_ADJ          Rolling-3 Mean          0.015938           0.021190         0.854482              0.279522               0.371771
+   NDVI_ADJ          Rolling-3 Mean          0.049823           0.070544         0.089778              0.661981               0.935048
+NightLights          Rolling-3 Mean          0.515886           0.792993         0.902397              0.202197               0.310047
+ green_mask          Rolling-3 Mean          0.134038           0.187933         0.561855              0.466048               0.653414
+
+INTERPRETATION
+--------------------------------------------------------------------------------------------------------------------
+These selections are based on reserved forecast-validation evidence, not on future 2026-2030 observations.
+Only two reserved target years exist per horizon, so small-sample limitations must be stated in the final research report.
+The selected methods are now frozen for Step 28 operational 2026-2030 generation.
+After Step 27, all actual observations through 2025 may be used as history for Step 28 operational forecasting.
+The Step-22B production LightGBM remains unchanged.

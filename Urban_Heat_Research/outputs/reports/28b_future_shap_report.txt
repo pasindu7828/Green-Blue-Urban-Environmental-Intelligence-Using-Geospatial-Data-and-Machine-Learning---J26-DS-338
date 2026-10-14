@@ -1,0 +1,47 @@
+STEP 28B - FUTURE 2026-2030 SHAP EXPLAINABILITY
+======================================================================================================================
+
+PURPOSE
+----------------------------------------------------------------------------------------------------------------------
+Explain the frozen Step-28 future LightGBM spatial-anomaly predictions without changing the model or forecasts.
+
+RECONSTRUCTION
+----------------------------------------------------------------------------------------------------------------------
+ year  rows  raw_prediction_mean_c  centered_prediction_mean_c  centered_shap_sum_mean_c  max_raw_shap_feature_mean_after_centering_c  max_centered_reconstruction_error_c
+ 2026  2194               0.303405                5.181715e-17             -5.699887e-16                                 3.867880e-16                         7.993606e-15
+ 2027  2194               0.432022               -5.181715e-17             -7.254402e-16                                 2.342905e-16                         9.769963e-15
+ 2028  2194               0.379802               -5.181715e-17             -3.627201e-16                                 6.742555e-16                         7.549517e-15
+ 2029  2194               0.470656               -5.181715e-17              1.036343e-16                                 3.220355e-16                         6.217249e-15
+ 2030  2194               0.465899               -5.181715e-17             -1.036343e-16                                 3.271337e-16                         7.105427e-15
+
+TOP 20 FUTURE GLOBAL SHAP FEATURES
+----------------------------------------------------------------------------------------------------------------------
+ rank                   feature  mean_abs_centered_shap_c  mean_centered_shap_c  pct_positive_contribution  pct_negative_contribution  mean_abs_raw_shap_c
+    1           NDBI_hist3_mean                  0.485912          5.181715e-18                  48.213309                  51.786691             0.485149
+    2             NDBI_ADJ_lag2                  0.257818          3.627201e-17                  35.624430                  64.375570             0.254419
+    3                      NDBI                  0.202398          6.865773e-17                  40.018232                  59.981768             0.205939
+    4 ndbi_x_vegetation_deficit                  0.193205          3.238572e-19                  53.336372                  46.663628             0.193278
+    5       NDBI_ADJ_hist3_mean                  0.134784         -1.684058e-17                  33.026436                  66.973564             0.129419
+    6                 NDBI_lag2                  0.130096          2.202229e-17                  35.177758                  64.822242             0.125195
+    7                       LCZ                  0.103945         -1.016912e-16                  63.226983                  36.773017             0.106601
+    8                  NDBI_ADJ                  0.101959          7.772573e-18                  35.278031                  64.721969             0.104193
+    9                dist_water                  0.091703         -1.068729e-17                  41.786691                  58.213309             0.091217
+   10              EVI_nbr_mean                  0.088533         -5.181715e-18                  51.239745                  48.760255             0.090062
+   11       green_mask_nbr_mean                  0.067348          6.477144e-19                  36.563355                  63.436645             0.067556
+   12         NDBI_ADJ_nbr_mean                  0.056744          2.461315e-17                  49.617138                  50.382862             0.056792
+   13                 dist_road                  0.055568          3.886287e-18                  61.130356                  38.869644             0.055532
+   14                      NDWI                  0.050645          2.590858e-18                  82.561531                  17.438469             0.062872
+   15           ndbi_minus_ndvi                  0.049118          1.003957e-17                  55.551504                  44.448496             0.049098
+   16             NDBI_nbr_mean                  0.039534          3.886287e-18                  41.458523                  58.541477             0.040150
+   17   NightLights_hist3_slope                  0.039177          5.440801e-17                  57.639015                  42.360985             0.050830
+   18         green_mask_delta1                  0.033772         -8.760338e-17                  54.430264                  45.569736             0.114863
+   19                       EVI                  0.029976          1.360200e-17                  55.587967                  44.412033             0.030319
+   20           Albedo_nbr_mean                  0.028412          8.420288e-18                  71.504102                  28.495898             0.050764
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------------
+Positive centered SHAP means a feature pushes that grid hotter relative to Kaduwela's annual thermal level.
+Negative centered SHAP means a feature pushes that grid cooler relative to Kaduwela's annual thermal level.
+SHAP explains only the spatial-anomaly LightGBM branch. It does not explain the separate annual-level forecast.
+These are model attributions, not causal effects.
+Future SHAP uses forecast predictor values, so its interpretation inherits uncertainty from Step-28 future predictor forecasting.
