@@ -1,0 +1,56 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "generated_utc": "2026-10-14T13:33:23.917948+00:00",
+  "technical_consistency": "PASS",
+  "gn_divisions": 56,
+  "common_valid_pixels": 94258,
+  "pixel_area_ha": 0.09,
+  "gis_layers": {
+    "wetland_2025": {
+      "polygons": 3486,
+      "pixels": 15401,
+      "area_ha": 1386.09,
+      "raster_vector_mismatched_pixels": 0
+    },
+    "wetland_2030": {
+      "polygons": 2457,
+      "pixels": 15883,
+      "area_ha": 1429.47,
+      "raster_vector_mismatched_pixels": 0
+    },
+    "persistence": {
+      "polygons": 710,
+      "pixels": 5427,
+      "area_ha": 488.43,
+      "raster_vector_mismatched_pixels": 0
+    },
+    "scenario_loss": {
+      "polygons": 5241,
+      "pixels": 9974,
+      "area_ha": 897.66,
+      "raster_vector_mismatched_pixels": 0
+    },
+    "scenario_gain": {
+      "polygons": 3812,
+      "pixels": 10456,
+      "area_ha": 941.04,
+      "raster_vector_mismatched_pixels": 0
+    }
+  },
+  "gn_reporting_consistency": "PASS",
+  "raster_vector_pixel_agreement": "PASS",
+  "hindcast": {
+    "persistence_accuracy": 0.5248254790044347,
+    "ca_markov_accuracy": 0.4582740987502387,
+    "ca_outperformed_persistence": false
+  },
+  "scenario_status": "EXPLORATORY_UNVALIDATED",
+  "important_limitations": [
+    "Technical consistency is not predictive validation.",
+    "Historical LULC classifications have errors.",
+    "The 2025 CA-Markov hindcast underperformed the persistence baseline.",
+    "2030 wetland boundaries and changes are scenario-derived screening products.",
+    "No confirmed 2030 wetland conditions exist for validation.",
+    "These layers must not be treated as official legal or conservation boundaries."
+  ]
+}

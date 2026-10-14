@@ -1,0 +1,7 @@
+class_id,class_name,classified_2025_pixels,scenario_2030_pixels,classified_2025_ha,scenario_2030_ha,scenario_change_ha
+1,Wetland_Marsh,15401,15883,1386.09,1429.47,43.38
+2,Open_Water,4829,4797,434.61,431.73,-2.88
+3,Built_Up,31556,31451,2840.04,2830.59,-9.45
+4,Paddy_Agriculture,19526,18038,1757.34,1623.42,-133.92
+5,Other_Vegetation,15226,18226,1370.34,1640.34,270.0
+6,Bare_Fill_Disturbed,7720,5863,694.8,527.67,-167.13
