@@ -1,0 +1,94 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "stage": "Historical LULC classification",
+  "created_utc": "2026-10-14T09:38:56.299124+00:00",
+  "classifier": "RandomForestClassifier",
+  "selected_model": "RF_03",
+  "selected_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": "balanced_subsample",
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 4,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 300,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "model_selection_rule": "Highest validation macro-F1; tie-breakers: wetland F1, balanced accuracy.",
+  "feature_columns": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "mndwi",
+    "ndbi"
+  ],
+  "class_definitions": {
+    "1": "Wetland_Marsh",
+    "2": "Open_Water",
+    "3": "Built_Up",
+    "4": "Paddy_Agriculture",
+    "5": "Other_Vegetation",
+    "6": "Bare_Fill_Disturbed"
+  },
+  "historical_years": [
+    2015,
+    2020,
+    2025
+  ],
+  "training_observations": 485,
+  "validation_observations": 347,
+  "reserved_test_observations": 234,
+  "held_out_test_evaluated": false,
+  "spatial_split_method": "1 km geographic blocks with 150 m pixel-centre exclusion buffer",
+  "random_state": 42,
+  "validation_baseline": {
+    "accuracy": 0.12103746397694524,
+    "balanced_accuracy": 0.16666666666666666,
+    "macro_precision": 0.020172910662824207,
+    "macro_recall": 0.16666666666666666,
+    "macro_f1": 0.03598971722365039,
+    "weighted_f1": 0.026136624611988176,
+    "wetland_precision": 0.0,
+    "wetland_recall": 0.0,
+    "wetland_f1": 0.0
+  },
+  "selected_validation_metrics": {
+    "accuracy": 0.6484149855907781,
+    "balanced_accuracy": 0.6799422082723142,
+    "macro_precision": 0.6313012847544811,
+    "macro_recall": 0.6799422082723142,
+    "macro_f1": 0.6420158396048204,
+    "weighted_f1": 0.6265476596770282,
+    "wetland_precision": 0.30303030303030304,
+    "wetland_recall": 0.15384615384615385,
+    "wetland_f1": 0.20408163265306123
+  },
+  "software": {
+    "scikit_learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "limitations": [
+    "The LULC labels originate from historical reference interpretation and require careful consideration of temporal label uncertainty.",
+    "Four original placemark names have a year prefix that disagrees with their KMZ dataset year.",
+    "Spatial buffering reduces proximity but does not guarantee full statistical independence.",
+    "Class-specific performance depends on the number of independent validation locations.",
+    "The 2025 classified LULC map will be an estimated historical reference, not perfect ground truth for CA-Markov hindcast evaluation.",
+    "The held-out test data have not been used for training or model selection."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "stage": "CA-Markov historical hindcast",
+  "generated_utc": "2026-10-14T12:56:04.944140+00:00",
+  "historical_transition_period": "2015-2020",
+  "initial_map_year": 2020,
+  "hindcast_target_year": 2025,
+  "markov_matrix_source": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\outputs\\metrics\\part3_future_projection\\script06_markov_2015_2020_probabilities.csv",
+  "neighbourhood": "3x3 excluding centre cell",
+  "allocation_method": "One-step, neighbourhood-scored allocation with exact source-to-target Markov quotas",
+  "random_seed": 42,
+  "random_allocation_control": true,
+  "target_map_used_during_allocation": false,
+  "study_area_pixels": 94258,
+  "model_comparison": [
+    {
+      "method": "Persistence",
+      "accuracy": 0.5248254790044347,
+      "balanced_accuracy": 0.5057975980291515,
+      "macro_f1": 0.4927663290850714,
+      "wetland_precision": 0.35237783416550705,
+      "wetland_recall": 0.2795273034218557,
+      "wetland_f1": 0.31175320443189225,
+      "wetland_iou": 0.18466091880066915,
+      "predicted_wetland_pixels": 12217,
+      "reference_wetland_pixels": 15401,
+      "wetland_area_difference_ha": -286.56,
+      "changed_pixels_from_2020": 0
+    },
+    {
+      "method": "Markov_RandomAllocation",
+      "accuracy": 0.3764773281843451,
+      "balanced_accuracy": 0.33803330261582176,
+      "macro_f1": 0.32401970892713056,
+      "wetland_precision": 0.24787324542747766,
+      "wetland_recall": 0.1513538081942731,
+      "wetland_f1": 0.18794597863334006,
+      "wetland_iou": 0.10371985405357302,
+      "predicted_wetland_pixels": 9404,
+      "reference_wetland_pixels": 15401,
+      "wetland_area_difference_ha": -539.73,
+      "changed_pixels_from_2020": 43256
+    },
+    {
+      "method": "Markov_NeighbourhoodCA",
+      "accuracy": 0.4582740987502387,
+      "balanced_accuracy": 0.4289298606673005,
+      "macro_f1": 0.4118848659575934,
+      "wetland_precision": 0.32741386643981285,
+      "wetland_recall": 0.19992208298162456,
+      "wetland_f1": 0.2482563999193711,
+      "wetland_iou": 0.1417195986375771,
+      "predicted_wetland_pixels": 9404,
+      "reference_wetland_pixels": 15401,
+      "wetland_area_difference_ha": -539.73,
+      "changed_pixels_from_2020": 43256
+    }
+  ],
+  "model_acceptance": "PENDING_RESEARCH_REVIEW",
+  "limitations": [
+    "Historical LULC maps are model-classified estimates.",
+    "The 2025 map is not independently surveyed truth.",
+    "Historical classifier used samples from 2025.",
+    "The Markov model assumes transition stationarity.",
+    "The CA stage allocates fixed Markov quantities; it cannot correct errors in expected class totals.",
+    "3x3 neighbourhood is a fixed experimental rule, not an empirically optimized spatial scale.",
+    "This experiment is a single five-year CA step.",
+    "Map agreement does not establish forecast validity."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "stage": "Historical Markov transitions and hindcast baseline",
+  "generated_utc": "2026-10-14T10:17:50.061303+00:00",
+  "model_type": "Six-class discrete-time Markov chain",
+  "transition_training_period": "2015-2020",
+  "transition_step_years": 5,
+  "hindcast_start_year": 2020,
+  "hindcast_target_year": 2025,
+  "target_used_for_markov_fitting": false,
+  "common_valid_pixel_count": 94258,
+  "pixel_area_ha": 0.09,
+  "class_ids": {
+    "1": "Wetland_Marsh",
+    "2": "Open_Water",
+    "3": "Built_Up",
+    "4": "Paddy_Agriculture",
+    "5": "Other_Vegetation",
+    "6": "Bare_Fill_Disturbed"
+  },
+  "row_definition": "Earlier land-cover class",
+  "column_definition": "Later land-cover class",
+  "markov_expected_2025_pixels": [
+    9405.158894661909,
+    4599.7203321279085,
+    31908.442963984824,
+    23362.115232462635,
+    6056.701375411986,
+    18925.86120135074
+  ],
+  "persistence_baseline": {
+    "overall_accuracy": 0.5248254790044347,
+    "balanced_accuracy": 0.5057975980291515,
+    "macro_f1": 0.4927663290850714,
+    "wetland_iou": 0.18466091880066915,
+    "wetland_f1": 0.31175320443189225,
+    "wetland_intersection_pixels": 4305,
+    "wetland_union_pixels": 23313,
+    "compared_pixels": 94258
+  },
+  "interpretation": "Transition probabilities and expected class areas are derived from model-classified historical maps. Spatial CA allocation is not included.",
+  "limitations": [
+    "Historical maps have classification errors.",
+    "Large class reversals may represent apparent rather than genuine land-cover change.",
+    "The 2025 comparison is a classified map, not independent ground truth.",
+    "The historical classifier was developed using reference samples from 2015, 2020 and 2025.",
+    "A Markov model assumes historical transition behaviour is informative for the next interval.",
+    "The persistence benchmark predicts no changes.",
+    "No cellular automata allocation was performed."
+  ]
+}

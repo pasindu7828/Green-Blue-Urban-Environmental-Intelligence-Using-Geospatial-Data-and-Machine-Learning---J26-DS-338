@@ -1,0 +1,46 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "stage": "Historical and 2030 scenario polygon extraction",
+  "generated_utc": "2026-10-14T13:17:28.069323+00:00",
+  "status": "VECTOR_EXTRACTION_COMPLETE_SCENARIO_UNVALIDATED",
+  "input_rasters": {
+    "2025": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\LULC_2025_6Class_CommonMask.tif",
+    "2030": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\LULC_2030_Exploratory_CA_Markov.tif"
+  },
+  "spatial_reference": "EPSG:32644",
+  "connectivity": 8,
+  "common_valid_pixels": 94258,
+  "pixel_area_m2": 900.0,
+  "display_min_pixels": 5,
+  "display_min_area_ha": 0.45,
+  "small_patches_removed": false,
+  "analytical_area_filtering_applied": false,
+  "scenario_persistence_pixels": 5427,
+  "scenario_loss_pixels": 9974,
+  "scenario_gain_pixels": 10456,
+  "net_scenario_change_pixels": 482,
+  "outputs": {
+    "wetland_2025": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Wetland_2025_Estimated_Patches.gpkg",
+    "wetland_2030": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Wetland_2030_Exploratory_Patches.gpkg",
+    "persistence": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Wetland_2025_2030_Persistence.gpkg",
+    "scenario_loss": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Wetland_2025_2030_Scenario_Loss.gpkg",
+    "scenario_gain": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Wetland_2025_2030_Scenario_Gain.gpkg"
+  },
+  "validation": {
+    "common_raster_mask": true,
+    "raster_change_accounting": true,
+    "all_connected_patches_preserved": true,
+    "raster_to_vector_area_preserved": true,
+    "saved_geopackages_readable": true
+  },
+  "limitations": [
+    "2025 wetland patches are derived from a model-classified LULC raster.",
+    "2030 patches are an exploratory scenario, not validated future wetland boundaries.",
+    "Loss and gain indicate simulated changes, not confirmed environmental transitions.",
+    "The five-pixel display threshold is a provisional cartographic aid only.",
+    "All small patches remain in the analysis.",
+    "Eight-neighbour connectivity joins cells that meet at edges or corners.",
+    "Polygon edges follow 30-metre raster cells and do not represent surveyed boundaries.",
+    "No legal conservation status is implied."
+  ]
+}
