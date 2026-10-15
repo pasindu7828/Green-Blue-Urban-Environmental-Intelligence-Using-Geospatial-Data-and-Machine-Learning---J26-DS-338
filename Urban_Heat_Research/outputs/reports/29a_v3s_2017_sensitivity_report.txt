@@ -1,0 +1,80 @@
+STEP 29A V3S - 2017 ANOMALY SENSITIVITY ANALYSIS
+======================================================================================================================
+
+PRIMARY QUESTION
+----------------------------------------------------------------------------------------------------------------------
+Is the positive V3 green-cover coefficient materially driven by the anomalous 2017 year?
+
+2017 CONTEXT
+----------------------------------------------------------------------------------------------------------------------
+ year  mean_lst_c  mean_green_mask  mean_ndbi  mean_ndwi  mean_albedo  mean_nightlights  delta_mean_lst_c  delta_mean_green_mask
+ 2016   36.523700         0.639661  -0.191745  -0.564090     0.146163          4.645997         -1.794640              -0.057964
+ 2017   31.787086         0.656861  -0.187890  -0.450044     0.207897          5.134542         -4.736615               0.017200
+ 2018   34.986171         0.631915  -0.164809  -0.541660     0.157456          5.445764          3.199085              -0.024946
+
+FULL VS NO-2017 TWFE
+----------------------------------------------------------------------------------------------------------------------
+              model                                                  years  rows  grids  green_beta_c_per_fraction  green_beta_c_per_10pp  clustered_se      p_value  ci95_lower_per_10pp  ci95_upper_per_10pp coefficient_sign       ci_position  within_r2
+TWFE_FULL_2015_2025 2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 24134   2194                   1.971988               0.197199      0.210968 8.987076e-21             0.155850             0.238548         POSITIVE ENTIRELY_POSITIVE   0.584870
+  TWFE_EXCLUDE_2017      2015,2016,2018,2019,2020,2021,2022,2023,2024,2025 21940   2194                   2.733063               0.273306      0.223806 2.690450e-34             0.229441             0.317172         POSITIVE ENTIRELY_POSITIVE   0.548104
+
+Absolute beta change (no2017-full): +0.76107496
+Relative beta change: +38.5943%
+Sign changed: False
+
+LEAVE-ONE-YEAR-OUT
+----------------------------------------------------------------------------------------------------------------------
+ omitted_year  rows  green_beta_c_per_fraction  green_beta_c_per_10pp  clustered_se      p_value  ci95_lower_per_10pp  ci95_upper_per_10pp coefficient_sign       ci_position  absolute_change_from_full_beta  absolute_change_from_full_per_10pp  relative_change_from_full_pct
+         2015 21940                   1.540588               0.154059      0.197255 5.712777e-15             0.115397             0.192720         POSITIVE ENTIRELY_POSITIVE                       -0.431401                           -0.043140                     -21.876438
+         2016 21940                   2.196066               0.219607      0.221498 3.595964e-23             0.176194             0.263019         POSITIVE ENTIRELY_POSITIVE                        0.224077                            0.022408                      11.363006
+         2017 21940                   2.733063               0.273306      0.223806 2.690450e-34             0.229441             0.317172         POSITIVE ENTIRELY_POSITIVE                        0.761075                            0.076107                      38.594292
+         2018 21940                   2.091684               0.209168      0.218228 9.260455e-22             0.166396             0.251940         POSITIVE ENTIRELY_POSITIVE                        0.119696                            0.011970                       6.069789
+         2019 21940                   1.833943               0.183394      0.216299 2.276795e-17             0.141000             0.225788         POSITIVE ENTIRELY_POSITIVE                       -0.138045                           -0.013805                      -7.000296
+         2020 21940                   1.810890               0.181089      0.212118 1.375503e-17             0.139515             0.222663         POSITIVE ENTIRELY_POSITIVE                       -0.161098                           -0.016110                      -8.169316
+         2021 21940                   2.008380               0.200838      0.215793 1.315373e-20             0.158543             0.243133         POSITIVE ENTIRELY_POSITIVE                        0.036391                            0.003639                       1.845408
+         2022 21940                   1.643115               0.164312      0.223011 1.733790e-13             0.120602             0.208021         POSITIVE ENTIRELY_POSITIVE                       -0.328873                           -0.032887                     -16.677232
+         2023 21940                   1.976684               0.197668      0.222209 5.810934e-19             0.154116             0.241221         POSITIVE ENTIRELY_POSITIVE                        0.004695                            0.000470                       0.238095
+         2024 21940                   2.192532               0.219253      0.220284 2.442253e-23             0.176078             0.262428         POSITIVE ENTIRELY_POSITIVE                        0.220543                            0.022054                      11.183806
+         2025 21940                   1.824105               0.182410      0.221879 2.015344e-16             0.138923             0.225898         POSITIVE ENTIRELY_POSITIVE                       -0.147884                           -0.014788                      -7.499224
+
+Largest absolute coefficient shift from omitting year: 2017
+2017 is the most influential omitted year: True
+
+FIRST-DIFFERENCE TRANSITION SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+                        model excluded_transition_end_years  rows  green_beta_c_per_fraction  green_beta_c_per_10pp  clustered_se      p_value  ci95_lower_per_10pp  ci95_upper_per_10pp coefficient_sign       ci_position
+                      FD_FULL                          NONE 21940                   2.004959               0.200496      0.231275 4.353809e-18             0.155167             0.245825         POSITIVE ENTIRELY_POSITIVE
+      FD_EXCLUDE_2016_TO_2017                          2017 19746                   2.590655               0.259065      0.240614 4.936868e-27             0.211906             0.306225         POSITIVE ENTIRELY_POSITIVE
+      FD_EXCLUDE_2017_TO_2018                          2018 19746                   2.514737               0.251474      0.233717 5.331881e-27             0.205666             0.297281         POSITIVE ENTIRELY_POSITIVE
+FD_EXCLUDE_BOTH_TOUCHING_2017                     2017,2018 17552                   3.402886               0.340289      0.264685 7.924084e-38             0.288411             0.392166         POSITIVE ENTIRELY_POSITIVE
+
+Full FD beta per +10 pp: +0.200496 °C
+FD beta per +10 pp excluding both 2016->2017 and 2017->2018: +0.340289 °C
+FD sign changed after excluding both transitions: False
+
+FUTURE RESPONSE COMPARISON
+----------------------------------------------------------------------------------------------------------------------
+ year  requested_green_increase_pp  grid_count  mean_actual_green_increase_pp  mean_v3_full_response_c  mean_v3_full_cooling_benefit_c  mean_v3s_no2017_response_c  mean_v3s_no2017_cooling_benefit_c  mean_response_difference_no2017_minus_full_c
+ 2026                            5        2194                       4.755279                 0.093774                       -0.093774                    0.129965                          -0.129965                                      0.036191
+ 2026                           10        2194                       9.157015                 0.180575                       -0.180575                    0.250267                          -0.250267                                      0.069692
+ 2026                           20        2194                      16.897243                 0.333212                       -0.333212                    0.461812                          -0.461812                                      0.128601
+ 2027                            5        2194                       4.755279                 0.093774                       -0.093774                    0.129965                          -0.129965                                      0.036191
+ 2027                           10        2194                       9.157015                 0.180575                       -0.180575                    0.250267                          -0.250267                                      0.069692
+ 2027                           20        2194                      16.897243                 0.333212                       -0.333212                    0.461812                          -0.461812                                      0.128601
+ 2028                            5        2194                       4.755279                 0.093774                       -0.093774                    0.129965                          -0.129965                                      0.036191
+ 2028                           10        2194                       9.157015                 0.180575                       -0.180575                    0.250267                          -0.250267                                      0.069692
+ 2028                           20        2194                      16.897243                 0.333212                       -0.333212                    0.461812                          -0.461812                                      0.128601
+ 2029                            5        2194                       4.755279                 0.093774                       -0.093774                    0.129965                          -0.129965                                      0.036191
+ 2029                           10        2194                       9.157015                 0.180575                       -0.180575                    0.250267                          -0.250267                                      0.069692
+ 2029                           20        2194                      16.897243                 0.333212                       -0.333212                    0.461812                          -0.461812                                      0.128601
+ 2030                            5        2194                       4.755279                 0.093774                       -0.093774                    0.129965                          -0.129965                                      0.036191
+ 2030                           10        2194                       9.157015                 0.180575                       -0.180575                    0.250267                          -0.250267                                      0.069692
+ 2030                           20        2194                      16.897243                 0.333212                       -0.333212                    0.461812                          -0.461812                                      0.128601
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------------
+2017 remains in the primary dataset and V3 primary result. V3S is only a robustness/sensitivity analysis.
+No coefficient is automatically preferred based on whether it produces cooling or warming.
+If the positive coefficient remains stable without 2017 and across leave-one-year-out / first-difference checks, then 2017 alone does not explain the positive association.
+If the sign or magnitude changes strongly when 2017 is removed, the final scenario interpretation must explicitly report that sensitivity.
+Observational panel associations are not causal proof.
