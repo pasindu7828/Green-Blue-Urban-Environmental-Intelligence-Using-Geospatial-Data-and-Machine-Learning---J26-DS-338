@@ -1,0 +1,5 @@
+feature_formula,status,max_abs_error,tolerance
+ndbi_x_vegetation_deficit,PASS,1.3010426069826053e-16,1e-08
+ndvi_x_green_mask,PASS,1.1102230246251565e-16,1e-08
+green_mask_delta1,PASS,2.0816681711721685e-16,1e-08
+green_mask_nbr_contrast,PASS,2.5673907444456745e-16,1e-08
