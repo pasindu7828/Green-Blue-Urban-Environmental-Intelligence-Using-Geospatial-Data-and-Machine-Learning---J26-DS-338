@@ -1,0 +1,42 @@
+{
+  "step": "29C",
+  "name": "Combined green-cover and built-up-intensity what-if scenario",
+  "new_ml_model": false,
+  "scenario_engine": "Frozen Step-22B LightGBM",
+  "green_source": "Final Step-29A V2 persistent green scenario",
+  "green_choices_percentage_points": [
+    5,
+    10,
+    20
+  ],
+  "built_source": "Final Step-29B NDBI built-up-intensity scenario",
+  "built_choices": [
+    "LOW",
+    "MODERATE",
+    "HIGH"
+  ],
+  "combinations_per_grid_year": 9,
+  "combined_prediction_method": "Construct true joint feature vector and run frozen LightGBM once. Do not use arithmetic sum as combined prediction.",
+  "shared_joint_features": [
+    "ndbi_x_vegetation_deficit"
+  ],
+  "joint_formula": "ndbi_x_vegetation_deficit = scenario_NDBI * (1 - scenario_green_mask)",
+  "additive_reference": "green_only_delta + built_only_delta; diagnostic only",
+  "model_non_additivity": "combined_delta - additive_reference; model interaction/non-additivity, not causal synergy",
+  "frontend_outputs": [
+    "baseline_green_mask",
+    "scenario_green_mask",
+    "baseline_ndbi",
+    "scenario_ndbi",
+    "baseline_predicted_lst_c",
+    "combined_scenario_predicted_lst_c",
+    "combined_modeled_lst_change_c",
+    "combined_effect_direction"
+  ],
+  "primary_report_combination": {
+    "green_pp": 10,
+    "built_level": "MODERATE"
+  },
+  "uncertainty": "Deferred to Step 30",
+  "causal_claim": false
+}

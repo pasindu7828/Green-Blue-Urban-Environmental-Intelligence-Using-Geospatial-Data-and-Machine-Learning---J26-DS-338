@@ -1,0 +1,74 @@
+{
+  "step": "29B",
+  "name": "Built-up intensity what-if scenario",
+  "frontend_scenario_engine": "Frozen Step-22B LightGBM",
+  "new_ml_model_for_frontend": false,
+  "building_mask_status": {
+    "type": "static binary GIS indicator",
+    "used_as_density_percentage_slider": false,
+    "reason": "No within-grid temporal variation and only values 0/1; therefore it is not a continuous building-density percentage."
+  },
+  "scenario_variable": {
+    "name": "NDBI",
+    "meaning": "continuous built-up intensity proxy",
+    "frontend_wording": "Built-up intensity / development pressure",
+    "not_worded_as": "building-density percentage"
+  },
+  "scenario_levels": [
+    {
+      "scenario_level": "LOW",
+      "historical_abs_change_quantile": 0.5,
+      "ndbi_reduction_magnitude": 0.021784266255822846
+    },
+    {
+      "scenario_level": "MODERATE",
+      "historical_abs_change_quantile": 0.75,
+      "ndbi_reduction_magnitude": 0.039658563922391525
+    },
+    {
+      "scenario_level": "HIGH",
+      "historical_abs_change_quantile": 0.9,
+      "ndbi_reduction_magnitude": 0.06577481883923128
+    }
+  ],
+  "scenario_direction": "persistent NDBI reduction from 2026 through 2030",
+  "historical_response_qa": [
+    {
+      "variant": "TWFE_ALL_2015_2025",
+      "rows": 24134,
+      "ndbi_beta_c_per_1_0": 13.279484978885227,
+      "response_c_per_plus_0_05_ndbi": 0.6639742489442614,
+      "clustered_se": 0.9515989614006044,
+      "p_value": 2.936414039427078e-44,
+      "ci95_lower_per_plus_0_05": 0.5707192643407161,
+      "ci95_upper_per_plus_0_05": 0.7572292335478067,
+      "within_r2": 0.584870142118191
+    },
+    {
+      "variant": "TWFE_EXCLUDE_2017",
+      "rows": 21940,
+      "ndbi_beta_c_per_1_0": 13.164363900215848,
+      "response_c_per_plus_0_05_ndbi": 0.6582181950107925,
+      "clustered_se": 1.0120410491784544,
+      "p_value": 1.1056798445148457e-38,
+      "ci95_lower_per_plus_0_05": 0.5590399946474974,
+      "ci95_upper_per_plus_0_05": 0.7573963953740874,
+      "within_r2": 0.5481044912796946
+    }
+  ],
+  "response_qa_used_for_scenario_prediction": false,
+  "model_retraining": false,
+  "step28_baseline_modified": false,
+  "local_neighbor_policy": "Neighbours remain Step-28 baseline; focal-grid NDBI contrast changes if the contrast feature is retained.",
+  "scenario_effect_formula": "scenario LST = Step-28 baseline LST + (scenario raw anomaly - baseline raw anomaly)",
+  "frontend_output_fields": [
+    "baseline_ndbi",
+    "scenario_ndbi",
+    "baseline_predicted_lst_c",
+    "scenario_predicted_lst_c",
+    "modeled_lst_change_c",
+    "cooling_benefit_c",
+    "scenario_effect_direction"
+  ],
+  "interpretation_warning": "Model-based sensitivity only. NDBI is a spectral built-up intensity proxy, not a literal percentage of building density, and the LST change is not a guaranteed causal outcome."
+}

@@ -1,0 +1,11 @@
+feature,status,max_abs_error,tolerance
+NDBI_lag1,PASS,0.0,1e-08
+NDBI_lag2,PASS,0.0,1e-08
+NDBI_hist3_mean,PASS,1.6653345369377348e-16,1e-08
+NDBI_hist3_std,PASS,3.297221707904835e-13,1e-08
+NDBI_hist3_slope,PASS,1.231653667943533e-16,1e-08
+NDBI_delta1,PASS,1.487525380650112e-16,1e-08
+ndbi_minus_ndvi,PASS,4.440892098500626e-16,1e-08
+ndbi_x_vegetation_deficit,PASS,1.3010426069826053e-16,1e-08
+ndbi_x_building_mask,PASS,0.0,1e-08
+NDBI_nbr_contrast,PASS,1.734723475976807e-16,1e-08

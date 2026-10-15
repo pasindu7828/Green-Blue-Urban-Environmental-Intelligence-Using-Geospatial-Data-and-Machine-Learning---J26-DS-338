@@ -1,0 +1,18 @@
+check,status,details
+historical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+v3_primary_coefficient_hash,PASS,c6813b6c3902f34b679368ee3a1daa15dd4c5270a24811ffc3436daea39eedb3
+v3_audit,PASS,Step-29A V3 strict audit verified fully PASS.
+full_panel_rows,PASS,"actual=24134, expected=24134"
+no2017_panel_rows,PASS,"actual=21940, expected=21940"
+2017_excluded_only_in_sensitivity,PASS,Primary data retains 2017; sensitivity subset omits only 2017.
+full_v3_beta_reproduced,PASS,"actual=1.971988411609, expected≈1.971988411609"
+same_twfe_specification_full_vs_no2017,PASS,"Same outcome, treatment, controls, two-way FE transformation, and grid-clustered SE; only year 2017 omitted."
+leave_one_year_out_count,PASS,"actual=11, expected=11"
+fd_differences_are_true_adjacent_years,PASS,Differences constructed before removing 2017-related transitions.
+fd_full_rows,PASS,"actual=21940, expected=21940"
+fd_drop_both_2017_transitions_rows,PASS,"actual=17552, expected=17552"
+coefficient_sign_forced,PASS,No. All estimated signs retained.
+preferred_model_selected_by_sensitivity_result,PASS,No. V3S reports robustness only and does not auto-select a replacement coefficient.
+step28_forecasts_modified,PASS,No. Scenario comparison outputs are separate.
+scenario_rows,PASS,"actual=32910, expected=32910"
+causal_claim,PASS,No. V3S is observational robustness analysis only.

@@ -1,0 +1,50 @@
+STEP 29A - GREEN-COVER WHAT-IF COOLING SCENARIO SIMULATION
+======================================================================================================================
+
+SCENARIO DESIGN
+----------------------------------------------------------------------------------------------------------------------
+Primary: +5 percentage points green cover. Sensitivity levels: +10 pp and +20 pp.
+Each grid-year is an independent local intervention; the batch is not a simultaneous citywide greening scenario.
+
+MODEL POLICY
+----------------------------------------------------------------------------------------------------------------------
+The frozen Step-22B LightGBM is used without retraining. Step-28 baseline forecasts are not modified.
+Scenario LST = Step-28 baseline LST + (scenario raw anomaly - baseline raw anomaly).
+Cooling benefit = baseline LST - scenario LST. Positive values indicate modeled cooling.
+
+OVERALL SCENARIO SUMMARY
+----------------------------------------------------------------------------------------------------------------------
+ requested_green_increase_pp  rows  mean_actual_green_increase_pp  mean_cooling_benefit_c  median_cooling_benefit_c  max_cooling_benefit_c  min_cooling_benefit_c
+                           5 10970                       4.755279               -0.232737                 -0.209053               0.070297              -0.825193
+                          10 10970                       9.157015               -0.320822                 -0.279627               0.081255              -1.097543
+                          20 10970                      16.897243               -0.455660                 -0.400002               0.113822              -1.438409
+
+YEAR-BY-YEAR SUMMARY
+----------------------------------------------------------------------------------------------------------------------
+ year  requested_green_increase_pp  grid_count  mean_actual_green_increase_pp  upper_bound_limited_grid_count  mean_baseline_lst_c  mean_independent_scenario_lst_c  mean_cooling_benefit_c  median_cooling_benefit_c  min_cooling_benefit_c  max_cooling_benefit_c  std_cooling_benefit_c  cooling_grid_count  no_change_grid_count  warming_grid_count  cooling_grid_pct  warming_grid_pct  no_change_grid_pct
+ 2026                            5        2194                       4.755279                             184            35.511272                        35.611964               -0.100692                 -0.072566              -0.732442               0.070297               0.114724                 284                   104                1806         12.944394         82.315406            4.740201
+ 2026                           10        2194                       9.157015                             341            35.511272                        35.720805               -0.209533                 -0.162140              -0.984740               0.081255               0.197190                 205                    70                1919          9.343665         87.465816            3.190520
+ 2026                           20        2194                      16.897243                             648            35.511272                        35.905907               -0.394635                 -0.315974              -1.438409               0.113822               0.343420                 173                    70                1951          7.885141         88.924339            3.190520
+ 2027                            5        2194                       4.755279                             184            35.511272                        35.787152               -0.275880                 -0.251332              -0.825193               0.000000               0.144901                   0                    35                2159          0.000000         98.404740            1.595260
+ 2027                           10        2194                       9.157015                             341            35.511272                        35.879591               -0.368319                 -0.330802              -1.097543               0.000000               0.211402                   0                    35                2159          0.000000         98.404740            1.595260
+ 2027                           20        2194                      16.897243                             648            35.511272                        36.006397               -0.495125                 -0.454316              -1.417698               0.015028               0.328745                   1                    35                2158          0.045579         98.359161            1.595260
+ 2028                            5        2194                       4.755279                             184            35.511272                        35.789388               -0.278116                 -0.251623              -0.825193               0.009892               0.145800                   1                    35                2158          0.045579         98.359161            1.595260
+ 2028                           10        2194                       9.157015                             341            35.511272                        35.874004               -0.362732                 -0.331199              -1.021151               0.026432               0.209732                   2                    35                2157          0.091158         98.313582            1.595260
+ 2028                           20        2194                      16.897243                             648            35.511272                        35.998781               -0.487509                 -0.455970              -1.382167               0.024089               0.326681                   4                    35                2155          0.182315         98.222425            1.595260
+ 2029                            5        2194                       4.755279                             184            35.511272                        35.765443               -0.254171                 -0.224280              -0.811972               0.001009               0.140363                   1                    35                2158          0.045579         98.359161            1.595260
+ 2029                           10        2194                       9.157015                             341            35.511272                        35.842531               -0.331259                 -0.290141              -0.964126               0.027704               0.204712                   2                    35                2157          0.091158         98.313582            1.595260
+ 2029                           20        2194                      16.897243                             648            35.511272                        35.961280               -0.450008                 -0.409993              -1.294070               0.054026               0.318990                   5                    35                2154          0.227894         98.176846            1.595260
+ 2030                            5        2194                       4.755279                             184            35.511272                        35.766101               -0.254829                 -0.225652              -0.811972               0.001009               0.140385                   1                    35                2158          0.045579         98.359161            1.595260
+ 2030                           10        2194                       9.157015                             341            35.511272                        35.843542               -0.332270                 -0.291093              -0.964126               0.027704               0.204892                   2                    35                2157          0.091158         98.313582            1.595260
+ 2030                           20        2194                      16.897243                             648            35.511272                        35.962295               -0.451023                 -0.410862              -1.307200               0.054026               0.319106                   5                    35                2154          0.227894         98.176846            1.595260
+
+MONOTONICITY DIAGNOSTIC
+----------------------------------------------------------------------------------------------------------------------
+16.14% of grid-year cases show non-decreasing modeled cooling from +5 to +10 to +20 pp.
+Non-monotonic cases are retained; tree-model monotonicity is not forced.
+
+INTERPRETATION LIMITATION
+----------------------------------------------------------------------------------------------------------------------
+These outputs represent modeled statistical sensitivity, not guaranteed physical cooling outcomes.
+Real cooling depends on vegetation species, canopy geometry, placement, irrigation, maintenance, land conversion, and other factors not explicitly represented.
+Uncertainty/confidence is not added in Step 29; it is handled in Step 30.

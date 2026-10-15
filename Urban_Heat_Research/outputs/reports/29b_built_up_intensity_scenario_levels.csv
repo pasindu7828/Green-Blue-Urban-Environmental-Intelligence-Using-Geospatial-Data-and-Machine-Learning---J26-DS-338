@@ -1,0 +1,4 @@
+scenario_level,historical_abs_change_quantile,ndbi_reduction_magnitude
+LOW,0.5,0.021784266255822846
+MODERATE,0.75,0.039658563922391525
+HIGH,0.9,0.06577481883923128

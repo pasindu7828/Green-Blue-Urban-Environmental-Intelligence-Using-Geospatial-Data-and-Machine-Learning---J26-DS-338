@@ -1,0 +1,83 @@
+{
+  "step": "29A V3",
+  "version": "dedicated_green_response_twfe_v1",
+  "historical_period": [
+    2015,
+    2025
+  ],
+  "historical_rows": 24134,
+  "grids": 2194,
+  "primary_response_model": {
+    "type": "Two-way fixed-effects linear panel regression",
+    "outcome": "LST_C",
+    "treatment": "green_mask",
+    "controls": [
+      "NDBI",
+      "NDWI",
+      "Albedo",
+      "NightLights"
+    ],
+    "grid_fixed_effects": true,
+    "year_fixed_effects": true,
+    "implementation": "Exact two-way demeaning for balanced panel",
+    "standard_errors": "Cluster-robust by grid_id",
+    "green_beta_c_per_fraction": 1.9719884116089004,
+    "green_beta_c_per_10pp": 0.19719884116089004,
+    "green_ci95_lower_per_10pp": 0.15584994469728172,
+    "green_ci95_upper_per_10pp": 0.2385477376244984,
+    "green_p_value_clustered": 8.987075708638604e-21,
+    "evidence_status": "POSITIVE_ASSOCIATION_SUPPORTED",
+    "within_r2": 0.584870142118191
+  },
+  "predefined_stability_windows": [
+    [
+      2015,
+      2022
+    ],
+    [
+      2015,
+      2023
+    ],
+    [
+      2015,
+      2024
+    ],
+    [
+      2015,
+      2025
+    ]
+  ],
+  "coefficient_same_sign_all_windows": true,
+  "first_difference_sensitivity": {
+    "green_beta_c_per_10pp": 0.20049592824569307,
+    "green_ci95_lower_per_10pp": 0.15516679345751896,
+    "green_ci95_upper_per_10pp": 0.24582506303386717,
+    "evidence_status": "POSITIVE_ASSOCIATION_SUPPORTED",
+    "same_sign_as_primary": true
+  },
+  "future_baseline": "Frozen Step-28 grid LST predictions",
+  "future_scenarios_percentage_points": [
+    5,
+    10,
+    20
+  ],
+  "scenario_formula": {
+    "scenario_green": "clip(baseline future green_mask + requested increase, 0, 1)",
+    "estimated_response": "TWFE green beta * actual green increase fraction",
+    "scenario_lst": "Step-28 baseline predicted LST + estimated response",
+    "cooling_benefit": "-estimated response"
+  },
+  "persistent_interpretation": "Scenario is a maintained level difference from baseline. The estimated level response is applied once each future year, not accumulated repeatedly.",
+  "support_checks": {
+    "per_grid_historical_green_max": true,
+    "historical_annual_green_change_quantiles": {
+      "q50": 0.10591863899609194,
+      "q90": 0.4488403005893044,
+      "q95": 0.6069534319236469,
+      "q99": 0.8697062982545682
+    }
+  },
+  "uncertainty_note": "Scenario response CI represents coefficient estimation uncertainty only. Total future forecast uncertainty remains Step 30.",
+  "causal_limit": "Observational TWFE reduces time-invariant grid confounding and common year shocks but does not prove causal cooling.",
+  "v1_v2_status": "V1 and V2 retained as diagnostic predictive-model perturbation experiments; V3 is the dedicated response-model candidate."
+}

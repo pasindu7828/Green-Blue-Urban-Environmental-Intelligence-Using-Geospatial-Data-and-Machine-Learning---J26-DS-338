@@ -1,0 +1,49 @@
+STEP 29C - COMBINED GREEN + BUILT-UP INTENSITY WHAT-IF SCENARIO
+========================================================================================================================
+
+FRONTEND CHOICES
+------------------------------------------------------------------------------------------------------------------------
+Green cover: +5 pp / +10 pp / +20 pp
+Built-up intensity reduction: LOW / MODERATE / HIGH
+
+METHOD
+------------------------------------------------------------------------------------------------------------------------
+Each combined scenario is generated from a true joint feature vector and one frozen Step-22B LightGBM inference.
+The separate green-only and built-only LST effects are NOT simply added to produce the final combined LST.
+
+SHARED JOINT FEATURE(S)
+------------------------------------------------------------------------------------------------------------------------
+ndbi_x_vegetation_deficit
+
+OVERALL 2026-2030 SUMMARY
+------------------------------------------------------------------------------------------------------------------------
+ green_increase_pp_requested built_up_level  rows  mean_actual_green_increase_pp  mean_actual_ndbi_reduction  mean_combined_lst_change_c  mean_green_only_delta_c  mean_built_only_delta_c  mean_additive_expected_delta_c  mean_model_non_additivity_c
+                           5           HIGH 10970                       4.755279                    0.065775                   -0.728558                 0.059615                -0.782723                       -0.723108                    -0.005449
+                           5            LOW 10970                       4.755279                    0.021784                   -0.227839                 0.059615                -0.288295                       -0.228680                     0.000841
+                           5       MODERATE 10970                       4.755279                    0.039659                   -0.447357                 0.059615                -0.512343                       -0.452728                     0.005371
+                          10           HIGH 10970                       9.157015                    0.065775                   -0.672804                 0.121740                -0.782723                       -0.660983                    -0.011821
+                          10            LOW 10970                       9.157015                    0.021784                   -0.171946                 0.121740                -0.288295                       -0.166554                    -0.005391
+                          10       MODERATE 10970                       9.157015                    0.039659                   -0.388963                 0.121740                -0.512343                       -0.390603                     0.001640
+                          20           HIGH 10970                      16.897243                    0.065775                   -0.570873                 0.246301                -0.782723                       -0.536422                    -0.034451
+                          20            LOW 10970                      16.897243                    0.021784                   -0.060974                 0.246301                -0.288295                       -0.041993                    -0.018981
+                          20       MODERATE 10970                      16.897243                    0.039659                   -0.292366                 0.246301                -0.512343                       -0.266042                    -0.026324
+
+MODEL NON-ADDITIVITY
+------------------------------------------------------------------------------------------------------------------------
+ green_increase_pp_requested built_up_level  approximately_additive  more_cooling_than_additive  more_warming_than_additive  total  more_cooling_than_additive_pct  more_warming_than_additive_pct  approximately_additive_pct
+                           5           HIGH                    1981                        4658                        4331  10970                       42.461258                       39.480401                   18.058341
+                           5            LOW                    3088                        4181                        3701  10970                       38.113036                       33.737466                   28.149499
+                           5       MODERATE                    2438                        4143                        4389  10970                       37.766636                       40.009116                   22.224248
+                          10           HIGH                    1687                        4972                        4311  10970                       45.323610                       39.298086                   15.378304
+                          10            LOW                    2840                        4427                        3703  10970                       40.355515                       33.755697                   25.888788
+                          10       MODERATE                    2162                        4322                        4486  10970                       39.398359                       40.893345                   19.708295
+                          20           HIGH                    1501                        5794                        3675  10970                       52.816773                       33.500456                   13.682771
+                          20            LOW                    2713                        4927                        3330  10970                       44.913400                       30.355515                   24.731085
+                          20       MODERATE                    1971                        5260                        3739  10970                       47.948952                       34.083865                   17.967183
+
+INTERPRETATION
+------------------------------------------------------------------------------------------------------------------------
+Negative model_non_additivity_c means the joint model response is cooler / less warm than the simple additive reference.
+Positive model_non_additivity_c means the joint model response is warmer / less cool than the simple additive reference.
+This is model interaction/non-additivity, not causal synergy.
+All scenario LST changes are model-based what-if sensitivities, not guaranteed physical outcomes.
