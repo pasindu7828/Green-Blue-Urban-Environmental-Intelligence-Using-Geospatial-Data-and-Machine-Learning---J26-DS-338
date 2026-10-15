@@ -1,0 +1,3 @@
+variable,observed_min,observed_max,unique_values,grids_changing_through_time,binary_like,scenario_role
+building_mask,0.0,1.0,2,0,True,STATIC CONTEXT ONLY - not used as a percentage-density slider
+NDBI,-0.705228524521974,0.1727837165816878,24134,2194,False,PRIMARY CONTINUOUS BUILT-UP INTENSITY PROXY
