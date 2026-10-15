@@ -1,0 +1,63 @@
+STEP 29A V3 - DEDICATED GREEN-COVER RESPONSE MODEL
+======================================================================================================================
+
+PRIMARY MODEL
+----------------------------------------------------------------------------------------------------------------------
+Two-way fixed-effects panel regression using 2015-2025 historical grid-year data, with grid and year fixed effects and grid-clustered SE.
+Controls: NDBI, NDWI, Albedo, NightLights.
+
+GREEN RESPONSE
+----------------------------------------------------------------------------------------------------------------------
+Coefficient per +10 percentage points green cover: +0.197199 °C
+95% cluster-robust CI per +10 pp: [+0.155850, +0.238548] °C
+Clustered p-value: 8.9870757e-21
+Evidence status: POSITIVE_ASSOCIATION_SUPPORTED
+
+TIME-WINDOW STABILITY
+----------------------------------------------------------------------------------------------------------------------
+ start_year  end_year  rows  grids  green_beta_c_per_fraction  green_beta_c_per_10pp  clustered_se      p_value  ci95_lower_per_10pp  ci95_upper_per_10pp                evidence_status  within_r2  within_mae_c  within_rmse_c
+       2015      2022 17552   2194                   2.080921               0.208092      0.251603 1.332264e-16             0.158779             0.257405 POSITIVE_ASSOCIATION_SUPPORTED   0.605511      1.225853       1.706036
+       2015      2023 19746   2194                   2.067092               0.206709      0.233883 9.732037e-19             0.160869             0.252549 POSITIVE_ASSOCIATION_SUPPORTED   0.596285      1.195850       1.665981
+       2015      2024 21940   2194                   1.824105               0.182410      0.221879 2.015344e-16             0.138923             0.225898 POSITIVE_ASSOCIATION_SUPPORTED   0.589633      1.143828       1.611261
+       2015      2025 24134   2194                   1.971988               0.197199      0.210968 8.987076e-21             0.155850             0.238548 POSITIVE_ASSOCIATION_SUPPORTED   0.584870      1.139144       1.597694
+
+FIRST-DIFFERENCE SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+Green coefficient per +10 pp: +0.200496 °C
+95% CI: [+0.155167, +0.245825] °C
+Evidence status: POSITIVE_ASSOCIATION_SUPPORTED
+Same sign as primary TWFE: True
+
+SCENARIO SUMMARY
+----------------------------------------------------------------------------------------------------------------------
+ year  requested_green_increase_pp  grid_count  mean_actual_green_increase_pp  upper_bound_limited_grid_count  mean_baseline_lst_c  mean_scenario_lst_c  mean_estimated_lst_response_c  mean_cooling_benefit_c  median_cooling_benefit_c  mean_cooling_ci95_lower_c  mean_cooling_ci95_upper_c  above_historical_grid_max_count  above_historical_grid_max_pct
+ 2026                            5        2194                       4.755279                             184            35.511272            35.605046                       0.093774               -0.093774                 -0.098599                  -0.113436                  -0.074111                              113                       5.150410
+ 2026                           10        2194                       9.157015                             341            35.511272            35.691848                       0.180575               -0.180575                 -0.197199                  -0.218439                  -0.142712                              255                      11.622607
+ 2026                           20        2194                      16.897243                             648            35.511272            35.844484                       0.333212               -0.333212                 -0.394398                  -0.403080                  -0.263343                              644                      29.352780
+ 2027                            5        2194                       4.755279                             184            35.511272            35.605046                       0.093774               -0.093774                 -0.098599                  -0.113436                  -0.074111                              113                       5.150410
+ 2027                           10        2194                       9.157015                             341            35.511272            35.691848                       0.180575               -0.180575                 -0.197199                  -0.218439                  -0.142712                              255                      11.622607
+ 2027                           20        2194                      16.897243                             648            35.511272            35.844484                       0.333212               -0.333212                 -0.394398                  -0.403080                  -0.263343                              644                      29.352780
+ 2028                            5        2194                       4.755279                             184            35.511272            35.605046                       0.093774               -0.093774                 -0.098599                  -0.113436                  -0.074111                              113                       5.150410
+ 2028                           10        2194                       9.157015                             341            35.511272            35.691848                       0.180575               -0.180575                 -0.197199                  -0.218439                  -0.142712                              255                      11.622607
+ 2028                           20        2194                      16.897243                             648            35.511272            35.844484                       0.333212               -0.333212                 -0.394398                  -0.403080                  -0.263343                              644                      29.352780
+ 2029                            5        2194                       4.755279                             184            35.511272            35.605046                       0.093774               -0.093774                 -0.098599                  -0.113436                  -0.074111                              113                       5.150410
+ 2029                           10        2194                       9.157015                             341            35.511272            35.691848                       0.180575               -0.180575                 -0.197199                  -0.218439                  -0.142712                              255                      11.622607
+ 2029                           20        2194                      16.897243                             648            35.511272            35.844484                       0.333212               -0.333212                 -0.394398                  -0.403080                  -0.263343                              644                      29.352780
+ 2030                            5        2194                       4.755279                             184            35.511272            35.605046                       0.093774               -0.093774                 -0.098599                  -0.113436                  -0.074111                              113                       5.150410
+ 2030                           10        2194                       9.157015                             341            35.511272            35.691848                       0.180575               -0.180575                 -0.197199                  -0.218439                  -0.142712                              255                      11.622607
+ 2030                           20        2194                      16.897243                             648            35.511272            35.844484                       0.333212               -0.333212                 -0.394398                  -0.403080                  -0.263343                              644                      29.352780
+
+EMPIRICAL SUPPORT
+----------------------------------------------------------------------------------------------------------------------
+ requested_green_increase_pp                scenario_support_class  rows   pct
+                           5 WITHIN_95PCT_HISTORICAL_ANNUAL_CHANGE 10970 100.0
+                          10 WITHIN_95PCT_HISTORICAL_ANNUAL_CHANGE 10970 100.0
+                          20 WITHIN_95PCT_HISTORICAL_ANNUAL_CHANGE 10970 100.0
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------------
+V3 estimates a historical within-grid response rather than directly perturbing the frozen LightGBM prediction model.
+Grid fixed effects remove time-invariant location differences; year fixed effects remove Kaduwela-wide annual shocks.
+This strengthens intervention interpretation, but observational data still do not prove causality.
+Positive cooling_benefit_c means the estimated historical green response lowers LST relative to the Step-28 baseline.
+Response-model 95% CI is not total forecast uncertainty. Step 30 will handle future prediction uncertainty.
