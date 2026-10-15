@@ -1,0 +1,39 @@
+{
+  "stage": "Historical LULC classifier comparison",
+  "timestamp_utc": "2026-10-14T09:46:47.225642+00:00",
+  "models_compared": [
+    "SVM_LINEAR",
+    "SVM_RBF",
+    "XGB_SHALLOW",
+    "XGB_MODERATE"
+  ],
+  "existing_reference_models": [
+    "RF_01",
+    "RF_02",
+    "RF_03"
+  ],
+  "features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "mndwi",
+    "ndbi"
+  ],
+  "training_samples": 485,
+  "validation_samples": 347,
+  "held_out_test_samples": 234,
+  "test_evaluated": false,
+  "selection_status": "PENDING_RESEARCH_REVIEW",
+  "selection_basis": "Macro-F1, wetland-specific precision/recall/F1, class confusion and model complexity.",
+  "limitations": [
+    "Comparison uses one buffered spatial split.",
+    "150 m separation does not prove spatial independence.",
+    "Wetland/Paddy/Vegetation spectral confusion remains a key research concern.",
+    "Four source sample-name/year mismatches remain documented as temporal-reference uncertainty.",
+    "No held-out test observations were used."
+  ]
+}

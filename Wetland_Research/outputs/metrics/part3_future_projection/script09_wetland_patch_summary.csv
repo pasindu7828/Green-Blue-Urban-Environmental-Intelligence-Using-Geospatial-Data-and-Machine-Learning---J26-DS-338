@@ -1,0 +1,6 @@
+layer,patch_count,all_pixels,all_area_ha,display_ge5_patch_count,small_patch_count,small_patch_area_ha,largest_patch_ha
+wetland_2025,3486,15401,1386.09,670,2816,412.47,91.71
+wetland_2030,2457,15883,1429.47,501,1956,282.06,149.58
+persistence,710,5427,488.43,298,412,79.74,33.93
+scenario_loss,5241,9974,897.66,301,4940,727.74,1.35
+scenario_gain,3812,10456,941.04,539,3273,497.25,4.59

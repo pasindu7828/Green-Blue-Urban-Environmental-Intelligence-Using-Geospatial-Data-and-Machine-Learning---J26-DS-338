@@ -1,0 +1,74 @@
+PART 3 - INDEPENDENT SPATIAL VALIDATION
+============================================================
+Status: PASS
+Checks passed: 44/44
+
+PASS | Source record count
+    Found: 1118
+PASS | Audit record count
+    Found: 1118
+PASS | Retained split count
+    Found: 1066
+PASS | Duplicate exclusion count
+    Found: 1
+PASS | train record count
+    Expected 485, found 485
+PASS | validation record count
+    Expected 347, found 347
+PASS | test record count
+    Expected 234, found 234
+PASS | EXCLUDED record count
+    Expected 52, found 52
+PASS | No unexpected audit split categories
+    ['EXCLUDED', 'test', 'train', 'validation']
+PASS | Unique audit row identifiers
+PASS | Saved split matches retained audit records
+PASS | Retained partition assignments agree
+PASS | No conflicting labels within pixel-year
+PASS | Unique pixel-year record accounting
+PASS | Duplicate exclusion audit is consistent
+PASS | Year-prefix discrepancies documented
+    ['2015_BUI_026', '2015_WAT_041', '2015_WET_047', '2025_WET_010']
+PASS | Raster CRS
+    EPSG:32644
+PASS | Raster resolution
+    (30.0, 30.0)
+PASS | Raster grid dimensions
+PASS | split pixel indices inside raster
+PASS | audit pixel indices inside raster
+PASS | Saved pixel centres match raster geometry
+PASS | Retained pixel-year records are unique
+PASS | Recorded spatial groups are correct
+PASS | No shared spatial blocks: train/validation
+    Overlapping blocks: 0
+PASS | No shared spatial blocks: train/test
+    Overlapping blocks: 0
+PASS | No shared spatial blocks: validation/test
+    Overlapping blocks: 0
+PASS | 150 m pixel-centre separation: train/validation
+    Minimum distance: 150.00 m
+PASS | 150 m pixel-centre separation: train/test
+    Minimum distance: 150.00 m
+PASS | 150 m pixel-centre separation: validation/test
+    Minimum distance: 150.00 m
+PASS | train: minimum class/year coverage
+    Minimum: 12
+PASS | train: all historical years represented
+PASS | train: all six classes represented
+PASS | validation: minimum class/year coverage
+    Minimum: 14
+PASS | validation: all historical years represented
+PASS | validation: all six classes represented
+PASS | test: minimum class/year coverage
+    Minimum: 7
+PASS | test: all historical years represented
+PASS | test: all six classes represented
+PASS | Validation buffer exclusion count
+PASS | Training buffer exclusion count
+PASS | Validation exclusions fall inside test buffer
+PASS | Training exclusions fall inside evaluation buffer
+PASS | All 52 exclusions have documented reasons
+
+Temporal-label quality assurance: PENDING
+150 m buffering does not prove spatial independence.
+Final test partition is reserved for final evaluation.

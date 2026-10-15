@@ -1,0 +1,6 @@
+layer,features,total_pixels,area_ha,crs,file
+wetland_2025,3486,15401,1386.09,EPSG:4326,Part3_wetland_2025_WGS84.gpkg
+wetland_2030,2457,15883,1429.47,EPSG:4326,Part3_wetland_2030_WGS84.gpkg
+persistence,710,5427,488.43,EPSG:4326,Part3_persistence_WGS84.gpkg
+scenario_loss,5241,9974,897.66,EPSG:4326,Part3_scenario_loss_WGS84.gpkg
+scenario_gain,3812,10456,941.04,EPSG:4326,Part3_scenario_gain_WGS84.gpkg
