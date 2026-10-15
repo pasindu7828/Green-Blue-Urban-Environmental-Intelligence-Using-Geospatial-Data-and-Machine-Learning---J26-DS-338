@@ -1,0 +1,10 @@
+feature,group,status,max_abs_error,tolerance
+green_mask_lag1,green_temporal,PASS,0.0,1e-08
+green_mask_lag2,green_temporal,PASS,0.0,1e-08
+green_mask_hist3_mean,green_temporal,PASS,3.3306690738754696e-16,1e-08
+green_mask_hist3_std,green_temporal,PASS,1.3170888799914476e-09,1e-08
+green_mask_hist3_slope,green_temporal,PASS,1.5439038936193583e-16,1e-08
+green_mask_delta1,green_temporal,PASS,2.0816681711721685e-16,1e-08
+ndbi_x_vegetation_deficit,current_green_derived,PASS,1.3010426069826053e-16,1e-08
+ndvi_x_green_mask,current_green_derived,PASS,1.1102230246251565e-16,1e-08
+green_mask_nbr_contrast,current_green_derived,PASS,2.5673907444456745e-16,1e-08

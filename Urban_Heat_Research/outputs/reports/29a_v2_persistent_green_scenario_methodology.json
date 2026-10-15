@@ -1,0 +1,53 @@
+{
+  "step": "29A V2",
+  "version": "persistent_local_green_cover_intervention_v2",
+  "purpose": "Temporally coherent persistent local green-cover what-if simulation",
+  "intervention_start_year": 2026,
+  "future_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "scenario_levels_percentage_points": [
+    5,
+    10,
+    20
+  ],
+  "primary_scenario_percentage_points": 5,
+  "scenario_scope": "Independent local grid-cell intervention beginning in 2026 and maintained through 2030.",
+  "scenario_green_formula": "scenario green_mask(t) = clip(Step-28 baseline green_mask(t) + scenario increase, 0, 1)",
+  "temporal_reconstruction": {
+    "lag1": "scenario/history value at t-1",
+    "lag2": "scenario/history value at t-2",
+    "hist3_mean": "mean of t-1,t-2,t-3 only",
+    "hist3_std": "sample standard deviation of t-1,t-2,t-3 only, ddof=1",
+    "hist3_slope": "OLS slope over t-3,t-2,t-1 = (most_recent-oldest)/2",
+    "delta1": "current scenario green_mask - lag1"
+  },
+  "current_year_dependent_features_rebuilt": [
+    "ndbi_x_vegetation_deficit",
+    "ndvi_x_green_mask",
+    "green_mask_nbr_contrast"
+  ],
+  "retained_green_temporal_features_rebuilt": [
+    "green_mask_lag1",
+    "green_mask_lag2",
+    "green_mask_hist3_mean",
+    "green_mask_hist3_std",
+    "green_mask_hist3_slope",
+    "green_mask_delta1"
+  ],
+  "local_neighbor_policy": "Neighbouring grids remain at Step-28 baseline forecasts. green_mask_nbr_mean stays baseline; selected-grid green_mask_nbr_contrast is updated.",
+  "model": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\models\\final\\22b_production_lightgbm_anomaly_trained_2018_2025.joblib",
+  "model_retraining": false,
+  "step28_baseline_modified": false,
+  "scenario_recentering": false,
+  "local_effect_formula": "scenario raw anomaly - baseline raw anomaly",
+  "scenario_lst_formula": "Step-28 baseline predicted LST + local anomaly delta",
+  "cooling_benefit_formula": "Step-28 baseline predicted LST - scenario predicted LST",
+  "uncertainty": "Deferred to Step 30.",
+  "interpretation_warning": "Model-based statistical sensitivity only; not causal proof or guaranteed physical cooling.",
+  "v1_relationship": "V1 is retained as a direct same-year perturbation diagnostic. V2 is the preferred planning scenario because intervention history is propagated from 2026 through 2030."
+}
