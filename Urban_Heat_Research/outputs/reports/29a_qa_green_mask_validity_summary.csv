@@ -1,0 +1,8 @@
+qa_item,result,interpretation
+Yearly green_mask-NDVI Pearson correlations all positive,True,Checks whether Otsu green percentage generally tracks continuous NDVI cross-sectionally within each year.
+Minimum yearly green_mask-NDVI Pearson correlation,0.8452724152209274,Low/negative values would indicate poor same-year alignment in at least one year.
+Median yearly green_mask-NDVI Pearson correlation,0.9210489203374269,Descriptive same-year alignment strength.
+Green TWFE sign reverses after adding controls,False,"If True, positive V3 result may involve suppression/sign reversal induced by the control set."
+Full-control green_mask and NDVI response signs agree,False,"If False, Otsu-derived green percentage and continuous vegetation index tell different longitudinal stories."
+"green_mask, NDVI and EVI full-control signs all agree",False,Cross-indicator consistency check only; not causal proof.
+Otsu threshold provenance status,NOT_FOUND_IN_LOCAL_PROJECT_TEXT_FILES,Aggregated CSV cannot establish fixed-vs-year-specific Otsu thresholds. Source code/log must be manually verified.
