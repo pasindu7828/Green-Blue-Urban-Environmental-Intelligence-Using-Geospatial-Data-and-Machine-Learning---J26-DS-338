@@ -1,0 +1,2 @@
+input_high_confidence_training_candidates,audit_points_per_class,total_audit_points,all_class_counts_correct,duplicate_sample_ids,duplicate_landsat_pixels,all_audit_points_high_confidence,audit_type,final_model_validation_dataset,overall_status
+399,10,40,True,0,0,True,REFERENCE_QUALITY_AUDIT,False,PASS

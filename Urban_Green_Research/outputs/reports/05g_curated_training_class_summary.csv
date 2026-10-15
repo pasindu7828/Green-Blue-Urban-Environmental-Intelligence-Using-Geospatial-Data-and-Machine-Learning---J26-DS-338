@@ -1,0 +1,5 @@
+class_id,class_name,before_audit_count,after_audit_count,net_change,percent_of_final_pool,manually_audited_retained,unaudited_high_confidence
+1,Green / Vegetation,145,143,-2,36.02015113350126,8,135
+2,Built-up,112,113,1,28.463476070528966,11,102
+3,Open / Bare,22,21,-1,5.289672544080604,9,12
+4,Water,120,120,0,30.22670025188917,10,110

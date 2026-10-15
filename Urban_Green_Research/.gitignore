@@ -81,3 +81,7 @@ data/raw/*
 *.tmp
 *.temp
 ~$*
+
+*.gpkg-shm
+*.gpkg-wal*.aux.xml
+**/*.aux.xml
