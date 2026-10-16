@@ -1,0 +1,2 @@
+input_target,predictor_source,predictor_time_window,predictor_rows,feature_count,positive_target_rows,centered_stabilized_lulc_used,future_lulc_used_as_predictor,grid_id_used_as_predictor,grid_coordinates_used_as_predictor,terrain_predictors_added,road_predictors_added,building_predictors_added,overall_step12a_status
+FINAL_CAUSAL_PAST_2_OF_3,RAW_RF LULC,"t-2,t-1,t",51310,48,844,False,False,False,False,False,False,False,PASS

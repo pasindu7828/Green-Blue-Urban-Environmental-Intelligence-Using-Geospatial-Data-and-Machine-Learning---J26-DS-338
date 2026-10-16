@@ -1,0 +1,103 @@
+year,product_type,file,crs,width,height,band_count,dtype,nodata,pixel_width_m,pixel_height_m,pixel_area_m2,total_pixels,valid_pixels,nodata_pixels,unique_values,invalid_class_value_count,transform,tag_year,tag_product_type,tag_stabilization_applied,tag_stabilization_method,tag_stabilization_window,tag_provisional,grid_matches_reference,crs_valid,resolution_valid,nodata_valid,class_values_valid,band_count_valid,dtype_valid,tag_year_valid,tag_provisional_valid
+2010,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2010.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98399,75971,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2010,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2010,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2010.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98399,75971,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2010,STABILIZED_ANALYTICAL,False,NONE,RAW_EDGE_YEAR,False,True,True,True,True,True,True,True,True,True
+2011,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2011.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2011,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2011,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2011.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2011,STABILIZED_ANALYTICAL,True,MODE_3YR,2010-2011-2012,False,True,True,True,True,True,True,True,True,True
+2012,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2012.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98547,75823,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2012,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2012,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2012.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98547,75823,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2012,STABILIZED_ANALYTICAL,True,MODE_3YR,2011-2012-2013,False,True,True,True,True,True,True,True,True,True
+2013,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2013.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2013,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2013,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2013.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2013,STABILIZED_ANALYTICAL,True,MODE_3YR,2012-2013-2014,False,True,True,True,True,True,True,True,True,True
+2014,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2014.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2014,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2014,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2014.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2014,STABILIZED_ANALYTICAL,True,MODE_3YR,2013-2014-2015,False,True,True,True,True,True,True,True,True,True
+2015,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2015.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2015,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2015,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2015.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2015,STABILIZED_ANALYTICAL,True,MODE_3YR,2014-2015-2016,False,True,True,True,True,True,True,True,True,True
+2016,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2016.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2016,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2016,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2016.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2016,STABILIZED_ANALYTICAL,True,MODE_3YR,2015-2016-2017,False,True,True,True,True,True,True,True,True,True
+2017,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2017.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2017,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2017,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2017.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2017,STABILIZED_ANALYTICAL,True,MODE_3YR,2016-2017-2018,False,True,True,True,True,True,True,True,True,True
+2018,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2018.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2018,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2018,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2018.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2018,STABILIZED_ANALYTICAL,True,MODE_3YR,2017-2018-2019,False,True,True,True,True,True,True,True,True,True
+2019,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2019.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2019,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2019,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2019.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2019,STABILIZED_ANALYTICAL,True,MODE_3YR,2018-2019-2020,False,True,True,True,True,True,True,True,True,True
+2020,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2020.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2020,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2020,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2020.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2020,STABILIZED_ANALYTICAL,True,MODE_3YR,2019-2020-2021,False,True,True,True,True,True,True,True,True,True
+2021,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2021.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2021,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2021,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2021.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2021,STABILIZED_ANALYTICAL,True,MODE_3YR,2020-2021-2022,False,True,True,True,True,True,True,True,True,True
+2022,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2022.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2022,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2022,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2022.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2022,STABILIZED_ANALYTICAL,True,MODE_3YR,2021-2022-2023,False,True,True,True,True,True,True,True,True,True
+2023,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2023.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2023,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2023,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2023.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2023,STABILIZED_ANALYTICAL,True,MODE_3YR,2022-2023-2024,False,True,True,True,True,True,True,True,True,True
+2024,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2024.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2024,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2024,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2024.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2024,STABILIZED_ANALYTICAL,True,MODE_3YR,2023-2024-2025,False,True,True,True,True,True,True,True,True,True
+2025,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2025.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2025,RAW_RF,False,NONE,NONE,False,True,True,True,True,True,True,True,True,True
+2025,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2025.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2025,STABILIZED_ANALYTICAL,False,NONE,RAW_EDGE_YEAR_NO_2026_SMOOTHING,False,True,True,True,True,True,True,True,True,True
+2026,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2026.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2026,RAW_RF,False,NONE,NONE,True,True,True,True,True,True,True,True,True,True
+2026,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2026.tif,EPSG:32644,530,329,1,uint8,0.0,30.0,30.0,900.0,174370,98696,75674,"0,1,2,3,4",0,"| 30.00, 0.00, 378600.00|
+| 0.00,-30.00, 768000.00|
+| 0.00, 0.00, 1.00|",2026,STABILIZED_ANALYTICAL,False,NONE,RAW_PROVISIONAL_YEAR,True,True,True,True,True,True,True,True,True,True

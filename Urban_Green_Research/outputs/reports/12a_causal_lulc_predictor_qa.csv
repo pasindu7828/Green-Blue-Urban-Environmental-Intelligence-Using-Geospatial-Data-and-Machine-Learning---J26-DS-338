@@ -1,0 +1,2 @@
+predictor_rows,target_rows,feature_count,duplicate_grid_origin_rows,missing_feature_values,infinite_feature_values,target_matches_step11f,positive_count_matches_step11f,fraction_bounds_valid,future_named_feature_columns,raw_lulc_only,future_information_used,overall_step12a_status
+51310,51310,48,0,0,0,True,True,True,False,True,False,PASS

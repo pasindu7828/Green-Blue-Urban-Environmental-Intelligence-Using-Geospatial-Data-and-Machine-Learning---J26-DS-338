@@ -1,0 +1,2 @@
+production_model,candidate_id,training_origin_start,training_origin_end,training_rows,positive_rows,negative_rows,positive_rate_percent,feature_count,scale_pos_weight,operating_threshold,training_performance_reported_as_validation_accuracy,official_performance_source
+XGBoost,XGB05_DEPTH3_STRONG_REG,2012,2022,51310,844,50466,1.6449035275774702,55,59.79383886255924,0.715,False,Step 13E

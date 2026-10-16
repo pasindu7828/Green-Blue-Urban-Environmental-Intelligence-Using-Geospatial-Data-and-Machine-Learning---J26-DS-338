@@ -1,0 +1,4 @@
+dataset,crs,resolution_x,resolution_y,crs_ok,resolution_ok
+GEDTM30,EPSG:32644,30.0,30.0,True,True
+NASADEM,EPSG:32644,30.0,30.0,True,True
+ESA WorldCover 2021,EPSG:32644,10.0,10.0,True,True

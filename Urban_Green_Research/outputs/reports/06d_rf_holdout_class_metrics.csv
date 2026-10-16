@@ -1,0 +1,5 @@
+class_id,class_name,validation_samples,validation_spatial_blocks,correct_predictions,precision_user_accuracy,recall_producer_accuracy,f1_score
+1,Green / Vegetation,28,14,28,0.9655172413793104,1.0,0.9824561403508771
+2,Built-up,22,11,21,1.0,0.9545454545454546,0.9767441860465116
+3,Open / Bare,4,3,4,1.0,1.0,1.0
+4,Water,25,5,25,1.0,1.0,1.0

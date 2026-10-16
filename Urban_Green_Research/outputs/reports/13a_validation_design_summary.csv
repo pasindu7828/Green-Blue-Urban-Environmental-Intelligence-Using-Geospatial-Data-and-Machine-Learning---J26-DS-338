@@ -1,0 +1,2 @@
+validation_design,target_horizon_years,temporal_cv_fold_count,temporal_validation_years,final_temporal_test_year,final_temporal_train_origin_years,final_temporal_embargo_origin_years,spatial_block_size,spatial_fold_count,spatial_cv_development_origin_years,spatial_assignment_target_independent,final_test_used_for_tuning,models_trained,overall_step13a_status
+Rolling temporal validation + independent 1km spatial block CV,3,3,"2017,2019,2021",2022,2012-2019,2020-2021,1km x 1km,5,2012-2019,True,False,False,PASS

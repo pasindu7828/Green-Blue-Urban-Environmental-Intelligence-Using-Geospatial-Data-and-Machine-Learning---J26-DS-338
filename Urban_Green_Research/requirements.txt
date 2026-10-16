@@ -1,0 +1,8 @@
+numpy
+pandas
+geopandas
+pyogrio
+rasterio
+shapely
+pyprojscikit-learn
+joblib

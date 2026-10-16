@@ -1,0 +1,41 @@
+sample_id,original_class_id,original_class_name,review_status,manual_class_id,manual_class_name,training_action,review_notes
+C1_002,1,Green / Vegetation,REJECTED,,,EXCLUDE_FROM_TRAINING,Mixed vegetation and built-up within the 30 m Landsat pixel
+C1_020,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C1_046,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C1_057,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C1_076,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C1_079,1,Green / Vegetation,REJECTED,,,EXCLUDE_FROM_TRAINING,Mixed vegetation and built-up within the 30 m Landsat pixel
+C1_128,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C1_145,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C1_156,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C1_199,1,Green / Vegetation,VERIFIED,1,Green / Vegetation,KEEP_ORIGINAL_LABEL,Clear vegetation within the 30 m Landsat pixel
+C2_016,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_048,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_059,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_071,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_113,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_132,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_147,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_178,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_188,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C2_194,2,Built-up,VERIFIED,2,Built-up,KEEP_ORIGINAL_LABEL,Clear built-up area within the 30 m Landsat pixel
+C3_002,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_006,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_012,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_015,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_022,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_028,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_030,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_037,3,Open / Bare,CORRECTED,2,Built-up,RELABEL_MANUALLY,"Pixel is predominantly built-up, not open or bare land"
+C3_040,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C3_044,3,Open / Bare,VERIFIED,3,Open / Bare,KEEP_ORIGINAL_LABEL,Clear open or bare land within the 30 m Landsat pixel
+C4_008,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_049,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_055,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,water within the 30 m Landsat pixel
+C4_068,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_074,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_097,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_126,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_140,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_169,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel
+C4_186,4,Water,VERIFIED,4,Water,KEEP_ORIGINAL_LABEL,Clear water within the 30 m Landsat pixel

@@ -1,0 +1,4 @@
+dataset_name,feature_count,null_geometries,empty_geometries,valid_geometries,invalid_geometries,duplicate_geometries,geometry_types,source_crs
+KMC Boundary,1,0,0,1,0,0,{'Polygon': 1},EPSG:4326
+Kaduwela GN Divisions Processed,57,0,0,57,0,0,{'Polygon': 57},EPSG:4326
+UDA QA 508 Screening With Flags,508,0,0,508,0,0,{'MultiPolygon': 508},EPSG:4326

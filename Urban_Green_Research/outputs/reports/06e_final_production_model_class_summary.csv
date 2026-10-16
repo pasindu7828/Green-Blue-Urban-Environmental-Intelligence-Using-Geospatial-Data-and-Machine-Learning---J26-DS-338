@@ -1,0 +1,5 @@
+class_id,class_name,production_training_samples,percent_of_training_data
+1,Green / Vegetation,143,36.02015113350126
+2,Built-up,113,28.463476070528966
+3,Open / Bare,21,5.289672544080604
+4,Water,120,30.22670025188917

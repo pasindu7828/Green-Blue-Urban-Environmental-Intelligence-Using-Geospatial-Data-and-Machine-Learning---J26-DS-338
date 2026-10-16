@@ -1,0 +1,11 @@
+layer_name,feature_count,geometry_type,field_count,crs
+KMC_3_Sectors,3,Polygon,3,EPSG:4326
+KMC_59_SourcePolygonParts,59,Polygon,3,EPSG:4326
+UDA_2024_ZONE_ESTIMATES,508,MultiPolygon,15,EPSG:4326
+Two_HighLand_Approximate,2,Polygon,5,EPSG:4326
+Unclassified_Screenshot_Gaps,130,MultiPolygon,2,EPSG:4326
+QA_508_Screening_With_Flags,508,MultiPolygon,23,EPSG:4326
+QA_171_Ambiguous_Names,171,MultiPolygon,23,EPSG:4326
+QA_5_Merged_MD3_MD4,5,MultiPolygon,23,EPSG:4326
+QA_2_HighLand_Comparison,2,Polygon,11,EPSG:4326
+QA_HighLand_Unresolved,2,MultiPolygon,4,EPSG:4326

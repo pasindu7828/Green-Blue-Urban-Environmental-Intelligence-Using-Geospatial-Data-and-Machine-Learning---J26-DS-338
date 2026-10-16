@@ -1,0 +1,4 @@
+from_year,to_year,from_sensor_era,to_sensor_era,sensor_era_changed,comparison_pixels,comparison_area_km2,unchanged_pixels,changed_pixels,changed_percent,built_gain_pixels,built_gain_km2,built_loss_pixels,built_loss_km2,built_net_change_km2,green_gain_pixels,green_gain_km2,green_loss_pixels,green_loss_km2,green_net_change_km2,green_to_built_pixels,green_to_built_km2,built_to_green_pixels,built_to_green_km2
+2011,2012,Landsat 5 TM,Landsat 5 TM + Landsat 7 ETM+,True,98547,88.6923,83112,15435,15.66257724740479,5498,4.9482,7891,7.1019,-2.1537,8081,7.2729,5043,4.5387,2.7342,4347,3.9123,6843,6.1587
+2012,2013,Landsat 5 TM + Landsat 7 ETM+,Landsat 8 OLI,True,98547,88.6923,83301,15246,15.47079058723249,4246,3.8214,9498,8.5482,-4.7268,9314,8.3826,3648,3.2832,5.0994,3009,2.7081,8620,7.758
+2020,2021,Landsat 8 OLI,Landsat 8 OLI + Landsat 9 OLI-2,True,98696,88.8264,88547,10149,10.283091513333874,3797,3.4173,5690,5.121,-1.7037,5698,5.1282,3024,2.7216,2.4066,2785,2.5065,5317,4.7853

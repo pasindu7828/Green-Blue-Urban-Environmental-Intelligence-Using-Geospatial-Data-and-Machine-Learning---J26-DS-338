@@ -1,0 +1,4 @@
+fold_id,train_origin_year_start,train_origin_year_end,train_target_information_available_through_year,embargo_origin_year_start,embargo_origin_year_end,validation_origin_year,train_rows,train_positive_rows,train_positive_rate_percent,embargo_rows,validation_rows,validation_positive_rows,validation_positive_rate_percent
+T1_VALIDATE_2017,2012,2014,2017,2015,2016,2017,14335,286,1.9951168468782698,9998,4535,35,0.7717750826901874
+T2_VALIDATE_2019,2012,2016,2019,2017,2018,2019,24333,589,2.4205811038507377,8915,4553,61,1.3397759718866682
+T3_VALIDATE_2021,2012,2018,2021,2019,2020,2021,33248,664,1.9971126082771895,8907,4558,38,0.8336989907854322
