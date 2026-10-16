@@ -1,0 +1,67 @@
+{
+  "step": 30,
+  "analysis": "Forecast and scenario uncertainty/confidence",
+  "point_forecast_changed": false,
+  "scenario_point_estimates_changed": false,
+  "spatial_uncertainty": {
+    "development_profile_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "calibration_year": 2024,
+    "audit_year": 2025,
+    "score": "absolute centered spatial residual",
+    "levels_percent": [
+      90,
+      95
+    ],
+    "recalibration_after_2025": false
+  },
+  "annual_level_uncertainty": {
+    "final_method": "Expanding Mean",
+    "development_calibration_targets": "<=2023",
+    "reserved_audit_targets": [
+      2024,
+      2025
+    ],
+    "horizons_years": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "non_decreasing_horizon_radius_policy": true,
+    "small_sample_note": "H4/H5 have few independent annual target years; bands are empirical conservative envelopes."
+  },
+  "future_total_reference_band": {
+    "formula": "total_radius = spatial_radius + annual_level_radius",
+    "formal_exact_future_coverage_guarantee": false
+  },
+  "local_confidence": {
+    "basis": "Per-grid 2019-2023 mean absolute centered spatial residual",
+    "labels": [
+      "Higher relative confidence",
+      "Moderate relative confidence",
+      "Lower relative confidence"
+    ],
+    "probability_interpretation": false
+  },
+  "scenario_uncertainty": {
+    "scenario_lST_reference_band_added": true,
+    "calibrated_delta_lST_interval": false,
+    "reason": "Historical counterfactual intervention outcomes do not exist.",
+    "29d_support_status_preserved": true
+  },
+  "ngboost": {
+    "used": false,
+    "reason": "Earlier raw NGBoost heat intervals had poor empirical coverage."
+  },
+  "limitation": {
+    "future_predictor_uncertainty_monte_carlo_propagated": false,
+    "note": "Dynamic predictor forecast uncertainty is not separately sampled through the full 93-feature LightGBM pipeline."
+  }
+}

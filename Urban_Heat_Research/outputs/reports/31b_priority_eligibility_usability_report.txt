@@ -1,0 +1,28 @@
+STEP 31B - PRIORITY INDICATOR ELIGIBILITY + USABILITY SCREENING
+==============================================================================
+
+STATUS: COMPLETED
+
+Step31A total rows          : 48
+Direct candidates input     : 46
+Support-only rows input     : 2
+Direct candidates -> 31C    : 46
+
+31B checks:
+- leakage eligibility
+- exact source/schema usability
+- 2,194-grid coverage
+- missing / finite values
+- cross-grid variation
+- planning relevance status
+- direction-definition status
+- static/context flags
+
+Important:
+- No final indicator has been selected yet.
+- No redundancy analysis has been performed yet.
+- No CRITIC or TOPSIS calculation has been performed.
+- SHAP and uncertainty remain support-only.
+
+NEXT:
+Step 31C -> temporal representation + redundancy + stability/evidence + final indicator freeze.

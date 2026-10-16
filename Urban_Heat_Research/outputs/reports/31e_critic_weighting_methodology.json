@@ -1,0 +1,26 @@
+{
+  "step": "31E",
+  "title": "CRITIC Objective Weighting",
+  "grid_count": 2194,
+  "criterion_count": 6,
+  "input_matrix": "Step31D min-max normalized priority-oriented matrix",
+  "correlation": {
+    "type": "Pearson",
+    "reason": "Standard CRITIC formulation uses inter-criterion linear correlation to quantify conflict/redundancy."
+  },
+  "dispersion": {
+    "measure": "population standard deviation",
+    "ddof": 0
+  },
+  "formula": {
+    "conflict_j": "sum_k(1 - r_jk)",
+    "information_j": "sigma_j * conflict_j",
+    "weight_j": "information_j / sum_j(information_j)"
+  },
+  "interpretation": "Higher weight means greater objective information contribution through stronger contrast and/or lower redundancy with other criteria.",
+  "manual_weighting_used": false,
+  "criterion_removed": false,
+  "topsis_performed": false,
+  "model_retrained": false,
+  "next": "Step32 TOPSIS priority ranking"
+}

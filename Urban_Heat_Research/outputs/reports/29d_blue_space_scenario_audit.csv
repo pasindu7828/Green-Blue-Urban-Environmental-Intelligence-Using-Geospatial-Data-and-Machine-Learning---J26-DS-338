@@ -1,0 +1,24 @@
+check,status,details
+step28_audit,PASS,Step-28 strict audit verified fully PASS.
+historical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+production_model_hash,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+dist_water_static_historically,PASS,grids_changing=0
+ndwi_time_varying,PASS,grids_changing=2194
+literal_water_coverage_percent_slider_used,PASS,No. NDWI is used as a continuous spectral water/wetness intensity proxy.
+distance_to_water_slider_used,PASS,No. dist_water remains frozen because no new water-body geometry is created.
+scenario_levels_data_derived,PASS,"LOW=q50, MODERATE=q75, HIGH=q90 of positive historical adjacent annual within-grid NDWI changes."
+baseline_ndwi_feature_reconstruction,PASS,features_checked=7
+baseline_raw_prediction_reproduction,PASS,max_error_c=8.881784197001e-16
+only_intended_frozen_features_changed,PASS,NDWI; NDWI_delta1; NDWI_hist3_mean; NDWI_hist3_slope; NDWI_hist3_std; NDWI_lag1; NDWI_lag2; NDWI_nbr_contrast; NDWI; NDWI_delta1; NDWI_hist3_mean; NDWI_hist3_slope; NDWI_hist3_std; NDWI_lag1; NDWI_lag2; NDWI_nbr_contrast; NDWI; NDWI_delta1; NDWI_hist3_mean; NDWI_hist3_slope; NDWI_hist3_std; NDWI_lag1; NDWI_lag2; NDWI_nbr_contrast
+dist_water_unchanged_in_scenario,PASS,max_change=0.000000000000e+00
+scenario_row_count,PASS,"actual=32910, expected=32910"
+scenario_outputs_finite,PASS,rows=32910
+cooling_identity,PASS,max_error_c=3.552713678801e-15
+local_neighbor_semantics,PASS,NDWI neighbour mean remains Step-28 baseline; selected-grid contrast changes if retained.
+scenario_recentering,PASS,Not applied. Local same-grid raw anomaly delta used.
+model_retraining,PASS,None. Frozen Step-22B LightGBM used for inference only.
+historical_response_model_used_as_frontend_engine,PASS,No. TWFE is QA evidence only.
+causal_claim,PASS,No. Output is model-based what-if sensitivity.
+uncertainty_added_here,PASS,No. Uncertainty/confidence remains Step 30.
+yearly_geojson_count,PASS,"saved=5, expected=5"
+scenario_map_count,PASS,"saved=15, expected=15"

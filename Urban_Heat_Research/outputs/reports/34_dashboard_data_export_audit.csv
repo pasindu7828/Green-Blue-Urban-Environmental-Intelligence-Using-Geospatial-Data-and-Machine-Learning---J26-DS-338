@@ -1,0 +1,28 @@
+check,status,details
+step23b_audit,PASS,Step23B audit verified fully PASS.
+step28_audit,PASS,Step28 audit verified fully PASS.
+step28b_audit,PASS,Step28B audit verified fully PASS.
+step30_audit,PASS,Step30 audit verified fully PASS.
+step32_audit,PASS,Step32 audit verified fully PASS.
+step33_audit,PASS,Step33 audit verified fully PASS.
+grid_count,PASS,"rows=2194, unique_grids=2194, expected=2194"
+grid_area_one_to_one,PASS,Each grid_id maps to exactly one historical area_name.
+geometry_complete,PASS,"rows=2194, CRS=EPSG:4326"
+historical_rows_complete,PASS,"rows=24134, expected=24134"
+historical_years_exact,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+future_rows_complete,PASS,"rows=10970, expected=10970"
+future_years_exact,PASS,"years=[2026, 2027, 2028, 2029, 2030]"
+step28_forecast_reproduced_in_step30,PASS,max_abs_difference=3.553e-15
+trajectory_join_complete,PASS,Trajectory class available for every future grid-year.
+xai_join_complete,PASS,Future local XAI summary available for every grid-year.
+priority_join_complete,PASS,Step32 continuous priority rank/score available for every future grid-year.
+rank_stability_join_complete,PASS,Step33 rank-stability information available for every future grid-year.
+primary_scenario_join_complete,PASS,All four primary scenario families available for every future grid-year.
+area_name_complete,PASS,Canonical area_name joined to final dashboard datasets.
+priority_scores_finite,PASS,All TOPSIS priority scores are finite.
+future_predictions_finite,PASS,All future LST point forecasts are finite.
+no_priority_class_thresholds_invented,PASS,Step34 exports continuous Step32 rank/score; no new High/Medium/Low thresholds are created.
+no_model_retraining,PASS,Step34 contains no estimator fitting or model retraining.
+no_critic_or_topsis_recalculation,PASS,Step34 only reads Step32/33 priority outputs; CRITIC/TOPSIS are not recalculated.
+scenario_claim_scope_preserved,PASS,"Scenario fields are exported as model-based planning sensitivities, not causal guarantees."
+upstream_files_unchanged,PASS,All Step34 input hashes are unchanged before vs after export.

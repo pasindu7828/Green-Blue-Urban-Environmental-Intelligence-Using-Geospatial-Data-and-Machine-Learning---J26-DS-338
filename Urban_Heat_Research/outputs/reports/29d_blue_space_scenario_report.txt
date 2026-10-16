@@ -1,0 +1,49 @@
+STEP 29D - BLUE-SPACE / WATER-WETNESS INTENSITY WHAT-IF SCENARIO
+============================================================================================================================
+
+REPRESENTATION DECISION
+----------------------------------------------------------------------------------------------------------------------------
+NDWI is used as the continuous blue-space / water-wetness intensity proxy.
+dist_water remains frozen structural context because this step does not create new water-body geometry.
+
+DATA-DERIVED SCENARIO LEVELS
+----------------------------------------------------------------------------------------------------------------------------
+scenario_level  historical_positive_change_quantile  positive_change_sample_count  ndwi_increase_magnitude
+           LOW                                 0.50                         12101                 0.029522
+      MODERATE                                 0.75                         12101                 0.066691
+          HIGH                                 0.90                         12101                 0.175488
+
+HISTORICAL RESPONSE QA
+----------------------------------------------------------------------------------------------------------------------------
+           variant  rows  ndwi_beta_c_per_1_0  response_c_per_plus_0_05_ndwi  clustered_se      p_value  ci95_lower_per_plus_0_05  ci95_upper_per_plus_0_05  within_r2
+TWFE_ALL_2015_2025 24134           -14.565101                      -0.728255      0.947997 2.850485e-53                 -0.821157                 -0.635353   0.584870
+ TWFE_EXCLUDE_2017 21940           -11.577416                      -0.578871      0.998163 4.182623e-31                 -0.676689                 -0.481053   0.548104
+
+SCENARIO SUMMARY
+----------------------------------------------------------------------------------------------------------------------------
+ year scenario_level  grid_count  requested_ndwi_increase  mean_actual_ndwi_increase  support_bound_limited_count  mean_baseline_lst_c  mean_scenario_lst_c  mean_modeled_lst_change_c  median_modeled_lst_change_c  min_modeled_lst_change_c  max_modeled_lst_change_c  mean_cooling_benefit_c  cooling_grid_count  no_change_grid_count  warming_grid_count  cooling_grid_pct  warming_grid_pct
+ 2026           HIGH        2194                 0.175488                   0.175488                            0            35.511272            34.451653                  -1.059619                    -1.142943                 -2.403099                  0.095009                1.059619                2190                     0                   4         99.817685          0.182315
+ 2026            LOW        2194                 0.029522                   0.029522                            0            35.511272            35.474260                  -0.037013                    -0.013385                 -0.822498                  0.086444                0.037013                1515                   342                 337         69.051960         15.360073
+ 2026       MODERATE        2194                 0.066691                   0.066691                            0            35.511272            35.219512                  -0.291760                    -0.248409                 -1.372212                  0.072469                0.291760                2063                     7                 124         94.029170          5.651778
+ 2027           HIGH        2194                 0.175488                   0.175488                            0            35.511272            35.210900                  -0.300372                    -0.293771                 -0.776124                  0.037594                0.300372                2176                     4                  14         99.179581          0.638104
+ 2027            LOW        2194                 0.029522                   0.029522                            0            35.511272            35.493177                  -0.018095                    -0.009745                 -0.355259                  0.067020                0.018095                1323                   692                 179         60.300820          8.158614
+ 2027       MODERATE        2194                 0.066691                   0.066691                            0            35.511272            35.441927                  -0.069345                    -0.049456                 -0.624509                  0.067020                0.069345                2064                    64                  66         94.074749          3.008204
+ 2028           HIGH        2194                 0.175488                   0.175488                            0            35.511272            35.207980                  -0.303292                    -0.289238                 -0.818952                  0.102415                0.303292                2186                     0                   8         99.635369          0.364631
+ 2028            LOW        2194                 0.029522                   0.029522                            0            35.511272            35.498804                  -0.012468                     0.000000                 -0.324262                  0.074189                0.012468                1009                   699                 486         45.989061         22.151322
+ 2028       MODERATE        2194                 0.066691                   0.066691                            0            35.511272            35.451246                  -0.060026                    -0.045221                 -0.565765                  0.056987                0.060026                1939                    10                 245         88.377393         11.166819
+ 2029           HIGH        2194                 0.175488                   0.175488                            0            35.511272            35.279762                  -0.231510                    -0.215901                 -0.766116                  0.044692                0.231510                2134                    39                  21         97.265269          0.957156
+ 2029            LOW        2194                 0.029522                   0.029522                            0            35.511272            35.504791                  -0.006481                     0.000000                 -0.318327                  0.074189                0.006481                 372                  1434                 388         16.955333         17.684594
+ 2029       MODERATE        2194                 0.066691                   0.066691                            0            35.511272            35.478360                  -0.032912                     0.000000                 -0.536323                  0.074189                0.032912                 924                   940                 330         42.114859         15.041021
+ 2030           HIGH        2194                 0.175488                   0.175488                            0            35.511272            35.279603                  -0.231669                    -0.215901                 -0.766116                  0.044692                0.231669                2134                    39                  21         97.265269          0.957156
+ 2030            LOW        2194                 0.029522                   0.029522                            0            35.511272            35.504770                  -0.006502                     0.000000                 -0.318327                  0.074189                0.006502                 374                  1432                 388         17.046490         17.684594
+ 2030       MODERATE        2194                 0.066691                   0.066691                            0            35.511272            35.478371                  -0.032901                     0.000000                 -0.536323                  0.074189                0.032901                 927                   937                 330         42.251595         15.041021
+
+FRONTEND INTERPRETATION
+----------------------------------------------------------------------------------------------------------------------------
+The planner selects a grid/year and LOW, MODERATE or HIGH blue-space/water-wetness intensity increase.
+The system displays baseline NDWI, scenario NDWI, structural distance to existing water, baseline predicted LST, scenario predicted LST, modeled LST change and direction.
+Do not label NDWI increase as a literal percentage increase in water coverage.
+
+SCIENTIFIC LIMITATION
+----------------------------------------------------------------------------------------------------------------------------
+This is a frozen-model what-if sensitivity analysis, not a guaranteed causal physical cooling/heating response.

@@ -1,0 +1,20 @@
+check,status,details
+step31d_audit,PASS,Step 31D audit verified fully PASS.
+grid_count,PASS,"rows=2194, unique_grids=2194, expected=2194"
+criterion_count,PASS,"actual=6, expected=6"
+normalized_matrix_complete,PASS,No missing or non-finite normalized criterion values.
+normalized_values_within_0_1,PASS,"All Step31D normalized values lie inside [0,1]."
+correlation_matrix_finite,PASS,Pearson correlation matrix has only finite values.
+correlation_matrix_symmetric,PASS,Pearson correlation matrix is symmetric.
+correlation_diagonal_one,PASS,All correlation diagonal values equal 1.
+all_standard_deviations_positive,PASS,All six normalized criteria have positive population standard deviation.
+all_conflict_sums_nonnegative,PASS,All CRITIC conflict sums are non-negative.
+all_information_values_nonnegative,PASS,All CRITIC information-content values are non-negative.
+all_weights_nonnegative,PASS,All CRITIC weights are non-negative.
+weight_sum_one,PASS,weight_sum=1.000000000000
+all_six_weights_positive,PASS,Every frozen criterion receives a positive CRITIC weight.
+no_manual_weights_mixed,PASS,Weights are derived only from normalized variability and Pearson inter-criterion correlation.
+no_new_indicator_selection,PASS,Exactly the six Step31C-frozen indicators are retained.
+no_topsis_ranking,PASS,TOPSIS is deferred to Step32.
+no_model_retraining,PASS,No model fitting/retraining performed.
+upstream_step31d_files_unchanged,PASS,Step31D input hashes are unchanged before vs after Step31E.

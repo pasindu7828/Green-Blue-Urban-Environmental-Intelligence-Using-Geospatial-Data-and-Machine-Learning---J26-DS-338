@@ -1,0 +1,25 @@
+check,status,details
+step31d_audit,PASS,Step 31D audit verified fully PASS.
+step31e_audit,PASS,Step 31E audit verified fully PASS.
+grid_count,PASS,"rows=2194, unique_grids=2194, expected=2194"
+criterion_count,PASS,"actual=6, expected=6"
+criterion_identity_matches_step31d_step31e,PASS,Step31D metadata and Step31E CRITIC weight definitions match exactly.
+normalized_matrix_complete,PASS,No missing or non-finite normalized criterion values.
+normalized_values_within_0_1,PASS,"All Step31D normalized values lie inside [0,1]."
+all_criteria_priority_oriented,PASS,All six criteria use higher value = stronger cooling priority.
+no_second_normalization,PASS,TOPSIS directly reuses the verified Step31D min-max normalized matrix.
+weights_finite_positive,PASS,All six Step31E CRITIC weights are finite and positive.
+weight_sum_one,PASS,weight_sum=1.000000000000
+weighted_matrix_complete,PASS,Weighted normalized matrix contains only finite values.
+ideal_vectors_finite,PASS,Ideal-best and ideal-worst vectors are finite.
+ideal_best_not_below_ideal_worst,PASS,Every benefit-priority criterion has ideal_best >= ideal_worst.
+distances_finite_nonnegative,PASS,All Euclidean ideal distances are finite and non-negative.
+closeness_denominator_positive,PASS,D_plus + D_minus is positive for every grid.
+topsis_scores_finite_within_0_1,PASS,"All TOPSIS priority scores are finite and lie inside [0,1]."
+ranking_complete,PASS,Deterministic operational rank covers exactly 1..2194 with one row per grid.
+ranking_score_monotonic,PASS,TOPSIS scores are non-increasing from rank 1 to rank 2194.
+no_manual_weights_mixed,PASS,Only Step31E CRITIC weights are applied.
+no_new_indicator_selection,PASS,Exactly the six Step31C-frozen indicators are retained.
+no_priority_class_thresholds_frozen,PASS,Step32 creates continuous scores/ranks only; final class thresholds are deferred until sensitivity validation.
+no_model_retraining,PASS,No predictive model fitting or retraining performed.
+upstream_step31d_step31e_files_unchanged,PASS,All Step31D/Step31E input hashes are unchanged before vs after Step32.

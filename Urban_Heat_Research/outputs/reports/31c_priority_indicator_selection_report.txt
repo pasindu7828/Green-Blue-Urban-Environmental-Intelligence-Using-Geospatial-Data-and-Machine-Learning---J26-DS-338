@@ -1,0 +1,29 @@
+STEP 31C - PRIORITY INDICATOR SELECTION + REDUNDANCY / STABILITY REVIEW
+======================================================================================
+
+STATUS: COMPLETED
+
+FINAL SIX INDICATORS:
+1. Future Heat Severity -> HEAT_MEAN (Future Heat Severity)
+2. Trend Urgency -> TREND_REL_SEN (Relative Trend Urgency)
+3. Vegetation / Green Deficit -> VEG_DEFICIT_MEAN (Future Green-cover Deficit)
+4. Built-up / Urban Pressure -> BUILT_NDBI_MEAN (Future Built-up Intensity)
+5. Blue-space / Water Deficit -> BLUE_DIST_WATER (Water-access Deficit)
+6. Modeled Intervention Benefit -> SCEN_COMBINED_G10_MODERATE (Modeled Combined Cooling Benefit)
+
+Maximum final cross-dimension |Spearman rho|: 0.938058
+Pairs >= 0.90: 1
+Near-duplicate pairs >= 0.999: 0
+
+METHOD NOTES:
+- one criterion frozen per planning decision dimension
+- future-state criteria use sustained 2026-2030 representations where appropriate
+- trajectory class is not arbitrarily converted to an ordinal score
+- Step29C PRIMARY +10pp/MODERATE combined scenario verified exactly
+- SHAP remains support-only
+- uncertainty remains a separate confidence layer
+- no scenario response was clipped or forced to be beneficial
+- no CRITIC/TOPSIS calculation was performed
+
+NEXT:
+Step 31D -> build final 2,194-grid decision matrix, apply direction logic, normalize.

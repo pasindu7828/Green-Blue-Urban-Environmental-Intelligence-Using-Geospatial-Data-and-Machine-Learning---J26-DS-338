@@ -1,0 +1,7 @@
+criterion_order,criterion_code,decision_dimension,selected_candidate_id,final_indicator_name,final_field_name,step31c_priority_direction,mcda_orientation,direction_transform,normalization
+1,C1,Future Heat Severity,HEAT_MEAN,Future Heat Severity,future_heat_mean_lst_c,HIGHER=HIGHER_PRIORITY,HIGHER=STRONGER_PRIORITY,IDENTITY,MIN_MAX_0_1
+2,C2,Trend Urgency,TREND_REL_SEN,Relative Trend Urgency,relative_heat_sen_slope,MORE_POSITIVE=HIGHER_PRIORITY,HIGHER=STRONGER_PRIORITY,IDENTITY,MIN_MAX_0_1
+3,C3,Vegetation / Green Deficit,VEG_DEFICIT_MEAN,Future Green-cover Deficit,future_green_deficit_mean,HIGHER=HIGHER_PRIORITY,HIGHER=STRONGER_PRIORITY,IDENTITY,MIN_MAX_0_1
+4,C4,Built-up / Urban Pressure,BUILT_NDBI_MEAN,Future Built-up Intensity,future_ndbi_mean,HIGHER=HIGHER_PRIORITY,HIGHER=STRONGER_PRIORITY,IDENTITY,MIN_MAX_0_1
+5,C5,Blue-space / Water Deficit,BLUE_DIST_WATER,Water-access Deficit,distance_to_water,HIGHER=HIGHER_PRIORITY,HIGHER=STRONGER_PRIORITY,IDENTITY,MIN_MAX_0_1
+6,C6,Modeled Intervention Benefit,SCEN_COMBINED_G10_MODERATE,Modeled Combined Cooling Benefit,combined_g10_moderate_mean_cooling_benefit_c,HIGHER_BENEFIT=HIGHER_PRIORITY,HIGHER=STRONGER_PRIORITY,IDENTITY,MIN_MAX_0_1

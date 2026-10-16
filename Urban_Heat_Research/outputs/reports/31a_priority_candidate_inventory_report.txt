@@ -1,0 +1,17 @@
+STEP 31A - PRIORITY CANDIDATE INDICATOR INVENTORY
+=================================================================
+Direct candidates: 46
+Support-only rows: 2
+
+          decision_dimension  candidate_count
+  Blue-space / Water Deficit                3
+   Built-up / Urban Pressure               11
+        Future Heat Severity                3
+Modeled Intervention Benefit               18
+               Trend Urgency                3
+  Vegetation / Green Deficit                8
+
+No final indicator selection occurred.
+No CRITIC weighting occurred.
+No TOPSIS ranking occurred.
+NEXT: Step31B eligibility + leakage screening.

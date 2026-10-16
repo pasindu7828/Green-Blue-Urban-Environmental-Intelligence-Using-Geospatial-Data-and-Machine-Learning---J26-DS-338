@@ -1,0 +1,33 @@
+STEP 31E - CRITIC OBJECTIVE WEIGHTING
+====================================================
+
+STATUS: COMPLETED
+
+Grids    : 2194
+Criteria : 6
+
+FORMULA:
+conflict_j = sum_k(1 - Pearson_r_jk)
+information_j = population_std_j * conflict_j
+weight_j = information_j / sum(information)
+
+FINAL CRITIC WEIGHTS:
+C1 | Future Heat Severity | weight=0.11639110 | 11.6391%
+C2 | Trend Urgency | weight=0.16206958 | 16.2070%
+C3 | Vegetation / Green Deficit | weight=0.21339204 | 21.3392%
+C4 | Built-up / Urban Pressure | weight=0.08598162 | 8.5982%
+C5 | Blue-space / Water Deficit | weight=0.31346835 | 31.3468%
+C6 | Modeled Intervention Benefit | weight=0.10869731 | 10.8697%
+
+Weight sum: 1.000000000000
+Highest absolute inter-criterion correlation: 0.922820
+
+IMPORTANT:
+- weights are objective CRITIC weights
+- no expert/manual weights were mixed in
+- no criterion was removed
+- no TOPSIS ranking was performed
+- no model retraining was performed
+
+NEXT:
+Step32 -> TOPSIS priority ranking.
