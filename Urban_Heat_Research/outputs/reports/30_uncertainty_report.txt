@@ -1,0 +1,59 @@
+STEP 30 - FORECAST + SCENARIO UNCERTAINTY / CONFIDENCE
+========================================================================================================================
+
+SPATIAL CALIBRATION
+------------------------------------------------------------------------------------------------------------------------
+ calibration_year  calibration_rows  nominal_level_percent  spatial_radius_c                   score_definition                                                         method
+             2024              2194                   90.0          1.735847 absolute centered spatial residual split-conformal-style finite-sample absolute-residual quantile
+             2024              2194                   95.0          2.236243 absolute centered spatial residual split-conformal-style finite-sample absolute-residual quantile
+
+2025 SPATIAL AUDIT
+------------------------------------------------------------------------------------------------------------------------
+ audit_year  nominal_level_percent  frozen_spatial_radius_c  observed_spatial_coverage_percent  covered_grids  grid_count  recalibrated_after_2025
+       2025                   90.0                 1.735847                          80.537830           1767        2194                    False
+       2025                   95.0                 2.236243                          89.471285           1963        2194                    False
+
+ANNUAL-LEVEL HORIZON UNCERTAINTY
+------------------------------------------------------------------------------------------------------------------------
+ horizon_years  development_error_count development_target_years  development_mae_c  development_max_abs_error_c  low_independent_year_count_flag  raw_annual_radius_90_c  raw_annual_radius_95_c  annual_radius_90_c  annual_radius_95_c
+             1                        5 2019;2020;2021;2022;2023           1.446708                     3.268127                            False                3.268127                3.268127            3.268127            3.268127
+             2                        4      2020;2021;2022;2023           1.872405                     3.152832                             True                3.152832                3.152832            3.268127            3.268127
+             3                        3           2021;2022;2023           1.696461                     3.148872                             True                3.148872                3.148872            3.268127            3.268127
+             4                        2                2022;2023           2.051574                     2.669617                             True                2.669617                2.669617            3.268127            3.268127
+             5                        1                     2023           2.641657                     2.641657                             True                2.641657                2.641657            3.268127            3.268127
+
+RESERVED ANNUAL AUDIT
+------------------------------------------------------------------------------------------------------------------------
+ horizon_years  nominal_level_percent  development_frozen_radius_c  reserved_target_count reserved_target_years  observed_reserved_coverage_percent  recalibrated_using_reserved_data
+             1                   90.0                     3.268127                      2             2024;2025                               100.0                             False
+             1                   95.0                     3.268127                      2             2024;2025                               100.0                             False
+             2                   90.0                     3.268127                      2             2024;2025                               100.0                             False
+             2                   95.0                     3.268127                      2             2024;2025                               100.0                             False
+             3                   90.0                     3.268127                      2             2024;2025                               100.0                             False
+             3                   95.0                     3.268127                      2             2024;2025                               100.0                             False
+             4                   90.0                     3.268127                      2             2024;2025                               100.0                             False
+             4                   95.0                     3.268127                      2             2024;2025                               100.0                             False
+             5                   90.0                     3.268127                      2             2024;2025                               100.0                             False
+             5                   95.0                     3.268127                      2             2024;2025                               100.0                             False
+
+FUTURE 2026-2030 UNCERTAINTY
+------------------------------------------------------------------------------------------------------------------------
+ year  horizon_years  grid_count  mean_point_forecast_c  spatial_radius_95_c  annual_radius_95_c  total_radius_95_c  reference_pi95_width_c
+ 2026              1        2194              35.511272             2.236243            3.268127            5.50437                11.00874
+ 2027              2        2194              35.511272             2.236243            3.268127            5.50437                11.00874
+ 2028              3        2194              35.511272             2.236243            3.268127            5.50437                11.00874
+ 2029              4        2194              35.511272             2.236243            3.268127            5.50437                11.00874
+ 2030              5        2194              35.511272             2.236243            3.268127            5.50437                11.00874
+
+SCENARIO POLICY
+------------------------------------------------------------------------------------------------------------------------
+Scenario LST receives a baseline-calibrated reference outcome band.
+No calibrated interval is claimed for scenario ΔLST.
+29D support/extrapolation status is carried forward.
+
+INTERPRETATION
+------------------------------------------------------------------------------------------------------------------------
+These are conservative empirical reference prediction bands.
+They are not exact future-coverage guarantees.
+Frozen 2024-calibrated 95% spatial radius: 2.236243 °C
+Observed 2025 centered-spatial coverage: 89.47%

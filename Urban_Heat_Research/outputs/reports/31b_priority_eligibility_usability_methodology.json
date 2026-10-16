@@ -1,0 +1,35 @@
+{
+  "step": "31B",
+  "title": "Priority Indicator Eligibility + Usability Screening",
+  "purpose": "Verify that each Step-31A direct candidate can be safely materialized at grid level without leakage, missingness, coverage failure, or zero spatial variation.",
+  "expected_grids": 2194,
+  "future_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "screening_rules": {
+    "leakage": "No future observed LST target. Step-28 forecast outputs and frozen Step-29 scenario outputs are eligible.",
+    "coverage": "Every direct candidate must represent all 2,194 grids.",
+    "missingness": "Materialized direct candidate values must have zero missing values.",
+    "variation": "A direct candidate must vary across grids; a citywide constant cannot support grid ranking.",
+    "categorical_trajectory": "Trajectory class is checked for completeness/variation but is not numerically ordered in Step 31B.",
+    "static_context": "Static structural variables are not rejected merely because they are time-invariant. They are flagged for planning-relevance review in Step 31C.",
+    "scenario_temporal_screen": "Scenario candidates are tested using per-grid 2026-2030 mean benefit only as a usability probe. Step 31D/31C selection logic still decides the final representation.",
+    "support_layers": "SHAP and Step-30 uncertainty remain support-only and never enter CRITIC/TOPSIS directly."
+  },
+  "not_done_here": [
+    "final indicator selection",
+    "Spearman redundancy removal",
+    "final temporal representation freeze",
+    "CRITIC weighting",
+    "TOPSIS ranking",
+    "model retraining"
+  ],
+  "input_candidate_rows": 48,
+  "direct_candidates_from_31a": 46,
+  "support_only_from_31a": 2,
+  "passed_to_31c": 46
+}

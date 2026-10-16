@@ -1,0 +1,21 @@
+check,status,details
+step28_audit,PASS,Step-28 strict audit verified fully PASS.
+historical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+production_model_hash,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+building_mask_binary,PASS,"unique=[0.0, 1.0]"
+building_mask_static,PASS,grids_changing=0
+literal_building_density_slider_used,PASS,No. building_mask is static binary; NDBI is used as continuous built-up intensity proxy.
+scenario_levels_data_derived,PASS,"LOW=q50, MODERATE=q75, HIGH=q90 of historical |annual delta NDBI|."
+baseline_ndbi_feature_reconstruction,PASS,features_checked=10
+baseline_raw_prediction_reproduction,PASS,max_error_c=8.881784197001e-16
+only_intended_frozen_features_changed,PASS,NDBI; NDBI_delta1; NDBI_hist3_mean; NDBI_hist3_slope; NDBI_hist3_std; NDBI_lag1; NDBI_lag2; NDBI_nbr_contrast; ndbi_minus_ndvi; ndbi_x_building_mask; ndbi_x_vegetation_deficit; NDBI; NDBI_delta1; NDBI_hist3_mean; NDBI_hist3_slope; NDBI_hist3_std; NDBI_lag1; NDBI_lag2; NDBI_nbr_contrast; ndbi_minus_ndvi; ndbi_x_building_mask; ndbi_x_vegetation_deficit; NDBI; NDBI_delta1; NDBI_hist3_mean; NDBI_hist3_slope; NDBI_hist3_std; NDBI_lag1; NDBI_lag2; NDBI_nbr_contrast; ndbi_minus_ndvi; ndbi_x_building_mask; ndbi_x_vegetation_deficit
+scenario_rows,PASS,"actual=32910, expected=32910"
+scenario_outputs_finite,PASS,rows=32910
+cooling_identity,PASS,max_error_c=3.552713678801e-15
+local_neighbor_semantics,PASS,NDBI neighbour mean remains baseline; selected-grid contrast changes if retained.
+scenario_recentering,PASS,Not applied; local effect uses same-grid raw anomaly delta.
+model_retraining,PASS,None. Frozen Step-22B LightGBM used for scenario inference.
+historical_response_model_used_as_frontend_engine,PASS,No. TWFE is QA evidence only.
+causal_claim,PASS,No. Output is model-based what-if sensitivity.
+geojson_count,PASS,"saved=5, expected=5"
+map_count,PASS,"saved=15, expected=15"

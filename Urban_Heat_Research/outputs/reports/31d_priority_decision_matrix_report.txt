@@ -1,0 +1,23 @@
+STEP 31D - FINAL PRIORITY DECISION MATRIX + DIRECTION + NORMALIZATION
+================================================================================
+
+STATUS: COMPLETED
+Grids: 2194
+Criteria: 6
+
+Direction handling:
+- All six criteria already mean: higher value = stronger priority.
+- Direction conversion = IDENTITY.
+
+Normalization:
+- Min-max normalization to [0,1].
+- Higher normalized value = stronger priority signal.
+
+Important:
+- No new indicator selection.
+- Negative modeled intervention benefits are not clipped.
+- No CRITIC weighting yet.
+- No TOPSIS ranking yet.
+- No model retraining.
+
+NEXT: Step 31E -> CRITIC objective weights.

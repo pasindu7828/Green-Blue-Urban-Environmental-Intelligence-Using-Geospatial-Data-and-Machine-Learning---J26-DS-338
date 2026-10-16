@@ -1,0 +1,49 @@
+{
+  "step": "32",
+  "title": "TOPSIS Cooling-Priority Ranking",
+  "study_area": "Kaduwela, Sri Lanka",
+  "grid_count": 2194,
+  "criterion_count": 6,
+  "inputs": {
+    "normalized_matrix": "31d_priority_decision_matrix_normalized.csv",
+    "criterion_metadata": "31d_priority_criteria_metadata.csv",
+    "weights": "31e_critic_weights.csv"
+  },
+  "normalization": {
+    "source": "Step31D",
+    "method": "min-max [0,1]",
+    "second_normalization_in_step32": false,
+    "reason": "Step31D already produced the frozen, dimensionless, priority-oriented matrix used for CRITIC and TOPSIS."
+  },
+  "criterion_orientation": {
+    "all_criteria": "benefit-type priority criteria",
+    "meaning": "higher value = stronger cooling-priority need",
+    "direction_transform": "IDENTITY in Step31D"
+  },
+  "weights": {
+    "method": "CRITIC objective weights",
+    "source": "Step31E",
+    "manual_weights_mixed": false
+  },
+  "topsis": {
+    "weighted_matrix": "v_ij = normalized_ij * weight_j",
+    "ideal_best": "column-wise maximum of weighted matrix",
+    "ideal_worst": "column-wise minimum of weighted matrix",
+    "distance": "Euclidean",
+    "distance_to_best": "sqrt(sum_j((v_ij - v_j_plus)^2))",
+    "distance_to_worst": "sqrt(sum_j((v_ij - v_j_minus)^2))",
+    "closeness": "D_minus / (D_plus + D_minus)",
+    "ranking": "descending TOPSIS closeness score",
+    "score_interpretation": "higher score = stronger cooling priority"
+  },
+  "tie_policy": {
+    "scientific_tie_rank": "minimum rank retained in topsis_rank_with_ties",
+    "operational_rank": "deterministic sequential rank after descending score; grid_id is used only to order exact score ties"
+  },
+  "priority_classification": {
+    "performed": false,
+    "reason": "Step33 will evaluate weight/rank sensitivity before final High/Medium/Low or similar classes are frozen."
+  },
+  "model_retrained": false,
+  "next": "Step33 priority sensitivity / rank-stability validation"
+}

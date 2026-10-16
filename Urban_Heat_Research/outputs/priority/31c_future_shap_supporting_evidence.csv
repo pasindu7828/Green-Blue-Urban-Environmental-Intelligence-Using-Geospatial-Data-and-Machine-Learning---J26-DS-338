@@ -1,0 +1,4 @@
+decision_dimension,matched_feature_count,best_future_shap_rank,best_matching_feature,best_mean_abs_centered_shap_c,role
+Vegetation / Green Deficit,39,4,ndbi_x_vegetation_deficit,0.1932045326029192,SUPPORT_ONLY_NOT_SELECTION_SCORE
+Built-up / Urban Pressure,32,1,NDBI_hist3_mean,0.485912133563361,SUPPORT_ONLY_NOT_SELECTION_SCORE
+Blue-space / Water Deficit,10,9,dist_water,0.0917028893112873,SUPPORT_ONLY_NOT_SELECTION_SCORE

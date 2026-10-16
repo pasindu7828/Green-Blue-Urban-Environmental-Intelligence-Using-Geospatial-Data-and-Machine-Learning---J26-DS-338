@@ -1,0 +1,10 @@
+{
+  "overall_accuracy": 0.5248254790044347,
+  "balanced_accuracy": 0.5057975980291515,
+  "macro_f1": 0.4927663290850714,
+  "wetland_iou": 0.18466091880066915,
+  "wetland_f1": 0.31175320443189225,
+  "wetland_intersection_pixels": 4305,
+  "wetland_union_pixels": 23313,
+  "compared_pixels": 94258
+}

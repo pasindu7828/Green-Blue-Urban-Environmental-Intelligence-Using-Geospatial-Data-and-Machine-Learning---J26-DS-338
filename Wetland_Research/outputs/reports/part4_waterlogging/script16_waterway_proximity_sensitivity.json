@@ -1,0 +1,94 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Exploratory waterway proximity sensitivity",
+  "generated_utc": "2026-10-15T16:06:31.745713+00:00",
+  "reference_model": "Script 13 GEDTM30 Terrain_Urban",
+  "baseline_reproduced": true,
+  "baseline_max_score_error": 2.980066093893896e-08,
+  "general_land_cells": 51707,
+  "proximity_method": "exp(-Euclidean distance / decay scale)",
+  "waterway_types": [
+    "river",
+    "stream",
+    "canal"
+  ],
+  "source_network_year": 2026,
+  "scenarios": [
+    {
+      "scenario": "Waterway_10pct_300m",
+      "waterway_weight": 0.1,
+      "distance_decay_scale_m": 300.0,
+      "slope_weight": 0.36000000000000004,
+      "tpi_weight": 0.36000000000000004,
+      "building_weight": 0.18000000000000002,
+      "general_land_cells": 51707,
+      "mean_score": 0.497384,
+      "mean_absolute_score_change": 0.030595,
+      "changed_class_percent": 12.42,
+      "moved_higher_percent": 1.6574,
+      "moved_lower_percent": 10.7626,
+      "high_veryhigh_percent": 49.7824
+    },
+    {
+      "scenario": "Waterway_20pct_300m",
+      "waterway_weight": 0.2,
+      "distance_decay_scale_m": 300.0,
+      "slope_weight": 0.32000000000000006,
+      "tpi_weight": 0.32000000000000006,
+      "building_weight": 0.16000000000000003,
+      "general_land_cells": 51707,
+      "mean_score": 0.475417,
+      "mean_absolute_score_change": 0.061191,
+      "changed_class_percent": 23.9851,
+      "moved_higher_percent": 3.338,
+      "moved_lower_percent": 20.6471,
+      "high_veryhigh_percent": 43.5995
+    },
+    {
+      "scenario": "Waterway_10pct_150m",
+      "waterway_weight": 0.1,
+      "distance_decay_scale_m": 150.0,
+      "slope_weight": 0.36000000000000004,
+      "tpi_weight": 0.36000000000000004,
+      "building_weight": 0.18000000000000002,
+      "general_land_cells": 51707,
+      "mean_score": 0.482699,
+      "mean_absolute_score_change": 0.039613,
+      "changed_class_percent": 15.934,
+      "moved_higher_percent": 0.586,
+      "moved_lower_percent": 15.348,
+      "high_veryhigh_percent": 46.1891
+    },
+    {
+      "scenario": "Waterway_10pct_600m",
+      "waterway_weight": 0.1,
+      "distance_decay_scale_m": 600.0,
+      "slope_weight": 0.36000000000000004,
+      "tpi_weight": 0.36000000000000004,
+      "building_weight": 0.18000000000000002,
+      "general_land_cells": 51707,
+      "mean_score": 0.516524,
+      "mean_absolute_score_change": 0.022996,
+      "changed_class_percent": 9.3102,
+      "moved_higher_percent": 3.7771,
+      "moved_lower_percent": 5.5331,
+      "high_veryhigh_percent": 54.5207
+    }
+  ],
+  "saved_exploratory_rasters": {
+    "score": "data\\processed\\part4_waterlogging\\16_Waterway_Exploratory_Score_30m.tif",
+    "class": "data\\processed\\part4_waterlogging\\16_Waterway_Exploratory_Class_30m.tif"
+  },
+  "limitations": [
+    "This tests a hypothetical positive waterway-exposure relationship.",
+    "Waterway proximity does not establish flooding, overflow or poor drainage.",
+    "Rivers, streams and canals can have different hydrological functions.",
+    "Distance scales and weights are sensitivity assumptions, not empirically calibrated parameters.",
+    "The 2026 OSM network is not verified as the exact network present in 2018.",
+    "No historical event observations were used to optimize the tested parameters.",
+    "Changes in model classes do not establish predictive improvement.",
+    "Final model selection remains pending."
+  ],
+  "status": "EXPLORATORY_WATERWAY_SENSITIVITY_COMPLETE",
+  "raw_data_modified": false
+}

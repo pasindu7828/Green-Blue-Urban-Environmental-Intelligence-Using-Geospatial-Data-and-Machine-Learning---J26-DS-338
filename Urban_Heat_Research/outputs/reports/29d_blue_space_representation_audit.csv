@@ -1,0 +1,3 @@
+variable,observed_min,observed_max,unique_values,grids_changing_through_time,scenario_role
+dist_water,0.0,4175.450888860844,2189,0,STATIC STRUCTURAL CONTEXT ONLY; not changed without new water-body geometry
+NDWI,-0.765913436071999,0.6871104649383656,24134,2194,PRIMARY CONTINUOUS BLUE-SPACE / WATER-WETNESS INTENSITY PROXY

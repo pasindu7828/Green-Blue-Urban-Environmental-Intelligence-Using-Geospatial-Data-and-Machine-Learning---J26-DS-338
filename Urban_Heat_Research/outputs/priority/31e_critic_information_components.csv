@@ -1,0 +1,7 @@
+criterion_order,criterion_code,decision_dimension,selected_candidate_id,final_indicator_name,final_field_name,std_population,conflict_sum,critic_information,critic_weight,critic_weight_pct
+1,C1,Future Heat Severity,HEAT_MEAN,Future Heat Severity,future_heat_mean_lst_c,0.18030906713306316,2.451423678444248,0.44201391660818456,0.1163910980720195,11.63910980720195
+2,C2,Trend Urgency,TREND_REL_SEN,Relative Trend Urgency,relative_heat_sen_slope,0.13502775061016364,4.5582132824739965,0.6154852863338343,0.16206957661712645,16.206957661712647
+3,C3,Vegetation / Green Deficit,VEG_DEFICIT_MEAN,Future Green-cover Deficit,future_green_deficit_mean,0.26269123586710186,3.0849547830665265,0.8103905845578729,0.21339203690169534,21.339203690169533
+4,C4,Built-up / Urban Pressure,BUILT_NDBI_MEAN,Future Built-up Intensity,future_ndbi_mean,0.1393384902219465,2.3434231179211267,0.3265290392023363,0.08598162183850502,8.598162183850503
+5,C5,Blue-space / Water Deficit,BLUE_DIST_WATER,Water-access Deficit,distance_to_water,0.25648587311713605,4.641372544800584,1.1904464896150815,0.3134683522761163,31.34683522761163
+6,C6,Modeled Intervention Benefit,SCEN_COMBINED_G10_MODERATE,Modeled Combined Cooling Benefit,combined_g10_moderate_mean_cooling_benefit_c,0.141567093435196,2.9159003348874792,0.41279553515673506,0.1086973142945375,10.869731429453749

@@ -1,0 +1,33 @@
+STEP 34 - DASHBOARD DATA EXPORT
+
+Project root: E:\Git Research\J26-DS-338\Urban_Heat_Research
+Grid count: 2194
+Area count: 57
+Historical rows: 24134 (2015-2025)
+Future master rows: 10970 (2026-2030)
+Priority rows: 2194
+Future map features: 10970
+
+PRIMARY DASHBOARD SOURCES
+- Historical: kaduwela_preprocessed_base.csv
+- Forecast: Step28 point forecasts carried through Step30 uncertainty
+- Trajectory: Step23B relative spatial heat trajectory
+- XAI: Step28B future local SHAP summary
+- Scenarios: Step30-enriched Step29 scenario outputs
+- Priority: Step32 TOPSIS + Step33 sensitivity/rank stability
+
+GUARDRAILS
+- No model retraining performed.
+- No CRITIC/TOPSIS recalculation performed.
+- No priority classes or new thresholds invented.
+- area_name and geometry are metadata for dashboard use.
+- Scenario outputs remain model-based planning sensitivity, not causal guarantees.
+
+MAIN FRONTEND/BACKEND FILES
+- outputs\dashboard\34_future_dashboard_master_2026_2030.csv
+- outputs\dashboard\34_historical_heat_2015_2025.csv
+- outputs\dashboard\34_cooling_priority_dashboard.csv
+- outputs\dashboard\maps\34_grid_metadata_wgs84.geojson
+- outputs\dashboard\maps\34_future_dashboard_master_2026_2030_wgs84.geojson
+- outputs\dashboard\34_area_heat_summary_2015_2030.csv
+- outputs\dashboard\scenarios\34_primary_scenarios_2026_2030.csv

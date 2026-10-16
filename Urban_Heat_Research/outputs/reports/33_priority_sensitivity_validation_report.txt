@@ -1,0 +1,59 @@
+STEP 33 - COOLING-PRIORITY SENSITIVITY + RANK-STABILITY VALIDATION
+============================================================================
+
+STATUS: COMPLETED
+
+Grids: 2194
+Criteria: 6
+Total scenarios including baseline: 526
+Controlled OAT scenarios: 24
+Monte Carlo scenarios: 500
+Equal-weight benchmark: 1
+
+BASELINE VERIFICATION:
+- Step32 maximum score reproduction difference: 8.327e-17
+- Step32 exact deterministic rank reproduction: True
+
+CONTROLLED OAT DESIGN:
+- multipliers: [0.8, 0.9, 1.1, 1.2]
+- one criterion perturbed at a time
+- all weights renormalized after perturbation
+
+MONTE CARLO STRESS TEST:
+- scenarios: 500
+- fixed seed: 42
+- multiplier range: [0.8, 1.2]
+- simultaneous bounded perturbation of all six weights
+- diagnostic stress test, not a statistical confidence interval
+
+OBSERVED STABILITY SUMMARY:
+- controlled min Spearman rho: 0.976852
+- controlled min Kendall tau-b: 0.873420
+- controlled min Top-100 overlap: 86.00%
+- Monte Carlo min Spearman rho: 0.942658
+- Monte Carlo median Spearman rho: 0.994018
+- Monte Carlo min Kendall tau-b: 0.799209
+- Monte Carlo min Top-100 overlap: 82.00%
+- Monte Carlo median Top-100 overlap: 92.00%
+- Equal-weight Spearman rho: 0.824737
+- Equal-weight Top-100 overlap: 67.00%
+
+WORST OBSERVED NON-BASELINE SCENARIOS:
+- lowest Spearman: EQUAL_WEIGHT_BENCHMARK | rho=0.824737
+- lowest Top-100 overlap: EQUAL_WEIGHT_BENCHMARK | overlap=67.00%
+- largest mean absolute rank shift: EQUAL_WEIGHT_BENCHMARK | mean_shift=298.284
+
+BASELINE TOP-100 RETENTION:
+- mean percentage of sensitivity scenarios in which a baseline Top-100 grid remains Top-100: 92.18%
+- minimum percentage for any baseline Top-100 grid: 51.05%
+
+IMPORTANT:
+- original Step31E CRITIC weights were not changed
+- original Step32 TOPSIS ranking was not changed
+- no criterion was added, removed, or re-selected
+- no predictive model was retrained
+- no arbitrary priority-class thresholds were frozen
+- low robustness, if present, is reported rather than hidden
+
+NEXT:
+Review Step33 evidence, then Step34 dashboard-ready export.

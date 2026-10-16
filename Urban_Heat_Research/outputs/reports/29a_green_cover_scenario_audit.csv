@@ -1,0 +1,26 @@
+check,status,details
+step28_audit,PASS,Step-28 strict audit verified fully PASS.
+production_model_hash,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+future_feature_hash,PASS,d1e68a2e5d063f231d7a4d379e2534005ad5873f3a6017d3c4f28de9b8acba38
+future_prediction_hash,PASS,55586971042bbce04845a4a33ae724f51b8417fce9bafc2c15bc0a5e75d7ff3e
+baseline_raw_prediction_reproduction,PASS,max_error_c=8.881784197001e-16
+baseline_green_feature_formula_reproduction,PASS,formulas_checked=4
+scenario_levels,PASS,"[5, 10, 20]"
+primary_scenario,PASS,+5 percentage points
+scenario_row_count,PASS,"actual=32910, expected=32910"
+scenario_rows_per_grid_year,PASS,expected=3 scenarios/grid-year
+scenario_green_bounds,PASS,"min=0.050000, max=1.000000"
+actual_green_increase_nonnegative,PASS,min_actual_increase_pp=0.000000000000
+only_intended_features_changed,PASS,green_mask; green_mask_delta1; green_mask_nbr_contrast; ndbi_x_vegetation_deficit; ndvi_x_green_mask; green_mask; green_mask_delta1; green_mask_nbr_contrast; ndbi_x_vegetation_deficit; ndvi_x_green_mask; green_mask; green_mask_delta1; green_mask_nbr_contrast; ndbi_x_vegetation_deficit; ndvi_x_green_mask
+scenario_outputs_finite,PASS,rows=32910
+cooling_benefit_identity,PASS,max_error_c=3.552713678801e-15
+independent_local_scenario_semantics,PASS,Each grid-year is perturbed independently; scenario batch is not treated as simultaneous citywide greening.
+scenario_recentering,PASS,Not applied. Local scenario effect uses scenario_raw - baseline_raw for the same grid-year.
+annual_thermal_level_changed,PASS,No. Local scenario keeps the frozen Step-28 annual thermal level.
+model_retraining,PASS,None. Frozen Step-22B model loaded for inference only.
+baseline_step28_predictions_modified,PASS,No. Scenario outputs are saved separately.
+uncertainty_added_here,PASS,No. Scenario uncertainty/confidence is deferred to Step 30.
+causal_or_guaranteed_cooling_claim,PASS,No. Outputs are documented as model-based statistical sensitivity.
+monotonic_response_forced,PASS,No. Non-monotonic tree-model responses are retained and audited.
+yearly_geojson_count,PASS,"saved=5, expected=5"
+cooling_benefit_map_count,PASS,"saved=15, expected=15"

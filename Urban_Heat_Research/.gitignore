@@ -24,3 +24,7 @@ Urban_Heat_Research/models/candidates/*.joblib
 # Generated candidate model artifacts
 models/candidates/*.joblib
 models/candidates/**/*.joblib
+outputs/scenarios/29c_combined_scenario_features_2026_2030.csv
+outputs/uncertainty/30_29c_combined_scenarios_with_uncertainty.csv
+outputs/dashboard/scenarios/34_combined_scenarios_2026_2030.csv
+outputs/dashboard/maps/34_future_dashboard_master_2026_2030_wgs84.geojson

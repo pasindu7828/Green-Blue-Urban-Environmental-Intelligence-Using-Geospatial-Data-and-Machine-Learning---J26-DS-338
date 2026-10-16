@@ -1,0 +1,3 @@
+variant,rows,pearson_dgreen_dndvi,pearson_dgreen_dndvi_p,spearman_dgreen_dndvi,spearman_dgreen_dndvi_p,pearson_dgreen_dlst,pearson_dgreen_dlst_p,pearson_dndvi_dlst,pearson_dndvi_dlst_p
+ALL_TRANSITIONS,21940,0.750673760147666,0.0,0.5629003669806939,0.0,0.5256930410920503,0.0,0.5757200879247317,0.0
+EXCLUDE_TRANSITIONS_TOUCHING_2017,17552,0.7548422068443168,0.0,0.6007114026439604,0.0,0.5602479569918465,0.0,0.397400629205631,0.0

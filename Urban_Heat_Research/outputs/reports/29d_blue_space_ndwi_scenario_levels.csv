@@ -1,0 +1,4 @@
+scenario_level,historical_positive_change_quantile,positive_change_sample_count,ndwi_increase_magnitude
+LOW,0.5,12101,0.02952152214282533
+MODERATE,0.75,12101,0.0666914129945183
+HIGH,0.9,12101,0.17548752000539408

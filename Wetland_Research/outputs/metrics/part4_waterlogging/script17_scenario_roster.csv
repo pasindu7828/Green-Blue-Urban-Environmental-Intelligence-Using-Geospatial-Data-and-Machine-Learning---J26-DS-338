@@ -1,0 +1,10 @@
+scenario,dem,slope_weight,tpi_weight,building_weight,waterway_weight,waterway_decay_scale_m
+Terrain_Only,GEDTM30,0.5,0.5,0.0,0.0,
+Terrain_Urban,GEDTM30,0.4,0.4,0.2,0.0,
+Urban_10pct,GEDTM30,0.45,0.45,0.1,0.0,
+Urban_30pct,GEDTM30,0.35,0.35,0.3,0.0,
+Slope_Emphasis,GEDTM30,0.6,0.2,0.2,0.0,
+TPI_Emphasis,GEDTM30,0.2,0.6,0.2,0.0,
+NASADEM_Terrain_Urban,NASADEM,0.4,0.4,0.2,0.0,
+NASADEM_Terrain_Only,NASADEM,0.5,0.5,0.0,0.0,
+Waterway_10pct_300m,GEDTM30,0.36,0.36,0.18,0.1,300.0

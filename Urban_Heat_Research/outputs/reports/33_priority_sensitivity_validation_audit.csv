@@ -1,0 +1,25 @@
+check,status,details
+step31d_audit,PASS,Step31D audit verified fully PASS.
+step31e_audit,PASS,Step31E audit verified fully PASS.
+step32_audit,PASS,Step32 audit verified fully PASS.
+grid_count,PASS,"rows=2194, unique_grids=2194, expected=2194"
+criterion_count,PASS,"actual=6, expected=6"
+criterion_identity_preserved,PASS,Exact Step31D/Step31E six-criterion identity and order preserved.
+normalized_matrix_complete,PASS,Step31D normalized matrix contains only finite values.
+normalized_values_within_0_1,PASS,"All Step31D normalized values lie inside [0,1]."
+baseline_weights_positive_sum_one,PASS,Baseline weight sum=1.000000000000
+all_sensitivity_weights_finite_positive,PASS,Every sensitivity scenario has six finite positive weights.
+all_sensitivity_weight_sums_one,PASS,Every sensitivity weight vector is renormalized to sum to 1.
+expected_scenario_count,PASS,"actual=526, expected=526"
+baseline_step32_reproduced,PASS,"max_score_diff=8.327e-17, exact_rank_match=True"
+sensitivity_metrics_finite,PASS,All primary sensitivity metrics are finite.
+correlation_overlap_metrics_within_bounds,PASS,Correlation/overlap diagnostics lie inside mathematically valid bounds.
+rank_matrix_complete,PASS,"rank_matrix_shape=(2194, 526)"
+all_scenario_rankings_complete,PASS,Every sensitivity scenario contains exactly one rank 1..2194 per grid.
+grid_stability_complete,PASS,"Grid-level stability summary is complete for all 2,194 grids."
+baseline_weights_not_overwritten,PASS,Step31E CRITIC weight file is read-only in Step33.
+baseline_ranking_not_overwritten,PASS,Step32 TOPSIS ranking is read-only in Step33.
+no_new_indicator_selection,PASS,Exactly the six Step31C-frozen indicators are retained in every scenario.
+no_priority_class_thresholds_invented,PASS,Step33 validates continuous ranks; no arbitrary High/Medium/Low thresholds are frozen.
+no_model_retraining,PASS,No predictive model fitting or retraining performed.
+upstream_files_unchanged,PASS,All Step31D/31E/32 input hashes are unchanged before vs after Step33.

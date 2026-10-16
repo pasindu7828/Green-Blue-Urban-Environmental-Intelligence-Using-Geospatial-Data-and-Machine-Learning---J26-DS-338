@@ -1,0 +1,7 @@
+source_class,1_Wetland_Marsh,2_Open_Water,3_Built_Up,4_Paddy_Agriculture,5_Other_Vegetation,6_Bare_Fill_Disturbed
+1_Wetland_Marsh,3079,702,2475,5857,1215,2073
+2_Open_Water,416,2314,572,692,129,706
+3_Built_Up,562,292,21175,1828,171,7528
+4_Paddy_Agriculture,2502,529,3557,8887,809,3242
+5_Other_Vegetation,2570,557,1626,5493,3671,1309
+6_Bare_Fill_Disturbed,275,205,2505,604,61,4070

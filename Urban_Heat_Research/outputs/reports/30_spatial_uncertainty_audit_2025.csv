@@ -1,0 +1,3 @@
+audit_year,nominal_level_percent,frozen_spatial_radius_c,observed_spatial_coverage_percent,covered_grids,grid_count,recalibrated_after_2025
+2025,90.0,1.7358469025061254,80.53783044667274,1767,2194,False
+2025,95.0,2.236243367602583,89.47128532360985,1963,2194,False

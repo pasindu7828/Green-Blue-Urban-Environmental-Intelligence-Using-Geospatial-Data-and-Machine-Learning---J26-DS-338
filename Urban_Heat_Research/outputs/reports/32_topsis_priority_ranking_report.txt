@@ -1,0 +1,59 @@
+STEP 32 - TOPSIS COOLING-PRIORITY RANKING
+================================================================
+
+STATUS: COMPLETED
+
+Grids    : 2194
+Criteria : 6
+
+INPUTS:
+- Step31D min-max normalized, priority-oriented decision matrix
+- Step31E objective CRITIC weights
+
+TOPSIS FORMULA:
+v_ij = normalized_ij * CRITIC_weight_j
+D_plus  = Euclidean distance to high-priority ideal best
+D_minus = Euclidean distance to low-priority ideal worst
+score = D_minus / (D_plus + D_minus)
+
+INTERPRETATION:
+- higher score = closer to high-priority ideal
+- lower score = closer to low-priority ideal
+
+CRITIC WEIGHTS USED:
+C1 | Future Heat Severity | weight=0.11639110 | 11.6391%
+C2 | Trend Urgency | weight=0.16206958 | 16.2070%
+C3 | Vegetation / Green Deficit | weight=0.21339204 | 21.3392%
+C4 | Built-up / Urban Pressure | weight=0.08598162 | 8.5982%
+C5 | Blue-space / Water Deficit | weight=0.31346835 | 31.3468%
+C6 | Modeled Intervention Benefit | weight=0.10869731 | 10.8697%
+
+TOPSIS SCORE SUMMARY:
+min=0.12291181
+mean=0.43929155
+median=0.43055940
+max=0.82793985
+unique_scores=2194
+grids_in_exact_score_ties=0
+
+TOP 10 GRIDS:
+rank=1 | grid_id=1832,3615 | score=0.82793985
+rank=2 | grid_id=1832,3616 | score=0.81501245
+rank=3 | grid_id=1834,3629 | score=0.79474214
+rank=4 | grid_id=1831,3634 | score=0.79228634
+rank=5 | grid_id=1833,3614 | score=0.78829749
+rank=6 | grid_id=1832,3634 | score=0.77163704
+rank=7 | grid_id=1828,3635 | score=0.77061805
+rank=8 | grid_id=1833,3631 | score=0.76955479
+rank=9 | grid_id=1833,3615 | score=0.76847379
+rank=10 | grid_id=1833,3630 | score=0.76708281
+
+IMPORTANT:
+- no second normalization was performed
+- no manual/expert weights were mixed in
+- no criterion was added/removed/re-selected
+- no final priority class thresholds were frozen
+- no predictive model was retrained
+
+NEXT:
+Step33 -> sensitivity and rank-stability validation.

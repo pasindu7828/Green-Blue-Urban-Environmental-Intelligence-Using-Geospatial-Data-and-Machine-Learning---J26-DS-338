@@ -1,0 +1,61 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Land-cover interpretation screening",
+  "generated_utc": "2026-10-15T10:13:32.825315+00:00",
+  "lulc_reference_year": 2020,
+  "study_cells": 94431,
+  "categories": [
+    {
+      "screening_code": 1,
+      "screening_category": "General_land_susceptibility",
+      "study_cells": 51707,
+      "percent_of_study": 54.7564
+    },
+    {
+      "screening_code": 2,
+      "screening_category": "Paddy_agricultural_context",
+      "study_cells": 25386,
+      "percent_of_study": 26.8831
+    },
+    {
+      "screening_code": 3,
+      "screening_category": "Wetland_marsh_context",
+      "study_cells": 12181,
+      "percent_of_study": 12.8994
+    },
+    {
+      "screening_code": 4,
+      "screening_category": "Open_water_context",
+      "study_cells": 4509,
+      "percent_of_study": 4.7749
+    },
+    {
+      "screening_code": 5,
+      "screening_category": "Unknown_landcover",
+      "study_cells": 648,
+      "percent_of_study": 0.6862
+    }
+  ],
+  "crosswalk": {
+    "0": 5,
+    "1": 3,
+    "2": 4,
+    "3": 1,
+    "4": 2,
+    "5": 1,
+    "6": 1
+  },
+  "screening_raster": "data\\processed\\part4_waterlogging\\12_Landcover_Screening_30m.tif",
+  "interpretation_policy": [
+    "General land is eligible for primary land-waterlogging susceptibility reporting.",
+    "Paddy requires separate interpretation because standing water may be intentional.",
+    "Wetland/marsh remains a distinct ecological context, not a confirmed waterlogging label.",
+    "Open water is not treated as ordinary land-waterlogging exposure.",
+    "Missing LULC remains unknown.",
+    "Terrain susceptibility may be calculated across all valid study-area cells.",
+    "Screening codes are not susceptibility classes or prediction labels.",
+    "The 2020 LULC classification is not assumed to represent exact 2018 conditions."
+  ],
+  "raw_data_modified": false,
+  "status": "SCREENING_LAYER_PREPARED"
+}

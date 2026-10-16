@@ -1,0 +1,23 @@
+check,status,details
+step31b_audit,PASS,Step 31B audit verified fully PASS.
+step31b_direct_candidates,PASS,"actual=46, expected=46"
+numeric_candidates_materialized,PASS,45 numeric candidates expected; TREND_CLASS remains categorical/descriptive.
+numeric_grid_count,PASS,"actual=2194, expected=2194"
+step29c_primary_verified,PASS,PRIMARY file is exactly the +10pp green / MODERATE built subset.
+final_dimension_count,PASS,"actual=6, expected=6"
+one_indicator_per_dimension,PASS,Exactly one final criterion per planning decision dimension.
+final_candidate_ids_unique,PASS,"selected=6, unique=6"
+trajectory_class_not_arbitrarily_encoded,PASS,TREND_CLASS remains descriptive; continuous TREND_REL_SEN selected.
+future_heat_not_single_year_only,PASS,Sustained 2026-2030 mean heat selected.
+vegetation_deficit_direction_explicit,PASS,"1-green_mask selected, so larger value directly means larger green deficit."
+built_intervention_alignment,PASS,"NDBI selected, aligned with Step 29B built-up intervention."
+blue_accessibility_not_watercover_claim,PASS,dist_water selected as accessibility/proximity deficit; NDWI not relabeled as water-cover percentage.
+combined_primary_benefit_selected,PASS,Uses Step29C frozen PRIMARY combined scenario.
+negative_scenario_benefits_preserved,PASS,No clipping/sign-forcing applied. Higher modeled cooling benefit will be treated as higher priority in Step31D; negative values remain negative.
+shap_support_only,PASS,"Step28B SHAP used only as supporting evidence, not as a direct criterion or automatic selector."
+uncertainty_not_direct_criterion,PASS,Step30 uncertainty remains separate confidence information.
+no_near_duplicate_final_pair,PASS,near-duplicate threshold=0.999; count=0
+no_critic_weighting,PASS,No CRITIC weights calculated in Step31C.
+no_topsis_ranking,PASS,No TOPSIS scores/ranks calculated in Step31C.
+no_model_retraining,PASS,No model fitting/retraining performed.
+upstream_outputs_modified,PASS,No. Only new Step31C outputs were written.

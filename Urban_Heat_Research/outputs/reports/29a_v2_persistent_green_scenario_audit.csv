@@ -1,0 +1,27 @@
+check,status,details
+step28_audit,PASS,Step-28 strict audit verified fully PASS.
+historical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+production_model_hash,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+future_feature_hash,PASS,d1e68a2e5d063f231d7a4d379e2534005ad5873f3a6017d3c4f28de9b8acba38
+future_prediction_hash,PASS,55586971042bbce04845a4a33ae724f51b8417fce9bafc2c15bc0a5e75d7ff3e
+baseline_green_feature_reconstruction,PASS,features_checked=9
+baseline_raw_prediction_reproduction,PASS,max_error_c=8.881784197001e-16
+persistent_intervention_start_year,PASS,2026
+scenario_levels,PASS,"[5, 10, 20]"
+scenario_row_count,PASS,"actual=32910, expected=32910"
+scenario_feature_row_count,PASS,"actual=32910, expected=32910"
+scenario_green_bounds,PASS,"min=0.050000, max=1.000000"
+future_green_history_propagated,PASS,Scenario 2026 values become 2027 lag/history; scenario history continues recursively through 2030.
+only_intended_frozen_features_changed,PASS,green_mask; green_mask_delta1; green_mask_hist3_mean; green_mask_hist3_slope; green_mask_hist3_std; green_mask_lag1; green_mask_lag2; green_mask_nbr_contrast; ndbi_x_vegetation_deficit; ndvi_x_green_mask; green_mask; green_mask_delta1; green_mask_hist3_mean; green_mask_hist3_slope; green_mask_hist3_std; green_mask_lag1; green_mask_lag2; green_mask_nbr_contrast; ndbi_x_vegetation_deficit; ndvi_x_green_mask; green_mask; green_mask_delta1; green_mask_hist3_mean; green_mask_hist3_slope; green_mask_hist3_std; green_mask_lag1; green_mask_lag2; green_mask_nbr_contrast; ndbi_x_vegetation_deficit; ndvi_x_green_mask
+scenario_outputs_finite,PASS,rows=32910
+cooling_benefit_identity,PASS,max_error_c=3.552713678801e-15
+local_neighbor_semantics,PASS,Neighbour mean remains Step-28 baseline; only selected-grid contrast changes.
+scenario_recentering,PASS,Not applied. Local scenario uses raw-anomaly delta for the same grid-year.
+annual_thermal_level_changed,PASS,No. Frozen Step-28 annual level retained.
+model_retraining,PASS,None. Frozen Step-22B model used for inference only.
+step28_baseline_modified,PASS,No. V2 scenario outputs saved separately.
+cooling_or_monotonicity_forced,PASS,No. Genuine model responses retained.
+causal_claim,PASS,No. Scenario is explicitly model-based statistical sensitivity.
+uncertainty_added_here,PASS,No. Uncertainty/confidence remains Step 30.
+yearly_geojson_count,PASS,"saved=5, expected=5"
+scenario_map_count,PASS,"saved=15, expected=15"

@@ -1,0 +1,64 @@
+{
+  "step": "33",
+  "title": "Cooling-Priority Sensitivity and Rank-Stability Validation",
+  "study_area": "Kaduwela, Sri Lanka",
+  "grid_count": 2194,
+  "criterion_count": 6,
+  "baseline": {
+    "normalized_matrix": "31d_priority_decision_matrix_normalized.csv",
+    "weights": "31e_critic_weights.csv",
+    "ranking": "32_topsis_priority_ranking.csv",
+    "topsis_reproduced_before_sensitivity": true,
+    "max_score_difference_vs_step32": 8.326672684688674e-17
+  },
+  "sensitivity_design": {
+    "controlled_oat": {
+      "multipliers": [
+        0.8,
+        0.9,
+        1.1,
+        1.2
+      ],
+      "scenario_count": 24,
+      "procedure": "multiply one CRITIC weight at a time, then renormalize all six weights to sum to 1"
+    },
+    "monte_carlo": {
+      "scenario_count": 500,
+      "random_seed": 42,
+      "multiplier_distribution": "independent Uniform(0.8,1.2)",
+      "procedure": "multiply all six baseline weights simultaneously by independent bounded factors, then renormalize to sum to 1",
+      "interpretation": "stress-test scenarios, not statistical confidence intervals"
+    },
+    "equal_weight_benchmark": {
+      "performed": true,
+      "weight_each": 0.16666666666666666,
+      "interpretation": "alternative benchmark only; does not replace CRITIC"
+    }
+  },
+  "topsis": {
+    "normalization_source": "Step31D min-max [0,1]",
+    "second_normalization": false,
+    "all_criteria_orientation": "higher = stronger cooling priority",
+    "distance": "Euclidean",
+    "score": "D_minus / (D_plus + D_minus)",
+    "ranking": "descending score; grid_id only breaks exact score ties"
+  },
+  "stability_metrics": [
+    "Spearman rho",
+    "Kendall tau-b",
+    "Top-10 overlap",
+    "Top-50 overlap",
+    "Top-100 overlap",
+    "Top-10% overlap",
+    "Top-25% overlap",
+    "absolute rank-shift diagnostics",
+    "grid-level scenario retention diagnostics"
+  ],
+  "robustness_threshold_policy": "No arbitrary numerical robustness threshold is used as a computational PASS/FAIL gate. Step33 reports the observed stability evidence.",
+  "priority_classification": {
+    "performed": false,
+    "reason": "Sensitivity validation does not itself provide a scientifically unique High/Medium/Low threshold. Continuous score, rank and percentile remain the primary decision outputs."
+  },
+  "model_retrained": false,
+  "next": "Step34 dashboard-ready data export after reviewing Step33 sensitivity evidence"
+}
