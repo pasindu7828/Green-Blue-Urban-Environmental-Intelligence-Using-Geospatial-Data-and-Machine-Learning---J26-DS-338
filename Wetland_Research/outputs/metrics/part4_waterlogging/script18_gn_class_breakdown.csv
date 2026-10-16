@@ -1,0 +1,225 @@
+gn_name,gn_number,admin_code,susceptibility_class,general_land_class_cells,area_ha,percent_of_gn_general_land
+Athurugiriya South,490A,1109285,low,55,4.95,7.2084
+Athurugiriya South,490A,1109285,moderate,377,33.93,49.4102
+Athurugiriya South,490A,1109285,high,319,28.71,41.8087
+Athurugiriya South,490A,1109285,very_high,12,1.08,1.5727
+Thaldiyawala,490B,1109210,low,72,6.48,8.4112
+Thaldiyawala,490B,1109210,moderate,570,51.3,66.5888
+Thaldiyawala,490B,1109210,high,208,18.72,24.2991
+Thaldiyawala,490B,1109210,very_high,6,0.54,0.7009
+Wellangiriya,495,1109275,low,18,1.62,2.3166
+Wellangiriya,495,1109275,moderate,522,46.98,67.1815
+Wellangiriya,495,1109275,high,231,20.79,29.7297
+Wellangiriya,495,1109275,very_high,6,0.54,0.7722
+Athurugiriya,490,1109205,low,23,2.07,1.876
+Athurugiriya,490,1109205,moderate,698,62.82,56.9331
+Athurugiriya,490,1109205,high,497,44.73,40.5383
+Athurugiriya,490,1109205,very_high,8,0.72,0.6525
+Hokandara South,494C,1109280,low,98,8.82,12.5
+Hokandara South,494C,1109280,moderate,542,48.78,69.1327
+Hokandara South,494C,1109280,high,133,11.97,16.9643
+Hokandara South,494C,1109280,very_high,11,0.99,1.4031
+Dedigamuwa,480A,1109100,low,357,32.13,32.5433
+Dedigamuwa,480A,1109100,moderate,381,34.29,34.7311
+Dedigamuwa,480A,1109100,high,324,29.16,29.5351
+Dedigamuwa,480A,1109100,very_high,35,3.15,3.1905
+Batapotha,479E,1109185,low,55,4.95,5.8324
+Batapotha,479E,1109185,moderate,541,48.69,57.3701
+Batapotha,479E,1109185,high,317,28.53,33.6161
+Batapotha,479E,1109185,very_high,30,2.7,3.1813
+Thalangama North B,477A,1109135,low,9,0.81,1.2802
+Thalangama North B,477A,1109135,moderate,103,9.27,14.6515
+Thalangama North B,477A,1109135,high,389,35.01,55.3343
+Thalangama North B,477A,1109135,very_high,202,18.18,28.734
+Subhoothipura,492,1109170,low,5,0.45,0.8292
+Subhoothipura,492,1109170,moderate,156,14.04,25.8706
+Subhoothipura,492,1109170,high,313,28.17,51.9071
+Subhoothipura,492,1109170,very_high,129,11.61,21.393
+Malabe East,476,1109125,low,44,3.96,3.4135
+Malabe East,476,1109125,moderate,551,49.59,42.7463
+Malabe East,476,1109125,high,610,54.9,47.3235
+Malabe East,476,1109125,very_high,84,7.56,6.5167
+Nawagamuwa South,470A,1109085,low,220,19.8,21.1538
+Nawagamuwa South,470A,1109085,moderate,329,29.61,31.6346
+Nawagamuwa South,470A,1109085,high,453,40.77,43.5577
+Nawagamuwa South,470A,1109085,very_high,38,3.42,3.6538
+Thunadahena,488B,1109075,low,102,9.18,7.6462
+Thunadahena,488B,1109075,moderate,825,74.25,61.8441
+Thunadahena,488B,1109075,high,387,34.83,29.0105
+Thunadahena,488B,1109075,very_high,20,1.8,1.4993
+Kotuwegoda,491B,1109165,low,71,6.39,17.4877
+Kotuwegoda,491B,1109165,moderate,134,12.06,33.0049
+Kotuwegoda,491B,1109165,high,201,18.09,49.5074
+Kotuwegoda,491B,1109165,very_high,0,0.0,0.0
+Muttettugoda,477B,1109145,low,48,4.32,4.5369
+Muttettugoda,477B,1109145,moderate,303,27.27,28.6389
+Muttettugoda,477B,1109145,high,597,53.73,56.4272
+Muttettugoda,477B,1109145,very_high,110,9.9,10.397
+Thalahena North,478,1109065,low,5,0.45,1.0941
+Thalahena North,478,1109065,moderate,181,16.29,39.6061
+Thalahena North,478,1109065,high,226,20.34,49.453
+Thalahena North,478,1109065,very_high,45,4.05,9.8468
+Pahala Bomiriya A,472A,1109025,low,30,2.7,2.4631
+Pahala Bomiriya A,472A,1109025,moderate,336,30.24,27.5862
+Pahala Bomiriya A,472A,1109025,high,742,66.78,60.9195
+Pahala Bomiriya A,472A,1109025,very_high,110,9.9,9.0312
+Evarihena,495A,1109230,low,5,0.45,1.1261
+Evarihena,495A,1109230,moderate,275,24.75,61.9369
+Evarihena,495A,1109230,high,157,14.13,35.3604
+Evarihena,495A,1109230,very_high,7,0.63,1.5766
+Arangala,494B,1109225,low,66,5.94,7.2131
+Arangala,494B,1109225,moderate,450,40.5,49.1803
+Arangala,494B,1109225,high,327,29.43,35.7377
+Arangala,494B,1109225,very_high,72,6.48,7.8689
+Ranala,469,1109095,low,22,1.98,1.5299
+Ranala,469,1109095,moderate,328,29.52,22.8095
+Ranala,469,1109095,high,850,76.5,59.1099
+Ranala,469,1109095,very_high,238,21.42,16.5508
+Welihinda,488A,1109050,low,45,4.05,8.6042
+Welihinda,488A,1109050,moderate,243,21.87,46.4627
+Welihinda,488A,1109050,high,228,20.52,43.5946
+Welihinda,488A,1109050,very_high,7,0.63,1.3384
+Nawagamuwa,470,1109040,low,54,4.86,4.2353
+Nawagamuwa,470,1109040,moderate,296,26.64,23.2157
+Nawagamuwa,470,1109040,high,778,70.02,61.0196
+Nawagamuwa,470,1109040,very_high,147,13.23,11.5294
+Pahala Bomiriya B,472B,1109045,low,51,4.59,4.2184
+Pahala Bomiriya B,472B,1109045,moderate,251,22.59,20.761
+Pahala Bomiriya B,472B,1109045,high,766,68.94,63.3581
+Pahala Bomiriya B,472B,1109045,very_high,141,12.69,11.6625
+Kothalawala,473,1109055,low,21,1.89,1.8325
+Kothalawala,473,1109055,moderate,390,35.1,34.0314
+Kothalawala,473,1109055,high,600,54.0,52.356
+Kothalawala,473,1109055,very_high,135,12.15,11.7801
+Mahadeniya,475A,1109060,low,85,7.65,7.113
+Mahadeniya,475A,1109060,moderate,430,38.7,35.9833
+Mahadeniya,475A,1109060,high,604,54.36,50.5439
+Mahadeniya,475A,1109060,very_high,76,6.84,6.3598
+Boralugoda,489A,1109215,low,91,8.19,14.1966
+Boralugoda,489A,1109215,moderate,355,31.95,55.3822
+Boralugoda,489A,1109215,high,177,15.93,27.6131
+Boralugoda,489A,1109215,very_high,18,1.62,2.8081
+Hokandara East,494A,1109220,low,140,12.6,14.0704
+Hokandara East,494A,1109220,moderate,513,46.17,51.5578
+Hokandara East,494A,1109220,high,316,28.44,31.7588
+Hokandara East,494A,1109220,very_high,26,2.34,2.6131
+Wickramasinghapura,479C,1109270,low,44,3.96,9.628
+Wickramasinghapura,479C,1109270,moderate,230,20.7,50.3282
+Wickramasinghapura,479C,1109270,high,164,14.76,35.8862
+Wickramasinghapura,479C,1109270,very_high,19,1.71,4.1575
+Welipillewa,480,1109110,low,36,3.24,6.4401
+Welipillewa,480,1109110,moderate,371,33.39,66.3685
+Welipillewa,480,1109110,high,138,12.42,24.6869
+Welipillewa,480,1109110,very_high,14,1.26,2.5045
+Jayawadanagama,479,1109240,low,9,0.81,7.5
+Jayawadanagama,479,1109240,moderate,54,4.86,45.0
+Jayawadanagama,479,1109240,high,37,3.33,30.8333
+Jayawadanagama,479,1109240,very_high,20,1.8,16.6667
+Oruwala,487,1109200,low,25,2.25,2.1368
+Oruwala,487,1109200,moderate,522,46.98,44.6154
+Oruwala,487,1109200,high,552,49.68,47.1795
+Oruwala,487,1109200,very_high,71,6.39,6.0684
+Pahalawela,479A,1109265,low,8,0.72,0.6446
+Pahalawela,479A,1109265,moderate,283,25.47,22.8042
+Pahalawela,479A,1109265,high,765,68.85,61.6438
+Pahalawela,479A,1109265,very_high,185,16.65,14.9073
+Embilladeniya,480B,1109105,low,25,2.25,6.8493
+Embilladeniya,480B,1109105,moderate,138,12.42,37.8082
+Embilladeniya,480B,1109105,high,179,16.11,49.0411
+Embilladeniya,480B,1109105,very_high,23,2.07,6.3014
+Pore,489,1109120,low,125,11.25,11.5955
+Pore,489,1109120,moderate,626,56.34,58.0705
+Pore,489,1109120,high,308,27.72,28.5714
+Pore,489,1109120,very_high,19,1.71,1.7625
+Kumaragewatta,479D,1109235,low,28,2.52,1.9526
+Kumaragewatta,479D,1109235,moderate,576,51.84,40.1674
+Kumaragewatta,479D,1109235,high,718,64.62,50.0697
+Kumaragewatta,479D,1109235,very_high,112,10.08,7.8103
+Asiri Uyana,479B,1109250,low,26,2.34,4.8059
+Asiri Uyana,479B,1109250,moderate,166,14.94,30.6839
+Asiri Uyana,479B,1109250,high,309,27.81,57.1165
+Asiri Uyana,479B,1109250,very_high,40,3.6,7.3937
+Shanthalokagama,487A,1109115,low,37,3.33,2.3764
+Shanthalokagama,487A,1109115,moderate,915,82.35,58.7669
+Shanthalokagama,487A,1109115,high,588,52.92,37.7649
+Shanthalokagama,487A,1109115,very_high,17,1.53,1.0918
+Battaramulla South,492A,1109255,low,0,0.0,0.0
+Battaramulla South,492A,1109255,moderate,72,6.48,15.859
+Battaramulla South,492A,1109255,high,312,28.08,68.7225
+Battaramulla South,492A,1109255,very_high,70,6.3,15.4185
+Aruppitiya,479F,1109245,low,28,2.52,7.7994
+Aruppitiya,479F,1109245,moderate,139,12.51,38.7187
+Aruppitiya,479F,1109245,high,113,10.17,31.4763
+Aruppitiya,479F,1109245,very_high,79,7.11,22.0056
+Pothuarawa,477C,1109190,low,48,4.32,3.3684
+Pothuarawa,477C,1109190,moderate,577,51.93,40.4912
+Pothuarawa,477C,1109190,high,718,64.62,50.386
+Pothuarawa,477C,1109190,very_high,82,7.38,5.7544
+Rajamalwatta,492D,1109260,low,0,0.0,0.0
+Rajamalwatta,492D,1109260,moderate,7,0.63,1.4257
+Rajamalwatta,492D,1109260,high,338,30.42,68.8391
+Rajamalwatta,492D,1109260,very_high,146,13.14,29.7352
+Battaramulla North,492B,1109180,low,4,0.36,0.7246
+Battaramulla North,492B,1109180,moderate,133,11.97,24.0942
+Battaramulla North,492B,1109180,high,325,29.25,58.8768
+Battaramulla North,492B,1109180,very_high,90,8.1,16.3043
+Malabe West,476A,1109130,low,6,0.54,0.6211
+Malabe West,476A,1109130,moderate,247,22.23,25.5694
+Malabe West,476A,1109130,high,527,47.43,54.5549
+Malabe West,476A,1109130,very_high,186,16.74,19.2547
+Udumulla2,492C,1109175,low,16,1.44,3.9801
+Udumulla2,492C,1109175,moderate,161,14.49,40.0498
+Udumulla2,492C,1109175,high,176,15.84,43.7811
+Udumulla2,492C,1109175,very_high,49,4.41,12.1891
+Batewela,480C,1109090,low,186,16.74,19.8083
+Batewela,480C,1109090,moderate,299,26.91,31.8424
+Batewela,480C,1109090,high,389,35.01,41.4271
+Batewela,480C,1109090,very_high,65,5.85,6.9223
+Thalahena South,478A,1109140,low,0,0.0,0.0
+Thalahena South,478A,1109140,moderate,20,1.8,4.4843
+Thalahena South,478A,1109140,high,286,25.74,64.1256
+Thalahena South,478A,1109140,very_high,140,12.6,31.3901
+Thalangama North A,477,1109150,low,87,7.83,5.7884
+Thalangama North A,477,1109150,moderate,733,65.97,48.7691
+Thalangama North A,477,1109150,high,633,56.97,42.1158
+Thalangama North A,477,1109150,very_high,50,4.5,3.3267
+Malabe North,476B,1109070,low,30,2.7,2.0067
+Malabe North,476B,1109070,moderate,593,53.37,39.6656
+Malabe North,476B,1109070,high,763,68.67,51.0368
+Malabe North,476B,1109070,very_high,109,9.81,7.291
+Korathota,488,1109080,low,327,29.43,11.8823
+Korathota,488,1109080,moderate,1184,106.56,43.0233
+Korathota,488,1109080,high,1135,102.15,41.2427
+Korathota,488,1109080,very_high,106,9.54,3.8517
+Kalapaluwawa,491,1109160,low,53,4.77,7.7035
+Kalapaluwawa,491,1109160,moderate,202,18.18,29.3605
+Kalapaluwawa,491,1109160,high,427,38.43,62.064
+Kalapaluwawa,491,1109160,very_high,6,0.54,0.8721
+Walpola,491A,1109155,low,107,9.63,9.0295
+Walpola,491A,1109155,moderate,533,47.97,44.9789
+Walpola,491A,1109155,high,473,42.57,39.9156
+Walpola,491A,1109155,very_high,72,6.48,6.0759
+Hewagama,474,1109015,low,1,0.09,0.1401
+Hewagama,474,1109015,moderate,86,7.74,12.0448
+Hewagama,474,1109015,high,416,37.44,58.2633
+Hewagama,474,1109015,very_high,211,18.99,29.5518
+Kaduwela,473A,1109020,low,32,2.88,3.074
+Kaduwela,473A,1109020,moderate,252,22.68,24.2075
+Kaduwela,473A,1109020,high,629,56.61,60.4227
+Kaduwela,473A,1109020,very_high,128,11.52,12.2959
+Raggahawatta,474A,1109010,low,9,0.81,1.1208
+Raggahawatta,474A,1109010,moderate,182,16.38,22.665
+Raggahawatta,474A,1109010,high,538,48.42,66.9988
+Raggahawatta,474A,1109010,very_high,74,6.66,9.2154
+Welivita,475,1109005,low,17,1.53,1.633
+Welivita,475,1109005,moderate,147,13.23,14.121
+Welivita,475,1109005,high,746,67.14,71.6619
+Welivita,475,1109005,very_high,131,11.79,12.5841
+Ihala Bomiriya,471,1109030,low,12,1.08,1.4406
+Ihala Bomiriya,471,1109030,moderate,220,19.8,26.4106
+Ihala Bomiriya,471,1109030,high,524,47.16,62.9052
+Ihala Bomiriya,471,1109030,very_high,77,6.93,9.2437
+Wekewatta,471A,1109035,low,5,0.45,0.657
+Wekewatta,471A,1109035,moderate,226,20.34,29.6978
+Wekewatta,471A,1109035,high,438,39.42,57.5558
+Wekewatta,471A,1109035,very_high,92,8.28,12.0894

@@ -1,0 +1,234 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "IMERG rainfall units and accumulation",
+  "generated_utc": "2026-10-15T07:34:14.871366+00:00",
+  "unit_evidence": [
+    {
+      "event_id": "E001",
+      "product": "daily",
+      "unit": "mm/day",
+      "observations": 8,
+      "interval_seconds": 86400,
+      "csv_netcdf_agreement": "PASS",
+      "time_bounds_validation": "PASS",
+      "inclusive_end_intervals_normalized": 8,
+      "time_bounds_normalization_rule": "Added one second to the interpreted interval end only when the original NetCDF bound represented an interval exactly one second shorter than the expected duration.",
+      "source_csv": "data\\raw\\rainfall\\imerg\\E001\\E001_IMERG_Daily_Rainfall_2018-05-22_to_2018-05-29.csv",
+      "source_netcdf": "data\\raw\\rainfall\\imerg\\E001\\g4.areaAvgTimeSeries.GPM_3IMERGDF_07_precipitation.20180522-20180529.79E_6N_80E_6N.nc"
+    },
+    {
+      "event_id": "E001",
+      "product": "half_hourly",
+      "unit": "mm/hr",
+      "observations": 384,
+      "interval_seconds": 1800,
+      "csv_netcdf_agreement": "PASS",
+      "time_bounds_validation": "PASS",
+      "inclusive_end_intervals_normalized": 0,
+      "time_bounds_normalization_rule": "Added one second to the interpreted interval end only when the original NetCDF bound represented an interval exactly one second shorter than the expected duration.",
+      "source_csv": "data\\raw\\rainfall\\imerg\\E001 half-hourly rainfall\\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20180522-20180529.79E_6N_80E_6N.csv",
+      "source_netcdf": "data\\raw\\rainfall\\imerg\\E001 half-hourly rainfall\\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20180522-20180529.79E_6N_80E_6N.nc"
+    },
+    {
+      "event_id": "E002",
+      "product": "daily",
+      "unit": "mm/day",
+      "observations": 8,
+      "interval_seconds": 86400,
+      "csv_netcdf_agreement": "PASS",
+      "time_bounds_validation": "PASS",
+      "inclusive_end_intervals_normalized": 8,
+      "time_bounds_normalization_rule": "Added one second to the interpreted interval end only when the original NetCDF bound represented an interval exactly one second shorter than the expected duration.",
+      "source_csv": "data\\raw\\rainfall\\imerg\\E002\\g4.areaAvgTimeSeries.GPM_3IMERGDF_07_precipitation.20181118-20181125.79E_6N_80E_6N.csv",
+      "source_netcdf": "data\\raw\\rainfall\\imerg\\E002\\g4.areaAvgTimeSeries.GPM_3IMERGDF_07_precipitation.20181118-20181125.79E_6N_80E_6N.nc"
+    },
+    {
+      "event_id": "E002",
+      "product": "half_hourly",
+      "unit": "mm/hr",
+      "observations": 384,
+      "interval_seconds": 1800,
+      "csv_netcdf_agreement": "PASS",
+      "time_bounds_validation": "PASS",
+      "inclusive_end_intervals_normalized": 0,
+      "time_bounds_normalization_rule": "Added one second to the interpreted interval end only when the original NetCDF bound represented an interval exactly one second shorter than the expected duration.",
+      "source_csv": "data\\raw\\rainfall\\imerg\\E002 half-hourly rainfall\\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20181118-20181125.79E_6N_80E_6N.csv",
+      "source_netcdf": "data\\raw\\rainfall\\imerg\\E002 half-hourly rainfall\\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20181118-20181125.79E_6N_80E_6N.nc"
+    }
+  ],
+  "event_rainfall_summaries": [
+    {
+      "event_id": "E001",
+      "event_date": "2018-05-29",
+      "daily_event_day_mm": 0.015,
+      "daily_prior_3_days_mm": 44.7797,
+      "daily_prior_7_days_mm": 153.9531,
+      "daily_full_8_days_mm": 153.9681,
+      "hh_event_day_mm": 0.015,
+      "hh_prior_3_days_mm": 44.7797,
+      "hh_prior_7_days_mm": 153.9531,
+      "hh_full_8_days_mm": 153.9681,
+      "maximum_30min_depth_mm": 3.7499,
+      "maximum_1h_depth_mm": 6.6861,
+      "maximum_30min_rate_mm_per_hr": 7.4998
+    },
+    {
+      "event_id": "E002",
+      "event_date": "2018-11-25",
+      "daily_event_day_mm": 21.8437,
+      "daily_prior_3_days_mm": 72.6397,
+      "daily_prior_7_days_mm": 104.6418,
+      "daily_full_8_days_mm": 126.4854,
+      "hh_event_day_mm": 21.8437,
+      "hh_prior_3_days_mm": 72.6397,
+      "hh_prior_7_days_mm": 104.6418,
+      "hh_full_8_days_mm": 126.4854,
+      "maximum_30min_depth_mm": 6.9174,
+      "maximum_1h_depth_mm": 13.0875,
+      "maximum_30min_rate_mm_per_hr": 13.8349
+    }
+  ],
+  "daily_product_comparison": [
+    {
+      "event_id": "E001",
+      "date": "2018-05-22",
+      "daily_product_mm": 8.4801,
+      "half_hourly_product_mm": 8.4801,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E001",
+      "date": "2018-05-23",
+      "daily_product_mm": 46.9874,
+      "half_hourly_product_mm": 46.9874,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E001",
+      "date": "2018-05-24",
+      "daily_product_mm": 39.6061,
+      "half_hourly_product_mm": 39.6061,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E001",
+      "date": "2018-05-25",
+      "daily_product_mm": 14.0998,
+      "half_hourly_product_mm": 14.0998,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E001",
+      "date": "2018-05-26",
+      "daily_product_mm": 17.7436,
+      "half_hourly_product_mm": 17.7436,
+      "difference_hh_minus_daily_mm": -0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E001",
+      "date": "2018-05-27",
+      "daily_product_mm": 16.4737,
+      "half_hourly_product_mm": 16.4737,
+      "difference_hh_minus_daily_mm": -0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E001",
+      "date": "2018-05-28",
+      "daily_product_mm": 10.5624,
+      "half_hourly_product_mm": 10.5624,
+      "difference_hh_minus_daily_mm": -0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E001",
+      "date": "2018-05-29",
+      "daily_product_mm": 0.015,
+      "half_hourly_product_mm": 0.015,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-18",
+      "daily_product_mm": 9.0086,
+      "half_hourly_product_mm": 9.0086,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-19",
+      "daily_product_mm": 22.1572,
+      "half_hourly_product_mm": 22.1572,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-20",
+      "daily_product_mm": 0.8337,
+      "half_hourly_product_mm": 0.8337,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-21",
+      "daily_product_mm": 0.0025,
+      "half_hourly_product_mm": 0.0025,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-22",
+      "daily_product_mm": 10.921,
+      "half_hourly_product_mm": 10.921,
+      "difference_hh_minus_daily_mm": -0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-23",
+      "daily_product_mm": 42.6761,
+      "half_hourly_product_mm": 42.6761,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-24",
+      "daily_product_mm": 19.0427,
+      "half_hourly_product_mm": 19.0427,
+      "difference_hh_minus_daily_mm": -0.0,
+      "absolute_difference_mm": 0.0
+    },
+    {
+      "event_id": "E002",
+      "date": "2018-11-25",
+      "daily_product_mm": 21.8437,
+      "half_hourly_product_mm": 21.8437,
+      "difference_hh_minus_daily_mm": 0.0,
+      "absolute_difference_mm": 0.0
+    }
+  ],
+  "conversion_rules": {
+    "daily": "mm/day multiplied by interval days",
+    "half_hourly": "mm/hr multiplied by interval hours"
+  },
+  "validation_status": "UNIT_AND_TIME_INTEGRATION_PASS",
+  "scientific_limitations": [
+    "Rainfall observations are spatial area averages, not GN-specific rainfall.",
+    "Daily and half-hourly IMERG products may give different rainfall totals.",
+    "Different product estimates are compared but are not required to be identical.",
+    "Rainfall alone does not confirm that mapped polygons represent waterlogging.",
+    "Two event dates are insufficient to establish a seasonal rainfall climatology."
+  ],
+  "raw_data_modified": false
+}

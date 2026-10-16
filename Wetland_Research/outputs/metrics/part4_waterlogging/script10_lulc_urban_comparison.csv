@@ -1,0 +1,7 @@
+class_id,class_name,valid_cells,percent_valid_lulc,mean_2026_building_density_percent,mean_2026_footprint_percent
+1,Wetland_Marsh,12181,12.9885,4.5126,1.9965
+2,Open_Water,4509,4.8079,4.2574,1.4865
+3,Built_Up,27019,28.8101,7.0092,10.5709
+4,Paddy_Agriculture,25386,27.0689,4.5396,2.5451
+5,Other_Vegetation,9989,10.6512,4.1314,1.6474
+6,Bare_Fill_Disturbed,14699,15.6734,6.8399,8.1927

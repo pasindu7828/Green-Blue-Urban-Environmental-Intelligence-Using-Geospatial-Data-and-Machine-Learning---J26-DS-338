@@ -1,0 +1,102 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "OSM drainage distance preparation",
+  "generated_utc": "2026-10-15T09:29:31.808520+00:00",
+  "source": "data\\raw\\osm\\Kaduwela_OSM_Water_Drainage_2026.gpkg",
+  "source_mapping_year": 2026,
+  "analysis_crs": "EPSG:32644",
+  "grid_resolution_m": 30,
+  "study_pixels": 94431,
+  "method": "Euclidean distance from each study-area 30m cell centre to nearest OSM vector waterway line using a spatial index.",
+  "waterway_inventory": [
+    {
+      "waterway": "canal",
+      "feature_count": 270,
+      "features_intersecting_study_area": 92,
+      "total_mapped_length_km": 115.3971,
+      "length_inside_study_area_km": 30.7667
+    },
+    {
+      "waterway": "ditch",
+      "feature_count": 102,
+      "features_intersecting_study_area": 39,
+      "total_mapped_length_km": 25.0086,
+      "length_inside_study_area_km": 7.3424
+    },
+    {
+      "waterway": "drain",
+      "feature_count": 11,
+      "features_intersecting_study_area": 5,
+      "total_mapped_length_km": 4.356,
+      "length_inside_study_area_km": 1.3686
+    },
+    {
+      "waterway": "river",
+      "feature_count": 16,
+      "features_intersecting_study_area": 6,
+      "total_mapped_length_km": 227.0378,
+      "length_inside_study_area_km": 18.3698
+    },
+    {
+      "waterway": "stream",
+      "feature_count": 125,
+      "features_intersecting_study_area": 53,
+      "total_mapped_length_km": 55.5571,
+      "length_inside_study_area_km": 19.6211
+    }
+  ],
+  "distance_statistics": [
+    {
+      "group": "All_Waterways",
+      "feature_count": 524,
+      "valid_study_pixels": 94431,
+      "minimum_distance_m": 0.0115,
+      "median_distance_m": 366.0831,
+      "mean_distance_m": 438.7449,
+      "p95_distance_m": 1126.7808,
+      "maximum_distance_m": 1845.9467,
+      "cells_within_100m_percent": 15.2905,
+      "cells_within_300m_percent": 42.0985
+    },
+    {
+      "group": "River_Stream_Canal",
+      "feature_count": 411,
+      "valid_study_pixels": 94431,
+      "minimum_distance_m": 0.0115,
+      "median_distance_m": 411.3804,
+      "mean_distance_m": 509.0656,
+      "p95_distance_m": 1391.8847,
+      "maximum_distance_m": 2127.8958,
+      "cells_within_100m_percent": 13.7264,
+      "cells_within_300m_percent": 38.0712
+    },
+    {
+      "group": "Ditch_Drain",
+      "feature_count": 113,
+      "valid_study_pixels": 94431,
+      "minimum_distance_m": 0.0366,
+      "median_distance_m": 1192.4765,
+      "mean_distance_m": 1233.9713,
+      "p95_distance_m": 2474.2582,
+      "maximum_distance_m": 3392.896,
+      "cells_within_100m_percent": 2.0057,
+      "cells_within_300m_percent": 7.9052
+    }
+  ],
+  "output_rasters": {
+    "All_Waterways": "data\\processed\\part4_waterlogging\\08_OSM_All_Waterways_Distance_30m.tif",
+    "River_Stream_Canal": "data\\processed\\part4_waterlogging\\08_OSM_River_Stream_Canal_Distance_30m.tif",
+    "Ditch_Drain": "data\\processed\\part4_waterlogging\\08_OSM_Ditch_Drain_Distance_30m.tif"
+  },
+  "scientific_limitations": [
+    "OSM network completeness and drainage accuracy are not independently verified.",
+    "Mapped OSM waterways may omit small urban drains and underground connections.",
+    "The 2026 OSM network does not establish the exact drainage network in 2018.",
+    "Distance is not drainage capacity, flow direction or overflow probability.",
+    "Proximity to waterways may represent different physical processes depending on the waterway type and local conditions.",
+    "Distances are measured to mapped vector lines at 30m cell centres.",
+    "No susceptibility weights or risk directions are assigned."
+  ],
+  "raw_data_modified": false,
+  "status": "DRAINAGE_FEATURE_PREPARATION_PASS"
+}

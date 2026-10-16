@@ -1,0 +1,3 @@
+feature,minimum,maximum,mean,median,p95
+building_footprint_percent,0.0,100.0,5.499489,0.0,30.555556
+building_density_300m_percent,0.0,25.543288,5.535863,3.785489,16.517701
