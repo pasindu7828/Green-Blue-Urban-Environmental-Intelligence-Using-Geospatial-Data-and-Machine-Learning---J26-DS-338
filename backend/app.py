@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.config import API_TITLE, API_VERSION
 from backend.routes.urban_heat_routes import router as urban_heat_router
 
+from backend.routes.wetland_routes import router as wetland_router
+
 from backend.routes.urban_heat_scenario_routes import (
     router as urban_heat_scenario_router,
 )
@@ -60,3 +62,5 @@ def root():
 
 app.include_router(urban_heat_router)
 app.include_router(urban_heat_scenario_router)
+
+app.include_router(wetland_router)
