@@ -1,0 +1,74 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Terrain feature generation",
+  "generated_utc": "2026-10-15T09:20:49.839308+00:00",
+  "analysis_crs": "EPSG:32644",
+  "grid_resolution_m": 30.0,
+  "study_pixels": 94431,
+  "slope_method": "Horn 3x3 finite-difference gradient",
+  "slope_units": "degrees",
+  "tpi_method": "Cell elevation minus mean elevation within circular 300m neighbourhood",
+  "tpi_radius_m": 300.0,
+  "tpi_neighbourhood_cells": 317,
+  "tpi_units": "metres",
+  "tpi_interpretation": "Negative values are locally lower than the surrounding neighbourhood. TPI does not by itself identify hydrologically closed depressions.",
+  "full_neighbourhood_support": "PASS_FOR_ALL_STUDY_PIXELS",
+  "outputs": [
+    {
+      "dem": "GEDTM30",
+      "slope_file": "data\\processed\\part4_waterlogging\\07_GEDTM30_Slope_Degrees_30m.tif",
+      "tpi_file": "data\\processed\\part4_waterlogging\\07_GEDTM30_TPI_300m_30m.tif",
+      "statistics": {
+        "slope_degrees": {
+          "minimum": 0.0,
+          "maximum": 44.707951,
+          "mean": 3.705809,
+          "median": 3.191464,
+          "p05": 0.492058,
+          "p95": 8.038435
+        },
+        "tpi_metres": {
+          "minimum": -27.127312,
+          "maximum": 74.065334,
+          "mean": -0.014816,
+          "median": -0.428007,
+          "p05": -6.891965,
+          "p95": 7.575495
+        }
+      }
+    },
+    {
+      "dem": "NASADEM",
+      "slope_file": "data\\processed\\part4_waterlogging\\07_NASADEM_Slope_Degrees_30m.tif",
+      "tpi_file": "data\\processed\\part4_waterlogging\\07_NASADEM_TPI_300m_30m.tif",
+      "statistics": {
+        "slope_degrees": {
+          "minimum": 0.0,
+          "maximum": 40.771279,
+          "mean": 3.977125,
+          "median": 3.508246,
+          "p05": 0.86177,
+          "p95": 8.08198
+        },
+        "tpi_metres": {
+          "minimum": -29.646327,
+          "maximum": 69.580763,
+          "mean": -0.027592,
+          "median": -0.231202,
+          "p05": -7.449455,
+          "p95": 7.700863
+        }
+      }
+    }
+  ],
+  "scientific_limitations": [
+    "Slope and TPI depend on DEM quality and 30m spatial resolution.",
+    "The 300m TPI radius is an initial analysis parameter requiring sensitivity assessment at alternative scales.",
+    "Slope and TPI are not direct observations of flooding or seasonal waterlogging.",
+    "DEM vertical accuracy and datum compatibility are not independently verified.",
+    "The derived terrain factors do not resolve small drains, kerbs or road-level barriers.",
+    "No susceptibility weights or waterlogging training labels are assigned by this script."
+  ],
+  "raw_data_modified": false,
+  "status": "TERRAIN_FEATURE_GENERATION_PASS"
+}

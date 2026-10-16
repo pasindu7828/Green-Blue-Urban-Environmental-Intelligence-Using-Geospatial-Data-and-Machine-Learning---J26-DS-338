@@ -1,0 +1,13 @@
+event_id,event_date,lulc_year,class_id,class_name,pixel_count,sampled_area_ha,percent_valid_sampled_pixels,method
+E001,2018-05-29,2020,1,Wetland_Marsh,1340,120.6,30.8259,30m raster cell-center sampling
+E001,2018-05-29,2020,2,Open_Water,732,65.88,16.8392,30m raster cell-center sampling
+E001,2018-05-29,2020,3,Built_Up,117,10.53,2.6915,30m raster cell-center sampling
+E001,2018-05-29,2020,4,Paddy_Agriculture,1737,156.33,39.9586,30m raster cell-center sampling
+E001,2018-05-29,2020,5,Other_Vegetation,279,25.11,6.4182,30m raster cell-center sampling
+E001,2018-05-29,2020,6,Bare_Fill_Disturbed,142,12.78,3.2666,30m raster cell-center sampling
+E002,2018-11-25,2020,1,Wetland_Marsh,843,75.87,33.479,30m raster cell-center sampling
+E002,2018-11-25,2020,2,Open_Water,604,54.36,23.9873,30m raster cell-center sampling
+E002,2018-11-25,2020,3,Built_Up,64,5.76,2.5417,30m raster cell-center sampling
+E002,2018-11-25,2020,4,Paddy_Agriculture,843,75.87,33.479,30m raster cell-center sampling
+E002,2018-11-25,2020,5,Other_Vegetation,110,9.9,4.3685,30m raster cell-center sampling
+E002,2018-11-25,2020,6,Bare_Fill_Disturbed,54,4.86,2.1446,30m raster cell-center sampling

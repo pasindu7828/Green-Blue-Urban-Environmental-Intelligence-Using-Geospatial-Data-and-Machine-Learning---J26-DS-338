@@ -1,0 +1,47 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "generated_utc": "2026-10-16T04:11:00.631428+00:00",
+  "status": "INTERNAL_INTEGRITY_CHECKS_PASSED",
+  "checks": {
+    "raster_grid": "PASS",
+    "landcover_screening": "PASS",
+    "susceptibility_rasters": "PASS",
+    "uncertainty_rasters": "PASS",
+    "gn_csvs": "PASS",
+    "gn_geopackage": "PASS",
+    "methodology_reports": "PASS",
+    "uncertainty_reconciliation": "PASS"
+  },
+  "study_cells": 94431,
+  "general_land_cells": 51707,
+  "gn_divisions": 56,
+  "reference_model_high_veryhigh_cells": 28610,
+  "general_land_stable_class_percent": 18.9123,
+  "general_land_boundary_cross_percent": 48.8831,
+  "reference_model": "GEDTM30 Terrain_Urban, provisional",
+  "scientific_status": {
+    "supervised_ml_trained": false,
+    "independent_predictive_validation": false,
+    "season_specific_prediction": false,
+    "historical_event_comparison": "Exploratory supporting evidence only",
+    "uncertainty_interpretation": "Scenario sensitivity, not confidence",
+    "planning_interpretation": "Relative susceptibility, not flood probability"
+  },
+  "known_limitations": [
+    "Exploratory GIS weighted-overlay model",
+    "Provisional factor weights and class thresholds",
+    "Strong sensitivity to DEM and factor assumptions",
+    "Only two manually interpreted 2018 event dates",
+    "Substantial spatial overlap of event footprints",
+    "2020 land-cover and 2026 OSM temporal mismatch",
+    "No independent predictive accuracy established",
+    "No seasonal timing or flood depth prediction"
+  ],
+  "manual_checks_pending": [
+    "Verify GN labels against authoritative source",
+    "Review map appearance and GIS symbology in QGIS",
+    "Finalize reference scenario and claims",
+    "Review research-methodology documentation"
+  ],
+  "source_data_written": false
+}

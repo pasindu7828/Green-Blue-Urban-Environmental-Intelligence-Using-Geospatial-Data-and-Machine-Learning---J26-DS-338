@@ -1,0 +1,196 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Scenario consistency assessment",
+  "generated_utc": "2026-10-15T16:36:59.544623+00:00",
+  "scenario_count": 9,
+  "scenario_names": [
+    "Terrain_Only",
+    "Terrain_Urban",
+    "Urban_10pct",
+    "Urban_30pct",
+    "Slope_Emphasis",
+    "TPI_Emphasis",
+    "NASADEM_Terrain_Urban",
+    "NASADEM_Terrain_Only",
+    "Waterway_10pct_300m"
+  ],
+  "reference_model": "Terrain_Urban",
+  "script13_reproduction_max_error": 2.9802093015618425e-08,
+  "script16_reproduction_max_error": 2.9801871637147315e-08,
+  "study_cells": 94431,
+  "method": {
+    "score_range": "Maximum minus minimum susceptibility score across the tested scenarios.",
+    "minimum_class": "Lowest categorical prediction across the tested scenarios.",
+    "maximum_class": "Highest categorical prediction across the tested scenarios.",
+    "class_span": "Maximum class minus minimum class. Zero means identical categorical predictions across all scenarios.",
+    "class_codes": {
+      "1": "Low",
+      "2": "Moderate",
+      "3": "High",
+      "4": "Very_High"
+    }
+  },
+  "screening_summary": [
+    {
+      "category": "All_Study_Area",
+      "cells": 94431,
+      "stable_same_class_percent": 17.3333,
+      "adjacent_class_span_percent": 71.3293,
+      "two_or_more_class_span_percent": 11.3374,
+      "crosses_moderate_high_boundary_percent": 44.2641,
+      "mean_score_range": 0.240092,
+      "p95_score_range": 0.4,
+      "max_score_range": 0.99849
+    },
+    {
+      "category": "General_Land",
+      "cells": 51707,
+      "stable_same_class_percent": 18.9123,
+      "adjacent_class_span_percent": 69.9576,
+      "two_or_more_class_span_percent": 11.13,
+      "crosses_moderate_high_boundary_percent": 48.8831,
+      "mean_score_range": 0.231904,
+      "p95_score_range": 0.399232,
+      "max_score_range": 0.99849
+    },
+    {
+      "category": "Paddy_Agriculture",
+      "cells": 25386,
+      "stable_same_class_percent": 15.8197,
+      "adjacent_class_span_percent": 72.6621,
+      "two_or_more_class_span_percent": 11.5182,
+      "crosses_moderate_high_boundary_percent": 40.479,
+      "mean_score_range": 0.248828,
+      "p95_score_range": 0.40821,
+      "max_score_range": 0.807101
+    },
+    {
+      "category": "Wetland_Marsh",
+      "cells": 12181,
+      "stable_same_class_percent": 16.2795,
+      "adjacent_class_span_percent": 72.5474,
+      "two_or_more_class_span_percent": 11.1731,
+      "crosses_moderate_high_boundary_percent": 39.1676,
+      "mean_score_range": 0.246439,
+      "p95_score_range": 0.402672,
+      "max_score_range": 0.843157
+    },
+    {
+      "category": "Open_Water",
+      "cells": 4509,
+      "stable_same_class_percent": 11.1333,
+      "adjacent_class_span_percent": 75.3604,
+      "two_or_more_class_span_percent": 13.5063,
+      "crosses_moderate_high_boundary_percent": 29.2526,
+      "mean_score_range": 0.265286,
+      "p95_score_range": 0.45438,
+      "max_score_range": 0.891196
+    },
+    {
+      "category": "Unknown_Landcover",
+      "cells": 648,
+      "stable_same_class_percent": 13.5802,
+      "adjacent_class_span_percent": 77.6235,
+      "two_or_more_class_span_percent": 8.7963,
+      "crosses_moderate_high_boundary_percent": 24.2284,
+      "mean_score_range": 0.256563,
+      "p95_score_range": 0.393917,
+      "max_score_range": 0.579935
+    }
+  ],
+  "scenario_settings": [
+    {
+      "scenario": "Terrain_Only",
+      "dem": "GEDTM30",
+      "slope_weight": 0.5,
+      "tpi_weight": 0.5,
+      "building_weight": 0.0,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "Terrain_Urban",
+      "dem": "GEDTM30",
+      "slope_weight": 0.4,
+      "tpi_weight": 0.4,
+      "building_weight": 0.2,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "Urban_10pct",
+      "dem": "GEDTM30",
+      "slope_weight": 0.45,
+      "tpi_weight": 0.45,
+      "building_weight": 0.1,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "Urban_30pct",
+      "dem": "GEDTM30",
+      "slope_weight": 0.35,
+      "tpi_weight": 0.35,
+      "building_weight": 0.3,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "Slope_Emphasis",
+      "dem": "GEDTM30",
+      "slope_weight": 0.6,
+      "tpi_weight": 0.2,
+      "building_weight": 0.2,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "TPI_Emphasis",
+      "dem": "GEDTM30",
+      "slope_weight": 0.2,
+      "tpi_weight": 0.6,
+      "building_weight": 0.2,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "NASADEM_Terrain_Urban",
+      "dem": "NASADEM",
+      "slope_weight": 0.4,
+      "tpi_weight": 0.4,
+      "building_weight": 0.2,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "NASADEM_Terrain_Only",
+      "dem": "NASADEM",
+      "slope_weight": 0.5,
+      "tpi_weight": 0.5,
+      "building_weight": 0.0,
+      "waterway_weight": 0.0
+    },
+    {
+      "scenario": "Waterway_10pct_300m",
+      "dem": "GEDTM30",
+      "slope_weight": 0.36,
+      "tpi_weight": 0.36,
+      "building_weight": 0.18,
+      "waterway_weight": 0.1,
+      "waterway_decay_scale_m": 300
+    }
+  ],
+  "output_rasters": {
+    "Score_Range": "data\\processed\\part4_waterlogging\\17_Scenario_Score_Range_30m.tif",
+    "Minimum_Class": "data\\processed\\part4_waterlogging\\17_Scenario_Minimum_Class_30m.tif",
+    "Maximum_Class": "data\\processed\\part4_waterlogging\\17_Scenario_Maximum_Class_30m.tif",
+    "Class_Span": "data\\processed\\part4_waterlogging\\17_Scenario_Class_Span_30m.tif"
+  },
+  "metrics_csv": "outputs\\metrics\\part4_waterlogging\\script17_scenario_uncertainty_summary.csv",
+  "roster_csv": "outputs\\metrics\\part4_waterlogging\\script17_scenario_roster.csv",
+  "limitations": [
+    "Scenario disagreement measures sensitivity to tested assumptions.",
+    "This is not a calibrated confidence interval or flooding probability.",
+    "Scenarios are related variants of the same weighted-overlay framework, not independent trained models.",
+    "The scenario set is intentionally exploratory and not an exhaustive sample of possible model structures.",
+    "Stable classification does not establish prediction correctness.",
+    "DEM quality, wetland screening, historical evidence interpretation and unmapped drainage remain important sources of uncertainty.",
+    "The results are not independent predictive validation.",
+    "No final model is selected."
+  ],
+  "raw_data_modified": false,
+  "status": "SCENARIO_CONSISTENCY_ASSESSED"
+}

@@ -1,0 +1,221 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Initial model sensitivity assessment",
+  "generated_utc": "2026-10-15T15:39:36.670020+00:00",
+  "reference_scenario": "Terrain_Urban using GEDTM30",
+  "reference_model_reproduced": true,
+  "reference_score_max_difference": 2.980066093893896e-08,
+  "general_land_cells": 51707,
+  "normalization_source": "GEDTM30 general-land P05/P95 reference for slope and TPI, and general-land P05/P95 for 2026 building density. Fixed across all scenarios.",
+  "normalization_limits": {
+    "slope": {
+      "p05": 0.7226089417934418,
+      "p95": 7.989726305007935
+    },
+    "tpi": {
+      "p05": -5.724202966690063,
+      "p95": 8.124379730224609
+    },
+    "density": {
+      "p05": 0.0,
+      "p95": 17.718191146850586
+    }
+  },
+  "scenario_results": [
+    {
+      "scenario": "Terrain_Only",
+      "dem": "GEDTM30",
+      "slope_weight": 0.5,
+      "tpi_weight": 0.5,
+      "building_weight": 0.0,
+      "mean_score": 0.56022,
+      "mean_absolute_score_change": 0.074295,
+      "changed_class_percent": 30.8508,
+      "moved_higher_percent": 24.2366,
+      "moved_lower_percent": 6.6142,
+      "Low_percent": 6.6374,
+      "Moderate_percent": 29.9863,
+      "High_percent": 45.0867,
+      "Very_High_percent": 18.2896
+    },
+    {
+      "scenario": "Terrain_Urban",
+      "dem": "GEDTM30",
+      "slope_weight": 0.4,
+      "tpi_weight": 0.4,
+      "building_weight": 0.2,
+      "mean_score": 0.519351,
+      "mean_absolute_score_change": 0.0,
+      "changed_class_percent": 0.0,
+      "moved_higher_percent": 0.0,
+      "moved_lower_percent": 0.0,
+      "Low_percent": 6.0398,
+      "Moderate_percent": 38.6292,
+      "High_percent": 47.216,
+      "Very_High_percent": 8.115
+    },
+    {
+      "scenario": "Urban_10pct",
+      "dem": "GEDTM30",
+      "slope_weight": 0.45,
+      "tpi_weight": 0.45,
+      "building_weight": 0.1,
+      "mean_score": 0.539785,
+      "mean_absolute_score_change": 0.037148,
+      "changed_class_percent": 15.7367,
+      "moved_higher_percent": 12.3155,
+      "moved_lower_percent": 3.4212,
+      "Low_percent": 6.0707,
+      "Moderate_percent": 34.3551,
+      "High_percent": 46.777,
+      "Very_High_percent": 12.7971
+    },
+    {
+      "scenario": "Urban_30pct",
+      "dem": "GEDTM30",
+      "slope_weight": 0.35,
+      "tpi_weight": 0.35,
+      "building_weight": 0.3,
+      "mean_score": 0.498916,
+      "mean_absolute_score_change": 0.037148,
+      "changed_class_percent": 14.4893,
+      "moved_higher_percent": 3.4521,
+      "moved_lower_percent": 11.0372,
+      "Low_percent": 6.8985,
+      "Moderate_percent": 42.4933,
+      "High_percent": 44.4969,
+      "Very_High_percent": 6.1114
+    },
+    {
+      "scenario": "Slope_Emphasis",
+      "dem": "GEDTM30",
+      "slope_weight": 0.6,
+      "tpi_weight": 0.2,
+      "building_weight": 0.2,
+      "mean_score": 0.535187,
+      "mean_absolute_score_change": 0.06273,
+      "changed_class_percent": 26.4568,
+      "moved_higher_percent": 16.8913,
+      "moved_lower_percent": 9.5654,
+      "Low_percent": 8.5598,
+      "Moderate_percent": 31.195,
+      "High_percent": 47.1986,
+      "Very_High_percent": 13.0466
+    },
+    {
+      "scenario": "TPI_Emphasis",
+      "dem": "GEDTM30",
+      "slope_weight": 0.2,
+      "tpi_weight": 0.6,
+      "building_weight": 0.2,
+      "mean_score": 0.503515,
+      "mean_absolute_score_change": 0.06273,
+      "changed_class_percent": 24.575,
+      "moved_higher_percent": 9.4861,
+      "moved_lower_percent": 15.0889,
+      "Low_percent": 9.2811,
+      "Moderate_percent": 38.2656,
+      "High_percent": 43.8219,
+      "Very_High_percent": 8.6313
+    },
+    {
+      "scenario": "NASADEM_Terrain_Urban",
+      "dem": "NASADEM",
+      "slope_weight": 0.4,
+      "tpi_weight": 0.4,
+      "building_weight": 0.2,
+      "mean_score": 0.51366,
+      "mean_absolute_score_change": 0.09022,
+      "changed_class_percent": 35.0978,
+      "moved_higher_percent": 17.1041,
+      "moved_lower_percent": 17.9937,
+      "Low_percent": 6.8888,
+      "Moderate_percent": 38.0065,
+      "High_percent": 47.1329,
+      "Very_High_percent": 7.9718
+    },
+    {
+      "scenario": "NASADEM_Terrain_Only",
+      "dem": "NASADEM",
+      "slope_weight": 0.5,
+      "tpi_weight": 0.5,
+      "building_weight": 0.0,
+      "mean_score": 0.553107,
+      "mean_absolute_score_change": 0.119505,
+      "changed_class_percent": 45.4058,
+      "moved_higher_percent": 29.6014,
+      "moved_lower_percent": 15.8044,
+      "Low_percent": 6.8753,
+      "Moderate_percent": 30.8643,
+      "High_percent": 45.8216,
+      "Very_High_percent": 16.4388
+    }
+  ],
+  "transition_counts": {
+    "Terrain_Only": {
+      "changed_cells": 15952,
+      "moved_higher_cells": 12532,
+      "moved_lower_cells": 3420,
+      "unchanged_cells": 35755
+    },
+    "Terrain_Urban": {
+      "changed_cells": 0,
+      "moved_higher_cells": 0,
+      "moved_lower_cells": 0,
+      "unchanged_cells": 51707
+    },
+    "Urban_10pct": {
+      "changed_cells": 8137,
+      "moved_higher_cells": 6368,
+      "moved_lower_cells": 1769,
+      "unchanged_cells": 43570
+    },
+    "Urban_30pct": {
+      "changed_cells": 7492,
+      "moved_higher_cells": 1785,
+      "moved_lower_cells": 5707,
+      "unchanged_cells": 44215
+    },
+    "Slope_Emphasis": {
+      "changed_cells": 13680,
+      "moved_higher_cells": 8734,
+      "moved_lower_cells": 4946,
+      "unchanged_cells": 38027
+    },
+    "TPI_Emphasis": {
+      "changed_cells": 12707,
+      "moved_higher_cells": 4905,
+      "moved_lower_cells": 7802,
+      "unchanged_cells": 39000
+    },
+    "NASADEM_Terrain_Urban": {
+      "changed_cells": 18148,
+      "moved_higher_cells": 8844,
+      "moved_lower_cells": 9304,
+      "unchanged_cells": 33559
+    },
+    "NASADEM_Terrain_Only": {
+      "changed_cells": 23478,
+      "moved_higher_cells": 15306,
+      "moved_lower_cells": 8172,
+      "unchanged_cells": 28229
+    }
+  },
+  "class_boundaries": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "limitations": [
+    "Scenario weights are exploratory.",
+    "Changes are measured relative to the GEDTM30 Terrain_Urban reference model.",
+    "Cell-level counts are spatially autocorrelated, not independent samples.",
+    "Fixed GEDTM30 normalization thresholds allow DEM substitution comparisons, but do not remove vertical datum or absolute accuracy concerns.",
+    "Equal-interval class boundaries are not calibrated hazard thresholds.",
+    "Class stability is not proof of predictive accuracy.",
+    "Historical inundation comparison and other modelling uncertainties still require evaluation.",
+    "No final model is selected here."
+  ],
+  "raw_data_modified": false,
+  "status": "INITIAL_SENSITIVITY_ASSESSMENT_COMPLETE"
+}

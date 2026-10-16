@@ -1,0 +1,7 @@
+category,cells,stable_same_class_percent,adjacent_class_span_percent,two_or_more_class_span_percent,crosses_moderate_high_boundary_percent,mean_score_range,p95_score_range,max_score_range
+All_Study_Area,94431,17.3333,71.3293,11.3374,44.2641,0.240092,0.4,0.99849
+General_Land,51707,18.9123,69.9576,11.13,48.8831,0.231904,0.399232,0.99849
+Paddy_Agriculture,25386,15.8197,72.6621,11.5182,40.479,0.248828,0.40821,0.807101
+Wetland_Marsh,12181,16.2795,72.5474,11.1731,39.1676,0.246439,0.402672,0.843157
+Open_Water,4509,11.1333,75.3604,13.5063,29.2526,0.265286,0.45438,0.891196
+Unknown_Landcover,648,13.5802,77.6235,8.7963,24.2284,0.256563,0.393917,0.579935
