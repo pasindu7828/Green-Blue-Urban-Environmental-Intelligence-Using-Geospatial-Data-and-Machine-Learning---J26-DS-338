@@ -1,0 +1,21 @@
+{
+  "model": "Extra Trees",
+  "strategy": "extra_trees_anomaly_plus_prior_mean_level",
+  "selection_scope": "2018-2023 development only",
+  "selection_metric": "mean rolling-origin MAE",
+  "tie_breakers": [
+    "mean RMSE",
+    "mean centered spatial R2"
+  ],
+  "best_config": {
+    "config_id": "ET02",
+    "n_estimators": 700,
+    "max_depth": null,
+    "min_samples_split": 4,
+    "min_samples_leaf": 2,
+    "max_features": 0.7
+  },
+  "2024_loaded_or_used": false,
+  "2025_loaded_or_used": false,
+  "production_model_replaced": false
+}
