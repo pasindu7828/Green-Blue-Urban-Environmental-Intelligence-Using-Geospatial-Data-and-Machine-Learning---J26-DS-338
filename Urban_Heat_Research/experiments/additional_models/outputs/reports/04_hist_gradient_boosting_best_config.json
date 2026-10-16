@@ -1,0 +1,22 @@
+{
+  "model": "HistGradientBoosting",
+  "strategy": "histgb_anomaly_plus_prior_mean_level",
+  "selection_scope": "2018-2023 development only",
+  "selection_metric": "mean rolling-origin MAE",
+  "tie_breakers": [
+    "mean RMSE",
+    "mean centered spatial R2"
+  ],
+  "best_config": {
+    "config_id": "HGB01",
+    "learning_rate": 0.05,
+    "max_iter": 200,
+    "max_leaf_nodes": 15,
+    "max_depth": null,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0
+  },
+  "2024_loaded_or_used": false,
+  "2025_loaded_or_used": false,
+  "production_model_replaced": false
+}
