@@ -1,0 +1,4 @@
+variant,origin_year_count,total_eligible_grid_years,total_positive_grid_years,total_negative_grid_years,overall_positive_rate_percent,minimum_positive_cells_per_year,median_positive_cells_per_year,maximum_positive_cells_per_year,minimum_positive_rate_percent,maximum_positive_rate_percent,standard_deviation_positive_rate_percent
+A_SINGLE_ORIGIN,11,54033,1334,52699,2.4688616216016137,42,79.0,377,0.9083044982698962,6.403940886699508,1.6963484718922055
+B_PAST_2_OF_3,11,51310,844,50466,1.6449035275774702,35,56.0,207,0.7717750826901874,3.9716039907904834,1.0437778262976196
+C_PAST_2_OF_3_PLUS_FINAL,11,51310,722,50588,1.4071331124537128,27,46.0,191,0.6201194304088194,3.6646201074443594,1.0101556571506372

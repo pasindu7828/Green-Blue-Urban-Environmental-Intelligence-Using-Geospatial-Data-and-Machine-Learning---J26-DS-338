@@ -1,0 +1,2 @@
+stage,inference_origin_year,predictor_history,pressure_target_period,target_meaning,initial_eligible_cells,final_inference_ready_cells,frozen_predictor_count,future_information_used,provisional_2026_used,centered_stabilized_lulc_used,osm_2026_used,model_scored_in_this_step,overall_step14b_status
+2025 production inference feature construction,2025,2023-2025 RAW LULC,2026-2028,Pressure for persistent majority-Built conversion during next 3 years,4620,4620,55,False,False,False,False,False,PASS

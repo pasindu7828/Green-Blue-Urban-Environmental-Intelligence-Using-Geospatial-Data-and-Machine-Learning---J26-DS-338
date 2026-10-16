@@ -1,0 +1,3 @@
+consensus_method,common_source_pixels,common_source_area_km2,early_consensus_pixels,early_consensus_coverage_percent,late_consensus_pixels,late_consensus_coverage_percent,resolved_transition_pixels,resolved_transition_area_km2,resolved_transition_coverage_percent
+ROBUST_2_OF_3,98547,88.6923,98335,99.78487422245223,98503,99.9553512537165,98291,88.4619,99.74022547616873
+STRICT_3_OF_3,98547,88.6923,87581,88.87231473307153,92354,93.71568896059748,82783,74.5047,84.00357189970268

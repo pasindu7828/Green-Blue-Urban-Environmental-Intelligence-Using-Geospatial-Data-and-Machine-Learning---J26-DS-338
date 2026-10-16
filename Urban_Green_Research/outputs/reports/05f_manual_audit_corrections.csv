@@ -1,0 +1,2 @@
+sample_id,original_class_id,original_class_name,review_status,manual_class_id,manual_class_name,training_action,review_notes
+C3_037,3,Open / Bare,CORRECTED,2,Built-up,RELABEL_MANUALLY,"Pixel is predominantly built-up, not open or bare land"

@@ -1,0 +1,87 @@
+# ============================================================
+# URBAN GREEN RESEARCH - GIT IGNORE
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# RAW RESEARCH DATA
+# Keep raw datasets locally - do not upload to GitHub
+# ============================================================
+
+data/raw/*
+
+# Keep a documentation file inside raw if needed later
+!data/raw/README.md
+
+# ============================================================
+# LARGE GEOSPATIAL FILES
+# ============================================================
+
+*.tif
+*.tiff
+*.img
+*.vrt
+*.jp2
+
+# Shapefile components
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qmd
+
+# GIS databases/packages
+*.gpkg
+*.gdb/
+*.sqlite
+
+# Google Earth / mapping files
+*.kml
+*.kmz
+
+# Compressed source data
+*.zip
+*.7z
+*.rar
+
+# QGIS project files
+*.qgz
+*.qgs
+
+# ============================================================
+# TRAINED MODEL BINARIES
+# ============================================================
+
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.bin
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+~$*
+
+*.gpkg-shm
+*.gpkg-wal*.aux.xml
+**/*.aux.xml

@@ -1,0 +1,3 @@
+model,selected_threshold,mean_temporal_f1,minimum_temporal_fold_f1,mean_temporal_precision,mean_temporal_recall,mean_temporal_balanced_accuracy,threshold_selected_using_2022
+RandomForest,0.815,0.1423876706895575,0.05405405405405406,0.3006088280060883,0.13535067176137064,0.564017834274713,False
+XGBoost,0.715,0.11390550973305331,0.08284023668639054,0.07366959064327486,0.3248366818686059,0.6403370817935399,False

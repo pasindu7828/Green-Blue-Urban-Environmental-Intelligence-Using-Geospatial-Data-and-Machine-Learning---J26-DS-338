@@ -1,0 +1,5 @@
+class_id,class_name,sample_count,balanced_class_weight
+1,Green / Vegetation,145,0.6879310344827586
+2,Built-up,112,0.890625
+3,Open / Bare,22,4.534090909090909
+4,Water,120,0.83125

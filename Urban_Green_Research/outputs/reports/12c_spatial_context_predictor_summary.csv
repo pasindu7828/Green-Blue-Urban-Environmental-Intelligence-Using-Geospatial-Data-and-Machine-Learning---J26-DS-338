@@ -1,0 +1,2 @@
+input_dataset,historical_lulc_source,neighbourhood_1,neighbourhood_2,focal_cell_excluded,minimum_neighbour_lulc_coverage,existing_feature_count,spatial_context_feature_count,combined_feature_count,model_rows,positive_target_rows,future_information_used,centered_stabilized_lulc_used,osm_2026_used,overall_step12c_status
+12b_causal_lulc_terrain_predictors.csv,RAW_RF,8 surrounding cells in 3x3 window,24 surrounding cells in 5x5 window,True,0.9,56,13,69,51310,844,False,False,False,PASS

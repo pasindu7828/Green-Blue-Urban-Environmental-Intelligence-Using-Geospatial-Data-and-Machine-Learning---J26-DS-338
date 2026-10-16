@@ -1,0 +1,2 @@
+audit_type,total_audit_points,verified,corrected,rejected,manual_usable_points,original_label_agreement_percent,classifiable_agreement_percent,correction_percent,rejection_percent,manual_usable_percent,all_40_reviews_completed,exactly_10_original_points_per_class,final_model_accuracy_validation,overall_status
+REFERENCE_QUALITY_AUDIT,40,37,1,2,38,92.5,97.36842105263158,2.5,5.0,95.0,True,True,False,PASS

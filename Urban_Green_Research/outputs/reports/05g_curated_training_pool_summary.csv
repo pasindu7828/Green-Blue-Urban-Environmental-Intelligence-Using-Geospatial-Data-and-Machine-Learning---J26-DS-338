@@ -1,0 +1,2 @@
+step05d_input_candidates,step05f_audited_samples,verified_kept,corrected_relabeled,rejected_removed,final_curated_pool,largest_class_count,smallest_class_count,class_imbalance_ratio,open_bare_count,open_bare_status,all_four_classes_present,unique_sample_ids,unique_landsat_pixels,final_model_validation_dataset,overall_status
+399,40,37,1,2,397,143,21,6.809523809523809,21,LIMITED_BUT_USABLE_WITH_CAUTION,True,True,True,False,PASS

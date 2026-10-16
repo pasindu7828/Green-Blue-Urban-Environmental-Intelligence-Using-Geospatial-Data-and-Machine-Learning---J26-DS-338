@@ -1,0 +1,21 @@
+{
+  "selected_model": "XGBoost",
+  "selected_candidate_id": "XGB05_DEPTH3_STRONG_REG",
+  "parameters": {
+    "n_estimators": 700,
+    "learning_rate": 0.03,
+    "max_depth": 3,
+    "min_child_weight": 5.0,
+    "subsample": 0.85,
+    "colsample_bytree": 0.75,
+    "reg_alpha": 0.2,
+    "reg_lambda": 4.0,
+    "gamma": 0.1
+  },
+  "development_selection_metric": "balanced_development_pr_auc",
+  "development_selection_score": 0.12640401342716065,
+  "operating_threshold": 0.715,
+  "threshold_selection_source": "Temporal development OOF: 2017, 2019, 2021",
+  "final_2022_test_used": false,
+  "raw_model_score_is_calibrated_probability": false
+}
