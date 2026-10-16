@@ -1,0 +1,19 @@
+check,status,details
+prerequisite_audits,PASS,"Step 28, 29A, 29B, 29C, 29D and 29D-QA verified fully PASS."
+development_spatial_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+spatial_calibration_year_2024_only,PASS,[2024]
+spatial_audit_year_2025_only,PASS,[2025]
+2025_recalibration,PASS,No. 2025 is audit-only and does not alter the 2024 spatial radius.
+annual_calibration_stops_at_2023,PASS,max_calibration_target=2023
+annual_reserved_2024_2025_audit_only,PASS,"[2024, 2025]"
+annual_95_radius_non_decreasing_by_horizon,PASS,Cumulative-max conservative horizon policy.
+future_row_count,PASS,"actual=10970, expected=10970"
+future_interval_width_positive,PASS,All future 95% reference widths are positive.
+step28_point_forecasts_changed,PASS,No. Step-28 point forecasts are copied unchanged.
+step29_point_estimates_changed,PASS,No. Step-29 point estimates are copied unchanged.
+scenario_delta_interval_claimed,PASS,No calibrated interval is claimed for intervention ΔLST.
+29d_support_preserved,PASS,Grid-level historical-support/extrapolation status retained.
+model_retraining,PASS,None.
+hyperparameter_tuning,PASS,None.
+ngboost_final_layer,PASS,Not used; final heat uncertainty is residual-calibrated.
+future_coverage_overclaim,PASS,Reference bands are not described as exact future guarantees.

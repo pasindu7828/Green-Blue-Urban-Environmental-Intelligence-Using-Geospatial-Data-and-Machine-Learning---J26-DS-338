@@ -25,3 +25,4 @@ Urban_Heat_Research/models/candidates/*.joblib
 models/candidates/*.joblib
 models/candidates/**/*.joblib
 outputs/scenarios/29c_combined_scenario_features_2026_2030.csv
+outputs/uncertainty/30_29c_combined_scenarios_with_uncertainty.csv

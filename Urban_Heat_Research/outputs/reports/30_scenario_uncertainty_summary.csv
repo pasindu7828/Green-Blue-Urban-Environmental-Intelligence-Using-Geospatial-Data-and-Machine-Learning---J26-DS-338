@@ -1,0 +1,5 @@
+scenario_family,rows,year_min,year_max,scenario_point_column,reference_outcome_band_added,calibrated_delta_lst_interval_claimed
+29A_GREEN,32910,2026,2030,scenario_predicted_lst_c,True,False
+29B_BUILT,32910,2026,2030,scenario_predicted_lst_c,True,False
+29C_COMBINED,98730,2026,2030,combined_scenario_predicted_lst_c,True,False
+29D_BLUE,32910,2026,2030,scenario_predicted_lst_c,True,False
