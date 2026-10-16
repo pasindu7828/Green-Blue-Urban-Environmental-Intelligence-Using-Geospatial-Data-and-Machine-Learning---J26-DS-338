@@ -1,0 +1,6 @@
+screening_code,screening_category,study_cells,percent_of_study
+1,General_land_susceptibility,51707,54.7564
+2,Paddy_agricultural_context,25386,26.8831
+3,Wetland_marsh_context,12181,12.8994
+4,Open_water_context,4509,4.7749
+5,Unknown_landcover,648,0.6862

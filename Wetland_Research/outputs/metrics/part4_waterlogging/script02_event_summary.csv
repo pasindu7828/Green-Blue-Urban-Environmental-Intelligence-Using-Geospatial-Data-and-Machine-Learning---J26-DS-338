@@ -1,0 +1,3 @@
+event_id,event_date,main_placemarks,main_polygon_entries,usable_main_polygons,main_invalid_or_unusable,main_parse_errors,main_duplicate_geometries,fully_outside_polygon_count,individual_kml_files,usable_child_polygons,child_parse_or_geometry_errors,child_polygons_matching_main,unique_event_union_ha,union_inside_study_area_ha,union_outside_study_area_ha,within_event_overlap_ha
+E001,2018-05-29,31,31,31,0,0,0,1,31,31,0,31,393.3881477477789,391.9886302143097,1.3995175334692,6.821210263296962e-13
+E002,2018-11-25,18,18,18,0,0,0,0,18,18,0,18,228.99986191800795,228.99652835882893,0.0033335591790266336,5.684341886080802e-14

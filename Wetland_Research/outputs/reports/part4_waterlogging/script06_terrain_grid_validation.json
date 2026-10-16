@@ -1,0 +1,57 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Common projected terrain grid",
+  "generated_utc": "2026-10-15T09:12:50.016010+00:00",
+  "analysis_crs": "EPSG:32644",
+  "pixel_resolution_m": 30,
+  "grid_buffer_m": 300,
+  "grid_width": 550,
+  "grid_height": 349,
+  "grid_bounds_m": [
+    378300,
+    757830,
+    394800,
+    768300
+  ],
+  "study_mask": "data\\processed\\part4_waterlogging\\06_Kaduwela_Study_Mask_30m.tif",
+  "gn_features": 56,
+  "dem_audits": [
+    {
+      "dem": "GEDTM30",
+      "source_file": "data\\raw\\dem\\GEDTM30_Kaduwela_Buffer.tif",
+      "aligned_file": "data\\processed\\part4_waterlogging\\06_GEDTM30_UTM44N_30m.tif",
+      "study_pixels": 94431,
+      "valid_study_pixels": 94431,
+      "study_coverage_percent": 100.0,
+      "min_elevation_m": 0.8201066851615906,
+      "max_elevation_m": 131.3397979736328,
+      "mean_elevation_m": 13.963905334472656,
+      "negative_study_pixels": 0,
+      "resampling": "bilinear"
+    },
+    {
+      "dem": "NASADEM",
+      "source_file": "data\\raw\\dem\\NASADEM_Kaduwela_Buffer.tif",
+      "aligned_file": "data\\processed\\part4_waterlogging\\06_NASADEM_UTM44N_30m.tif",
+      "study_pixels": 94431,
+      "valid_study_pixels": 94431,
+      "study_coverage_percent": 100.0,
+      "min_elevation_m": -14.141059875488281,
+      "max_elevation_m": 132.2083740234375,
+      "mean_elevation_m": 16.405597686767578,
+      "negative_study_pixels": 323,
+      "resampling": "bilinear"
+    }
+  ],
+  "gn_coverage_check": "PASS",
+  "scientific_limitations": [
+    "Bilinear interpolation changes source DEM pixel values during reprojection.",
+    "GEDTM30 and NASADEM are not assumed to have identical vertical references.",
+    "Elevation agreement does not establish absolute vertical accuracy.",
+    "The 30m DEM does not resolve narrow drains or road-level elevation changes.",
+    "DEM coverage in the 300m analysis buffer is not guaranteed by GN coverage checks.",
+    "Grid output is terrain preparation only; no susceptibility prediction is made."
+  ],
+  "raw_data_modified": false,
+  "status": "PROJECTED_GRID_PREPARATION_PASS"
+}

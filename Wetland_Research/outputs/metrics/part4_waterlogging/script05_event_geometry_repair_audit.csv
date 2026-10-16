@@ -1,0 +1,50 @@
+event_id,polygon_index,originally_valid,original_issue,repair_applied,repair_method,original_geometry_type,analysis_geometry_type,geometry_type_changed,analysis_geometry_valid,analysis_geometry_empty,review_required
+E001,1,False,Self-intersection[79.9918217773212 6.9210791398793],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,2,False,Self-intersection[79.9906216940214 6.91752079561808],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,3,False,Self-intersection[79.9995474225022 6.91471736103284],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E001,4,False,Self-intersection[79.9822039420502 6.90753269420326],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E001,5,False,Self-intersection[79.9798234183282 6.89259764269278],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,6,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,7,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,8,False,Self-intersection[79.9789890820686 6.90909883363274],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,9,False,Self-intersection[79.9853825356299 6.90335618216307],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E001,10,False,Self-intersection[79.9791115215885 6.9216501026368],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E001,11,False,Self-intersection[79.9833993879483 6.92022226332158],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,12,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,13,False,Self-intersection[79.9914425572492 6.92434991232566],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E001,14,False,Self-intersection[79.9929850238463 6.92904833214739],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E001,15,False,Ring Self-intersection[79.9902142035307 6.92770257339989],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,16,False,Self-intersection[79.9900531953973 6.92951662920275],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E001,17,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,18,False,Self-intersection[79.9884369211434 6.93030383742937],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,19,False,Self-intersection[79.9945224572391 6.93087097838808],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,20,False,Self-intersection[79.9882923164136 6.9316509434996],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,21,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,22,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,23,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,24,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,25,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,26,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,27,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,28,False,Self-intersection[79.9947357649957 6.93889755666821],True,buffer(0),Polygon,Polygon,False,True,False,True
+E001,29,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,30,True,None,False,none,Polygon,Polygon,False,True,False,False
+E001,31,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,1,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,2,False,Self-intersection[79.9824468912372 6.90084230725057],True,buffer(0),Polygon,MultiPolygon,True,True,False,True
+E002,3,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,4,False,Self-intersection[79.987344651867 6.9109400179142],True,buffer(0),Polygon,Polygon,False,True,False,True
+E002,5,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,6,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,7,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,8,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,9,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,10,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,11,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,12,False,Self-intersection[79.9877810981145 6.92781924576992],True,buffer(0),Polygon,Polygon,False,True,False,True
+E002,13,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,14,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,15,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,16,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,17,True,None,False,none,Polygon,Polygon,False,True,False,False
+E002,18,True,None,False,none,Polygon,Polygon,False,True,False,False

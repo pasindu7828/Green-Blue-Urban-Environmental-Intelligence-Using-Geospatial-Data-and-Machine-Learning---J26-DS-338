@@ -1,0 +1,13 @@
+group,file,extension,size_bytes
+E001_daily,data\raw\rainfall\imerg\E001\E001_IMERG_Daily_Rainfall_2018-05-22_to_2018-05-29.csv,.csv,839
+E001_daily,data\raw\rainfall\imerg\E001\g4.areaAvgTimeSeries.GPM_3IMERGDF_07_precipitation.20180522-20180529.79E_6N_80E_6N.nc,.nc,27792
+E001_daily,data\raw\rainfall\imerg\E001\GIOVANNI-output_ymJ8AJK.png,.png,23509
+E001_half_hourly,data\raw\rainfall\imerg\E001 half-hourly rainfall\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20180522-20180529.79E_6N_80E_6N.csv,.csv,11792
+E001_half_hourly,data\raw\rainfall\imerg\E001 half-hourly rainfall\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20180522-20180529.79E_6N_80E_6N.nc,.nc,93657
+E001_half_hourly,data\raw\rainfall\imerg\E001 half-hourly rainfall\GIOVANNI-outputBYS__s4s.png,.png,32588
+E002_daily,data\raw\rainfall\imerg\E002\g4.areaAvgTimeSeries.GPM_3IMERGDF_07_precipitation.20181118-20181125.79E_6N_80E_6N.csv,.csv,842
+E002_daily,data\raw\rainfall\imerg\E002\g4.areaAvgTimeSeries.GPM_3IMERGDF_07_precipitation.20181118-20181125.79E_6N_80E_6N.nc,.nc,27792
+E002_daily,data\raw\rainfall\imerg\E002\GIOVANNI-output1QZAGHt8.png,.png,23577
+E002_half_hourly,data\raw\rainfall\imerg\E002 half-hourly rainfall\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20181118-20181125.79E_6N_80E_6N.csv,.csv,10541
+E002_half_hourly,data\raw\rainfall\imerg\E002 half-hourly rainfall\g4.areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20181118-20181125.79E_6N_80E_6N.nc,.nc,93657
+E002_half_hourly,data\raw\rainfall\imerg\E002 half-hourly rainfall\GIOVANNI-output1v1lpe9k.png,.png,26507
