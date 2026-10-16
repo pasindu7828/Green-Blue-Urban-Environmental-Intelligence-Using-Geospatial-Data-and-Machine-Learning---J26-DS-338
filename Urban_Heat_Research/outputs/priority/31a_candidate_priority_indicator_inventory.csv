@@ -1,0 +1,49 @@
+candidate_id,decision_dimension,indicator_name,source_key,candidate_representation,raw_priority_direction,notes,31a_status
+HEAT_2030,Future Heat Severity,Predicted LST,step28_future_lst,2030 value,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+HEAT_MEAN,Future Heat Severity,Predicted LST,step28_future_lst,2026-2030 mean,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+HEAT_MAX,Future Heat Severity,Predicted LST,step28_future_lst,2026-2030 maximum,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+TREND_ABS_SEN,Trend Urgency,Absolute LST Sen slope,step23_trend,2015-2025 robust slope,MORE_POSITIVE=HIGHER_PRIORITY,Step23 significance remains separate.,CANDIDATE_NOT_YET_SELECTED
+TREND_REL_SEN,Trend Urgency,Relative heat-percentile Sen slope,step23b_trajectory,2015-2025 relative slope,MORE_POSITIVE=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+TREND_CLASS,Trend Urgency,Relative heat trajectory class,step23b_trajectory,five descriptive classes,ENCODING_NOT_YET_FROZEN,Do not treat class as statistical significance.,CANDIDATE_NOT_YET_SELECTED
+VEG_NDVI_2030,Vegetation / Green Deficit,NDVI,step28_future_base,2030 projected value,LOWER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+VEG_NDVI_MEAN,Vegetation / Green Deficit,NDVI,step28_future_base,2026-2030 mean,LOWER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+VEG_EVI_2030,Vegetation / Green Deficit,EVI,step28_future_base,2030 projected value,LOWER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+VEG_EVI_MEAN,Vegetation / Green Deficit,EVI,step28_future_base,2026-2030 mean,LOWER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+VEG_green_mask_2030,Vegetation / Green Deficit,green_mask,step28_future_base,2030 projected value,LOWER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+VEG_green_mask_MEAN,Vegetation / Green Deficit,green_mask,step28_future_base,2026-2030 mean,LOWER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+VEG_DEFICIT_2030,Vegetation / Green Deficit,1 - green_mask,step28_future_base,2030 derived deficit,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+VEG_DEFICIT_MEAN,Vegetation / Green Deficit,1 - green_mask,step28_future_base,2026-2030 mean derived deficit,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BUILT_NDBI_2030,Built-up / Urban Pressure,NDBI,step28_future_base,2030 projected value,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BUILT_NDBI_MEAN,Built-up / Urban Pressure,NDBI,step28_future_base,2026-2030 mean,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BUILT_NDBI_ADJ_2030,Built-up / Urban Pressure,NDBI_ADJ,step28_future_base,2030 projected value,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BUILT_NDBI_ADJ_MEAN,Built-up / Urban Pressure,NDBI_ADJ,step28_future_base,2026-2030 mean,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BUILT_NightLights_2030,Built-up / Urban Pressure,NightLights,step28_future_base,2030 projected value,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BUILT_NightLights_MEAN,Built-up / Urban Pressure,NightLights,step28_future_base,2026-2030 mean,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BUILT_CONTEXT_building_mask,Built-up / Urban Pressure,building_mask,historical_base,structural/static context,DIRECTION_TO_BE_SCREENED,"May be removed later if static, redundant or weakly intervention-relevant.",CANDIDATE_NOT_YET_SELECTED
+BUILT_CONTEXT_road_mask,Built-up / Urban Pressure,road_mask,historical_base,structural/static context,DIRECTION_TO_BE_SCREENED,"May be removed later if static, redundant or weakly intervention-relevant.",CANDIDATE_NOT_YET_SELECTED
+BUILT_CONTEXT_dist_road,Built-up / Urban Pressure,dist_road,historical_base,structural/static context,DIRECTION_TO_BE_SCREENED,"May be removed later if static, redundant or weakly intervention-relevant.",CANDIDATE_NOT_YET_SELECTED
+BUILT_CONTEXT_dist_main_road,Built-up / Urban Pressure,dist_main_road,historical_base,structural/static context,DIRECTION_TO_BE_SCREENED,"May be removed later if static, redundant or weakly intervention-relevant.",CANDIDATE_NOT_YET_SELECTED
+BUILT_CONTEXT_LCZ,Built-up / Urban Pressure,LCZ,historical_base,structural/static context,DIRECTION_TO_BE_SCREENED,"May be removed later if static, redundant or weakly intervention-relevant.",CANDIDATE_NOT_YET_SELECTED
+BLUE_NDWI_2030,Blue-space / Water Deficit,NDWI,step28_future_base,2030 projected value,LOWER=HIGHER_PRIORITY,"NDWI is water/wetness intensity, not literal water-cover percentage.",CANDIDATE_NOT_YET_SELECTED
+BLUE_NDWI_MEAN,Blue-space / Water Deficit,NDWI,step28_future_base,2026-2030 mean,LOWER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+BLUE_DIST_WATER,Blue-space / Water Deficit,dist_water,historical_base,static structural context,HIGHER=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+SCEN_GREEN_5PP,Modeled Intervention Benefit,Green scenario cooling benefit +5pp,step29a_green,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,Model-based sensitivity; not causal.,CANDIDATE_NOT_YET_SELECTED
+SCEN_GREEN_10PP,Modeled Intervention Benefit,Green scenario cooling benefit +10pp,step29a_green,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,Model-based sensitivity; not causal.,CANDIDATE_NOT_YET_SELECTED
+SCEN_GREEN_20PP,Modeled Intervention Benefit,Green scenario cooling benefit +20pp,step29a_green,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,Model-based sensitivity; not causal.,CANDIDATE_NOT_YET_SELECTED
+SCEN_BUILT_LOW,Modeled Intervention Benefit,Built-up reduction cooling benefit LOW,step29b_built,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+SCEN_BLUE_LOW,Modeled Intervention Benefit,Blue-space cooling benefit LOW,step29d_blue,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+SCEN_BUILT_MODERATE,Modeled Intervention Benefit,Built-up reduction cooling benefit MODERATE,step29b_built,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+SCEN_BLUE_MODERATE,Modeled Intervention Benefit,Blue-space cooling benefit MODERATE,step29d_blue,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+SCEN_BUILT_HIGH,Modeled Intervention Benefit,Built-up reduction cooling benefit HIGH,step29b_built,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+SCEN_BLUE_HIGH,Modeled Intervention Benefit,Blue-space cooling benefit HIGH,step29d_blue,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G5_LOW,Modeled Intervention Benefit,"Combined green + built benefit (+5pp,LOW)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G5_MODERATE,Modeled Intervention Benefit,"Combined green + built benefit (+5pp,MODERATE)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G5_HIGH,Modeled Intervention Benefit,"Combined green + built benefit (+5pp,HIGH)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G10_LOW,Modeled Intervention Benefit,"Combined green + built benefit (+10pp,LOW)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G10_MODERATE,Modeled Intervention Benefit,"Combined green + built benefit (+10pp,MODERATE)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G10_HIGH,Modeled Intervention Benefit,"Combined green + built benefit (+10pp,HIGH)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G20_LOW,Modeled Intervention Benefit,"Combined green + built benefit (+20pp,LOW)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G20_MODERATE,Modeled Intervention Benefit,"Combined green + built benefit (+20pp,MODERATE)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SCEN_COMBINED_G20_HIGH,Modeled Intervention Benefit,"Combined green + built benefit (+20pp,HIGH)",step29c_combined,temporal summary not yet frozen,HIGHER_BENEFIT=HIGHER_PRIORITY,True joint Step29C output; never arithmetic sum.,CANDIDATE_NOT_YET_SELECTED
+SUPPORT_SHAP,Supporting Evidence,Future/historical SHAP evidence,Step24/28B,support only,NOT_A_DIRECT_CRITERION,SHAP supports interpretation; it does not become CRITIC/TOPSIS criterion automatically.,SUPPORT_ONLY
+SUPPORT_UNCERTAINTY,Supporting Evidence,Step30 uncertainty/confidence,Step30,support only,NOT_A_DIRECT_CRITERION,Show alongside priority rank; do not directly reduce priority because uncertainty is high.,SUPPORT_ONLY

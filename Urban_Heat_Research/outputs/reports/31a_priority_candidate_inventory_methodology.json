@@ -1,0 +1,15 @@
+{
+  "step": "31A",
+  "purpose": "Inventory all planning-relevant candidate priority indicators before screening.",
+  "direct_candidate_count": 46,
+  "support_only_count": 2,
+  "rules": [
+    "Do not use all 93 ML features as priority criteria.",
+    "Do not use future actual LST.",
+    "SHAP is supporting evidence only.",
+    "Step30 uncertainty is a separate confidence layer.",
+    "Step29 scenario outputs are model-based sensitivity, not causal effects.",
+    "No indicator is selected or removed in Step31A."
+  ],
+  "next": "31B eligibility + leakage screening"
+}
