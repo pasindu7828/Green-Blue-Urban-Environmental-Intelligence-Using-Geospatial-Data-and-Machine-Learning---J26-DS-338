@@ -1,0 +1,2 @@
+stage,origin_year,pressure_period,explained_cells,explanation_domains,domain_names,threshold_flagged_cells,dashboard_ready_explanations,explanations_are_causal_claims,shap_values_are_probability_contributions,model_or_threshold_changed,overall_step15b_status
+SHAP explanation domain summarization,2025,2026-2028,4620,5,Local Built-up Condition;Recent Land-cover Change;Neighbourhood Urban Context;Local Green / Land-cover Context;Terrain,255,True,False,False,False,PASS

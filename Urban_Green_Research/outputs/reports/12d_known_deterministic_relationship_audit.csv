@@ -1,0 +1,9 @@
+relationship,maximum_absolute_error,exact_within_tolerance
+green_slope_3yr = green_change_2yr / 2,1.1102230246251565e-16,True
+built_slope_3yr = built_change_2yr / 2,1.1102230246251565e-16,True
+open_bare_slope_3yr = open_bare_change_2yr / 2,5.551115123125783e-17,True
+water_slope_3yr = water_change_2yr / 2,1.1102230246251565e-16,True
+nbr8_built_slope_3yr = nbr8_built_change_2yr / 2,5.551115123125783e-17,True
+terrestrial_nonbuilt_fraction_t = green_fraction_t + open_bare_fraction_t,1.1102230246251565e-16,True
+nonwater_fraction_t = 1 - water_fraction_t,1.1102230246251565e-16,True
+built_minus_green_t = built_fraction_t - green_fraction_t,1.1102230246251565e-16,True

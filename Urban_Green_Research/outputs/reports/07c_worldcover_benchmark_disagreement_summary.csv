@@ -1,0 +1,13 @@
+worldcover_class_id,worldcover_class_name,rf_class_id,rf_class_name,pixels,area_km2,percent_of_comparison_pixels
+1,Green / Vegetation,2,Built-up,14620,13.158,14.813163654048797
+2,Built-up,1,Green / Vegetation,4297,3.8672999999999997,4.353773202561401
+2,Built-up,3,Open / Bare,1741,1.5669,1.764002593823458
+1,Green / Vegetation,4,Water,458,0.4122,0.46405122801329335
+1,Green / Vegetation,3,Open / Bare,373,0.3357,0.37792818351300966
+4,Water,1,Green / Vegetation,312,0.2808,0.31612223393045313
+4,Water,2,Built-up,73,0.0657,0.07396449704142012
+2,Built-up,4,Water,73,0.0657,0.07396449704142012
+3,Open / Bare,2,Built-up,45,0.0405,0.045594552970738424
+4,Water,3,Open / Bare,25,0.0225,0.025330307205965796
+3,Open / Bare,1,Green / Vegetation,12,0.0108,0.012158547458863581
+3,Open / Bare,4,Water,8,0.0072,0.008105698305909055

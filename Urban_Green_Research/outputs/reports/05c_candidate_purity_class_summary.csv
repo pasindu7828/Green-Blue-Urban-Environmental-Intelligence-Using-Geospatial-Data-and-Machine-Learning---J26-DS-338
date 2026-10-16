@@ -1,0 +1,5 @@
+class_id,class_name,total_candidates,high_confidence,medium_confidence,low_confidence,high_percent,mean_wc_pixel_purity,median_wc_pixel_purity,spectral_class_agreement_count,spectral_class_agreement_percent
+1,Green / Vegetation,200,145,45,10,72.5,0.9727777777777777,1.0,150,75.0
+2,Built-up,200,112,57,31,56.00000000000001,0.9061111111111111,1.0,136,68.0
+3,Open / Bare,45,23,12,10,51.11111111111111,0.8709876543209876,1.0,37,82.22222222222221
+4,Water,200,124,48,28,62.0,0.9377777777777778,1.0,134,67.0

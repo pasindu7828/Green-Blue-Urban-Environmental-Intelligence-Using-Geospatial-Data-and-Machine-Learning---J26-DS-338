@@ -1,0 +1,2 @@
+model_rows,existing_feature_count,new_spatial_feature_count,total_feature_count,positive_target_rows,duplicate_grid_origin_rows,missing_new_spatial_feature_values,infinite_new_spatial_feature_values,fraction_bounds_valid,target_unchanged,self_cell_excluded_from_neighbourhoods,raw_lulc_only,centered_stabilized_lulc_used,osm_2026_used,overall_step12c_status
+51310,56,13,69,844,0,0,0,True,True,True,True,False,False,PASS

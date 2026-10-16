@@ -1,0 +1,2 @@
+candidate_count,high_confidence,medium_confidence,low_confidence,invalid_landsat_pixels,high_wc_purity_threshold,medium_wc_purity_threshold,high_max_robust_z_threshold,medium_max_robust_z_threshold,minimum_wc_cells,band_interpretation_method,status
+645,404,162,79,0,0.8,0.67,4.0,6.0,6,Band descriptions,AUTOMATED_SCREENING_COMPLETE

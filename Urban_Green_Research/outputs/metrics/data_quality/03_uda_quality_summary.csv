@@ -1,0 +1,2 @@
+source_file,qa_layer,feature_count,field_count,crs,invalid_geometries,null_geometries,duplicate_geometries
+data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,508,23,EPSG:4326,0,0,0

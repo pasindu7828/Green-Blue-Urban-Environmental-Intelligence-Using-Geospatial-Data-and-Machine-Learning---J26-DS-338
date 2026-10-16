@@ -1,0 +1,15 @@
+feature_name,decision,reason,target_used_for_decision
+green_slope_3yr,REMOVE_FROM_FINAL_DATASET,Exact deterministic duplicate of green_change_2yr / 2; retain green_change_2yr for simpler interpretation.,False
+built_slope_3yr,REMOVE_FROM_FINAL_DATASET,Exact deterministic duplicate of built_change_2yr / 2; retain built_change_2yr.,False
+open_bare_slope_3yr,REMOVE_FROM_FINAL_DATASET,Exact deterministic duplicate of open_bare_change_2yr / 2; retain open_bare_change_2yr.,False
+water_slope_3yr,REMOVE_FROM_FINAL_DATASET,Exact deterministic duplicate of water_change_2yr / 2; retain water_change_2yr.,False
+nbr8_built_slope_3yr,REMOVE_FROM_FINAL_DATASET,Exact deterministic duplicate of nbr8_built_change_2yr / 2; retain neighbourhood change.,False
+terrestrial_nonbuilt_fraction_t,REMOVE_FROM_FINAL_DATASET,Deterministic combination of green_fraction_t and open_bare_fraction_t.,False
+nonwater_fraction_t,REMOVE_FROM_FINAL_DATASET,Exact deterministic transformation of water_fraction_t.,False
+built_minus_green_t,REMOVE_FROM_FINAL_DATASET,Deterministic combination of built_fraction_t and green_fraction_t.,False
+built_green_ratio_t,REMOVE_FROM_FINAL_DATASET,Very strongly rank-correlated with current Built-up fraction and less stable/interpretable near very small Green fractions.,False
+open_bare_max_3yr,REMOVE_FROM_FINAL_DATASET,Near-redundant with open_bare_mean_3yr in Step 12D; retain the 3-year mean.,False
+water_max_3yr,REMOVE_FROM_FINAL_DATASET,Near-redundant with water_mean_3yr in Step 12D; retain the 3-year mean.,False
+elevation_std_m,REMOVE_FROM_FINAL_DATASET,Very highly correlated with terrain slope/range; retain more directly interpretable elevation and slope descriptors.,False
+origin_lulc_coverage,RETAIN_AS_QA_ONLY_NOT_MODEL_FEATURE,Data-quality / observation-coverage variable. Retained for QA but excluded from ML to avoid learning sensor-coverage patterns.,False
+minimum_past_3yr_lulc_coverage,RETAIN_AS_QA_ONLY_NOT_MODEL_FEATURE,Data-quality / observation-coverage variable. Retained for QA but excluded from ML.,False

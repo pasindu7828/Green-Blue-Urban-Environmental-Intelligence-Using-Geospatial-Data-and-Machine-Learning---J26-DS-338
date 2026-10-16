@@ -1,0 +1,11 @@
+dataset_id,dataset_name,documented_path,exists,object_type,contained_files,file_size_mb
+D01,Kaduwela Municipal Council Boundary,data/raw/boundaries/kmc/kmc boundry.kml,True,FILE,1,0.21735095977783203
+D02,Kaduwela GN Division Source,data/raw/boundaries/gn_divisions/Kaduwela TO Area.kml,True,FILE,1,1.1285066604614258
+D03,Landsat Annual Composites,data/raw/landsat/annual_composites/,True,DIRECTORY,17,
+D04,HOT OSM Roads and Buildings,data/raw/osm/roads_buildings/Kaduwela_OSM_Roads_Buildings_2026.gpkg,True,FILE,1,39.49609375
+D05,GEDTM30 DEM,data/raw/dem/gedtm30/GEDTM30_Kaduwela_Buffer.tif,True,FILE,1,0.8825473785400391
+D06,NASADEM,data/raw/dem/nasadem/NASADEM_Kaduwela_Buffer.tif,True,FILE,1,0.21069908142089844
+D07,ESA WorldCover 2021,data/raw/reference_lulc/esa_worldcover_2021/Kaduwela_ESA_WorldCover_2021.tif,True,FILE,1,0.09917736053466797
+D08,Kaduwela Development Plan 2023-2033,data/raw/uda/development_plan/KaduwelaDP2023-2033_S.pdf,True,FILE,1,62.82518005371094
+D09,UDA Provisional Zoning Package,data/raw/uda/zoning_provisional/,True,DIRECTORY,10,
+D10,Kaduwela GN Divisions Processed,data/processed/boundaries/gn_divisions/kaduwela_gn_divisions.shp,True,FILE,1,0.3994560241699219

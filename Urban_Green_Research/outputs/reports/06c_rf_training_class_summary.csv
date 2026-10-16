@@ -1,0 +1,5 @@
+class_id,class_name,training_samples,training_spatial_blocks,training_percent
+1,Green / Vegetation,115,58,36.16352201257861
+2,Built-up,91,54,28.61635220125786
+3,Open / Bare,17,8,5.345911949685535
+4,Water,95,25,29.874213836477985

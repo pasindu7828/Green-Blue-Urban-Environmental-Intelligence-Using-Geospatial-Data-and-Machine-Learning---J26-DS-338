@@ -1,0 +1,3 @@
+metric,robust_primary_pixels,robust_primary_area_km2,strict_confirmed_pixels,strict_confirmed_area_km2,robust_only_pixels,robust_only_area_km2,strict_confirmation_percent_of_robust
+Green -> Built-up,8869,7.9821,5363,4.8267,3506,3.1553999999999998,60.46904949825234
+Total Green loss,9423,8.4807,5611,5.0499,3812,3.4308,59.545792210548655

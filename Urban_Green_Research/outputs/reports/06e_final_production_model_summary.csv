@@ -1,0 +1,2 @@
+model_name,model_role,training_year,production_training_samples,model_features,hyperparameters_locked_from_step_06c,hyperparameters_retuned_after_holdout,holdout_reused_for_model_selection,training_accuracy_diagnostic,reported_accuracy_source,production_model_status
+RandomForestClassifier,Final production LULC mapping model,2021,397,10,True,False,False,0.9974811083123426,Step 06D pre-refit spatial holdout evaluation,READY

@@ -1,0 +1,5 @@
+benchmark_class,RF_1_Green / Vegetation,RF_2_Built-up,RF_3_Open / Bare,RF_4_Water
+WorldCover_1_Green / Vegetation,55498,14620,373,458
+WorldCover_2_Built-up,4297,19445,1741,73
+WorldCover_3_Open / Bare,12,45,210,8
+WorldCover_4_Water,312,73,25,1506

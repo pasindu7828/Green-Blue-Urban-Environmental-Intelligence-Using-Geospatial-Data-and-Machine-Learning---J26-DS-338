@@ -1,0 +1,2 @@
+input_predictor_dataset,primary_dem,nasadem_role,terrain_static,lulc_feature_count_before_terrain,terrain_feature_count,combined_feature_count,model_rows,positive_target_rows,future_information_used,centered_stabilized_lulc_used,osm_2026_used,overall_step12b_status
+12a_causal_lulc_predictors.csv,GEDTM30,Sensitivity/reference only,True,48,8,56,51310,844,False,False,False,PASS
