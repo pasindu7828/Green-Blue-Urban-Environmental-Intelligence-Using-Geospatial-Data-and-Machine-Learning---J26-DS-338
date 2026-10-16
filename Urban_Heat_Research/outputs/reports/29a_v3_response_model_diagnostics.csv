@@ -1,0 +1,12 @@
+metric,value,note
+primary_twfe_green_beta_per_10pp_c,0.19719884116089004,"Within-grid association controlling for NDBI, NDWI, Albedo, NightLights, grid FE and year FE."
+primary_twfe_green_ci95_lower_per_10pp_c,0.15584994469728172,Cluster-robust by grid_id.
+primary_twfe_green_ci95_upper_per_10pp_c,0.2385477376244984,Cluster-robust by grid_id.
+primary_twfe_within_r2,0.584870142118191,Descriptive within-panel model fit; not a causal validation score.
+primary_twfe_within_mae_c,1.1391441114621639,Descriptive residual MAE on two-way demeaned panel.
+primary_twfe_within_rmse_c,1.5976937294226832,Descriptive residual RMSE on two-way demeaned panel.
+first_difference_green_beta_per_10pp_c,0.20049592824569307,Pre-defined robustness sensitivity.
+historical_abs_delta_green_q50,0.10591863899609194,Median absolute year-to-year green_mask change.
+historical_abs_delta_green_q90,0.4488403005893044,90th percentile absolute year-to-year green_mask change.
+historical_abs_delta_green_q95,0.6069534319236469,95th percentile absolute year-to-year green_mask change.
+historical_abs_delta_green_q99,0.8697062982545682,99th percentile absolute year-to-year green_mask change.

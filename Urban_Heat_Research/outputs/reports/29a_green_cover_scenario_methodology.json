@@ -1,0 +1,47 @@
+{
+  "step": "29A",
+  "version": "local_green_cover_direct_perturbation_v1",
+  "analysis": "User-selectable local green-cover what-if cooling scenario simulation",
+  "baseline_forecast_source": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\outputs\\forecasting\\28_future_grid_lst_predictions_2026_2030.csv",
+  "feature_source": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\outputs\\forecasting\\28_future_model_features_2026_2030.csv",
+  "frozen_model": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\models\\final\\22b_production_lightgbm_anomaly_trained_2018_2025.joblib",
+  "scenario_variable": "green_mask",
+  "scenario_units": "percentage-point increase in grid green-cover fraction",
+  "scenario_levels_pp": [
+    5,
+    10,
+    20
+  ],
+  "primary_scenario_pp": 5,
+  "green_bounds": [
+    0.0,
+    1.0
+  ],
+  "scenario_scope": "Independent local grid-cell counterfactual. One selected grid changes while all other grids stay at their Step-28 baseline forecast.",
+  "feature_selection_handling": "Only green-cover-dependent predictors that survived the frozen Step-21 93-feature selection are updated. Excluded engineered intermediates are computed internally only when required to rebuild a retained predictor.",
+  "changed_current_year_frozen_features": [
+    "green_mask",
+    "green_mask_delta1",
+    "green_mask_nbr_contrast",
+    "ndbi_x_vegetation_deficit",
+    "ndvi_x_green_mask"
+  ],
+  "unchanged_prior_history_features": [
+    "green_mask_lag1",
+    "green_mask_lag2",
+    "green_mask_hist3_mean",
+    "green_mask_hist3_std",
+    "green_mask_hist3_slope"
+  ],
+  "unchanged_neighbour_mean": "green_mask_nbr_mean",
+  "local_effect_formula": "scenario_raw_spatial_anomaly - baseline_raw_spatial_anomaly",
+  "scenario_lst_formula": "baseline Step-28 predicted LST + local anomaly delta",
+  "cooling_benefit_formula": "baseline Step-28 predicted LST - scenario predicted LST",
+  "scenario_recentering": "Not performed because rows represent independent local interventions rather than a simultaneous citywide intervention.",
+  "annual_level_policy": "Frozen Step-28 annual Kaduwela thermal level is unchanged.",
+  "model_retraining": false,
+  "step28_baseline_modified": false,
+  "uncertainty": "Deferred to Step 30.",
+  "interpretation_warning": "Scenario results are modeled statistical sensitivity, not guaranteed physical cooling. Real-world outcomes depend on implementation conditions not represented in the model.",
+  "monotonicity_policy": "No monotonic constraint is imposed. Non-monotonic LightGBM responses are retained and reported."
+}

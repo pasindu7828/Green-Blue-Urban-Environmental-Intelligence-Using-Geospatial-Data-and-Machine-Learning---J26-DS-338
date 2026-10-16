@@ -1,0 +1,53 @@
+{
+  "step": "29A V3S",
+  "name": "2017 anomaly sensitivity analysis for green-cover response",
+  "primary_v3_preserved": true,
+  "anomaly_year": 2017,
+  "twfe_specification": {
+    "outcome": "LST_C",
+    "treatment": "green_mask",
+    "controls": [
+      "NDBI",
+      "NDWI",
+      "Albedo",
+      "NightLights"
+    ],
+    "grid_fixed_effects": true,
+    "year_fixed_effects": true,
+    "standard_errors": "clustered by grid_id"
+  },
+  "full_twfe": {
+    "beta_per_10pp_c": 0.19719884116089004,
+    "ci95_lower_per_10pp_c": 0.15584994469728172,
+    "ci95_upper_per_10pp_c": 0.2385477376244984
+  },
+  "no2017_twfe": {
+    "beta_per_10pp_c": 0.27330633704155044,
+    "ci95_lower_per_10pp_c": 0.2294411536625062,
+    "ci95_upper_per_10pp_c": 0.31717152042059465
+  },
+  "twfe_sensitivity": {
+    "absolute_beta_change_per_fraction": 0.7610749588066037,
+    "relative_beta_change_pct": 38.5942916462506,
+    "sign_changed": false,
+    "largest_leave_one_year_out_influence_year": 2017,
+    "is_2017_largest_leave_one_out_influence": true
+  },
+  "first_difference_sensitivity": {
+    "construction": "True adjacent-year differences are created on the full 2015-2025 sequence before excluding anomaly transitions.",
+    "full_beta_per_10pp_c": 0.20049592824569307,
+    "exclude_both_transitions_touching_2017_beta_per_10pp_c": 0.34028863146768573,
+    "sign_changed_after_excluding_both": false
+  },
+  "future_scenario_comparison": {
+    "scenario_levels_pp": [
+      5,
+      10,
+      20
+    ],
+    "purpose": "Compare response magnitude under full V3 coefficient versus no-2017 sensitivity coefficient only.",
+    "step28_baseline_modified": false
+  },
+  "interpretation": "V3S tests robustness to the anomalous 2017 year. It does not delete 2017 from the primary research pipeline and does not automatically replace the V3 primary coefficient.",
+  "causal_limit": "All response estimates remain observational associations and are not guaranteed causal effects."
+}
