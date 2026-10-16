@@ -1,0 +1,4 @@
+scenario_level,changed_feature_count,changed_features,unexpected_feature_count,dist_water_max_change,status
+LOW,8,NDWI; NDWI_delta1; NDWI_hist3_mean; NDWI_hist3_slope; NDWI_hist3_std; NDWI_lag1; NDWI_lag2; NDWI_nbr_contrast,0,0.0,PASS
+MODERATE,8,NDWI; NDWI_delta1; NDWI_hist3_mean; NDWI_hist3_slope; NDWI_hist3_std; NDWI_lag1; NDWI_lag2; NDWI_nbr_contrast,0,0.0,PASS
+HIGH,8,NDWI; NDWI_delta1; NDWI_hist3_mean; NDWI_hist3_slope; NDWI_hist3_std; NDWI_lag1; NDWI_lag2; NDWI_nbr_contrast,0,0.0,PASS
