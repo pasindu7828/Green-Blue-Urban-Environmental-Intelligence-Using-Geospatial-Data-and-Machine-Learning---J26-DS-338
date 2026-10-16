@@ -1,0 +1,5 @@
+fold,train_samples,test_samples,train_blocks,test_blocks,shared_blocks,all_classes_train,all_classes_test,train_green,train_built,train_open_bare,train_water,test_green,test_built,test_open_bare,test_water
+1,239,79,63,21,0,True,True,86,68,14,71,29,23,3,24
+2,238,80,61,23,0,True,True,86,68,13,71,29,23,4,24
+3,238,80,62,22,0,True,True,86,68,12,72,29,23,5,23
+4,239,79,66,18,0,True,True,87,69,12,71,28,22,5,24

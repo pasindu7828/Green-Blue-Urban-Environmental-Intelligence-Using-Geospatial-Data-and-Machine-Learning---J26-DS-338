@@ -1,0 +1,2 @@
+rf_candidate_count,xgb_candidate_count,temporal_fold_count,spatial_fold_count,expected_total_model_fits,actual_total_model_fits,fit_count_valid,all_candidates_have_8_development_folds,all_metrics_finite,best_candidate_for_each_model_found,selection_metric,final_2022_test_used,threshold_tuned,final_model_fitted,overall_step13c_status
+8,8,3,5,128,128,True,True,True,True,Equal-weight mean of temporal and spatial PR-AUC,False,False,False,PASS

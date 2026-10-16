@@ -1,0 +1,2 @@
+input_curated_reference_samples,output_feature_records,model_feature_count,missing_feature_values,infinite_feature_values,duplicate_sample_ids,duplicate_landsat_pixels,duplicate_feature_vectors,all_four_classes_present,coordinates_used_as_model_features,band_mapping_method,overall_status
+397,397,10,0,0,0,0,0,True,False,Raster band descriptions,PASS

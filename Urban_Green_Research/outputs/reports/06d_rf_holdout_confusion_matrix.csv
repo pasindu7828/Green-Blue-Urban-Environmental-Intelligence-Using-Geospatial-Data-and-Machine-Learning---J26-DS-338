@@ -1,0 +1,5 @@
+actual_class,Predicted_1_Green / Vegetation,Predicted_2_Built-up,Predicted_3_Open / Bare,Predicted_4_Water
+Actual_1_Green / Vegetation,28,0,0,0
+Actual_2_Built-up,1,21,0,0
+Actual_3_Open / Bare,0,0,4,0
+Actual_4_Water,0,0,0,25

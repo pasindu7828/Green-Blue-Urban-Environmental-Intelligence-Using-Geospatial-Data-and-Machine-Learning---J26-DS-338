@@ -1,0 +1,2 @@
+raw_lulc_only,historical_years_used,provisional_2026_excluded,diagnostic_future_window_years,possible_origin_years,candidate_rule_count,primary_diagnostic_kmc_overlap_threshold,minimum_valid_lulc_coverage,current_nonbuilt_terrestrial_min_fraction,final_target_rule_selected,final_target_created,overall_step11c_status
+True,2010-2025,True,3,2010-2022,12,0.5,0.9,0.5,False,False,PASS

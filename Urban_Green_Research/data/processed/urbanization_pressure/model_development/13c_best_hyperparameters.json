@@ -1,0 +1,35 @@
+{
+  "RandomForest": {
+    "candidate_id": "RF06_CONSERVATIVE",
+    "parameters": {
+      "n_estimators": 500,
+      "max_depth": 8,
+      "min_samples_split": 10,
+      "min_samples_leaf": 6,
+      "max_features": "sqrt",
+      "max_samples": null
+    },
+    "balanced_development_pr_auc": 0.12263274985913222,
+    "temporal_pr_auc_mean": 0.08072972233622311,
+    "spatial_pr_auc_mean": 0.16453577738204134,
+    "minimum_fold_pr_auc": 0.037312339878387654
+  },
+  "XGBoost": {
+    "candidate_id": "XGB05_DEPTH3_STRONG_REG",
+    "parameters": {
+      "n_estimators": 700,
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "min_child_weight": 5.0,
+      "subsample": 0.85,
+      "colsample_bytree": 0.75,
+      "reg_alpha": 0.2,
+      "reg_lambda": 4.0,
+      "gamma": 0.1
+    },
+    "balanced_development_pr_auc": 0.12640401342716065,
+    "temporal_pr_auc_mean": 0.07654658954150363,
+    "spatial_pr_auc_mean": 0.17626143731281765,
+    "minimum_fold_pr_auc": 0.024226082625820287
+  }
+}

@@ -1,0 +1,7 @@
+pressure_category,rule,basis,probability_interpretation
+LOW_RELATIVE,Eligible; percentile < 50; score below locked threshold,Relative percentile visualization band,False
+MODERATE_RELATIVE,Eligible; 50 <= percentile < 75; score below locked threshold,Relative percentile visualization band,False
+ELEVATED_RELATIVE,Eligible; 75 <= percentile < 90; score below locked threshold,Relative percentile visualization band,False
+HIGH_RELATIVE,Eligible; percentile >= 90; score below locked threshold,Relative percentile visualization band,False
+THRESHOLD_FLAGGED,Eligible; score >= locked threshold 0.715,Locked development operating threshold,False
+NOT_IN_INFERENCE_DOMAIN,Cell did not satisfy production-model inference eligibility,Model-domain exclusion,False

@@ -1,0 +1,11 @@
+feature,stored_feature_available,compared_records,maximum_absolute_difference,mean_absolute_difference,all_close
+blue,True,397,0.0,0.0,True
+green,True,397,0.0,0.0,True
+red,True,397,0.0,0.0,True
+nir,True,397,0.0,0.0,True
+swir1,True,397,0.0,0.0,True
+swir2,True,397,0.0,0.0,True
+ndvi,True,397,0.0,0.0,True
+ndbi,True,397,0.0,0.0,True
+mndwi,True,397,0.0,0.0,True
+bsi,True,397,0.0,0.0,True

@@ -1,0 +1,14 @@
+feature_a,feature_b,pearson_correlation,spearman_correlation,maximum_absolute_correlation
+green_change_2yr,green_slope_3yr,1.0,0.9999994624506122,1.0
+built_change_2yr,built_slope_3yr,1.0,0.9999999998720807,1.0
+nbr8_built_change_2yr,nbr8_built_slope_3yr,1.0,0.999999694045026,1.0
+water_change_2yr,water_slope_3yr,1.0,0.9999999999951216,1.0
+water_fraction_t,nonwater_fraction_t,-0.9999999999999986,-1.0,1.0
+open_bare_change_2yr,open_bare_slope_3yr,0.9999999999999999,0.999999998977889,0.9999999999999999
+open_bare_mean_3yr,open_bare_max_3yr,0.9743448827323491,0.9998914349146879,0.9998914349146879
+water_mean_3yr,water_max_3yr,0.9244281713703173,0.9997402959881196,0.9997402959881196
+origin_lulc_coverage,minimum_past_3yr_lulc_coverage,0.9910316266658267,0.995088653159902,0.995088653159902
+green_fraction_t,built_minus_green_t,-0.9527060458005162,-0.9933070809535038,0.9933070809535038
+built_fraction_t,built_green_ratio_t,0.0917513260694575,0.9917790789061998,0.9917790789061998
+elevation_std_m,slope_mean_deg,0.9843460073790256,0.965757504066903,0.9843460073790256
+elevation_std_m,elevation_range_m,0.9825809267012918,0.9678015302358574,0.9825809267012918

@@ -1,0 +1,25 @@
+{
+    "locked_hyperparameters": {
+        "n_estimators": 500,
+        "min_samples_split": 4,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt",
+        "max_depth": 10,
+        "criterion": "gini"
+    },
+    "random_state": 2026,
+    "class_weight": "balanced_subsample",
+    "training_samples": 397,
+    "features": [
+        "blue",
+        "green",
+        "red",
+        "nir",
+        "swir1",
+        "swir2",
+        "ndvi",
+        "ndbi",
+        "mndwi",
+        "bsi"
+    ]
+}
