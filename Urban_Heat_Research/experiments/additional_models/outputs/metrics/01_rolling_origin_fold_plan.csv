@@ -1,0 +1,6 @@
+validation_year,train_start_year,train_end_year,train_year_count,train_rows,validation_rows,train_unique_grids,validation_unique_grids,random_kfold_used,uses_2024,uses_2025
+2019,2018,2018,1,2194,2194,2194,2194,False,False,False
+2020,2018,2019,2,4388,2194,2194,2194,False,False,False
+2021,2018,2020,3,6582,2194,2194,2194,False,False,False
+2022,2018,2021,4,8776,2194,2194,2194,False,False,False
+2023,2018,2022,5,10970,2194,2194,2194,False,False,False
