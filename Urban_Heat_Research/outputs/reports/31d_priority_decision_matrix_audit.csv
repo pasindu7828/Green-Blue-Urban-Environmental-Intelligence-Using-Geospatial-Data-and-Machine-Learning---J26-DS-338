@@ -1,0 +1,19 @@
+check,status,details
+step31c_audit,PASS,Step 31C audit verified fully PASS.
+final_criterion_count,PASS,"actual=6, expected=6"
+decision_matrix_grid_count,PASS,"rows=2194, unique_grids=2194, expected=2194"
+raw_missing_values,PASS,All six raw criteria have zero missing values.
+raw_finite_values,PASS,All raw values are finite.
+all_criteria_have_variation,PASS,Every criterion varies across grids.
+direction_transform_identity,PASS,All six were already priority-oriented in Step 31C.
+normalized_values_finite,PASS,All normalized values are finite.
+normalized_values_within_0_1,PASS,"All normalized values lie inside [0,1]."
+each_normalized_min_zero,PASS,Each criterion has normalized minimum 0.
+each_normalized_max_one,PASS,Each criterion has normalized maximum 1.
+normalization_preserves_rank_order,PASS,Sorted normalized values are non-decreasing when raw values are sorted ascending for every criterion. Spearman is retained only as a diagnostic because ties can create floating-point artifacts.
+scenario_benefit_values_preserved_before_normalization,PASS,No clipping/sign-forcing of modeled cooling benefit.
+no_new_indicator_selection,PASS,Only the six Step31C-frozen criteria are used.
+no_critic_weighting,PASS,CRITIC weighting is deferred to Step31E.
+no_topsis_ranking,PASS,TOPSIS ranking is not performed here.
+no_model_retraining,PASS,No model fitting/retraining performed.
+upstream_step31c_files_unchanged,PASS,Step31C input hashes are unchanged before vs after Step31D.
