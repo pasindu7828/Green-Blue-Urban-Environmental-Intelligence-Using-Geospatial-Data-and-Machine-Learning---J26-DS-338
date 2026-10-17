@@ -1,0 +1,10 @@
+check,status,details
+step05_audit,PASS,Step 05 audit loaded and fully PASS.
+model_count,PASS,"actual=4, expected=4"
+development_winner_identified,PASS,HistGradientBoosting
+decision_recorded,PASS,KEEP_CURRENT_PRODUCTION_LIGHTGBM
+2024_loaded_or_used_by_step06,PASS,No. Step 06 reads Step 05 summaries only.
+2025_loaded_or_used_by_step06,PASS,No. Step 06 reads Step 05 summaries only.
+model_retraining,PASS,No model fitting occurs in Step 06.
+production_pipeline_modified,PASS,Only experiments/additional_models outputs are written.
+production_model_replaced,PASS,No production model is replaced.

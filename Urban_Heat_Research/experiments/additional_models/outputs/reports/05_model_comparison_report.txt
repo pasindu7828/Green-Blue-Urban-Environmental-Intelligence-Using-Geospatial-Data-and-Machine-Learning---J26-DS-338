@@ -1,0 +1,34 @@
+STEP 05 - DEVELOPMENT MODEL COMPARISON
+
+Scope: matched 2019-2023 expanding rolling-origin folds
+2024 reserved validation: NOT LOADED
+2025 final lockbox: NOT LOADED
+Production model: UNCHANGED
+
+Primary ranking metric: mean rolling-origin MAE
+Tie-breakers: mean RMSE, then mean centered spatial R2
+
+MODEL RANKING
+ development_rank                model  mean_mae  std_mae  mean_rmse   mean_r2  mean_centered_spatial_r2  negative_r2_count  worst_year_mae  minimum_r2
+                1 HistGradientBoosting  2.411679 1.331400   2.811558 -0.094043                  0.567057                  1        4.096031   -2.437221
+                2             CatBoost  2.414177 1.393983   2.826494 -0.091024                  0.570076                  1        4.234504   -2.415476
+                3             LightGBM  2.425252 1.376384   2.836690 -0.096945                  0.564155                  1        4.218760   -2.417959
+                4          Extra Trees  2.431432 1.331835   2.839655 -0.099910                  0.561190                  1        4.145343   -2.396110
+
+CANDIDATES VS LIGHTGBM
+           candidate  candidate_mean_mae  lightgbm_mean_mae  mae_delta_candidate_minus_lightgbm  mae_improvement_percent_vs_lightgbm  candidate_mae_fold_wins  lightgbm_mae_fold_wins  mae_ties  mean_rmse_delta_candidate_minus_lightgbm  mean_centered_spatial_r2_delta_candidate_minus_lightgbm
+HistGradientBoosting            2.411679           2.425252                           -0.013573                             0.559642                        2                       3         0                                 -0.025132                                                 0.002902
+            CatBoost            2.414177           2.425252                           -0.011074                             0.456623                        2                       3         0                                 -0.010196                                                 0.005921
+         Extra Trees            2.431432           2.425252                            0.006180                            -0.254824                        2                       3         0                                  0.002965                                                -0.002965
+
+Development winner: HistGradientBoosting
+Winner mean MAE: 2.411679 C
+LightGBM mean MAE: 2.425252 C
+Winner - LightGBM MAE delta: -0.013573 C
+MAE improvement vs LightGBM: 0.5596%
+
+HistGradientBoosting has the lowest development mean MAE, but the production model is NOT changed by this comparison.
+
+IMPORTANT: This is supplementary development evidence only. No production-model replacement decision is made here.
+
+STEP 05 STATUS: PASS
