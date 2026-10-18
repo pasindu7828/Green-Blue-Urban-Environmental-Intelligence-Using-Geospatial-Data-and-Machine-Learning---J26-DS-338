@@ -1,0 +1,40 @@
+{
+  "step": "16C-B",
+  "name": "Criteria Correlation and Redundancy Audit",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-17T04:00:45.800218+00:00",
+  "input_csv": "data/processed/development_suitability/raw_criteria/16b_raw_suitability_criteria_100m.csv",
+  "input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "grid_cells": 9240,
+  "measurement_count": 9,
+  "pair_count": 36,
+  "high_correlation_review_threshold": 0.85,
+  "flagged_pair_count": 3,
+  "flagged_pairs_by_scope": {
+    "C2_RADIUS_ALTERNATIVES": 2,
+    "C3_BUILDING_MEASUREMENTS": 1,
+    "CROSS_CRITERION": 0
+  },
+  "correlation_methods": [
+    "Pearson",
+    "Spearman"
+  ],
+  "qa_checks_total": 10,
+  "qa_checks_passed": 10,
+  "methodological_notes": [
+    "A correlation flag is not an exclusion decision.",
+    "The 0.85 threshold is an exploratory review rule.",
+    "C3 cell occupation and neighbourhood context are conceptually different.",
+    "Spatial dependence means grid cells should not be assumed statistically independent.",
+    "No significance tests or causal conclusions are made.",
+    "No AHP weights or suitability scores are calculated.",
+    "Criteria selection and standardization are deferred."
+  ],
+  "outputs": {
+    "pearson_matrix": "16c_b_pearson_correlation_matrix.csv",
+    "spearman_matrix": "16c_b_spearman_correlation_matrix.csv",
+    "pairwise_review": "16c_b_correlation_pairwise_review.csv",
+    "qa_report": "16c_b_correlation_qa.csv",
+    "summary": "16c_b_correlation_summary.json"
+  }
+}

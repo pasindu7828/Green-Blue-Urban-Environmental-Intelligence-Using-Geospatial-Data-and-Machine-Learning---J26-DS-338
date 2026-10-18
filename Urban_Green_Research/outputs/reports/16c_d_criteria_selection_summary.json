@@ -1,0 +1,67 @@
+{
+  "step": "16C-D",
+  "name": "Criteria Selection and Direction Review",
+  "qa_status": "PASS",
+  "methodology_status": "PROVISIONAL",
+  "timestamp_utc": "2026-10-17T04:10:52.693621+00:00",
+  "input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "grid_cells": 9240,
+  "registered_measurements": 9,
+  "provisional_core_measurements": [
+    "c1_major_road_distance_m",
+    "c2_road_density_500m_km_per_km2",
+    "c3_context_building_pct_500m",
+    "c4_slope_mean_deg"
+  ],
+  "pending_criterion": [
+    "C5 elevation"
+  ],
+  "sensitivity_evidence": [
+    {
+      "pair": "C2_250m_vs_1000m",
+      "spearman_rho": 0.7303525477724065,
+      "top10_jaccard": 0.2427706792199058,
+      "top10_disagreement_cells": 1126,
+      "top10_disagreement_pct": 12.186147186147188
+    },
+    {
+      "pair": "C2_250m_vs_500m",
+      "spearman_rho": 0.8578811951767489,
+      "top10_jaccard": 0.44375,
+      "top10_disagreement_cells": 712,
+      "top10_disagreement_pct": 7.705627705627706
+    },
+    {
+      "pair": "C2_500m_vs_1000m",
+      "spearman_rho": 0.8984006881723613,
+      "top10_jaccard": 0.3588235294117647,
+      "top10_disagreement_cells": 872,
+      "top10_disagreement_pct": 9.437229437229435
+    },
+    {
+      "pair": "C3_250m_vs_500m",
+      "spearman_rho": 0.9315295876489972,
+      "top10_jaccard": 0.476038338658147,
+      "top10_disagreement_cells": 656,
+      "top10_disagreement_pct": 7.0995670995671
+    }
+  ],
+  "important_notes": [
+    "500m road density is a proposed, not final, radius.",
+    "500m building context is a proposed, not final, radius.",
+    "C3 suitability direction is still undecided.",
+    "C5 elevation requires further justification.",
+    "Existing cell building occupation is screening context.",
+    "Alternative radii remain available for sensitivity tests.",
+    "ESA WorldCover and planning constraints will be reviewed separately.",
+    "No Urbanization Pressure or SHAP outputs used.",
+    "No AHP weighting or standardization performed."
+  ],
+  "qa_checks": 17,
+  "qa_passed": 17,
+  "outputs": {
+    "registry": "16c_d_provisional_criteria_registry.csv",
+    "qa": "16c_d_criteria_selection_qa.csv",
+    "summary": "16c_d_criteria_selection_summary.json"
+  }
+}

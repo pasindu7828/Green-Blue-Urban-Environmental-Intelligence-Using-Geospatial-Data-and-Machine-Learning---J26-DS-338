@@ -1,0 +1,47 @@
+{
+  "stage": "18k_01_dashboard_exports",
+  "status": "PASS_SECTION05_BACKEND_READY_DASHBOARD_EXPORTS_WITH_DOCUMENTED_LIMITATIONS",
+  "source_release": "PASS_SECTION05_GIS_PACKAGE_WITH_DOCUMENTED_LIMITATIONS_DASHBOARD_PENDING",
+  "source_sha256": {
+    "data/processed/planning_conflict_intervention/final_gis/18j_planning_conflict_final.gpkg": "b42a51e14eae6f829125e38bec702611a113feef5b679bc99c20c0494b074647",
+    "outputs/reports/planning_conflict_intervention/18j_planning_conflict_final_gis_qa.json": "998efd9493efe6d363d38f16b85e7109113a7b6ba1f958033eca382d4abafbcb",
+    "outputs/reports/planning_conflict_intervention/18h_planning_review_and_hotspot_sensitivity_qa.json": "21bffc20c70248dc8625b9ba08f9d9addfda2495bd17ef4efa882539eb719b4c"
+  },
+  "output_sha256": {
+    "outputs/dashboard/planning_conflict_intervention/grid_records.csv": "a58b174d66f8fad8e7f2012de7298f0176cf55896be8132483dae0059a1ce0db",
+    "outputs/dashboard/planning_conflict_intervention/grid_map.geojson": "211ed78219691e69c627ae24ed1e98083cd7fbdd4fe95a22951e6923573752ac",
+    "outputs/dashboard/planning_conflict_intervention/gn_summary.csv": "38566c832a45ab4d063cb0cd6019cf28279e3bcc480c2ba80d0b93ac6b72b13a",
+    "outputs/dashboard/planning_conflict_intervention/gn_map.geojson": "d9c7391841b5834086e967d37575b8005e5470c2cb2d1f158d8d5e3de4a95775",
+    "outputs/dashboard/planning_conflict_intervention/hotspot_groups.csv": "6390eea10487758638877a9809877daefa1936b3dfcbd6eb9c96557078d83f72",
+    "outputs/dashboard/planning_conflict_intervention/hotspot_map.geojson": "ca98e4c63093c5dd2c1032b18b7829516c6aca3f1218f7360fcb5180280f4278",
+    "outputs/dashboard/planning_conflict_intervention/metadata.json": "b1eb1035b057d08ee40729a0388e09b48cc948c8a6a1f97158206753a90fcd9e",
+    "outputs/dashboard/planning_conflict_intervention/manifest.json": "2751688086f18d1372e26fe27a89b3ae768064130e00bb9febda3dc220790839"
+  },
+  "counts": {
+    "grid_cells": 9240,
+    "gn_divisions": 57,
+    "all_screened_spatial_groups": 673,
+    "candidate_spatial_groups": 58,
+    "baseline_dci_candidate_groups": 36,
+    "baseline_cp_candidate_groups": 22,
+    "dci_valid_cells": 4620,
+    "cp_valid_cells": 4609,
+    "pressure_out_of_domain_cells": 4620,
+    "gn_unassigned_cells": 206
+  },
+  "gn_uncovered_area_km2": 2.133335769889894,
+  "map_crs": "EPSG:4326",
+  "source_crs": "EPSG:32644",
+  "scores_modified": false,
+  "backend_routes_implemented": false,
+  "review_and_hotspot_limitations": [
+    "Missing scores are unknown/unavailable, never zero.",
+    "GN boundaries leave 2.133336 square kilometres unattributed.",
+    "Dominant GN name is for display; original GN summaries use fractional polygon intersection.",
+    "DCI and conservation priority are separate; do not add or multiply them together.",
+    "Hotspots are exploratory, parameter-sensitive clusters, not statistically significant hotspots.",
+    "Review classes are not official zoning rules or development permissions.",
+    "Historical green-to-built detections do not prove illegal development.",
+    "Drainage, flood hazard, infrastructure, legal restrictions and field checks are not resolved by these outputs."
+  ]
+}

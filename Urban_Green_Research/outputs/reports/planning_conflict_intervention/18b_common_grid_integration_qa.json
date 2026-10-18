@@ -1,0 +1,62 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18b_common_grid_integration",
+  "status": "PASS_COMMON_GRID_FINAL_EXPERT_AHP_INTEGRATION",
+  "grid_cells": 9240,
+  "crs": "EPSG:32644",
+  "study_area_km2": 88.82921581108508,
+  "pressure_origin_year": 2025,
+  "pressure_period": "2026-2028",
+  "pressure_threshold_frozen": 0.715,
+  "pressure_not_a_calibrated_probability": true,
+  "suitability_release": "16g_01",
+  "suitability_criteria": "C1_C2_C4",
+  "expert_weights": {
+    "C1": 0.2,
+    "C2": 0.6,
+    "C4": 0.2
+  },
+  "suitability_classes_assigned": false,
+  "domain_counts": {
+    "pressure_in_domain": 4620,
+    "pressure_not_in_domain": 4620,
+    "green_importance_scored": 8727,
+    "green_importance_unavailable": 513,
+    "frozen_conservation_priority_available": 4609,
+    "frozen_conservation_priority_unavailable": 4631,
+    "dci_eligible_for_next_stage": 4620,
+    "joint_evidence_status_counts": {
+      "P_S_GI_CP_COMMON_DOMAIN": 4609,
+      "S_GI_ONLY_PRESSURE_NOT_IN_DOMAIN": 4118,
+      "S_ONLY_PRESSURE_GI_CP_UNAVAILABLE": 502,
+      "P_S_ONLY_GI_CP_UNAVAILABLE": 11
+    }
+  },
+  "methodology_notes": [
+    "Pressure and conservation data are frozen outputs, not recomputed.",
+    "Out-of-domain pressure remains missing, never imputed as zero.",
+    "Frozen Conservation Priority is not multiplied by pressure again.",
+    "Historical green-to-built exposure is supporting evidence only.",
+    "No Development Conflict Index or intervention class is calculated in 18B.",
+    "Development Suitability is continuous expert-AHP GIS-MCDA, not a legal decision.",
+    "Expert responses are researcher-transcribed and not independently signed.",
+    "The older 18A AHP blocker is historical and superseded by the Section 03 release."
+  ],
+  "input_sha256": {
+    "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.csv": "9b8fd5674fbfe221ab3c391b5624fa32cb24c16ecd124f3e858c2b8130b62717",
+    "outputs/reports/16g_01_final_expert_ahp_suitability_release.json": "c69ff768474471b53031d1c5917cdb3952c5d344aae56681148a1277cd46f7d9",
+    "data/processed/urbanization_pressure/inference/14c_2026_2028_urbanization_pressure_scores.csv": "4350eb1fe9380ba77acd566f6fc94840d86ce7fe507b341f60c1750762b7a988",
+    "data/processed/urbanization_pressure/inference/14b_2025_inference_eligibility.csv": "6bcd60770a731fed63b851578505acd2e63f7705429e1809208a2ad9efc23361",
+    "data/processed/conservation_intelligence/final_gis/17o_conservation_intelligence_final.gpkg": "dc69c4ce26bc9dde224efe432e9b5e0d0a285c1ce51f0fd4eb95d478dffc490c",
+    "outputs/reports/conservation_intelligence/17o_conservation_final_qa.json": "20cab4052cf76c04560e50d96bf1597241abfd2761c75abffd607c1ae5dc135e",
+    "outputs/reports/planning_conflict_intervention/17a_input_contract_audit.json": "a4f0aa7659dc9626ccf70ca36d9719c9c4e6a877443b2742ffb93a229d5c6337",
+    "outputs/reports/planning_conflict_intervention/17a_input_contract_registry.csv": "6066fb337fc2beb64086a97149b2b1304853244bcf505b1b01a052ef5326b5c3"
+  },
+  "outputs": {
+    "csv": "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.csv",
+    "gpkg": "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.gpkg",
+    "layer": "planning_conflict_common_grid_100m",
+    "csv_sha256": "019471a83b102ae1df7eec58bc2f5cee65d34c10e0a533e7d4b6fb8c416218f3",
+    "gpkg_sha256": "0875ace74f79a98a322cc4dc7bc2b46d32f3e2b8694a1c6db48325836543775b"
+  }
+}

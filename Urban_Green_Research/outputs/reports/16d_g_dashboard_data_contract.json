@@ -1,0 +1,52 @@
+{
+  "contract_version": "16D-G-1.0",
+  "layer": "suitability_reference_dashboard",
+  "grid_count": 9240,
+  "crs": "EPSG:32644",
+  "coordinate_note": "Convert geometries to EPSG:4326 when serving GeoJSON for web maps.",
+  "model_status": "PROVISIONAL_REFERENCE_NOT_AHP",
+  "scoring": {
+    "formula": "(C1 + C2 + C4) / 3",
+    "weights": {
+      "C1": 0.3333333333333333,
+      "C2": 0.3333333333333333,
+      "C4": 0.3333333333333333
+    },
+    "weight_source": "ILLUSTRATIVE_EQUAL_CONTRIBUTION_NOT_EXPERT",
+    "score_range": [
+      0,
+      1
+    ],
+    "class_type": "WITHIN_STUDY_RELATIVE_QUINTILE",
+    "no_final_ahp_claim": true
+  },
+  "dashboard_field_meanings": {
+    "grid_id": "Stable original 100m grid identifier",
+    "suitability_score": "Provisional three-criterion reference score",
+    "relative_suitability_class": "Relative quintile within Kaduwela",
+    "reference_rank": "Descending reference score rank",
+    "c1_road_proximity": "Normalized road-distance score",
+    "c2_road_density": "Normalized road-density score",
+    "c4_slope": "Normalized terrain-slope score",
+    "limiting_criterion": "Lowest standardized core criterion; not a causal SHAP explanation",
+    "weight_stability_pctclip": "Fraction of 120 exploratory weight scenarios ranking this cell in the top decile",
+    "weight_stability_rank": "Equivalent frequency under rank normalization",
+    "high_stability_both_methods": "Top-decile frequency at least 0.75 for both methods",
+    "planning_review_needed": "At least one provisional screening flag",
+    "review_flags": "Reasons for provisional planning review",
+    "conservation_water_pct": "Approximate percentage overlapping provisional conservation/water review layers",
+    "provisional_zone_name": "Largest-area provisional zoning classification",
+    "small_boundary_fragment": "Original clipped grid area below 5000m2; not a parcel or minimum legal plot threshold",
+    "c3_building_context_raw_pct": "Raw context only; excluded from reference scoring",
+    "c5_elevation_raw_m": "Raw elevation only; excluded from reference scoring"
+  },
+  "important_limitations": [
+    "Not expert-validated AHP",
+    "Not a development approval tool",
+    "Provisional zoning remains legally unverified",
+    "No automatic conservation exclusions",
+    "Grid cells are not individual land parcels",
+    "GN division labels are not yet joined",
+    "No external ground-truth suitability validation claimed"
+  ]
+}

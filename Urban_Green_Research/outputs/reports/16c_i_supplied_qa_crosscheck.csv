@@ -1,0 +1,11 @@
+metric,supplied_value,calculated_value,absolute_difference,review_tolerance,comparison_status,note
+kmc_area_ha,8882.921581109182,8882.9216,1.8189894035458565e-12,88.82921581109181,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."
+zone_features,508.0,508.0,0.0,0.0,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."
+zone_coverage_ha,6620.31900779477,6620.319,9.094947017729282e-12,66.20319007794771,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."
+zone_coverage_pct,74.52862155029982,74.5286,1.1368683772161603e-13,0.7452862155029982,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."
+unclassified_features,130.0,130.0,0.0,0.0,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."
+unclassified_ha,2187.341816051916,2187.3418,1.6051915736170486e-05,21.873418160519158,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."
+unclassified_pct,24.624126151283544,24.6241,1.8070536711434215e-07,0.5,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."
+unmapped_ha,75.26076340934108,2262.6026,2187.34180982074,0.7526076340934108,DIFFERENCE_REQUIRES_REVIEW,"Area differences may reflect different clipping, overlap or coverage definitions."
+unmapped_pct,0.8472523676151098,25.4714,24.62412608113572,0.5,DIFFERENCE_REQUIRES_REVIEW,"Area differences may reflect different clipping, overlap or coverage definitions."
+ambiguous_class_features,171.0,171.0,0.0,0.0,WITHIN_REVIEW_TOLERANCE,"Area differences may reflect different clipping, overlap or coverage definitions."

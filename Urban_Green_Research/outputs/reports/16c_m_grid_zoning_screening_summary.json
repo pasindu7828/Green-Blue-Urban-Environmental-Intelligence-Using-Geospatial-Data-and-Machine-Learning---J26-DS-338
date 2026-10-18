@@ -1,0 +1,44 @@
+{
+  "step": "16C-M",
+  "qa_status": "PASS",
+  "generated_utc": "2026-10-17T05:20:52.452959+00:00",
+  "grid_count": 9240,
+  "source_suitability_layer": "raw_suitability_criteria_100m",
+  "source_modelling_layer": "grid_100m",
+  "crs": "EPSG:32644",
+  "raw_csv_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "suitability_gpkg_sha256": "a1fe686c15ff274d47fb5998185aface5793a16482d4b8492de9ea8aaf635944",
+  "comparison_rule": "Compare Step 16B clipped geometry with full modelling cells after clipping to KMC boundary.",
+  "maximum_clipped_grid_symmetric_difference_m2": 4.557687471595795e-07,
+  "cells_exceeding_grid_match_tolerance": 0,
+  "max_zoning_partition_error_fraction": 3.773047928278789e-09,
+  "coverage_labels": {
+    "CLASSIFIED": 4599,
+    "MIXED_COVERAGE": 3737,
+    "UNCLASSIFIED": 881,
+    "UNMAPPED": 23
+  },
+  "ambiguous_review_cells": 3239,
+  "conservation_water_review_cells": 2510,
+  "approximate_highland_review_cells": 118,
+  "unknown_or_unmapped_review_cells": 4666,
+  "any_review_cells": 7387,
+  "qa_checks": 35,
+  "qa_passed": 35,
+  "limitations": [
+    "Zoning is screenshot-derived, provisional, low confidence and legally unverified.",
+    "The original Step 16B boundary-clipped grid is retained.",
+    "Classified, unclassified and unmapped are exclusive categories.",
+    "Conservation, water, ambiguous and highland review layers may overlap other categories.",
+    "Review flags are not legal exclusions, construction approvals or suitability scores.",
+    "Very small KMC boundary fragments are retained. Percentages use actual clipped-cell area.",
+    "No AHP weights, final suitability index or official zoning rules applied."
+  ],
+  "outputs": [
+    "16c_m_grid_zoning_screening_100m.csv",
+    "16c_m_grid_zoning_screening_100m.gpkg",
+    "16c_m_grid_screening_categories.csv",
+    "16c_m_grid_zoning_screening_qa.csv",
+    "16c_m_grid_zoning_screening_summary.json"
+  ]
+}

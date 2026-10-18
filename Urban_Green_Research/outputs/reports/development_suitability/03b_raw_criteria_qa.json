@@ -1,0 +1,93 @@
+{
+  "stage": "3.3",
+  "status": "PASS",
+  "source": "original GIS inputs, not legacy 16b results",
+  "grid_cells": 9240,
+  "kmc_area_km2": 88.829216,
+  "max_per_cell_area_difference_m2": 0.0,
+  "terrain_methods": {
+    "pixel_center": 9134,
+    "all_touched": 61,
+    "nearest_valid": 45
+  },
+  "terrain_nearest_limit_m": 90.0,
+  "terrain_source": "GEDTM30 only; nearest-DEM-value fill for gradient computation at NoData edges",
+  "terrain_sampling_note": "cell-centre pixels first; then all-touched; then nearest valid GEDTM pixel up to 90 m",
+  "neighbourhood_note": "buffer around full-grid centre, intersected with official KMC",
+  "building_note": "union of intersected building footprints; measured in true KMC-clipped area",
+  "criteria_not_finalized": true,
+  "standardization_done": false,
+  "ahp_done": false,
+  "missing_per_criterion": {
+    "c1_major_road_distance_m": 0,
+    "c3_building_footprint_pct_cell": 0,
+    "c4_slope_mean_deg": 0,
+    "c5_elevation_mean_m": 0,
+    "c2_road_density_250m_km_per_km2": 0,
+    "c3_context_building_pct_250m": 0,
+    "c2_road_density_500m_km_per_km2": 0,
+    "c3_context_building_pct_500m": 0,
+    "c2_road_density_1000m_km_per_km2": 0
+  },
+  "raw_summary": {
+    "c1_major_road_distance_m": {
+      "min": 0.0,
+      "median": 131.2097261783299,
+      "max": 1760.0615546814201
+    },
+    "c3_building_footprint_pct_cell": {
+      "min": 0.0,
+      "median": 0.32173300608572575,
+      "max": 77.79344611917824
+    },
+    "c4_slope_mean_deg": {
+      "min": 0.0,
+      "median": 3.4391548863907033,
+      "max": 35.16070768299891
+    },
+    "c5_elevation_mean_m": {
+      "min": -7.303092294269138,
+      "median": 12.27191837131977,
+      "max": 124.72798029581706
+    },
+    "c2_road_density_250m_km_per_km2": {
+      "min": 0.0,
+      "median": 9.957880080734409,
+      "max": 28.8968471028799
+    },
+    "c3_context_building_pct_250m": {
+      "min": 0.0,
+      "median": 3.7660805809415354,
+      "max": 28.493891643936923
+    },
+    "c2_road_density_500m_km_per_km2": {
+      "min": 0.592263134214244,
+      "median": 10.165952071130794,
+      "max": 21.150459417810453
+    },
+    "c3_context_building_pct_500m": {
+      "min": 0.0,
+      "median": 4.526307847097618,
+      "max": 20.07787065929849
+    },
+    "c2_road_density_1000m_km_per_km2": {
+      "min": 2.63040645358456,
+      "median": 10.50320925670064,
+      "max": 18.033180208959624
+    }
+  },
+  "checks": {
+    "all_9240_grid_cells": true,
+    "unique_grid_ids": true,
+    "reconciled_cell_areas": true,
+    "all_raw_criteria_finite": true,
+    "distance_and_density_nonnegative": true,
+    "building_percentages_between_0_and_100": true,
+    "slope_between_0_and_90_degrees": true,
+    "no_unresolved_terrain": true
+  },
+  "export_verification": {
+    "csv_rows": 9240,
+    "gpkg_features": 9240
+  }
+}

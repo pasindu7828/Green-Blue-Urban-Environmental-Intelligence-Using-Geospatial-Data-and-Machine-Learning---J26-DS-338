@@ -1,0 +1,10 @@
+check,passed,detail
+Previous 16C-D QA PASS,True,PASS
+Previous 16C-D remains provisional,True,PROVISIONAL
+Frozen criteria input unchanged,True,SHA256 match
+Evidence record IDs unique,True,11
+All registry fields complete,True,No blank fields
+No unsupported automatic scoring,True,Evidence is not a numerical suitability score
+Planning PDF has full document length,True,402
+All cited PDF page anchors match,True,11/11 markers found
+Elevation restrictions remain zone-specific,True,No global 25 m / 30 m score cutoff

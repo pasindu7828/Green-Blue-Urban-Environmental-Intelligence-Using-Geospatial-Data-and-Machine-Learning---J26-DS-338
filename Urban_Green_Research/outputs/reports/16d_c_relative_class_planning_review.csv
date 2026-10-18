@@ -1,0 +1,6 @@
+relative_class,grid_cells,review_cells,review_cell_pct,conservation_water_review_cells,ambiguous_name_review_cells,approximate_highland_review_cells,small_boundary_fragments,stable_top_decile_both_methods,screening_only_not_legal_exclusion
+RELATIVE_VERY_LOW,1848,1350,73.05194805194806,705,242,98,81,0,True
+RELATIVE_LOW,1848,1374,74.35064935064936,640,416,10,69,0,True
+RELATIVE_MODERATE,1848,1434,77.59740259740259,534,575,9,70,0,True
+RELATIVE_HIGH,1848,1511,81.76406926406926,380,792,1,71,0,True
+RELATIVE_VERY_HIGH,1848,1718,92.96536796536796,251,1214,0,69,794,True

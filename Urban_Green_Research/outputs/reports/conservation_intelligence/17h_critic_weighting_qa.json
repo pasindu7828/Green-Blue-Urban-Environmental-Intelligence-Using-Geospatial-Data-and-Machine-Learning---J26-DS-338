@@ -1,0 +1,168 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.9",
+  "status": "PASS_CRITIC_WEIGHTING_INDEX_PENDING",
+  "method": "CRITIC_OBJECTIVE_WEIGHTING",
+  "methodology_decision": "Researcher approved CRITIC for Green Importance because the approved Section 04 methodology prescribed no mandatory weighting method. Criterion variability and Pearson correlation conflict determine weights without fabricated expert judgments.",
+  "input_csv_relative_path": "data/processed/conservation_intelligence/importance_criteria/17g_green_importance_criteria_standardized_100m.csv",
+  "input_csv_sha256": "50edb88958582598f4dce555727b07861e3b6e3da45c8009e58efb5eb2341b4d",
+  "stage_48_qa_status": "PASS_STANDARDIZED_CANDIDATES_WEIGHTING_PENDING",
+  "candidate_selection_previously_marked_provisional": true,
+  "weighting_population": "READY_FOR_WEIGHTING current-green cells",
+  "weighting_observations": 8727,
+  "source_grid_cells": 9240,
+  "population_weighting": "EQUAL_PER_GRID_CELL_NOT_AREA_WEIGHTED",
+  "std_convention": "POPULATION_DDOF_0",
+  "correlation_for_CRITIC": "PEARSON",
+  "diagnostic_correlation_only": "SPEARMAN",
+  "standardization": "NATIVE_BENEFIT_PROPORTION_IDENTITY_0_1",
+  "formula": "C_j = population_sd(G_j) * SUM_k(1 - Pearson_r_jk); w_j = C_j / SUM_j(C_j)",
+  "criteria": [
+    {
+      "criterion": "G1",
+      "source_field": "G1_current_green_0_1",
+      "description": "2025 current green fraction",
+      "direction": "BENEFIT",
+      "standardization": "IDENTITY_0_1",
+      "observed_cells": 8727,
+      "mean": 0.6700726302748102,
+      "population_sd": 0.31465643147837963,
+      "contrast_intensity": 0.31465643147837963,
+      "correlation_conflict": 0.4663422961054471,
+      "information_content": 0.14673760273997383,
+      "critic_weight": 0.2778141474499054,
+      "percent_at_one": 25.002864672854358
+    },
+    {
+      "criterion": "G2",
+      "source_field": "G2_historical_persistence_0_1",
+      "description": "2011-2024 green persistence",
+      "direction": "BENEFIT",
+      "standardization": "IDENTITY_0_1",
+      "observed_cells": 8727,
+      "mean": 0.6831344431894466,
+      "population_sd": 0.4140202276314275,
+      "contrast_intensity": 0.4140202276314275,
+      "correlation_conflict": 0.5405836964104144,
+      "information_content": 0.22381258504167825,
+      "critic_weight": 0.4237380285685617,
+      "percent_at_one": 53.81001489629884
+    },
+    {
+      "criterion": "G3",
+      "source_field": "G3_local_green_context_0_1",
+      "description": "250 m surrounding green context",
+      "direction": "BENEFIT",
+      "standardization": "IDENTITY_0_1",
+      "observed_cells": 8727,
+      "mean": 0.6559407200448296,
+      "population_sd": 0.21809663715192784,
+      "contrast_intensity": 0.21809663715192784,
+      "correlation_conflict": 0.7227806365419113,
+      "information_content": 0.15763602622832065,
+      "critic_weight": 0.298447823981533,
+      "percent_at_one": 0.6989801764638478
+    }
+  ],
+  "pearson_correlation": {
+    "G1": {
+      "G1": 1.0,
+      "G2": 0.857927322013025,
+      "G3": 0.6757303818815279
+    },
+    "G2": {
+      "G1": 0.8579273220130249,
+      "G2": 1.0,
+      "G3": 0.6014889815765607
+    },
+    "G3": {
+      "G1": 0.6757303818815279,
+      "G2": 0.6014889815765608,
+      "G3": 1.0
+    }
+  },
+  "spearman_diagnostic": {
+    "G1": {
+      "G1": 1.0,
+      "G2": 0.8146091598148263,
+      "G3": 0.6920056221844324
+    },
+    "G2": {
+      "G1": 0.8146091598148263,
+      "G2": 1.0,
+      "G3": 0.59005133837062
+    },
+    "G3": {
+      "G1": 0.6920056221844324,
+      "G2": 0.59005133837062,
+      "G3": 1.0
+    }
+  },
+  "criterion_distributions": {
+    "G1": {
+      "min": 0.01,
+      "p25": 0.41,
+      "median": 0.75,
+      "p75": 0.995,
+      "max": 1.0
+    },
+    "G2": {
+      "min": 0.0,
+      "p25": 0.2142857142857142,
+      "median": 1.0,
+      "p75": 1.0,
+      "max": 1.0
+    },
+    "G3": {
+      "min": 0.0463018871323137,
+      "p25": 0.494,
+      "median": 0.6865,
+      "p75": 0.829393460638276,
+      "max": 1.0
+    }
+  },
+  "weight_sum": 1.0,
+  "checks": {
+    "stage_48_standardized_candidates_passed": true,
+    "stage_48_no_earlier_importance_score": true,
+    "stage_48_no_threat_or_suitability_inputs": true,
+    "grid_9240_unique_ids": true,
+    "current_source_raw_rf": true,
+    "ready_no_green_unknown_partition": true,
+    "status_matches_current_green_evidence": true,
+    "exactly_three_proposed_criteria": true,
+    "all_ready_criteria_finite": true,
+    "nonready_cells_have_no_criteria": true,
+    "criteria_native_benefit_scale_0_to_1": true,
+    "positive_criterion_variability": true,
+    "pearson_matrix_finite": true,
+    "pearson_symmetric_unit_diagonal": true,
+    "pearson_correlations_in_bounds": true,
+    "critic_conflict_nonnegative": true,
+    "critic_information_positive_finite": true,
+    "critic_weights_valid_and_sum_to_one": true,
+    "spearman_diagnostic_finite": true,
+    "no_importance_index_in_input": true,
+    "source_has_no_threat_pressure_or_suitability_columns": true,
+    "weight_export_three_distinct_criteria": true,
+    "saved_weights_reproduced": true
+  },
+  "green_importance_index_calculated": false,
+  "green_importance_frozen": false,
+  "historical_loss_used_in_weighting": false,
+  "future_pressure_used_in_weighting": false,
+  "development_suitability_ahp_used": false,
+  "pending": [
+    "Review CRITIC weights and saturation of persistence before index calculation",
+    "Stage 4.10: construct and validate Green Importance Index",
+    "Stage 4.11: freeze Green Importance",
+    "Stage 4.15: compare equal-contribution, alternative indicator, area-weighted CRITIC and perturbation scenarios"
+  ],
+  "limitations": [
+    "CRITIC derives statistical contrast and conflict, not expert ecological values",
+    "Spatial grid observations are autocorrelated; weights are descriptive",
+    "Each KMC grid cell contributes equally regardless of clipped area",
+    "Historical green-dominant persistence has many values at one",
+    "No importance index, conservation priority or threat score is created"
+  ]
+}

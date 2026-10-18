@@ -1,0 +1,223 @@
+{
+  "research_component": "Urban Green Transition, Urbanization Pressure and Conservation Intelligence",
+  "stages": [
+    "3.1",
+    "3.2"
+  ],
+  "status": "PASS",
+  "checks_passed": 37,
+  "checks_total": 37,
+  "grid_cells": 9240,
+  "kmc_area_km2": 88.829216,
+  "candidate_criteria_count": 6,
+  "primary_terrain_source": "GEDTM30",
+  "secondary_terrain_source": "NASADEM - sensitivity/reference only",
+  "planning_zoning": "Provisional UDA data - context only",
+  "excluded_core_inputs": [
+    "Urbanization Pressure",
+    "SHAP explanations",
+    "Conservation Priority",
+    "Future pressure predictions",
+    "Provisional UDA zoning"
+  ],
+  "methodology_controls": {
+    "ahp_weights_assigned": false,
+    "criteria_standardized": false,
+    "suitability_score_calculated": false,
+    "criterion_directions_finalized": false
+  },
+  "limitations": [
+    "Input readiness is not suitability accuracy.",
+    "Detailed per-cell raster coverage is not yet validated.",
+    "Previous 39 missing terrain cells must be investigated in Stage 3.3.",
+    "OSM completeness is not independently validated by this audit.",
+    "Final criteria require redundancy and planning-justification review."
+  ],
+  "checks": [
+    {
+      "check": "Source available: grid",
+      "passed": true,
+      "observed": "data\\processed\\urbanization_pressure\\grid\\kaduwela_100m_modelling_grid.gpkg"
+    },
+    {
+      "check": "Source available: boundary",
+      "passed": true,
+      "observed": "data\\processed\\boundaries\\kmc\\kaduwela_kmc_boundary_utm44n.gpkg"
+    },
+    {
+      "check": "Source available: roads",
+      "passed": true,
+      "observed": "data\\processed\\osm\\kaduwela_roads_2026.gpkg"
+    },
+    {
+      "check": "Source available: buildings",
+      "passed": true,
+      "observed": "data\\processed\\osm\\kaduwela_buildings_2026.gpkg"
+    },
+    {
+      "check": "Source available: gedtm",
+      "passed": true,
+      "observed": "data\\processed\\dem\\gedtm30_kmc_30m.tif"
+    },
+    {
+      "check": "Source available: nasadem",
+      "passed": true,
+      "observed": "data\\processed\\dem\\nasadem_kmc_30m.tif"
+    },
+    {
+      "check": "Source available: worldcover",
+      "passed": true,
+      "observed": "data\\processed\\reference_lulc\\esa_worldcover_2021_kmc_10m.tif"
+    },
+    {
+      "check": "Grid count",
+      "passed": true,
+      "observed": "9240"
+    },
+    {
+      "check": "Unique grid IDs",
+      "passed": true,
+      "observed": "9240"
+    },
+    {
+      "check": "Grid CRS",
+      "passed": true,
+      "observed": "EPSG:32644"
+    },
+    {
+      "check": "Boundary CRS",
+      "passed": true,
+      "observed": "EPSG:32644"
+    },
+    {
+      "check": "Single KMC boundary",
+      "passed": true,
+      "observed": "1"
+    },
+    {
+      "check": "Grid geometries valid",
+      "passed": true,
+      "observed": "All valid"
+    },
+    {
+      "check": "KMC geometry valid",
+      "passed": true,
+      "observed": "Valid"
+    },
+    {
+      "check": "Positive KMC overlap areas",
+      "passed": true,
+      "observed": "9240 positive cells"
+    },
+    {
+      "check": "Overlap not greater than grid geometry",
+      "passed": true,
+      "observed": "Area tolerance: 1 m2"
+    },
+    {
+      "check": "KMC/grid total area reconciliation",
+      "passed": true,
+      "observed": "Difference = 0.000000 m2"
+    },
+    {
+      "check": "roads feature count",
+      "passed": true,
+      "observed": "6543"
+    },
+    {
+      "check": "roads CRS",
+      "passed": true,
+      "observed": "EPSG:32644"
+    },
+    {
+      "check": "roads required attributes",
+      "passed": true,
+      "observed": "All present"
+    },
+    {
+      "check": "roads geometry type",
+      "passed": true,
+      "observed": "MultiLineString Z"
+    },
+    {
+      "check": "buildings feature count",
+      "passed": true,
+      "observed": "33673"
+    },
+    {
+      "check": "buildings CRS",
+      "passed": true,
+      "observed": "EPSG:32644"
+    },
+    {
+      "check": "buildings required attributes",
+      "passed": true,
+      "observed": "All present"
+    },
+    {
+      "check": "buildings geometry type",
+      "passed": true,
+      "observed": "MultiPolygon Z"
+    },
+    {
+      "check": "gedtm CRS",
+      "passed": true,
+      "observed": "EPSG:32644"
+    },
+    {
+      "check": "gedtm overlaps KMC",
+      "passed": true,
+      "observed": "BoundingBox(left=378600.0, bottom=758130.0, right=394500.0, top=768000.0)"
+    },
+    {
+      "check": "gedtm contains valid pixels",
+      "passed": true,
+      "observed": "98699 valid pixels"
+    },
+    {
+      "check": "gedtm single-band source",
+      "passed": true,
+      "observed": "1 band(s)"
+    },
+    {
+      "check": "nasadem CRS",
+      "passed": true,
+      "observed": "EPSG:32644"
+    },
+    {
+      "check": "nasadem overlaps KMC",
+      "passed": true,
+      "observed": "BoundingBox(left=378600.0, bottom=758130.0, right=394500.0, top=768000.0)"
+    },
+    {
+      "check": "nasadem contains valid pixels",
+      "passed": true,
+      "observed": "98699 valid pixels"
+    },
+    {
+      "check": "nasadem single-band source",
+      "passed": true,
+      "observed": "1 band(s)"
+    },
+    {
+      "check": "worldcover CRS",
+      "passed": true,
+      "observed": "EPSG:32644"
+    },
+    {
+      "check": "worldcover overlaps KMC",
+      "passed": true,
+      "observed": "BoundingBox(left=378600.0, bottom=758140.0, right=394500.0, top=768000.0)"
+    },
+    {
+      "check": "worldcover contains valid pixels",
+      "passed": true,
+      "observed": "887787 valid pixels"
+    },
+    {
+      "check": "worldcover single-band source",
+      "passed": true,
+      "observed": "1 band(s)"
+    }
+  ]
+}

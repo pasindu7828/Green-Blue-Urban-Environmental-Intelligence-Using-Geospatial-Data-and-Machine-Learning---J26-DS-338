@@ -1,0 +1,22 @@
+check,passed,details
+Previous Step 16C-H passed,True,PASS
+Frozen research input unchanged,True,SHA256 consistency
+main_zoning geometries valid,True,Features: 508
+main_zoning expected count,True,Expected: 508; Actual: 508
+unknown_zoning geometries valid,True,Features: 130
+unknown_zoning expected count,True,Expected: 130; Actual: 130
+ambiguous_names geometries valid,True,Features: 171
+ambiguous_names expected count,True,Expected: 171; Actual: 171
+conservation_water geometries valid,True,Features: 188
+conservation_water expected count,True,Expected: 188; Actual: 188
+highland_approximate geometries valid,True,Features: 2
+highland_approximate expected count,True,Expected: 2; Actual: 2
+municipal_boundary geometries valid,True,Features: 1
+municipal_boundary expected count,True,Expected: 1; Actual: 1
+KMC reference boundary has positive area,True,8882.9216 ha
+Main zoning coverage not above KMC area,True,Union-area coverage check
+Mapped and unmapped percentages total 100,True,Complementary areas
+Coverage measurements are nonnegative,True,No negative areas
+All measured percentages are valid,True,Expected range: 0 to 100
+QA metadata is a dictionary,True,Source QA structure
+Frozen raw criteria unchanged,True,Read-only research audit

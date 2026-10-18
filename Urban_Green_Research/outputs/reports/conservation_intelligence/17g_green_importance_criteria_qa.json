@@ -1,0 +1,142 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.8",
+  "status": "PASS_STANDARDIZED_CANDIDATES_WEIGHTING_PENDING",
+  "candidate_selection_provisional": true,
+  "final_weighting_approved": false,
+  "green_importance_calculated": false,
+  "candidate_criteria": [
+    {
+      "code": "G1",
+      "field": "G1_current_green_0_1",
+      "direction": "BENEFIT",
+      "source": "2025 RAW_RF observed green share of valid LULC area",
+      "standardization": "IDENTITY_0_1"
+    },
+    {
+      "code": "G2",
+      "field": "G2_historical_persistence_0_1",
+      "direction": "BENEFIT",
+      "source": "2011-2024 stabilized green-dominant valid-year share",
+      "standardization": "IDENTITY_0_1"
+    },
+    {
+      "code": "G3",
+      "field": "G3_local_green_context_0_1",
+      "direction": "BENEFIT",
+      "source": "2025 RAW_RF 250m neighbourhood, focal cell excluded",
+      "standardization": "IDENTITY_0_1"
+    }
+  ],
+  "grid_cells": 9240,
+  "currently_green_detected": 8727,
+  "criterion_complete_green_cells": 8727,
+  "no_current_green_detected": 468,
+  "unknown_current_green_condition": 45,
+  "ready_cells_current_coverage_below_80pct": 52,
+  "ready_cells_neighbour_coverage_below_80pct": 0,
+  "ready_cells_partial_history": 0,
+  "coverage_precision_diagnostic": {
+    "tolerance": 1e-09,
+    "neighbour_values_above_one": 18,
+    "neighbour_values_below_zero": 0,
+    "max_neighbour_above_one": 1.199040866595169e-14,
+    "exported_neighbour_coverage_clipped_for_rounding_only": true,
+    "original_source_files_modified": false,
+    "importance_criteria_modified": false
+  },
+  "criterion_distributions_ready_cells": {
+    "G1_current_green_0_1": {
+      "n": 8727,
+      "min": 0.01,
+      "p05": 0.09012071139000001,
+      "p25": 0.41,
+      "median": 0.75,
+      "p75": 0.995,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "G2_historical_persistence_0_1": {
+      "n": 8727,
+      "min": 0.0,
+      "p05": 0.0,
+      "p25": 0.2142857142857142,
+      "median": 1.0,
+      "p75": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "G3_local_green_context_0_1": {
+      "n": 8727,
+      "min": 0.0463018871323137,
+      "p05": 0.2545053746294916,
+      "p25": 0.494,
+      "median": 0.6865,
+      "p75": 0.829393460638276,
+      "p95": 0.9685,
+      "max": 1.0
+    }
+  },
+  "pairwise_spearman": {
+    "G1_current_green_0_1__VS__G2_historical_persistence_0_1": 0.8146091598148263,
+    "G1_current_green_0_1__VS__G3_local_green_context_0_1": 0.6920056221844324,
+    "G2_historical_persistence_0_1__VS__G3_local_green_context_0_1": 0.59005133837062
+  },
+  "checks": {
+    "prior_current_passed": true,
+    "prior_persistence_passed": true,
+    "prior_connectivity_passed": true,
+    "prior_diagnostics_passed": true,
+    "persistence_ids_match": true,
+    "connectivity_ids_match": true,
+    "gis_9240_unique_matching_ids": true,
+    "gis_epsg32644_valid": true,
+    "2025_source_raw_rf": true,
+    "history_2011_2024_stabilized": true,
+    "connectivity_2025_raw_rf": true,
+    "current_green_cross_source_matches": true,
+    "current_coverage_cross_source_matches": true,
+    "gis_area_matches_current_grid": true,
+    "green_condition_partition_matches_frozen_counts": true,
+    "green_area_matches_status": true,
+    "source_coverage_valid_with_1e_9_tolerance": true,
+    "historical_year_counts_0_to_14": true,
+    "green_area_nonnegative_within_grid_area": true,
+    "rounding_adjustment_within_tolerance": true,
+    "G1_current_green_0_1_bounded": true,
+    "G2_historical_persistence_0_1_bounded": true,
+    "G3_local_green_context_0_1_bounded": true,
+    "all_9240_cells_retained": true,
+    "8727_green_cells_ready": true,
+    "unknown_and_no_green_unscored": true,
+    "all_ready_criteria_finite": true,
+    "identity_standardization_preserves_source_values": true,
+    "ready_status_reproduced": true,
+    "coverage_not_used_as_candidate_exclusion": true,
+    "no_threat_or_suitability_input_fields": true,
+    "no_weight_or_composite_score_generated": true,
+    "spearman_1_2_finite": true,
+    "spearman_1_3_finite": true,
+    "spearman_2_3_finite": true,
+    "csv_export_9240_unique": true,
+    "gpkg_export_9240": true,
+    "saved_non_green_criteria_missing": true
+  },
+  "alternative_indicators_for_sensitivity": [
+    "Confirmed mapped green share instead of observed green fraction",
+    "Historical mean green fraction instead of dominant-year share",
+    "500m green neighbourhood instead of 250m",
+    "Exploratory patch size, noting largest-component concentration"
+  ],
+  "limitations": [
+    "Candidate criteria are not approved final weights or an importance score.",
+    "Detected current green is not a validated ecological habitat designation.",
+    "G2 is saturated at one for many cells.",
+    "250m neighbourhood context is not verified ecological connectivity.",
+    "80 percent coverage flags are diagnostics, not exclusion rules.",
+    "No-current-green and unknown-current-green cells are retained unscored."
+  ],
+  "historical_loss_used_in_importance": false,
+  "future_pressure_used_in_importance": false,
+  "development_suitability_used_in_importance": false
+}

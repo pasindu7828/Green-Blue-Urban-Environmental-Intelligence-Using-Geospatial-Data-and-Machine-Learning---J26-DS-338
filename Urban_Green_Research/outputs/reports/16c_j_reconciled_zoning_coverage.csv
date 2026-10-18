@@ -1,0 +1,5 @@
+category,definition,area_ha,pct_of_kmc,exclusive_partition
+CLASSIFIED_ESTIMATES,Area covered by 508 provisional zoning estimate polygons,6620.31900779476,74.52862155029969,True
+UNCLASSIFIED_ONLY,"Area covered by 130 unknown zoning polygons, excluding classified overlap",2187.3418099050464,24.624126082084803,True
+TRULY_UNMAPPED,Area outside both classified and unclassified zoning polygons,75.26076326251018,0.8472523659621523,True
+AMBIGUOUS_NAMES_OVERLAY,Additional uncertainty within or outside the mapped zoning polygons,2153.8058898919335,24.2465935359861,False

@@ -1,0 +1,37 @@
+{
+  "step": "16C-N",
+  "qa_status": "PASS",
+  "methodology": "GIS_MCDA_AHP_MANDATORY",
+  "grid_count": 9240,
+  "candidate_criteria_count": 5,
+  "core_working_criteria": [
+    "C1",
+    "C2",
+    "C4"
+  ],
+  "conditional_criterion": "C3",
+  "context_criterion": "C5",
+  "criteria_final_approval": "PENDING",
+  "expert_criteria_rows_fully_entered": 0,
+  "pairwise_rows_fully_entered": 0,
+  "ahp_status": "PENDING_EXPERT_REVIEW",
+  "correlation_method": "Spearman",
+  "association_review_threshold": 0.85,
+  "high_association_pair_count": 0,
+  "high_association_pairs": [],
+  "c3_standardized_candidates": [],
+  "final_weighted_score_created": false,
+  "source_hashes": {
+    "16b_raw_suitability_criteria_100m.csv": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+    "16d_a_provisional_standardized_criteria_100m.csv": "1e5db133fd5446d74286913893c7d5afea28ccc0b9d01820e1b48b24406fbd33",
+    "16d_a_standardized_criteria_summary.json": "f50c8189bf2a916906781a15b2516cc3d36426af8924979292ee424f061ca832",
+    "16d_b_provisional_suitability_baseline_100m.csv": "64bf7e0c0b93d7532e97d4cb8f2bd26e8b839c175d87655f9c802911cc393a06",
+    "16d_b_provisional_baseline_summary.json": "a10030489bcccb457cc0edb33c27071c2e8c3e1c1d80d4407ffd88684b05f951",
+    "16c_l_expert_criteria_review_template.csv": "4c472071fc6858a7e41cbbdf0575f7cfca96b91cf205717aa219466ecd6bee38",
+    "16c_l_ahp_pairwise_template.csv": "80ec1bf35ad60ae955d0a7d7b6c34dc542b4efa8a97313800197dade2278c64a",
+    "16d_d_ahp_consistency_summary.json": "878638628e181a54309160117c12af10482c2c5130de1effe6639e61046cbfb4"
+  },
+  "qa_checks": 23,
+  "qa_passed": 23,
+  "created_utc": "2026-10-17T08:52:19.074723+00:00"
+}

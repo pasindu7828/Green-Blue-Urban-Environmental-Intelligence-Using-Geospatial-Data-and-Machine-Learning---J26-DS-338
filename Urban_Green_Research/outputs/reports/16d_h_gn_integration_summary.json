@@ -1,0 +1,49 @@
+{
+  "step": "16D-H2",
+  "qa_status": "PASS",
+  "generated_utc": "2026-10-17T06:11:12.158754+00:00",
+  "grid_count": 9240,
+  "source_gn_division_count": 57,
+  "grid_area_ha": 8882.921581108507,
+  "gn_covered_area_ha": 8669.588004119443,
+  "gn_coverage_pct": 97.59838500158817,
+  "gn_uncovered_area_ha": 213.33357698906414,
+  "assigned_grid_cells": 9034,
+  "unassigned_grid_cells": 206,
+  "multiple_gn_intersection_cells": 1736,
+  "low_gn_coverage_cells": 29,
+  "cells_with_gn_coverage_gap": 269,
+  "estimated_overlapping_gn_allocation_ha": 7.017035841272446e-14,
+  "gn_assignment_method": "MAXIMUM_POLYGON_INTERSECTION_AREA",
+  "gn_summary_method": "AREA_WEIGHTED_GRID_GN_INTERSECTIONS",
+  "model_status": "PROVISIONAL_REFERENCE_NOT_AHP",
+  "gn_coverage_complete": false,
+  "expert_ahp_validated": false,
+  "qa_checks": 31,
+  "qa_passed": 31,
+  "source_sha256": {
+    "16d_g_dashboard_reference_100m.gpkg": "84dc9264b4f6bda47e94d2636cf0cc26c2e2e1a9c23d272f03efb46e60921d66",
+    "16d_g_dashboard_reference_100m.csv": "7cb1f64199f8ce6ae9e9f3abfb75db3a798f6a1be224bb4d05b782611aef96ec",
+    "16d_g_dashboard_release_summary.json": "77da6965e06b715f94cc13a798194727ac1cb302ced4b04e9bdb5a7b30516302",
+    "kaduwela_gn_divisions_utm44n.gpkg": "3fd24ce6dd4999467c714f0549b1070394b4ff1bfaad164c926b5d64ac0fdc3a"
+  },
+  "limitations": [
+    "GN polygons cover approximately 97.6% of the Kaduwela grid area",
+    "Uncovered portions are not assigned invented GN names",
+    "Dominant GN labels do not mean a cell lies completely inside that GN",
+    "GN-level scores are area-weighted descriptive summaries",
+    "GN coverage is independent from provisional UDA zoning coverage",
+    "Suitability remains a provisional reference model, not expert AHP",
+    "Grid cells do not represent legally verified buildable parcels",
+    "No development permission is determined"
+  ],
+  "outputs": [
+    "16d_h_grid_with_gn_divisions_100m.csv",
+    "16d_h_grid_with_gn_divisions_100m.gpkg",
+    "16d_h_gn_area_weighted_summary.csv",
+    "16d_h_gn_area_weighted_summary.gpkg",
+    "16d_h_gn_grid_intersection_audit.csv",
+    "16d_h_gn_integration_qa.csv",
+    "16d_h_gn_integration_summary.json"
+  ]
+}

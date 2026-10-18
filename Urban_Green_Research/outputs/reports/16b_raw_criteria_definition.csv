@@ -1,0 +1,7 @@
+criterion_id,criterion_name,raw_primary_measure,source,raw_direction_note,status,weight_assigned
+C1,Higher-order road proximity,c1_major_road_distance_m,OSM roads 2026,Smaller distance generally represents stronger road accessibility; formal standardization occurs later.,RAW_GENERATED,False
+C2,Local drivable road-network context,"Candidate radii: 250 m, 500 m, 1000 m road density",OSM roads 2026,Higher local road density may represent stronger accessibility. Only one representative radius will be selected later.,RAW_ALTERNATIVES_GENERATED,False
+C3,Existing development context,Cell building footprint plus candidate 250 m and 500 m neighbourhood building intensity,OSM buildings 2026,Neighbourhood development context and current cell occupation must be interpreted separately before standardization.,RAW_ALTERNATIVES_GENERATED,False
+C4,Slope,c4_slope_mean_deg,GEDTM30,Slope is retained in raw degrees. Suitability standardization thresholds will be justified later.,RAW_GENERATED,False
+C5,Elevation,c5_elevation_mean_m,GEDTM30,Elevation direction is NOT assumed here. Its inclusion and standardization require explicit justification.,RAW_GENERATED_PENDING_JUSTIFICATION,False
+C6,Land-cover reference/screening,Not generated in Step 16B,ESA WorldCover 2021,Retained as reference/screening context because it is a 2021 reference product rather than 2026 ground truth.,REFERENCE_ONLY_AT_THIS_STAGE,False

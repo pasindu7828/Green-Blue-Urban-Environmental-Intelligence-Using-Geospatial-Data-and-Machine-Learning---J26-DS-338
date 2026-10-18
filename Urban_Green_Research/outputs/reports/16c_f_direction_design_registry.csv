@@ -1,0 +1,6 @@
+criterion,variable,direction,status,reason,pending_decision
+C1,c1_major_road_distance_m,DECREASING,PROVISIONAL,Shorter distance to major roads generally supports accessibility.,Choose final scoring method; check physical access and road restrictions.
+C2,c2_road_density_500m_km_per_km2,INCREASING,PROVISIONAL,Higher nearby road density may support general accessibility.,Justify the 500m scale and scoring method.
+C3,c3_context_building_pct_500m,UNDECIDED,NEEDS_RESEARCH_JUSTIFICATION,Existing development may show available services but also land saturation.,"Justify positive, negative or non-monotonic interpretation using planning evidence and sensitivity tests."
+C4,c4_slope_mean_deg,DECREASING,PROVISIONAL,Lower slope generally makes construction easier.,Choose planning-supported scoring thresholds or a relative scaling method.
+C5,c5_elevation_mean_m,UNDECIDED,NEEDS_RESEARCH_JUSTIFICATION,Elevation may relate to local terrain and protection conditions but has no universal suitability direction.,"Decide whether elevation should be a core criterion or separate screening indicator, while retaining its raw data."

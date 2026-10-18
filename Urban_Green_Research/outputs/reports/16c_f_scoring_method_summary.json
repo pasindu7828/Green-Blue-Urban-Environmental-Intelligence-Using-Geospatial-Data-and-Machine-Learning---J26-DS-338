@@ -1,0 +1,44 @@
+{
+  "step": "16C-F",
+  "name": "Criteria Scoring Method Design",
+  "qa_status": "PASS",
+  "methodology_status": "EXPERIMENTAL",
+  "generated_utc": "2026-10-17T04:39:34.075327+00:00",
+  "input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "grid_cells": 9240,
+  "tested_criteria": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "pending_criterion": "C5",
+  "experimental_score_columns": 10,
+  "experimental_scenarios": 5,
+  "scoring_methods": [
+    "PERCENTILE_CAPPED",
+    "PERCENTILE_RANK"
+  ],
+  "percentile_cap_range": [
+    0.05,
+    0.95
+  ],
+  "qa_checks": 16,
+  "qa_passed": 16,
+  "methodology_notes": [
+    "Candidate scores are experimental and are not final suitability scores.",
+    "5th and 95th percentiles are statistical comparison limits, not official UDA rules.",
+    "C3 increasing and decreasing directions are both tested without selecting one.",
+    "C5 remains unscored until its role is academically justified.",
+    "The 500m C2/C3 measurements remain provisional spatial-scale choices.",
+    "No AHP weights, final suitability scores or zoning restrictions were applied.",
+    "The frozen Step 16B input is unchanged."
+  ],
+  "outputs": {
+    "candidate_scores": "16c_f_candidate_scoring_scenarios_100m.csv",
+    "method_comparison": "16c_f_scoring_method_comparison.csv",
+    "direction_registry": "16c_f_direction_design_registry.csv",
+    "qa": "16c_f_scoring_method_qa.csv",
+    "summary": "16c_f_scoring_method_summary.json"
+  }
+}

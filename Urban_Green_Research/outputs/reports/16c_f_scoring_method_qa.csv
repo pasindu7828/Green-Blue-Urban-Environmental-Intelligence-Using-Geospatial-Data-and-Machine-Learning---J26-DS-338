@@ -1,0 +1,17 @@
+check,passed,detail
+9240 unique grid cells,True,Actual rows: 9240
+Step 16C-D QA passed,True,Previous criteria review
+Step 16C-E QA passed,True,Previous planning evidence audit
+Frozen input matches Step 16C-D,True,SHA256 comparison
+Frozen input matches Step 16C-E,True,SHA256 comparison
+All five raw criteria contain finite values,True,No missing or infinite values
+All five raw criteria vary across cells,True,Nonconstant variables required
+Previous provisional roles preserved,True,C5 must remain pending
+Expected ten experimental score columns,True,Actual: 10
+All scores are finite and within 0-1,True,Candidate score range validation
+All candidate scores nonconstant,True,Experimental outputs must vary
+All score directions are monotonic,True,Passed 10/10
+C3 opposite scenarios remain complementary,True,Opposite interpretations tested consistently
+Elevation has no experimental score,True,C5 requires further justification
+No final scoring decision assigned,True,No production scoring formula chosen
+Frozen input unchanged during analysis,True,Read-only source verification
