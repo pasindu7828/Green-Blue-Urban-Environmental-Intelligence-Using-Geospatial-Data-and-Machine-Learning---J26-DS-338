@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "latest_observed_year": 2025,
+  "forecast_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "future_rows": 10970,
+  "future_base_path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\04_future_base_predictors_2026_2030.csv",
+  "annual_future_path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\04_future_annual_thermal_level_2026_2030.csv",
+  "reference_reproduction_status": "PASS",
+  "max_base_reproduction_error": 1.7763568394002505e-15,
+  "max_annual_reproduction_error": 0.0
+}

@@ -1,0 +1,31 @@
+{
+  "input_file": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\uploads\\current_history_upload.csv",
+  "input_sha256": "df8f1054277285b49566608f08c050b32287252ffc94e1250dd5caad9fe40512",
+  "rows": 24134,
+  "columns": 19,
+  "unique_grids": 2194,
+  "observed_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "latest_observed_year": 2025,
+  "forecast_horizon_years": 5,
+  "forecast_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "failed_check_count": 0,
+  "status": "PASS"
+}

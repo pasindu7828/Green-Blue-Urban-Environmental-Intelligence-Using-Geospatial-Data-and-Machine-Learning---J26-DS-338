@@ -1,0 +1,9 @@
+check,status,details
+validated_history_loaded,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\dynamic_5year_forecast\outputs\01_validated_history.csv
+all_observed_years_used_for_relative_direction,PASS,2015-2025
+trajectory_grid_count,PASS,"actual=2194, expected=2194"
+exactly_one_class_per_grid,PASS,Every grid has one trajectory class.
+reference_thresholds_preserved,PASS,"hot=0.75, stable_split=0.50, relative_slope=0.010"
+trajectory_scope,PASS,Relative spatial heat trajectory; not absolute warming significance.
+2015_2025_reproduction,PASS,agreement=100.00%
+map_alignment,PASS,rows=2194
