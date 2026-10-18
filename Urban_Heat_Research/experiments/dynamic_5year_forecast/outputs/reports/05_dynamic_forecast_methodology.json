@@ -1,0 +1,67 @@
+{
+  "step": 5,
+  "analysis": "Rolling five-year urban heat forecast generation",
+  "forecast_origin_year": 2025,
+  "future_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "forecast_horizon_years": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "model_source": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\models\\03_dynamic_lightgbm_anomaly_trained_2018_2025.joblib",
+  "model_target": "within-year spatial LST anomaly",
+  "feature_count": 93,
+  "feature_engineering": "Exact Step-07 reconstruction",
+  "spatial_context": "Queen-contiguity same-year predictor context",
+  "annual_level_source": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\04_future_annual_thermal_level_2026_2030.csv",
+  "future_base_source": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\04_future_base_predictors_2026_2030.csv",
+  "final_equation": "predicted_lst_c = forecast_annual_mean_lst_c + centered_spatial_anomaly_c",
+  "pseudo_future_rows_used_for_model_training": false,
+  "feature_reselection_performed": false,
+  "hyperparameter_tuning_performed": false,
+  "baseline_reproduction_status": {
+    "feature_reproduction": "PASS",
+    "forecast_reproduction": "PASS"
+  },
+  "yearly_map_layers": [
+    {
+      "year": 2026,
+      "path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2026_wgs84.geojson",
+      "rows": 2194,
+      "crs": "EPSG:4326"
+    },
+    {
+      "year": 2027,
+      "path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2027_wgs84.geojson",
+      "rows": 2194,
+      "crs": "EPSG:4326"
+    },
+    {
+      "year": 2028,
+      "path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2028_wgs84.geojson",
+      "rows": 2194,
+      "crs": "EPSG:4326"
+    },
+    {
+      "year": 2029,
+      "path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2029_wgs84.geojson",
+      "rows": 2194,
+      "crs": "EPSG:4326"
+    },
+    {
+      "year": 2030,
+      "path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2030_wgs84.geojson",
+      "rows": 2194,
+      "crs": "EPSG:4326"
+    }
+  ],
+  "combined_geojson": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2026_2030_wgs84.geojson"
+}

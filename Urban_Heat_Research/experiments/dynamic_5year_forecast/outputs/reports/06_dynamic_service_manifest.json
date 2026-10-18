@@ -1,0 +1,43 @@
+{
+  "module": "Rolling Five-Year Urban Heat Forecasting Service",
+  "status": "READY_FOR_API_INTEGRATION",
+  "observed_period": "2015-2025",
+  "latest_observed_year": 2025,
+  "forecast_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "forecast_horizon_years": 5,
+  "expected_grids_per_year": 2194,
+  "trajectory_classes": [
+    "Diminishing",
+    "Emerging",
+    "Intensifying",
+    "Persistent Cool",
+    "Persistent Hot"
+  ],
+  "model_artifact": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\models\\03_dynamic_lightgbm_anomaly_trained_2018_2025.joblib",
+  "validated_history": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\01_validated_history.csv",
+  "trajectory_csv": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\trajectory\\02_dynamic_trajectory_classes.csv",
+  "trajectory_geojson": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\trajectory\\02_dynamic_trajectory_wgs84.geojson",
+  "future_base_predictors": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\04_future_base_predictors_2026_2030.csv",
+  "future_annual_levels": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\04_future_annual_thermal_level_2026_2030.csv",
+  "future_model_features": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\05_future_model_features_2026_2030.csv",
+  "future_predictions": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\05_dynamic_grid_lst_predictions_2026_2030.csv",
+  "future_year_summary": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\05_dynamic_future_year_summary_2026_2030.csv",
+  "combined_forecast_geojson": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2026_2030_wgs84.geojson",
+  "yearly_forecast_geojson": [
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2026_wgs84.geojson",
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2027_wgs84.geojson",
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2028_wgs84.geojson",
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2029_wgs84.geojson",
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2030_wgs84.geojson"
+  ],
+  "forecast_equation": "forecast_annual_mean_lst_c + centered_spatial_anomaly_c",
+  "trajectory_scope": "Observed-history relative spatial heat trajectory",
+  "future_pseudo_observations_used_for_training": false,
+  "failed_checks": 0
+}
