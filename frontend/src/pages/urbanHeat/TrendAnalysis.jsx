@@ -14,6 +14,16 @@ import { fmt, fmtInt, trajectoryTone } from '../../features/urbanHeat/utils/form
 
 const ORDER = ['Persistent Hot', 'Intensifying', 'Emerging', 'Diminishing', 'Persistent Cool']
 
+const relativePercentile = (value) => {
+  const n = Number(value)
+  return Number.isFinite(n) ? `${(n * 100).toFixed(1)} percentile rank` : '—'
+}
+
+const relativeSlope = (value) => {
+  const n = Number(value)
+  return Number.isFinite(n) ? `${(n * 100).toFixed(2)} percentile points/year` : '—'
+}
+
 export default function TrendAnalysis() {
   const { selectedGridId, setSelectedGridId } = useUrbanHeat()
   const [map, setMap] = useState(null)
@@ -52,7 +62,7 @@ export default function TrendAnalysis() {
   if (error) return <ErrorState error={error} onRetry={load}/>
 
   return <div>
-    <PageHeader eyebrow="Spatial-Temporal Intelligence" title="Trend & Heat Trajectory Analysis" subtitle="Grid-level relative heat trajectory classes derived from the finalized research workflow for Kaduwela." badges={['Relative spatial trajectory', 'Mann–Kendall / Sen slope evidence']}/>
+    <PageHeader eyebrow="Spatial-Temporal Intelligence" title="Trend & Heat Trajectory Analysis" subtitle="Heat trajectory tracks each grid's yearly heat rank within Kaduwela: lower percentiles are relatively cooler and higher percentiles are relatively hotter." badges={['Relative spatial trajectory', 'Mann–Kendall / Sen slope evidence']}/>
     <div className="card-pad mb-5"><GridPicker/></div>
 
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
@@ -61,14 +71,23 @@ export default function TrendAnalysis() {
 
     <div className="mt-5 grid gap-5 2xl:grid-cols-[1.45fr_.85fr]">
       <div className="card-pad">
-        <div className="mb-4"><h2 className="section-title">Kaduwela relative heat trajectories</h2><p className="mt-1 text-[11px] text-slate-500">Click any grid to inspect its classification evidence.</p></div>
+        <div className="mb-4"><h2 className="section-title">Kaduwela relative heat trajectories</h2><p className="mt-1 text-[11px] text-slate-500">Click any grid to inspect its classification evidence. Past = 2015–2019 median rank, Recent = 2021–2025 median rank. Relative slope is in percentile points/year; absolute slope is in °C/year.</p></div>
         <KaduwelaMap
           geojson={map}
           selectedGridId={selectedGridId}
           onSelect={(id) => setSelectedGridId(id)}
           fitKey="trajectory"
           colorForFeature={(feature) => TRAJECTORY_COLORS[feature?.properties?.trajectory_class] || '#94a3b8'}
-          tooltipForFeature={(feature) => { const p = feature?.properties || {}; return `<b>${p.area_name || 'Grid'}</b><br/>Grid: ${p.grid_id}<br/>Trajectory: ${p.trajectory_class || '—'}<br/>Sen slope: ${fmt(p.sen_slope_c_per_year, 3)} °C/year` }}
+          tooltipForFeature={(feature) => {
+            const p = feature?.properties || {}
+            return `<b>${p.area_name || 'Grid'}</b><br/>
+              Grid: ${p.grid_id}<br/>
+              Trajectory: <b>${p.trajectory_class || '—'}</b><br/>
+              Past heat position: ${relativePercentile(p.baseline_relative_heat_median)}<br/>
+              Recent heat position: ${relativePercentile(p.recent_relative_heat_median)}<br/>
+              Relative Sen slope: ${relativeSlope(p.relative_sen_slope_percentile_per_year)}<br/>
+              Absolute LST Sen slope: ${fmt(p.sen_slope_c_per_year, 3)} °C/year`
+          }}
           legend={<TrajectoryLegend/>}
         />
       </div>
@@ -84,10 +103,14 @@ export default function TrendAnalysis() {
           {!detail ? <p className="mt-4 text-sm text-slate-500">Select a grid to inspect its trajectory record.</p> : <div className="mt-4 grid grid-cols-2 gap-3 text-xs">
             <div className="soft-panel"><span className="text-slate-400">Grid</span><b className="mt-1 block">{detail.grid_id}</b></div>
             <div className="soft-panel"><span className="text-slate-400">Area</span><b className="mt-1 block">{detail.area_name}</b></div>
-            <div className="soft-panel"><span className="text-slate-400">Sen slope</span><b className="mt-1 block">{fmt(detail.sen_slope_c_per_year, 4)} °C/year</b></div>
+            <div className="soft-panel"><span className="text-slate-400">Past relative heat position</span><b className="mt-1 block">{relativePercentile(detail.baseline_relative_heat_median)}</b></div>
+            <div className="soft-panel"><span className="text-slate-400">Recent relative heat position</span><b className="mt-1 block">{relativePercentile(detail.recent_relative_heat_median)}</b></div>
+            <div className="soft-panel"><span className="text-slate-400">Long-term relative heat position</span><b className="mt-1 block">{relativePercentile(detail.long_term_relative_heat_median)}</b></div>
+            <div className="soft-panel"><span className="text-slate-400">Relative Sen slope</span><b className="mt-1 block">{relativeSlope(detail.relative_sen_slope_percentile_per_year)}</b></div>
+            <div className="soft-panel"><span className="text-slate-400">Absolute LST Sen slope</span><b className="mt-1 block">{fmt(detail.sen_slope_c_per_year, 4)} °C/year</b></div>
+            <div className="soft-panel"><span className="text-slate-400">Relative direction</span><b className="mt-1 block">{detail.relative_direction_operational || '—'}</b></div>
             <div className="soft-panel"><span className="text-slate-400">MK p-value</span><b className="mt-1 block">{fmt(detail.mk_p_value, 4)}</b></div>
             <div className="soft-panel"><span className="text-slate-400">FDR q-value</span><b className="mt-1 block">{fmt(detail.mk_fdr_q_value, 4)}</b></div>
-            <div className="soft-panel"><span className="text-slate-400">Operational direction</span><b className="mt-1 block">{detail.relative_direction_operational || '—'}</b></div>
           </div>}
         </div>
       </div>
