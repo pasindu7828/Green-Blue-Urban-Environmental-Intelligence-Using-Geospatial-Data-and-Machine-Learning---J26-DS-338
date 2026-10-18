@@ -1,0 +1,29 @@
+{
+  "step": "16C-L",
+  "qa_status": "PASS",
+  "deliverable_status": "EXPERT_REVIEW_PREPARED_NOT_COLLECTED",
+  "created_utc": "2026-10-17T05:06:47.649880+00:00",
+  "frozen_input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "criterion_count": 5,
+  "ahp_alternative_pair_count": 9,
+  "c3_direction_spearman_pctclip": 0.4775027146126513,
+  "c3_direction_jaccard_pctclip": 0.0762958648806057,
+  "c3_direction_spearman_rank": 0.554411298010785,
+  "c3_direction_jaccard_rank": 0.1748251748251748,
+  "qa_checks": 12,
+  "qa_passed": 12,
+  "criteria_template_state": "CREATED",
+  "ahp_template_state": "CREATED",
+  "brief_state": "CREATED",
+  "expert_judgments_collected_by_script": false,
+  "weights_assigned": false,
+  "final_suitability_calculated": false,
+  "outputs": [
+    "16c_l_expert_review_brief.md",
+    "16c_l_expert_criteria_review_template.csv",
+    "16c_l_ahp_pairwise_template.csv",
+    "16c_l_criteria_evidence_snapshot.csv",
+    "16c_l_expert_review_qa.csv",
+    "16c_l_expert_review_summary.json"
+  ]
+}

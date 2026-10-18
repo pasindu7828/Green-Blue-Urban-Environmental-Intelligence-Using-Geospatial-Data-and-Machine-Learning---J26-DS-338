@@ -1,0 +1,35 @@
+{
+  "stage": "3.10",
+  "status": "PASS_PROVISIONAL",
+  "baseline_provenance": "Literature-adapted provisional AHP with two scenario assumptions",
+  "scenario_count": 19,
+  "baseline_high_very_high_area_pct": 46.947090532802505,
+  "baseline_score_reproduction_max_error": 2.220446049250313e-16,
+  "checks": {
+    "9240_aligned_grid_ids": true,
+    "finite_bounded_criteria": true,
+    "valid_area": true,
+    "ahp_reproduced": true,
+    "baseline_score_reproduced": true,
+    "standardization_reproduced": true,
+    "baseline_classes_reproduced": true,
+    "study_area_reconciled": true,
+    "expected_19_scenarios": true,
+    "all_results_finite": true,
+    "jaccard_within_0_1": true,
+    "no_final_expert_approval_claim": true
+  },
+  "inconsistent_alternative_ahp_scenarios": [
+    "PAIR_C1_C2_1",
+    "PAIR_C2_C4_6"
+  ],
+  "limitations": [
+    "Sensitivity is not predictive accuracy.",
+    "Sensitivity is not external ground truth.",
+    "Equal-frequency classes differ conceptually from equal-interval classes.",
+    "AHP scenarios with CR >= 0.10 are diagnostic only, not acceptable replacements.",
+    "Genuine expert AHP is not yet completed.",
+    "Legal and environmental exclusions are not represented by the suitability score.",
+    "Final methodology approval remains pending."
+  ]
+}

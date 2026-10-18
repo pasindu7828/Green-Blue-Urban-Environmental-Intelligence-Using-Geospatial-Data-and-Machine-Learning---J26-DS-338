@@ -1,0 +1,142 @@
+{
+  "stage": "3.11",
+  "technical_status": "PASS_PROVISIONAL",
+  "methodology_status": "NOT_FINAL_EXPERT_AHP_PENDING",
+  "approved_expert_judgments": false,
+  "study_area_km2": 88.82921581108494,
+  "grid_cells": 9240,
+  "ahp_weights": {
+    "C1": 0.49183421096910956,
+    "C2": 0.1630523669307736,
+    "C3": 0.30012253758406715,
+    "C4": 0.04499088451604957
+  },
+  "ahp_consistency_ratio": 0.08350961402842717,
+  "ahp_unverified_scenario_pairs": 2,
+  "score_mean": 0.5595399487623541,
+  "score_area_weighted_mean": 0.5634427769558462,
+  "high_very_high_area_pct": 46.9470905328025,
+  "class_area": [
+    {
+      "class": "VERY_LOW",
+      "count": 746,
+      "area_km2": 6.714464473291903,
+      "kmc_area_pct": 7.558846953655082
+    },
+    {
+      "class": "LOW",
+      "count": 1321,
+      "area_km2": 12.671867684550598,
+      "kmc_area_pct": 14.265427842456834
+    },
+    {
+      "class": "MODERATE",
+      "count": 2888,
+      "area_km2": 27.74015128683396,
+      "kmc_area_pct": 31.228634671085594
+    },
+    {
+      "class": "HIGH",
+      "count": 3058,
+      "area_km2": 29.597472310358263,
+      "kmc_area_pct": 33.319524483142814
+    },
+    {
+      "class": "VERY_HIGH",
+      "count": 1227,
+      "area_km2": 12.105260056050353,
+      "kmc_area_pct": 13.627566049659674
+    }
+  ],
+  "sensitivity_scenarios": 19,
+  "minimum_sensitivity_spearman": 0.964770688875488,
+  "maximum_changed_kmc_area_pct": 42.775084818750976,
+  "inconsistent_alternative_pairwise_scenarios": [
+    "PAIR_C1_C2_1",
+    "PAIR_C2_C4_6"
+  ],
+  "checks": {
+    "upstream_3_1_3_2": true,
+    "upstream_3_3": true,
+    "upstream_3_4": true,
+    "upstream_3_5": true,
+    "upstream_3_6_3_7": true,
+    "upstream_3_8": true,
+    "upstream_3_9": true,
+    "upstream_3_10": true,
+    "ahp_provisional_not_expert_approved": true,
+    "ahp_reciprocal": true,
+    "ahp_weights_reproduced": true,
+    "ahp_cr_reproduced_below_0_10": true,
+    "all_four_csv_grid_id_sets_match": true,
+    "area_positive_finite": true,
+    "standardized_criteria_in_0_1": true,
+    "continuous_scores_reproduced": true,
+    "five_class_labels_reproduced": true,
+    "gis_9240_valid_unique_cells": true,
+    "gis_and_boundary_epsg32644": true,
+    "gis_areas_reconcile": true,
+    "gis_scores_and_classes_match_csv": true,
+    "map_png_nonempty": true,
+    "nineteen_sensitivity_scenarios": true,
+    "finite_sensitivity_metrics": true,
+    "high_area_agrees_with_stage_3_10": true
+  },
+  "upstream_status": {
+    "3.1-3.2": "PASS",
+    "3.3": "PASS",
+    "3.4": "PASS",
+    "3.5": "PASS",
+    "3.6-3.7": "NUMERICALLY_CONSISTENT_PROVISIONAL_ONLY",
+    "3.8": "PASS_PROVISIONAL",
+    "3.9": "PASS_PROVISIONAL",
+    "3.10": "PASS_PROVISIONAL"
+  },
+  "artifact_inventory": {
+    "raw": {
+      "path": "data\\processed\\development_suitability\\raw_criteria\\03b_raw_criteria_100m.csv",
+      "bytes": 2032164,
+      "sha256": "e8cb4b7f2776e9d4cbffd16f1a3c99b2f7549efa08c7d8dc0f1375c081027eef"
+    },
+    "standard": {
+      "path": "data\\processed\\development_suitability\\standardized_criteria\\03d_standardized_criteria_100m.csv",
+      "bytes": 1943657,
+      "sha256": "7db58bfa02a0375c2d8b7713e75475a6fc1af07c5bd122baf37cf308a2c7bcd8"
+    },
+    "weighted": {
+      "path": "data\\processed\\development_suitability\\weighted_suitability\\03f_provisional_weighted_suitability_100m.csv",
+      "bytes": 2068638,
+      "sha256": "4e6d43f3966a2641a680c609bbfc4dd5194d4f27c396dd6b350e778f20de6959"
+    },
+    "classified": {
+      "path": "data\\processed\\development_suitability\\weighted_suitability\\03g_provisional_suitability_classes_100m.csv",
+      "bytes": 2267381,
+      "sha256": "86717d34441396885e25696834ee8a85d08028dac8005ef2407b3e3487a20771"
+    },
+    "classified_gis": {
+      "path": "data\\processed\\development_suitability\\weighted_suitability\\03g_provisional_suitability_classes_100m.gpkg",
+      "bytes": 3776512,
+      "sha256": "a251c970c15d025a128a2e177e2126fead10c39cdc375d4d5793305f3efd973b"
+    },
+    "sensitivity": {
+      "path": "outputs\\reports\\development_suitability\\03h_sensitivity_scenarios.csv",
+      "bytes": 4375,
+      "sha256": "a7046fb143125a71d7d2dffa15ee3aa447c07c166d334c32e574e303a101a86c"
+    },
+    "map": {
+      "path": "outputs\\maps\\development_suitability\\03g_provisional_suitability_map.png",
+      "bytes": 211642,
+      "sha256": "ba7589ee8d2fc2df8fb803ed3f1c5f3924410b6c55a2c423edde89c72f147f7c"
+    }
+  },
+  "limitations": [
+    "Four adapted published comparisons and two unsourced scenario assumptions.",
+    "No genuine Kaduwela expert AHP yet.",
+    "Cross-study weight transfer is not independently validated.",
+    "Relative physical/accessibility suitability only.",
+    "No legal development permission implied.",
+    "No independent suitability accuracy claimed.",
+    "Categorical class assignments show sensitivity to methodology choices.",
+    "Expert assessment or approved methodology revision remains necessary."
+  ]
+}

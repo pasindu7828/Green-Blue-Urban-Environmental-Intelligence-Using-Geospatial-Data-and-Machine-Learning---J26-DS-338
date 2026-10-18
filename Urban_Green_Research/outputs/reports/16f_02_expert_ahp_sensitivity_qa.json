@@ -1,0 +1,58 @@
+{
+  "section": "03_development_suitability",
+  "stage": "16f_02",
+  "status": "PASS_POST_AHP_SENSITIVITY_WITH_DOCUMENTED_STRESS_TESTS_FINAL_RELEASE_PENDING",
+  "baseline": "RESEARCHER_TRANSCRIBED_ENGINEER_AHP",
+  "expert_weights_unchanged": {
+    "C1": 0.2,
+    "C2": 0.5999999999999999,
+    "C4": 0.2
+  },
+  "expert_consistency_ratio": 0.0,
+  "scenario_interpretation": "Twelve hypothetical nonexpert weight-transfer tests plus the unmodified engineer AHP baseline.",
+  "scenario_construction": {
+    "description": "Transfer 5 or 10 percentage points between selected criteria while preserving total weight = 1.",
+    "transfer_points": [
+      5,
+      10
+    ],
+    "ordered_transfer_pairs": 6,
+    "hypothetical_scenarios": 12,
+    "total_including_baseline": 13
+  },
+  "grid_count": 9240,
+  "top_decile_size": 924,
+  "top_quintile_size": 1848,
+  "rank_tiebreak": "Descending suitability, then ascending grid_id",
+  "ranking_sets_are_not_suitability_classes": true,
+  "overall_robustness_diagnostics": {
+    "worst_scenario_spearman_correlation": 0.9822801085757273,
+    "smallest_top_decile_retention_fraction": 0.8755411255411255,
+    "smallest_top_quintile_retention_fraction": 0.9004329004329005,
+    "largest_scenario_max_abs_score_change": 0.10000000000000014,
+    "largest_scenario_p95_abs_rank_shift": 1019.0,
+    "grids_always_in_top_decile": 664,
+    "grids_always_in_top_quintile": 1460
+  },
+  "limitations": [
+    "Hypothetical perturbations measure weight sensitivity, not expert consensus.",
+    "Suitability is based only on selected C1/C2/C4 criteria, not comprehensive legal or flood-risk suitability.",
+    "No final suitability categories or planning conflict classes are assigned."
+  ],
+  "final_suitability_classification_completed": false,
+  "final_section03_release_completed": false,
+  "section04_modified": false,
+  "source_sha256": {
+    "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.csv": "9b8fd5674fbfe221ab3c391b5624fa32cb24c16ecd124f3e858c2b8130b62717",
+    "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.gpkg": "f44eff26e7bf0fb2549de510855119e0440790edd91f21dd4690b053a171db87",
+    "outputs/reports/16e_02_expert_ahp_weighted_qa.json": "c1c8cb406c9678680c7a4a4dfa71e57dca0ca8905eb2e84e389c143861af42f1",
+    "outputs/reports/16d_e_expert_ahp_consistency_qa.json": "2418d5af2760529f851e0ebf3b444c163da2d8d144650887d4e8e3e19af60891",
+    "outputs/reports/16d_e_expert_ahp_weights.csv": "eae6ff21a01868d1c16ca38cdee5dcda9def81046b8609a000dbcabdf2c4af01"
+  },
+  "outputs": {
+    "scenario_summary_csv": "data/processed/development_suitability/final_expert_ahp/16f_02_sensitivity_scenario_summary.csv",
+    "grid_stability_csv": "data/processed/development_suitability/final_expert_ahp/16f_02_sensitivity_grid_stability.csv",
+    "scenario_summary_sha256": "bd5e8ebdc99fe7a1018ab1f530ae9d36227ff6cdfab721f166c3d0bf86a1a545",
+    "grid_stability_sha256": "618dd2b3080310d1d383658cbe721e040d5fb11809d595e0324fd3fdd3132864"
+  }
+}

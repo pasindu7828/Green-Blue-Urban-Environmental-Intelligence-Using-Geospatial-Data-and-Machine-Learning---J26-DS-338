@@ -1,0 +1,21 @@
+check,passed,detail
+Step 16C-F and G passed,True,Previous scoring experiments
+Step 16C-J passed,True,Zoning coverage reconciled
+Earlier scenarios remain experimental,True,No final score
+All raw-input checksums match,True,Frozen Step 16B data
+Step 16C-G used these exact candidate scores,True,Experimental CSV checksum
+"9240 unique, aligned grid cells",True,Exact row-to-grid matching
+Supplied zoning coverage fully reconciled,True,Zoning remains separate from criterion scoring
+Ten needed experimental score columns available,True,"C1, C2, C3, C4"
+Input scores finite and between zero and one,True,Scores from Step 16C-F
+Exactly six diagnostic composite columns,True,Three for each scoring method
+All diagnostic scenario values valid 0-1,True,Read-only provisional scenarios
+Scenarios show spatial variation,True,All grid scenarios nonconstant
+Exactly nine scenario comparisons,True,"Inclusion, direction and method comparisons"
+All ranking-comparison metrics finite,True,No NaN or infinity
+All top-decile statistics valid,True,Ties included at p90
+Opposite C3 scenarios are represented,True,No forced C3 decision
+C5 not included in diagnostic composites,True,Zone-specific restrictions not generalized
+Comparisons explicitly labelled diagnostic only,True,These are not final AHP scores
+Frozen raw input unchanged,True,SHA256 stable
+Candidate scoring input unchanged,True,SHA256 stable

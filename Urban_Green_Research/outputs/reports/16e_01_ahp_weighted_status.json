@@ -1,0 +1,31 @@
+{
+  "step": "16E-01",
+  "status": "BLOCKED_AWAITING_VALID_EXPERT_AHP",
+  "methodology": "GIS_MCDA_AHP_MANDATORY",
+  "explanation": "GIS criteria and provisional reference passed validation. Genuine consistent expert AHP weights are not available. Weighted suitability was not calculated.",
+  "expert_input_status": "PENDING_EXPERT_REVIEW",
+  "weighted_model_available": false,
+  "external_validation": "NOT_COMPLETED",
+  "legal_permission": "NOT_ASSESSED",
+  "qa_checks": 18,
+  "qa_passed": 18,
+  "input_sha256": {
+    "16d_a_provisional_standardized_criteria_100m.csv": "1e5db133fd5446d74286913893c7d5afea28ccc0b9d01820e1b48b24406fbd33",
+    "16d_a_standardized_criteria_summary.json": "f50c8189bf2a916906781a15b2516cc3d36426af8924979292ee424f061ca832",
+    "16d_h_grid_with_gn_divisions_100m.gpkg": "384405e9702bf3d739f104e20f0e1a14aed301a7cf0cd9957905a067614d8548",
+    "16d_h_gn_integration_summary.json": "09a98a3300fa032d1b007ee46a1834f7de7a924fb87597214081731922fa8042",
+    "16c_l_expert_criteria_review_template.csv": "4c472071fc6858a7e41cbbdf0575f7cfca96b91cf205717aa219466ecd6bee38",
+    "16c_l_ahp_pairwise_template.csv": "80ec1bf35ad60ae955d0a7d7b6c34dc542b4efa8a97313800197dade2278c64a",
+    "16d_d_ahp_consistency_summary.json": "878638628e181a54309160117c12af10482c2c5130de1effe6639e61046cbfb4"
+  },
+  "created_utc": "2026-10-17T08:22:41.383963+00:00",
+  "candidate_c3_columns": [
+    "c3_context_building_pct_500m",
+    "alt_c3_high_building_pc",
+    "alt_c3_low_building_pc",
+    "sens_c3_high_rank",
+    "sens_c3_low_rank"
+  ],
+  "final_outputs_generated": false,
+  "existing_weighted_outputs": "DO_NOT_USE_UNLESS_CURRENT_STATUS_VALID"
+}

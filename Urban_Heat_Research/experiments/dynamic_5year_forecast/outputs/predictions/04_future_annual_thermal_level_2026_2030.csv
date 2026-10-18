@@ -1,0 +1,6 @@
+year,forecast_origin_year,horizon_years,annual_level_method,forecast_annual_mean_lst_c
+2026,2025,1,Expanding Mean,35.51127224066366
+2027,2025,2,Expanding Mean,35.51127224066366
+2028,2025,3,Expanding Mean,35.51127224066366
+2029,2025,4,Expanding Mean,35.51127224066366
+2030,2025,5,Expanding Mean,35.51127224066366

@@ -1,0 +1,125 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.5",
+  "status": "PASS_CONNECTIVITY_CANDIDATES",
+  "source_year": 2025,
+  "source_product": "RAW_RF",
+  "grid_cells": 9240,
+  "neighbourhood_radii_m": [
+    250,
+    500
+  ],
+  "neighbourhood_definition": "All other KMC grid cells whose full-grid centres fall within the selected radius. Observed green area divided by observed valid LULC area of those neighbouring cells.",
+  "neighbourhood_limitations": [
+    "Grid-centre distance approximation, not exact circular-buffer land-area integration.",
+    "Focal cell excluded to reduce duplication of current green condition.",
+    "Unknown LULC coverage is not assigned zero green.",
+    "Neighbourhood coverage retained for QA."
+  ],
+  "neighbourhood_summary": {
+    "250m": {
+      "green_context_distribution": {
+        "count": 9240,
+        "min": 0.020825481873725175,
+        "p05": 0.23097500000000004,
+        "p25": 0.4695,
+        "median": 0.6725,
+        "p75": 0.8225,
+        "p95": 0.966020889979932,
+        "max": 1.0
+      },
+      "coverage_distribution": {
+        "count": 9240,
+        "min": 0.9142733661761825,
+        "p05": 0.9824733684424651,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p95": 1.0,
+        "max": 1.000000000000012
+      },
+      "no_valid_context_cells": 0
+    },
+    "500m": {
+      "green_context_distribution": {
+        "count": 9240,
+        "min": 0.179875,
+        "p05": 0.3017480288607819,
+        "p25": 0.48962343693719,
+        "median": 0.6685078226116251,
+        "p75": 0.782875,
+        "p95": 0.9388377617551139,
+        "max": 0.9991530577542739
+      },
+      "coverage_distribution": {
+        "count": 9240,
+        "min": 0.968712637731695,
+        "p05": 0.9884607368208943,
+        "p25": 0.9970132644157844,
+        "median": 1.0,
+        "p75": 1.0,
+        "p95": 1.0,
+        "max": 1.0000000000000024
+      },
+      "no_valid_context_cells": 0
+    }
+  },
+  "patch_method": "Exploratory four-neighbour 100m grid topology with positive shared clipped geometry edges",
+  "patch_candidate_rule": "Confirmed mapped green area divided by actual KMC-intersecting grid area > 0.50",
+  "patch_rule_is_final_conservation_mask": false,
+  "patch_candidate_cells": 5974,
+  "patch_count": 158,
+  "patch_area_distribution_km2": {
+    "count": 158,
+    "min": 0.0004,
+    "p05": 0.004955,
+    "p25": 0.006125,
+    "median": 0.0088,
+    "p75": 0.022275,
+    "p95": 0.25360641392656114,
+    "max": 34.9340605505112
+  },
+  "patch_limitations": [
+    "A grid-based patch is not a mapped ecological habitat polygon.",
+    "Green within adjacent cells may not physically touch at sub-grid scale.",
+    "The 50 percent majority rule is exploratory.",
+    "Other thresholds and connectivity rules require robustness analysis.",
+    "No final Green Importance criterion has been chosen yet."
+  ],
+  "checks": {
+    "current_9240_unique_ids": true,
+    "grid_gis_9240_unique_ids": true,
+    "clipped_gis_9240_unique_ids": true,
+    "all_grid_id_sets_match": true,
+    "all_gis_epsg32644": true,
+    "2025_raw_rf_source": true,
+    "centres_finite": true,
+    "areas_valid": true,
+    "unknown_green_preserved": true,
+    "confirmed_green_share_valid": true,
+    "clipped_geometry_valid_and_area_matched": true,
+    "9240_cells_preserved": true,
+    "context_250m_within_0_1": true,
+    "context_250m_missing_only_without_valid_area": true,
+    "context_250m_coverage_valid": true,
+    "context_250m_reproduced": true,
+    "context_250m_no_focal_cell": true,
+    "context_500m_within_0_1": true,
+    "context_500m_missing_only_without_valid_area": true,
+    "context_500m_coverage_valid": true,
+    "context_500m_reproduced": true,
+    "context_500m_no_focal_cell": true,
+    "patch_membership_matches_candidate": true,
+    "patch_area_positive": true,
+    "patch_component_areas_reconcile": true,
+    "patch_count_matches_ids": true,
+    "no_forbidden_inputs": true,
+    "csv_export_9240": true,
+    "gis_export_9240": true
+  },
+  "max_geometry_area_error_m2": 1.8189894035458565e-12,
+  "green_importance_calculated": false,
+  "historical_threat_used": false,
+  "future_pressure_used": false,
+  "development_suitability_used": false
+}

@@ -1,0 +1,7 @@
+source,features,original_area_sum_ha,within_kmc_area_sum_ha,within_kmc_union_area_ha,outside_kmc_area_sum_ha,internal_overlap_excess_ha,kmc_coverage_pct,source_status
+main_zoning,508,6622.6426,6620.319,6620.319,2.3236,0.0,74.5286,PROVISIONAL_OR_REFERENCE
+unknown_zoning,130,2194.8527,2187.3418,2187.3418,7.5109,0.0,24.6241,PROVISIONAL_OR_REFERENCE
+ambiguous_names,171,2154.9542,2153.8059,2153.8059,1.1483,0.0,24.2466,PROVISIONAL_OR_REFERENCE
+conservation_water,188,1147.1457,1146.6602,1146.6602,0.4855,0.0,12.9086,PROVISIONAL_OR_REFERENCE
+highland_approximate,2,74.0534,74.0534,74.0534,0.0,0.0,0.8337,PROVISIONAL_OR_REFERENCE
+municipal_boundary,1,8882.9216,8882.9216,8882.9216,0.0,0.0,100.0,PROVISIONAL_OR_REFERENCE

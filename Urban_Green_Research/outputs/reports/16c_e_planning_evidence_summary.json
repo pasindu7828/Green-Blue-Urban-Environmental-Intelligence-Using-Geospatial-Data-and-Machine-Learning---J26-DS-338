@@ -1,0 +1,26 @@
+{
+  "step": "16C-E",
+  "qa_status": "PASS",
+  "methodology_status": "EVIDENCE_RECORDED_FINAL_CHOICES_PENDING",
+  "generated_utc": "2026-10-17T04:31:53.376285+00:00",
+  "pdf_file": "data/raw/uda/development_plan/KaduwelaDP2023-2033_S.pdf",
+  "pdf_sha256": "b49a548e9af3b3be0aa1ed7a244b0bb44f570bdd65a058fcadc133f9e0b363d6",
+  "pdf_pages": 402,
+  "frozen_16b_csv_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "evidence_items": 11,
+  "qa_total": 9,
+  "qa_passed": 9,
+  "source_limitations": [
+    "Source statements were manually reviewed at the cited PDF pages. Automated QA checks page anchors, not legal meaning.",
+    "Sinhala PDF extraction may be imperfect. Confirm exact legal wording in the PDF.",
+    "Document-specific zoning rules are not city-wide GIS-MCDA thresholds.",
+    "Official development permission requires applicable agency procedures and site-specific review.",
+    "UDA provisional zoning GIS is not used to calculate raw C1-C5 criteria.",
+    "C2/C3 500m proposals, C3 direction, C5 inclusion and standardization thresholds remain provisional."
+  ],
+  "outputs": [
+    "16c_e_planning_evidence_registry.csv",
+    "16c_e_planning_evidence_qa.csv",
+    "16c_e_planning_evidence_summary.json"
+  ]
+}

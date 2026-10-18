@@ -1,0 +1,16 @@
+{
+  "step": "16D-T",
+  "status": "PASS",
+  "purpose": "Isolated tests of the real AHP intake code",
+  "tests_passed": 6,
+  "tests_total": 6,
+  "production_engine_sha256": "c4c391ac52a82814ac1bd34f5e4c0fefc74638b4480043895588d7be07a87e40",
+  "real_questionnaires_modified": false,
+  "all_test_judgments_synthetic": true,
+  "real_ahp_weights_created": false,
+  "created_utc": "2026-10-17T09:01:47.575986+00:00",
+  "outputs": [
+    "16d_t_ahp_engine_unit_test_cases.csv",
+    "16d_t_ahp_engine_unit_test_summary.json"
+  ]
+}

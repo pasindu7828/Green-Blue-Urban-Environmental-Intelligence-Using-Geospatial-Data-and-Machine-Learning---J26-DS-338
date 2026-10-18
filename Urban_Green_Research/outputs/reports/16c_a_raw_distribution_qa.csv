@@ -1,0 +1,11 @@
+check,passed,details
+Expected 9240 grid cells,True,Actual: 9240
+Unique non-null grid IDs,True,Each record must identify one grid cell
+Previous Step 16B QA PASS,True,Input must originate from accepted Step 16B
+All candidate values finite,True,All nine raw variables must be complete
+Nonnegative C1-C4 values,True,Negative elevation is allowed for C5
+Building percentages in 0-100 range,True,Applies to C3 percentage variables
+Expected GEDTM terrain sources,True,Zonal: 9201; proxy: 39
+Fallback flags agree with method,True,Fallback flags must identify exactly the proxy cells
+Fallback within 30 metres,True,Maximum observed distance: 25.495097567963924
+Proxy cells retain zero zonal pixel counts,True,Proxy estimates must not be described as zonal pixels

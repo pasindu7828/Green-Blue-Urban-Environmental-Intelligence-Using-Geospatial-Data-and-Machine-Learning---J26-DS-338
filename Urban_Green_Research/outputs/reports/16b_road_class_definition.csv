@@ -1,0 +1,14 @@
+highway_clean,feature_count,total_length_km,included_in_c1_major_access,included_in_c2_local_density
+residential,3809,597.9528230451486,False,True
+living_street,1591,158.16041077028376,False,True
+primary,251,86.93617452623532,True,True
+tertiary,136,56.39987799792372,True,True
+service,581,50.705782188542905,False,False
+unclassified,98,22.689680871328978,False,True
+motorway,13,17.553852568006267,False,False
+secondary,8,8.404270159534006,True,True
+motorway_link,13,3.2502615859891564,True,True
+primary_link,31,1.0808437075798465,True,True
+trunk,8,0.4616804806886523,True,True
+trunk_link,1,0.08347441965817105,True,True
+tertiary_link,3,0.02410022721963792,True,True

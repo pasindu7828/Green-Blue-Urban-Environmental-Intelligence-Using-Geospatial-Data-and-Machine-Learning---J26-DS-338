@@ -1,0 +1,11 @@
+check,passed,details
+Expected grid count,True,Actual: 9240
+Unique and valid grid IDs,True,One record per 100m grid cell
+Step 16C-A status PASS,True,Previous distribution audit must have passed
+Frozen input checksum agrees with Step 16C-A,True,Prevents silent changes to the analyzed input
+All nine measurements finite,True,Missing or infinite values are not permitted
+All measurements nonconstant,True,Constant columns cannot yield valid correlations
+Pearson matrix valid,True,"Finite, symmetric, diagonal equal to one"
+Spearman matrix valid,True,"Finite, symmetric, diagonal equal to one"
+Complete pairwise comparison,True,Expected: 36; actual: 36
+No automatic criterion removal,True,Correlation flags require methodological review

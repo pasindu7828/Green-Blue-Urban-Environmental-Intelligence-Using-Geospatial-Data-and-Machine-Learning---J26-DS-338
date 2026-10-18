@@ -1,0 +1,27 @@
+{
+  "step": "16D-D",
+  "technical_qa_status": "PASS",
+  "expert_input_status": "PENDING_EXPERT_REVIEW",
+  "selected_scenario": null,
+  "criterion_review_complete": false,
+  "criterion_review_has_any_input": false,
+  "explanation": "Criteria review form has not been fully and validly completed.",
+  "input_sha256": {
+    "16c_l_expert_criteria_review_template.csv": "4c472071fc6858a7e41cbbdf0575f7cfca96b91cf205717aa219466ecd6bee38",
+    "16c_l_ahp_pairwise_template.csv": "80ec1bf35ad60ae955d0a7d7b6c34dc542b4efa8a97313800197dade2278c64a",
+    "16c_l_expert_review_summary.json": "ac2d4481b5b45ca8722c993b4bbd92741146b009e6f81d037490010a5aa2a8ed",
+    "16d_b_provisional_baseline_summary.json": "a10030489bcccb457cc0edb33c27071c2e8c3e1c1d80d4407ffd88684b05f951",
+    "16d_c_spatial_baseline_summary.json": "246e34200ef0a8ac2cf2e696cd65c298230da299f7d78fcfbd34acf85ddeab24"
+  },
+  "ahp": null,
+  "weights_current_and_validated": false,
+  "warning": "Do not use pre-existing weight files unless this summary validates the current expert inputs.",
+  "created_utc": "2026-10-17T05:43:43.563313+00:00",
+  "qa_checks": 9,
+  "qa_passed": 9,
+  "outputs": [
+    "16d_d_ahp_intake_qa.csv",
+    "16d_d_ahp_input_readiness.csv",
+    "16d_d_ahp_consistency_summary.json"
+  ]
+}

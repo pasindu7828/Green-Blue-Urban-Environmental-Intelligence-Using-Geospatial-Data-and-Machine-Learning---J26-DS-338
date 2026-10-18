@@ -1,0 +1,81 @@
+{
+  "step": "16C-M1",
+  "qa_status": "PASS",
+  "analysis_status": "DIAGNOSTIC_NO_GEOMETRY_REPLACEMENT",
+  "generated_utc": "2026-10-17T05:15:10.033241+00:00",
+  "grid_count": 9240,
+  "target_crs": "EPSG:32644",
+  "original_suitability_crs": "EPSG:32644",
+  "original_modelling_crs": "EPSG:32644",
+  "suitability_layer": "raw_suitability_criteria_100m",
+  "modelling_layer": "grid_100m",
+  "source_hashes": {
+    "16b_raw_suitability_criteria_100m.gpkg": "a1fe686c15ff274d47fb5998185aface5793a16482d4b8492de9ea8aaf635944",
+    "kaduwela_100m_modelling_grid.gpkg": "c49e9e9fa22760488e2a7ccb590f6f6f70e93dd5a6284b91cad305c5bb5e8cfd",
+    "16b_raw_suitability_criteria_100m.csv": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+    "Kaduwela_MC_Boundary.gpkg": "18fb32177ab7ec9cf1b67b528935d285942ae053b7af3c78667da854ed801241"
+  },
+  "geometry_difference_tolerance_m2": 0.1,
+  "cells_above_tolerance": 726,
+  "cells_above_1m2": 725,
+  "cells_above_100m2": 686,
+  "cells_above_500m2": 632,
+  "cells_iou_below_0_99": 686,
+  "cells_iou_below_0_90": 585,
+  "cells_suitability_zero_kmc_overlap": 0,
+  "cells_modelling_zero_kmc_overlap": 0,
+  "cells_suitability_outside_kmc": 0,
+  "cells_modelling_outside_kmc": 726,
+  "suitability_total_area_ha": 8882.921581108507,
+  "modelling_total_area_ha": 9240.0,
+  "suitability_area_within_kmc_ha": 8882.921581104782,
+  "modelling_area_within_kmc_ha": 8882.921581109142,
+  "suitability_grid_area_stats_m2": {
+    "min": 0.06368482114236093,
+    "median": 10000.0,
+    "p95": 10000.0,
+    "p99": 10000.0,
+    "max": 10000.0,
+    "mean": 9613.551494706177
+  },
+  "modelling_grid_area_stats_m2": {
+    "min": 10000.0,
+    "median": 10000.0,
+    "p95": 10000.0,
+    "p99": 10000.0,
+    "max": 10000.0,
+    "mean": 10000.0
+  },
+  "symmetric_difference_stats_m2": {
+    "min": 0.0,
+    "median": 0.0,
+    "p95": 2912.163373054172,
+    "p99": 9484.111315800828,
+    "max": 9999.936315178857,
+    "mean": 386.4485052938226
+  },
+  "iou_stats": {
+    "min": 6.368482114236093e-06,
+    "median": 1.0,
+    "p95": 1.0,
+    "p99": 1.0,
+    "max": 1.0,
+    "mean": 0.9613551494706178
+  },
+  "centroid_distance_stats_m": {
+    "min": 0.0,
+    "median": 0.0,
+    "p95": 13.894175731867959,
+    "p99": 52.24195782364077,
+    "max": 70.52707736851885,
+    "mean": 2.058025037110578
+  },
+  "qa_checks": 14,
+  "qa_passed": 14,
+  "important_note": "Different geometry does not automatically mean invalid research data. The results must be interpreted before continuing the zoning overlay.",
+  "outputs": [
+    "16c_m1_grid_geometry_differences.csv",
+    "16c_m1_grid_geometry_qa.csv",
+    "16c_m1_grid_geometry_summary.json"
+  ]
+}

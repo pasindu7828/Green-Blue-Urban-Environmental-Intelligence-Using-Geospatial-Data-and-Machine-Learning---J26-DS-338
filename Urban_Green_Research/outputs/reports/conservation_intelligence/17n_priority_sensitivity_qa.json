@@ -1,0 +1,101 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.15",
+  "status": "PASS_PRIORITY_SENSITIVITY_ANALYSIS",
+  "primary_method_unchanged": "FROZEN_GI_MULTIPLIED_BY_FROZEN_UP",
+  "primary_cp_modified": false,
+  "frozen_gi_modified": false,
+  "frozen_pressure_modified": false,
+  "number_of_scenarios_including_baseline": 13,
+  "ranking_domain_cells": 4609,
+  "weight_estimation_population": 8727,
+  "top_decile_diagnostic_count": 461,
+  "top_decile_is_final_priority_class": false,
+  "baseline_CRITIC_weights": {
+    "G1": 0.2778141474499054,
+    "G2": 0.4237380285685617,
+    "G3": 0.298447823981533
+  },
+  "area_weighted_CRITIC_weights": {
+    "G1": 0.2785128805783893,
+    "G2": 0.42419333324836306,
+    "G3": 0.2972937861732476
+  },
+  "baseline_CP_distribution": {
+    "min": 0.0002049033700227,
+    "p25": 0.0116093721821523,
+    "median": 0.0650110755372031,
+    "mean": 0.16006100899557843,
+    "p75": 0.2640753839511244,
+    "p95": 0.5801272465823979,
+    "max": 0.8667282542066791
+  },
+  "alternative_spearman_range": [
+    0.8040082982441432,
+    0.9999999286680449
+  ],
+  "alternative_top10_retention_pct_range": [
+    93.27548806941432,
+    100.0
+  ],
+  "largest_p95_rank_shift_scenario": "ADDITIVE_EQUAL_TRADEOFF_COUNTERFACTUAL",
+  "cells_in_primary_top_decile": 461,
+  "cells_in_top_decile_in_every_scenario": 411,
+  "cells_in_top_decile_in_any_scenario": 511,
+  "checks": {
+    "stage_414_passed": true,
+    "stage_411_frozen": true,
+    "frozen_gi_csv_hash_valid": true,
+    "frozen_gi_gpkg_hash_valid": true,
+    "primary_cp_csv_hash_valid": true,
+    "primary_cp_gpkg_hash_valid": true,
+    "frozen_weights_hash_valid": true,
+    "gi_grid_ids_match": true,
+    "current_grid_ids_match": true,
+    "persistence_grid_ids_match": true,
+    "connectivity_grid_ids_match": true,
+    "8727_gi_eligible_cells": true,
+    "4609_primary_cp_cells": true,
+    "common_domain_subset_of_gi_population": true,
+    "primary_4631_unscored_cells_preserved": true,
+    "all_criteria_finite_0_1": true,
+    "primary_CP_formula_reproduced": true,
+    "critic_weights_sum_to_one": true,
+    "frozen_gi_reproduced_from_criteria": true,
+    "unweighted_critic_reproduces_frozen_weights": true,
+    "G1_CONFIRMED_GREEN_LOWER_BOUND_complete_bounded": true,
+    "G2_HISTORICAL_MEAN_GREEN_complete_bounded": true,
+    "G3_NEIGHBOUR_CONTEXT_500M_complete_bounded": true,
+    "expected_13_scenarios_including_baseline": true,
+    "baseline_scenario_preserves_original_cp": true,
+    "all_scenario_scores_bounded_and_complete": true,
+    "scenario_comparison_rows_13": true,
+    "cell_instability_rows_4609": true,
+    "all_robustness_correlations_finite": true,
+    "all_primary_ranks_preserved": true,
+    "baseline_top10_exactly_selected": true,
+    "baseline_robustness_identity": true,
+    "saved_scenario_report_valid": true,
+    "saved_cell_report_valid": true,
+    "primary_CP_unchanged_after_sensitivity": true,
+    "frozen_GI_unchanged_after_sensitivity": true
+  },
+  "output_sha256": {
+    "scenario_report": "2a490410d0194fcbcedd3b09006b29832570eea4ecca47996db346f04d1cb21a",
+    "cell_rank_report": "0de24ef5290c05f7bccee37afb49b12a14bd2447ae6ed8f48f4cf40be9d9abf5"
+  },
+  "methodology_notes": [
+    "The approved primary conservation priority remains GI multiplied by model-derived future pressure.",
+    "All comparisons use the same 4609-cell common inference domain.",
+    "CRITIC area sensitivity uses all 8727 GI-eligible observations.",
+    "One-indicator substitutions retain original CRITIC weights to isolate indicator definition changes.",
+    "The 50/50 additive case is a hypothetical comparator, not a new approved priority method.",
+    "Top-decile comparison is a diagnostic, not a priority category.",
+    "Historical Green-to-Built exposure remains supporting evidence only.",
+    "Spearman and Kendall compare ranking agreement; neither validates ecological consequences.",
+    "Spatial autocorrelation and shared source classification errors may affect apparent ranking stability."
+  ],
+  "final_priority_classes_assigned": false,
+  "final_gis_qa_pending": true,
+  "next_stage": "4.16 Final QA, documentation and GIS packaging"
+}

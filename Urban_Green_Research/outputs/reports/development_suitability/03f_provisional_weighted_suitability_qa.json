@@ -1,0 +1,51 @@
+{
+  "stage": "3.8",
+  "status": "PASS_PROVISIONAL",
+  "method": "AHP weighted linear combination",
+  "weight_provenance": "PROVISIONAL_LITERATURE_ADAPTED",
+  "final_expert_ahp_completed": false,
+  "is_final_approved_suitability": false,
+  "criteria_weights": {
+    "C1": 0.49183421096910956,
+    "C2": 0.1630523669307736,
+    "C3": 0.30012253758406715,
+    "C4": 0.04499088451604957
+  },
+  "ahp_consistency_ratio": 0.08350961402842717,
+  "grid_cells": 9240,
+  "study_area_km2": 88.82921581108508,
+  "score_statistics": {
+    "min": 0.0015246609284864533,
+    "mean": 0.5595399487623541,
+    "median": 0.5828113304319792,
+    "p05": 0.14733949876579025,
+    "p95": 0.8903309022737411,
+    "max": 0.9998381210865344,
+    "area_weighted_mean": 0.5634427769558462
+  },
+  "max_geometry_area_error_m2": 1.8189894035458565e-12,
+  "checks": {
+    "9240_cells_preserved": true,
+    "unique_ids": true,
+    "same_csv_gis_ids": true,
+    "four_standardized_inputs": true,
+    "weights_sum_one": true,
+    "weights_positive": true,
+    "all_scores_finite": true,
+    "all_scores_in_0_1": true,
+    "weighted_sum_reproduced": true,
+    "gis_area_reconciled": true,
+    "expected_cr": true,
+    "export_verification": true
+  },
+  "limitations": [
+    "Provisional literature-informed AHP scenario.",
+    "Two pairwise judgments are scenario assumptions.",
+    "Not verified by a Kaduwela planning expert.",
+    "Relative physical/accessibility suitability only.",
+    "No legal development permission implied.",
+    "No suitability classes calculated yet.",
+    "Sensitivity analysis is still required.",
+    "Final approved weights remain pending."
+  ]
+}

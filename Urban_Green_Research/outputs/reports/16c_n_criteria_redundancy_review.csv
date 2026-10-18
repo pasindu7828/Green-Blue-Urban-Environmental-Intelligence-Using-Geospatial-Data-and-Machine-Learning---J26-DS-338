@@ -1,0 +1,11 @@
+criterion_a,criterion_b,spearman_rho,absolute_rho,review_threshold,screening_flag,automatically_exclude_criterion,interpretation
+C1,C2,0.31928635950728695,0.31928635950728695,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C1,C3,0.1720517337426296,0.1720517337426296,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C1,C4,0.0514609014398581,0.0514609014398581,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C1,C5,0.12174951940744211,0.12174951940744211,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C2,C3,0.3719598327457132,0.3719598327457132,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C2,C4,-0.07969775871134042,0.07969775871134042,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C2,C5,0.22702007776785327,0.22702007776785327,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C3,C4,-0.0017362239689422583,0.0017362239689422583,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C3,C5,-0.071909010582933,0.071909010582933,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.
+C4,C5,-0.4947090710788453,0.4947090710788453,0.85,NO_HIGH_ASSOCIATION_FLAG,False,Statistical association only; requires conceptual and planning review.

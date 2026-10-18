@@ -1,0 +1,99 @@
+{
+  "stage": "4.11",
+  "status": "PASS_GREEN_IMPORTANCE_FROZEN_BASELINE_SENSITIVITY_PENDING",
+  "freeze_type": "REPRODUCIBLE_BASELINE_NOT_FINAL_ECOLOGICAL_VALIDATION",
+  "method": "CRITIC_WEIGHTED_ADDITIVE",
+  "study_area": "Kaduwela Municipal Council",
+  "crs": "EPSG:32644",
+  "grid_cells": 9240,
+  "scored_current_green_cells": 8727,
+  "no_green_detected_unscored": 468,
+  "unknown_green_condition_unscored": 45,
+  "criteria": {
+    "G1": "G1_current_green_0_1",
+    "G2": "G2_historical_persistence_0_1",
+    "G3": "G3_local_green_context_0_1"
+  },
+  "exact_critic_weights": {
+    "G1": 0.2778141474499054,
+    "G2": 0.4237380285685617,
+    "G3": 0.298447823981533
+  },
+  "input_sha256": {
+    "standardized_criteria_csv": "50edb88958582598f4dce555727b07861e3b6e3da45c8009e58efb5eb2341b4d",
+    "critic_weights_csv": "1d8bda30cfdbb981426dc05c3833dbc1f3458eafefd22441c230d317d25199c2",
+    "unfrozen_index_csv": "96503ed1a159dd6518b8dd9c7751ba92895fdced25aa8f35f76fa1cb901b3c2a",
+    "unfrozen_index_gpkg": "c1c948b22b7fed776be6bb7a93d9dd30e7381c89cf2030eeb8ad2a9c7c9c9bb9"
+  },
+  "frozen_outputs": {
+    "csv": {
+      "path": "data/processed/conservation_intelligence/frozen_importance/17j_frozen_green_importance_100m.csv",
+      "sha256": "2e5ea3a59a7389b67d8b35a76efd1daf49f6e6c49560f4b1d3434a7347e5ade4"
+    },
+    "gpkg": {
+      "path": "data/processed/conservation_intelligence/frozen_importance/17j_frozen_green_importance_100m.gpkg",
+      "sha256": "169613f18ffecb18de217adbf0a65c1acb214d132214068fe972c653897be44a"
+    }
+  },
+  "freeze_only_attribute_change": "green_importance_frozen: False -> True",
+  "index_summary": {
+    "min": 0.0371917522910406,
+    "mean": 0.6713897792719504,
+    "median": 0.8059291245507061,
+    "max": 1.0
+  },
+  "largest_contribution_counts": {
+    "G1": 418,
+    "G2": 6107,
+    "G3": 2202
+  },
+  "checks": {
+    "stage_criteria_passed": true,
+    "stage_weights_passed": true,
+    "stage_index_passed": true,
+    "stage_49_critic_method": true,
+    "stage_410_not_yet_frozen": true,
+    "criteria_hash_matches_both_audits": true,
+    "weight_file_hash_matches_stage_410": true,
+    "prior_index_has_no_threat_or_priority": true,
+    "index_has_9240_unique_ids": true,
+    "weight_table_three_correct_criteria": true,
+    "weights_match_fields_and_sum_to_one": true,
+    "weights_match_stage_410_qa": true,
+    "population_partition_8727_468_45": true,
+    "original_index_unfrozen": true,
+    "all_ready_criteria_finite_0_1": true,
+    "index_reproduces_weighted_formula": true,
+    "all_component_contributions_reproduced": true,
+    "weight_columns_identical_to_frozen_critic": true,
+    "index_0_to_1": true,
+    "513_unscored_remain_nan": true,
+    "unknown_and_nongreen_source_statuses_consistent": true,
+    "dominant_contribution_reproduced": true,
+    "index_distribution_matches_stage_410": true,
+    "gis_9240_unique_matching_ids": true,
+    "gis_epsg32644_valid": true,
+    "gis_index_matches_csv": true,
+    "gis_criteria_match_csv": true,
+    "gis_contributions_match_csv": true,
+    "gis_status_matches_csv": true,
+    "gis_clipped_areas_match_csv": true,
+    "no_threat_priority_or_suitability_fields": true,
+    "frozen_csv_9240_matching_scores": true,
+    "frozen_gis_9240": true,
+    "frozen_gis_scores_reproduced": true,
+    "frozen_gis_flag_true": true,
+    "frozen_flag_true": true
+  },
+  "historic_green_loss_in_importance": false,
+  "future_urbanization_pressure_in_importance": false,
+  "development_suitability_in_importance": false,
+  "sensitivity_status": "PENDING_STAGE_4_15",
+  "future_integration_rule": "Use the frozen CSV/GPKG and verify both SHA256 hashes before integrating threats.",
+  "limitations": [
+    "This is a technical baseline freeze, not proof of ecological validity.",
+    "Historical persistence is the largest weighted contribution in many cells.",
+    "Future sensitivity analyses must compare alternatives without silently modifying this baseline.",
+    "Frozen files are integrity-fingerprinted, not operating-system write-protected."
+  ]
+}

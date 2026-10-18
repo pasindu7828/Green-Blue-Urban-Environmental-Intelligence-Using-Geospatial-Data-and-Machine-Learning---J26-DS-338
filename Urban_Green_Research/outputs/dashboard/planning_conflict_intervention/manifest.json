@@ -1,0 +1,44 @@
+{
+  "project": "J26-DS-338",
+  "section": "05_planning_conflict_intervention",
+  "release_status": "TECHNICAL_EXPORT_VALIDATED_WITH_DOCUMENTED_LIMITATIONS",
+  "files": {
+    "grid_records.csv": {
+      "relative_path": "outputs/dashboard/planning_conflict_intervention/grid_records.csv",
+      "sha256": "a58b174d66f8fad8e7f2012de7298f0176cf55896be8132483dae0059a1ce0db",
+      "bytes": 5092998
+    },
+    "grid_map.geojson": {
+      "relative_path": "outputs/dashboard/planning_conflict_intervention/grid_map.geojson",
+      "sha256": "211ed78219691e69c627ae24ed1e98083cd7fbdd4fe95a22951e6923573752ac",
+      "bytes": 10526515
+    },
+    "gn_summary.csv": {
+      "relative_path": "outputs/dashboard/planning_conflict_intervention/gn_summary.csv",
+      "sha256": "38566c832a45ab4d063cb0cd6019cf28279e3bcc480c2ba80d0b93ac6b72b13a",
+      "bytes": 22539
+    },
+    "gn_map.geojson": {
+      "relative_path": "outputs/dashboard/planning_conflict_intervention/gn_map.geojson",
+      "sha256": "d9c7391841b5834086e967d37575b8005e5470c2cb2d1f158d8d5e3de4a95775",
+      "bytes": 1241361
+    },
+    "hotspot_groups.csv": {
+      "relative_path": "outputs/dashboard/planning_conflict_intervention/hotspot_groups.csv",
+      "sha256": "6390eea10487758638877a9809877daefa1936b3dfcbd6eb9c96557078d83f72",
+      "bytes": 139226
+    },
+    "hotspot_map.geojson": {
+      "relative_path": "outputs/dashboard/planning_conflict_intervention/hotspot_map.geojson",
+      "sha256": "ca98e4c63093c5dd2c1032b18b7829516c6aca3f1218f7360fcb5180280f4278",
+      "bytes": 53246
+    },
+    "metadata.json": {
+      "relative_path": "outputs/dashboard/planning_conflict_intervention/metadata.json",
+      "sha256": "b1eb1035b057d08ee40729a0388e09b48cc948c8a6a1f97158206753a90fcd9e",
+      "bytes": 2526
+    }
+  },
+  "model_inference_performed_for_dashboard_export": false,
+  "backend_routes_implemented": false
+}

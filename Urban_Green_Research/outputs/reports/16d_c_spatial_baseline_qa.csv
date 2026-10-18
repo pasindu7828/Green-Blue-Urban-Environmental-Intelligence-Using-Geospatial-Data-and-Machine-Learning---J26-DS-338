@@ -1,0 +1,37 @@
+check,passed,detail
+"16D-B, 16D-A, 16C-M and 16C-J passed",True,
+Reference baseline remains explicitly provisional,True,
+Inputs describe the same 9240-cell study area,True,
+"CSV, standardized criteria and GIS have 9240 unique IDs",True,
+All grid ID sets match,True,
+Baseline GIS has valid EPSG:32644 polygons,True,
+All aligned geometries exist,True,
+Raw C1-C5 columns exist,True,
+Baseline has all required audit fields,True,
+All spatial diagnostic input values finite,True,
+Baseline and criterion scores between zero and one,True,
+Baseline equals C1/C2/C4 diagnostic mean,True,
+Relative classes are the expected five levels,True,
+Zoning statuses unverified and permissions unassessed,True,
+Polygon areas match recorded clipped-cell areas,True,Max difference: 0.00000000 m2
+Grid area matches reconciled municipal area,True,
+Boundary fragment flags agree with actual areas,True,
+Top-decile fields agree with existing baseline,True,
+Exclusive zoning percentages total 100,True,Tolerance allows CSV rounding only
+Area-weighted classified_pct reproduces 16C-J,True,Grid: 6620.3190 ha; previous: 6620.3190 ha
+Area-weighted unclassified_pct reproduces 16C-J,True,Grid: 2187.3418 ha; previous: 2187.3418 ha
+Area-weighted unmapped_pct reproduces 16C-J,True,Grid: 75.2608 ha; previous: 75.2608 ha
+Every grid ID has valid 100m row-column format,True,
+Grid row-column pairs are unique,True,
+Real shared-edge grid neighbours exist,True,Edges: 18114
+Adjacency links connect different cells,True,
+Spatial autocorrelation values finite,True,
+Five class profiles cover all grid cells,True,
+Class profile areas reproduce the KMC area,True,
+Planning review count matches Step 16D-B,True,
+Small fragment count matches Step 16D-B,True,
+Spatial blocks cover each grid exactly once,True,
+Geometry diagnostic covers every grid ID,True,
+Class counts reproduce Step 16D-B report,True,
+Class areas reproduce Step 16D-B report,True,
+Input files unchanged,True,

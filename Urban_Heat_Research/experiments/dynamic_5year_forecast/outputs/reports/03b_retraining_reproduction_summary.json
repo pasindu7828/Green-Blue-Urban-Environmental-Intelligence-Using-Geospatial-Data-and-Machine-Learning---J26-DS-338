@@ -1,0 +1,19 @@
+{
+  "original_rows": 17552,
+  "dynamic_rows": 17552,
+  "key_sets_equal": true,
+  "raw_row_order_equal": false,
+  "max_feature_error": 1.3899001307521308e-12,
+  "failed_feature_count": 0,
+  "target_max_diff": 0.0,
+  "anomaly_max_diff": 0.0,
+  "parameter_mismatch_count": 0,
+  "stored_vs_dynamic_max_prediction_diff_c": 0.39569373753944204,
+  "stored_vs_dynamic_prediction_correlation": 0.9998020943707906,
+  "stored_vs_fresh_original_order_max_diff_c": 0.0,
+  "stored_vs_fresh_original_order_correlation": 1.0,
+  "saved_dynamic_vs_fresh_dynamic_order_max_diff_c": 0.9487708975928559,
+  "saved_dynamic_vs_fresh_dynamic_order_correlation": 0.9983079427941992,
+  "reproduction_classification": "EXACT_REPRODUCTION_ON_ORIGINAL_ORDER",
+  "hard_failure_count": 0
+}

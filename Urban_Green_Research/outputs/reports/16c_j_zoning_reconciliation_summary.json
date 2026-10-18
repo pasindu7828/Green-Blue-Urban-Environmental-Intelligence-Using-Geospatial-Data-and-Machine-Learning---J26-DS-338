@@ -1,0 +1,39 @@
+{
+  "step": "16C-J",
+  "name": "Zoning Coverage Reconciliation",
+  "qa_status": "PASS",
+  "generated_utc": "2026-10-17T04:52:40.779301+00:00",
+  "reference_crs": "EPSG:32644",
+  "frozen_input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "gis_source_sha256": {
+    "Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg": "9f1ea66dc0036398150b9eabd7f0ece4f42bac2a3a052ef054a7c4f36ee320db",
+    "Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg": "cb745001c015863e0f68f1db73db9b7e40fc0b6a88eb4d1b47a3d9e256e210cd",
+    "Kaduwela_MC_Boundary.gpkg": "18fb32177ab7ec9cf1b67b528935d285942ae053b7af3c78667da854ed801241"
+  },
+  "kmc_area_ha": 8882.921581109184,
+  "classified_area_ha": 6620.31900779476,
+  "unclassified_only_area_ha": 2187.3418099050464,
+  "truly_unmapped_area_ha": 75.26076326251018,
+  "previous_broad_unmapped_area_ha": 2262.602573230081,
+  "main_unknown_overlap_ha": 6.146878443022368e-06,
+  "ambiguous_name_area_ha": 2153.8058898919335,
+  "ambiguous_outside_main_ha": 0.0,
+  "partition_area_difference_ha": 1.46867023431696e-07,
+  "reconciled_metric_count": 10,
+  "total_compared_metrics": 10,
+  "qa_checks": 24,
+  "qa_passed": 24,
+  "interpretation": {
+    "previous_issue": "The previous audit labeled all area outside classified zoning as unmapped.",
+    "corrected_definition": "Truly unmapped means outside both classified and unknown zoning polygons.",
+    "legal_status": "All source zoning classifications remain provisional and unverified.",
+    "ambiguous_names": "Ambiguous-name areas are overlapping uncertainty information, not a fourth exclusive coverage category.",
+    "research_status": "Coverage reconciliation only. No suitability score, AHP weighting or grid overlay was produced."
+  },
+  "outputs": {
+    "coverage": "16c_j_reconciled_zoning_coverage.csv",
+    "crosscheck": "16c_j_reconciled_qa_crosscheck.csv",
+    "qa": "16c_j_zoning_reconciliation_qa.csv",
+    "summary": "16c_j_zoning_reconciliation_summary.json"
+  }
+}

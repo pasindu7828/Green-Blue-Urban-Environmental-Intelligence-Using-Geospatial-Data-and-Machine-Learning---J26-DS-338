@@ -1,0 +1,54 @@
+{
+  "step": "16D-F",
+  "qa_status": "PASS",
+  "methodology_status": "INTEGRATION_READY_PROVISIONAL_REFERENCE_ONLY",
+  "generated_utc": "2026-10-17T05:58:10.584523+00:00",
+  "grid_count": 9240,
+  "total_area_ha": 8882.921581108507,
+  "reference_criteria": [
+    "C1",
+    "C2",
+    "C4"
+  ],
+  "equal_contribution_reference_not_expert_AHP": true,
+  "expert_intake_status_at_run": "PENDING_EXPERT_REVIEW",
+  "final_AHP_weights_used": false,
+  "legal_exclusions_applied": false,
+  "high_stability_cutoff": 0.75,
+  "high_stability_cutoff_meaning": "Fraction of tested scenario weight vectors; not a probability",
+  "provisional_top_decile_cells": 924,
+  "provisional_top_decile_with_review": 890,
+  "high_stability_both_methods_cells": 395,
+  "planning_review_cells": 7387,
+  "qa_checks": 36,
+  "qa_passed": 36,
+  "inputs_sha256": {
+    "16d_b_provisional_suitability_baseline_100m.csv": "64bf7e0c0b93d7532e97d4cb8f2bd26e8b839c175d87655f9c802911cc393a06",
+    "16d_b_provisional_suitability_baseline_100m.gpkg": "9ec8b19ac79df52464724f2ef0da55cddca9024fff05b8e7f68cb5ef55ca4cc2",
+    "16d_c_grid_spatial_diagnostics_100m.csv": "d2e6ae0032d0589634347941fc0f1abf0ff70328fa7c35966424679c7c559271",
+    "16d_e_grid_weight_robustness_100m.csv": "3c58d56ad65956ab873e53a3864755d25b992b731b705f203a7464ac66ab3d18",
+    "16d_e_weight_sensitivity_method_summary.csv": "ca3f134a9f082ca874f169a8eef5419178bda754d96253ca1dcc42c66c5d1473",
+    "16c_m_grid_zoning_screening_100m.csv": "70e63203100ed3e816cf47b6d161f18ce4971c93d5e63a35e456b8e30c94960a",
+    "16d_b_provisional_baseline_summary.json": "a10030489bcccb457cc0edb33c27071c2e8c3e1c1d80d4407ffd88684b05f951",
+    "16d_c_spatial_baseline_summary.json": "246e34200ef0a8ac2cf2e696cd65c298230da299f7d78fcfbd34acf85ddeab24",
+    "16d_e_weight_sensitivity_summary.json": "26c5f1499ac733b205e01ca79a137a253ff8028027fb21babecdc1244011fc09",
+    "16c_m_grid_zoning_screening_summary.json": "baf790a70f115a7ded592f1f8de4cc48da0274d9d8b82adad1fd52527f302aa4",
+    "16d_d_ahp_consistency_summary.json": "878638628e181a54309160117c12af10482c2c5130de1effe6639e61046cbfb4"
+  },
+  "limitations": [
+    "Scores are provisional and not validated AHP weights or final suitability.",
+    "Sensitivity frequencies are fractions of exploratory weight vectors, not probabilities.",
+    "Review flags and screenshot-derived zoning are not official legal restrictions or permits.",
+    "Current high rankings do not establish vacant buildable parcels.",
+    "C3 direction, C5 inclusion, and actual expert judgments remain unresolved.",
+    "GN division names are not inferred from grid identifiers."
+  ],
+  "outputs": [
+    "16d_f_integrated_suitability_intelligence_100m.csv",
+    "16d_f_integrated_suitability_intelligence_100m.gpkg",
+    "16d_f_class_intelligence_summary.csv",
+    "16d_f_top_decile_planning_review_register.csv",
+    "16d_f_integration_qa.csv",
+    "16d_f_integration_summary.json"
+  ]
+}

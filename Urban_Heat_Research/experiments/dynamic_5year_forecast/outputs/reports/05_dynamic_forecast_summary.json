@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "forecast_origin_year": 2025,
+  "future_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "future_rows": 10970,
+  "feature_count": 93,
+  "model_path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\models\\03_dynamic_lightgbm_anomaly_trained_2018_2025.joblib",
+  "future_feature_path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\05_future_model_features_2026_2030.csv",
+  "future_prediction_path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\predictions\\05_dynamic_grid_lst_predictions_2026_2030.csv",
+  "combined_geojson_path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\maps\\05_dynamic_future_heat_2026_2030_wgs84.geojson",
+  "audit_path": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\outputs\\reports\\05_dynamic_forecast_audit.csv"
+}

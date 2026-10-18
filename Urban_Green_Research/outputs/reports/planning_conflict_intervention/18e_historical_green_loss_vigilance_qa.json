@@ -1,0 +1,59 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18e_historical_green_loss_vigilance",
+  "status": "PASS_HISTORICAL_VIGILANCE_SUPPORT_ONLY_WITH_MISSINGNESS",
+  "total_grid_cells": 9240,
+  "pressure_model_domain_cells": 4620,
+  "complete_planning_typology_cells": 4609,
+  "historical_context_available_cells": 9240,
+  "historical_context_unavailable_cells": 0,
+  "robust_detection_cells_any_radius": 9239,
+  "strict_detection_cells_any_radius": 9221,
+  "pressure_flagged_and_robust_historical_detection_cells": 255,
+  "support_counts": {
+    "robust_250m": {
+      "supported": 9240,
+      "detected": 8911
+    },
+    "robust_500m": {
+      "supported": 9240,
+      "detected": 9239
+    },
+    "strict_250m": {
+      "supported": 9240,
+      "detected": 8649
+    },
+    "strict_500m": {
+      "supported": 9240,
+      "detected": 9221
+    }
+  },
+  "evidence_categories": {
+    "ROBUST_AND_STRICT_DETECTION": 9221,
+    "ROBUST_ONLY_DETECTION": 18,
+    "NO_CONVERSION_DETECTED_IN_AVAILABLE_CONTEXTS": 1
+  },
+  "historical_exposure_role": "SUPPORTING_CONTEXT_ONLY",
+  "dci_or_cp_recalculated": false,
+  "intervention_priority_assigned": false,
+  "hypothetical_policy_thresholds_assigned": false,
+  "limitations": [
+    "Nearby historical green-to-built conversion does not prove illegal development or predict future conversion.",
+    "250m and 500m buffers overlap, so detections are not independent events.",
+    "Robust and strict are alternative historical evidence definitions, not probabilities.",
+    "Missing historical context is kept unavailable, not filled with zero.",
+    "Out-of-domain pressure remains unavailable.",
+    "Historical evidence is supporting context only and is not multiplied into DCI or Conservation Priority."
+  ],
+  "input_sha256": {
+    "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.csv": "019471a83b102ae1df7eec58bc2f5cee65d34c10e0a533e7d4b6fb8c416218f3",
+    "outputs/reports/planning_conflict_intervention/18b_common_grid_integration_qa.json": "e7124e0a1f599d240345551376384a93a7e24094df45dddae2fb5e4f2df4dcdd",
+    "data/processed/planning_conflict_intervention/conflict_typology/18d_planning_conflict_typology_100m.csv": "3c629152622cd0b1be94eff06b42104e3bb05ab920513437c458122cf6596b33",
+    "outputs/reports/planning_conflict_intervention/18d_planning_conflict_typology_qa.json": "0fda272d89f16375a5149f679083a7a60c5733300d2ec78030ed56d762cf890e",
+    "data/processed/conservation_intelligence/final_gis/17o_conservation_intelligence_final.gpkg": "dc69c4ce26bc9dde224efe432e9b5e0d0a285c1ce51f0fd4eb95d478dffc490c"
+  },
+  "output": {
+    "csv": "data/processed/planning_conflict_intervention/historical_vigilance/18e_historical_green_loss_vigilance_100m.csv",
+    "sha256": "062789b491e7862d31265418f2512beafdb51711584d5e3734ca5eb42cce5767"
+  }
+}

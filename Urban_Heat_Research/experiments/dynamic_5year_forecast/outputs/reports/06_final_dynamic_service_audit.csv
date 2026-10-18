@@ -1,0 +1,22 @@
+check,status,details
+step01_validated_history_available,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\dynamic_5year_forecast\outputs\01_validated_history.csv
+step02_trajectory,PASS,"rows=8, fail_rows=0"
+step03_model_update,PASS,"rows=10, fail_rows=0"
+step04_future_inputs,PASS,"rows=8, fail_rows=0"
+step05_forecast_generation,PASS,"rows=11, fail_rows=0"
+observed_years_contiguous,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+observed_unique_grid_count,PASS,"actual=2194, expected=2194"
+observed_balanced_grid_panel,PASS,"min=2194, max=2194"
+trajectory_grid_count,PASS,"actual=2194, expected=2194"
+trajectory_class_contract,PASS,"classes=['Diminishing', 'Emerging', 'Intensifying', 'Persistent Cool', 'Persistent Hot']"
+forecast_year_window,PASS,"actual=[2026, 2027, 2028, 2029, 2030], expected=[2026, 2027, 2028, 2029, 2030]"
+forecast_row_count,PASS,"actual=10970, expected=10970"
+forecast_balanced_grid_panel,PASS,"min=2194, max=2194"
+forecast_unique_grid_year,PASS,duplicate_rows=0
+forecast_schema,PASS,missing=[]
+forecast_values_finite,PASS,rows=10970
+centered_anomaly_zero_mean_each_year,PASS,max_abs_year_mean=3.987491993640e-17
+annual_level_plus_centered_anomaly_identity,PASS,max_abs_error=0.000000000000e+00
+versioned_model_available,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\dynamic_5year_forecast\models\03_dynamic_lightgbm_anomaly_trained_2018_2025.joblib
+five_yearly_geojson_layers,PASS,"saved=5, expected=5"
+combined_forecast_geojson,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\dynamic_5year_forecast\outputs\maps\05_dynamic_future_heat_2026_2030_wgs84.geojson

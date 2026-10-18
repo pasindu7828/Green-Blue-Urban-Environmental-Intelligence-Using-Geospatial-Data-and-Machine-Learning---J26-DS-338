@@ -1,0 +1,35 @@
+{
+  "analysis": "Dynamic refreshed relative spatial heat trajectory",
+  "observed_period": "2015-2025",
+  "latest_observed_year": 2025,
+  "relative_heat_definition": "Within-year percentile rank of observed LST_C among all Kaduwela grids.",
+  "direction_definition": "Theil-Sen slope of yearly relative heat percentile across all observed years.",
+  "baseline_window": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "recent_window": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "status_statistic": "median",
+  "hot_threshold": 0.75,
+  "stable_split": 0.5,
+  "relative_sen_slope_threshold": 0.01,
+  "trajectory_classes": [
+    "Diminishing",
+    "Emerging",
+    "Intensifying",
+    "Persistent Cool",
+    "Persistent Hot"
+  ],
+  "forecast_model_used": false,
+  "trajectory_is_absolute_warming_claim": false,
+  "trajectory_is_statistical_significance_claim": false
+}

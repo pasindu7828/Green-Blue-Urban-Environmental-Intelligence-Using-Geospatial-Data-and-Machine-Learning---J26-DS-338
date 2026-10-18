@@ -1,0 +1,57 @@
+{
+  "step": "16D-E",
+  "qa_status": "PASS",
+  "methodology_status": "NON_EXPERT_EXPLORATORY_WEIGHT_SENSITIVITY_ONLY",
+  "generated_utc": "2026-10-17T05:49:02.705420+00:00",
+  "grid_cells": 9240,
+  "criteria": [
+    "C1",
+    "C2",
+    "C4"
+  ],
+  "weight_generation": "All 0.05-increment triples summing to 1 with every weight >= 0.10",
+  "weight_range": [
+    0.1,
+    0.8
+  ],
+  "weight_bound_status": "EXPLORATORY_NOT_EXPERT_ELICITED",
+  "unique_weight_vectors": 120,
+  "normalization_methods": [
+    "pctclip",
+    "rank"
+  ],
+  "total_weight_method_scenarios": 240,
+  "reference": "Unchanged equal-contribution C1/C2/C4 Step 16D-B baseline",
+  "ahp_intake_status_at_run": "PENDING_EXPERT_REVIEW",
+  "expert_weights_assigned_by_this_script": false,
+  "final_suitability_score_computed": false,
+  "uncertainty_definition": "Fraction of tested exploratory weight vectors ranking a cell in the upper decile; not model prediction probability",
+  "top_decile_ties_included": true,
+  "qa_checks": 25,
+  "qa_passed": 25,
+  "input_sha256": {
+    "16d_a_provisional_standardized_criteria_100m.csv": "1e5db133fd5446d74286913893c7d5afea28ccc0b9d01820e1b48b24406fbd33",
+    "16d_b_provisional_suitability_baseline_100m.csv": "64bf7e0c0b93d7532e97d4cb8f2bd26e8b839c175d87655f9c802911cc393a06",
+    "16d_b_provisional_suitability_baseline_100m.gpkg": "9ec8b19ac79df52464724f2ef0da55cddca9024fff05b8e7f68cb5ef55ca4cc2",
+    "16d_a_standardized_criteria_summary.json": "f50c8189bf2a916906781a15b2516cc3d36426af8924979292ee424f061ca832",
+    "16d_b_provisional_baseline_summary.json": "a10030489bcccb457cc0edb33c27071c2e8c3e1c1d80d4407ffd88684b05f951",
+    "16d_c_spatial_baseline_summary.json": "246e34200ef0a8ac2cf2e696cd65c298230da299f7d78fcfbd34acf85ddeab24",
+    "16d_d_ahp_consistency_summary.json": "878638628e181a54309160117c12af10482c2c5130de1effe6639e61046cbfb4"
+  },
+  "limitations": [
+    "Weight range and increments are researcher-defined sensitivity settings, not expert judgments.",
+    "Results only evaluate C1/C2/C4 and cannot resolve C3 direction or C5 inclusion.",
+    "An upper-decile cell is not necessarily a legally buildable site.",
+    "Planning-review and conservation indicators are descriptive and do not alter scores.",
+    "Small boundary fragments are retained and must not be interpreted as parcels.",
+    "External validation and final AHP or an explicitly justified alternative remain pending."
+  ],
+  "outputs": [
+    "16d_e_weight_sensitivity_scenarios.csv",
+    "16d_e_grid_weight_robustness_100m.csv",
+    "16d_e_grid_weight_robustness_100m.gpkg",
+    "16d_e_weight_sensitivity_method_summary.csv",
+    "16d_e_weight_sensitivity_qa.csv",
+    "16d_e_weight_sensitivity_summary.json"
+  ]
+}

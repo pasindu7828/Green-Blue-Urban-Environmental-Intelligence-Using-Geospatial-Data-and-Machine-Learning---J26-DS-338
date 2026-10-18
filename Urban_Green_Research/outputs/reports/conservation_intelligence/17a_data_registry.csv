@@ -1,0 +1,15 @@
+dataset,relative_path,role,reason
+100 m KMC grid,data/processed/urbanization_pressure/grid/kaduwela_100m_modelling_grid.gpkg,CORE,Primary spatial analysis unit
+KMC boundary,data/processed/boundaries/kmc/kaduwela_kmc_boundary_utm44n.gpkg,CORE,Official study area
+2025 RAW_RF grid fractions,data/processed/urbanization_pressure/lulc_grid/annual_fractions/kaduwela_100m_lulc_fractions_2025.csv,CORE,Primary current green condition; filter RAW_RF
+2025 RAW LULC raster,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2025.tif,CORE,Primary current-year land-cover source
+Stabilized LULC 2011-2024,data/processed/lulc/annual_maps/stabilized_mode_3yr/,CORE,Retrospective historical green persistence
+Robust historical Green-to-Built transition,data/processed/lulc/transitions/Kaduwela_Green_Transition_2012_2014_to_2021_2023_ROBUST.tif,HISTORICAL_THREAT,Historical loss exposure only
+Strict historical Green-to-Built transition,data/processed/lulc/transitions/Kaduwela_Green_Transition_2012_2014_to_2021_2023_STRICT.tif,SENSITIVITY,Alternative historical loss definition
+Frozen future pressure eligibility,data/processed/urbanization_pressure/inference/14b_2025_inference_eligibility.csv,FUTURE_THREAT_ONLY,Differentiate SCORED and NOT_IN_DOMAIN
+Frozen future pressure scores,data/processed/urbanization_pressure/inference/14c_2026_2028_urbanization_pressure_scores.csv,FUTURE_THREAT_ONLY,Introduce after Green Importance is frozen
+2026 RAW LULC,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2026.tif,SENSITIVITY,Provisional-year comparison
+ESA WorldCover 2021,data/processed/reference_lulc/,REFERENCE,Not 2025 ground truth
+Provisional UDA zoning,,CONTEXT_ONLY,Not used as an authoritative restriction
+Development Suitability and AHP,data/processed/development_suitability/,EXCLUDED,Not an input to Green Importance or Conservation Priority
+Pressure and SHAP,data/processed/urbanization_pressure/,EXCLUDED_FROM_GREEN_IMPORTANCE,Pressure used only later as future threat; SHAP excluded
