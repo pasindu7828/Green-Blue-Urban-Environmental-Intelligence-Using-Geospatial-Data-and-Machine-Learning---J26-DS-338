@@ -1,0 +1,30 @@
+{
+  "experiment": "additional_model_comparison",
+  "models_compared": [
+    "LightGBM",
+    "CatBoost",
+    "Extra Trees",
+    "HistGradientBoosting"
+  ],
+  "development_validation_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "primary_metric": "mean rolling-origin MAE",
+  "development_winner": "HistGradientBoosting",
+  "winner_mean_mae_c": 2.4116789637916463,
+  "lightgbm_mean_mae_c": 2.4252516895788427,
+  "mae_improvement_percent_vs_lightgbm": 0.5596419474942601,
+  "winner_mae_fold_wins_vs_lightgbm": 2,
+  "lightgbm_mae_fold_wins_vs_winner": 3,
+  "decision": "KEEP_CURRENT_PRODUCTION_LIGHTGBM",
+  "decision_reason": "HistGradientBoosting has the lowest average development MAE, but its advantage over LightGBM is only 0.5596% and it wins 2 of 5 matched MAE folds versus 3 wins for LightGBM. The evidence is therefore not sufficiently consistent to justify reopening the finalized production pipeline.",
+  "production_pipeline_modified": false,
+  "production_model_replaced": false,
+  "2024_loaded_by_step06": false,
+  "2025_loaded_by_step06": false,
+  "note": "This supplementary experiment does not erase the fact that 2024/2025 were used elsewhere in the finalized historical pipeline; it only records that they were not loaded by this experiment step."
+}

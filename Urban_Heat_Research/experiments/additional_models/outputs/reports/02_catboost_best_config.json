@@ -1,0 +1,21 @@
+{
+  "model": "CatBoost",
+  "strategy": "catboost_anomaly_plus_prior_mean_level",
+  "selection_scope": "2018-2023 development only",
+  "selection_metric": "mean rolling-origin MAE",
+  "tie_breakers": [
+    "mean RMSE",
+    "mean centered spatial R2"
+  ],
+  "best_config": {
+    "config_id": "CB02",
+    "iterations": 500,
+    "depth": 5,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 5.0,
+    "random_strength": 1.0
+  },
+  "2024_loaded_or_used": false,
+  "2025_loaded_or_used": false,
+  "production_model_replaced": false
+}

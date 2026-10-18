@@ -1,0 +1,34 @@
+{
+  "analysis": "Dynamic controlled LightGBM spatial-anomaly model versioning",
+  "update_mode": "REUSE_VALIDATED_2025_PRODUCTION_MODEL",
+  "observed_period": "2015-2025",
+  "context_years": [
+    2015,
+    2016,
+    2017
+  ],
+  "direct_training_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "training_rows": 17552,
+  "unique_grids": 2194,
+  "model_target": "within-year spatial LST anomaly",
+  "feature_count": 93,
+  "feature_list_source": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\outputs\\reports\\21_final_feature_list.csv",
+  "model_template_source": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\models\\final\\22b_production_lightgbm_anomaly_trained_2018_2025.joblib",
+  "model_template_sha256": "a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f",
+  "updated_model": "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\dynamic_5year_forecast\\models\\03_dynamic_lightgbm_anomaly_trained_2018_2025.joblib",
+  "updated_model_sha256": "a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f",
+  "hyperparameter_retuning_performed": false,
+  "feature_reselection_performed": false,
+  "strategy_change_performed": false,
+  "baseline_2025_model_reused_without_refit": true,
+  "main_research_model_modified": false
+}

@@ -1,0 +1,38 @@
+{
+  "step": 4,
+  "analysis": "Dynamic rolling five-year future input projection",
+  "observed_period": "2015-2025",
+  "forecast_origin_year": 2025,
+  "future_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "forecast_horizon_years": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "annual_level_method": "Expanding Mean",
+  "dynamic_predictor_methods": {
+    "NDVI": "Rolling-3 Mean",
+    "NDBI": "Rolling-3 Mean",
+    "NDWI": "Rolling-3 Mean",
+    "EVI": "Rolling-3 Mean",
+    "Albedo": "Bounded Theil-Sen Trend",
+    "NDBI_ADJ": "Rolling-3 Mean",
+    "NDVI_ADJ": "Rolling-3 Mean",
+    "NightLights": "Rolling-3 Mean",
+    "green_mask": "Rolling-3 Mean"
+  },
+  "static_predictor_policy": "Carry latest observed value forward for building_mask and road_mask.",
+  "structural_predictor_policy": "Carry latest observed dist_road, dist_main_road, dist_water and LCZ forward.",
+  "area_name_policy": "Carry latest observed grid-to-area mapping forward.",
+  "future_engineered_feature_policy": "Do not forecast engineered features independently. Step 05 must combine observed + projected base predictors and rebuild the exact Step-07 feature engineering sequence.",
+  "future_target_policy": "LST_C is unknown for projected future rows and remains null until model inference.",
+  "original_2025_reproduction_status": "PASS"
+}

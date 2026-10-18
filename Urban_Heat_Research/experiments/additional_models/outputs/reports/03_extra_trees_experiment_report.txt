@@ -1,0 +1,35 @@
+STEP 03 - EXTRA TREES SUPPLEMENTARY EXPERIMENT
+
+Project root: E:\Git Research\J26-DS-338\Urban_Heat_Research
+Experiment root: E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\additional_models
+
+Experiment scope: 2018-2023 development only
+2024 reserved validation: NOT LOADED
+2025 final lockbox: NOT LOADED
+Production pipeline: UNTOUCHED
+Production model: UNCHANGED
+
+Predictors: 93
+Candidate configurations: 5
+Best configuration: ET02
+
+Evaluation framework:
+- Strict expanding rolling-origin folds
+- Training target = within-training-year spatial anomaly
+- Validation predicted anomaly centered using predictions only
+- Annual level = mean of prior training-year annual LST means
+- Validation-year actual mean used for evaluation only
+
+Mean MAE: 2.431432 °C
+Std MAE: 1.331835 °C
+Mean RMSE: 2.839655 °C
+Mean R2: -0.099910
+Mean centered spatial R2: 0.561190
+Negative-R2 fold count: 1
+Worst-year MAE: 4.145343 °C
+Minimum R2: -2.396110
+
+Interpretation:
+This is supplementary development evidence only. The frozen production LightGBM model is NOT replaced by this step.
+
+STEP 03 STATUS: PASS
