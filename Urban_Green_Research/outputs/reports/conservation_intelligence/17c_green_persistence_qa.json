@@ -1,0 +1,194 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.4",
+  "status": "PASS_HISTORICAL_PERSISTENCE",
+  "period": "2011-2024",
+  "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "historical_product": "STABILIZED_ANALYTICAL",
+  "grid_cells": 9240,
+  "cells_with_14_valid_years": 9194,
+  "cells_with_partial_valid_history": 1,
+  "cells_without_valid_history": 45,
+  "dominant_green_persistence_distribution": {
+    "min": 0.0,
+    "p05": 0.0,
+    "p25": 0.14285714285714285,
+    "median": 1.0,
+    "p75": 1.0,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "historical_mean_green_fraction_distribution": {
+    "min": 0.0,
+    "p05": 0.027857142857142858,
+    "p25": 0.3371428571428571,
+    "median": 0.6907142857142856,
+    "p75": 0.9328571428571429,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "annual_source_qa": [
+    {
+      "year": 2011,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2012,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9194,
+      "zero_coverage_cells": 46,
+      "mean_coverage": 0.9863028077998162
+    },
+    {
+      "year": 2013,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2014,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2015,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2016,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2017,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2018,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2019,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2020,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2021,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2022,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2023,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    },
+    {
+      "year": 2024,
+      "raw_reference_rows": 9240,
+      "stabilized_rows": 9240,
+      "valid_cells": 9195,
+      "zero_coverage_cells": 45,
+      "mean_coverage": 0.9878366730461258
+    }
+  ],
+  "max_geometry_area_error_m2": 1.8189894035458565e-12,
+  "checks": {
+    "14_historical_years_processed": true,
+    "all_historical_products_9240": true,
+    "9240_grid_cells_preserved": true,
+    "valid_year_counts_0_to_14": true,
+    "green_dominant_counts_valid": true,
+    "majority_green_counts_valid": true,
+    "valid_persistence_indicators_0_to_1": true,
+    "missing_history_remains_nan": true,
+    "persistence_denominator_reproduced": true,
+    "historical_mean_fraction_reproduced": true,
+    "coverage_quality_counts_valid": true,
+    "current_green_unknowns_preserved": true,
+    "no_forbidden_variables_in_dataset": true,
+    "geometry_area_reconciled": true,
+    "csv_export_9240": true,
+    "gis_export_9240": true,
+    "missing_values_preserved_in_export": true
+  },
+  "primary_candidate_definition": "Number of valid years with dominant LULC class 1 (Green), divided by valid historical year count",
+  "alternative_indicator_definitions": {
+    "historical_mean_green_fraction": "Mean green fraction across valid historical observations",
+    "historical_majority_green_year_share": "Share of valid years with green fraction > 0.5"
+  },
+  "methodology_notes": [
+    "Historical stabilized fractions are for retrospective analysis only.",
+    "Centered stabilization may incorporate adjacent later years; it is not a causal predictor.",
+    "Zero-coverage historical observations are excluded from the denominator, not set to zero.",
+    "Valid-year counts and coverage quality are retained.",
+    "The 80% coverage flag is diagnostic only.",
+    "No final persistence indicator selected yet.",
+    "No Green Importance score calculated yet.",
+    "No pressure, SHAP, suitability, AHP or zoning used."
+  ]
+}

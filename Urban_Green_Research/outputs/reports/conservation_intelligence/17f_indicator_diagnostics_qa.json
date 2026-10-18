@@ -1,0 +1,135 @@
+{
+  "stage": "4.7",
+  "status": "PASS_DIAGNOSTICS_FINAL_SELECTION_PENDING",
+  "grid_cells": 9240,
+  "current_green_detected_cells": 8727,
+  "current_green_coverage_ge80_cells": 8675,
+  "unknown_current_green_cells": 45,
+  "indicator_count": 14,
+  "correlation_cohorts": {
+    "ALL_VALID_CURRENT_LULC": 9195,
+    "CURRENT_GREEN_DETECTED": 8727,
+    "CURRENT_GREEN_COVERAGE_GE80": 8675
+  },
+  "correlation_threshold_for_review": 0.85,
+  "within_purpose_high_correlation_pairs_current_green": 11,
+  "flagged_pairs_current_green": [
+    {
+      "a": "current_green_fraction",
+      "b": "confirmed_green_share_lower_bound",
+      "spearman": 0.989265352434454,
+      "paired_cells": 8727
+    },
+    {
+      "a": "persistence_dominant_year_share",
+      "b": "persistence_majority_year_share",
+      "spearman": 0.9845928987814592,
+      "paired_cells": 8727
+    },
+    {
+      "a": "robust_g2b_exposure_share_500m",
+      "b": "strict_g2b_exposure_share_500m",
+      "spearman": 0.9733693942540075,
+      "paired_cells": 8727
+    },
+    {
+      "a": "robust_g2b_exposure_share_250m",
+      "b": "strict_g2b_exposure_share_250m",
+      "spearman": 0.9566469318250244,
+      "paired_cells": 8727
+    },
+    {
+      "a": "robust_g2b_exposure_share_500m",
+      "b": "robust_conversion_area_500m_km2",
+      "spearman": 0.9288823809116571,
+      "paired_cells": 8727
+    },
+    {
+      "a": "current_green_fraction",
+      "b": "persistence_mean_green_fraction",
+      "spearman": 0.9154730811081407,
+      "paired_cells": 8727
+    },
+    {
+      "a": "strict_g2b_exposure_share_500m",
+      "b": "robust_conversion_area_500m_km2",
+      "spearman": 0.9080103692259268,
+      "paired_cells": 8727
+    },
+    {
+      "a": "green_neighbour_context_250m",
+      "b": "green_neighbour_context_500m",
+      "spearman": 0.9079137916992316,
+      "paired_cells": 8727
+    },
+    {
+      "a": "confirmed_green_share_lower_bound",
+      "b": "persistence_mean_green_fraction",
+      "spearman": 0.906187498359252,
+      "paired_cells": 8727
+    },
+    {
+      "a": "persistence_mean_green_fraction",
+      "b": "persistence_majority_year_share",
+      "spearman": 0.8918529698096133,
+      "paired_cells": 8727
+    },
+    {
+      "a": "persistence_dominant_year_share",
+      "b": "persistence_mean_green_fraction",
+      "spearman": 0.8833331907856053,
+      "paired_cells": 8727
+    }
+  ],
+  "checks": {
+    "upstream_current_passed": true,
+    "upstream_persistence_passed": true,
+    "upstream_connectivity_passed": true,
+    "upstream_historical_threat_passed": true,
+    "grid_ids_current_match": true,
+    "grid_ids_persistence_match": true,
+    "grid_ids_connectivity_match": true,
+    "grid_ids_historical_threat_match": true,
+    "gis_9240_unique_ids": true,
+    "gis_epsg32644_valid": true,
+    "gis_grid_ids_match": true,
+    "2025_raw_product": true,
+    "valid_2025_green_9195_unknown_45": true,
+    "2025_green_and_coverage_bounded": true,
+    "2025_green_area_valid": true,
+    "historical_valid_year_counts": true,
+    "current_green_detected_count": true,
+    "patch_flag_valid": true,
+    "patch_5974_captured": true,
+    "patch_area_only_for_candidate_cells": true,
+    "gis_areas_match": true,
+    "all_analysis_cells_kept": true,
+    "indicator_count_14": true,
+    "all_indicator_lengths_9240": true,
+    "indicator_nonmissing_values_nonnegative": true,
+    "fraction_indicator_values_within_0_1": true,
+    "expected_distribution_rows": true,
+    "expected_pairwise_rows": true,
+    "sufficient_green_cells_for_review": true,
+    "historical_loss_kept_separate": true,
+    "no_future_pressure_suitability_shap_inputs": true,
+    "high_correlation_rows_have_sufficient_pairs": true
+  },
+  "selected_final_indicators": null,
+  "final_indicator_selection_frozen": false,
+  "green_importance_calculated": false,
+  "future_pressure_used": false,
+  "development_suitability_used": false,
+  "notes": [
+    "This is candidate-indicator QA and redundancy review, not automatic selection.",
+    "Strong correlation does not prove different ecological concepts are identical.",
+    "Correlation uses observed 2025 green cells and additional QA sensitivity cohorts.",
+    "Patch area is available only for exploratory majority-green patch members.",
+    "Patch size is skewed; consider log scaling only after indicator selection.",
+    "The 80% coverage cohort is diagnostic, not a conservation exclusion.",
+    "Historical conversion exposure belongs to threat, not Green Importance.",
+    "Historical conversion near-everywhere detection at 500m requires intensity review.",
+    "Indicators are not yet standardized or weighted.",
+    "No future Urbanization Pressure introduced."
+  ]
+}

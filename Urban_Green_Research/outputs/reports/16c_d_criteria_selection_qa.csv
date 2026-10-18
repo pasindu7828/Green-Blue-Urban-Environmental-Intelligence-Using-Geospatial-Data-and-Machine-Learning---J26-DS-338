@@ -1,0 +1,18 @@
+check,passed,details
+Step 16B input previously passed QA,True,Step 16B must remain frozen
+Previous 16C-A PASS,True,Previous stage must be completed
+16C-A input checksum unchanged,True,Same frozen Step 16B dataset
+Previous 16C-B PASS,True,Previous stage must be completed
+16C-B input checksum unchanged,True,Same frozen Step 16B dataset
+Previous 16C-C PASS,True,Previous stage must be completed
+16C-C input checksum unchanged,True,Same frozen Step 16B dataset
+9240 unique grid cells,True,Actual rows: 9240
+All nine measurements registered,True,One entry for each analyzed raw measurement
+Registered variables contain valid values,True,No invalid numeric measurements
+Exactly four provisional core measurements,True,C5 remains pending
+One proposed C2 and C3 scale,True,No double counting of alternative radii
+C3 direction remains undecided,True,Prevent untested positive building-density assumption
+C5 not prematurely weighted,True,Elevation needs independent planning justification
+All four sensitivity comparisons available,True,Evidence from Step 16C-C
+Sensitivity evidence valid,True,Correlation and spatial-overlap evidence checked
+No AHP weights or suitability scores,True,This is only a provisional selection review

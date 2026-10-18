@@ -1,0 +1,93 @@
+{
+  "section": "03_development_suitability",
+  "stage": "16e_02",
+  "status": "PASS_EXPERT_AHP_WEIGHTED_SUITABILITY_SENSITIVITY_PENDING",
+  "grid_cells": 9240,
+  "crs": "EPSG:32644",
+  "study_area_km2": 88.82921581108508,
+  "method": "GIS_MCDA_EXPERT_AHP_WEIGHTED_LINEAR_COMBINATION",
+  "formula": "S=0.20*C1+0.60*C2+0.20*C4",
+  "criteria": {
+    "C1": {
+      "raw_field": "c1_major_road_distance_m",
+      "score_field": "c1_road_access_score",
+      "expert_weight": 0.2
+    },
+    "C2": {
+      "raw_field": "c2_road_density_500m_km_per_km2",
+      "score_field": "c2_road_context_score",
+      "expert_weight": 0.5999999999999999
+    },
+    "C4": {
+      "raw_field": "c4_slope_mean_deg",
+      "score_field": "c4_slope_score",
+      "expert_weight": 0.2
+    }
+  },
+  "expert_consultation": {
+    "date": "2026-10-17",
+    "role": "Engineer",
+    "provenance": "Researcher-transcribed expert judgments",
+    "name_supplied": false,
+    "signed_questionnaire_available": false,
+    "pairwise_judgments": [
+      {
+        "criterion_a": "C1",
+        "criterion_b": "C2",
+        "higher_importance": "C2",
+        "strength": 3,
+        "justification_as_reported": "Local road density improves accessibility to land and supports urban development."
+      },
+      {
+        "criterion_a": "C1",
+        "criterion_b": "C4",
+        "higher_importance": "EQUAL",
+        "strength": 1,
+        "justification_as_reported": "Major road access supports connectivity, while terrain slope affects construction feasibility and costs."
+      },
+      {
+        "criterion_a": "C2",
+        "criterion_b": "C4",
+        "higher_importance": "C2",
+        "strength": 3,
+        "justification_as_reported": "Local road density improves access, while slope affects construction feasibility. Flood risk also depends on drainage and elevation."
+      }
+    ],
+    "original_response_spacing_notes": [],
+    "consistency_ratio": 0.0
+  },
+  "source_standardization": "16c_m_final_criteria_standardized_100m",
+  "normalization_method": "Empirical P05/P95 clipped min-max",
+  "suitability_score_distribution": {
+    "count": 9240,
+    "min": 0.0,
+    "p05": 0.1995155809069208,
+    "p25": 0.392220504787656,
+    "median": 0.5435938045080602,
+    "mean": 0.5434669344169946,
+    "p75": 0.7016230429009169,
+    "p95": 0.8858527526389719,
+    "max": 0.9989284791557643,
+    "standard_deviation": 0.20875498120955946
+  },
+  "final_suitability_classes_assigned": false,
+  "sensitivity_analysis_completed": false,
+  "flood_risk_explicitly_modelled": false,
+  "provisional_results_overwritten": false,
+  "section04_modified": false,
+  "input_sha256": {
+    "data/processed/development_suitability/standardized_criteria/16c_m_final_criteria_standardized_100m.csv": "480045cb1e3f76a3a21c342db694f298fd194634090ea7f97555ec82689e8e52",
+    "data/processed/development_suitability/standardized_criteria/16c_m_final_criteria_standardized_100m.gpkg": "cd79cc40ab2576bc5d854b489210301bf073c3b831df91248ed01d830cae4715",
+    "outputs/reports/16c_m_final_criteria_standardization_qa.json": "27ce2f59b9c2867dd76c0321d5a10f1b8a151be5550d4d9972cad9be7f291821",
+    "outputs/reports/16d_e_expert_ahp_completed_responses.csv": "56551b01c9f15bb378c2f3021fdb8bf78cd2e88c27689373c9fafc8f992ceccf",
+    "outputs/reports/16d_e_expert_ahp_pairwise_matrix.csv": "860a1746e299cbca23c6f02ca0d5f29bd6d2cc6988de1d70586121b7780426f3",
+    "outputs/reports/16d_e_expert_ahp_weights.csv": "eae6ff21a01868d1c16ca38cdee5dcda9def81046b8609a000dbcabdf2c4af01",
+    "outputs/reports/16d_e_expert_ahp_consistency_qa.json": "2418d5af2760529f851e0ebf3b444c163da2d8d144650887d4e8e3e19af60891"
+  },
+  "outputs": {
+    "csv": "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.csv",
+    "gpkg": "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.gpkg",
+    "csv_sha256": "9b8fd5674fbfe221ab3c391b5624fa32cb24c16ecd124f3e858c2b8130b62717",
+    "gpkg_sha256": "f44eff26e7bf0fb2549de510855119e0440790edd91f21dd4690b053a171db87"
+  }
+}

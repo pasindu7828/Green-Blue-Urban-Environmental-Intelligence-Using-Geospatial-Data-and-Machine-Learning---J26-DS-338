@@ -1,0 +1,18 @@
+check,passed,details
+Raw dataset has 9240 unique grid cells,True,Actual: 9240
+Experimental scores have 9240 unique grid cells,True,Actual: 9240
+Previous Step 16C-F QA passed,True,Step 16C-F must be completed
+Previous scoring methods remain experimental,True,No final method has been selected
+Frozen raw dataset checksum matches,True,Verify unchanged Step 16B input
+Raw and score grid IDs match in order,True,Prevent incorrect comparisons between cells
+All experimental score columns exist,True,Expected ten score columns
+All raw criterion columns exist,True,"C1, C2, C3 and C4 available"
+Experimental scores are finite,True,No missing or infinite scores
+Experimental scores remain within 0-1,True,Valid score range
+Exactly five scenario comparisons,True,Actual: 5
+All comparison metrics are finite,True,All scenario metrics valid
+Sensitive-cell totals match,True,Detailed records match summary
+C3 opposite directions are complementary,True,Opposite C3 scenarios must be consistent
+No final scoring decision selected,True,Comparison only
+Frozen raw input remains unchanged,True,Read-only analysis
+Experimental scoring input remains unchanged,True,Read-only analysis

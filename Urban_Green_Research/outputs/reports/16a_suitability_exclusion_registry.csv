@@ -1,0 +1,5 @@
+source_group,examples,allowed_in_core_suitability_score,reason,later_use
+Urbanization Pressure,"2026-2028 pressure score, pressure category, threshold flag",False,Urbanization Pressure represents what may happen. Development Suitability represents what is appropriate. They must remain analytically independent.,Compare with suitability after independent suitability map is completed.
+SHAP / XAI,"SHAP feature values, dominant explanation domains",False,SHAP explains the pressure model and would indirectly reintroduce pressure-model information into suitability.,Dashboard explanation and interpretation only.
+Historical/Future Conservation Priority,"Green importance, persistence, connectivity, conservation score",False,Conservation Intelligence is a later independent synthesis stage.,Compare after suitability and pressure outputs are frozen.
+Provisional UDA zoning,Approximate/provisional zoning and georeferenced screenshot,False,"Current package is provisional, approximate and/or visual-only; legal authority is unverified.","Planning-context overlay, sensitivity discussion and later forecast-planning conflict interpretation."

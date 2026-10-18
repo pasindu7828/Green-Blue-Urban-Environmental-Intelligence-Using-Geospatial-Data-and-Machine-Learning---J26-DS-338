@@ -1,0 +1,6 @@
+criterion,working_role,working_direction,decision_needed
+C1,CORE_CANDIDATE,DECREASING,Choose percentile-capped versus rank scoring; review road access limitations.
+C2,CORE_CANDIDATE,INCREASING_PROVISIONAL,Confirm 500m road-density scale and possible saturation.
+C3,CONDITIONAL_CANDIDATE,UNDECIDED,Expert or planning justification required before choosing a development-context benefit direction.
+C4,CORE_CANDIDATE,DECREASING,Choose slope scoring and review terrain-proxy-cell sensitivity.
+C5,CONTEXT_OR_SCREENING_CANDIDATE,UNDECIDED,No city-wide monotonic elevation direction established. Do not assume flood risk or general 25m/30m thresholds.

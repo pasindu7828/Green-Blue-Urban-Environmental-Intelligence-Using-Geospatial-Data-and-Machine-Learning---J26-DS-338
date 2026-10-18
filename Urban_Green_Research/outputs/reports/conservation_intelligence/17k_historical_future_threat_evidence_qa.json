@@ -1,0 +1,136 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.12",
+  "status": "PASS_SEPARATE_THREAT_EVIDENCE_INTEGRATION_PENDING",
+  "grid_cells": 9240,
+  "frozen_gi_status_only_used_for_overlap": true,
+  "frozen_gi_values_or_weights_modified": false,
+  "frozen_gi_manifest_path": "outputs/reports/conservation_intelligence/17j_green_importance_freeze_manifest.json",
+  "frozen_gi_manifest_sha256": "8a81d14d09b460da95979cf3d7dff05d3978eadfe65157ea1f81a22ab837d321",
+  "historical_source_csv_sha256": "97efa55506856496f7c6efbab5b96687c739790a403fc8edb951f271fc34f04d",
+  "historical_source_qa_sha256": "505b6fa6475b0bb60142d63e354b94947f1a02950906f5eda39f6b69ab934259",
+  "future_pressure_source_csv_sha256": "4350eb1fe9380ba77acd566f6fc94840d86ce7fe507b341f60c1750762b7a988",
+  "pressure_eligibility_source_csv_sha256": "6bcd60770a731fed63b851578505acd2e63f7705429e1809208a2ad9efc23361",
+  "history": {
+    "comparison": "2012-2014 to 2021-2023",
+    "primary": "ROBUST_250M_GREEN_TO_BUILT_EXPOSURE_SHARE",
+    "sensitivity": [
+      "ROBUST_500M",
+      "STRICT_250M",
+      "STRICT_500M"
+    ],
+    "scope": "Retrospective raster pixel-centre neighbourhood, excluding focal grid",
+    "coverage": "9240 valid historical neighbourhoods",
+    "robust_250m_share_distribution": {
+      "count": 9240,
+      "min": 0.0,
+      "p25": 0.0434782608695652,
+      "median": 0.0817307692307692,
+      "p75": 0.1274509803921568,
+      "max": 0.46
+    }
+  },
+  "future_pressure": {
+    "forecast_origin": 2025,
+    "forecast_period": "2026-2028",
+    "scored_cells": 4620,
+    "not_in_domain_cells": 4620,
+    "score_interpretation": "MODEL_DERIVED_PRESSURE_SCORE_NOT_CALIBRATED_PROBABILITY",
+    "locked_threshold": 0.715,
+    "threshold_flagged_cells": 255,
+    "in_domain_score_distribution": {
+      "count": 4620,
+      "min": 0.0002052709460258,
+      "p25": 0.012522462522610951,
+      "median": 0.073146104812622,
+      "p75": 0.3138751313090324,
+      "max": 0.9620802998542786
+    },
+    "not_in_domain_handling": "NaN score, explicit NOT_IN_DOMAIN status"
+  },
+  "overlap": {
+    "frozen_gi_scored": 8727,
+    "gi_and_future_pressure": 4609,
+    "gi_only_pressure_not_in_domain": 4118,
+    "future_pressure_only_gi_unscored": 11,
+    "neither": 502
+  },
+  "cross_tab_gi_status_by_pressure_domain": {
+    "GREEN_IMPORTANCE_CALCULATED": {
+      "model_domain": 4609,
+      "not_in_domain": 4118
+    },
+    "NO_CURRENT_GREEN_DETECTED": {
+      "model_domain": 11,
+      "not_in_domain": 457
+    },
+    "UNKNOWN_CURRENT_GREEN_CONDITION": {
+      "model_domain": 0,
+      "not_in_domain": 45
+    }
+  },
+  "data_export": {
+    "csv": "data/processed/conservation_intelligence/threat_evidence/17k_historical_future_threat_evidence_100m.csv",
+    "gpkg": "data/processed/conservation_intelligence/threat_evidence/17k_historical_future_threat_evidence_100m.gpkg"
+  },
+  "checks": {
+    "frozen_gi_manifest_passed": true,
+    "historical_source_qa_passed": true,
+    "frozen_gi_csv_sha256_valid": true,
+    "frozen_gi_gpkg_sha256_valid": true,
+    "historical_ids_match_gi": true,
+    "eligibility_ids_match_gi": true,
+    "pressure_ids_subset_of_gi": true,
+    "frozen_gi_8727_468_45": true,
+    "frozen_gi_boolean_flag_true": true,
+    "frozen_gi_numeric_status_consistent": true,
+    "historical_periods_fixed": true,
+    "historical_green_status_matches_gi": true,
+    "historical_kmc_areas_match_frozen": true,
+    "history_robust_250m_valid": true,
+    "history_robust_500m_valid": true,
+    "historical_robust_distances_valid": true,
+    "history_strict_250m_valid": true,
+    "history_strict_500m_valid": true,
+    "historical_strict_distances_valid": true,
+    "eligibility_boolean_encoding_valid": true,
+    "pressure_ids_match_eligibility_exactly": true,
+    "2025_origin_2026_2028_period_consistent": true,
+    "relative_score_not_probability": true,
+    "pressure_scores_finite_bounded": true,
+    "pressure_percentiles_bounded": true,
+    "pressure_ranks_valid": true,
+    "operating_threshold_locked_0715": true,
+    "threshold_flags_0_1_valid": true,
+    "threshold_flag_matches_frozen_scores": true,
+    "locked_threshold_status_matches_flag": true,
+    "255_frozen_threshold_flags": true,
+    "overlap_4609_both": true,
+    "overlap_4118_gi_only": true,
+    "overlap_11_pressure_only": true,
+    "overlap_502_neither": true,
+    "pressure_domain_4620_not_domain_4620": true,
+    "all_9240_ids_preserved": true,
+    "pressure_numerics_missing_only_outside_domain": true,
+    "pressure_status_not_in_domain_explicit": true,
+    "pressure_missing_string_fields_outside_domain": true,
+    "pressure_score_preserved_exactly": true,
+    "no_gi_index_or_composite_priority_created": true,
+    "only_source_history_and_pressure_measures": true,
+    "frozen_gis_9240_unique_matching_ids": true,
+    "frozen_gis_crs_epsg32644": true,
+    "geo_join_9240": true,
+    "csv_export_9240": true,
+    "gpkg_export_9240": true,
+    "saved_pressure_missingness_preserved": true,
+    "frozen_gi_source_files_still_unchanged": true
+  },
+  "historical_future_threat_composite_created": false,
+  "conservation_priority_calculated": false,
+  "remaining_decisions": [
+    "Decide if the combined GI and future pressure index is restricted to the 4609 overlapping cells",
+    "Do not impute the 4118 GI cells outside the future pressure domain",
+    "Specify historical and future threat scaling transparently",
+    "Conduct sensitivity analysis before final conservation claims"
+  ]
+}

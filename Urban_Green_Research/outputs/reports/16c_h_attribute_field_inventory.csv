@@ -1,0 +1,151 @@
+file,layer,field,dtype,non_null_count,unique_values,sample_values
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_3_Sectors,sector,str,3,3,Battaramulla | Athurugiriya | KAduwela
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_3_Sectors,source,str,3,1,KMC uploaded KMZ; 3 grouped sectors
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_3_Sectors,status,str,3,1,USER_PROVIDED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_59_SourcePolygonParts,sector,str,59,3,Battaramulla | Athurugiriya | KAduwela
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_59_SourcePolygonParts,part_num,int64,59,24,1 | 2 | 3
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_59_SourcePolygonParts,source,str,59,1,KMC uploaded KMZ; no GN-level names available
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,zone_id,int64,171,4,5 | 7 | 15
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,zone_name,str,171,4,Institutional Zone-Parliament Zone II / Institutional Zone-Parliament  | Special Residential Zone III-Parliament Zone III / Special Residential | High Density Residential Zone-Special Security Zone II / High Density 
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,group_name,str,171,2,Institutional | Residential
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,screening,str,171,1,CHECK_UDA_REGULATIONS
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,source,str,171,1,UDA 2024 web-map SCREENSHOT; estimated
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,official,int64,171,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,confidence,str,171,1,LOW — image-derived
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,other_possible,str,171,4,Institutional Zone-Parliament Zone II; Institutional Zone-Parliament Z | Special Residential Zone III-Parliament Zone III; Special Residential  | High Density Residential Zone-Special Security Zone II; High Density R
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,area_ha_est,float64,171,99,5.694 | 0.407 | 0.316
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,research_flag,str,171,2,CHECK_INSTITUTIONAL_RULES | CHECK_DEVELOPMENT_RULES
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,planning_rights,str,171,1,NOT_DETERMINED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,zone_source,str,171,1,SCREENSHOT_ESTIMATE
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,legal_status,str,171,1,UNVERIFIED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,usable_for_model,str,171,1,VISUAL_SCREENING_ONLY
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,year_shown,int64,171,1,2024
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,source_fid,int64,171,171,44 | 45 | 46
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,qa_status,str,171,1,UNVERIFIED_SCREENSHOT_DERIVED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,qda_note,str,171,1,No official UDA polygon matched; unsuitable for automatic planning dec
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,is_composite,int64,171,1,1
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,needs_review,str,171,2,MD3_MD4_MERGED_WITH_OTHER_CLASSES | AMBIGUOUS_COMPOSITE_ZONE_NAME
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,use_for_ml,int64,171,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,use_for_legal,int64,171,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,geom_source,str,171,1,UNCHANGED_FROM_USER_ZONING_GPKG
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,area_name,str,2,2,Korathota | Dedigamuwa
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,ref_ha,float64,2,2,33.236 | 40.818
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,as_highland_ha,float64,2,2,20.457 | 6.485
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,as_unclassified_ha,float64,2,2,12.665 | 33.923
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,as_other_zone_ha,float64,2,2,0.113 | 0.409
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,not_covered_ha,float64,2,1,0.0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,pct_highland,float64,2,2,61.6 | 15.9
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,pct_unclassified,float64,2,2,38.1 | 83.1
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,status,str,2,1,DISAGREEMENT_IN_SCREENSHOT_DERIVED_LAYERS
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,legal_verified,int64,2,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,analysis_use,str,2,1,QA_ONLY_NOT_SUITABILITY_MODEL
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,zone_id,int64,508,20,11 | 12 | 4
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,zone_name,str,508,20,Medium Sensitive Conservation Zone | Low Sensitive Conservation Zone | Institutional Zone-Special Security Zone I-Parliament Zone III
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,group_name,str,508,8,Conservation | Institutional | Special
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,screening,str,508,2,CONSERVATION_REVIEW | CHECK_UDA_REGULATIONS
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,source,str,508,1,UDA 2024 web-map SCREENSHOT; estimated
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,official,int64,508,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,confidence,str,508,1,LOW — image-derived
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,other_possible,str,508,5, | Institutional Zone-Parliament Zone II; Institutional Zone-Parliament Z | Special Residential Zone III-Parliament Zone III; Special Residential 
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,area_ha_est,float64,508,253,9.963 | 0.723 | 0.384
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,research_flag,str,508,5,CHECK_CONSERVATION_ZONE | CHECK_INSTITUTIONAL_RULES | CHECK_SPECIAL_ZONE_RULES
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,planning_rights,str,508,1,NOT_DETERMINED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,zone_source,str,508,1,SCREENSHOT_ESTIMATE
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,legal_status,str,508,1,UNVERIFIED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,usable_for_model,str,508,1,VISUAL_SCREENING_ONLY
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,year_shown,int64,508,1,2024
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,source_fid,int64,508,508,1 | 2 | 3
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,qa_status,str,508,1,UNVERIFIED_SCREENSHOT_DERIVED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,qda_note,str,508,1,No official UDA polygon matched; unsuitable for automatic planning dec
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,is_composite,int64,508,2,0 | 1
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,needs_review,str,508,3,REQUIRES_OFFICIAL_ZONE_CHECK | MD3_MD4_MERGED_WITH_OTHER_CLASSES | AMBIGUOUS_COMPOSITE_ZONE_NAME
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,use_for_ml,int64,508,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,use_for_legal,int64,508,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,geom_source,str,508,1,UNCHANGED_FROM_USER_ZONING_GPKG
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,zone_id,int64,5,1,5
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,zone_name,str,5,1,Institutional Zone-Parliament Zone II / Institutional Zone-Parliament 
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,group_name,str,5,1,Institutional
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,screening,str,5,1,CHECK_UDA_REGULATIONS
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,source,str,5,1,UDA 2024 web-map SCREENSHOT; estimated
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,official,int64,5,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,confidence,str,5,1,LOW — image-derived
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,other_possible,str,5,1,Institutional Zone-Parliament Zone II; Institutional Zone-Parliament Z
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,area_ha_est,float64,5,5,5.694 | 0.904 | 46.161
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,research_flag,str,5,1,CHECK_INSTITUTIONAL_RULES
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,planning_rights,str,5,1,NOT_DETERMINED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,zone_source,str,5,1,SCREENSHOT_ESTIMATE
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,legal_status,str,5,1,UNVERIFIED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,usable_for_model,str,5,1,VISUAL_SCREENING_ONLY
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,year_shown,int64,5,1,2024
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,source_fid,int64,5,5,44 | 108 | 124
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,qa_status,str,5,1,UNVERIFIED_SCREENSHOT_DERIVED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,qda_note,str,5,1,No official UDA polygon matched; unsuitable for automatic planning dec
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,is_composite,int64,5,1,1
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,needs_review,str,5,1,MD3_MD4_MERGED_WITH_OTHER_CLASSES
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,use_for_ml,int64,5,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,use_for_legal,int64,5,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,geom_source,str,5,1,UNCHANGED_FROM_USER_ZONING_GPKG
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_HighLand_Unresolved,area_name,str,2,2,Korathota | Dedigamuwa
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_HighLand_Unresolved,issue,str,2,1,REF_OUTSIDE_ESTIMATED_HIGHLAND_ZONE
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_HighLand_Unresolved,area_ha,float64,2,2,12.779 | 34.332
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_HighLand_Unresolved,status,str,2,1,REQUIRES_OFFICIAL_MAP_CHECK
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Two_HighLand_Approximate,zone_name,str,2,1,High Land Conservation Zone (Dedigamuwa/Koratota)
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Two_HighLand_Approximate,place,str,2,2,Korathota / Koratota high-land conservation (indicative) | Dedigamuwa high-land conservation (indicative)
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Two_HighLand_Approximate,source,str,2,1,"User UDA map screenshot, 2024 layer"
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Two_HighLand_Approximate,precision,str,2,1,APPROXIMATE - do not use for measurement or ground truth
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Two_HighLand_Approximate,source_quality,str,2,1,APPROXIMATE screenshot digitization
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,zone_id,int64,508,20,11 | 12 | 4
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,zone_name,str,508,20,Medium Sensitive Conservation Zone | Low Sensitive Conservation Zone | Institutional Zone-Special Security Zone I-Parliament Zone III
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,group_name,str,508,8,Conservation | Institutional | Special
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,screening,str,508,2,CONSERVATION_REVIEW | CHECK_UDA_REGULATIONS
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,source,str,508,1,UDA 2024 web-map SCREENSHOT; estimated
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,official,int64,508,1,0
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,confidence,str,508,1,LOW — image-derived
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,other_possible,str,508,5, | Institutional Zone-Parliament Zone II; Institutional Zone-Parliament Z | Special Residential Zone III-Parliament Zone III; Special Residential 
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,area_ha_est,float64,508,253,9.963 | 0.723 | 0.384
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,research_flag,str,508,5,CHECK_CONSERVATION_ZONE | CHECK_INSTITUTIONAL_RULES | CHECK_SPECIAL_ZONE_RULES
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,planning_rights,str,508,1,NOT_DETERMINED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,zone_source,str,508,1,SCREENSHOT_ESTIMATE
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,legal_status,str,508,1,UNVERIFIED
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,usable_for_model,str,508,1,VISUAL_SCREENING_ONLY
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,year_shown,int64,508,1,2024
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Unclassified_Screenshot_Gaps,zone_status,str,130,1,Unclassified from screenshot
+Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Unclassified_Screenshot_Gaps,source,str,130,1,Indicative image-derived; requires official layer
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,source_fid,int64,508,508,1 | 2 | 3
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,zone_name,str,508,20,Medium Sensitive Conservation Zone | Low Sensitive Conservation Zone | Institutional Zone-Special Security Zone I-Parliament Zone III
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,screening_code,str,508,4,CONSERVATION_CHECK | OTHER_ZONE_REVIEW | WATER_REVIEW
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,review_priority,str,508,4,MEDIUM | LOW | UNKNOWN
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,recommended_action,str,508,7,Medium sensitive conservation: potential conflict. Check official UDA  | Low sensitive conservation: potential conflict. Check official UDA des | No conservation designation inferred from this estimate; verify zoning
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,evidence_level,str,508,1,SCREENSHOT_DERIVED_LOW
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,legal_prohibition,str,508,1,NOT_DETERMINED
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,use_as_hard_constraint,str,508,1,NO
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,official_verified,str,508,1,NO
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,source_fid,int64,188,188,1 | 2 | 3
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,zone_name,str,188,5,Medium Sensitive Conservation Zone | Low Sensitive Conservation Zone | High Sensitive Conservation Zone
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,screening_code,str,188,2,CONSERVATION_CHECK | WATER_REVIEW
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,review_priority,str,188,3,MEDIUM | LOW | HIGH
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,recommended_action,str,188,5,Medium sensitive conservation: potential conflict. Check official UDA  | Low sensitive conservation: potential conflict. Check official UDA des | High sensitive conservation: potential conflict. Check official UDA de
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,evidence_level,str,188,1,SCREENSHOT_DERIVED_LOW
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,legal_prohibition,str,188,1,NOT_DETERMINED
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,use_as_hard_constraint,str,188,1,NO
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,official_verified,str,188,1,NO
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,HIGHLAND_REFERENCE_2,zone_name,str,2,1,High Land Conservation Zone (Dedigamuwa/Koratota)
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,HIGHLAND_REFERENCE_2,place,str,2,2,Korathota / Koratota high-land conservation (indicative) | Dedigamuwa high-land conservation (indicative)
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,HIGHLAND_REFERENCE_2,source,str,2,1,"User UDA map screenshot, 2024 layer"
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,HIGHLAND_REFERENCE_2,precision,str,2,1,APPROXIMATE - do not use for measurement or ground truth
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,HIGHLAND_REFERENCE_2,source_quality,str,2,1,APPROXIMATE screenshot digitization
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,HIGHLAND_REFERENCE_2,research_use,str,2,1,APPROXIMATE_REFERENCE_ONLY_NOT_LEGAL_OR_MODEL_MASK
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,KMC_Boundary_Provided,sector,str,1,1,Battaramulla
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,KMC_Boundary_Provided,source,str,1,1,KMC uploaded KMZ; 3 grouped sectors
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,KMC_Boundary_Provided,status,str,1,1,USER_PROVIDED
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,UNKNOWN_ZONING_130,screening_code,str,130,1,UNKNOWN_ZONING
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,UNKNOWN_ZONING_130,recommended_action,str,130,1,Provisional screenshot unclassified; official zoning verification requ
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,UNKNOWN_ZONING_130,legal_prohibition,str,130,1,NOT_DETERMINED
+Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,UNKNOWN_ZONING_130,zone_status,str,130,1,Unclassified from screenshot
+Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE.geojson,(GeoJSON),zone_name,str,2,1,High Land Conservation Zone (Dedigamuwa/Koratota)
+Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE.geojson,(GeoJSON),place,str,2,2,Korathota / Koratota high-land conservation (indicative) | Dedigamuwa high-land conservation (indicative)
+Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE.geojson,(GeoJSON),source,str,2,1,"User UDA map screenshot, 2024 layer"
+Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE.geojson,(GeoJSON),precision,str,2,1,APPROXIMATE - do not use for measurement or ground truth
+Kaduwela_MC_Boundary.gpkg,Kaduwela_MC_Boundary,sector,str,1,1,Battaramulla
+Kaduwela_MC_Boundary.gpkg,Kaduwela_MC_Boundary,source,str,1,1,KMC uploaded KMZ; 3 grouped sectors
+Kaduwela_MC_Boundary.gpkg,Kaduwela_MC_Boundary,status,str,1,1,USER_PROVIDED

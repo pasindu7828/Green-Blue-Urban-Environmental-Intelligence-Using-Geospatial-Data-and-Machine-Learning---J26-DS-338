@@ -1,0 +1,64 @@
+{
+  "step": "16D-B",
+  "qa_status": "PASS",
+  "methodology_status": "PROVISIONAL_REFERENCE_BASELINE_ONLY",
+  "generated_utc": "2026-10-17T05:28:33.222992+00:00",
+  "grid_count": 9240,
+  "crs": "EPSG:32644",
+  "criterion_set": [
+    "C1",
+    "C2",
+    "C4"
+  ],
+  "reference_assumption": {
+    "C1": 0.3333333333333333,
+    "C2": 0.3333333333333333,
+    "C4": 0.3333333333333333
+  },
+  "assumption_status": "ILLUSTRATIVE_NOT_AHP_WEIGHTS",
+  "reference_formula": "(C1 + C2 + C4) / 3",
+  "primary_method": "PERCENTILE_CAPPED_P05_P95",
+  "sensitivity_method": "PERCENTILE_RANK",
+  "raw_c3_retained": true,
+  "raw_c5_retained": true,
+  "expert_ahp_weights_calculated": false,
+  "final_suitability_model_calculated": false,
+  "planning_exclusions_applied": false,
+  "baseline_min": 0.0,
+  "baseline_mean": 0.5822478348089861,
+  "baseline_max": 0.9982141319262743,
+  "baseline_spearman_between_methods": 0.9848414558305058,
+  "top_decile_method_jaccard": 0.7533206831119544,
+  "partial_boundary_cells": 726,
+  "small_boundary_fragments": 360,
+  "planning_review_cells": 7387,
+  "qa_checks": 37,
+  "qa_passed": 37,
+  "source_sha256": {
+    "16d_a_provisional_standardized_criteria_100m.csv": "1e5db133fd5446d74286913893c7d5afea28ccc0b9d01820e1b48b24406fbd33",
+    "16d_a_provisional_standardized_criteria_100m.gpkg": "3e5ef2df30ae4835fe431ca6d1496b0179c41799ee615cb71ff1dca210c84fff",
+    "16d_a_standardized_criteria_summary.json": "f50c8189bf2a916906781a15b2516cc3d36426af8924979292ee424f061ca832",
+    "16c_m_grid_zoning_screening_100m.csv": "70e63203100ed3e816cf47b6d161f18ce4971c93d5e63a35e456b8e30c94960a",
+    "16c_m_grid_zoning_screening_summary.json": "baf790a70f115a7ded592f1f8de4cc48da0274d9d8b82adad1fd52527f302aa4",
+    "16c_k_criterion_inclusion_scenarios_100m.csv": "127ee56447b6fa06a2833b3c101ed598cc2370d7e621825ef13423508ea52bdb",
+    "16c_k_criterion_robustness_summary.json": "853e14842440a984b654f629aecba574c911edd2700d4ce760defba9c8b54203",
+    "16c_l_expert_review_summary.json": "ac2d4481b5b45ca8722c993b4bbd92741146b009e6f81d037490010a5aa2a8ed"
+  },
+  "limitations": [
+    "Equal criterion contributions are a reference assumption, not AHP weights.",
+    "C3 and C5 remain outside the baseline pending justification.",
+    "Relative classes are study-specific ranking categories, not official planning suitability thresholds.",
+    "Partial boundary cells include very small polygon fragments that are not independently verified buildable land.",
+    "Planning screening is attached as separate context and never alters the reference baseline score.",
+    "Provisional UDA layers do not establish legal development permission.",
+    "Further criterion review, expert AHP, sensitivity testing and independent validation remain necessary."
+  ],
+  "outputs": [
+    "16d_b_provisional_suitability_baseline_100m.csv",
+    "16d_b_provisional_suitability_baseline_100m.gpkg",
+    "16d_b_relative_suitability_class_summary.csv",
+    "16d_b_baseline_method_sensitivity.csv",
+    "16d_b_provisional_baseline_qa.csv",
+    "16d_b_provisional_baseline_summary.json"
+  ]
+}

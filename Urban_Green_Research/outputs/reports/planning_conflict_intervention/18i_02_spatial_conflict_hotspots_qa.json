@@ -1,0 +1,68 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18i_02_spatial_conflict_hotspots",
+  "status": "PASS_EXPLORATORY_DCI_CP_SPATIAL_HOTSPOTS_WITH_GN_GAPS",
+  "grid_count": 9240,
+  "gn_division_count": 57,
+  "crs": "EPSG:32644",
+  "top_fraction": 0.1,
+  "minimum_candidate_hotspot_cells": 3,
+  "edge_adjacency": "Shared boundary length > 0.1 metres (not corner-only)",
+  "dci": {
+    "valid_domain_cells": 4620,
+    "top_decile_screened_cells": 462,
+    "screen_threshold_observed_min_score": 0.2817840311383809,
+    "candidate_hotspot_count": 36,
+    "candidate_hotspot_cells": 135,
+    "candidate_hotspot_area_km2": 1.349803437494264,
+    "small_screened_group_count": 284,
+    "small_screened_group_cells": 327,
+    "shared_edge_links_in_screen": 145,
+    "candidate_gn_uncovered_area_km2": 1.9708697072928773e-10
+  },
+  "conservation_priority": {
+    "valid_domain_cells": 4609,
+    "top_decile_screened_cells": 461,
+    "screen_threshold_observed_min_score": 0.4884956548190001,
+    "candidate_hotspot_count": 22,
+    "candidate_hotspot_cells": 81,
+    "candidate_hotspot_area_km2": 0.8098034374942641,
+    "small_screened_group_count": 331,
+    "small_screened_group_cells": 380,
+    "shared_edge_links_in_screen": 110,
+    "candidate_gn_uncovered_area_km2": 1.9708697436726652e-10
+  },
+  "gn_boundary_gap_km2": 2.133335769889894,
+  "scores_retrained_or_changed": false,
+  "composite_dci_cp_risk_score_created": false,
+  "hotspots_statistically_significant": false,
+  "legal_or_zoning_classifications_issued": false,
+  "limitations": [
+    "Top 10% is a descriptive threshold; it must be tested in Step 5.9.",
+    "Minimum three edge-connected grids is a descriptive cluster-size rule, not an official threshold.",
+    "Screened one- or two-cell components are retained as small groups, not candidate hotspots.",
+    "Edge adjacency uses real clipped polygon boundaries and excludes corner-only contact.",
+    "DCI and frozen CP use separate ranking queues, but are not statistically independent signals: CP already includes pressure.",
+    "Candidate hotspots are not statistically significant hotspots without a spatial significance test.",
+    "Grid portions outside GN coverage remain unattributed, never nearest-filled.",
+    "Out-of-domain and missing score cells are not treated as zero conflict or zero conservation value.",
+    "No new legal development suitability, flood risk, approvals or official conservation boundaries are inferred."
+  ],
+  "input_sha256": {
+    "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.gpkg": "0875ace74f79a98a322cc4dc7bc2b46d32f3e2b8694a1c6db48325836543775b",
+    "outputs/reports/planning_conflict_intervention/18b_common_grid_integration_qa.json": "e7124e0a1f599d240345551376384a93a7e24094df45dddae2fb5e4f2df4dcdd",
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18g_separate_planning_review_queues_100m.csv": "dcae15ac05cbb052d0ca64beaccd3136de33160c2c25ba2553d67cce3bcc6310",
+    "outputs/reports/planning_conflict_intervention/18g_separate_planning_review_queues_qa.json": "c102d85a60f3855fe2c93588b07e8fb25c8c2d9a7ab333f450cb4ccc5518e669",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_gn_grid_intersections.csv": "ebbe8394b1e9c7008a1c5ccafda46f683e37a3f6eacdea29a89bf471339ea412",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_grid_gn_assignment_100m.csv": "1367f810fbe3045bc94a285a824894565823d63dd26dd5ac01c28e3c97016fd8",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_gn_area_weighted_summary.csv": "ff013114729f9fb12741827368efbaf9842a4cc90b4d28e43170fb924e0c43f7",
+    "outputs/reports/planning_conflict_intervention/18i_01_gn_area_weighted_summary_qa.json": "b1fb1b4fa0dee184a2a2e8bb502ba8326c7aadfe0fde02321a3c2220f8ccacb9"
+  },
+  "outputs": {
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_spatial_conflict_hotspot_grid_membership_100m.csv": "ac2923d84fd6c9b149ea609730e2be374df4d73420bef9d7fc43076cc55999ae",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_spatial_conflict_hotspot_clusters.csv": "158184006ee89eecef8a7e36c485c7bbf2e7e4468120cd8b7b927898f06be2d6",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_gn_hotspot_summary.csv": "1392012ebf87a07985dff8151aee64cb800c817b546a40d36c1ca607edb64e6d",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_spatial_conflict_hotspots.gpkg": "259d59a4ed20e21a5d7f5bd8ffdb7071599453001ff63bcd1f08f8bdccbc5dbb"
+  },
+  "gpkg_layer": "screened_spatial_groups"
+}

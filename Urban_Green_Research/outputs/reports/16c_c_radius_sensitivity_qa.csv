@@ -1,0 +1,12 @@
+check,passed,details
+9240 unique grid cells,True,Actual rows: 9240
+Previous Step 16C-B PASS,True,Correlation audit accepted
+Frozen input SHA256 unchanged,True,Input consistency with Step 16C-B
+Candidate measurements finite,True,No missing or infinite measurements
+Candidate measurements nonconstant,True,All candidate radii must vary
+Four alternative-radius comparisons,True,Actual: 4
+Pearson and Spearman results reproduced,True,Must agree with frozen Step 16C-B matrices
+All sensitivity metrics finite,True,No undefined comparison results
+Jaccard similarity within 0-1,True,Valid intersection-over-union values
+Sensitive-cell totals consistent,True,Detailed records match pairwise counts
+No criterion automatically selected,True,Selection requires methodological justification

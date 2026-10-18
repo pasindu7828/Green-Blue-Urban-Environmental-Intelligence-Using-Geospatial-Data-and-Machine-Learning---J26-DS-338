@@ -1,0 +1,6 @@
+﻿criterion,criterion_description,proposed_status_for_review,review_question,expert_decision,expert_direction,expert_reason,reviewer_name,reviewer_role,review_date
+C1,Accessibility to major roads,Core candidate; shorter generally preferable,"Is major-road distance a reasonable accessibility proxy? Consider actual access, buffers and road restrictions.",,,,,,
+C2,Neighbourhood road availability (500 m),Core candidate; direction provisional,Does greater road density generally help? Could there be saturation? Is the 500 m scale suitable?,,,,,,
+C3,Existing built-up context (500 m),Provisional core in Step 16C-D; conditional candidate after sensitivity,"Should existing buildings indicate infrastructure availability, saturation or a non-linear relationship? Include or exclude?",,,,,,
+C4,Terrain slope (degrees),Core candidate; gentler terrain preferable,Is slope suitable for general urban development assessment? Should engineering thresholds be supported by additional evidence?,,,,,,
+C5,Local elevation (metres),Context/screening candidate; role undecided,Is elevation independently relevant across Kaduwela? Do not generalize zone-specific elevation regulations.,,,,,,
