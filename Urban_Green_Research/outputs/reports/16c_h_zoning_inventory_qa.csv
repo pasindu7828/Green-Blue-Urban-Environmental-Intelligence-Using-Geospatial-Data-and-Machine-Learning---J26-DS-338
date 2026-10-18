@@ -1,0 +1,14 @@
+check,passed,details
+Previous Step 16C-G passed,True,PASS
+Previous method remains experimental,True,EXPERIMENTAL
+Frozen 16B source unchanged,True,SHA256 consistency
+Source exists: Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,True,Required file
+Source exists: Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,True,Required file
+Source exists: Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE.geojson,True,Required file
+Source exists: Kaduwela_MC_Boundary.gpkg,True,Required file
+Source exists: QA_METRICS.json,True,Required file
+All five required source files available,True,5
+Spatial layers readable,True,17 layers; errors: []
+Every spatial layer has CRS and features,True,Metadata integrity
+"No null, empty or invalid geometries",True,Geometry integrity
+Frozen raw data unchanged at end,True,Read-only pipeline

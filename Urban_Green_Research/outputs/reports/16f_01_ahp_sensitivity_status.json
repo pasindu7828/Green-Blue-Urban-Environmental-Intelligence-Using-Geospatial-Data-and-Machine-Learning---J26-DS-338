@@ -1,0 +1,16 @@
+{
+  "step": "16F-01",
+  "status": "BLOCKED_AWAITING_AHP_WEIGHTED_MODEL",
+  "methodology": "GIS_MCDA_EXPERT_AHP",
+  "explanation": "Final Step 16E expert-AHP weighted model is not available. No post-AHP sensitivity scenarios were calculated.",
+  "sensitivity_completed": false,
+  "external_validation": "NOT_COMPLETED",
+  "legal_permission": "NOT_ASSESSED",
+  "qa_checks": 4,
+  "qa_passed": 4,
+  "created_utc": "2026-10-17T08:32:39.367720+00:00",
+  "expert_status": "PENDING_EXPERT_REVIEW",
+  "model_status": "BLOCKED_AWAITING_VALID_EXPERT_AHP",
+  "scenario_count": 0,
+  "final_outputs_generated": false
+}

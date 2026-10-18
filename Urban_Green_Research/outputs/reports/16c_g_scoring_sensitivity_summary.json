@@ -1,0 +1,31 @@
+{
+  "step": "16C-G",
+  "name": "Scoring Method Sensitivity Audit",
+  "qa_status": "PASS",
+  "methodology_status": "EXPERIMENTAL",
+  "generated_utc": "2026-10-17T04:42:03.402203+00:00",
+  "grid_cells": 9240,
+  "input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "scoring_input_sha256": "e4704675053d6dfaad9413555cf0367495cad095d6cfd5c242bbdf9ee0a4c1ec",
+  "scenario_count": 5,
+  "sensitivity_threshold": 0.2,
+  "sensitivity_threshold_note": "An exploratory score-difference flag, not a planning threshold.",
+  "qa_checks": 17,
+  "qa_passed": 17,
+  "important_notes": [
+    "No final scoring method selected.",
+    "No combined suitability score calculated.",
+    "The 0.20 difference flag is exploratory.",
+    "Rank scaling depends on relative grid ranks.",
+    "Percentile-capped scaling can create tied scores.",
+    "C3 opposite directions remain experimental.",
+    "C5 elevation has not been standardized.",
+    "No AHP weights or zoning rules applied."
+  ],
+  "outputs": {
+    "comparison": "16c_g_scoring_sensitivity_comparison.csv",
+    "sensitive_cells": "16c_g_scoring_sensitive_cells.csv",
+    "qa": "16c_g_scoring_sensitivity_qa.csv",
+    "summary": "16c_g_scoring_sensitivity_summary.json"
+  }
+}

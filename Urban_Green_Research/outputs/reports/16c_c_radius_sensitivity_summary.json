@@ -1,0 +1,33 @@
+{
+  "step": "16C-C",
+  "name": "Alternative Radius Sensitivity Audit",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-17T04:05:58.320784+00:00",
+  "input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "grid_cells": 9240,
+  "comparisons": 4,
+  "qa_checks": 11,
+  "qa_passed": 11,
+  "methods": [
+    "Pearson correlation",
+    "Spearman correlation",
+    "Average-tie percentile ranks",
+    "Rank-based quintile disagreement",
+    "90th-percentile upper-tail overlap",
+    "Jaccard similarity"
+  ],
+  "interpretation_notes": [
+    "Upper deciles include all values tied at the threshold.",
+    "Ties can make quintile class sizes unequal.",
+    "High correlation does not guarantee identical high-value cells.",
+    "Spatial autocorrelation limits independent-sample interpretation.",
+    "No criterion selected, removed or standardized.",
+    "No AHP weights or suitability scores calculated."
+  ],
+  "outputs": {
+    "comparison": "16c_c_radius_sensitivity_comparison.csv",
+    "sensitive_cells": "16c_c_radius_sensitive_cells.csv",
+    "qa": "16c_c_radius_sensitivity_qa.csv",
+    "summary": "16c_c_radius_sensitivity_summary.json"
+  }
+}

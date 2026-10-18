@@ -1,0 +1,49 @@
+{
+  "step": "16D-C",
+  "qa_status": "PASS",
+  "methodology_status": "PROVISIONAL_BASELINE_INTERNAL_DIAGNOSTICS_ONLY",
+  "generated_utc": "2026-10-17T05:37:50.262509+00:00",
+  "grid_count": 9240,
+  "study_area_ha": 8882.921581108507,
+  "spatial_rook_edges": 18114,
+  "isolated_grid_cells": 0,
+  "very_high_to_very_high_rook_edges": 2554,
+  "positive_clustering_permutations": 199,
+  "moran_pc": 0.8743125210138747,
+  "moran_rank": 0.8447560374147688,
+  "high_class_review_cells": 1718,
+  "high_class_total_cells": 1848,
+  "planning_review_cells": 7387,
+  "small_boundary_fragments": 360,
+  "blocks_1km_nominal": 121,
+  "qa_checks": 36,
+  "qa_passed": 36,
+  "input_sha256": {
+    "16d_b_provisional_suitability_baseline_100m.csv": "64bf7e0c0b93d7532e97d4cb8f2bd26e8b839c175d87655f9c802911cc393a06",
+    "16d_b_provisional_suitability_baseline_100m.gpkg": "9ec8b19ac79df52464724f2ef0da55cddca9024fff05b8e7f68cb5ef55ca4cc2",
+    "16d_b_provisional_baseline_summary.json": "a10030489bcccb457cc0edb33c27071c2e8c3e1c1d80d4407ffd88684b05f951",
+    "16d_b_relative_suitability_class_summary.csv": "930cf861a1c94b14da5f5a4db90277f22a7b74a8638dd880f96961d1527a4241",
+    "16d_a_provisional_standardized_criteria_100m.csv": "1e5db133fd5446d74286913893c7d5afea28ccc0b9d01820e1b48b24406fbd33",
+    "16d_a_standardized_criteria_summary.json": "f50c8189bf2a916906781a15b2516cc3d36426af8924979292ee424f061ca832",
+    "16c_m_grid_zoning_screening_summary.json": "baf790a70f115a7ded592f1f8de4cc48da0274d9d8b82adad1fd52527f302aa4",
+    "16c_j_zoning_reconciliation_summary.json": "8f26b00bb30ac019bfc83fc9a480f071cab019a39667f2ebdd2ba18222e76a58"
+  },
+  "limitations": [
+    "Internal spatial autocorrelation is not ground-truth suitability validation.",
+    "Relative classes are within-Kaduwela rankings, not legal suitability levels.",
+    "Provisional zoning flags are review indicators, not automatic exclusions.",
+    "Nominal 1-km blocks are spatial summaries, not GN divisions or parcels.",
+    "Small boundary fragments cannot be interpreted as independently buildable.",
+    "C3 and C5 remain outside the baseline; expert AHP judgments are not supplied.",
+    "All metrics describe an equal-contribution provisional baseline."
+  ],
+  "outputs": [
+    "16d_c_relative_class_criterion_profiles.csv",
+    "16d_c_relative_class_planning_review.csv",
+    "16d_c_spatial_1km_block_patterns.csv",
+    "16d_c_grid_spatial_diagnostics_100m.csv",
+    "16d_c_spatial_autocorrelation.csv",
+    "16d_c_spatial_baseline_qa.csv",
+    "16d_c_spatial_baseline_summary.json"
+  ]
+}

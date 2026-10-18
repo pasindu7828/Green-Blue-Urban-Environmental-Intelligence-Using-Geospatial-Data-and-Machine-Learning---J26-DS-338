@@ -1,0 +1,35 @@
+{
+  "step": "16D-G",
+  "qa_status": "PASS",
+  "release_status": "DASHBOARD_READY_PROVISIONAL_REFERENCE",
+  "generated_utc": "2026-10-17T06:01:58.227363+00:00",
+  "grid_count": 9240,
+  "area_ha": 8882.921581108507,
+  "top_decile_cells": 924,
+  "top_decile_with_review": 890,
+  "top_decile_review_pct": 96.32034632034632,
+  "high_stability_both_methods": 395,
+  "small_boundary_fragments": 360,
+  "expert_ahp_status_at_run": "PENDING_EXPERT_REVIEW",
+  "uses_validated_expert_ahp": false,
+  "independent_external_validation": "NOT_YET_COMPLETED",
+  "qa_checks": 29,
+  "qa_passed": 29,
+  "original_input_sha256": {
+    "16d_f_integrated_suitability_intelligence_100m.csv": "15d44809329f9bdff4d46dfc3736f3fb4b7da9611695f8a19797507ced822e2f",
+    "16d_f_integrated_suitability_intelligence_100m.gpkg": "2e6ae968e6114fd32f4cc75a486ddaf50e0bbb87757b2a91466f5431f4671806",
+    "16d_f_integration_summary.json": "64162571aec3eb2b82cdd35d4014c6594e6b43b73e668b1425a902b05056676d",
+    "16d_a_provisional_standardized_criteria_100m.csv": "1e5db133fd5446d74286913893c7d5afea28ccc0b9d01820e1b48b24406fbd33",
+    "16d_a_standardized_criteria_summary.json": "f50c8189bf2a916906781a15b2516cc3d36426af8924979292ee424f061ca832",
+    "16d_d_ahp_consistency_summary.json": "878638628e181a54309160117c12af10482c2c5130de1effe6639e61046cbfb4",
+    "16c_l_expert_criteria_review_template.csv": "4c472071fc6858a7e41cbbdf0575f7cfca96b91cf205717aa219466ecd6bee38",
+    "16c_l_ahp_pairwise_template.csv": "80ec1bf35ad60ae955d0a7d7b6c34dc542b4efa8a97313800197dade2278c64a"
+  },
+  "outputs": [
+    "16d_g_dashboard_reference_100m.csv",
+    "16d_g_dashboard_reference_100m.gpkg",
+    "16d_g_dashboard_data_contract.json",
+    "16d_g_dashboard_release_qa.csv",
+    "16d_g_dashboard_release_summary.json"
+  ]
+}

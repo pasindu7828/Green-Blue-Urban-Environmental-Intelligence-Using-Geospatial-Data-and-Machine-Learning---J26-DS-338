@@ -1,0 +1,44 @@
+{
+  "step": "16C-A",
+  "name": "Raw Suitability Criteria Distribution Audit",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-17T03:57:06.106256+00:00",
+  "input_csv": "data/processed/development_suitability/raw_criteria/16b_raw_suitability_criteria_100m.csv",
+  "input_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "grid_cells": 9240,
+  "candidate_variables": 9,
+  "criterion_groups": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+  ],
+  "terrain_provenance": {
+    "zonal_gedtm": 9201,
+    "nearest_valid_gedtm_proxy": 39,
+    "maximum_proxy_distance_m": 25.495097567963924
+  },
+  "qa_checks_total": 10,
+  "qa_checks_passed": 10,
+  "methodological_restrictions": {
+    "normalization_performed": false,
+    "standardization_performed": false,
+    "criteria_selected_or_removed": false,
+    "ahp_weights_assigned": false,
+    "suitability_score_calculated": false
+  },
+  "notes": [
+    "Zero concentrations and skewness are descriptive.",
+    "IQR outliers are flagged, not removed.",
+    "Negative GEDTM elevation is permitted.",
+    "C5 criterion direction remains undecided.",
+    "The 39 terrain proxy values are not in-polygon zonal measurements.",
+    "Step 16B inputs are not modified."
+  ],
+  "outputs": {
+    "statistics_csv": "16c_a_raw_distribution_statistics.csv",
+    "qa_csv": "16c_a_raw_distribution_qa.csv",
+    "summary_json": "16c_a_raw_distribution_summary.json"
+  }
+}

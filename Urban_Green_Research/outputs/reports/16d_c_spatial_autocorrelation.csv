@@ -1,0 +1,3 @@
+scenario,grid_cells,undirected_rook_edges,isolated_cells,observed_moran_i,permutation_mean_moran_i,positive_clustering_permutation_p,permutations,random_seed,meaning
+baseline_pc,9240,18114,0,0.8743125210138747,0.00014552098015856816,0.005,199,42,INTERNAL_SPATIAL_STRUCTURE_ONLY_NOT_EXTERNAL_VALIDATION
+baseline_rank,9240,18114,0,0.8447560374147688,-5.6427169596150824e-05,0.005,199,42,INTERNAL_SPATIAL_STRUCTURE_ONLY_NOT_EXTERNAL_VALIDATION

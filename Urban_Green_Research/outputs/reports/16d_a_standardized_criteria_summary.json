@@ -1,0 +1,50 @@
+{
+  "step": "16D-A",
+  "qa_status": "PASS",
+  "status": "PROVISIONAL_STANDARDIZATION_ONLY",
+  "created_utc": "2026-10-17T05:25:27.552164+00:00",
+  "grid_cells": 9240,
+  "crs": "EPSG:32644",
+  "grid_area_ha": 8882.921581108507,
+  "raw_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "input_gpkg_sha256": "a1fe686c15ff274d47fb5998185aface5793a16482d4b8492de9ea8aaf635944",
+  "c1_c2_c4": "PROPOSED_CORE_NOT_YET_FINAL",
+  "c3": "TWO_UNSELECTED_ALTERNATIVE_DIRECTIONS",
+  "c5": "RAW_ONLY_NO_CITYWIDE_SUITABILITY_DIRECTION_ESTABLISHED",
+  "primary_candidate": "P05_P95_CAPPED_RELATIVE_TO_KADUWELA_GRID_DISTRIBUTION",
+  "secondary_candidate": "RANK_BASED_SENSITIVITY",
+  "score_columns": [
+    "s_c1_road_pc",
+    "s_c2_road_density_pc",
+    "alt_c3_high_building_pc",
+    "alt_c3_low_building_pc",
+    "s_c4_slope_pc",
+    "sens_c1_rank",
+    "sens_c2_rank",
+    "sens_c3_high_rank",
+    "sens_c3_low_rank",
+    "sens_c4_rank"
+  ],
+  "highest_difference_from_step_16c_f": 1.1102230246251565e-16,
+  "partial_boundary_cells": 726,
+  "cells_below_5000_m2": 360,
+  "min_cell_area_m2": 0.06368482114236093,
+  "qa_checks": 23,
+  "qa_passed": 23,
+  "interpretation": [
+    "No final criterion weights or combined suitability scores computed",
+    "Percentile 5/95 bounds are study-specific and not legal planning restrictions",
+    "C3 direction and inclusion require genuine justification; both alternatives retained",
+    "C5 elevation retained as raw context, never assigned a universal suitability score",
+    "Very small boundary fragments are retained and explicitly identified, not declared buildable",
+    "UDA provisional zoning remains independent of criterion scoring",
+    "Expert questionnaires have been prepared but expert judgments are not claimed"
+  ],
+  "outputs": [
+    "16d_a_provisional_standardized_criteria_100m.csv",
+    "16d_a_provisional_standardized_criteria_100m.gpkg",
+    "16d_a_normalization_parameter_registry.csv",
+    "16d_a_standardized_criteria_qa.csv",
+    "16d_a_standardized_criteria_summary.json"
+  ]
+}

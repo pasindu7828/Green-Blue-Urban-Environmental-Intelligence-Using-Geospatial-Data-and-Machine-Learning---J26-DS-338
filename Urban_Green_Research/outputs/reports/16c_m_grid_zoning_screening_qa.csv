@@ -1,0 +1,36 @@
+check,passed,detail
+Step 16C-J passed,True,
+Step 16C-L passed,True,
+Step 16C-M1 diagnostic passed,True,
+Frozen Step 16B CSV matches earlier SHA256,True,
+Expert questionnaire has not assigned weights,True,
+Previous diagnostic confirmed 9240 cells,True,
+Suitability GeoPackage unchanged since M1,True,
+Modelling GeoPackage unchanged since M1,True,
+UDA source unchanged: Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,True,
+UDA source unchanged: Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,True,
+UDA source unchanged: Kaduwela_MC_Boundary.gpkg,True,
+UDA source unchanged: Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE.geojson,True,
+Suitability has 9240 unique IDs,True,
+Modelling has 9240 unique IDs,True,
+Frozen CSV has 9240 unique IDs,True,
+"CSV, suitability and modelling grid IDs match",True,
+Suitability matches modelling after KMC clipping,True,Maximum difference: 0.000000 m2; cells above tolerance: 0
+Every suitability grid intersects KMC,True,
+No material suitability geometry outside KMC,True,Maximum outside area: 0.000000 m2
+Sum of clipped grid areas matches KMC area,True,Grid: 8882.9216 ha; KMC: 8882.9216 ha
+Planning feature counts match inventories,True,
+Zoning attribute fields available,True,"Columns: ['zone_id', 'zone_name', 'group_name', 'screening', 'source', 'official', 'confidence', 'other_possible', 'area_ha_est', 'research_flag', 'planning_rights', 'zone_source', 'legal_status', 'usable_for_model', 'year_shown', 'geometry']"
+Zoning areas reproduce Step 16C-J,True,"{'classified_area_ha': 6620.31900779476, 'unclassified_only_area_ha': 2187.3418099050464, 'truly_unmapped_area_ha': 75.26076326402612}"
+Exclusive zoning categories partition every cell,True,Maximum relative error: 0.0000000038
+classified intersections valid,True,
+unclassified intersections valid,True,
+unmapped intersections valid,True,
+ambiguous intersections valid,True,
+conservation_water intersections valid,True,
+highland_approx intersections valid,True,
+9240 unique output grid IDs,True,
+All zoning labels remain unverified,True,
+Classified cells have provisional zone labels,True,
+Dominant zone share within classified share,True,
+All source files unchanged,True,
