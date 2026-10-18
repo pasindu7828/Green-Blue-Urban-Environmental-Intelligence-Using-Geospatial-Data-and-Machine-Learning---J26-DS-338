@@ -14,6 +14,14 @@ from backend.services.wetland_data_service import (
     get_part4_gn_summary,
     get_part4_raster_metadata,
     get_part4_raster_png,
+    get_part1_historical_years,
+    get_part1_historical_map_by_year,
+    get_part1_wetland_observations,
+    get_part1_comparison_evidence,
+    get_part3_focused_scenario_map,
+    get_part3_focused_gn_summary,
+    get_part3_individual_future_comparison,
+
 )
 
 # ============================================================
@@ -81,6 +89,89 @@ def part1_wetland_details(wetland_id: str):
         detail=f"Wetland {wetland_id} not found",
     )
 
+
+# ============================================================
+# PART 1 - AVAILABLE HISTORICAL OBSERVATION YEARS
+# ============================================================
+
+@router.get(
+    "/part1/historical/years",
+    tags=["Wetland Research - Part 1"],
+)
+def part1_historical_years():
+    """
+    Return available historical observation years,
+    observation counts, and distinct wetland counts.
+    """
+    return get_part1_historical_years()
+
+# ============================================================
+# PART 1 - HISTORICAL WETLAND MAP BY YEAR
+# ============================================================
+
+@router.get(
+    "/part1/historical/map/{year}",
+    tags=["Wetland Research - Part 1"],
+)
+def part1_historical_map_by_year(year: int):
+    """
+    Return historical wetland polygons for the selected year.
+    Each wetland uses its latest actual observation
+    within that year.
+    """
+    return get_part1_historical_map_by_year(year)
+
+
+# ============================================================
+# PART 1 - INDIVIDUAL WETLAND HISTORICAL OBSERVATIONS
+# ============================================================
+
+@router.get(
+    "/part1/historical/wetlands/{wetland_id}/observations",
+    tags=["Wetland Research - Part 1"],
+)
+def part1_individual_wetland_observations(wetland_id: str):
+    """
+    Return actual historical observation polygons,
+    dates and measurements for one monitored wetland.
+    """
+    result = get_part1_wetland_observations(wetland_id)
+
+    if not result["features"]:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No historical observations found for {wetland_id}",
+        )
+
+    return result
+
+
+# ============================================================
+# PART 1 - HISTORICAL COMPARISON EVIDENCE
+# ============================================================
+
+@router.get(
+    "/part1/historical/wetlands/{wetland_id}/comparison-evidence",
+    tags=["Wetland Research - Part 1"],
+)
+def part1_historical_comparison_evidence(
+    wetland_id: str,
+    before_date: str,
+    after_date: str,
+):
+    """
+    Retrieve existing quality-assessed evidence for an exact
+    historical wetland observation pair.
+
+    Query parameters:
+      before_date: YYYY-MM-DD
+      after_date: YYYY-MM-DD
+    """
+    return get_part1_comparison_evidence(
+        wetland_id=wetland_id,
+        before_date=before_date,
+        after_date=after_date,
+    )
 
 # ============================================================
 # PART 2 - CANDIDATE WETLAND DETECTION
@@ -182,6 +273,41 @@ def part3_scenario_map(change_type: str):
 
 
 # ============================================================
+# PART 3 — FOCUSED GN SCENARIO SUMMARY
+# ============================================================
+
+@router.get("/part3/focused-gn-summary")
+def part3_focused_gn_summary():
+    """
+    Return GN-wise area and spatial difference statistics
+    calculated from the focused 2025 and 2030 model patches.
+
+    Does not modify original research datasets.
+    """
+    return get_part3_focused_gn_summary()
+
+
+# ============================================================
+# PART 3 — INDIVIDUAL WETLAND FUTURE COMPARISON
+# ============================================================
+
+@router.get("/part3/individual-future-comparison/{wetland_id}")
+def part3_individual_future_comparison(wetland_id: str):
+    """
+    Return a historical wetland boundary and nearby
+    exploratory 2030 scenario patches.
+
+    No original research data is modified.
+    """
+    try:
+        return get_part3_individual_future_comparison(wetland_id)
+    except ValueError as error:
+        raise HTTPException(
+            status_code=404,
+            detail=str(error),
+        )
+
+# ============================================================
 # PART 4 - SEASONAL WATERLOGGING SUSCEPTIBILITY API
 # ============================================================
 
@@ -196,6 +322,26 @@ def part4_gn_summary():
     """
     return get_part4_gn_summary()
 
+# ============================================================
+# PART 3 - FOCUSED 2030 WETLAND SCENARIO
+# ============================================================
+
+@router.get(
+    "/part3/focused-scenario",
+    tags=["Wetland Research - Part 3"],
+)
+def part3_focused_scenario():
+    """
+    Return a focused view of the existing exploratory
+    2030 wetland scenario.
+
+    Uses the 25 historical wetlands, 48 primary
+    screened candidates, provisional 50 m buffer,
+    and existing five-pixel display rule.
+
+    Does not modify or validate the prediction model.
+    """
+    return get_part3_focused_scenario_map()
 
 # ============================================================
 # PART 4 - RASTER MAP API

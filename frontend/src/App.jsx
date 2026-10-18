@@ -17,6 +17,16 @@ import Dataset from './pages/urbanHeat/Dataset'
 import Settings from './pages/urbanHeat/Settings'
 import HeatMethodology from './pages/urbanHeat/Methodology'
 
+import WetlandLayout from './components/layout/WetlandLayout'
+import WetlandDashboard from './pages/wetland/Dashboard'
+import HistoricalChange from './pages/wetland/HistoricalChange'
+import IndividualWetlandExplorer from './pages/wetland/IndividualWetlandExplorer'
+import CandidateWetlands from './pages/wetland/CandidateWetlands'
+import FutureWetlandPrediction from './pages/wetland/FutureWetlandPrediction'
+import IndividualWetlandFutureComparison from './pages/wetland/IndividualWetlandFutureComparison'
+import SeasonalWaterlogging from './pages/wetland/SeasonalWaterlogging'
+
+
 function Guard({ children }) {
   const location = useLocation()
   const authed = localStorage.getItem('gbuei_auth') === '1'
@@ -43,6 +53,19 @@ export default function App() {
       <Route path="dataset" element={<Dataset/>}/>
       <Route path="methodology" element={<HeatMethodology/>}/>
       <Route path="settings" element={<Settings/>}/>
+    </Route>
+
+
+    {/* Wetland Intelligence Module */}
+    <Route path="/wetlands" element={<Guard><WetlandLayout /></Guard>}>
+      <Route index element={<Navigate to="dashboard" replace />}/>
+      <Route path="dashboard" element={<WetlandDashboard />}/>
+      <Route path="historical" element={<HistoricalChange />} />
+      <Route path="individual" element={<IndividualWetlandExplorer />} />
+      <Route path="candidates" element={<CandidateWetlands />} />
+      <Route path="future" element={<FutureWetlandPrediction />} />
+      <Route path="future-comparison" element={<IndividualWetlandFutureComparison />} />
+      <Route path="waterlogging" element={<SeasonalWaterlogging />} />
     </Route>
 
     <Route path="*" element={<Navigate to="/project-home" replace/>}/>
