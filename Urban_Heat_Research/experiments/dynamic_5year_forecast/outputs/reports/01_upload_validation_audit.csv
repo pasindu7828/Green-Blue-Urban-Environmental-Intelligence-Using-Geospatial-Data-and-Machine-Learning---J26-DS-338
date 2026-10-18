@@ -1,0 +1,16 @@
+check,status,details
+required_columns,PASS,missing=[]
+unexpected_columns,PASS,unexpected=[]
+numeric_parse,PASS,all numeric columns parsed
+missing_cells,PASS,count=0
+infinite_values,PASS,count=0
+integer_year_values,PASS,non_integer_rows=0
+full_duplicate_rows,PASS,count=0
+duplicate_grid_year_rows,PASS,rows=0
+start_year,PASS,"actual=2015, expected=2015"
+contiguous_years,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+latest_year_supported,PASS,"latest=2025, minimum=2025"
+unique_grid_count,PASS,"actual=2194, expected=2194"
+balanced_grid_year_panel,PASS,required rows/year=2194
+canonical_grid_set,PASS,"missing=0, unexpected=0"
+one_area_per_grid,PASS,inconsistent_grids=0
