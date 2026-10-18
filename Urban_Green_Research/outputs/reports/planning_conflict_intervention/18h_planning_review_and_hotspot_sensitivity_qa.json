@@ -1,0 +1,78 @@
+{
+  "stage": "18h_combined_planning_review_and_hotspot_sensitivity",
+  "status": "PASS_REVIEW_AND_SPATIAL_HOTSPOT_SENSITIVITY_WITH_BASELINE_REPRODUCTION",
+  "grid_cells": 9240,
+  "review_rule_scenarios": 9,
+  "hotspot_scenarios_per_index": 9,
+  "review_suitability_and_cp_cutoffs_pct": [
+    20,
+    25,
+    30
+  ],
+  "hotspot_top_domain_cutoffs_pct": [
+    5,
+    10,
+    15
+  ],
+  "hotspot_min_connected_cells": [
+    2,
+    3,
+    5
+  ],
+  "shared_edge_length_threshold_m": 0.1,
+  "frozen_original_review_joint_concerns": 7,
+  "frozen_original_review_feasibility_screens": 1,
+  "baseline_dci_hotspot_count": 36,
+  "baseline_conservation_hotspot_count": 22,
+  "stress_review_joint_concern_count_range": [
+    2,
+    15
+  ],
+  "stress_review_managed_growth_count_range": [
+    1,
+    2
+  ],
+  "max_changed_review_rule_cells": 424,
+  "ever_changed_common_domain_review_cells": 822,
+  "hotspot_candidate_count_range_by_indicator": {
+    "CP": [
+      0,
+      117
+    ],
+    "DCI": [
+      1,
+      119
+    ]
+  },
+  "source_scores_or_expert_weights_modified": false,
+  "pressure_threshold_changed": false,
+  "composite_dci_cp_score_created": false,
+  "statistically_significant_hotspot_claimed": false,
+  "official_landuse_priority_assigned": false,
+  "limitations": [
+    "All alternative cutoffs and minimum sizes are exploratory sensitivity probes, not approved policy thresholds.",
+    "Edge-sharing cluster adjacency uses polygon boundary intersections greater than 0.10 metres.",
+    "Sensitivity is to screening choices, not uncertainty in AHP judgments or model predictions.",
+    "DCI and CP use separate domains, and CP already incorporates pressure; their scores must not be aggregated.",
+    "Stable screening does not replace field, zoning, drainage and flood-hazard verification.",
+    "Spatial clustering alone does not establish statistical hotspot significance.",
+    "GN polygon coverage gaps from 18I-01 remain unassigned and unchanged."
+  ],
+  "inputs_sha256": {
+    "data/processed/planning_conflict_intervention/conflict_typology/18d_planning_conflict_typology_100m.csv": "3c629152622cd0b1be94eff06b42104e3bb05ab920513437c458122cf6596b33",
+    "data/processed/planning_conflict_intervention/planning_intervention_rules/18f_explainable_planning_interventions_100m.csv": "cad9ab9885b50ddc5d576dad8b9ed5c0047d153c0463917118abd3c5b6b1dada",
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18g_separate_planning_review_queues_100m.csv": "dcae15ac05cbb052d0ca64beaccd3136de33160c2c25ba2553d67cce3bcc6310",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_spatial_conflict_hotspot_grid_membership_100m.csv": "ac2923d84fd6c9b149ea609730e2be374df4d73420bef9d7fc43076cc55999ae",
+    "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.gpkg": "0875ace74f79a98a322cc4dc7bc2b46d32f3e2b8694a1c6db48325836543775b",
+    "outputs/reports/planning_conflict_intervention/18d_planning_conflict_typology_qa.json": "0fda272d89f16375a5149f679083a7a60c5733300d2ec78030ed56d762cf890e",
+    "outputs/reports/planning_conflict_intervention/18f_explainable_planning_interventions_qa.json": "a28683223c3186faf391c85d7b68a03daf1fdf36bc776bd96112a3f2b96205d6",
+    "outputs/reports/planning_conflict_intervention/18g_separate_planning_review_queues_qa.json": "c102d85a60f3855fe2c93588b07e8fb25c8c2d9a7ab333f450cb4ccc5518e669",
+    "outputs/reports/planning_conflict_intervention/18i_02_spatial_conflict_hotspots_qa.json": "1333c537463a78e994fe2090984d9f5d62f623a219a547d84ea14c9f7373ba61",
+    "outputs/reports/planning_conflict_intervention/18b_common_grid_integration_qa.json": "e7124e0a1f599d240345551376384a93a7e24094df45dddae2fb5e4f2df4dcdd"
+  },
+  "outputs_sha256": {
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18h_screening_sensitivity_scenarios.csv": "2e5d9ca40cc638c4242869d879c3381aa5f6c04051977ecd2f558b5a35591859",
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18h_hotspot_sensitivity_scenarios.csv": "3bf0ac303ac6278ae9d9b24ca9c2d6b106c426125a614112065c8ee001dfc8f0",
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18h_screening_hotspot_grid_stability.csv": "e892426f38e2e9878abc6dc31126c7798c821b1e801050416340793afb8758db"
+  }
+}

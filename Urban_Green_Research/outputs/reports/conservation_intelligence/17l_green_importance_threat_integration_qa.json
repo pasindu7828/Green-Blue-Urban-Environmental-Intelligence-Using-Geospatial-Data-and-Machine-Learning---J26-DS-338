@@ -1,0 +1,158 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.13",
+  "status": "PASS_DOMAIN_AWARE_INTEGRATION_PRIORITY_PENDING",
+  "grid_cells": 9240,
+  "frozen_gi_available": 8727,
+  "future_pressure_available": 4620,
+  "historical_context_available": 9240,
+  "overlap": {
+    "gi_and_future_pressure": 4609,
+    "gi_only_future_not_in_domain": 4118,
+    "future_pressure_only_gi_unscored": 11,
+    "neither_gi_nor_future_pressure": 502
+  },
+  "full_future_informed_assessment_domain": "4609 cells with both frozen Green Importance and model-derived future pressure",
+  "partial_evidence_policy": "The 4118 currently green cells outside the future pressure inference domain retain Green Importance and historical threat, but receive no inferred future pressure.",
+  "future_pressure_interpretation": "MODEL_DERIVED_PRESSURE_SCORE_NOT_CALIBRATED_PROBABILITY",
+  "historical_primary_indicator": "historical_g2b_robust_exposure_share_250m",
+  "historical_sensitivity_indicators": [
+    "historical_g2b_robust_exposure_share_500m",
+    "historical_g2b_strict_exposure_share_250m",
+    "historical_g2b_strict_exposure_share_500m"
+  ],
+  "frozen_operating_threshold": 0.715,
+  "descriptive_correlations_common_domain": {
+    "GI_vs_Historical_ROBUST_250m": {
+      "paired_cells": 4609,
+      "pearson_r": -0.2794716187354057,
+      "spearman_rho": -0.47592143762202616
+    },
+    "GI_vs_Future_Pressure": {
+      "paired_cells": 4609,
+      "pearson_r": -0.5022709347315417,
+      "spearman_rho": -0.6224200938564582
+    },
+    "Historical_ROBUST_250m_vs_Future_Pressure": {
+      "paired_cells": 4609,
+      "pearson_r": 0.4319939661619323,
+      "spearman_rho": 0.5245629537970834
+    }
+  },
+  "gi_distribution_future_model_domain": {
+    "count": 4609,
+    "min": 0.1121279232251133,
+    "p25": 0.8514577897824175,
+    "median": 0.9133009071333648,
+    "mean": 0.8913091889405731,
+    "p75": 0.9597523370358044,
+    "max": 1.0
+  },
+  "gi_distribution_future_not_in_domain": {
+    "count": 4118,
+    "min": 0.0371917522910406,
+    "p25": 0.20162157336119174,
+    "median": 0.35892353997853516,
+    "mean": 0.42524879841651525,
+    "p75": 0.6574259397005847,
+    "max": 1.0
+  },
+  "historical_robust_250m_distribution_both": {
+    "count": 4609,
+    "min": 0.0,
+    "p25": 0.0347826086956521,
+    "median": 0.0685714285714285,
+    "mean": 0.07691487613182654,
+    "p75": 0.110576923076923,
+    "max": 0.3886255924170616
+  },
+  "future_pressure_distribution_both": {
+    "count": 4609,
+    "min": 0.0002052709460258,
+    "p25": 0.0124225746840238,
+    "median": 0.0721992626786232,
+    "mean": 0.19288008051129177,
+    "p75": 0.3117656409740448,
+    "max": 0.9620802998542786
+  },
+  "threshold_flagged_in_gi_pressure_overlap": 248,
+  "source_sha256": {
+    "frozen_gi_csv": "2e5ea3a59a7389b67d8b35a76efd1daf49f6e6c49560f4b1d3434a7347e5ade4",
+    "frozen_gi_gpkg": "169613f18ffecb18de217adbf0a65c1acb214d132214068fe972c653897be44a",
+    "stage_412_threat_csv": "4bbe8fc9a131c03d3bc99de531c5446b2421509280074cfe7c3a4914eba6a12a",
+    "historical_source_csv": "97efa55506856496f7c6efbab5b96687c739790a403fc8edb951f271fc34f04d",
+    "pressure_source_csv": "4350eb1fe9380ba77acd566f6fc94840d86ce7fe507b341f60c1750762b7a988"
+  },
+  "output_sha256": {
+    "integrated_csv": "0c3b7a6612fe1a22cdf0900211267d66db0706011bb7fdf232f837870ea7b177",
+    "integrated_gpkg": "9fb5499b8f4763f8b0c61d1cb92845d92893ccce815eba8c30443721fa6be79d"
+  },
+  "checks": {
+    "stage_411_frozen_gi_passed": true,
+    "stage_412_threat_evidence_passed": true,
+    "frozen_gi_csv_sha256_valid": true,
+    "frozen_gi_gpkg_sha256_valid": true,
+    "historical_source_csv_sha256_unchanged": true,
+    "future_pressure_source_csv_sha256_unchanged": true,
+    "pressure_eligibility_source_csv_sha256_unchanged": true,
+    "threat_grid_ids_match_gi": true,
+    "history_grid_ids_match_gi": true,
+    "eligibility_grid_ids_match_gi": true,
+    "pressure_grid_ids_subset": true,
+    "historical_g2b_robust_exposure_share_250m_unchanged": true,
+    "historical_g2b_robust_exposure_share_500m_unchanged": true,
+    "historical_g2b_strict_exposure_share_250m_unchanged": true,
+    "historical_g2b_strict_exposure_share_500m_unchanged": true,
+    "historical_context_valid_all_cells": true,
+    "gi_8727_468_45_partition": true,
+    "gi_score_present_only_when_calculated": true,
+    "gi_frozen_flag_true": true,
+    "threat_gi_status_matches_frozen": true,
+    "threat_gi_availability_matches_frozen": true,
+    "pressure_4620_model_and_4620_outside": true,
+    "pressure_only_present_in_model_domain": true,
+    "pressure_domain_matches_original_eligibility": true,
+    "future_pressure_scores_unchanged": true,
+    "pressure_relative_not_probability": true,
+    "locked_pressure_threshold_preserved": true,
+    "frozen_threshold_flags_preserved": true,
+    "overlap_4609_both": true,
+    "overlap_4118_gi_without_pressure": true,
+    "overlap_11_pressure_without_gi": true,
+    "overlap_502_neither": true,
+    "original_overlap_status_reproduced": true,
+    "no_invalid_integration_status": true,
+    "all_9240_cells_preserved": true,
+    "frozen_gi_scores_unchanged": true,
+    "future_pressure_scores_unchanged_after_join": true,
+    "future_assessment_available_only_on_overlap": true,
+    "no_new_composite_or_priority_field": true,
+    "GI_vs_Historical_ROBUST_250m_correlations_finite": true,
+    "GI_vs_Future_Pressure_correlations_finite": true,
+    "Historical_ROBUST_250m_vs_Future_Pressure_correlations_finite": true,
+    "descriptive_statistics_do_not_modify_sources": true,
+    "frozen_gis_9240_unique_ids": true,
+    "frozen_gis_epsg32644": true,
+    "integrated_gis_9240": true,
+    "integrated_gis_kmc_areas_match": true,
+    "csv_export_9240": true,
+    "gpkg_export_9240": true,
+    "saved_gi_8727_pressure_4620": true,
+    "saved_4118_gi_cells_without_future_pressure": true,
+    "frozen_gi_files_remain_unchanged": true
+  },
+  "frozen_gi_modified": false,
+  "new_criti\u0441_weights_calculated": false,
+  "new_threat_weights_calculated": false,
+  "composite_score_created": false,
+  "conservation_priority_created": false,
+  "next_stage": "4.14 Conservation Priority methodology and computation, subject to explicit domain and aggregation decisions",
+  "limitations": [
+    "Historical exposure and future pressure are different constructs and are not averaged.",
+    "Future pressure predictions are only available within the frozen inference domain.",
+    "Missing pressure must never imply low risk.",
+    "Correlations are descriptive and may reflect spatial autocorrelation.",
+    "No field-validated ecological conservation priority is claimed.",
+    "Sensitivity and robustness analysis remain pending."
+  ]
+}

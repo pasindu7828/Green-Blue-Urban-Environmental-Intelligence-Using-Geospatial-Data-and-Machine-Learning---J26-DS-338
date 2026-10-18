@@ -1,0 +1,63 @@
+{
+  "project": "J26-DS-338",
+  "section": "05_planning_conflict_intervention",
+  "release_stage": "18j_final_planning_conflict_gis",
+  "pressure_origin_year": 2025,
+  "pressure_period": "2026-2028",
+  "source_crs": "EPSG:32644",
+  "map_crs": "EPSG:4326",
+  "counts": {
+    "grid_cells": 9240,
+    "gn_divisions": 57,
+    "all_screened_spatial_groups": 673,
+    "candidate_spatial_groups": 58,
+    "baseline_dci_candidate_groups": 36,
+    "baseline_cp_candidate_groups": 22,
+    "dci_valid_cells": 4620,
+    "cp_valid_cells": 4609,
+    "pressure_out_of_domain_cells": 4620,
+    "gn_unassigned_cells": 206
+  },
+  "gn_uncovered_area_km2": 2.133335769889894,
+  "score_meanings": {
+    "urbanization_pressure_score": "Frozen model-derived relative score; NOT a calibrated probability",
+    "development_suitability_score": "Continuous expert-AHP GIS-MCDA using road proximity, local road density and slope",
+    "development_conflict_index_0_1": "Pressure * (1 - suitability), only in pressure-model domain",
+    "frozen_conservation_priority_0_1": "Frozen Section04 conservation priority (CCI); already includes pressure"
+  },
+  "hotspot_screening": {
+    "rank_cutoff": "Top 10% within each index's valid domain",
+    "minimum_edge_connected_cells": 3,
+    "geojson_contains": "Only the 58 baseline candidate hotspots; CSV retains all 673 screened groups",
+    "statistical_significance_tested": false
+  },
+  "sensitivity": {
+    "review_joint_concern_range": [
+      2,
+      15
+    ],
+    "review_feasibility_range": [
+      1,
+      2
+    ],
+    "dci_candidate_hotspot_count_range": [
+      1,
+      119
+    ],
+    "cp_candidate_hotspot_count_range": [
+      0,
+      117
+    ],
+    "screening_choices_materially_affect_hotspot_counts": true
+  },
+  "limitations": [
+    "Missing scores are unknown/unavailable, never zero.",
+    "GN boundaries leave 2.133336 square kilometres unattributed.",
+    "Dominant GN name is for display; original GN summaries use fractional polygon intersection.",
+    "DCI and conservation priority are separate; do not add or multiply them together.",
+    "Hotspots are exploratory, parameter-sensitive clusters, not statistically significant hotspots.",
+    "Review classes are not official zoning rules or development permissions.",
+    "Historical green-to-built detections do not prove illegal development.",
+    "Drainage, flood hazard, infrastructure, legal restrictions and field checks are not resolved by these outputs."
+  ]
+}

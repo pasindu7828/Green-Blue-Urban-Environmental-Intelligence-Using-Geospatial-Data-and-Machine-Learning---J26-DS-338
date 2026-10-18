@@ -1,0 +1,73 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18j_final_qa_and_gis_packaging",
+  "status": "PASS_SECTION05_GIS_PACKAGE_WITH_DOCUMENTED_LIMITATIONS_DASHBOARD_PENDING",
+  "grid_cells": 9240,
+  "gn_divisions": 57,
+  "pressure_domain_cells": 4620,
+  "conservation_common_domain_cells": 4609,
+  "gn_boundary_uncovered_km2": 2.133335769889894,
+  "gn_unassigned_grid_count": 206,
+  "baseline_dci_candidate_hotspots": 36,
+  "baseline_cp_candidate_hotspots": 22,
+  "baseline_dci_hotspot_cells": 135,
+  "baseline_cp_hotspot_cells": 81,
+  "sensitivity_dci_hotspot_count_range": [
+    1,
+    119
+  ],
+  "sensitivity_cp_hotspot_count_range": [
+    0,
+    117
+  ],
+  "planning_rule_sensitivity_joint_concern_range": [
+    2,
+    15
+  ],
+  "planning_rule_sensitivity_feasibility_range": [
+    1,
+    2
+  ],
+  "hotspot_result_interpretation": "PARAMETER_SENSITIVE_EXPLORATORY_GROUPS_NOT_STATISTICAL_SIGNIFICANCE",
+  "review_route_interpretation": "EXPLORATORY_SCREENING_NOT_OFFICIAL_POLICY",
+  "pressure_is_calibrated_probability": false,
+  "dci_and_cp_combined": false,
+  "expert_ahp_or_frozen_model_modified": false,
+  "input_files_modified": false,
+  "dashboard_exports_pending": true,
+  "limitations": [
+    "DCI is defined only for 4,620 pressure-domain grids.",
+    "Conservation Priority is available for 4,609 grids and already contains pressure.",
+    "The original screening gives 36 DCI and 22 conservation hotspots, but their counts are highly parameter-sensitive.",
+    "Hotspots are exploratory groups, not statistically significant hotspots.",
+    "Screening thresholds are not official policy or legal classifications.",
+    "GN boundaries do not cover 2.133336 square kilometres of the study area.",
+    "GN statistics use fractional area intersections, while popup GN names use dominant intersection.",
+    "Development Suitability uses expert-AHP road proximity, road density and slope; it is not comprehensive legal, flood or drainage suitability.",
+    "No development approval or official zoning decision is inferred."
+  ],
+  "inputs_sha256": {
+    "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.gpkg": "0875ace74f79a98a322cc4dc7bc2b46d32f3e2b8694a1c6db48325836543775b",
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18g_separate_planning_review_queues_100m.csv": "dcae15ac05cbb052d0ca64beaccd3136de33160c2c25ba2553d67cce3bcc6310",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_grid_gn_assignment_100m.csv": "1367f810fbe3045bc94a285a824894565823d63dd26dd5ac01c28e3c97016fd8",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_gn_area_weighted_summary.gpkg": "77bc63eca0bd3a8273d8ef99e847348aed8adbe69425b7738a30b29dfdf97823",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_spatial_conflict_hotspot_grid_membership_100m.csv": "ac2923d84fd6c9b149ea609730e2be374df4d73420bef9d7fc43076cc55999ae",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_gn_hotspot_summary.csv": "1392012ebf87a07985dff8151aee64cb800c817b546a40d36c1ca607edb64e6d",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_02_spatial_conflict_hotspots.gpkg": "259d59a4ed20e21a5d7f5bd8ffdb7071599453001ff63bcd1f08f8bdccbc5dbb",
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18h_screening_hotspot_grid_stability.csv": "e892426f38e2e9878abc6dc31126c7798c821b1e801050416340793afb8758db",
+    "outputs/reports/planning_conflict_intervention/18b_common_grid_integration_qa.json": "e7124e0a1f599d240345551376384a93a7e24094df45dddae2fb5e4f2df4dcdd",
+    "outputs/reports/planning_conflict_intervention/18g_separate_planning_review_queues_qa.json": "c102d85a60f3855fe2c93588b07e8fb25c8c2d9a7ab333f450cb4ccc5518e669",
+    "outputs/reports/planning_conflict_intervention/18i_01_gn_area_weighted_summary_qa.json": "b1fb1b4fa0dee184a2a2e8bb502ba8326c7aadfe0fde02321a3c2220f8ccacb9",
+    "outputs/reports/planning_conflict_intervention/18i_02_spatial_conflict_hotspots_qa.json": "1333c537463a78e994fe2090984d9f5d62f623a219a547d84ea14c9f7373ba61",
+    "outputs/reports/planning_conflict_intervention/18h_planning_review_and_hotspot_sensitivity_qa.json": "21bffc20c70248dc8625b9ba08f9d9addfda2495bd17ef4efa882539eb719b4c"
+  },
+  "output": {
+    "gpkg": "data/processed/planning_conflict_intervention/final_gis/18j_planning_conflict_final.gpkg",
+    "sha256": "b42a51e14eae6f829125e38bec702611a113feef5b679bc99c20c0494b074647",
+    "layers": [
+      "planning_grid_100m",
+      "gn_planning_summary",
+      "exploratory_spatial_groups"
+    ]
+  }
+}

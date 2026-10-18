@@ -1,0 +1,164 @@
+{
+  "stages": [
+    "3.6",
+    "3.7"
+  ],
+  "status": "NUMERICALLY_CONSISTENT_PROVISIONAL_ONLY",
+  "judgment_origin": "Cross-study adapted literature values plus explicit researcher scenario assumptions",
+  "is_new_expert_assessment": false,
+  "is_approved_final_ahp": false,
+  "criteria_order": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "criteria_names": {
+    "C1": "Higher-order road accessibility",
+    "C2": "Local road density (500 m)",
+    "C3": "Surrounding building context (500 m)",
+    "C4": "Mean terrain slope"
+  },
+  "pairwise_matrix": [
+    [
+      1.0,
+      2.0,
+      3.0,
+      8.0
+    ],
+    [
+      0.5,
+      1.0,
+      0.3333333333333333,
+      4.0
+    ],
+    [
+      0.3333333333333333,
+      3.0,
+      1.0,
+      7.0
+    ],
+    [
+      0.125,
+      0.25,
+      0.14285714285714285,
+      1.0
+    ]
+  ],
+  "pairwise_judgments": [
+    {
+      "a": "C1",
+      "b": "C2",
+      "value": 2.0,
+      "reported_value": "2",
+      "evidence": "SCENARIO_ASSUMPTION",
+      "source": "",
+      "source_table": "",
+      "original_comparison": "Not independently verified",
+      "limitation": "Requires independent expert review"
+    },
+    {
+      "a": "C1",
+      "b": "C3",
+      "value": 3.0,
+      "reported_value": "3",
+      "evidence": "PUBLISHED_VALUE_ADAPTED",
+      "source": "https://doi.org/10.3390/land13081288",
+      "source_table": "Table 3",
+      "original_comparison": "Proximity to Roads / Proximity to Residential",
+      "limitation": "Residential proximity differs from building footprint context"
+    },
+    {
+      "a": "C1",
+      "b": "C4",
+      "value": 8.0,
+      "reported_value": "8",
+      "evidence": "PUBLISHED_VALUE_ADAPTED",
+      "source": "https://doi.org/10.3390/land13081288",
+      "source_table": "Table 3",
+      "original_comparison": "Proximity to Roads / Slope",
+      "limitation": "Transferred from Kelowna urban-suitability context"
+    },
+    {
+      "a": "C2",
+      "b": "C3",
+      "value": 0.3333333333333333,
+      "reported_value": "1/3",
+      "evidence": "PUBLISHED_VALUE_ADAPTED",
+      "source": "https://doi.org/10.3390/land14040836",
+      "source_table": "Appendix Table A8",
+      "original_comparison": "Road Network Density / Building Density",
+      "limitation": "Original study evaluates sponge-city construction"
+    },
+    {
+      "a": "C2",
+      "b": "C4",
+      "value": 4.0,
+      "reported_value": "4",
+      "evidence": "SCENARIO_ASSUMPTION",
+      "source": "",
+      "source_table": "",
+      "original_comparison": "Not independently verified",
+      "limitation": "Requires independent expert review"
+    },
+    {
+      "a": "C3",
+      "b": "C4",
+      "value": 7.0,
+      "reported_value": "7",
+      "evidence": "PUBLISHED_VALUE_ADAPTED",
+      "source": "https://doi.org/10.3390/land13081288",
+      "source_table": "Table 3",
+      "original_comparison": "Proximity to Residential / Slope",
+      "limitation": "Residential proximity differs from building footprint context"
+    }
+  ],
+  "principal_eigenvector_weights": {
+    "C1": 0.49183421096910956,
+    "C2": 0.1630523669307736,
+    "C3": 0.30012253758406715,
+    "C4": 0.04499088451604957
+  },
+  "lambda_max": 4.225475957876753,
+  "consistency_index": 0.07515865262558445,
+  "random_index": 0.9,
+  "consistency_ratio": 0.08350961402842717,
+  "consistency_threshold": 0.1,
+  "checks": {
+    "previous_standardization_pass": true,
+    "four_criteria": true,
+    "six_unique_comparisons": true,
+    "diagonal_equals_one": true,
+    "positive_matrix": true,
+    "reciprocal_matrix": true,
+    "weights_positive": true,
+    "weights_sum_one": true,
+    "eigenvector_residual_small": true,
+    "lambda_at_least_n": true,
+    "consistency_ratio_below_0_10": true,
+    "four_adapted_published_values_identified": true,
+    "two_assumptions_explicitly_identified": true
+  },
+  "published_adapted_comparisons": 4,
+  "unsourced_scenario_comparisons": 2,
+  "source_references": [
+    {
+      "study": "Kelowna urban suitability (2024)",
+      "doi": "https://doi.org/10.3390/land13081288",
+      "table": "Table 3"
+    },
+    {
+      "study": "Suzhou sponge-city construction (2025)",
+      "doi": "https://doi.org/10.3390/land14040836",
+      "table": "Appendix Table A8"
+    }
+  ],
+  "limitations": [
+    "The scenario is not Kaduwela-specific expert AHP.",
+    "Two comparisons have no verified published source.",
+    "Published criteria and objectives are not identical.",
+    "Low CR does not prove external validity.",
+    "Supervisor approval or genuine expert assessment is still needed for final methodology compliance.",
+    "No suitability score was calculated in this stage."
+  ]
+}

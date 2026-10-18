@@ -1,0 +1,59 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18d_planning_conflict_typology",
+  "status": "PASS_EXPLORATORY_PLANNING_TYPOLOGY_WITH_DOMAIN_LIMITS",
+  "total_grids": 9240,
+  "pressure_domain_grids": 4620,
+  "outside_pressure_domain": 4620,
+  "common_pressure_suitability_conservation_domain": 4609,
+  "pressure_flagged_count": 255,
+  "frozen_pressure_threshold": 0.715,
+  "frozen_pressure_is_calibrated_probability": false,
+  "relative_quartile_definition": "Exactly ceil(25% of valid domain); ties resolved by ascending grid_id. Suitability quartiles computed within the 4,620-cell pressure domain; CP upper quartile within 4,609 available frozen CP cells.",
+  "suitability_lower_quartile_count": 1155,
+  "suitability_upper_quartile_count": 1155,
+  "cp_upper_quartile_count": 1153,
+  "suitability_lower_quartile_max_score": 0.3173087509257588,
+  "suitability_upper_quartile_min_score": 0.578743671746804,
+  "cp_upper_quartile_min_score": 0.2640753839511244,
+  "counts_by_type": {
+    "OUTSIDE_PRESSURE_MODEL_DOMAIN": 4620,
+    "P_UNFLAGGED__S_MIDDLE50__CP_OTHER75": 1662,
+    "P_UNFLAGGED__S_LOWER25__CP_OTHER75": 1032,
+    "P_UNFLAGGED__S_UPPER25__CP_OTHER75": 757,
+    "P_UNFLAGGED__S_MIDDLE50__CP_UPPER25": 517,
+    "P_UNFLAGGED__S_UPPER25__CP_UPPER25": 280,
+    "P_FLAGGED__S_MIDDLE50__CP_UPPER25": 126,
+    "P_UNFLAGGED__S_LOWER25__CP_UPPER25": 113,
+    "P_FLAGGED__S_UPPER25__CP_UPPER25": 110,
+    "DCI_AVAILABLE__FROZEN_CP_MISSING": 11,
+    "P_FLAGGED__S_LOWER25__CP_UPPER25": 7,
+    "P_FLAGGED__S_MIDDLE50__CP_OTHER75": 4,
+    "P_FLAGGED__S_UPPER25__CP_OTHER75": 1
+  },
+  "joint_flagged_pressure_lower_suitability_upper_cp": 7,
+  "preliminary_managed_growth_screening_candidates": 1,
+  "limitations": [
+    "Relative quartiles are descriptive analytical screening choices, not expert-derived policy cutoffs or legal planning classifications.",
+    "Managed-growth screening candidates require zoning, flood-risk, infrastructure and ground validation.",
+    "Pressure scores are model-derived relative scores, not calibrated probabilities.",
+    "DCI and frozen CP are separate non-equivalent indices; their magnitudes are not interchangeable.",
+    "CP is not recomputed or multiplied by pressure again.",
+    "Out-of-domain pressure and DCI remain unavailable; no imputation with zero.",
+    "The reported engineer AHP consultation informs suitability, not exploratory quartile thresholds.",
+    "Boundary sensitivity will be evaluated in a later Section 05 step."
+  ],
+  "classification_not_official": true,
+  "expert_weights_unchanged": true,
+  "section04_modified": false,
+  "inputs_sha256": {
+    "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.csv": "019471a83b102ae1df7eec58bc2f5cee65d34c10e0a533e7d4b6fb8c416218f3",
+    "outputs/reports/planning_conflict_intervention/18b_common_grid_integration_qa.json": "e7124e0a1f599d240345551376384a93a7e24094df45dddae2fb5e4f2df4dcdd",
+    "data/processed/planning_conflict_intervention/development_conflict/18c_development_conflict_index_100m.csv": "06ba136b7aac992d8f9141861753c2c65ff3e99def8c85fdb5777f34bb6b07b6",
+    "outputs/reports/planning_conflict_intervention/18c_development_conflict_index_qa.json": "87d610ce99471dd5ad6ba5b0b21b128182c2e8fe7fdf31f4a25965f74296012f"
+  },
+  "output": {
+    "csv": "data/processed/planning_conflict_intervention/conflict_typology/18d_planning_conflict_typology_100m.csv",
+    "sha256": "3c629152622cd0b1be94eff06b42104e3bb05ab920513437c458122cf6596b33"
+  }
+}

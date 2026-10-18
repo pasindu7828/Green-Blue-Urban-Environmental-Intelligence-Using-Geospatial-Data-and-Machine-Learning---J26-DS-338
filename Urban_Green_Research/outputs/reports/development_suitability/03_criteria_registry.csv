@@ -1,0 +1,7 @@
+id,criterion,source,raw_measure,role,direction,decision
+C1,Higher-order road accessibility,OSM roads 2026,Distance to selected higher-order roads (m),CANDIDATE_WEIGHTED,COST_PROVISIONAL,Confirm accessibility scoring in Stage 3.5
+C2,Local road-network context,OSM roads 2026,"Road density at 250, 500 and 1000 m",CANDIDATE_WEIGHTED,BENEFIT_PROVISIONAL,Select one radius in Stage 3.4
+C3,Existing development context,OSM building footprints 2026,Cell occupation and surrounding building footprint context at 250 and 500 m,CANDIDATE_WEIGHTED,REVIEW_REQUIRED,Avoid double counting and rewarding already saturated cells
+C4,Terrain slope,GEDTM30,Slope in degrees,CANDIDATE_WEIGHTED,COST_PROVISIONAL,Justify scoring thresholds in Stage 3.5
+C5,Elevation,GEDTM30,Elevation above vertical datum (m),CANDIDATE_REVIEW,UNDECIDED,Retain only with defensible planning meaning and direction
+C6,Land-cover screening,ESA WorldCover 2021,Reference land-cover class,REFERENCE_ONLY,NOT_APPLICABLE,Not a weighted criterion without separate justification

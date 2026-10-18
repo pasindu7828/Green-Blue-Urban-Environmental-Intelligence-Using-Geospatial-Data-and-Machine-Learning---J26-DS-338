@@ -1,0 +1,113 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18f_explainable_planning_interventions",
+  "status": "PASS_EXPLAINABLE_PLANNING_REVIEW_RULES_PRIORITIZATION_PENDING",
+  "grid_cells": 9240,
+  "pressure_domain_cells": 4620,
+  "conservation_common_domain_cells": 4609,
+  "out_of_domain_cells": 4620,
+  "missing_conservation_cells_inside_pressure_domain": 11,
+  "frozen_pressure_flagged_cells": 255,
+  "review_rule_counts": {
+    "R00_OUTSIDE_PRESSURE_DOMAIN": 4620,
+    "R01_CONSERVATION_EVIDENCE_GAP": 11,
+    "R02_JOINT_CONCERN": 7,
+    "R03_CONSERVATION_SAFEGUARD": 236,
+    "R04_SUITABILITY_CONSTRAINT": 0,
+    "R05_MANAGED_GROWTH_FEASIBILITY": 1,
+    "R06_FLAGGED_GENERAL_REVIEW": 4,
+    "R07_CONSERVATION_CONTEXT": 910,
+    "R08_SUITABILITY_CONTEXT": 1032,
+    "R09_GENERAL_MONITORING": 2419
+  },
+  "rulebook": {
+    "R00_OUTSIDE_PRESSURE_DOMAIN": {
+      "review_stream": "INSUFFICIENT_PRESSURE_EVIDENCE",
+      "action": "Do not infer development conflict from this model. Obtain appropriate site-specific evidence before a planning decision.",
+      "reason": "Future urbanization pressure and DCI are unavailable outside the trained model domain."
+    },
+    "R01_CONSERVATION_EVIDENCE_GAP": {
+      "review_stream": "INCOMPLETE_CONSERVATION_EVIDENCE",
+      "action": "Review the missing conservation evidence. Use available pressure and suitability separately without assuming low conservation concern.",
+      "reason": "DCI exists, but frozen Conservation Priority is unavailable for this grid."
+    },
+    "R02_JOINT_CONCERN": {
+      "review_stream": "JOINT_PLANNING_AND_CONSERVATION_REVIEW",
+      "action": "Review development feasibility and green-conservation safeguards together. Check official zoning, site constraints, drainage and field conditions.",
+      "reason": "Frozen pressure flag, lower relative suitability quartile, and upper relative Conservation Priority quartile coincide."
+    },
+    "R03_CONSERVATION_SAFEGUARD": {
+      "review_stream": "CONSERVATION_SAFEGUARD_REVIEW",
+      "action": "Review mapped green assets, conservation evidence and applicable development controls before considering land-use changes.",
+      "reason": "Pressure is flagged and frozen Conservation Priority is in its upper relative quartile."
+    },
+    "R04_SUITABILITY_CONSTRAINT": {
+      "review_stream": "DEVELOPMENT_SUITABILITY_REVIEW",
+      "action": "Review the road-access, local road-density and terrain-slope limitations, alongside official zoning and other site constraints.",
+      "reason": "Pressure is flagged while expert-AHP suitability is in its lower relative quartile."
+    },
+    "R05_MANAGED_GROWTH_FEASIBILITY": {
+      "review_stream": "POTENTIAL_MANAGED_GROWTH_FEASIBILITY_REVIEW",
+      "action": "Consider a site feasibility assessment. Verify zoning, flood hazard, drainage, utilities, access and environmental restrictions before any development decision.",
+      "reason": "Flagged pressure, upper relative suitability quartile and Conservation Priority outside its upper relative quartile."
+    },
+    "R06_FLAGGED_GENERAL_REVIEW": {
+      "review_stream": "GENERAL_PLANNING_FEASIBILITY_REVIEW",
+      "action": "Review the pressure signal and local development constraints. Further assessment is required before interpreting suitability.",
+      "reason": "Pressure is flagged, but the stricter combined review rules are not triggered."
+    },
+    "R07_CONSERVATION_CONTEXT": {
+      "review_stream": "CONSERVATION_CONTEXT_MONITORING",
+      "action": "Retain conservation evidence for local planning review and monitor future changes. Do not infer an immediate development threat.",
+      "reason": "Conservation Priority is in its upper relative quartile, but pressure is below the frozen operating threshold."
+    },
+    "R08_SUITABILITY_CONTEXT": {
+      "review_stream": "SUITABILITY_CONTEXT_MONITORING",
+      "action": "Retain road-access and slope constraints for future planning assessment. No immediate pressure-triggered intervention is inferred.",
+      "reason": "Suitability falls in the lower relative quartile, while pressure is not flagged."
+    },
+    "R09_GENERAL_MONITORING": {
+      "review_stream": "GENERAL_EVIDENCE_MONITORING",
+      "action": "Retain the mapped evidence for planning review and future monitoring. No additional intervention is inferred from these rules.",
+      "reason": "The grid does not meet the specified exploratory review combinations."
+    }
+  },
+  "screening_basis": [
+    "Frozen pressure threshold 0.715",
+    "Relative suitability lower/upper quartiles",
+    "Frozen CP upper relative quartile",
+    "Strict preservation of model-domain missingness"
+  ],
+  "frozen_cp_contains_pressure_information": true,
+  "dci_and_cci_combined_into_new_risk_score": false,
+  "historical_conversion_used_for_rule_routing": false,
+  "historical_binary_detection_discriminative": false,
+  "historical_context_role": "EXPLANATION_AND_SITE_VERIFICATION_ONLY",
+  "official_planning_decisions_issued": false,
+  "intervention_priority_ranks_issued": false,
+  "expert_ahp_weights_modified": false,
+  "sections02_03_04_modified": false,
+  "limitations": [
+    "All intervention outputs are recommendations for further planning review, not approvals or mandatory restrictions.",
+    "Exploratory quartile boundaries are not official policy thresholds.",
+    "Conservation Priority contains urbanization pressure information and is therefore not an independent pressure predictor.",
+    "Future pressure is a model-derived relative score, not a calibrated probability.",
+    "Historical conversion occurs around almost all cells at 500m and is not useful as a simple binary prioritization signal.",
+    "No official zoning, drainage, flood hazard or legal compliance determination is made.",
+    "Any subsequent prioritization must keep DCI and CCI conceptually separate and must test sensitivity to screening cutoffs."
+  ],
+  "input_sha256": {
+    "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.csv": "019471a83b102ae1df7eec58bc2f5cee65d34c10e0a533e7d4b6fb8c416218f3",
+    "data/processed/planning_conflict_intervention/development_conflict/18c_development_conflict_index_100m.csv": "06ba136b7aac992d8f9141861753c2c65ff3e99def8c85fdb5777f34bb6b07b6",
+    "data/processed/planning_conflict_intervention/conflict_typology/18d_planning_conflict_typology_100m.csv": "3c629152622cd0b1be94eff06b42104e3bb05ab920513437c458122cf6596b33",
+    "data/processed/planning_conflict_intervention/historical_vigilance/18e_historical_green_loss_vigilance_100m.csv": "062789b491e7862d31265418f2512beafdb51711584d5e3734ca5eb42cce5767",
+    "outputs/reports/planning_conflict_intervention/18b_common_grid_integration_qa.json": "e7124e0a1f599d240345551376384a93a7e24094df45dddae2fb5e4f2df4dcdd",
+    "outputs/reports/planning_conflict_intervention/18c_development_conflict_index_qa.json": "87d610ce99471dd5ad6ba5b0b21b128182c2e8fe7fdf31f4a25965f74296012f",
+    "outputs/reports/planning_conflict_intervention/18d_planning_conflict_typology_qa.json": "0fda272d89f16375a5149f679083a7a60c5733300d2ec78030ed56d762cf890e",
+    "outputs/reports/planning_conflict_intervention/18e_historical_green_loss_vigilance_qa.json": "c6ff81b3f911c0f975737098137d1e9ee0d5762058cd1d3c03500ba1cab18aad"
+  },
+  "output": {
+    "csv": "data/processed/planning_conflict_intervention/planning_intervention_rules/18f_explainable_planning_interventions_100m.csv",
+    "sha256": "cad9ab9885b50ddc5d576dad8b9ed5c0047d153c0463917118abd3c5b6b1dada"
+  }
+}
