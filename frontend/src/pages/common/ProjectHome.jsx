@@ -23,15 +23,19 @@ const components = [
     meta: 'Heat map · Forecast · Explainable AI',
     enabled: true,
   },
+
   {
     number: 'Component 3',
     icon: Droplets,
     title: 'Wetland Intelligence',
-    description: 'Frontend implementation will be integrated by the responsible team member.',
+    description:
+      'Historical wetland change, candidate wetland screening, exploratory future scenarios and seasonal waterlogging susceptibility in Kaduwela.',
     accent: '#0E7C7B',
-    meta: 'Member integration pending',
-    enabled: false,
+    route: '/wetlands/dashboard',
+    meta: 'Wetland Change · Future Scenarios · Waterlogging',
+    enabled: true,
   },
+
   {
     number: 'Component 4',
     icon: Activity,

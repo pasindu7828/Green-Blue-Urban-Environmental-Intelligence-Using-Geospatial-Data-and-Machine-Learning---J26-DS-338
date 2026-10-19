@@ -35,6 +35,13 @@ WETLAND_PART1_PROCESSED_DIR = (
     / "part1_historical_change"
 )
 
+# Part 1 - Historical observation polygons
+# Contains 448 cleaned historical observation records.
+WETLAND_PART1_HISTORICAL_OBSERVATIONS_FILE = (
+    WETLAND_PART1_PROCESSED_DIR
+    / "historical_wetland_clean_observations_wgs84.geojson"
+)
+
 WETLAND_PART1_TABLES_DIR = (
     WETLAND_ROOT
     / "outputs"
