@@ -17,6 +17,18 @@ import Dataset from './pages/urbanHeat/Dataset'
 import Settings from './pages/urbanHeat/Settings'
 import HeatMethodology from './pages/urbanHeat/Methodology'
 
+import UrbanGreenLayout from './features/urbanGreen/components/UrbanGreenLayout'
+import GreenDashboard from './pages/urbanGreen/Dashboard'
+import GreenGreenCover from './pages/urbanGreen/GreenCover'
+import GreenTransitions from './pages/urbanGreen/Transitions'
+import GreenUrbanizationPressure from './pages/urbanGreen/UrbanizationPressure'
+import GreenExplainableAI from './pages/urbanGreen/ExplainableAI'
+import GreenDevelopmentSuitability from './pages/urbanGreen/DevelopmentSuitability'
+import GreenConservationIntelligence from './pages/urbanGreen/ConservationIntelligence'
+import GreenPlanningConflict from './pages/urbanGreen/PlanningConflict'
+import GreenGnHotspotExplorer from './pages/urbanGreen/GnHotspotExplorer'
+import GreenMethodology from './pages/urbanGreen/Methodology'
+
 function Guard({ children }) {
   const location = useLocation()
   const authed = localStorage.getItem('gbuei_auth') === '1'
@@ -43,6 +55,20 @@ export default function App() {
       <Route path="dataset" element={<Dataset/>}/>
       <Route path="methodology" element={<HeatMethodology/>}/>
       <Route path="settings" element={<Settings/>}/>
+    </Route>
+
+    <Route path="/green" element={<Guard><UrbanGreenLayout/></Guard>}>
+      <Route index element={<Navigate to="dashboard" replace/>}/>
+      <Route path="dashboard" element={<GreenDashboard/>}/>
+      <Route path="green-cover" element={<GreenGreenCover/>}/>
+      <Route path="transitions" element={<GreenTransitions/>}/>
+      <Route path="pressure" element={<GreenUrbanizationPressure/>}/>
+      <Route path="xai" element={<GreenExplainableAI/>}/>
+      <Route path="suitability" element={<GreenDevelopmentSuitability/>}/>
+      <Route path="conservation" element={<GreenConservationIntelligence/>}/>
+      <Route path="planning-conflict" element={<GreenPlanningConflict/>}/>
+      <Route path="gn-hotspots" element={<GreenGnHotspotExplorer/>}/>
+      <Route path="methodology" element={<GreenMethodology/>}/>
     </Route>
 
     <Route path="*" element={<Navigate to="/project-home" replace/>}/>

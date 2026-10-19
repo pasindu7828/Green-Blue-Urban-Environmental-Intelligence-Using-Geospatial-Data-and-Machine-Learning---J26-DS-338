@@ -14,6 +14,11 @@ from backend.routes.urban_heat_dynamic_forecast_routes import (
     router as urban_heat_dynamic_forecast_router,
 )
 
+from backend.routes.urban_green_routes import (
+    router as urban_green_router,
+)
+
+
 # ============================================================
 # CREATE FASTAPI APPLICATION
 # ============================================================
@@ -67,3 +72,4 @@ app.include_router(urban_heat_router)
 app.include_router(urban_heat_scenario_router)
 app.include_router(urban_heat_dynamic_forecast_router)
 app.include_router(wetland_router)
+app.include_router(urban_green_router)
