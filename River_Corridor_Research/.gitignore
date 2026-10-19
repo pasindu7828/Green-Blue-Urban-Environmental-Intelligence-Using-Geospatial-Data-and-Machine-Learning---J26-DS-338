@@ -1,0 +1,22 @@
+
+# River Corridor Research - Git Ignore
+
+# Original satellite and GIS datasets
+data/raw/
+
+# Generated intermediate datasets
+data/processed/
+data/model_ready/
+
+# Large trained model artifacts
+models/
+
+# Python environment and cache
+.venv/
+__pycache__/
+*.pyc
+
+# Large raster and archive files
+*.tif
+*.tiff
+*.zip
