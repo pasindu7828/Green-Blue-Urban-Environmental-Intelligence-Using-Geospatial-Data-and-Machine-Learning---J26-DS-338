@@ -262,3 +262,70 @@ HISTORICAL_END_YEAR = 2025
 
 FORECAST_START_YEAR = 2026
 FORECAST_END_YEAR = 2030
+
+
+
+# ============================================================
+# URBAN GREEN RESEARCH COMPONENT
+# ============================================================
+
+URBAN_GREEN_ROOT = PROJECT_ROOT / "Urban_Green_Research"
+
+
+# ============================================================
+# URBAN GREEN - FINAL PLANNING INTELLIGENCE EXPORTS
+# ============================================================
+
+URBAN_GREEN_DASHBOARD_DIR = (
+    URBAN_GREEN_ROOT
+    / "outputs"
+    / "dashboard"
+    / "planning_conflict_intervention"
+)
+
+URBAN_GREEN_MANIFEST_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "manifest.json"
+)
+
+URBAN_GREEN_METADATA_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "metadata.json"
+)
+
+
+# ============================================================
+# GRID-LEVEL DATA
+# ============================================================
+
+URBAN_GREEN_GRID_RECORDS_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "grid_records.csv"
+)
+
+URBAN_GREEN_GRID_MAP_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "grid_map.geojson"
+)
+
+
+# ============================================================
+# GN DIVISION DATA
+# ============================================================
+
+URBAN_GREEN_GN_SUMMARY_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "gn_summary.csv"
+)
+
+URBAN_GREEN_GN_MAP_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "gn_map.geojson"
+)
+
+
+# ============================================================
+# EXPLORATORY SPATIAL GROUPS
+# ============================================================
+
+URBAN_GREEN_HOTSPOT_GROUPS_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "hotspot_groups.csv"
+)
+
+URBAN_GREEN_HOTSPOT_MAP_FILE = (
+    URBAN_GREEN_DASHBOARD_DIR / "hotspot_map.geojson"
+)

@@ -1,0 +1,55 @@
+{
+  "status": "PASS_STEP_13G_02_GIS_OVERVIEW",
+  "generated_utc": "2026-10-19T03:03:14.357440+00:00",
+  "source_geojson": "D:\\Research Project - Urbanization\\Urban_Green_Research\\outputs\\dashboard\\planning_conflict_intervention\\grid_map.geojson",
+  "source_geojson_sha256": "211ed78219691e69c627ae24ed1e98083cd7fbdd4fe95a22951e6923573752ac",
+  "research_area_source": "D:\\Research Project - Urbanization\\Urban_Green_Research\\data\\processed\\planning_conflict_intervention\\final_gis\\18j_planning_conflict_final.gpkg",
+  "research_area_layer": "planning_grid_100m",
+  "crs_for_area_validation": "EPSG:32644",
+  "output_crs": "EPSG:4326",
+  "research_resolution_m": 100,
+  "display_resolution_m": 200,
+  "display_only_not_model_predictions": true,
+  "source_cell_count": 9240,
+  "overview_group_count": 2410,
+  "group_sizes": {
+    "1": 60,
+    "2": 88,
+    "3": 44,
+    "4": 2218
+  },
+  "source_area_km2": 88.829215811,
+  "projected_geometry_area_km2": 88.829215811,
+  "footprint_symmetric_difference_m2": 0.0,
+  "cross_group_overlap_m2": 0.0,
+  "source_scored_cells": {
+    "suitability": 9240,
+    "pressure": 4620,
+    "conservation": 4609,
+    "conflict": 4620
+  },
+  "overview_group_coverage": {
+    "pressure": {
+      "COMPLETE": 551,
+      "PARTIAL": 1196,
+      "NONE": 663
+    },
+    "suitability": {
+      "COMPLETE": 2410,
+      "PARTIAL": 0,
+      "NONE": 0
+    },
+    "conservation": {
+      "COMPLETE": 551,
+      "PARTIAL": 1190,
+      "NONE": 669
+    },
+    "conflict": {
+      "COMPLETE": 551,
+      "PARTIAL": 1196,
+      "NONE": 663
+    }
+  },
+  "aggregation": "Mean of available original 100 m cell scores, weighted by original KMC-overlap area; no missing-value substitution",
+  "geometry": "Dissolve existing original 100 m polygons grouped by 2x2 row/column indices; no bounding rectangle expansion"
+}
