@@ -17,6 +17,9 @@ import Dataset from './pages/urbanHeat/Dataset'
 import Settings from './pages/urbanHeat/Settings'
 import HeatMethodology from './pages/urbanHeat/Methodology'
 
+import RiverCorridorDashboard from './pages/riverCorridor/Dashboard'
+
+
 function Guard({ children }) {
   const location = useLocation()
   const authed = localStorage.getItem('gbuei_auth') === '1'
@@ -44,6 +47,16 @@ export default function App() {
       <Route path="methodology" element={<HeatMethodology/>}/>
       <Route path="settings" element={<Settings/>}/>
     </Route>
+    <Route
+      path="/river-corridor"
+      element={
+        <Guard>
+          <RiverCorridorDashboard />
+        </Guard>
+      }
+    />
+
+
 
     <Route path="*" element={<Navigate to="/project-home" replace/>}/>
   </Routes><Toast/></>
