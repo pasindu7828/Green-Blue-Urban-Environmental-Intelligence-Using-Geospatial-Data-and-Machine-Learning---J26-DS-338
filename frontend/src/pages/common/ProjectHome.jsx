@@ -35,11 +35,13 @@ const components = [
     number: 'Component 4',
     icon: Activity,
     title: 'Kelani River Corridor Intelligence',
-    description: 'Frontend implementation will be integrated by the responsible team member.',
+    description: 'Satellite-based river morphology analysis, riparian vegetation monitoring, urban development pressure, ML forecasting and preliminary planning priority assessment.',
     accent: '#2B6CB0',
-    meta: 'Member integration pending',
-    enabled: false,
+    route: '/river-corridor',
+    meta: 'Morphology | Vegetation | Forecasting | RCPI',
+    enabled: true,
   },
+
 ]
 
 export default function ProjectHome() {
@@ -71,7 +73,7 @@ export default function ProjectHome() {
         <div className="max-w-4xl">
           <div className="eyebrow">Integrated Group Capstone</div>
           <h1 className="mt-2 text-[38px] font-bold leading-[1.05] tracking-[-.045em] text-slate-950 md:text-[52px]">Urban Green-Blue Infrastructure — Kaduwela</h1>
-          <p className="mt-4 text-[15px] leading-7 text-slate-600">The shared project shell is ready for all four research components. Urban Heat is currently integrated; the other three component frontends are intentionally left for their responsible members to add.</p>
+          <p className="mt-4 text-[15px] leading-7 text-slate-600">The shared project shell is ready for all four research components. Urban Heat and Kelani River Corridor Intelligence are now integrated, while Urbanization and Wetland frontend integrations are pending.</p>
           <div className="mt-5 flex flex-wrap gap-2 text-[11px]"><span className="pill">Kaduwela pilot context</span><span className="pill">4 research components</span><span className="pill">Shared React frontend</span><span className="pill">Urban Heat API connected</span></div>
         </div>
       </section>
@@ -109,8 +111,9 @@ export default function ProjectHome() {
         <div className="card-pad"><Thermometer size={20} className="text-orange-600"/><h3 className="mt-3 text-sm font-bold">Urban Heat integrated</h3><p className="mt-2 text-[11px] leading-5 text-slate-500">Urban Heat is connected to the supplied FastAPI and finalized research dashboard outputs.</p></div>
         <div className="card-pad"><Leaf size={20} className="text-teal-600"/><h3 className="mt-3 text-sm font-bold">Independent member ownership</h3><p className="mt-2 text-[11px] leading-5 text-slate-500">The remaining members can add their own pages and services without inheriting placeholder analytical implementations.</p></div>
       </section>
-
-      <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-[11px] leading-5 text-amber-800"><b>Integration status:</b> Urbanization, Wetland and River Corridor prototype pages were intentionally removed. Their cards are disabled until the responsible members integrate their own frontend implementations.</div>
+<div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-[11px] leading-5 text-amber-800">
+  <b>Integration status:</b> Urban Heat and Kelani River Corridor dashboards are connected. Urbanization and Wetland integrations remain pending.
+</div>
     </main>
   </div>
 }
