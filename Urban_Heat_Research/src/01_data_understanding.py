@@ -12,6 +12,7 @@ IMPORTANT:
 - It only reads the data, checks its structure, and saves audit reports.
 """
 
+import utils.session
 from pathlib import Path
 import sys
 
