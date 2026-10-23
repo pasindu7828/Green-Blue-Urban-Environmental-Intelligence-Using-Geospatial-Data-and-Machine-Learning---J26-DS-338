@@ -6,11 +6,12 @@ const components = [
   {
     number: 'Component 1',
     icon: Leaf,
-    title: 'Urbanization Intelligence',
-    description: 'Frontend implementation will be integrated by the responsible team member.',
+    title: 'Urban Green Intelligence',
+    description: 'Historical green cover, urbanization pressure, expert-AHP suitability, conservation and planning intelligence.',
     accent: '#2F9E5B',
-    meta: 'Member integration pending',
-    enabled: false,
+    meta: 'Urban Green frontend integration underway',
+    route: '/green/dashboard',
+    enabled: true,
   },
   {
     number: 'Component 2',
@@ -75,7 +76,7 @@ export default function ProjectHome() {
         <div className="max-w-4xl">
           <div className="eyebrow">Integrated Group Capstone</div>
           <h1 className="mt-2 text-[38px] font-bold leading-[1.05] tracking-[-.045em] text-slate-950 md:text-[52px]">Urban Green-Blue Infrastructure — Kaduwela</h1>
-          <p className="mt-4 text-[15px] leading-7 text-slate-600">The shared project shell is ready for all four research components. Urban Heat is currently integrated; the other three component frontends are intentionally left for their responsible members to add.</p>
+          <p className="mt-4 text-[15px] leading-7 text-slate-600">The shared project shell supports independently developed research components. Urban Heat remains integrated, and Urban Green navigation is now available while its real-data views are being connected.</p>
           <div className="mt-5 flex flex-wrap gap-2 text-[11px]"><span className="pill">Kaduwela pilot context</span><span className="pill">4 research components</span><span className="pill">Shared React frontend</span><span className="pill">Urban Heat API connected</span></div>
         </div>
       </section>
@@ -111,10 +112,10 @@ export default function ProjectHome() {
       <section className="mt-6 grid gap-5 md:grid-cols-3">
         <div className="card-pad"><ShieldCheck size={20} className="text-emerald-600"/><h3 className="mt-3 text-sm font-bold">Shared project shell</h3><p className="mt-2 text-[11px] leading-5 text-slate-500">Login, project home, common UI and styling remain available for the whole team.</p></div>
         <div className="card-pad"><Thermometer size={20} className="text-orange-600"/><h3 className="mt-3 text-sm font-bold">Urban Heat integrated</h3><p className="mt-2 text-[11px] leading-5 text-slate-500">Urban Heat is connected to the supplied FastAPI and finalized research dashboard outputs.</p></div>
-        <div className="card-pad"><Leaf size={20} className="text-teal-600"/><h3 className="mt-3 text-sm font-bold">Independent member ownership</h3><p className="mt-2 text-[11px] leading-5 text-slate-500">The remaining members can add their own pages and services without inheriting placeholder analytical implementations.</p></div>
+        <div className="card-pad"><Leaf size={20} className="text-teal-600"/><h3 className="mt-3 text-sm font-bold">Independent member ownership</h3><p className="mt-2 text-[11px] leading-5 text-slate-500">Wetland and River Corridor members can add their own pages and services without inheriting placeholder analytical implementations.</p></div>
       </section>
 
-      <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-[11px] leading-5 text-amber-800"><b>Integration status:</b> Urbanization, Wetland and River Corridor prototype pages were intentionally removed. Their cards are disabled until the responsible members integrate their own frontend implementations.</div>
+      <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-[11px] leading-5 text-amber-800"><b>Integration status:</b> Urban Green pages are currently being connected to the research backend. Wetland and River Corridor frontend integrations remain with their responsible members.</div>
     </main>
   </div>
 }

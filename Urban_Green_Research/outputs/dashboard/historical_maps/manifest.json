@@ -1,0 +1,2662 @@
+{
+  "project": "J26-DS-338",
+  "component": "Urban Green Research",
+  "dataset": "Historical LULC and Green Transition",
+  "overlay_count": 38,
+  "annual_overlay_count": 34,
+  "transition_overlay_count": 2,
+  "confidence_overlay_count": 2,
+  "primary_core_trend": "2011-2024",
+  "primary_transition": "ROBUST_2_OF_3",
+  "conservative_transition": "STRICT_3_OF_3",
+  "transition_early_window": "2012-2014",
+  "transition_late_window": "2021-2023",
+  "statistical_confidence_interval": false,
+  "note": "Visualization overlays only. Use the original validated CSV reports for area statistics and research conclusions.",
+  "maps": [
+    {
+      "id": "RAW_RF_2010",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2010.tif",
+      "image": "annual/raw_rf/2010.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2010,
+      "product_type": "RAW_RF",
+      "period_status": "CONTEXT_RAW_EDGE_YEAR",
+      "included_in_core_trend": false,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2011",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2011.tif",
+      "image": "annual/raw_rf/2011.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2011,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2012",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2012.tif",
+      "image": "annual/raw_rf/2012.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2012,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2013",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2013.tif",
+      "image": "annual/raw_rf/2013.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2013,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2014",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2014.tif",
+      "image": "annual/raw_rf/2014.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2014,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2015",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2015.tif",
+      "image": "annual/raw_rf/2015.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2015,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2016",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2016.tif",
+      "image": "annual/raw_rf/2016.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2016,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2017",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2017.tif",
+      "image": "annual/raw_rf/2017.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2017,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2018",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2018.tif",
+      "image": "annual/raw_rf/2018.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2018,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2019",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2019.tif",
+      "image": "annual/raw_rf/2019.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2019,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2020",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2020.tif",
+      "image": "annual/raw_rf/2020.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2020,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2021",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2021.tif",
+      "image": "annual/raw_rf/2021.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2021,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2022",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2022.tif",
+      "image": "annual/raw_rf/2022.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2022,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2023",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2023.tif",
+      "image": "annual/raw_rf/2023.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2023,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2024",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2024.tif",
+      "image": "annual/raw_rf/2024.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2024,
+      "product_type": "RAW_RF",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2025",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2025.tif",
+      "image": "annual/raw_rf/2025.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2025,
+      "product_type": "RAW_RF",
+      "period_status": "CONTEXT_RAW_EDGE_YEAR",
+      "included_in_core_trend": false,
+      "provisional_year": false
+    },
+    {
+      "id": "RAW_RF_2026",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2026.tif",
+      "image": "annual/raw_rf/2026.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2026,
+      "product_type": "RAW_RF",
+      "period_status": "PROVISIONAL_PARTIAL_YEAR",
+      "included_in_core_trend": false,
+      "provisional_year": true
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2010",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2010.tif",
+      "image": "annual/stabilized_analytical/2010.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2010,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CONTEXT_RAW_EDGE_YEAR",
+      "included_in_core_trend": false,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2011",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2011.tif",
+      "image": "annual/stabilized_analytical/2011.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2011,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2012",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2012.tif",
+      "image": "annual/stabilized_analytical/2012.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2012,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2013",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2013.tif",
+      "image": "annual/stabilized_analytical/2013.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2013,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2014",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2014.tif",
+      "image": "annual/stabilized_analytical/2014.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2014,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2015",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2015.tif",
+      "image": "annual/stabilized_analytical/2015.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2015,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2016",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2016.tif",
+      "image": "annual/stabilized_analytical/2016.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2016,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2017",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2017.tif",
+      "image": "annual/stabilized_analytical/2017.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2017,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2018",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2018.tif",
+      "image": "annual/stabilized_analytical/2018.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2018,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2019",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2019.tif",
+      "image": "annual/stabilized_analytical/2019.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2019,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2020",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2020.tif",
+      "image": "annual/stabilized_analytical/2020.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2020,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2021",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2021.tif",
+      "image": "annual/stabilized_analytical/2021.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2021,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2022",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2022.tif",
+      "image": "annual/stabilized_analytical/2022.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2022,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2023",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2023.tif",
+      "image": "annual/stabilized_analytical/2023.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2023,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2024",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2024.tif",
+      "image": "annual/stabilized_analytical/2024.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2024,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CORE_STABILIZED_RETROSPECTIVE",
+      "included_in_core_trend": true,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2025",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2025.tif",
+      "image": "annual/stabilized_analytical/2025.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2025,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "CONTEXT_RAW_EDGE_YEAR",
+      "included_in_core_trend": false,
+      "provisional_year": false
+    },
+    {
+      "id": "STABILIZED_ANALYTICAL_2026",
+      "kind": "annual_lulc",
+      "source_file": "data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2026.tif",
+      "image": "annual/stabilized_analytical/2026.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green / Vegetation",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Built-up",
+          "rgba": [
+            214,
+            91,
+            82,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Open / Bare",
+          "rgba": [
+            217,
+            163,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Water",
+          "rgba": [
+            52,
+            127,
+            194,
+            255
+          ]
+        }
+      ],
+      "year": 2026,
+      "product_type": "STABILIZED_ANALYTICAL",
+      "period_status": "PROVISIONAL_PARTIAL_YEAR",
+      "included_in_core_trend": false,
+      "provisional_year": true
+    },
+    {
+      "id": "GREEN_TRANSITION_ROBUST",
+      "kind": "green_transition",
+      "source_file": "data/processed/lulc/transitions/Kaduwela_Green_Transition_2012_2014_to_2021_2023_ROBUST.tif",
+      "image": "transitions/robust.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green retained",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Green -> Built-up",
+          "rgba": [
+            214,
+            49,
+            49,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Green -> Open / Bare",
+          "rgba": [
+            245,
+            152,
+            58,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Green -> Water",
+          "rgba": [
+            56,
+            166,
+            180,
+            255
+          ]
+        },
+        {
+          "code": 5,
+          "label": "Built-up -> Green",
+          "rgba": [
+            135,
+            200,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 6,
+          "label": "Open / Bare -> Green",
+          "rgba": [
+            185,
+            196,
+            80,
+            255
+          ]
+        },
+        {
+          "code": 7,
+          "label": "Water -> Green",
+          "rgba": [
+            79,
+            182,
+            155,
+            255
+          ]
+        },
+        {
+          "code": 8,
+          "label": "Other non-green transition / retention",
+          "rgba": [
+            145,
+            150,
+            155,
+            110
+          ]
+        }
+      ],
+      "consensus_method": "ROBUST_2_OF_3"
+    },
+    {
+      "id": "GREEN_TRANSITION_STRICT",
+      "kind": "green_transition",
+      "source_file": "data/processed/lulc/transitions/Kaduwela_Green_Transition_2012_2014_to_2021_2023_STRICT.tif",
+      "image": "transitions/strict.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "Green retained",
+          "rgba": [
+            35,
+            139,
+            69,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "Green -> Built-up",
+          "rgba": [
+            214,
+            49,
+            49,
+            255
+          ]
+        },
+        {
+          "code": 3,
+          "label": "Green -> Open / Bare",
+          "rgba": [
+            245,
+            152,
+            58,
+            255
+          ]
+        },
+        {
+          "code": 4,
+          "label": "Green -> Water",
+          "rgba": [
+            56,
+            166,
+            180,
+            255
+          ]
+        },
+        {
+          "code": 5,
+          "label": "Built-up -> Green",
+          "rgba": [
+            135,
+            200,
+            93,
+            255
+          ]
+        },
+        {
+          "code": 6,
+          "label": "Open / Bare -> Green",
+          "rgba": [
+            185,
+            196,
+            80,
+            255
+          ]
+        },
+        {
+          "code": 7,
+          "label": "Water -> Green",
+          "rgba": [
+            79,
+            182,
+            155,
+            255
+          ]
+        },
+        {
+          "code": 8,
+          "label": "Other non-green transition / retention",
+          "rgba": [
+            145,
+            150,
+            155,
+            110
+          ]
+        }
+      ],
+      "consensus_method": "STRICT_3_OF_3"
+    },
+    {
+      "id": "GREEN_TO_BUILT_CONFIDENCE",
+      "kind": "transition_confidence",
+      "source_file": "data/processed/lulc/transitions/Kaduwela_GreenToBuilt_Confidence_2012_2014_to_2021_2023.tif",
+      "image": "confidence/green_to_built.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "ROBUST-only green-to-built",
+          "rgba": [
+            237,
+            155,
+            54,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "STRICT-confirmed green-to-built",
+          "rgba": [
+            43,
+            130,
+            191,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TRANSITION_CONFIDENCE",
+      "kind": "transition_confidence",
+      "source_file": "data/processed/lulc/transitions/Kaduwela_Transition_Confidence_2012_2014_to_2021_2023.tif",
+      "image": "confidence/all_transitions.png",
+      "crs": "EPSG:4326",
+      "bounds": [
+        [
+          6.8574503215857066,
+          79.90106037360182
+        ],
+        [
+          6.947033824839494,
+          80.045208374292
+        ]
+      ],
+      "width": 531,
+      "height": 330,
+      "resampling": "nearest",
+      "nodata_code": 0,
+      "nodata_transparent": true,
+      "legend": [
+        {
+          "code": 1,
+          "label": "ROBUST-only resolved transition",
+          "rgba": [
+            237,
+            155,
+            54,
+            255
+          ]
+        },
+        {
+          "code": 2,
+          "label": "STRICT-confirmed transition",
+          "rgba": [
+            43,
+            130,
+            191,
+            255
+          ]
+        }
+      ]
+    }
+  ]
+}
