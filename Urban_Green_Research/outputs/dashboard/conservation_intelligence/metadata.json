@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "research_component": "Conservation Intelligence",
+  "release_status": "PASS_FINAL_GIS_PACKAGE_WITH_DOCUMENTED_LIMITATIONS",
+  "methodology": {
+    "green_importance": "Frozen Stage 4.11 GI: CRITIC-weighted G1 current green, G2 persistence, G3 250m green context",
+    "primary_priority_formula": "CP_i = GI_i * UP_i",
+    "future_pressure_period": "2026-2028, forecast origin 2025",
+    "pressure_interpretation": "Model-derived relative score, NOT a calibrated probability",
+    "historical_loss_role": "Supporting diagnostics only; not a primary CP or direct frozen GI term",
+    "priority_classification": "No HIGH/MEDIUM/LOW categories selected",
+    "pressure_locked_threshold": 0.715,
+    "threshold_flag_is_not_priority_class": true
+  },
+  "grid_count": 9240,
+  "green_importance_scored_count": 8727,
+  "primary_priority_scored_count": 4609,
+  "primary_priority_unscored_count": 4631,
+  "status_counts": {
+    "FUTURE_CONSERVATION_PRIORITY_CALCULATED": 4609,
+    "NOT_IN_PRESSURE_DOMAIN": 4118,
+    "GI_UNSCORED_PRESSURE_AVAILABLE": 11,
+    "GI_UNSCORED_AND_PRESSURE_NOT_IN_DOMAIN": 502
+  },
+  "score_field": "primary_conservation_priority_0_1",
+  "importance_field": "green_importance_index_0_1",
+  "score_range": [
+    0,
+    1
+  ],
+  "final_priority_classes_assigned": false,
+  "distribution": {
+    "count": 4609,
+    "min": 0.0002049033700227,
+    "p25": 0.0116093721821523,
+    "median": 0.0650110755372031,
+    "p75": 0.2640753839511244,
+    "p95": 0.5801272465823979,
+    "max": 0.8667282542066791
+  },
+  "sensitivity": {
+    "scenarios_including_primary": 13,
+    "top10_diagnostic_cell_count": 461,
+    "lowest_alternative_top10_retention_pct": 93.27548806941432,
+    "lowest_alternative_spearman": 0.8040082982441432,
+    "largest_alternative_p95_rank_shift": 1842.199999999999,
+    "priority_stability_is_not_field_validation": true
+  },
+  "source_stage": "17O",
+  "source_gis": "data/processed/conservation_intelligence/final_gis/17o_conservation_intelligence_final.gpkg",
+  "source_gis_layer": "primary_conservation_priority",
+  "crs": "EPSG:4326",
+  "source_crs": "EPSG:32644",
+  "geojson_file": "conservation_map.geojson",
+  "join_field": "grid_id",
+  "interpretation": "Relative conservation priority for the 4609 cells with both Green Importance and model-derived future pressure. Not a calibrated probability or field-validated ecological risk assessment.",
+  "bounds_west_south_east_north": [
+    79.9011979168993,
+    6.857762473450249,
+    80.045022571141,
+    6.946965905437741
+  ]
+}
