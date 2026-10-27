@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "prepare:boundary": "node scripts/prepare-boundary.mjs",
-    "dev": "node api.js && npm run prepare:boundary && vite",
-    "build": "node api.js && npm run prepare:boundary && vite build",
+    "dev": "npm run prepare:boundary && vite",
+    "build": "npm run prepare:boundary && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
