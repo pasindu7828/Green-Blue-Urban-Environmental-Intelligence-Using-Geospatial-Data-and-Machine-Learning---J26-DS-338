@@ -10,6 +10,7 @@ export function UrbanHeatProvider({ children }) {
   const [selectedArea, setSelectedArea] = useState('')
   const [areas, setAreas] = useState([])
   const [gridOptions, setGridOptions] = useState([])
+  const [gnGeojson, setGnGeojson] = useState(null)
   const [bootstrapLoading, setBootstrapLoading] = useState(true)
   const [bootstrapError, setBootstrapError] = useState('')
 
@@ -19,11 +20,13 @@ export function UrbanHeatProvider({ children }) {
       setBootstrapLoading(true)
       setBootstrapError('')
       try {
-        const [areaResponse, gridGeojson] = await Promise.all([
+        const [areaResponse, gridGeojson, gnMap] = await Promise.all([
           urbanHeatApi.areas(controller.signal),
           urbanHeatApi.gridMap(controller.signal),
+          urbanHeatApi.gnMap(undefined, controller.signal).catch(() => null),
         ])
         setAreas(areaResponse?.areas || [])
+        setGnGeojson(gnMap || null)
         const options = (gridGeojson?.features || [])
           .map((feature) => feature?.properties || {})
           .filter((item) => item.grid_id)
@@ -56,9 +59,9 @@ export function UrbanHeatProvider({ children }) {
     forecastYear, setForecastYear,
     historicalYear, setHistoricalYear,
     selectedArea, setSelectedArea,
-    areas, gridOptions, filteredGridOptions,
+    areas, gridOptions, filteredGridOptions, gnGeojson,
     bootstrapLoading, bootstrapError,
-  }), [selectedGridId, forecastYear, historicalYear, selectedArea, areas, gridOptions, filteredGridOptions, bootstrapLoading, bootstrapError])
+  }), [selectedGridId, forecastYear, historicalYear, selectedArea, areas, gridOptions, filteredGridOptions, gnGeojson, bootstrapLoading, bootstrapError])
 
   return <UrbanHeatContext.Provider value={value}>{children}</UrbanHeatContext.Provider>
 }

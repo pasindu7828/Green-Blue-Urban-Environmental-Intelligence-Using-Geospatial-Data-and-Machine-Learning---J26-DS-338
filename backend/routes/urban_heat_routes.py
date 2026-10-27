@@ -13,6 +13,9 @@ from backend.services.urban_heat_data_service import (
     get_data_health,
     get_dashboard_manifest,
     get_area_names,
+    get_gn_divisions,
+    get_gn_division_geojson,
+    get_gn_division_summary,
     get_grid_metadata,
     get_historical_by_year,
     get_grid_history,
@@ -131,6 +134,72 @@ def urban_heat_areas():
         raise HTTPException(
             status_code=500,
             detail=f"Failed to load area names: {exc}",
+        )
+
+
+# ============================================================
+# GN DIVISION BOUNDARIES / SUMMARIES
+# ============================================================
+
+@router.get("/gn-divisions")
+def urban_heat_gn_divisions():
+    """Return all 57 GN Divisions with Urban Heat grid counts."""
+    try:
+        divisions = get_gn_divisions()
+        return {"count": len(divisions), "data": divisions}
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to load GN Divisions: {exc}",
+        )
+
+
+@router.get("/gn-divisions/map")
+def urban_heat_gn_division_map(
+    gn_name: Optional[str] = Query(
+        default=None,
+        description="Optional GN Division name. Omit to return all boundaries.",
+    )
+):
+    """Return WGS84 GN Division polygons for map overlay/highlighting."""
+    try:
+        geojson = get_gn_division_geojson(gn_name)
+        if gn_name and not geojson.get("features"):
+            raise HTTPException(
+                status_code=404,
+                detail=f"GN Division '{gn_name}' was not found.",
+            )
+        return geojson
+    except HTTPException:
+        raise
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to load GN Division map: {exc}",
+        )
+
+
+@router.get("/gn-divisions/{gn_name}/summary")
+def urban_heat_gn_division_summary(
+    gn_name: str,
+    year: int = Query(
+        FORECAST_END_YEAR,
+        ge=HISTORICAL_START_YEAR,
+        le=FORECAST_END_YEAR,
+        description="Summary year from 2015 to 2030.",
+    ),
+):
+    """Aggregate existing grid-level heat intelligence for one GN Division."""
+    try:
+        return get_gn_division_summary(gn_name=gn_name, year=year)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to build GN Division summary: {exc}",
         )
 
 

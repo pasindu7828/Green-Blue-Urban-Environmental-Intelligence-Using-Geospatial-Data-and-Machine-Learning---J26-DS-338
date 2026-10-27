@@ -36,6 +36,8 @@ from backend.config import (
 
     COOLING_PRIORITY_GEOJSON,
 
+    GN_DIVISIONS_GEOJSON,
+
     HEAT_SCENARIOS_DIR,
 
     HISTORICAL_START_YEAR,
@@ -768,6 +770,302 @@ def get_area_names() -> list[str]:
 
 
 
+# ============================================================
+# GN DIVISION LOOKUPS / SUMMARIES
+# ============================================================
+
+
+def _canonical_gn_name(gn_name: str) -> str:
+
+    requested = str(gn_name).strip()
+
+    for name in get_area_names():
+
+        if name.casefold() == requested.casefold():
+
+            return name
+
+    raise ValueError(f"GN Division '{gn_name}' was not found in Urban Heat metadata.")
+
+
+@lru_cache(maxsize=1)
+def load_gn_divisions_geojson() -> dict[str, Any]:
+
+    geojson = _load_geojson(
+
+        GN_DIVISIONS_GEOJSON,
+
+        "Kaduwela GN Division GeoJSON",
+
+    )
+
+    expected = set(get_area_names())
+
+    actual = {
+
+        str((feature.get("properties") or {}).get("gn_name", "")).strip()
+
+        for feature in geojson.get("features", [])
+
+    }
+
+    actual.discard("")
+
+    if actual != expected:
+
+        missing = sorted(expected - actual)
+
+        extra = sorted(actual - expected)
+
+        raise RuntimeError(
+
+            "GN boundary names do not match Urban Heat area names. "
+
+            f"Missing={missing}; extra={extra}"
+
+        )
+
+    return geojson
+
+
+def get_gn_divisions() -> list[dict[str, Any]]:
+
+    metadata = load_grid_metadata()
+
+    counts = (
+
+        metadata.groupby(AREA_COLUMN)[GRID_ID_COLUMN]
+
+        .nunique()
+
+        .to_dict()
+
+    )
+
+    return [
+
+        {"gn_name": name, "grid_count": int(counts.get(name, 0))}
+
+        for name in get_area_names()
+
+    ]
+
+
+def get_gn_division_geojson(gn_name: str | None = None) -> dict[str, Any]:
+
+    geojson = load_gn_divisions_geojson()
+
+    if not gn_name:
+
+        return geojson
+
+    canonical = _canonical_gn_name(gn_name)
+
+    features = [
+
+        feature
+
+        for feature in geojson.get("features", [])
+
+        if str((feature.get("properties") or {}).get("gn_name", "")).casefold()
+
+        == canonical.casefold()
+
+    ]
+
+    return {"type": "FeatureCollection", "features": features}
+
+
+def get_gn_division_summary(gn_name: str, year: int) -> dict[str, Any]:
+
+    if year < HISTORICAL_START_YEAR or year > FORECAST_END_YEAR:
+
+        raise ValueError(
+
+            f"GN summary year must be between {HISTORICAL_START_YEAR} "
+
+            f"and {FORECAST_END_YEAR}."
+
+        )
+
+    canonical = _canonical_gn_name(gn_name)
+
+    area_summary = load_area_heat_summary().copy()
+
+    row = area_summary[
+
+        (area_summary[AREA_COLUMN].str.casefold() == canonical.casefold())
+
+        & (area_summary[YEAR_COLUMN] == int(year))
+
+    ]
+
+    if row.empty:
+
+        raise ValueError(
+
+            f"No heat summary is available for GN Division '{canonical}' in {year}."
+
+        )
+
+    heat = row.iloc[0]
+
+    priority = load_cooling_priority().copy()
+
+    priority = priority[
+
+        priority[AREA_COLUMN].str.casefold() == canonical.casefold()
+
+    ]
+
+    trajectory_counts = {}
+
+    if "trajectory_class" in priority.columns:
+
+        normalized = priority["trajectory_class"].apply(_normalize_trajectory_class)
+
+        trajectory_counts = {
+
+            str(k): int(v)
+
+            for k, v in normalized.value_counts().to_dict().items()
+
+        }
+
+    dominant_trajectory = (
+
+        max(trajectory_counts, key=trajectory_counts.get)
+
+        if trajectory_counts
+
+        else None
+
+    )
+
+    confidence_counts = {}
+
+    dominant_confidence = None
+
+    if year >= FORECAST_START_YEAR:
+
+        future = load_future_heat().copy()
+
+        future = future[
+
+            (future[AREA_COLUMN].str.casefold() == canonical.casefold())
+
+            & (future[YEAR_COLUMN] == int(year))
+
+        ]
+
+        if "relative_confidence_label" in future.columns:
+
+            confidence_counts = {
+
+                str(k): int(v)
+
+                for k, v in future["relative_confidence_label"]
+
+                .dropna()
+
+                .value_counts()
+
+                .to_dict()
+
+                .items()
+
+            }
+
+            if confidence_counts:
+
+                dominant_confidence = max(
+
+                    confidence_counts,
+
+                    key=confidence_counts.get,
+
+                )
+
+    percentiles = pd.to_numeric(
+
+        priority.get("priority_percentile", pd.Series(dtype=float)),
+
+        errors="coerce",
+
+    )
+
+    top10_count = int((percentiles >= 90).sum()) if not percentiles.empty else 0
+
+    top25_count = int((percentiles >= 75).sum()) if not percentiles.empty else 0
+
+    best_rank = None
+
+    if "topsis_rank" in priority.columns and not priority.empty:
+
+        ranks = pd.to_numeric(priority["topsis_rank"], errors="coerce").dropna()
+
+        if not ranks.empty:
+
+            best_rank = int(ranks.min())
+
+    result = {
+
+        "gn_name": canonical,
+
+        "year": int(year),
+
+        "value_type": None if pd.isna(heat.get("value_type")) else str(heat.get("value_type")),
+
+        "grid_count": int(heat.get("grid_count")),
+
+        "mean_lst_c": float(heat.get("mean_lst_c")),
+
+        "median_lst_c": float(heat.get("median_lst_c")),
+
+        "min_lst_c": float(heat.get("min_lst_c")),
+
+        "max_lst_c": float(heat.get("max_lst_c")),
+
+        "mean_forecast_pi95_lower_c": None,
+
+        "mean_forecast_pi95_upper_c": None,
+
+        "top10pct_priority_grid_count": top10_count,
+
+        "top25pct_priority_grid_count": top25_count,
+
+        "best_studywide_topsis_rank": best_rank,
+
+        "dominant_trajectory": dominant_trajectory,
+
+        "trajectory_distribution": trajectory_counts,
+
+        "dominant_relative_confidence": dominant_confidence,
+
+        "relative_confidence_distribution": confidence_counts,
+
+        "interpretation_note": (
+
+            "GN summaries aggregate existing grid-level Urban Heat outputs by "
+
+            "the matching area_name/GN Division key; they are not a separate model."
+
+        ),
+
+    }
+
+    for key in ["mean_forecast_pi95_lower_c", "mean_forecast_pi95_upper_c"]:
+
+        value = heat.get(key)
+
+        if value is not None and not pd.isna(value):
+
+            result[key] = float(value)
+
+    return result
+
+
+
 
 
 # ============================================================
@@ -1247,6 +1545,8 @@ def get_priority_geojson() -> dict[str, Any]:
     return _load_geojson(
 
         COOLING_PRIORITY_GEOJSON,
+
+    GN_DIVISIONS_GEOJSON,
 
         "Urban Heat cooling priority GeoJSON",
 
