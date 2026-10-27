@@ -22,3 +22,5 @@ config.bat
 .env.example
 
 config.bat
+
+.vscode/
