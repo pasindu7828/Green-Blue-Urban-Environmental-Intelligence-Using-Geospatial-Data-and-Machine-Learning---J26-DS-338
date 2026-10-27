@@ -8,6 +8,9 @@ export const urbanHeatApi = {
   dataHealth: (signal) => apiRequest(`${P}/data-health`, { signal }),
   manifest: (signal) => apiRequest(`${P}/manifest`, { signal }),
   areas: (signal) => apiRequest(`${P}/areas`, { signal }),
+  gnDivisions: (signal) => apiRequest(`${P}/gn-divisions`, { signal }),
+  gnMap: (gnName, signal) => apiRequest(`${P}/gn-divisions/map${queryString({ gn_name: gnName })}`, { signal }),
+  gnSummary: (gnName, year, signal) => apiRequest(`${P}/gn-divisions/${enc(gnName)}/summary${queryString({ year })}`, { signal }),
   gridMetadata: (gridId, signal) => apiRequest(`${P}/grid-metadata/${enc(gridId)}`, { signal }),
 
   historical: (year, signal) => apiRequest(`${P}/historical${queryString({ year })}`, { signal }),

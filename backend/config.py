@@ -249,6 +249,13 @@ COOLING_PRIORITY_GEOJSON = (
     / "34_cooling_priority_wgs84.geojson"
 )
 
+# Kaduwela GN Division boundaries (WGS84).
+# Names match the 57 Urban Heat area_name values exactly.
+GN_DIVISIONS_GEOJSON = (
+    HEAT_MAPS_DIR
+    / "35_gn_divisions_wgs84.geojson"
+)
+
 
 # ============================================================
 # BASIC PROJECT SETTINGS
