@@ -1,0 +1,15 @@
+check,status,details
+step01_audit,PASS,Step 01 fully PASS.
+development_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+predictor_count,PASS,"actual=93, expected=93"
+search_fold_metric_rows,PASS,"actual=25, expected=25"
+best_fold_metric_rows,PASS,"actual=5, expected=5"
+best_prediction_rows,PASS,"actual=10970, expected=10970"
+training_anomaly_zero_mean_within_year,PASS,"[1.139977406506633e-15, -1.5545146452363177e-15, 2.1763205033308446e-15, 3.989920922773215e-15, -3.264480754996267e-15, -1.5545146452363177e-16]"
+predicted_anomaly_recentered_without_target,PASS,"[-2.0241076109847884e-18, 1.186127060037086e-16, 2.7932685031590085e-17, 3.198090025355966e-17, 1.3561520993598083e-17]"
+2024_loaded_or_used,PASS,No. 2024 is not loaded by Step 04.
+2025_loaded_or_used,PASS,No. 2025 is not loaded by Step 04.
+random_kfold_used,PASS,No. Strict expanding rolling-origin folds only.
+metrics_finite,PASS,Best-config fold metrics are finite.
+production_pipeline_modified,PASS,Only experiments/additional_models is written.
+production_model_replaced,PASS,No. HistGradientBoosting model is experimental only.

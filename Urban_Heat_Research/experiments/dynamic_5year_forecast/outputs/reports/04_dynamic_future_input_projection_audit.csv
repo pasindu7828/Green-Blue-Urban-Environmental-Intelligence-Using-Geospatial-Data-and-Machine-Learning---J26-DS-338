@@ -1,0 +1,9 @@
+check,status,details
+unique_grid_count,PASS,"actual=2194, expected=2194"
+balanced_observed_grid_panel,PASS,"min=2194, max=2194"
+required_base_predictors_present,PASS,missing=[]
+step27_strategy_preserved,PASS,"annual=Expanding Mean; dynamic={'NDVI': 'Rolling-3 Mean', 'NDBI': 'Rolling-3 Mean', 'NDWI': 'Rolling-3 Mean', 'EVI': 'Rolling-3 Mean', 'Albedo': 'Bounded Theil-Sen Trend', 'NDBI_ADJ': 'Rolling-3 Mean', 'NDVI_ADJ': 'Rolling-3 Mean', 'NightLights': 'Rolling-3 Mean', 'green_mask': 'Rolling-3 Mean'}"
+future_year_window,PASS,"origin=2025, future=[2026, 2027, 2028, 2029, 2030]"
+future_row_count,PASS,"actual=10970, expected=10970"
+future_predictor_missing_cells,PASS,count=0
+original_2025_projection_reproduction,PASS,"status=PASS, max_base_error=1.7763568394002505e-15, max_annual_error=0.0"

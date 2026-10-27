@@ -1,0 +1,15 @@
+check,status,details
+step31a_audit,PASS,Step 31A audit verified fully PASS.
+screening_row_count,PASS,"screening=48, inventory=48"
+candidate_ids_preserved,PASS,"screening_unique=48, inventory_unique=48"
+all_direct_candidates_materialized,PASS,expected grids per direct candidate=2194
+direct_candidate_missingness,PASS,All direct candidates must have zero missing materialized values.
+direct_candidate_variation,PASS,"No direct candidate may be constant across all 2,194 grids."
+leakage_screen,PASS,Future heat uses Step-28 forecasts; historical/trend sources use observed 2015-2025 history; scenario candidates use frozen Step-29 model-based outputs. No future observed LST target used.
+support_only_count_preserved,PASS,"Step31A support=2, Step31B support=2"
+no_final_indicator_selection,PASS,31B only screens eligibility/usability. Final non-redundant selection remains Step31C.
+no_redundancy_removal,PASS,Spearman redundancy analysis not performed here.
+no_critic_weighting,PASS,No CRITIC weights calculated.
+no_topsis_ranking,PASS,No TOPSIS score/rank calculated.
+no_model_retraining,PASS,No model fitting/retraining performed.
+upstream_outputs_modified,PASS,No. Only new Step-31B files were written.

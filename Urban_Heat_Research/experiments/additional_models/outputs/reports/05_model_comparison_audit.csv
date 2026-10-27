@@ -1,0 +1,13 @@
+check,status,details
+model_count,PASS,"actual=4, expected=4"
+combined_fold_rows,PASS,"actual=20, expected=20"
+validation_years,PASS,"[2019, 2020, 2021, 2022, 2023]"
+each_model_has_five_folds,PASS,"{'CatBoost': 5, 'Extra Trees': 5, 'HistGradientBoosting': 5, 'LightGBM': 5}"
+primary_metrics_finite,PASS,MAE/RMSE/R2/spatial R2 are finite.
+catboost_audit,PASS,Step 02 audit fully PASS.
+extra_trees_audit,PASS,Step 03 audit fully PASS.
+histgb_audit,PASS,Step 04 audit fully PASS.
+2024_loaded_or_used,PASS,No 2024 data is loaded by Step 05.
+2025_loaded_or_used,PASS,No 2025 data is loaded by Step 05.
+production_pipeline_modified,PASS,Step 05 writes only under experiments/additional_models.
+production_model_replaced,PASS,No production model replacement occurs in Step 05.

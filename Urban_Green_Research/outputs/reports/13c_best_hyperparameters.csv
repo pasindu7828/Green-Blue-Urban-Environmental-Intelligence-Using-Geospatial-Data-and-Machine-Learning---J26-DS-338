@@ -1,0 +1,3 @@
+model,best_candidate_id,balanced_development_pr_auc,temporal_pr_auc_mean,spatial_pr_auc_mean,minimum_fold_pr_auc,mean_brier_score,parameters_json
+RandomForest,RF06_CONSERVATIVE,0.12263274985913222,0.08072972233622311,0.16453577738204134,0.037312339878387654,0.08443255177915855,"{""max_depth"": 8, ""max_features"": ""sqrt"", ""max_samples"": null, ""min_samples_leaf"": 6, ""min_samples_split"": 10, ""n_estimators"": 500}"
+XGBoost,XGB05_DEPTH3_STRONG_REG,0.12640401342716065,0.07654658954150363,0.17626143731281765,0.024226082625820287,0.09333370596845181,"{""colsample_bytree"": 0.75, ""gamma"": 0.1, ""learning_rate"": 0.03, ""max_depth"": 3, ""min_child_weight"": 5.0, ""n_estimators"": 700, ""reg_alpha"": 0.2, ""reg_lambda"": 4.0, ""subsample"": 0.85}"

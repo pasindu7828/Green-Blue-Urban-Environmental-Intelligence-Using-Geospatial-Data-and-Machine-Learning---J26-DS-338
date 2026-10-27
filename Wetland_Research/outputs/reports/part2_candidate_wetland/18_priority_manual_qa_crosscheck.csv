@@ -1,0 +1,4 @@
+screening_priority,flag_false_positive,retain_candidate,reviewed_total,retain_percentage_in_reviewed_sample
+High,2,12,14,85.71428571428571
+Medium,1,2,3,66.66666666666667
+Review,41,2,43,4.651162790697675

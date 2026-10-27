@@ -1,0 +1,7 @@
+test_case,result,engine_status,consistency_ratio,engine_qa_checks,weights_generated_in_temp_only
+blank_forms,PASS,PENDING_EXPERT_REVIEW,,9.0,False
+consistent_three_criteria,PASS,EXPERT_AHP_VALIDATED,0.0,10.0,True
+consistent_four_criteria,PASS,EXPERT_AHP_VALIDATED,0.0,10.0,True
+inconsistent_three_criteria,PASS,CONSISTENCY_REVIEW_REQUIRED,6.130268199233717,9.0,False
+invalid_scale,PASS,JUDGMENT_REVIEW_REQUIRED,,9.0,False
+real_expert_forms_unchanged,PASS,,,,

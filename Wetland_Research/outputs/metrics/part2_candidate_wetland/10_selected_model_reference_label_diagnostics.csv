@@ -1,0 +1,8 @@
+reference_label,samples,mean_probability,predicted_positive,predicted_negative,correct,accuracy,tp,tn,fp,fn
+bare_fill_disturbed,9,0.004616361204444444,0,9,9,1.0,0,9,0,0
+built_up,7,0.02314617297142857,0,7,7,1.0,0,7,0,0
+known_wetland,49,0.7322279197857142,39,10,39,0.7959183673469388,39,0,0,10
+open_water,6,0.6964216283666667,4,2,2,0.3333333333333333,0,2,4,0
+other_vegetation,12,0.07766237758333334,0,12,12,1.0,0,12,0,0
+paddy_agriculture,8,0.12066558543749999,0,8,8,1.0,0,8,0,0
+wetland_marsh,8,0.8613021175,7,1,7,0.875,7,0,0,1

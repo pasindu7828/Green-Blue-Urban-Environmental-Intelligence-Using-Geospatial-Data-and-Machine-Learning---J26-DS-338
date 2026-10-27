@@ -1,0 +1,15 @@
+{
+    "working_mmu_ha": 0.1,
+    "working_mmu_pixels": 10,
+    "working_mmu_interpretation": "Raster mapping/generalization threshold for candidate spatial QA; not an ecological minimum wetland size.",
+    "frozen_model_threshold": 0.5,
+    "component_connectivity": 8,
+    "input_component_count": 10425,
+    "retained_component_count": 1097,
+    "retained_area_ha": 999.77,
+    "maximum_vector_vs_raster_area_difference_ha": 8.881784197001252e-16,
+    "open_water_automatic_exclusion": false,
+    "known_wetland_pixels_already_removed": true,
+    "near_known_20m_polygons_removed": false,
+    "important_note": "These polygons are candidate-screening objects for spatial QA. They must not be presented as officially confirmed wetland boundaries."
+}

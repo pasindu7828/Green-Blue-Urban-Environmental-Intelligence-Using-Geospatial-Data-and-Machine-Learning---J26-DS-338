@@ -1,0 +1,78 @@
+{
+  "step": "31C",
+  "title": "Priority Indicator Selection + Redundancy / Stability Review",
+  "selection_philosophy": "Decision-dimension-driven. The purpose is to answer which grids planners should prioritize, not to reuse all predictive ML features.",
+  "expected_grids": 2194,
+  "future_period": "2026-2030",
+  "historical_trend_period": "2015-2025",
+  "final_indicator_count": 6,
+  "final_policy": {
+    "Future Heat Severity": {
+      "candidate_id": "HEAT_MEAN",
+      "final_indicator_name": "Future Heat Severity",
+      "final_field_name": "future_heat_mean_lst_c",
+      "priority_direction": "HIGHER=HIGHER_PRIORITY",
+      "selection_rule": "Use the sustained 2026-2030 mean predicted LST rather than a single endpoint or maximum year."
+    },
+    "Trend Urgency": {
+      "candidate_id": "TREND_REL_SEN",
+      "final_indicator_name": "Relative Trend Urgency",
+      "final_field_name": "relative_heat_sen_slope",
+      "priority_direction": "MORE_POSITIVE=HIGHER_PRIORITY",
+      "selection_rule": "Use continuous relative heat-percentile Sen slope for spatial urgency within Kaduwela. Do not assign an arbitrary ordinal score to the descriptive trajectory classes."
+    },
+    "Vegetation / Green Deficit": {
+      "candidate_id": "VEG_DEFICIT_MEAN",
+      "final_indicator_name": "Future Green-cover Deficit",
+      "final_field_name": "future_green_deficit_mean",
+      "priority_direction": "HIGHER=HIGHER_PRIORITY",
+      "selection_rule": "Use mean 2026-2030 (1 - green_mask): directly interpretable as persistent green-cover deficit and aligned with Step 29A."
+    },
+    "Built-up / Urban Pressure": {
+      "candidate_id": "BUILT_NDBI_MEAN",
+      "final_indicator_name": "Future Built-up Intensity",
+      "final_field_name": "future_ndbi_mean",
+      "priority_direction": "HIGHER=HIGHER_PRIORITY",
+      "selection_rule": "Use mean 2026-2030 NDBI: direct built-up intensity measure and the same intervention dimension manipulated in Step 29B."
+    },
+    "Blue-space / Water Deficit": {
+      "candidate_id": "BLUE_DIST_WATER",
+      "final_indicator_name": "Water-access Deficit",
+      "final_field_name": "distance_to_water",
+      "priority_direction": "HIGHER=HIGHER_PRIORITY",
+      "selection_rule": "Use distance-to-water as direct spatial accessibility/proximity deficit. NDWI remains wetness evidence and is not interpreted as literal water-cover percentage."
+    },
+    "Modeled Intervention Benefit": {
+      "candidate_id": "SCEN_COMBINED_G10_MODERATE",
+      "final_indicator_name": "Modeled Combined Cooling Benefit",
+      "final_field_name": "combined_g10_moderate_mean_cooling_benefit_c",
+      "priority_direction": "HIGHER_BENEFIT=HIGHER_PRIORITY",
+      "selection_rule": "Use mean 2026-2030 cooling benefit from Step 29C's already-frozen PRIMARY scenario: +10pp green with MODERATE built-up reduction."
+    }
+  },
+  "redundancy": {
+    "method": "Spearman rank correlation",
+    "within_dimension_use": "Diagnostic support for choosing one representative and avoiding multiple same-concept criteria.",
+    "cross_dimension_policy": "Report high correlation but do not automatically delete a conceptually distinct planning dimension.",
+    "warning_abs_rho": 0.9,
+    "near_duplicate_abs_rho": 0.999,
+    "max_final_abs_rho": 0.9380584629339698,
+    "near_duplicate_pair_count": 0
+  },
+  "temporal_stability": {
+    "method": "Spearman correlation between selected 2026-2030 mean summary and each individual future year.",
+    "role": "diagnostic only",
+    "no_manipulation": true
+  },
+  "shap_policy": "Future SHAP is supporting model-association evidence only; not a CRITIC/TOPSIS criterion and not an automatic selection score.",
+  "scenario_policy": "Intervention benefit uses the already-frozen Step29C PRIMARY combined scenario (+10pp green, MODERATE built reduction). Values are model-based sensitivity, not causal guarantees.",
+  "uncertainty_policy": "Step30 uncertainty remains a separate confidence/reference layer and is not included as a priority criterion.",
+  "not_done_here": [
+    "normalization",
+    "CRITIC weighting",
+    "TOPSIS ranking",
+    "priority-class assignment",
+    "model retraining"
+  ],
+  "next": "31D final grid decision matrix + direction conversion + normalization"
+}

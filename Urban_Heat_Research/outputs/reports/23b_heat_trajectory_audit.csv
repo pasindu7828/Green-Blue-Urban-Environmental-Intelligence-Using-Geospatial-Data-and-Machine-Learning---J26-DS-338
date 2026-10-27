@@ -1,0 +1,18 @@
+check,status,details
+step23_audit,PASS,Step 23 audit verified fully PASS.
+input_hashes,PASS,All frozen Step-23/base/geometry input hashes verified.
+all_2015_2025_years_used_for_relative_direction,PASS,Relative Theil-Sen direction uses all 11 years 2015-2025.
+trajectory_grid_count,PASS,"actual=2194, expected=2194"
+exactly_one_class_per_grid,PASS,Every grid has one non-null class.
+class_count_sum,PASS,"sum=2194, expected=2194"
+only_expected_five_classes,PASS,"['Diminishing', 'Emerging', 'Intensifying', 'Persistent Cool', 'Persistent Hot']"
+relative_sen_slopes_finite,PASS,True
+reference_thresholds_fixed,PASS,"hot=0.75, stable_split=0.5, relative_slope=0.01"
+absolute_step23_evidence_preserved,PASS,Original Step-23 p/q/Sen fields are attached unchanged.
+trajectory_scope_explicit,PASS,Labels explicitly describe relative spatial heat within Kaduwela.
+trajectory_not_absolute_significance_claim,PASS,No trajectory class is presented as an absolute MK significance result.
+2017_preserved_primary,PASS,Primary all-year trajectory includes 2017.
+2017_sensitivity_saved,PASS,No-2017 class agreement=80.40%.
+threshold_sensitivity_saved,PASS,configurations=9
+map_alignment,PASS,"map_rows=2194, expected=2194"
+forecast_model_used_or_modified,PASS,No. Historical observed LST + Step23 evidence only.

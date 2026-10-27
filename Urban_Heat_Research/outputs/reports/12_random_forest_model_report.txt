@@ -1,0 +1,40 @@
+STEP 12 - RANDOM FOREST CANDIDATE MODEL REPORT
+============================================================================================================
+
+DATA PROTECTION
+Used: 2018-2023 development data only.
+2024: NOT loaded.
+2025: NOT loaded.
+
+MODEL
+RandomForestRegressor
+Status: UNTUNED candidate model
+Parameters: {'n_estimators': 500, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'random_state': 42, 'n_jobs': -1}
+
+ROLLING-ORIGIN DEVELOPMENT VALIDATION
+2018 -> 2019
+2018-2019 -> 2020
+2018-2020 -> 2021
+2018-2021 -> 2022
+2018-2022 -> 2023
+
+AGGREGATED PERFORMANCE
+Mean validation MAE: 2.968690
+Median validation MAE: 2.752544
+Mean validation RMSE: 3.389401
+Mean validation R²: -0.624664
+Median validation R²: 0.132687
+Negative-R² folds: 2
+Mean MAE generalization gap: 2.514431
+
+BASELINE COMPARISON
+RF beats the best Step 11 baseline by validation MAE in 2/5 folds.
+RF beats Grid Historical Mean by validation MAE in 3/5 folds.
+
+IMPORTANT
+This step does NOT tune Random Forest.
+This step does NOT select Random Forest as the final model.
+Negative R² or large generalization gaps are retained as research findings.
+
+NEXT
+Step 13 - XGBoost candidate model analysis.

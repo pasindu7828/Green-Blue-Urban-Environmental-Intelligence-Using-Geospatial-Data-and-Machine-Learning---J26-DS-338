@@ -1,0 +1,2 @@
+stage,models,primary_metric,temporal_validation_years,spatial_validation,spatial_development_origin_years,final_2022_test_used,smote_used,rf_imbalance_handling,xgb_imbalance_handling,hyperparameter_tuning_completed,threshold_selection_completed,final_model_selected,overall_step13b_status
+Development baseline evaluation,RandomForest;XGBoost,PR-AUC / Average Precision,"2017,2019,2021",5-fold 1km block validation,2012-2019,False,False,balanced_subsample,training-fold scale_pos_weight,False,False,False,PASS

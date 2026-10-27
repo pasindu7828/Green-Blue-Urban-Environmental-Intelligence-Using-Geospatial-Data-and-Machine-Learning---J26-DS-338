@@ -1,0 +1,13 @@
+check,status,details
+development_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023]"
+row_count,PASS,"actual=13164, expected=13164"
+unique_grid_count,PASS,"actual=2194, expected=2194"
+predictor_count,PASS,"actual=93, expected=93"
+missing_predictors,PASS,0
+finite_predictors,PASS,True
+duplicate_grid_year_rows,PASS,0
+2024_loaded_or_used,PASS,No. Only the 2018-2023 development input is loaded.
+2025_loaded_or_used,PASS,No. Only the 2018-2023 development input is loaded.
+strict_rolling_origin_fold_count,PASS,"actual=5, expected=5"
+random_kfold_used,PASS,No. Expanding rolling-origin folds only.
+production_pipeline_modified,PASS,No production src/model/output file is written by Step 01.

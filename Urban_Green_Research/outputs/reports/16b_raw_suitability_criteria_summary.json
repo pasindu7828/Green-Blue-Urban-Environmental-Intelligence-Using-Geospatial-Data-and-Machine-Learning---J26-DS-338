@@ -1,0 +1,65 @@
+{
+  "step": "16B",
+  "name": "Raw 100 m Development Suitability Criteria Generation",
+  "terrain_fallback_count": 39,
+  "terrain_fallback_method": "NEAREST_VALID_GEDTM_PROXY",
+  "terrain_fallback_max_allowed_distance_m": 30.0,
+  "terrain_fallback_max_actual_distance_m": 25.495097567963924,
+  "original_valid_terrain_preserved": true,
+  "terrain_fallback_note": "Proxy values are not direct in-polygon zonal measurements. Fallback cells have zero original zonal pixel count; their single-point range and percentile fields are proxy summaries, not observed within-cell distributions.",
+  "analysis_grid_cells": 9240,
+  "analysis_crs": "EPSG:32644",
+  "kmc_area_km2": 88.82921581108494,
+  "criteria_generated": {
+    "C1": "Higher-order road distance",
+    "C2": "Local drivable road density at 250 m, 500 m and 1000 m candidate radii",
+    "C3": "Cell building footprint plus neighbourhood building context at 250 m and 500 m",
+    "C4": "GEDTM30 slope",
+    "C5": "GEDTM30 elevation"
+  },
+  "c1_major_road_classes": [
+    "motorway_link",
+    "primary",
+    "primary_link",
+    "secondary",
+    "tertiary",
+    "tertiary_link",
+    "trunk",
+    "trunk_link"
+  ],
+  "c2_local_drivable_classes": [
+    "living_street",
+    "motorway_link",
+    "primary",
+    "primary_link",
+    "residential",
+    "secondary",
+    "tertiary",
+    "tertiary_link",
+    "trunk",
+    "trunk_link",
+    "unclassified"
+  ],
+  "excluded_from_core_calculation": [
+    "Urbanization Pressure outputs",
+    "SHAP/XAI outputs",
+    "Conservation Priority outputs",
+    "Provisional UDA zoning",
+    "OSM motorway mainline from C1/C2 primary access definitions",
+    "OSM service roads from C2 primary road-density definition"
+  ],
+  "ahp_weights_assigned": false,
+  "suitability_score_calculated": false,
+  "standardization_performed": false,
+  "overall_step16b_status": "PASS",
+  "elapsed_seconds": 224.29181146621704,
+  "outputs": {
+    "terrain_fallback_audit": "outputs/reports/16b_terrain_fallback_audit.csv",
+    "raw_csv": "data/processed/development_suitability/raw_criteria/16b_raw_suitability_criteria_100m.csv",
+    "raw_gpkg": "data/processed/development_suitability/raw_criteria/16b_raw_suitability_criteria_100m.gpkg",
+    "road_class_report": "outputs/reports/16b_road_class_definition.csv",
+    "criteria_definition_report": "outputs/reports/16b_raw_criteria_definition.csv",
+    "descriptive_statistics": "outputs/reports/16b_raw_criteria_descriptive_statistics.csv",
+    "qa_report": "outputs/reports/16b_raw_suitability_criteria_qa.csv"
+  }
+}

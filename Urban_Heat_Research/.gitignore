@@ -1,3 +1,32 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Large/generated research outputs
+Urban_Heat_Research/outputs/predictions/**/*.csv
+
+# Optional large intermediate exports
+Urban_Heat_Research/outputs/maps/**/*.csv
+
+# Python/cache
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# Ignore temporary generated figures only
+Urban_Heat_Research/outputs/figures/temp/
+Urban_Heat_Research/outputs/figures/debug/
+
+# Generated candidate model artifacts
+Urban_Heat_Research/models/candidates/**/*.joblib
+Urban_Heat_Research/models/candidates/*.joblib
+
+# Generated candidate model artifacts
+models/candidates/*.joblib
+models/candidates/**/*.joblib
+outputs/scenarios/29c_combined_scenario_features_2026_2030.csv
+outputs/uncertainty/30_29c_combined_scenarios_with_uncertainty.csv
+outputs/dashboard/scenarios/34_combined_scenarios_2026_2030.csv
+outputs/dashboard/maps/34_future_dashboard_master_2026_2030_wgs84.geojson
+experiments/additional_models/models/03_extra_trees_anomaly_trained_2018_2023.joblib
+experiments/additional_models/models/*.joblib

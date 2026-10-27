@@ -1,0 +1,88 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.1-4.2",
+  "status": "PASS_SOURCE_READINESS_PENDING_CODEBOOK",
+  "passed_checks": 25,
+  "total_checks": 25,
+  "checks": {
+    "grid_9240_unique_nonnull": true,
+    "grid_and_boundary_epsg32644": true,
+    "grid_geometries_valid": true,
+    "kmc_overlap_area_matches_geometry": true,
+    "grid_area_matches_kmc": true,
+    "2025_two_product_structure_valid": true,
+    "2025_fraction_grid_ids_match": true,
+    "2025_product_tag_is_RAW": true,
+    "2025_year_correct": true,
+    "2025_not_future_informed": true,
+    "2025_not_provisional": true,
+    "2025_area_and_coverage_valid": true,
+    "2025_coverage_denominator_valid": true,
+    "2025_class_areas_sum_to_valid_area": true,
+    "2025_fractions_match_valid_area": true,
+    "2025_valid_fractions_sum_to_one": true,
+    "2025_kmc_areas_match_grid": true,
+    "2025_raw_raster_has_expected_classes": true,
+    "historical_14_years_present_aligned": true,
+    "transition_rasters_aligned": true,
+    "transition_code2_matches_frozen_green_to_built_areas": true,
+    "pressure_eligibility_all_grid_cells": true,
+    "pressure_scores_match_ready_domain": true,
+    "pressure_frozen_origin_2025": true,
+    "pressure_scores_finite_0_to_1": true
+  },
+  "observations": {
+    "study_area_km2": 88.82921581108494,
+    "fraction_product_types": {
+      "RAW_RF": 9240,
+      "STABILIZED_ANALYTICAL": 9240
+    },
+    "primary_green_source": "2025 RAW_RF records only",
+    "raw_baseline_cells": 9240,
+    "stabilized_reference_cells": 9240,
+    "current_fraction_denominator": "VALID_CLASSIFIED_LULC_AREA",
+    "positive_valid_coverage_cells": 9195,
+    "zero_valid_coverage_cells": 45,
+    "coverage_percentiles": {
+      "p00": 0.0,
+      "p05": 0.959549778145,
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 1.0,
+      "p95": 1.0,
+      "p100": 1.0
+    },
+    "cells_below_50pct_valid_coverage": 58,
+    "cells_below_80pct_valid_coverage": 138,
+    "zero_coverage_handling": "UNKNOWN_GREEN_CONDITION, never assumed zero green",
+    "historical_period": "2011-2024, 14 retrospective stabilized years",
+    "raw_raster_histogram": {
+      "1": 63128,
+      "2": 31943,
+      "3": 1699,
+      "4": 1926
+    },
+    "transition_code2_candidate": {
+      "robust_km2": 7.9821,
+      "strict_km2": 4.8267,
+      "codebook_verified": false
+    },
+    "pressure_scored_cells": 4620,
+    "pressure_NOT_IN_DOMAIN_cells": 4620,
+    "pressure_usage_gate": "Future threat only, after Green Importance freeze"
+  },
+  "unresolved_before_indicator_calculation": [
+    "Verify RAW_RF class meaning and provenance against the original generator script.",
+    "Confirm historical transition codebook.",
+    "Treat zero-valid-coverage cells as unknown.",
+    "Justify Green Importance aggregation method before calculating final scores."
+  ],
+  "methodological_separation": [
+    "Pressure excluded from Green Importance.",
+    "Development Suitability excluded.",
+    "SHAP excluded.",
+    "Provisional zoning excluded.",
+    "Historical loss belongs to threat domain.",
+    "NOT_IN_DOMAIN is not zero pressure."
+  ]
+}

@@ -1,0 +1,2 @@
+stage,origin_year,pressure_period,scored_cells,locked_threshold,threshold_flagged_cells,relative_percentile_breaks,category_scheme,not_in_domain_kept_separate,categories_are_calibrated_probability_bands,model_or_threshold_changed,overall_step14d_status
+Urbanization-pressure visualization categorization,2025,2026-2028,4620,0.715,255,"50,75,90",LOW_RELATIVE;MODERATE_RELATIVE;ELEVATED_RELATIVE;HIGH_RELATIVE;THRESHOLD_FLAGGED,True,False,False,PASS

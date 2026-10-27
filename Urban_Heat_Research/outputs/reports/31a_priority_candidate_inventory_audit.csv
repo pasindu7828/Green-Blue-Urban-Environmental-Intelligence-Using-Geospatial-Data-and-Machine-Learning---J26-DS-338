@@ -1,0 +1,12 @@
+check,status,details
+prerequisite_audits,PASS,Step23/23B/28/29A-D/30 all fully PASS
+required_dimensions_present,PASS,"['Blue-space / Water Deficit', 'Built-up / Urban Pressure', 'Future Heat Severity', 'Modeled Intervention Benefit', 'Trend Urgency', 'Vegetation / Green Deficit']"
+candidate_ids_unique,PASS,"rows=48, unique=48"
+future_heat_from_step28_only,PASS,"Future heat candidates use Step28 forecasts, not future actual LST"
+shap_direct_criterion,PASS,No. SHAP is support-only
+uncertainty_direct_criterion,PASS,No. Step30 uncertainty is support-only
+final_indicator_selection,PASS,Not performed in Step31A
+critic_weighting,PASS,Not performed in Step31A
+topsis_ranking,PASS,Not performed in Step31A
+model_retraining,PASS,None
+upstream_outputs_modified,PASS,No; only new Step31A files written

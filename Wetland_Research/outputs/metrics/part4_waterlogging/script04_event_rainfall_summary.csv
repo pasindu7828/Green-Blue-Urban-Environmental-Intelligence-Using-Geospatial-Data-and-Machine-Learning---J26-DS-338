@@ -1,0 +1,3 @@
+event_id,event_date,daily_event_day_mm,daily_prior_3_days_mm,daily_prior_7_days_mm,daily_full_8_days_mm,hh_event_day_mm,hh_prior_3_days_mm,hh_prior_7_days_mm,hh_full_8_days_mm,maximum_30min_depth_mm,maximum_1h_depth_mm,maximum_30min_rate_mm_per_hr
+E001,2018-05-29,0.015,44.7797,153.9531,153.9681,0.015,44.7797,153.9531,153.9681,3.7499,6.6861,7.4998
+E002,2018-11-25,21.8437,72.6397,104.6418,126.4854,21.8437,72.6397,104.6418,126.4854,6.9174,13.0875,13.8349

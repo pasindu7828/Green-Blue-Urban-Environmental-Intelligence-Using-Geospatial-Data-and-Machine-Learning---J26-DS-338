@@ -1,0 +1,46 @@
+PART 3 - HELD-OUT LULC CLASSIFIER EVALUATION
+=================================================================
+
+Frozen model: XGBoost Moderate
+Wetland weighting multiplier: 1.5
+Development observations: 832
+Held-out test observations: 234
+
+OVERALL TEST METRICS:
+accuracy: 0.6923076923076923
+balanced_accuracy: 0.7172142884786563
+macro_f1: 0.7043627121828688
+weighted_f1: 0.6920224449667769
+wetland_precision: 0.6037735849056604
+wetland_recall: 0.48484848484848486
+wetland_f1: 0.5378151260504201
+wetland_support: 66
+wetlands_correctly_detected: 32
+paddy_incorrectly_predicted_as_wetland: 10
+
+CLASSIFICATION REPORT:
+                     precision    recall  f1-score   support
+
+      Wetland_Marsh     0.6038    0.4848    0.5378        66
+         Open_Water     0.6923    0.8000    0.7423        45
+           Built_Up     0.9250    0.8222    0.8706        45
+  Paddy_Agriculture     0.3824    0.4815    0.4262        27
+   Other_Vegetation     0.7500    0.8182    0.7826        22
+Bare_Fill_Disturbed     0.8387    0.8966    0.8667        29
+
+           accuracy                         0.6923       234
+          macro avg     0.6987    0.7172    0.7044       234
+       weighted avg     0.6999    0.6923    0.6920       234
+
+
+WETLAND METRICS BY YEAR:
+ year  class_id    class_name  precision   recall       f1  support
+ 2015         1 Wetland_Marsh   0.400000 0.285714 0.333333       21
+ 2020         1 Wetland_Marsh   0.666667 0.666667 0.666667       21
+ 2025         1 Wetland_Marsh   0.705882 0.500000 0.585366       24
+
+IMPORTANT LIMITATIONS:
+The historical LULC maps remain estimated maps.
+Low wetland recall may produce unreliable loss/gain.
+Model acceptance requires research review.
+Do not tune further using these test results.

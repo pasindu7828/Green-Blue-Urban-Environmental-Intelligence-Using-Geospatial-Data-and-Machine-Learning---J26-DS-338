@@ -1,0 +1,6 @@
+criterion,source_variable,raw_min,raw_max,raw_p05,raw_p95,use_status,primary_candidate_method,sensitivity_method,final_approved,note
+C1,c1_major_road_distance_m,0.0,1760.06155468142,0.0,607.5486649908541,PROVISIONAL_CORE,PERCENTILE_CAPPED_P05_P95,PERCENTILE_RANK,False,"Percentiles are study-specific statistical anchors, not UDA legal thresholds"
+C2,c2_road_density_500m_km_per_km2,0.654514840034207,21.037738667533496,3.940817745382058,17.511665432445845,PROVISIONAL_CORE,PERCENTILE_CAPPED_P05_P95,PERCENTILE_RANK,False,"Percentiles are study-specific statistical anchors, not UDA legal thresholds"
+C3,c3_context_building_pct_500m,0.0,20.05479829839942,0.0,15.22225589786125,DIRECTION_UNDECIDED_TWO_ALTERNATIVES,PERCENTILE_CAPPED_P05_P95,PERCENTILE_RANK,False,"Percentiles are study-specific statistical anchors, not UDA legal thresholds"
+C4,c4_slope_mean_deg,0.0,35.16070768299891,0.8651298403471359,7.076272097575545,PROVISIONAL_CORE,PERCENTILE_CAPPED_P05_P95,PERCENTILE_RANK,False,"Percentiles are study-specific statistical anchors, not UDA legal thresholds"
+C5,c5_elevation_mean_m,-7.303092294269138,124.72798029581706,3.103926240404447,28.114060788684416,RAW_CONTEXT_ONLY,NONE,NONE,False,"Percentiles are study-specific statistical anchors, not UDA legal thresholds"

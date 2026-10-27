@@ -1,0 +1,2 @@
+same_crs,same_dimensions,same_transform,same_grid,paired_valid_pixels,mean_difference_gedtm_minus_nasa_m,mae_m,rmse_m,correlation
+True,True,True,True,320112,-2.4219948008557166,3.061614685600004,4.016200439708283,0.9580578104368723

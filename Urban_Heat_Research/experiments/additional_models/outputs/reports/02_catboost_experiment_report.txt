@@ -1,0 +1,18 @@
+STEP 02 - CATBOOST SUPPLEMENTARY EXPERIMENT
+
+Best config: CB02
+Mean MAE: 2.414177 °C
+Std MAE: 1.393983 °C
+Mean RMSE: 2.826494 °C
+Mean R2: -0.091024
+Mean centered spatial R2: 0.570076
+Negative-R2 fold count: 1
+Worst-year MAE: 4.234504 °C
+Minimum R2: -2.415476
+
+2024 reserved validation: NOT LOADED
+2025 final lockbox: NOT LOADED
+Production pipeline: UNTOUCHED
+Production model: UNCHANGED
+
+STEP 02 STATUS: PASS

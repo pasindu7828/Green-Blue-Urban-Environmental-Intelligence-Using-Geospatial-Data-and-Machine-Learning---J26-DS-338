@@ -1,0 +1,56 @@
+feature_name,explanation_domain,human_readable_feature,domain_order
+elevation_mean_m,Terrain,Mean elevation (m),5
+built_max_3yr,Local Built-up Condition,Maximum built-up fraction over 3 years,1
+built_mean_3yr,Local Built-up Condition,Mean built-up fraction over 3 years,1
+built_fraction_t,Local Built-up Condition,Built-up fraction at origin,1
+built_range_3yr,Recent Land-cover Change,3-year built-up variability,2
+elevation_range_m,Terrain,Elevation range (m),5
+slope_max_deg,Terrain,Maximum slope (degrees),5
+slope_std_deg,Terrain,Slope variability (degrees),5
+nbr8_built_change_1yr,Neighbourhood Urban Context,1-year nearby built-up change (8 neighbours),3
+slope_mean_deg,Terrain,Mean slope (degrees),5
+nbr24_built_mean_3yr,Neighbourhood Urban Context,Mean nearby built-up fraction over 3 years (24 neighbours),3
+elevation_max_m,Terrain,Maximum elevation (m),5
+nbr8_built_change_2yr,Neighbourhood Urban Context,2-year nearby built-up change (8 neighbours),3
+nbr8_green_fraction_t,Neighbourhood Urban Context,Nearby green-cover fraction at origin (8 neighbours),3
+nbr24_green_fraction_t,Neighbourhood Urban Context,Nearby green-cover fraction at origin (24 neighbours),3
+elevation_min_m,Terrain,Minimum elevation (m),5
+nbr8_built_fraction_t_minus_2,Neighbourhood Urban Context,Nearby built-up fraction two years before origin (8 neighbours),3
+built_fraction_t_minus_1,Local Built-up Condition,Built-up fraction one year before origin,1
+nbr24_built_change_2yr,Neighbourhood Urban Context,2-year nearby built-up change (24 neighbours),3
+green_min_3yr,Local Green / Land-cover Context,Minimum green-cover fraction over 3 years,4
+nbr8_built_mean_3yr,Neighbourhood Urban Context,Mean nearby built-up fraction over 3 years (8 neighbours),3
+nbr8_built_fraction_t,Neighbourhood Urban Context,Nearby built-up fraction at origin (8 neighbours),3
+green_fraction_t,Local Green / Land-cover Context,Green-cover fraction at origin,4
+nbr8_built_fraction_t_minus_1,Neighbourhood Urban Context,Nearby built-up fraction one year before origin (8 neighbours),3
+green_mean_3yr,Local Green / Land-cover Context,Mean green-cover fraction over 3 years,4
+green_range_3yr,Recent Land-cover Change,3-year green-cover variability,2
+nbr24_built_fraction_t,Neighbourhood Urban Context,Nearby built-up fraction at origin (24 neighbours),3
+green_fraction_t_minus_2,Local Green / Land-cover Context,Green-cover fraction two years before origin,4
+nbr8_green_change_2yr,Neighbourhood Urban Context,2-year nearby green-cover change (8 neighbours),3
+green_max_3yr,Local Green / Land-cover Context,Maximum green-cover fraction over 3 years,4
+green_change_2yr,Recent Land-cover Change,2-year green-cover change,2
+built_change_1yr,Recent Land-cover Change,1-year built-up change,2
+water_fraction_t,Local Green / Land-cover Context,Water fraction at origin,4
+green_fraction_t_minus_1,Local Green / Land-cover Context,Green-cover fraction one year before origin,4
+open_bare_fraction_t_minus_2,Local Green / Land-cover Context,Open/bare-land fraction two years before origin,4
+built_min_3yr,Local Built-up Condition,Minimum built-up fraction over 3 years,1
+open_bare_fraction_t_minus_1,Local Green / Land-cover Context,Open/bare-land fraction one year before origin,4
+built_fraction_t_minus_2,Local Built-up Condition,Built-up fraction two years before origin,1
+water_fraction_t_minus_1,Local Green / Land-cover Context,Water fraction one year before origin,4
+water_min_3yr,Local Green / Land-cover Context,Minimum water fraction over 3 years,4
+built_change_2yr,Recent Land-cover Change,2-year built-up change,2
+built_growth_vs_green_loss_2yr,Recent Land-cover Change,2-year built-up growth relative to green-cover loss,2
+open_bare_fraction_t,Local Green / Land-cover Context,Open/bare-land fraction at origin,4
+open_bare_change_2yr,Recent Land-cover Change,2-year open/bare-land change,2
+water_mean_3yr,Local Green / Land-cover Context,Mean water fraction over 3 years,4
+open_bare_mean_3yr,Local Green / Land-cover Context,Mean open/bare-land fraction over 3 years,4
+open_bare_range_3yr,Recent Land-cover Change,3-year open/bare-land variability,2
+built_growth_vs_green_loss_1yr,Recent Land-cover Change,1-year built-up growth relative to green-cover loss,2
+water_change_2yr,Recent Land-cover Change,2-year water change,2
+open_bare_min_3yr,Local Green / Land-cover Context,Minimum open/bare-land fraction over 3 years,4
+green_change_1yr,Recent Land-cover Change,1-year green-cover change,2
+open_bare_change_1yr,Recent Land-cover Change,1-year open/bare-land change,2
+water_fraction_t_minus_2,Local Green / Land-cover Context,Water fraction two years before origin,4
+water_range_3yr,Recent Land-cover Change,3-year water variability,2
+water_change_1yr,Recent Land-cover Change,1-year water change,2

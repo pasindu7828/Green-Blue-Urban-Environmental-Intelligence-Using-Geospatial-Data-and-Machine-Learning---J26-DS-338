@@ -1,0 +1,88 @@
+{
+  "step": "16C-I",
+  "name": "Zoning Coverage and Uncertainty Audit",
+  "qa_status": "PASS",
+  "planning_use_status": "PROVISIONAL_REVIEW_REQUIRED",
+  "generated_utc": "2026-10-17T04:50:23.661895+00:00",
+  "target_epsg": 32644,
+  "frozen_raw_sha256": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+  "kmc_area_ha": 8882.9216,
+  "main_zoning_coverage_ha": 6620.319,
+  "main_zoning_coverage_pct": 74.5286,
+  "unmapped_area_ha": 2262.6026,
+  "unmapped_pct": 25.4714,
+  "unknown_zoning_area_ha": 2187.3418,
+  "ambiguous_area_ha": 2153.8059,
+  "conservation_review_area_ha": 1146.6602,
+  "approximate_highland_area_ha": 74.0534,
+  "outside_main_zoning_ha": {
+    "unknown_zoning": 2187.3418,
+    "ambiguous_names": 0.0,
+    "conservation_water": 0.0,
+    "highland_approximate": 46.5883
+  },
+  "supplied_qa_metrics": {
+    "kmc_area_ha": 8882.921581109182,
+    "zone_features": 508,
+    "zone_coverage_ha": 6620.31900779477,
+    "zone_coverage_pct": 74.52862155029982,
+    "unclassified_features": 130,
+    "unclassified_ha": 2187.341816051916,
+    "unclassified_pct": 24.624126151283544,
+    "unmapped_ha": 75.26076340934108,
+    "unmapped_pct": 0.8472523676151098,
+    "ambiguous_class_features": 171,
+    "md3_md4_composite_features": 5,
+    "highland_compared": [
+      {
+        "area_name": "Korathota",
+        "ref_ha": 33.236,
+        "as_highland_ha": 20.457,
+        "as_unclassified_ha": 12.665,
+        "as_other_zone_ha": 0.113,
+        "not_covered_ha": 0.0,
+        "pct_highland": 61.6,
+        "pct_unclassified": 38.1,
+        "status": "DISAGREEMENT_IN_SCREENSHOT_DERIVED_LAYERS",
+        "legal_verified": 0,
+        "analysis_use": "QA_ONLY_NOT_SUITABILITY_MODEL"
+      },
+      {
+        "area_name": "Dedigamuwa",
+        "ref_ha": 40.818,
+        "as_highland_ha": 6.485,
+        "as_unclassified_ha": 33.923,
+        "as_other_zone_ha": 0.409,
+        "not_covered_ha": 0.0,
+        "pct_highland": 15.9,
+        "pct_unclassified": 83.1,
+        "status": "DISAGREEMENT_IN_SCREENSHOT_DERIVED_LAYERS",
+        "legal_verified": 0,
+        "analysis_use": "QA_ONLY_NOT_SUITABILITY_MODEL"
+      }
+    ],
+    "zone_geometry_invalid": 0,
+    "unclassified_geometry_invalid": 0,
+    "source_all_zones_official_zero": true,
+    "original_polygon_names_kept": true
+  },
+  "crosscheck_review_count": 2,
+  "qa_checks": 21,
+  "qa_passed": 21,
+  "important_limitations": [
+    "All zoning layers are provisional or approximate reference data.",
+    "Unknown and ambiguous zones remain uncertain even when geometry is valid.",
+    "Category areas may overlap and must not be summed directly.",
+    "The supplied QA metrics may use different area definitions.",
+    "No legally approved zoning boundary is established by this calculation.",
+    "No zoning overlay with the 9240 research grid cells was performed.",
+    "No AHP weighting, suitability scoring or final development recommendation was produced."
+  ],
+  "outputs": {
+    "coverage": "16c_i_zoning_spatial_coverage.csv",
+    "categories": "16c_i_zoning_attribute_categories.csv",
+    "crosscheck": "16c_i_supplied_qa_crosscheck.csv",
+    "qa": "16c_i_zoning_coverage_qa.csv",
+    "summary": "16c_i_zoning_coverage_summary.json"
+  }
+}

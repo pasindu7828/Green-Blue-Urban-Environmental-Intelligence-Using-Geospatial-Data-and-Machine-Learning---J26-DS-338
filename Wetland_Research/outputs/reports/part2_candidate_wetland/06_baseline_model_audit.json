@@ -1,0 +1,17 @@
+{
+    "random_seed": 42,
+    "test_set_loaded": false,
+    "default_threshold": 0.5,
+    "feature_count": 27,
+    "train_samples": 467,
+    "validation_samples": 99,
+    "train_positive": 263,
+    "train_negative": 204,
+    "validation_positive": 57,
+    "validation_negative": 42,
+    "scaler_fit_scope": "train_only",
+    "dummy_strategy": "prior",
+    "logistic_solver": "liblinear",
+    "logistic_C": 1.0,
+    "logistic_penalty": "l2"
+}

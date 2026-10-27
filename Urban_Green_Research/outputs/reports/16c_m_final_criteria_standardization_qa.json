@@ -1,0 +1,132 @@
+{
+  "section": "03_development_suitability",
+  "stage": "16c_m",
+  "status": "PASS_FINAL_SELECTED_CRITERIA_STANDARDIZED_AHP_WEIGHTING_PENDING",
+  "raw_source": "data/processed/development_suitability/raw_criteria/16b_raw_suitability_criteria_100m.csv",
+  "raw_source_step16b_status": "PASS",
+  "grid_cells": 9240,
+  "crs": "EPSG:32644",
+  "study_area_km2": 88.82921581108508,
+  "selected_criteria": [
+    "C1",
+    "C2",
+    "C4"
+  ],
+  "method": "Empirical P05/P95 clipped normalization",
+  "historical_03d_method_reproduced": true,
+  "historical_reproduction": {
+    "C1": {
+      "lower_p05": 0.0,
+      "upper_p95": 607.5486649908541,
+      "maximum_score_difference": 2.220446049250313e-16
+    },
+    "C2": {
+      "lower_p05": 3.9166697923490315,
+      "upper_p95": 17.53174928391144,
+      "maximum_score_difference": 1.1102230246251565e-16
+    },
+    "C4": {
+      "lower_p05": 0.8760415321209741,
+      "upper_p95": 7.091970885569082,
+      "maximum_score_difference": 2.220446049250313e-16
+    }
+  },
+  "criteria": {
+    "C1": {
+      "name": "Major Road Proximity",
+      "raw_column": "c1_major_road_distance_m",
+      "score_column": "c1_road_access_score",
+      "direction": "COST",
+      "lower_p05": 0.0,
+      "upper_p95": 607.5486649908541,
+      "raw_distribution": {
+        "count": 9240,
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 131.2097261783299,
+        "mean": 193.09429544170487,
+        "p95": 607.5486649908541,
+        "max": 1760.06155468142
+      },
+      "score_distribution": {
+        "count": 9240,
+        "min": 0.0,
+        "p05": 8.983619965435206e-05,
+        "median": 0.7840342120078478,
+        "mean": 0.6982623228282626,
+        "p95": 1.0,
+        "max": 1.0
+      }
+    },
+    "C2": {
+      "name": "Local Road Density 500m",
+      "raw_column": "c2_road_density_500m_km_per_km2",
+      "score_column": "c2_road_context_score",
+      "direction": "BENEFIT",
+      "lower_p05": 3.940817745382058,
+      "upper_p95": 17.511665432445845,
+      "raw_distribution": {
+        "count": 9240,
+        "min": 0.654514840034207,
+        "p05": 3.940817745382058,
+        "median": 10.167041982554977,
+        "mean": 10.525587234872452,
+        "p95": 17.511665432445845,
+        "max": 21.037738667533496
+      },
+      "score_distribution": {
+        "count": 9240,
+        "min": 0.0,
+        "p05": 1.9636455804718814e-05,
+        "median": 0.4587940547817052,
+        "mean": 0.48529558382900756,
+        "p95": 0.9999831616316118,
+        "max": 1.0
+      }
+    },
+    "C4": {
+      "name": "Terrain Slope",
+      "raw_column": "c4_slope_mean_deg",
+      "score_column": "c4_slope_score",
+      "direction": "COST",
+      "lower_p05": 0.8651298403471359,
+      "upper_p95": 7.076272097575545,
+      "raw_distribution": {
+        "count": 9240,
+        "min": 0.0,
+        "p05": 0.8651298403471359,
+        "median": 3.4348420852373014,
+        "mean": 3.7884409244694233,
+        "p95": 7.076272097575545,
+        "max": 35.16070768299891
+      },
+      "score_distribution": {
+        "count": 9240,
+        "min": 0.0,
+        "p05": 1.658972520350733e-05,
+        "median": 0.5862738062552691,
+        "mean": 0.563185597769688,
+        "p95": 0.9999861791912937,
+        "max": 1.0
+      }
+    }
+  },
+  "terrain_fallback_count": 39,
+  "terrain_fallback_method": "NEAREST_VALID_GEDTM_PROXY",
+  "ahp_weights_applied": false,
+  "final_suitability_calculated": false,
+  "classification_performed": false,
+  "frozen_section04_modified": false,
+  "inputs_sha256": {
+    "data/processed/development_suitability/raw_criteria/16b_raw_suitability_criteria_100m.csv": "d9caddaa6462e8940c6215d623ea369fe65ccce4d644abaa5c9abd24088958f8",
+    "data/processed/development_suitability/raw_criteria/16b_raw_suitability_criteria_100m.gpkg": "a1fe686c15ff274d47fb5998185aface5793a16482d4b8492de9ea8aaf635944",
+    "outputs/reports/16b_raw_suitability_criteria_summary.json": "89d44a1252a00388dbb5d23b1a97ef15df7f4c96d4cdefaa8a5a58b3090efe03",
+    "data/processed/development_suitability/standardized_criteria/03d_standardized_criteria_100m.csv": "7db58bfa02a0375c2d8b7713e75475a6fc1af07c5bd122baf37cf308a2c7bcd8"
+  },
+  "outputs": {
+    "csv": "data/processed/development_suitability/standardized_criteria/16c_m_final_criteria_standardized_100m.csv",
+    "gpkg": "data/processed/development_suitability/standardized_criteria/16c_m_final_criteria_standardized_100m.gpkg",
+    "csv_sha256": "480045cb1e3f76a3a21c342db694f298fd194634090ea7f97555ec82689e8e52",
+    "gpkg_sha256": "cd79cc40ab2576bc5d854b489210301bf073c3b831df91248ed01d830cae4715"
+  }
+}

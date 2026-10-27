@@ -1,0 +1,2 @@
+grid_crs,grid_size_m,full_cell_area_m2,kmc_area_km2,retained_grid_cells,full_cells,boundary_cells,summed_kmc_overlap_area_km2,kmc_overlap_area_difference_m2,duplicate_grid_ids,invalid_geometries,incorrect_full_cell_areas,invalid_overlap_fractions,row_col_pairs_unique,grid_overlap_reconstructs_kmc_area,target_created,predictors_created,overall_step11a_status
+EPSG:32644,100.0,10000.0,88.82921581108494,9240,8513,727,88.82921581108508,1.341104507446289e-07,0,0,0,0,True,True,False,False,PASS

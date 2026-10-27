@@ -1,0 +1,25 @@
+check,status,details
+historical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+step28_audit,PASS,Step-28 strict audit verified fully PASS.
+production_model_hash,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+historical_panel_rows,PASS,"actual=24134, expected=24134"
+historical_panel_balanced,PASS,2194 grids x 11 years
+primary_model_specification,PASS,TWFE: LST_C ~ green_mask + NDBI + NDWI + Albedo + NightLights + grid FE + year FE
+clustered_standard_errors,PASS,Clustered by grid_id.
+primary_green_coefficient_finite,PASS,beta=+1.971988411609
+primary_green_ci_finite,PASS,"ci95=[+1.558499446973, +2.385477376245]"
+coefficient_sign_forced,PASS,No. Estimated sign is retained exactly.
+coefficient_stability_windows_tuned,PASS,No. Windows were pre-defined and only used as robustness evidence.
+first_difference_used_for_tuning,PASS,No. It is a pre-defined sensitivity model only.
+step28_baseline_reproduction,PASS,max_raw_error_c=8.881784197001e-16
+lightgbm_used_as_intervention_engine,PASS,No. LightGBM is used only to verify/preserve Step-28 baseline forecasts.
+scenario_rows,PASS,"actual=32910, expected=32910"
+scenario_green_bounds,PASS,"min=0.050000, max=1.000000"
+persistent_effect_accumulated_each_year,PASS,No. The estimated level response is applied once as a persistent offset each year.
+scenario_empirical_support_flagged,PASS,Per-grid historical max and annual-change support classes saved.
+response_ci_labeled_as_total_forecast_uncertainty,PASS,No. It is explicitly response-coefficient uncertainty only.
+causal_guarantee_claim,PASS,No. Observational within-grid response is not claimed as causal proof.
+step28_files_modified,PASS,No. All V3 outputs are written separately.
+step22b_model_retrained,PASS,No.
+geojson_count,PASS,"saved=5, expected=5"
+map_count,PASS,"saved=15, expected=15"

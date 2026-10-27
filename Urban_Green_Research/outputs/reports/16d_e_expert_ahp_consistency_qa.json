@@ -1,0 +1,76 @@
+{
+  "section": "03_development_suitability",
+  "scenario": "BASE_3_CRITERIA",
+  "status": "PASS_USER_REPORTED_EXPERT_AHP_NUMERICAL_QA_FINAL_SUITABILITY_PENDING",
+  "consultation_date": "2026-10-17",
+  "expert_role": "Engineer",
+  "expert_name": null,
+  "response_provenance": "Expert judgments communicated to researcher; researcher-transcribed",
+  "independently_signed_questionnaire": false,
+  "judgments": [
+    {
+      "criterion_a": "C1",
+      "criterion_b": "C2",
+      "higher_importance": "C2",
+      "strength": 3,
+      "exact_justification": "Local road density improves accessibility to land and supports urban development."
+    },
+    {
+      "criterion_a": "C1",
+      "criterion_b": "C4",
+      "higher_importance": "EQUAL",
+      "strength": 1,
+      "exact_justification": "Major road access supports connectivity, while terrain slope affects construction feasibility and costs."
+    },
+    {
+      "criterion_a": "C2",
+      "criterion_b": "C4",
+      "higher_importance": "C2",
+      "strength": 3,
+      "exact_justification": "Local road density improves access, while slope affects construction feasibility. Flood risk also depends on drainage and elevation."
+    }
+  ],
+  "matrix_criterion_order": [
+    "C1",
+    "C2",
+    "C4"
+  ],
+  "pairwise_matrix": [
+    [
+      1.0,
+      0.3333333333333333,
+      1.0
+    ],
+    [
+      3.0,
+      1.0,
+      3.0
+    ],
+    [
+      1.0,
+      0.3333333333333333,
+      1.0
+    ]
+  ],
+  "weights": {
+    "C1": 0.2,
+    "C2": 0.5999999999999999,
+    "C4": 0.2
+  },
+  "lambda_max": 2.9999999999999996,
+  "consistency_index": 0.0,
+  "random_index_n3": 0.58,
+  "consistency_ratio": 0.0,
+  "consistency_acceptable": true,
+  "method": "AHP_PRINCIPAL_EIGENVECTOR",
+  "original_template_sha256": "80ec1bf35ad60ae955d0a7d7b6c34dc542b4efa8a97313800197dade2278c64a",
+  "original_template_unchanged": true,
+  "conditional_four_criterion_model_completed": false,
+  "final_weighted_suitability_calculated": false,
+  "final_suitability_sensitivity_completed": false,
+  "outputs": {
+    "completed_responses": "outputs/reports/16d_e_expert_ahp_completed_responses.csv",
+    "pairwise_matrix": "outputs/reports/16d_e_expert_ahp_pairwise_matrix.csv",
+    "criterion_weights": "outputs/reports/16d_e_expert_ahp_weights.csv"
+  }
+}

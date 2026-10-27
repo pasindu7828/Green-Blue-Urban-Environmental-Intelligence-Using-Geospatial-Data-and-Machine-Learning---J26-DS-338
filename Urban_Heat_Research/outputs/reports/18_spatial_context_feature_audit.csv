@@ -1,0 +1,19 @@
+feature,contains_target_name_lst,retained,reason
+NDVI_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDVI_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDBI_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDBI_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDWI_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDWI_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+EVI_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+EVI_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+Albedo_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+Albedo_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDBI_ADJ_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDBI_ADJ_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDVI_ADJ_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NDVI_ADJ_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NightLights_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+NightLights_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+green_mask_nbr_mean,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.
+green_mask_nbr_contrast,False,True,Predictor-derived spatial context. Retained because the intended inference workflow assumes complete predictor surfaces across the study area.

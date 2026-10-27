@@ -1,0 +1,61 @@
+STEP 16 - UNTUNED CANDIDATE MODEL COMPARISON
+============================================================================================================
+
+SCOPE
+------------------------------------------------------------------------------------------------------------
+Compared Random Forest, XGBoost, LightGBM and NGBoost using the same
+2019-2023 rolling-origin development validation years.
+2024 was NOT loaded.
+2025 was NOT loaded.
+No model training or tuning occurred in this step.
+No final model was selected.
+
+PRIMARY METRIC
+------------------------------------------------------------------------------------------------------------
+MAE is the primary development comparison metric because it is directly
+interpretable as average LST error in degrees Celsius.
+
+UNTUNED DEVELOPMENT MEAN-MAE ORDERING
+------------------------------------------------------------------------------------------------------------
+1. Random Forest: mean MAE=2.968690 °C, mean RMSE=3.389401 °C, mean R²=-0.624664, negative-R² folds=2, mean MAE gap=2.514431 °C.
+2. NGBoost: mean MAE=3.316153 °C, mean RMSE=3.716785 °C, mean R²=-1.056150, negative-R² folds=2, mean MAE gap=2.260863 °C.
+3. LightGBM: mean MAE=3.335034 °C, mean RMSE=3.713613 °C, mean R²=-1.069962, negative-R² folds=2, mean MAE gap=2.881409 °C.
+4. XGBoost: mean MAE=3.418441 °C, mean RMSE=3.797666 °C, mean R²=-1.193001, negative-R² folds=2, mean MAE gap=3.043231 °C.
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------------------------------------------
+The ordering above is NOT the final model selection.
+All four core candidates proceed to the controlled tuning stage.
+Step 17 will tune models using 2018-2023 development data only.
+Later spatial, temporal and reserved-2024 validation may change the evidence.
+
+TEMPORAL STABILITY
+------------------------------------------------------------------------------------------------------------
+The highest average candidate MAE occurred in 2020. Difficult years are retained as evidence of temporal instability/distribution shift rather than treated as coding failures.
+
+BASELINE CONTEXT
+------------------------------------------------------------------------------------------------------------
+Fixed baseline models are summarized separately. Candidate models are
+compared against each fixed baseline using mean rolling-origin MAE.
+A different 'best baseline' chosen retrospectively for each year is not
+treated as a deployable single baseline strategy.
+
+NGBOOST UNCERTAINTY
+------------------------------------------------------------------------------------------------------------
+Nominal 80% interval: mean observed coverage=31.93%, mean width=3.824428 °C.
+Nominal 90% interval: mean observed coverage=39.76%, mean width=4.908600 °C.
+Nominal 95% interval: mean observed coverage=47.27%, mean width=5.848958 °C.
+
+The raw NGBoost uncertainty is diagnostic only and is not accepted
+as the final forecasting uncertainty method at this stage.
+
+STATISTICAL CAUTION
+------------------------------------------------------------------------------------------------------------
+Only five temporal validation folds are available here. Pairwise fold
+differences are reported descriptively; no strong significance claim
+is made from these five folds.
+
+NEXT
+------------------------------------------------------------------------------------------------------------
+Step 17 - Hyperparameter Tuning of RF, XGBoost, LightGBM and NGBoost
+using leakage-safe rolling-origin development validation only.

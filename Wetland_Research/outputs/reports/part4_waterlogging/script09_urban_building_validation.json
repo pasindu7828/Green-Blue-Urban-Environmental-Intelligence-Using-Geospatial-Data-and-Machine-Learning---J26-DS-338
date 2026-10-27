@@ -1,0 +1,48 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Urban building feature preparation",
+  "generated_utc": "2026-10-15T09:40:57.415380+00:00",
+  "source": "data\\raw\\osm\\Kaduwela_OSM_Roads_Buildings_2026.gpkg",
+  "source_mapping_year": 2026,
+  "analysis_crs": "EPSG:32644",
+  "grid_resolution_m": 30,
+  "subpixel_estimation_resolution_m": 5,
+  "study_pixels": 94431,
+  "building_polygon_count": 138451,
+  "highway_line_count": 19388,
+  "building_method": "Rasterize mapped building footprints at 5m and aggregate to approximate percentage coverage of 30m cells.",
+  "density_method": "Mean 30m building footprint fraction within a circular 300m neighbourhood, restricted to sampled study-area cells.",
+  "density_radius_m": 300,
+  "footprint_statistics": {
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "mean": 5.499489,
+    "median": 0.0,
+    "p95": 30.555556
+  },
+  "density_statistics": {
+    "minimum": 0.0,
+    "maximum": 25.543288,
+    "mean": 5.535863,
+    "median": 3.785489,
+    "p95": 16.517701
+  },
+  "outputs": {
+    "footprint_raster": "data\\processed\\part4_waterlogging\\09_OSM_Building_Footprint_Percent_30m.tif",
+    "density_raster": "data\\processed\\part4_waterlogging\\09_OSM_Building_Density_300m_30m.tif",
+    "road_inventory": "outputs\\metrics\\part4_waterlogging\\script09_osm_road_class_inventory.csv",
+    "statistics": "outputs\\metrics\\part4_waterlogging\\script09_urban_building_statistics.csv"
+  },
+  "scientific_limitations": [
+    "OSM 2026 footprints are not historical 2018 building observations.",
+    "OSM building completeness is not independently verified.",
+    "Building footprint coverage is a proxy for development intensity, not measured impervious surface.",
+    "The 5m rasterization is numerical area approximation, not 5m source mapping accuracy.",
+    "Near the study boundary, neighbourhood density considers only sampled Kaduwela cells, not the full external neighbourhood.",
+    "Road classes are inventoried only; no road susceptibility factor is created.",
+    "Urban density may correlate strongly with existing built-up land cover.",
+    "No susceptibility weights, ML labels or predictions are produced."
+  ],
+  "raw_data_modified": false,
+  "status": "URBAN_BUILDING_FEATURE_PREPARATION_PASS"
+}

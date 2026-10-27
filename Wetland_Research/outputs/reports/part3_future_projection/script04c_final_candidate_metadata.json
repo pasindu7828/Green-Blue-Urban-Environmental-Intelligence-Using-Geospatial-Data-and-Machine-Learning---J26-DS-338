@@ -1,0 +1,72 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "stage": "Final historical LULC classifier evaluation",
+  "created_utc": "2026-10-14T09:58:30.208301+00:00",
+  "selected_model": "XGBoost Moderate",
+  "selected_before_test_evaluation": true,
+  "selected_configuration": {
+    "objective": "multi:softprob",
+    "num_class": 6,
+    "n_estimators": 250,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.85,
+    "tree_method": "hist",
+    "eval_metric": "mlogloss",
+    "random_state": 42,
+    "n_jobs": 4
+  },
+  "wetland_weight_multiplier": 1.5,
+  "selection_basis": "Highest observed validation macro-F1 among tested weighted configurations, with wetland-specific error trade-offs reviewed.",
+  "training_includes_original_validation": true,
+  "development_observations": 832,
+  "heldout_test_observations": 234,
+  "features_in_order": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "mndwi",
+    "ndbi"
+  ],
+  "research_class_ids": {
+    "1": "Wetland_Marsh",
+    "2": "Open_Water",
+    "3": "Built_Up",
+    "4": "Paddy_Agriculture",
+    "5": "Other_Vegetation",
+    "6": "Bare_Fill_Disturbed"
+  },
+  "model_class_encoding": "XGBoost output 0-5; add 1 for GIS classes 1-6.",
+  "heldout_test_metrics": {
+    "accuracy": 0.6923076923076923,
+    "balanced_accuracy": 0.7172142884786563,
+    "macro_f1": 0.7043627121828688,
+    "weighted_f1": 0.6920224449667769,
+    "wetland_precision": 0.6037735849056604,
+    "wetland_recall": 0.48484848484848486,
+    "wetland_f1": 0.5378151260504201,
+    "wetland_support": 66,
+    "wetlands_correctly_detected": 32,
+    "paddy_incorrectly_predicted_as_wetland": 10
+  },
+  "model_acceptance": "PENDING_RESEARCH_REVIEW",
+  "software": {
+    "xgboost": "3.4.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "limitations": [
+    "Single buffered geographic hold-out.",
+    "Small year-specific held-out class sample sizes.",
+    "Historical reference interpretation uncertainty.",
+    "Four documented placemark-name/year discrepancies.",
+    "Classification errors can propagate into CA-Markov transitions and projections.",
+    "Test results must not be used for further tuning."
+  ]
+}

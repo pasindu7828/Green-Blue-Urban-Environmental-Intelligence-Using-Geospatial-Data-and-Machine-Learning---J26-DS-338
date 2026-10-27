@@ -1,0 +1,19 @@
+check,passed
+Standardized criteria QA passed,True
+GN integration QA passed,True
+AHP intake technical QA passed,True
+Expert review form matches AHP intake,True
+Pairwise form matches AHP intake,True
+Criteria contain 9240 unique grid IDs,True
+GIS contains 9240 unique grid IDs,True
+Grid ID sets match,True
+GIS uses EPSG:32644,True
+Grid polygon geometries are valid,True
+Core standardized criterion columns exist,True
+Reference score and status columns exist,True
+Core scores finite and between 0 and 1,True
+Provisional baseline reproduced exactly,True
+Reference model is not incorrectly labelled AHP,True
+Development permissions are unassessed,True
+Grid areas valid and preserve Kaduwela area,True
+Original input files unchanged,True

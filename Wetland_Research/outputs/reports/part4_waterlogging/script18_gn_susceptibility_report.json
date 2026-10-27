@@ -1,0 +1,36 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "GN-wise exploratory susceptibility reporting",
+  "generated_utc": "2026-10-16T04:09:37.377539+00:00",
+  "gn_count": 56,
+  "reference_model": "Script 13 Terrain_Urban (provisional)",
+  "scenario_uncertainty_source": "Script 17 nine-scenario comparison",
+  "study_cells": 94431,
+  "general_land_cells": 51707,
+  "raster_cell_area_ha": 0.09,
+  "area_method": "Count 30m grid-cell centres allocated to exactly one GN and multiply by pixel area; values are approximate.",
+  "coverage_validation": {
+    "missing_cells": 0,
+    "multiply_assigned_cells": 0,
+    "outside_study_cells": 0
+  },
+  "general_land_high_veryhigh_cells": 28610,
+  "output_files": {
+    "summary_csv": "outputs\\metrics\\part4_waterlogging\\script18_gn_susceptibility_summary.csv",
+    "breakdown_csv": "outputs\\metrics\\part4_waterlogging\\script18_gn_class_breakdown.csv",
+    "gn_geopackage": "data\\processed\\part4_waterlogging\\18_GN_Waterlogging_Susceptibility.gpkg"
+  },
+  "interpretation": "GN statistics describe relative susceptibility indices and scenario sensitivity, not observed flood frequency or waterlogging probabilities.",
+  "limitations": [
+    "Reference scenario is provisional.",
+    "Land-cover screening is based on 2020 classification, not current ground truth.",
+    "Building density is derived from 2026 OSM mapping.",
+    "Model-sensitivity measures are not statistical confidence intervals.",
+    "Raster-cell areas approximate GN polygon areas.",
+    "Paddy, wetland and open-water areas are reported separately from general land rather than treated as zero risk.",
+    "No independent predictive accuracy is claimed.",
+    "Seasonal timing and flood depth are not predicted."
+  ],
+  "raw_data_modified": false,
+  "status": "GN_SUSCEPTIBILITY_REPORTING_COMPLETE"
+}

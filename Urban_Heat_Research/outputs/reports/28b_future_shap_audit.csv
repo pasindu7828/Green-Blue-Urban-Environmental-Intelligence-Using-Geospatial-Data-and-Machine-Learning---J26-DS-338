@@ -1,0 +1,21 @@
+check,status,details
+step28_audit,PASS,Step-28 strict audit verified fully PASS.
+production_model_hash,PASS,a3548c58ba0a708c81b4f6471e9183aa70ce9572c716ee55bf2eddafe183e24f
+future_feature_hash,PASS,d1e68a2e5d063f231d7a4d379e2534005ad5873f3a6017d3c4f28de9b8acba38
+future_prediction_hash,PASS,55586971042bbce04845a4a33ae724f51b8417fce9bafc2c15bc0a5e75d7ff3e
+future_rows,PASS,"actual=10970, expected=10970"
+future_years,PASS,"[2026, 2027, 2028, 2029, 2030]"
+unique_grids,PASS,"actual=2194, expected=2194"
+frozen_feature_count,PASS,"actual=93, expected=93"
+step28_raw_prediction_reproduction,PASS,max_error_c=8.881784197001e-16
+raw_shap_reconstruction,PASS,max_error_c=8.881784197001e-15
+centered_shap_reconstruction,PASS,max_error_c=9.769962616701e-15
+centered_feature_shap_zero_mean_within_year,PASS,max_abs_feature_year_mean_c=6.742555465642e-16
+local_top10_rows,PASS,"actual=109700, expected=109700"
+local_top10_per_grid_year,PASS,"grid_years=10970, expected_per_grid_year=10"
+future_shap_geojson_rows,PASS,5 yearly GeoJSON files; 2194 rows expected each
+future_shap_maps_saved,PASS,"saved=20, expected=20"
+annual_level_explained_by_shap,PASS,No. SHAP is explicitly restricted to the LightGBM spatial-anomaly component.
+model_retraining,PASS,None. Frozen Step-22B production model loaded for explanation only.
+new_accuracy_or_test_score,PASS,None. Step 28B is explainability only.
+causal_claim,PASS,"SHAP documented as model attribution, not causal evidence."

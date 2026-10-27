@@ -1,0 +1,208 @@
+{
+  "section": "04_conservation_intelligence",
+  "stage": "4.6",
+  "status": "PASS_HISTORICAL_LOSS_EXPOSURE",
+  "grid_cells": 9240,
+  "historical_early_period": "2012-2014",
+  "historical_late_period": "2021-2023",
+  "primary_transition": "ROBUST_2_OF_3",
+  "sensitivity_transition": "STRICT_3_OF_3",
+  "specialized_green_transition_code": 2,
+  "full_lulc_transition_code": 12,
+  "spatial_codebook_concordance_required": true,
+  "frozen_conversion_areas_km2": {
+    "ROBUST": 7.9821,
+    "STRICT": 4.8267
+  },
+  "neighbourhood_radii_m": [
+    250,
+    500
+  ],
+  "pixel_area_m2": 900.0,
+  "focal_pixel_occurrences_excluded": 98291,
+  "exposure_summary": {
+    "ROBUST": {
+      "nearest_pixel_centre_distance_m": {
+        "count": 9240,
+        "min": 7.0710678118654755,
+        "p05": 15.811388300841896,
+        "p25": 35.35533905932738,
+        "median": 65.19202405202648,
+        "p75": 109.77249200050075,
+        "p95": 219.65882636488797,
+        "max": 512.2987409705396
+      },
+      "250m": {
+        "exposure_share": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.005,
+          "p25": 0.043478260869565216,
+          "median": 0.08173076923076923,
+          "p75": 0.12745098039215685,
+          "p95": 0.19230769230769232,
+          "max": 0.46
+        },
+        "converted_area_km2": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.0009,
+          "p25": 0.0072,
+          "median": 0.0144,
+          "p75": 0.0225,
+          "p95": 0.0351,
+          "max": 0.0846
+        },
+        "no_valid_context_cells": 0,
+        "cells_with_detected_conversion": 8911
+      },
+      "500m": {
+        "exposure_share": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.024026612836253767,
+          "p25": 0.061691404734187036,
+          "median": 0.09027777777777778,
+          "p75": 0.11744186046511627,
+          "p95": 0.15795586527293845,
+          "max": 0.2517401392111369
+        },
+        "converted_area_km2": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.0144,
+          "p25": 0.0405,
+          "median": 0.0648,
+          "p75": 0.0864,
+          "p95": 0.1197,
+          "max": 0.1953
+        },
+        "no_valid_context_cells": 0,
+        "cells_with_detected_conversion": 9239
+      }
+    },
+    "STRICT": {
+      "nearest_pixel_centre_distance_m": {
+        "count": 9240,
+        "min": 7.0710678118654755,
+        "p05": 15.811388300841896,
+        "p25": 47.43416490252569,
+        "median": 85.14693182963201,
+        "p75": 137.2953021774598,
+        "p95": 270.64737205448716,
+        "max": 752.3629443293975
+      },
+      "250m": {
+        "exposure_share": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.0,
+          "p25": 0.02717391304347826,
+          "median": 0.0575727899355908,
+          "p75": 0.09302325581395349,
+          "p95": 0.15606936416184972,
+          "max": 0.4228571428571429
+        },
+        "converted_area_km2": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.0,
+          "p25": 0.0036,
+          "median": 0.0081,
+          "p75": 0.013725,
+          "p95": 0.0234,
+          "max": 0.0666
+        },
+        "no_valid_context_cells": 0,
+        "cells_with_detected_conversion": 8649
+      },
+      "500m": {
+        "exposure_share": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.01365166541044555,
+          "p25": 0.04125838426523348,
+          "median": 0.06327458094552207,
+          "p75": 0.08667821595702442,
+          "p95": 0.12134674329501913,
+          "max": 0.21652421652421652
+        },
+        "converted_area_km2": {
+          "count": 9240,
+          "min": 0.0,
+          "p05": 0.0072,
+          "p25": 0.0225,
+          "median": 0.0378,
+          "p75": 0.0531,
+          "p95": 0.0765,
+          "max": 0.1386
+        },
+        "no_valid_context_cells": 0,
+        "cells_with_detected_conversion": 9221
+      }
+    }
+  },
+  "checks": {
+    "robust_green_spatial_alignment": true,
+    "strict_green_spatial_alignment": true,
+    "robust_full_spatial_alignment": true,
+    "strict_full_spatial_alignment": true,
+    "pixel_area_900m2": true,
+    "robust_green_to_built_codebook_match": true,
+    "robust_green_transition_codes_valid": true,
+    "robust_frozen_area_matches": true,
+    "strict_green_to_built_codebook_match": true,
+    "strict_green_transition_codes_valid": true,
+    "strict_frozen_area_matches": true,
+    "strict_conversion_subset_of_robust": true,
+    "grid_9240_unique_ids": true,
+    "current_9240_unique_ids": true,
+    "clipped_9240_unique_ids": true,
+    "all_grid_ids_match": true,
+    "grid_and_clipped_epsg32644": true,
+    "current_green_is_2025_raw_rf": true,
+    "centres_and_bounds_finite": true,
+    "clipped_areas_match_stored": true,
+    "9240_cells_preserved": true,
+    "current_green_unknowns_preserved": true,
+    "robust_nearest_distances_valid": true,
+    "robust_250m_counts_valid": true,
+    "robust_250m_share_valid": true,
+    "robust_250m_reproduced": true,
+    "robust_500m_counts_valid": true,
+    "robust_500m_share_valid": true,
+    "robust_500m_reproduced": true,
+    "strict_nearest_distances_valid": true,
+    "strict_250m_counts_valid": true,
+    "strict_250m_share_valid": true,
+    "strict_250m_reproduced": true,
+    "strict_500m_counts_valid": true,
+    "strict_500m_share_valid": true,
+    "strict_500m_reproduced": true,
+    "no_forbidden_model_inputs": true,
+    "all_frozen_transition_areas_preserved": true,
+    "csv_export_9240": true,
+    "gis_export_9240": true
+  },
+  "methodology": {
+    "nearest_distance": "Distance from grid-cell centre to nearest historical converted 30m raster pixel centre",
+    "neighbourhood_conversion_area": "Number of historical G2B pixels within radius, excluding focal full 100m grid cell, multiplied by 900m2",
+    "neighbourhood_exposure_share": "Historical G2B pixel count divided by valid labelled transition pixel count in the same neighbourhood",
+    "missing_context": "No valid transition pixels -> NaN, not zero historical exposure"
+  },
+  "limitations": [
+    "Conversion reflects two historical consensus periods, not annual event dates.",
+    "Pixel-centre neighbourhood approximation, not exact circular buffer overlay.",
+    "Raster conversion areas use full 30m pixels, not fractional KMC-boundary pixel areas.",
+    "Historical exposure is not future conversion probability.",
+    "Neighbourhood exposure is descriptive.",
+    "Current-green candidate threshold has not been selected.",
+    "No Green Importance score calculated.",
+    "Historical loss remains outside intrinsic Green Importance.",
+    "No future Urbanization Pressure used.",
+    "No Development Suitability used."
+  ],
+  "green_importance_calculated": false,
+  "future_pressure_used": false,
+  "development_suitability_used": false
+}

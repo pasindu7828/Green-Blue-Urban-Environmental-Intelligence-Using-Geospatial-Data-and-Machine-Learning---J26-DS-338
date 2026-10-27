@@ -1,0 +1,7 @@
+criterion_order,criterion_code,decision_dimension,final_indicator_name,final_field_name,criterion_type,critic_weight,normalized_min,normalized_max,ideal_worst_weighted,ideal_best_weighted
+1,C1,Future Heat Severity,Future Heat Severity,future_heat_mean_lst_c,BENEFIT_PRIORITY,0.1163910980720195,0.0,1.0,0.0,0.1163910980720195
+2,C2,Trend Urgency,Relative Trend Urgency,relative_heat_sen_slope,BENEFIT_PRIORITY,0.1620695766171264,0.0,1.0,0.0,0.1620695766171264
+3,C3,Vegetation / Green Deficit,Future Green-cover Deficit,future_green_deficit_mean,BENEFIT_PRIORITY,0.2133920369016953,0.0,1.0,0.0,0.2133920369016953
+4,C4,Built-up / Urban Pressure,Future Built-up Intensity,future_ndbi_mean,BENEFIT_PRIORITY,0.085981621838505,0.0,1.0,0.0,0.085981621838505
+5,C5,Blue-space / Water Deficit,Water-access Deficit,distance_to_water,BENEFIT_PRIORITY,0.3134683522761163,0.0,1.0,0.0,0.3134683522761163
+6,C6,Modeled Intervention Benefit,Modeled Combined Cooling Benefit,combined_g10_moderate_mean_cooling_benefit_c,BENEFIT_PRIORITY,0.1086973142945375,0.0,1.0,0.0,0.1086973142945375

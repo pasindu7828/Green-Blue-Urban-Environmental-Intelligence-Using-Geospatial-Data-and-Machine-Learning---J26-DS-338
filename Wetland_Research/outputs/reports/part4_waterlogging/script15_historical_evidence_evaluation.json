@@ -1,0 +1,318 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Historical inundation evidence evaluation",
+  "generated_utc": "2026-10-15T15:46:22.359529+00:00",
+  "evaluation_type": "Exploratory spatial consistency assessment",
+  "event_dates": {
+    "E001": "2018-05-29",
+    "E002": "2018-11-25"
+  },
+  "raster_sampling": "30m grid-cell centre inclusion",
+  "sampled_event_cells": {
+    "E001": 4354,
+    "E002": 2548,
+    "shared": 2491
+  },
+  "e002_shared_with_e001_percent": 97.763,
+  "geometry_repairs": {
+    "E001": {
+      "polygon_count": 31,
+      "repaired_polygons": 17
+    },
+    "E002": {
+      "polygon_count": 18,
+      "repaired_polygons": 3
+    }
+  },
+  "screening_source_year": 2020,
+  "urban_osm_mapping_year": 2026,
+  "context_rows": [
+    {
+      "region": "E001",
+      "screening_category": "General_Land",
+      "sampled_cells": 621,
+      "approximate_area_ha": 55.89,
+      "percent_of_region": 14.2627
+    },
+    {
+      "region": "E001",
+      "screening_category": "Paddy_Agriculture",
+      "sampled_cells": 1639,
+      "approximate_area_ha": 147.51,
+      "percent_of_region": 37.6435
+    },
+    {
+      "region": "E001",
+      "screening_category": "Wetland_Marsh",
+      "sampled_cells": 1313,
+      "approximate_area_ha": 118.17,
+      "percent_of_region": 30.1562
+    },
+    {
+      "region": "E001",
+      "screening_category": "Open_Water",
+      "sampled_cells": 757,
+      "approximate_area_ha": 68.13,
+      "percent_of_region": 17.3863
+    },
+    {
+      "region": "E001",
+      "screening_category": "Unknown_Landcover",
+      "sampled_cells": 24,
+      "approximate_area_ha": 2.16,
+      "percent_of_region": 0.5512
+    },
+    {
+      "region": "E002",
+      "screening_category": "General_Land",
+      "sampled_cells": 284,
+      "approximate_area_ha": 25.56,
+      "percent_of_region": 11.146
+    },
+    {
+      "region": "E002",
+      "screening_category": "Paddy_Agriculture",
+      "sampled_cells": 815,
+      "approximate_area_ha": 73.35,
+      "percent_of_region": 31.9859
+    },
+    {
+      "region": "E002",
+      "screening_category": "Wetland_Marsh",
+      "sampled_cells": 837,
+      "approximate_area_ha": 75.33,
+      "percent_of_region": 32.8493
+    },
+    {
+      "region": "E002",
+      "screening_category": "Open_Water",
+      "sampled_cells": 607,
+      "approximate_area_ha": 54.63,
+      "percent_of_region": 23.8226
+    },
+    {
+      "region": "E002",
+      "screening_category": "Unknown_Landcover",
+      "sampled_cells": 5,
+      "approximate_area_ha": 0.45,
+      "percent_of_region": 0.1962
+    },
+    {
+      "region": "E001_Only",
+      "screening_category": "General_Land",
+      "sampled_cells": 350,
+      "approximate_area_ha": 31.5,
+      "percent_of_region": 18.7869
+    },
+    {
+      "region": "E001_Only",
+      "screening_category": "Paddy_Agriculture",
+      "sampled_cells": 837,
+      "approximate_area_ha": 75.33,
+      "percent_of_region": 44.9275
+    },
+    {
+      "region": "E001_Only",
+      "screening_category": "Wetland_Marsh",
+      "sampled_cells": 500,
+      "approximate_area_ha": 45.0,
+      "percent_of_region": 26.8384
+    },
+    {
+      "region": "E001_Only",
+      "screening_category": "Open_Water",
+      "sampled_cells": 157,
+      "approximate_area_ha": 14.13,
+      "percent_of_region": 8.4273
+    },
+    {
+      "region": "E001_Only",
+      "screening_category": "Unknown_Landcover",
+      "sampled_cells": 19,
+      "approximate_area_ha": 1.71,
+      "percent_of_region": 1.0199
+    },
+    {
+      "region": "E002_Only",
+      "screening_category": "General_Land",
+      "sampled_cells": 13,
+      "approximate_area_ha": 1.17,
+      "percent_of_region": 22.807
+    },
+    {
+      "region": "E002_Only",
+      "screening_category": "Paddy_Agriculture",
+      "sampled_cells": 13,
+      "approximate_area_ha": 1.17,
+      "percent_of_region": 22.807
+    },
+    {
+      "region": "E002_Only",
+      "screening_category": "Wetland_Marsh",
+      "sampled_cells": 24,
+      "approximate_area_ha": 2.16,
+      "percent_of_region": 42.1053
+    },
+    {
+      "region": "E002_Only",
+      "screening_category": "Open_Water",
+      "sampled_cells": 7,
+      "approximate_area_ha": 0.63,
+      "percent_of_region": 12.2807
+    },
+    {
+      "region": "E002_Only",
+      "screening_category": "Unknown_Landcover",
+      "sampled_cells": 0,
+      "approximate_area_ha": 0.0,
+      "percent_of_region": 0.0
+    },
+    {
+      "region": "Both_Events",
+      "screening_category": "General_Land",
+      "sampled_cells": 271,
+      "approximate_area_ha": 24.39,
+      "percent_of_region": 10.8792
+    },
+    {
+      "region": "Both_Events",
+      "screening_category": "Paddy_Agriculture",
+      "sampled_cells": 802,
+      "approximate_area_ha": 72.18,
+      "percent_of_region": 32.1959
+    },
+    {
+      "region": "Both_Events",
+      "screening_category": "Wetland_Marsh",
+      "sampled_cells": 813,
+      "approximate_area_ha": 73.17,
+      "percent_of_region": 32.6375
+    },
+    {
+      "region": "Both_Events",
+      "screening_category": "Open_Water",
+      "sampled_cells": 600,
+      "approximate_area_ha": 54.0,
+      "percent_of_region": 24.0867
+    },
+    {
+      "region": "Both_Events",
+      "screening_category": "Unknown_Landcover",
+      "sampled_cells": 5,
+      "approximate_area_ha": 0.45,
+      "percent_of_region": 0.2007
+    }
+  ],
+  "comparisons": [
+    {
+      "scenario": "Terrain_Only",
+      "region": "E001",
+      "general_land_event_cells": 621,
+      "mean_event_score": 0.775724,
+      "event_high_veryhigh_percent": 94.2029,
+      "background_high_veryhigh_percent": 63.3763,
+      "difference_percentage_points": 30.8266
+    },
+    {
+      "scenario": "Terrain_Only",
+      "region": "E002",
+      "general_land_event_cells": 284,
+      "mean_event_score": 0.804162,
+      "event_high_veryhigh_percent": 94.7183,
+      "background_high_veryhigh_percent": 63.3763,
+      "difference_percentage_points": 31.342
+    },
+    {
+      "scenario": "Terrain_Only",
+      "region": "E001_Only",
+      "general_land_event_cells": 350,
+      "mean_event_score": 0.747992,
+      "event_high_veryhigh_percent": 93.4286,
+      "background_high_veryhigh_percent": 63.3763,
+      "difference_percentage_points": 30.0522
+    },
+    {
+      "scenario": "Terrain_Only",
+      "region": "E002_Only",
+      "general_land_event_cells": 13,
+      "mean_event_score": 0.650363,
+      "event_high_veryhigh_percent": 84.6154,
+      "background_high_veryhigh_percent": 63.3763,
+      "difference_percentage_points": 21.2391
+    },
+    {
+      "scenario": "Terrain_Only",
+      "region": "Both_Events",
+      "general_land_event_cells": 271,
+      "mean_event_score": 0.81154,
+      "event_high_veryhigh_percent": 95.203,
+      "background_high_veryhigh_percent": 63.3763,
+      "difference_percentage_points": 31.8266
+    },
+    {
+      "scenario": "Terrain_Urban",
+      "region": "E001",
+      "general_land_event_cells": 621,
+      "mean_event_score": 0.658887,
+      "event_high_veryhigh_percent": 89.211,
+      "background_high_veryhigh_percent": 55.331,
+      "difference_percentage_points": 33.88
+    },
+    {
+      "scenario": "Terrain_Urban",
+      "region": "E002",
+      "general_land_event_cells": 284,
+      "mean_event_score": 0.676631,
+      "event_high_veryhigh_percent": 92.2535,
+      "background_high_veryhigh_percent": 55.331,
+      "difference_percentage_points": 36.9225
+    },
+    {
+      "scenario": "Terrain_Urban",
+      "region": "E001_Only",
+      "general_land_event_cells": 350,
+      "mean_event_score": 0.640412,
+      "event_high_veryhigh_percent": 86.2857,
+      "background_high_veryhigh_percent": 55.331,
+      "difference_percentage_points": 30.9547
+    },
+    {
+      "scenario": "Terrain_Urban",
+      "region": "E002_Only",
+      "general_land_event_cells": 13,
+      "mean_event_score": 0.549104,
+      "event_high_veryhigh_percent": 76.9231,
+      "background_high_veryhigh_percent": 55.331,
+      "difference_percentage_points": 21.5921
+    },
+    {
+      "scenario": "Terrain_Urban",
+      "region": "Both_Events",
+      "general_land_event_cells": 271,
+      "mean_event_score": 0.682748,
+      "event_high_veryhigh_percent": 92.9889,
+      "background_high_veryhigh_percent": 55.331,
+      "difference_percentage_points": 37.6579
+    }
+  ],
+  "output_csvs": [
+    "outputs\\metrics\\part4_waterlogging\\script15_event_landcover_context.csv",
+    "outputs\\metrics\\part4_waterlogging\\script15_event_susceptibility_comparison.csv",
+    "outputs\\metrics\\part4_waterlogging\\script15_event_class_distributions.csv"
+  ],
+  "limitations": [
+    "Both event footprints were manually interpreted from historical imagery.",
+    "Visible inundation does not prove abnormal seasonal waterlogging.",
+    "The two footprints overlap substantially and must not be counted as independent waterlogging confirmations.",
+    "2020 land cover may not represent land cover on either 2018 event date.",
+    "2026 OSM mapping does not describe verified drainage or building conditions during the 2018 events.",
+    "Permanent water, natural wetlands and paddy inundation are potential confounders.",
+    "Event coverage is not exhaustive; unmapped areas are not negative examples.",
+    "General-land comparison is conditioned on the 2020 screening classification.",
+    "High-class enrichment relative to background is descriptive, not classification accuracy or validation.",
+    "Cell observations are spatially autocorrelated.",
+    "No model is approved as final here."
+  ],
+  "raw_data_modified": false,
+  "status": "EXPLORATORY_EVENT_CONCORDANCE_COMPLETE"
+}

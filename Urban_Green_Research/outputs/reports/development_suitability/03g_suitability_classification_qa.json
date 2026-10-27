@@ -1,0 +1,102 @@
+{
+  "stage": "3.9",
+  "status": "PASS_PROVISIONAL",
+  "method": "five_class_equal_interval",
+  "class_limits": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "grid_cells": 9240,
+  "kmc_area_km2": 88.82921581108494,
+  "study_area_difference_m2": 1.341104507446289e-07,
+  "maximum_cell_area_error_m2": 1.8189894035458565e-12,
+  "class_distribution": [
+    {
+      "class": "VERY_LOW",
+      "class_code": 1,
+      "lower_score": 0.0,
+      "upper_score": 0.2,
+      "grid_count": 746,
+      "grid_percentage": 8.073593073593074,
+      "kmc_area_km2": 6.714464473291903,
+      "kmc_area_percentage": 7.5588469536550935,
+      "mean_score": 0.12159434899724446
+    },
+    {
+      "class": "LOW",
+      "class_code": 2,
+      "lower_score": 0.2,
+      "upper_score": 0.4,
+      "grid_count": 1321,
+      "grid_percentage": 14.296536796536797,
+      "kmc_area_km2": 12.671867684550598,
+      "kmc_area_percentage": 14.265427842456855,
+      "mean_score": 0.3088958042463802
+    },
+    {
+      "class": "MODERATE",
+      "class_code": 3,
+      "lower_score": 0.4,
+      "upper_score": 0.6,
+      "grid_count": 2888,
+      "grid_percentage": 31.255411255411257,
+      "kmc_area_km2": 27.74015128683396,
+      "kmc_area_percentage": 31.22863467108564,
+      "mean_score": 0.513792515037078
+    },
+    {
+      "class": "HIGH",
+      "class_code": 4,
+      "lower_score": 0.6,
+      "upper_score": 0.8,
+      "grid_count": 3058,
+      "grid_percentage": 33.095238095238095,
+      "kmc_area_km2": 29.597472310358263,
+      "kmc_area_percentage": 33.31952448314287,
+      "mean_score": 0.6912273309985936
+    },
+    {
+      "class": "VERY_HIGH",
+      "class_code": 5,
+      "lower_score": 0.8,
+      "upper_score": 1.0,
+      "grid_count": 1227,
+      "grid_percentage": 13.279220779220779,
+      "kmc_area_km2": 12.105260056050353,
+      "kmc_area_percentage": 13.627566049659695,
+      "mean_score": 0.8751282992518011
+    }
+  ],
+  "checks": {
+    "9240_cells_preserved": true,
+    "unique_grid_ids": true,
+    "all_scores_finite": true,
+    "scores_in_0_1": true,
+    "five_defined_classes": true,
+    "every_cell_classified": true,
+    "class_codes_valid": true,
+    "classification_reproduced": true,
+    "all_class_counts_sum_9240": true,
+    "class_area_reconciles_kmc": true,
+    "cell_geometry_area_reconciled": true,
+    "csv_gis_scores_identical": true,
+    "csv_export_count": true,
+    "gis_export_count": true,
+    "map_export_exists": true
+  },
+  "weight_provenance": "PROVISIONAL_LITERATURE_ADAPTED",
+  "is_final_approved_suitability": false,
+  "limitations": [
+    "Classes are relative analytical categories.",
+    "Equal intervals are not engineering thresholds.",
+    "A high score does not imply vacant land.",
+    "Provisional UDA zoning is not used.",
+    "Expert-derived final AHP weights are pending.",
+    "Classification and weight sensitivity are pending.",
+    "No independent suitability accuracy is claimed."
+  ]
+}

@@ -1,0 +1,58 @@
+STEP 18 - SPATIAL VALIDATION
+================================================================================================================
+
+PURPOSE
+----------------------------------------------------------------------------------------------------------------
+Evaluate spatial generalization of the fixed Step 17 tuned candidates
+using the five geometry-only folds frozen in Step 09.
+
+DATA POLICY
+----------------------------------------------------------------------------------------------------------------
+2018-2023: development rows used.
+2024: NOT loaded; reserved validation remains untouched.
+2025: NOT loaded; final lockbox remains untouched.
+
+PRIMARY SPATIAL SPLIT
+----------------------------------------------------------------------------------------------------------------
+Fold counts: {1: 484, 2: 415, 3: 531, 4: 382, 5: 382}
+All years of a held-out grid were excluded from that fold's training set.
+
+MODEL POLICY
+----------------------------------------------------------------------------------------------------------------
+Step 17 tuned hyperparameters were reused exactly.
+No tuning was performed in Step 18.
+No final model was selected.
+
+FEATURE-SELECTION INTERPRETATION
+----------------------------------------------------------------------------------------------------------------
+The 93-feature set was already frozen in Step 08 using development evidence.
+Therefore Step 18 is a development robustness analysis conditional on that
+frozen feature set, not a fully nested spatial feature-selection estimate.
+
+SPATIAL-CONTEXT FEATURE ASSUMPTION
+----------------------------------------------------------------------------------------------------------------
+Detected spatial-context features: 18.
+These are predictor-derived rather than LST-target-derived.
+They are retained under the assumption that the corresponding predictor
+surfaces are available across the full study area at inference time.
+
+PRIMARY SPATIAL RESULTS
+----------------------------------------------------------------------------------------------------------------
+LightGBM: mean MAE=1.413030 °C, mean RMSE=1.911352 °C, mean R²=0.722270, negative-R² folds=0, worst-fold MAE=1.753706 °C, mean MAE gap=0.294988 °C.
+Random Forest: mean MAE=1.687035 °C, mean RMSE=2.239891 °C, mean R²=0.617512, negative-R² folds=0, worst-fold MAE=1.950393 °C, mean MAE gap=0.293166 °C.
+NGBoost: mean MAE=1.932188 °C, mean RMSE=2.559104 °C, mean R²=0.504480, negative-R² folds=0, worst-fold MAE=2.205982 °C, mean MAE gap=0.083073 °C.
+XGBoost: mean MAE=1.946603 °C, mean RMSE=2.578538 °C, mean R²=0.496993, negative-R² folds=0, worst-fold MAE=2.231987 °C, mean MAE gap=0.078097 °C.
+
+210 m BUFFER SENSITIVITY RESULTS
+----------------------------------------------------------------------------------------------------------------
+LightGBM: mean MAE=1.425347 °C, mean RMSE=1.924310 °C, mean R²=0.718713, negative-R² folds=0.
+Random Forest: mean MAE=1.706850 °C, mean RMSE=2.261961 °C, mean R²=0.610317, negative-R² folds=0.
+NGBoost: mean MAE=1.933784 °C, mean RMSE=2.561264 °C, mean R²=0.503469, negative-R² folds=0.
+XGBoost: mean MAE=1.947426 °C, mean RMSE=2.579445 °C, mean R²=0.496647, negative-R² folds=0.
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------
+Step 18 provides spatial development robustness evidence.
+The Step 18 descriptive ranking is not final model selection.
+Temporal instability from Step 17 is carried forward to Step 19
+for dedicated temporal-shift diagnosis and improvement.

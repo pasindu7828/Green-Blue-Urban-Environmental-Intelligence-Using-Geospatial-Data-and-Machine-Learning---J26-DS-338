@@ -1,0 +1,9 @@
+dataset,operation,input_count,output_count,output_crs,output_resolution,valid_percent,output_path,status,minimum,maximum,mean
+KMC Boundary,Reproject and dissolve,1,1,EPSG:32644,,,data/processed/boundaries/kmc/kaduwela_kmc_boundary_utm44n.gpkg,OK,,,
+57 GN Divisions,Reproject and add area,57,57,EPSG:32644,,,data/processed/boundaries/gn_divisions/kaduwela_gn_divisions_utm44n.gpkg,OK,,,
+Landsat Annual Composites,Mask/crop to confirmed KMC boundary,17,17,EPSG:32644,30 m,56.43115214773184,data/processed/landsat/annual_composites_kmc,OK,,,
+OSM Roads 2026,"Select vehicular classes, reproject, clip, deduplicate",18560,6543,EPSG:32644,,,data/processed/osm/kaduwela_roads_2026.gpkg,OK,,,
+OSM Buildings 2026,"Select building polygons, reproject, clip, deduplicate",138451,33673,EPSG:32644,,,data/processed/osm/kaduwela_buildings_2026.gpkg,OK,,,
+GEDTM30,"Reproject, resample and mask to KMC",1,1,EPSG:32644,30 m,100.0,data/processed/dem/gedtm30_kmc_30m.tif,OK,-10.567171096801758,131.3435516357422,13.953706741333008
+NASADEM,"Reproject, resample and mask to KMC",1,1,EPSG:32644,30 m,100.0,data/processed/dem/nasadem_kmc_30m.tif,OK,-14.143231391906738,132.2041473388672,16.39547348022461
+ESA WorldCover 2021,Native-grid KMC mask/crop; no reprojection or resampling,1,1,EPSG:32644,10 m,99.94292430208918,data/processed/reference_lulc/esa_worldcover_2021_kmc_10m.tif,OK,,,

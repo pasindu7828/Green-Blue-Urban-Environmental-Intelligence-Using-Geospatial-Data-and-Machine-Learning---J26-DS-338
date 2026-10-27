@@ -1,0 +1,36 @@
+{
+  "stage": "3.4",
+  "status": "PASS",
+  "total_grid_cells": 9240,
+  "core_comparison_cells": 8880,
+  "raw_measurements": 9,
+  "correlation_pairs": 36,
+  "review_threshold_abs_spearman": 0.85,
+  "strong_correlation_pairs": 3,
+  "same_concept_alternative_review_pairs": 3,
+  "cross_concept_review_pairs": 0,
+  "checks": {
+    "9240_grid_cells": true,
+    "unique_grid_ids": true,
+    "all_criteria_finite": true,
+    "valid_overlap_fractions": true,
+    "positive_overlap_areas": true,
+    "all_measurements_vary": true,
+    "all_correlations_finite": true,
+    "expected_pair_count": true
+  },
+  "methodological_controls": {
+    "criterion_selection_finalized": false,
+    "directions_finalized": false,
+    "standardization_done": false,
+    "ahp_weights_assigned": false,
+    "suitability_score_calculated": false
+  },
+  "interpretation": [
+    "Correlation is not proof of causality.",
+    "Candidate measurement radii are alternatives.",
+    "Small boundary cells are retained in primary analysis.",
+    "Core-subset correlations are diagnostic only.",
+    "Final selection requires planning justification."
+  ]
+}

@@ -1,0 +1,8 @@
+dataset_family,split,years,rows,unique_grids,purpose,target_use,path
+tree,history_context,2015-2017,6582,2194,lag/history context only; not model samples,not evaluated,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\splits\history_context_2015_2017_keys.csv
+tree,train_development,2018-2023,13164,2194,model development and train-only fitting,allowed for training/tuning protocol,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\splits\tree\tree_train_2018_2023.csv
+tree,validation,2024,2194,2194,reserved temporal validation,later validation only,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\splits\tree\tree_validation_2024.csv
+tree,final_test_lockbox,2025,2194,2194,final one-time test after strategy freeze,LOCKED - do not inspect during development,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\splits\tree\tree_test_2025_LOCKED.csv
+linear,train_development,2018-2023,13164,2194,linear baseline development,allowed for training/tuning protocol,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\splits\linear\linear_train_2018_2023.csv
+linear,validation,2024,2194,2194,reserved temporal validation,later validation only,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\splits\linear\linear_validation_2024.csv
+linear,final_test_lockbox,2025,2194,2194,final one-time test after strategy freeze,LOCKED - do not inspect during development,E:\Git Research\J26-DS-338\Urban_Heat_Research\data\splits\linear\linear_test_2025_LOCKED.csv

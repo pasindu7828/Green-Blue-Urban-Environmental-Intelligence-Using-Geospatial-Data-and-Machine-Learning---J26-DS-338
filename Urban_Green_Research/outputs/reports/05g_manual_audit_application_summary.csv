@@ -1,0 +1,2 @@
+input_training_candidates,audited_samples,verified_kept,corrected_relabeled,rejected_removed,unaudited_high_confidence_retained,final_curated_training_reference_count
+399,40,37,1,2,359,397

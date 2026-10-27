@@ -1,0 +1,4 @@
+criterion,criterion_name,expert_ahp_weight
+C1,Major Road Proximity,0.2
+C2,Local Road Density,0.5999999999999999
+C4,Terrain Slope,0.2

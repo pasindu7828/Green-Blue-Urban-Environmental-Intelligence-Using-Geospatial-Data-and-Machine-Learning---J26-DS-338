@@ -1,0 +1,21 @@
+check,status,details
+step22_final_lockbox_audit,PASS,Step 22 audit verified fully PASS before production retraining.
+step22_final_evidence_hashes,PASS,"Step22 audit, metrics and report hashes match preserved final-test evidence."
+step21_strategy_unchanged,PASS,lgbm_anomaly_plus_prior_mean_level
+step21_base_model_unchanged,PASS,LightGBM
+frozen_feature_count,PASS,"actual=93, expected=93"
+source_data_hashes,PASS,"2018-2023, 2024, and 2025 model-ready source hashes all verified."
+production_years,PASS,"[2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+production_rows,PASS,"actual=17552, expected=17552"
+unique_grids,PASS,"actual=2194, expected=2194"
+rows_per_year,PASS,all years expected=2194
+all_grids_present_all_8_years,PASS,Each grid appears once in every year 2018-2025.
+within_year_anomaly_zero_mean,PASS,max_abs_year_mean=0.000000000000
+frozen_hyperparameters_match_source_model,PASS,All manifest hyperparameters match the frozen Step-21 model.
+hyperparameter_retuning,PASS,None. Production estimator is cloned from the frozen Step-21 model.
+feature_reselection,PASS,None. Exact Step-21 ordered 93-feature list reused.
+strategy_change,PASS,None. Frozen LightGBM spatial-anomaly strategy retained.
+step22_test_score_recomputed_after_training,PASS,No. 2025 is not re-evaluated as a test after entering production training.
+future_annual_level_chosen,PASS,No. Future annual thermal-level forecasting is deferred to later forecasting steps.
+production_model_saved,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\models\final\22b_production_lightgbm_anomaly_trained_2018_2025.joblib
+training_year_audit,PASS,"Row counts, grid counts and anomaly-zero-mean checks pass for all years."

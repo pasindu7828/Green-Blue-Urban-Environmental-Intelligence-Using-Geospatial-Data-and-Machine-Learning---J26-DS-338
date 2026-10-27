@@ -1,0 +1,17 @@
+check,status,details
+historical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+v3_coefficient_hash,PASS,c6813b6c3902f34b679368ee3a1daa15dd4c5270a24811ffc3436daea39eedb3
+v3s_audit_hash,PASS,3317c1f3ee44e90157b859ad05421f1dcaa7f015a491b12ceb15d53d3a83a4be
+panel_rows,PASS,"actual=24134, expected=24134"
+panel_balanced,PASS,2194 grids x 11 years
+v3_green_coefficient_reproduced,PASS,error_per_10pp_c=9.964251646011e-15
+yearly_green_ndvi_rows,PASS,"actual=11, expected=11"
+delta_variants_completed,PASS,All transitions + exclude transitions touching 2017.
+green_nested_specs_completed,PASS,"actual=5, expected=5"
+ndvi_nested_specs_completed,PASS,"actual=5, expected=5"
+vegetation_indicator_comparison_completed,PASS,"green_mask, NDVI, EVI x all-years/no-2017."
+otsu_threshold_provenance_inferred_from_csv,PASS,No. Aggregated CSV is explicitly treated as insufficient to determine threshold-generation policy.
+coefficient_sign_forced,PASS,No. All model signs are retained.
+preferred_vegetation_indicator_auto_selected,PASS,No. QA reports evidence; it does not automatically replace green_mask with NDVI/EVI.
+step28_or_step22b_modified,PASS,No. This QA step only reads historical/model-report inputs.
+causal_claim,PASS,No. All outputs are observational validity diagnostics.

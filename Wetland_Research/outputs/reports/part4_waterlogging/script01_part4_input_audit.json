@@ -1,0 +1,113 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Initial source inventory",
+  "generated_utc": "2026-10-15T06:16:32.669493+00:00",
+  "source_data_modified": false,
+  "checks": {
+    "E001_main_kml_exists": true,
+    "E001_child_kml_count": 31,
+    "E002_main_kml_exists": true,
+    "E002_child_kml_count": 18,
+    "E001_daily_file_counts": {
+      ".csv": 1,
+      ".nc": 1,
+      ".png": 1
+    },
+    "E001_half_hourly_file_counts": {
+      ".csv": 1,
+      ".nc": 1,
+      ".png": 1
+    },
+    "E002_daily_file_counts": {
+      ".csv": 1,
+      ".nc": 1,
+      ".png": 1
+    },
+    "E002_half_hourly_file_counts": {
+      ".csv": 1,
+      ".nc": 1,
+      ".png": 1
+    },
+    "boundary_file_exists": true,
+    "kmc_file_count": 0
+  },
+  "event_kml_file_count": 51,
+  "rainfall_file_count": 12,
+  "dem_metadata": [
+    {
+      "file": "data\\raw\\dem\\GEDTM30_Kaduwela_Buffer.tif",
+      "crs": "EPSG:4326",
+      "width": 684,
+      "height": 468,
+      "bands": 1,
+      "resolution": [
+        0.00027777777777799305,
+        0.00027777777777799305
+      ],
+      "nodata": 3.4028234663852886e+38,
+      "bounds": [
+        79.87986111131252,
+        6.840138888828315,
+        80.06986111131268,
+        6.970138888828416
+      ]
+    },
+    {
+      "file": "data\\raw\\dem\\NASADEM_Kaduwela_Buffer.tif",
+      "crs": "EPSG:4326",
+      "width": 684,
+      "height": 468,
+      "bands": 1,
+      "resolution": [
+        0.0002777777777778147,
+        0.0002777777777778147
+      ],
+      "nodata": -32768.0,
+      "bounds": [
+        79.87986111114549,
+        6.840138888881696,
+        80.06986111114551,
+        6.9701388888817135
+      ]
+    }
+  ],
+  "geopackage_metadata": [
+    {
+      "file": "data\\raw\\osm\\Kaduwela_OSM_Roads_Buildings_2026.gpkg",
+      "layers": [
+        {
+          "layer": "Kaduwela_OSM_Roads_Buildings_2026",
+          "data_type": "features",
+          "geometry_type": "GEOMETRY",
+          "srs_id": 4326,
+          "record_count": 158990
+        }
+      ]
+    },
+    {
+      "file": "data\\raw\\osm\\Kaduwela_OSM_Water_Drainage_2026.gpkg",
+      "layers": [
+        {
+          "layer": "Kaduwela_OSM_Water_Drainage_2026",
+          "data_type": "features",
+          "geometry_type": "GEOMETRY",
+          "srs_id": 4326,
+          "record_count": 524
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "scientific_validation_pending": [
+    "Event polygon geometry validity and coverage",
+    "Duplicate and overlapping event evidence",
+    "Event evidence interpretation and reliability",
+    "IMERG timestamps, units and missing values",
+    "Rainfall temporal completeness",
+    "DEM valid-data coverage",
+    "GN boundary and feature-grid alignment",
+    "Supervised ML label feasibility",
+    "Independent susceptibility model evaluation"
+  ],
+  "conclusion": "This audit establishes source availability and structural metadata only. It does not validate waterlogging labels or model accuracy."
+}

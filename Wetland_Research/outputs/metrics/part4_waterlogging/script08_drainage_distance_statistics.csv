@@ -1,0 +1,4 @@
+group,feature_count,valid_study_pixels,minimum_distance_m,median_distance_m,mean_distance_m,p95_distance_m,maximum_distance_m,cells_within_100m_percent,cells_within_300m_percent
+All_Waterways,524,94431,0.0115,366.0831,438.7449,1126.7808,1845.9467,15.2905,42.0985
+River_Stream_Canal,411,94431,0.0115,411.3804,509.0656,1391.8847,2127.8958,13.7264,38.0712
+Ditch_Drain,113,94431,0.0366,1192.4765,1233.9713,2474.2582,3392.896,2.0057,7.9052

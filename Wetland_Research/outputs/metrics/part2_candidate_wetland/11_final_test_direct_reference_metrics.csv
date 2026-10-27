@@ -1,0 +1,2 @@
+model,threshold,samples,accuracy,balanced_accuracy,precision,recall,specificity,f1,roc_auc,pr_auc,tn,fp,fn,tp,evaluation_subset
+XGB_03,0.5,52,0.8653846153846154,0.8853383458646616,0.6842105263157895,0.9285714285714286,0.8421052631578947,0.7878787878787878,0.9454887218045114,0.8771114015474917,32,6,1,13,direct_2025_lulc_reference

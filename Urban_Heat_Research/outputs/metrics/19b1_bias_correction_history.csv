@@ -1,0 +1,101 @@
+model,validation_year,strategy,strategy_eligible_for_comparison,prior_history_year_count,prior_history_years,max_source_year,uses_current_validation_year_target,leakage_safe_source_year_check,estimated_correction_actual_minus_predicted_c
+Random Forest,2019,raw_no_correction,True,0,,,False,True,0.0
+Random Forest,2019,prior_mean_residual,True,0,,,False,True,0.0
+Random Forest,2019,prior_median_residual,True,0,,,False,True,0.0
+Random Forest,2019,last_prior_residual,True,0,,,False,True,0.0
+Random Forest,2019,prior_ewma_residual_alpha_0_50,True,0,,,False,True,0.0
+Random Forest,2020,raw_no_correction,True,1,2019,2019.0,False,True,0.0
+Random Forest,2020,prior_mean_residual,True,1,2019,2019.0,False,True,0.48242850527829545
+Random Forest,2020,prior_median_residual,True,1,2019,2019.0,False,True,0.48242850527829545
+Random Forest,2020,last_prior_residual,True,1,2019,2019.0,False,True,0.48242850527829545
+Random Forest,2020,prior_ewma_residual_alpha_0_50,True,1,2019,2019.0,False,True,0.48242850527829545
+Random Forest,2021,raw_no_correction,True,2,"2019,2020",2020.0,False,True,0.0
+Random Forest,2021,prior_mean_residual,True,2,"2019,2020",2020.0,False,True,2.083340428256101
+Random Forest,2021,prior_median_residual,True,2,"2019,2020",2020.0,False,True,2.083340428256101
+Random Forest,2021,last_prior_residual,True,2,"2019,2020",2020.0,False,True,3.6842523512339067
+Random Forest,2021,prior_ewma_residual_alpha_0_50,True,2,"2019,2020",2020.0,False,True,2.083340428256101
+Random Forest,2022,raw_no_correction,True,3,"2019,2020,2021",2021.0,False,True,0.0
+Random Forest,2022,prior_mean_residual,True,3,"2019,2020,2021",2021.0,False,True,0.6947934875971916
+Random Forest,2022,prior_median_residual,True,3,"2019,2020,2021",2021.0,False,True,0.48242850527829545
+Random Forest,2022,last_prior_residual,True,3,"2019,2020,2021",2021.0,False,True,-2.0823003937206273
+Random Forest,2022,prior_ewma_residual_alpha_0_50,True,3,"2019,2020,2021",2021.0,False,True,0.000520017267736872
+Random Forest,2023,raw_no_correction,True,4,"2019,2020,2021,2022",2022.0,False,True,0.0
+Random Forest,2023,prior_mean_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.3977902155130135
+Random Forest,2023,prior_median_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.005395547730612571
+Random Forest,2023,last_prior_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.4932196007395206
+Random Forest,2023,prior_ewma_residual_alpha_0_50,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.24634979173589186
+XGBoost,2019,raw_no_correction,True,0,,,False,True,0.0
+XGBoost,2019,prior_mean_residual,True,0,,,False,True,0.0
+XGBoost,2019,prior_median_residual,True,0,,,False,True,0.0
+XGBoost,2019,last_prior_residual,True,0,,,False,True,0.0
+XGBoost,2019,prior_ewma_residual_alpha_0_50,True,0,,,False,True,0.0
+XGBoost,2020,raw_no_correction,True,1,2019,2019.0,False,True,0.0
+XGBoost,2020,prior_mean_residual,True,1,2019,2019.0,False,True,0.42915142751457863
+XGBoost,2020,prior_median_residual,True,1,2019,2019.0,False,True,0.42915142751457863
+XGBoost,2020,last_prior_residual,True,1,2019,2019.0,False,True,0.42915142751457863
+XGBoost,2020,prior_ewma_residual_alpha_0_50,True,1,2019,2019.0,False,True,0.42915142751457863
+XGBoost,2021,raw_no_correction,True,2,"2019,2020",2020.0,False,True,0.0
+XGBoost,2021,prior_mean_residual,True,2,"2019,2020",2020.0,False,True,2.169063532901535
+XGBoost,2021,prior_median_residual,True,2,"2019,2020",2020.0,False,True,2.169063532901535
+XGBoost,2021,last_prior_residual,True,2,"2019,2020",2020.0,False,True,3.908975638288491
+XGBoost,2021,prior_ewma_residual_alpha_0_50,True,2,"2019,2020",2020.0,False,True,2.169063532901535
+XGBoost,2022,raw_no_correction,True,3,"2019,2020,2021",2021.0,False,True,0.0
+XGBoost,2022,prior_mean_residual,True,3,"2019,2020,2021",2021.0,False,True,0.48208762569675523
+XGBoost,2022,prior_median_residual,True,3,"2019,2020,2021",2021.0,False,True,0.42915142751457863
+XGBoost,2022,last_prior_residual,True,3,"2019,2020,2021",2021.0,False,True,-2.891864188712804
+XGBoost,2022,prior_ewma_residual_alpha_0_50,True,3,"2019,2020,2021",2021.0,False,True,-0.3614003279056346
+XGBoost,2023,raw_no_correction,True,4,"2019,2020,2021,2022",2022.0,False,True,0.0
+XGBoost,2023,prior_mean_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.27246057196836143
+XGBoost,2023,prior_median_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.03636541914887936
+XGBoost,2023,last_prior_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.3564205892168199
+XGBoost,2023,prior_ewma_residual_alpha_0_50,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.3589104585612273
+LightGBM,2019,raw_no_correction,True,0,,,False,True,0.0
+LightGBM,2019,prior_mean_residual,True,0,,,False,True,0.0
+LightGBM,2019,prior_median_residual,True,0,,,False,True,0.0
+LightGBM,2019,last_prior_residual,True,0,,,False,True,0.0
+LightGBM,2019,prior_ewma_residual_alpha_0_50,True,0,,,False,True,0.0
+LightGBM,2020,raw_no_correction,True,1,2019,2019.0,False,True,0.0
+LightGBM,2020,prior_mean_residual,True,1,2019,2019.0,False,True,0.6024177443594575
+LightGBM,2020,prior_median_residual,True,1,2019,2019.0,False,True,0.6024177443594575
+LightGBM,2020,last_prior_residual,True,1,2019,2019.0,False,True,0.6024177443594575
+LightGBM,2020,prior_ewma_residual_alpha_0_50,True,1,2019,2019.0,False,True,0.6024177443594575
+LightGBM,2021,raw_no_correction,True,2,"2019,2020",2020.0,False,True,0.0
+LightGBM,2021,prior_mean_residual,True,2,"2019,2020",2020.0,False,True,2.328925090984539
+LightGBM,2021,prior_median_residual,True,2,"2019,2020",2020.0,False,True,2.328925090984539
+LightGBM,2021,last_prior_residual,True,2,"2019,2020",2020.0,False,True,4.05543243760962
+LightGBM,2021,prior_ewma_residual_alpha_0_50,True,2,"2019,2020",2020.0,False,True,2.328925090984539
+LightGBM,2022,raw_no_correction,True,3,"2019,2020,2021",2021.0,False,True,0.0
+LightGBM,2022,prior_mean_residual,True,3,"2019,2020,2021",2021.0,False,True,0.4280813550346993
+LightGBM,2022,prior_median_residual,True,3,"2019,2020,2021",2021.0,False,True,0.6024177443594575
+LightGBM,2022,last_prior_residual,True,3,"2019,2020,2021",2021.0,False,True,-3.37360611686498
+LightGBM,2022,prior_ewma_residual_alpha_0_50,True,3,"2019,2020,2021",2021.0,False,True,-0.5223405129402205
+LightGBM,2023,raw_no_correction,True,4,"2019,2020,2021,2022",2022.0,False,True,0.0
+LightGBM,2023,prior_mean_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.4313590674809454
+LightGBM,2023,prior_median_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.5218049745895706
+LightGBM,2023,last_prior_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.44119220481968374
+LightGBM,2023,prior_ewma_residual_alpha_0_50,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.0405741540602684
+NGBoost,2019,raw_no_correction,True,0,,,False,True,0.0
+NGBoost,2019,prior_mean_residual,True,0,,,False,True,0.0
+NGBoost,2019,prior_median_residual,True,0,,,False,True,0.0
+NGBoost,2019,last_prior_residual,True,0,,,False,True,0.0
+NGBoost,2019,prior_ewma_residual_alpha_0_50,True,0,,,False,True,0.0
+NGBoost,2020,raw_no_correction,True,1,2019,2019.0,False,True,0.0
+NGBoost,2020,prior_mean_residual,True,1,2019,2019.0,False,True,0.42097785451903363
+NGBoost,2020,prior_median_residual,True,1,2019,2019.0,False,True,0.42097785451903363
+NGBoost,2020,last_prior_residual,True,1,2019,2019.0,False,True,0.42097785451903363
+NGBoost,2020,prior_ewma_residual_alpha_0_50,True,1,2019,2019.0,False,True,0.42097785451903363
+NGBoost,2021,raw_no_correction,True,2,"2019,2020",2020.0,False,True,0.0
+NGBoost,2021,prior_mean_residual,True,2,"2019,2020",2020.0,False,True,2.1745902873984613
+NGBoost,2021,prior_median_residual,True,2,"2019,2020",2020.0,False,True,2.1745902873984613
+NGBoost,2021,last_prior_residual,True,2,"2019,2020",2020.0,False,True,3.9282027202778886
+NGBoost,2021,prior_ewma_residual_alpha_0_50,True,2,"2019,2020",2020.0,False,True,2.1745902873984613
+NGBoost,2022,raw_no_correction,True,3,"2019,2020,2021",2021.0,False,True,0.0
+NGBoost,2022,prior_mean_residual,True,3,"2019,2020,2021",2021.0,False,True,0.40075371464561355
+NGBoost,2022,prior_median_residual,True,3,"2019,2020,2021",2021.0,False,True,0.42097785451903363
+NGBoost,2022,last_prior_residual,True,3,"2019,2020,2021",2021.0,False,True,-3.146919430860082
+NGBoost,2022,prior_ewma_residual_alpha_0_50,True,3,"2019,2020,2021",2021.0,False,True,-0.4861645717308103
+NGBoost,2023,raw_no_correction,True,4,"2019,2020,2021,2022",2022.0,False,True,0.0
+NGBoost,2023,prior_mean_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.23478882444234883
+NGBoost,2023,prior_median_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,0.07893600417579416
+NGBoost,2023,last_prior_residual,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.2631058461674453
+NGBoost,2023,prior_ewma_residual_alpha_0_50,True,4,"2019,2020,2021,2022",2022.0,False,True,-0.37463520894912783

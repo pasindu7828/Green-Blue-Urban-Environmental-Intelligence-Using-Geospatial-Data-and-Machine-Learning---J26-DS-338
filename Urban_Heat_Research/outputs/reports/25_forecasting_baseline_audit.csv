@@ -1,0 +1,15 @@
+check,status,details
+canonical_base_hash,PASS,0e030b2ec0b5c4080cd4226bec798189a178aa45efd9962d19f38dc9cb170f46
+row_count,PASS,"actual=24134, expected=24134"
+grid_count,PASS,"actual=2194, expected=2194"
+observed_years,PASS,"[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+annual_series_year_count,PASS,"actual=11, expected=11"
+primary_retains_2017,PASS,2017 retained in primary training histories.
+no2017_is_sensitivity_only,PASS,Secondary training sensitivity excludes 2017; primary remains unchanged.
+rolling_origin_fold_counts,PASS,"actual={1: 7, 2: 6, 3: 5, 4: 4, 5: 3}, expected={1: 7, 2: 6, 3: 5, 4: 4, 5: 3}"
+training_precedes_target,PASS,Every forecast uses only years before its target year.
+origin_matches_training_cutoff,PASS,Each rolling forecast origin equals the final available training year.
+all_baselines_all_horizons,PASS,5 baselines across H1-H5.
+no_hyperparameter_tuning,PASS,Step 25 uses deterministic baseline definitions only.
+no_final_2026_2030_prediction,PASS,maximum target year generated=2025
+step22_claim_not_retested,PASS,2025 is used only inside post-lockbox forecasting-method hindcasts; Step-22 final model accuracy is not recalculated or revised.

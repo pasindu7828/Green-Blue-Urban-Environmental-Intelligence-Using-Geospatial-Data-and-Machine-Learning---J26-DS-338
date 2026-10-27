@@ -1,0 +1,71 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "stage": "GIS handover layer preparation",
+  "created_utc": "2026-10-14T13:29:38.890385+00:00",
+  "status": "GIS_EXPORT_COMPLETED",
+  "source_crs": "EPSG:32644",
+  "output_crs": "EPSG:4326",
+  "area_units": "hectares",
+  "area_measurement_crs": "EPSG:32644",
+  "gn_count": 56,
+  "gn_layer": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\GN_Wise_Wetland_Scenario_WGS84.gpkg",
+  "polygon_layers": {
+    "wetland_2025": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Part3_wetland_2025_WGS84.gpkg",
+    "wetland_2030": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Part3_wetland_2030_WGS84.gpkg",
+    "persistence": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Part3_persistence_WGS84.gpkg",
+    "scenario_loss": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Part3_scenario_loss_WGS84.gpkg",
+    "scenario_gain": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Part3_scenario_gain_WGS84.gpkg"
+  },
+  "layer_summaries": [
+    {
+      "layer": "wetland_2025",
+      "features": 3486,
+      "total_pixels": 15401,
+      "area_ha": 1386.09,
+      "crs": "EPSG:4326",
+      "file": "Part3_wetland_2025_WGS84.gpkg"
+    },
+    {
+      "layer": "wetland_2030",
+      "features": 2457,
+      "total_pixels": 15883,
+      "area_ha": 1429.47,
+      "crs": "EPSG:4326",
+      "file": "Part3_wetland_2030_WGS84.gpkg"
+    },
+    {
+      "layer": "persistence",
+      "features": 710,
+      "total_pixels": 5427,
+      "area_ha": 488.43,
+      "crs": "EPSG:4326",
+      "file": "Part3_persistence_WGS84.gpkg"
+    },
+    {
+      "layer": "scenario_loss",
+      "features": 5241,
+      "total_pixels": 9974,
+      "area_ha": 897.66,
+      "crs": "EPSG:4326",
+      "file": "Part3_scenario_loss_WGS84.gpkg"
+    },
+    {
+      "layer": "scenario_gain",
+      "features": 3812,
+      "total_pixels": 10456,
+      "area_ha": 941.04,
+      "crs": "EPSG:4326",
+      "file": "Part3_scenario_gain_WGS84.gpkg"
+    }
+  ],
+  "small_patches_removed": false,
+  "interpretation": "Model-derived historical and exploratory future wetland screening layers.",
+  "limitations": [
+    "2030 is an exploratory CA-Markov scenario.",
+    "Hindcast did not outperform persistence.",
+    "Polygons are not legally established or field-surveyed wetland boundaries.",
+    "Area attributes originate from the 30 m UTM raster grid, not degree-based area.",
+    "All small polygons remain included.",
+    "Map users must not treat scenario gain or loss as confirmed environmental change."
+  ]
+}

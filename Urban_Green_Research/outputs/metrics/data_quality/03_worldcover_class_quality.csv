@@ -1,0 +1,9 @@
+class_value,class_name,pixel_count,percent_of_valid_kmc,expected_class
+10,Tree cover,566898,63.855181479341326,True
+20,Shrubland,26,0.002928630403463894,True
+30,Grassland,20644,2.325332540350332,True
+40,Cropland,41793,4.7075480943064045,True
+50,Built-up,234691,26.435507616128646,True
+60,Bare / sparse vegetation,2689,0.3028879674967081,True
+80,Permanent water bodies,17108,1.9270388054792424,True
+90,Herbaceous wetland,3938,0.4435748664938775,True

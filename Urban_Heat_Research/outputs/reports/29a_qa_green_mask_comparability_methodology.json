@@ -1,0 +1,104 @@
+{
+  "step": "29A-QA",
+  "name": "Green-mask comparability and response validity audit",
+  "historical_period": [
+    2015,
+    2025
+  ],
+  "main_questions": [
+    "Does green_mask align with NDVI/EVI within each year?",
+    "Do within-grid year-to-year changes in green_mask align with NDVI changes?",
+    "Does the green TWFE coefficient change sign as controls are added?",
+    "Do green_mask, NDVI and EVI show consistent full-control within-grid response signs?",
+    "Can local project files verify whether Otsu thresholds were fixed or year-specific?"
+  ],
+  "otsu_provenance_policy": "Do not infer threshold-generation policy from the aggregated CSV. Search local text/source files; any hits require manual review.",
+  "nested_green_models": [
+    {
+      "name": "G0_GREEN_ONLY",
+      "controls": []
+    },
+    {
+      "name": "G1_GREEN_NDBI",
+      "controls": [
+        "NDBI"
+      ]
+    },
+    {
+      "name": "G2_GREEN_NDBI_NDWI",
+      "controls": [
+        "NDBI",
+        "NDWI"
+      ]
+    },
+    {
+      "name": "G3_GREEN_PLUS_ALBEDO",
+      "controls": [
+        "NDBI",
+        "NDWI",
+        "Albedo"
+      ]
+    },
+    {
+      "name": "G4_GREEN_FULL_V3_CONTROLS",
+      "controls": [
+        "NDBI",
+        "NDWI",
+        "Albedo",
+        "NightLights"
+      ]
+    }
+  ],
+  "nested_ndvi_models": [
+    {
+      "name": "N0_NDVI_ONLY",
+      "controls": []
+    },
+    {
+      "name": "N1_NDVI_NDBI",
+      "controls": [
+        "NDBI"
+      ]
+    },
+    {
+      "name": "N2_NDVI_NDBI_NDWI",
+      "controls": [
+        "NDBI",
+        "NDWI"
+      ]
+    },
+    {
+      "name": "N3_NDVI_PLUS_ALBEDO",
+      "controls": [
+        "NDBI",
+        "NDWI",
+        "Albedo"
+      ]
+    },
+    {
+      "name": "N4_NDVI_FULL_CONTROLS",
+      "controls": [
+        "NDBI",
+        "NDWI",
+        "Albedo",
+        "NightLights"
+      ]
+    }
+  ],
+  "vegetation_indicators_compared": [
+    "green_mask",
+    "NDVI",
+    "EVI"
+  ],
+  "2017_sensitivity": true,
+  "qa_flags": {
+    "yearly_green_ndvi_all_positive": true,
+    "minimum_yearly_green_ndvi_pearson": 0.8452724152209274,
+    "median_yearly_green_ndvi_pearson": 0.9210489203374269,
+    "green_sign_reversal_after_controls": false,
+    "green_and_ndvi_full_control_same_sign": false,
+    "green_ndvi_evi_all_same_sign": false,
+    "threshold_provenance_status": "NOT_FOUND_IN_LOCAL_PROJECT_TEXT_FILES"
+  },
+  "interpretation_limit": "This step determines measurement/response consistency only. It does not establish causal cooling or select an intervention coefficient automatically."
+}

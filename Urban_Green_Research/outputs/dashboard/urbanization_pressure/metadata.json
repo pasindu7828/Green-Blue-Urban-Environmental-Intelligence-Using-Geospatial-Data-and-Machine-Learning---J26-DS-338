@@ -1,0 +1,72 @@
+{
+  "research_component": "Urban Green Research",
+  "source_stage": "14D",
+  "origin_year": 2025,
+  "pressure_period": "2026-2028",
+  "prediction_window_type": "SINGLE_THREE_YEAR_WINDOW",
+  "model": "XGBoost",
+  "operating_threshold": 0.715,
+  "score_is_calibrated_probability": false,
+  "categories_are_probability_bands": false,
+  "permanent_grid_count": 9240,
+  "eligible_scored_count": 4620,
+  "not_in_inference_domain_count": 4620,
+  "threshold_flagged_count": 255,
+  "coordinate_reference_system": "EPSG:4326",
+  "source_coordinate_reference_system": "EPSG:32644",
+  "source_gis": "data/processed/urbanization_pressure/inference/14d_2026_2028_pressure_categories.gpkg",
+  "geojson_file": "pressure_map.geojson",
+  "bounds_west_south_east_north": [
+    79.90113369864066,
+    6.85737033101973,
+    80.0450434085599,
+    6.946972703847935
+  ],
+  "category_counts": {
+    "NOT_IN_INFERENCE_DOMAIN": 4620,
+    "LOW_RELATIVE": 2310,
+    "MODERATE_RELATIVE": 1155,
+    "ELEVATED_RELATIVE": 693,
+    "HIGH_RELATIVE": 207,
+    "THRESHOLD_FLAGGED": 255
+  },
+  "display_legend": [
+    {
+      "category": "NOT_IN_INFERENCE_DOMAIN",
+      "color": "#A6ADB5",
+      "grid_count": 4620
+    },
+    {
+      "category": "LOW_RELATIVE",
+      "color": "#51A477",
+      "grid_count": 2310
+    },
+    {
+      "category": "MODERATE_RELATIVE",
+      "color": "#C8BE61",
+      "grid_count": 1155
+    },
+    {
+      "category": "ELEVATED_RELATIVE",
+      "color": "#EAA461",
+      "grid_count": 693
+    },
+    {
+      "category": "HIGH_RELATIVE",
+      "color": "#CE774E",
+      "grid_count": 207
+    },
+    {
+      "category": "THRESHOLD_FLAGGED",
+      "color": "#B83F47",
+      "grid_count": 255
+    }
+  ],
+  "notes": [
+    "Single 2026-2028 prediction window",
+    "Pressure scores are not calibrated probabilities",
+    "Categories are relative visualization bands",
+    "Unscored cells are outside the inference domain",
+    "No research model or scores recalculated"
+  ]
+}

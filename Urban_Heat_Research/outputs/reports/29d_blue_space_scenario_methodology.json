@@ -1,0 +1,80 @@
+{
+  "step": "29D",
+  "name": "Blue-space / water-wetness intensity what-if scenario",
+  "frontend_scenario_engine": "Frozen Step-22B LightGBM",
+  "new_ml_model_for_frontend": false,
+  "scenario_variable": {
+    "name": "NDWI",
+    "meaning": "continuous spectral water/wetness intensity proxy",
+    "frontend_wording": "Blue-space / water-wetness restoration intensity",
+    "not_worded_as": "water-cover percentage"
+  },
+  "structural_water_distance": {
+    "name": "dist_water",
+    "status": "frozen",
+    "reason": "Current distance-to-water layer is static. A literal distance change requires adding/restoring explicit water-body geometry and spatially recomputing distances."
+  },
+  "scenario_levels": [
+    {
+      "scenario_level": "LOW",
+      "historical_positive_change_quantile": 0.5,
+      "positive_change_sample_count": 12101,
+      "ndwi_increase_magnitude": 0.02952152214282533
+    },
+    {
+      "scenario_level": "MODERATE",
+      "historical_positive_change_quantile": 0.75,
+      "positive_change_sample_count": 12101,
+      "ndwi_increase_magnitude": 0.0666914129945183
+    },
+    {
+      "scenario_level": "HIGH",
+      "historical_positive_change_quantile": 0.9,
+      "positive_change_sample_count": 12101,
+      "ndwi_increase_magnitude": 0.17548752000539408
+    }
+  ],
+  "scenario_direction": "persistent NDWI increase from 2026 through 2030",
+  "support_policy": "Scenario NDWI is clipped to historical 2015-2025 observed NDWI maximum.",
+  "historical_response_qa": [
+    {
+      "variant": "TWFE_ALL_2015_2025",
+      "rows": 24134,
+      "ndwi_beta_c_per_1_0": -14.565100616256057,
+      "response_c_per_plus_0_05_ndwi": -0.7282550308128029,
+      "clustered_se": 0.9479968159583627,
+      "p_value": 2.8504850837600705e-53,
+      "ci95_lower_per_plus_0_05": -0.8211570116496548,
+      "ci95_upper_per_plus_0_05": -0.6353530499759511,
+      "within_r2": 0.584870142118191
+    },
+    {
+      "variant": "TWFE_EXCLUDE_2017",
+      "rows": 21940,
+      "ndwi_beta_c_per_1_0": -11.577416181005903,
+      "response_c_per_plus_0_05_ndwi": -0.5788708090502952,
+      "clustered_se": 0.9981628158879393,
+      "p_value": 4.182622977422524e-31,
+      "ci95_lower_per_plus_0_05": -0.6766889675426675,
+      "ci95_upper_per_plus_0_05": -0.4810526505579229,
+      "within_r2": 0.5481044912796946
+    }
+  ],
+  "response_qa_used_for_scenario_prediction": false,
+  "model_retraining": false,
+  "step28_baseline_modified": false,
+  "local_neighbor_policy": "NDWI neighbour mean remains Step-28 baseline; selected-grid NDWI neighbour contrast changes if retained.",
+  "scenario_effect_formula": "scenario LST = Step-28 baseline LST + (scenario raw anomaly - baseline raw anomaly)",
+  "frontend_outputs": [
+    "baseline_ndwi",
+    "scenario_ndwi",
+    "dist_water_m",
+    "baseline_predicted_lst_c",
+    "scenario_predicted_lst_c",
+    "modeled_lst_change_c",
+    "cooling_benefit_c",
+    "scenario_effect_direction"
+  ],
+  "interpretation_warning": "Model-based sensitivity only. NDWI is not literal water-cover percentage, dist_water is not changed, and LST change is not a guaranteed causal physical outcome.",
+  "uncertainty": "Deferred to Step 30"
+}

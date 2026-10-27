@@ -1,0 +1,54 @@
+STEP 13 - XGBOOST CANDIDATE MODEL REPORT
+============================================================================================================
+
+DATA PROTECTION
+------------------------------------------------------------------------------------------------------------
+Used: 2018-2023 development data only.
+2024: NOT loaded.
+2025: NOT loaded.
+
+MODEL
+------------------------------------------------------------------------------------------------------------
+XGBRegressor
+Status: UNTUNED fixed candidate model
+Parameters: {'objective': 'reg:squarederror', 'n_estimators': 300, 'learning_rate': 0.05, 'max_depth': 6, 'min_child_weight': 1, 'subsample': 0.8, 'colsample_bytree': 0.8, 'reg_alpha': 0.0, 'reg_lambda': 1.0, 'random_state': 42, 'n_jobs': -1, 'tree_method': 'hist', 'eval_metric': 'rmse'}
+
+ROLLING-ORIGIN DEVELOPMENT VALIDATION
+------------------------------------------------------------------------------------------------------------
+2018 -> 2019
+2018-2019 -> 2020
+2018-2020 -> 2021
+2018-2021 -> 2022
+2018-2022 -> 2023
+
+AGGREGATED PERFORMANCE
+------------------------------------------------------------------------------------------------------------
+Mean validation MAE: 3.418441
+Median validation MAE: 4.350421
+Mean validation RMSE: 3.797666
+Mean validation R²: -1.193001
+Median validation R²: 0.110423
+Negative-R² folds: 2
+Mean MAE generalization gap: 3.043231
+
+BASELINE COMPARISON
+------------------------------------------------------------------------------------------------------------
+XGBoost beats the best Step 11 baseline by validation MAE in 1/5 folds.
+XGBoost beats Grid Historical Mean by validation MAE in 3/5 folds.
+
+RANDOM FOREST REFERENCE
+------------------------------------------------------------------------------------------------------------
+XGBoost has lower validation MAE than Step 12 Random Forest in 1/5 folds.
+This is descriptive only. Formal candidate comparison is Step 16.
+
+IMPORTANT
+------------------------------------------------------------------------------------------------------------
+This step does NOT tune XGBoost.
+This step does NOT use early stopping to optimize the candidate.
+This step does NOT select XGBoost as the final model.
+Negative R² or large generalization gaps are retained as research findings.
+
+NEXT
+------------------------------------------------------------------------------------------------------------
+Proceed to Step 14 LightGBM candidate analysis only after reviewing
+the complete Step 13 output and resolving any Step 13 issues.

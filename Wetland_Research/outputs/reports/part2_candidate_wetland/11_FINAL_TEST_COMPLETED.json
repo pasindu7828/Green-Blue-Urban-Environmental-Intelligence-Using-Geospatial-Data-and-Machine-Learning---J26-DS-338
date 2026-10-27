@@ -1,0 +1,7 @@
+{
+    "status": "FINAL_TEST_COMPLETED",
+    "model": "XGB_03",
+    "threshold": 0.5,
+    "test_samples": 102,
+    "important": "Do not tune the model or threshold using these test results."
+}

@@ -1,0 +1,12 @@
+check,status,details
+future_year_window,PASS,"origin=2025, future=[2026, 2027, 2028, 2029, 2030]"
+future_feature_rows,PASS,"actual=10970, expected=10970"
+frozen_feature_count,PASS,"actual=93, expected=93"
+future_feature_matrix_finite,PASS,"rows=10970, cols=93"
+centered_anomaly_zero_mean_each_year,PASS,max_abs_year_mean=4.048215221970e-17
+final_year_mean_equals_annual_level,PASS,max_abs_error=7.105427357601e-15
+model_retraining_in_step05,PASS,None. Step-05 performs inference only with the Step-03 versioned model.
+engineered_features_independently_forecast,PASS,No. Exact Step-07 features rebuilt from observed + Step-04 base predictors.
+original_2025_feature_reproduction,PASS,max_abs_error=3.552713678800501e-15
+original_2025_forecast_reproduction,PASS,max_abs_error=0.0
+yearly_geojson_count,PASS,"saved=5, expected=5"

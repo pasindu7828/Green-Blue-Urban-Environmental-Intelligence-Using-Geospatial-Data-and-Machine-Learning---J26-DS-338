@@ -1,0 +1,24 @@
+dataset_name,path,layer_name,geometry_type,feature_count,field_count,crs,status
+KMC Boundary,data/raw/boundaries/kmc/kmc boundry.kml,kmc boundry,Unknown,1,12,EPSG:4326,OK
+Kaduwela GN Division Source,data/raw/boundaries/gn_divisions/Kaduwela TO Area.kml,My Places,Unknown,1,13,EPSG:4326,OK
+Kaduwela GN Division Source,data/raw/boundaries/gn_divisions/Kaduwela TO Area.kml,GN Boundary Colombo District,Unknown,0,13,EPSG:4326,OK
+Kaduwela GN Division Source,data/raw/boundaries/gn_divisions/Kaduwela TO Area.kml,GN Boundary Colombo District (#2),Unknown,56,13,EPSG:4326,OK
+Kaduwela GN Divisions Processed,data/processed/boundaries/gn_divisions/kaduwela_gn_divisions.shp,kaduwela_gn_divisions,Polygon,57,2,EPSG:4326,OK
+HOT OSM Roads and Buildings,data/raw/osm/roads_buildings/Kaduwela_OSM_Roads_Buildings_2026.gpkg,Kaduwela_OSM_Roads_Buildings_2026,Unknown,158990,25,EPSG:4326,OK
+UDA Provisional - Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_2_High_Land_Conservation_Zones_APPROXIMATE.geojson,Kaduwela_HIGH_LAND_Conservation_two_zones_APPROXIMATE,Polygon,2,4,EPSG:4326,OK
+UDA Provisional - Kaduwela_Conservation_Review_Screening_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,ALL_508_Zoning_Screening,MultiPolygon,508,9,EPSG:4326,OK
+UDA Provisional - Kaduwela_Conservation_Review_Screening_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,CONSERVATION_WATER_188,MultiPolygon,188,9,EPSG:4326,OK
+UDA Provisional - Kaduwela_Conservation_Review_Screening_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,UNKNOWN_ZONING_130,MultiPolygon,130,4,EPSG:4326,OK
+UDA Provisional - Kaduwela_Conservation_Review_Screening_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,HIGHLAND_REFERENCE_2,Polygon,2,6,EPSG:4326,OK
+UDA Provisional - Kaduwela_Conservation_Review_Screening_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,KMC_Boundary_Provided,MultiPolygon,1,3,EPSG:4326,OK
+UDA Provisional - Kaduwela_MC_Boundary,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_MC_Boundary.gpkg,Kaduwela_MC_Boundary,MultiPolygon,1,3,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_3_Sectors,Polygon,3,3,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,KMC_59_SourcePolygonParts,Polygon,59,3,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,UDA_2024_ZONE_ESTIMATES,MultiPolygon,508,15,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Two_HighLand_Approximate,Polygon,2,5,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,Unclassified_Screenshot_Gaps,MultiPolygon,130,2,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_508_Screening_With_Flags,MultiPolygon,508,23,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_171_Ambiguous_Names,MultiPolygon,171,23,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_5_Merged_MD3_MD4,MultiPolygon,5,23,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_2_HighLand_Comparison,Polygon,2,11,EPSG:4326,OK
+UDA Provisional - Kaduwela_UDA_2024_AUDITED_PROVISIONAL,data/raw/uda/zoning_provisional/provided_package_extracted/New data/Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,QA_HighLand_Unresolved,MultiPolygon,2,4,EPSG:4326,OK

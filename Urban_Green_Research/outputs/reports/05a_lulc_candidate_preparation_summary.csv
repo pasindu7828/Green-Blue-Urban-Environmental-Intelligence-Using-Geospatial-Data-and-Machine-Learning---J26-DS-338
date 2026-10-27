@@ -1,0 +1,2 @@
+source_dataset,analysis_crs,worldcover_resolution_m,homogeneity_window,homogeneity_ground_size_m,spatial_block_size_m,random_seed,target_candidates_per_class,total_candidate_points,outside_kmc_points,candidate_gpkg,candidate_csv,status
+data/processed/reference_lulc/esa_worldcover_2021_kmc_10m.tif,EPSG:32644,10,3,30,150.0,42,200,645,0,data/processed/lulc/reference_samples/lulc_candidate_reference_points_2021.gpkg,data/processed/lulc/reference_samples/lulc_candidate_reference_points_2021.csv,CANDIDATES_ONLY_MANUAL_REVIEW_REQUIRED

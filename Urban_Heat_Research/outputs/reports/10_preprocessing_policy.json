@@ -1,0 +1,50 @@
+{
+  "step": 10,
+  "name": "train_only_preprocessing",
+  "temporal_protocol": {
+    "training_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "validation_year": 2024,
+    "test_year": 2025
+  },
+  "tree_nonlinear": {
+    "models": [
+      "Random Forest",
+      "XGBoost",
+      "LightGBM",
+      "NGBoost tree learners"
+    ],
+    "scaling": "none",
+    "imputation": "none because no missing predictors in 2018-2025",
+    "feature_count": 93
+  },
+  "linear_baseline": {
+    "scaler": "StandardScaler",
+    "fit_data": "2018-2023 non-year training predictors only",
+    "total_feature_count": 23,
+    "scaled_feature_count": 22,
+    "preserved_unscaled_predictors": [
+      "year"
+    ],
+    "year_preserved_as_temporal_key": true,
+    "target_scaled": false,
+    "validation_transformation": "use frozen training scaler",
+    "test_transformation": "use frozen training scaler"
+  },
+  "rolling_origin_rule": {
+    "saved_global_scaler_must_not_be_used_inside_earlier_folds": true,
+    "required_behavior": "fit a fresh scaler/preprocessor inside each rolling-origin training fold and apply it only to that fold's validation year"
+  },
+  "lockbox_rule": {
+    "2025_target_used_to_fit_preprocessing": false,
+    "2025_model_performance_evaluated_in_step10": false,
+    "2025_target_statistics_printed_in_step10": false
+  },
+  "deep_learning_note": "LSTM/TFT preprocessing must be handled separately with fold-aware sequence scaling later; do not automatically reuse this linear scaler."
+}

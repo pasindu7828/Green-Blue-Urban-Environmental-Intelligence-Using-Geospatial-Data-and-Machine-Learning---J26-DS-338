@@ -1,0 +1,12 @@
+{
+  "accuracy": 0.6923076923076923,
+  "balanced_accuracy": 0.7172142884786563,
+  "macro_f1": 0.7043627121828688,
+  "weighted_f1": 0.6920224449667769,
+  "wetland_precision": 0.6037735849056604,
+  "wetland_recall": 0.48484848484848486,
+  "wetland_f1": 0.5378151260504201,
+  "wetland_support": 66,
+  "wetlands_correctly_detected": 32,
+  "paddy_incorrectly_predicted_as_wetland": 10
+}

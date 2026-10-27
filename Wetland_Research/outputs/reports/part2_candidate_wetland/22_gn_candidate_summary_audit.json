@@ -1,0 +1,22 @@
+{
+    "gn_source_file": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\raw\\boundaries\\Kaduwela TO Area.kml",
+    "gn_source_layer": "GN Boundary Colombo District (#2)",
+    "gn_polygon_count": 56,
+    "primary_candidate_count": 48,
+    "candidate_gn_intersection_records": 89,
+    "candidates_with_gn_intersection": 48,
+    "candidates_without_gn_intersection": [],
+    "gn_with_primary_candidates": 40,
+    "gn_without_primary_candidates": 16,
+    "dominant_gn_candidate_count_total": 48,
+    "total_primary_candidate_geometry_area_ha": 556.58,
+    "total_intersection_area_ha": 555.9847272131889,
+    "candidate_area_outside_gn_union_ha": 0.5952727868111807,
+    "candidate_area_outside_gn_union_percentage": 0.10695188235494998,
+    "gn_polygon_area_sum_ha": 8498.738082766115,
+    "gn_union_area_ha": 8498.738082766082,
+    "apparent_gn_overlap_area_ha": 3.2741809263825417e-11,
+    "gn_assignment_method": "Polygon intersection. Candidate area is split across GN divisions when a candidate crosses a GN boundary.",
+    "dominant_gn_definition": "GN containing the largest intersected area of a candidate polygon.",
+    "important_interpretation": "Primary candidates are research screening outputs and not officially confirmed wetlands."
+}

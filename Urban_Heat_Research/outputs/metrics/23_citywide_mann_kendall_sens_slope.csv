@@ -1,0 +1,2 @@
+analysis,start_year,end_year,n_years,mk_s,mk_var_s,mk_z,mk_p_value,mk_tau,sen_slope_c_per_year,sen_intercept_c,sen_slope_ci95_low,sen_slope_ci95_high,trend_raw_alpha_0_05
+Kaduwela citywide annual mean LST,2015,2025,11,-13,165.0,-0.9341987329938275,0.35020138917929566,-0.23636363636363636,-0.21156916506318574,462.913338647498,-0.7349796002951798,0.4312436769947657,No Significant Trend

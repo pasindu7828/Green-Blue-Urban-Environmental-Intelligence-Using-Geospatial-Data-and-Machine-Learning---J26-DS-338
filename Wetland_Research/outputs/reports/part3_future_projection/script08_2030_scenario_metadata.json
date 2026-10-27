@@ -1,0 +1,51 @@
+{
+  "component": "Part 3 - Future Wetland Boundary Projection",
+  "stage": "Exploratory 2030 scenario",
+  "generated_utc": "2026-10-14T13:03:28.192131+00:00",
+  "status": "EXPLORATORY_UNVALIDATED",
+  "transition_training_period": "2020-2025",
+  "starting_land_cover_year": 2025,
+  "scenario_year": 2030,
+  "transition_step_years": 5,
+  "model": "Six-class Markov with one-step 3x3-neighbourhood CA allocation",
+  "ca_implementation_source": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\src\\part3_future_projection\\07_ca_markov_hindcast.py",
+  "ca_seed": 42,
+  "common_valid_pixels": 94258,
+  "pixel_area_ha": 0.09,
+  "transition_row_total_variation": {
+    "Wetland_Marsh": 0.2926204187771449,
+    "Open_Water": 0.07758285482048854,
+    "Built_Up": 0.12035402765995101,
+    "Paddy_Agriculture": 0.2677735077001233,
+    "Other_Vegetation": 0.2562236805930154,
+    "Bare_Fill_Disturbed": 0.28104226405783084
+  },
+  "scenario_changed_pixels": 41506,
+  "scenario_wetland_loss_pixels": 9974,
+  "scenario_wetland_gain_pixels": 10456,
+  "scenario_builtup_to_other_pixels": 7028,
+  "markov_quotas_verified": true,
+  "common_mask_verified": true,
+  "outputs": {
+    "lulc_scenario": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\LULC_2030_Exploratory_CA_Markov.tif",
+    "wetland_screening": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\data\\processed\\part3_future_projection\\Wetland_2030_Exploratory_CA_Markov.tif",
+    "area_summary": "C:\\Users\\User\\Documents\\Green-Blue Research\\Green-Blue-Urban-Environmental-Intelligence-Using-Geospatial-Data-and-Machine-Learning---J26-DS-338\\Wetland_Research\\outputs\\metrics\\part3_future_projection\\script08_2030_scenario_area_summary.csv"
+  },
+  "historical_hindcast_limitations": {
+    "ca_accuracy": 0.4583,
+    "persistence_accuracy": 0.5248,
+    "ca_wetland_f1": 0.2483,
+    "persistence_wetland_f1": 0.3118,
+    "interpretation": "Previous CA hindcast did not outperform persistence on the classified 2025 map."
+  },
+  "limitations": [
+    "This is an exploratory scenario, not a validated forecast.",
+    "The historical LULC maps contain classification error.",
+    "The 2025 hindcast underperformed persistence.",
+    "The 2020-2025 transitions may include false changes.",
+    "The Markov stationarity assumption is unverified.",
+    "A fixed 3x3 neighbourhood and single five-year CA allocation step were used.",
+    "The scenario does not establish legal or protected wetland boundaries.",
+    "2030 class probabilities and predictive uncertainty have not been independently estimated."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "step": 27,
+  "purpose": "reserved forecast validation and Step-28 strategy freeze",
+  "reserved_validation_target_years": [
+    2024,
+    2025
+  ],
+  "horizons_years": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "annual_level": {
+    "selected_method": "Expanding Mean",
+    "selected_model_group": "Step25 baseline",
+    "selection_rule": "one coherent method across H1-H5; lowest reserved mean-horizon MAE, tie-break RMSE then absolute bias"
+  },
+  "dynamic_predictors": {
+    "selected_methods": {
+      "NDVI": "Rolling-3 Mean",
+      "NDBI": "Rolling-3 Mean",
+      "NDWI": "Rolling-3 Mean",
+      "EVI": "Rolling-3 Mean",
+      "Albedo": "Bounded Theil-Sen Trend",
+      "NDBI_ADJ": "Rolling-3 Mean",
+      "NDVI_ADJ": "Rolling-3 Mean",
+      "NightLights": "Rolling-3 Mean",
+      "green_mask": "Rolling-3 Mean"
+    },
+    "selection_rule": "one coherent method per predictor across H1-H5; lowest reserved mean-horizon NMAE_SD, tie-break NRMSE_SD then absolute bias"
+  },
+  "static_or_frozen_candidate_pool": [
+    "building_mask",
+    "road_mask"
+  ],
+  "structural_predictors_not_forecast": [
+    "dist_road",
+    "dist_main_road",
+    "dist_water",
+    "LCZ",
+    "area_name"
+  ],
+  "future_feature_policy": "Do not forecast engineered features independently. Step 28 must reconstruct lag/delta/history/interaction/neighbour features from the forecast base-predictor sequence using the original feature-engineering logic.",
+  "future_origin_policy": "Step 28 operational forecasts use actual observed history through 2025 and generate H1-H5 for 2026-2030.",
+  "spatial_anomaly_model_policy": "Use the existing frozen Step-22B production LightGBM trained on actual 2018-2025; do not retrain it on pseudo-future forecasts.",
+  "future_grid_lst_equation": "future grid LST = forecast annual Kaduwela thermal level + centered Step-22B spatial-anomaly prediction",
+  "future_2026_2030_generated_in_step27": false
+}

@@ -1,0 +1,28 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Urban and land-cover factor validation",
+  "generated_utc": "2026-10-15T09:59:56.391510+00:00",
+  "lulc_reference_year": 2020,
+  "osm_reference_year": 2026,
+  "study_cells": 94431,
+  "valid_lulc_cells": 93783,
+  "missing_lulc_cells": 648,
+  "lulc_coverage_percent": 99.3138,
+  "correlations": {
+    "builtup_vs_building_density": 0.166884,
+    "builtup_vs_building_footprint": 0.267186,
+    "building_density_vs_footprint": 0.505921
+  },
+  "aligned_lulc_file": "data\\processed\\part4_waterlogging\\10_LULC_2020_Aligned_30m.tif",
+  "comparison_csv": "outputs\\metrics\\part4_waterlogging\\script10_lulc_urban_comparison.csv",
+  "interpretation": [
+    "The 2020 built-up class is categorical land cover.",
+    "2026 OSM footprint and neighbourhood density represent mapped building development.",
+    "Correlations describe spatial association, not causation or source accuracy.",
+    "Missing 2020 LULC cells remain NoData (0).",
+    "Spatial autocorrelation limits interpretation of cell-level statistical independence.",
+    "Urban indicators are candidates only. No independent susceptibility weights or risk directions have been assigned."
+  ],
+  "raw_data_modified": false,
+  "status": "URBAN_LULC_COMPARISON_COMPLETE"
+}

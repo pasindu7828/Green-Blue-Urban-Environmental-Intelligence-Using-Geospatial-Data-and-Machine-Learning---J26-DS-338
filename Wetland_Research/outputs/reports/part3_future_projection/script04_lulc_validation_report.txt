@@ -1,0 +1,59 @@
+PART 3 - HISTORICAL LULC CLASSIFICATION
+============================================================
+
+Selected model: RF_03
+Classification method: Random Forest
+Historical years: 2015, 2020, 2025
+Training observations: 485
+Validation observations: 347
+Reserved test observations: 234
+
+MODEL SELECTION:
+Validation macro-F1, then Wetland F1,
+then balanced accuracy.
+
+MAJORITY-CLASS BASELINE:
+accuracy: 0.1210
+balanced_accuracy: 0.1667
+macro_precision: 0.0202
+macro_recall: 0.1667
+macro_f1: 0.0360
+weighted_f1: 0.0261
+wetland_precision: 0.0000
+wetland_recall: 0.0000
+wetland_f1: 0.0000
+
+SELECTED MODEL VALIDATION:
+accuracy: 0.6484
+balanced_accuracy: 0.6799
+macro_precision: 0.6313
+macro_recall: 0.6799
+macro_f1: 0.6420
+weighted_f1: 0.6265
+wetland_precision: 0.3030
+wetland_recall: 0.1538
+wetland_f1: 0.2041
+
+CLASSIFICATION REPORT:
+                     precision    recall  f1-score   support
+
+      Wetland_Marsh     0.3030    0.1538    0.2041        65
+         Open_Water     0.7455    0.6721    0.7069        61
+           Built_Up     0.7708    0.8222    0.7957        45
+  Paddy_Agriculture     0.7024    0.6782    0.6901        87
+   Other_Vegetation     0.5068    0.8810    0.6435        42
+Bare_Fill_Disturbed     0.7593    0.8723    0.8119        47
+
+           accuracy                         0.6484       347
+          macro avg     0.6313    0.6799    0.6420       347
+       weighted avg     0.6281    0.6484    0.6265       347
+
+
+RESEARCH LIMITATIONS:
+Historical reference labels contain some naming
+discrepancies and temporal uncertainty.
+The spatial buffer does not prove full independence.
+The held-out test data remain reserved.
+
+SCRIPT 04: TRAINING AND VALIDATION COMPLETED
+MODEL ACCEPTANCE: REQUIRES RESULTS REVIEW

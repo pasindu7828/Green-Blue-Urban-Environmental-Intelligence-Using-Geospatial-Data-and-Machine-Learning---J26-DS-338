@@ -1,0 +1,5 @@
+class_id,class_name,sample_count,percent_of_dataset,manually_audited_count
+1,Green / Vegetation,143,36.02015113350126,8
+2,Built-up,113,28.463476070528966,11
+3,Open / Bare,21,5.289672544080604,9
+4,Water,120,30.22670025188917,10

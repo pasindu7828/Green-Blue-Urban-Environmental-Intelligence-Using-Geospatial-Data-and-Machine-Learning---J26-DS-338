@@ -1,0 +1,2 @@
+layer_name,feature_count,crs,field_count,null_geometries,empty_geometries,invalid_geometries,duplicate_geometries,geometry_types,highway_field_found,highway_non_null_features,building_field_found,building_non_null_features,building_candidate_features
+Kaduwela_OSM_Roads_Buildings_2026,158990,EPSG:4326,25,0,0,0,3,"{'Polygon': 138531, 'LineString': 19425, 'Point': 1027, 'MultiPolygon': 6, 'MultiLineString': 1}",True,20250,True,138514,138514

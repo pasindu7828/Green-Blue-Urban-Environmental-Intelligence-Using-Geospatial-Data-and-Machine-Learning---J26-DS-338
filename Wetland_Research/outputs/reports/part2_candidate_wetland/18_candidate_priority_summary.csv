@@ -1,0 +1,4 @@
+screening_priority,candidates,total_area_ha,mean_probability,manually_reviewed,primary_layer_count
+High,22,573.38,0.8228144723247116,14,20
+Medium,27,107.65,0.7938833987276828,3,26
+Review,1048,318.74,0.7056783112429593,43,2

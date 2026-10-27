@@ -1,0 +1,40 @@
+{
+  "model": "NGBRegressor",
+  "ngboost_version": "0.5.11",
+  "purpose": "untuned probabilistic candidate analysis",
+  "distribution": "Normal",
+  "score": "LogScore",
+  "base_learner": {
+    "model": "DecisionTreeRegressor",
+    "parameters": {
+      "criterion": "squared_error",
+      "max_depth": 3,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "random_state": 42
+    }
+  },
+  "parameters": {
+    "Dist": "Normal",
+    "Score": "LogScore",
+    "natural_gradient": true,
+    "n_estimators": 500,
+    "learning_rate": 0.01,
+    "minibatch_frac": 1.0,
+    "col_sample": 1.0,
+    "verbose": false,
+    "random_state": 42
+  },
+  "hyperparameter_search_performed": false,
+  "uncertainty_calibration_performed": false,
+  "development_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "2024_used": false,
+  "2025_used": false
+}

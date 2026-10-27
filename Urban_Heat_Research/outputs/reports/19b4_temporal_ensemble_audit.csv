@@ -1,0 +1,29 @@
+check,status,details
+step17_audit,PASS,Step 17 audit loaded and fully PASS.
+step19a_audit,PASS,Step 19A audit loaded and fully PASS.
+step19b1_audit,PASS,Step 19B1 audit loaded and fully PASS.
+step19b2_audit,PASS,Step 19B2 audit loaded and fully PASS.
+step19b3_audit,PASS,Step 19B3 audit loaded and fully PASS.
+step17_prediction_rows,PASS,"actual=43880, expected=43880"
+step17_member_metric_reproduction,PASS,"actual=20, expected=20"
+member_residual_correlation_rows,PASS,"actual=36, expected=36"
+causal_weight_rows,PASS,"actual=40, expected=40"
+causal_weights_sum_to_one,PASS,Each causal model-weight vector sums to 1.
+causal_weights_prior_years_only,PASS,Every learned ensemble weight uses only earlier rolling-origin validation years.
+causal_weights_current_target_not_used,PASS,No causal ensemble weight uses the current validation target.
+2019_causal_weight_fallback_equal,PASS,"2019 has no prior OOF history, so both causal strategies use equal 0.25 model weights."
+rf_single_reference_matches_step17,PASS,Random Forest single-model reference exactly matches its Step 17 validation metrics.
+ensemble_fold_metric_rows,PASS,"actual=30, expected=30"
+ensemble_prediction_rows,PASS,"actual=65820, expected=65820"
+ensemble_summary_rows,PASS,"actual=6, expected=6"
+all_fold_metrics_finite,PASS,True
+all_ensemble_predictions_finite,PASS,True
+generalization_gap_not_fabricated,PASS,No train-vs-validation gap is reported because comparable ensemble train predictions are unavailable.
+ensemble_disagreement_not_called_uncertainty,PASS,"Across-model prediction spread is saved only as diagnostic disagreement, not calibrated uncertainty."
+2024_loaded_or_used,PASS,No. 2024 was not loaded by Step 19B4.
+2025_loaded_or_used,PASS,No. 2025 was not loaded by Step 19B4.
+model_training_performed,PASS,No. Step 19B4 combines finalized Step 17 OOF predictions.
+hyperparameter_tuning_performed,PASS,No hyperparameter tuning occurs.
+feature_selection_performed,PASS,No feature selection occurs.
+bias_correction_applied,PASS,No post-hoc annual bias correction occurs.
+final_model_selected,PASS,No. Rankings are descriptive within Step 19B4 only.

@@ -1,0 +1,25 @@
+check,passed,detail
+Previous Step 16C-H passed,True,PASS
+Previous Step 16C-I technical QA passed,True,PASS
+Frozen 16B input matches previous audits,True,SHA256 checked
+Previous audit recorded two discrepancies,True,Both discrepancies will be reviewed
+GIS source unchanged: Kaduwela_UDA_2024_AUDITED_PROVISIONAL.gpkg,True,Matches Step 16C-H source inventory
+GIS source unchanged: Kaduwela_Conservation_Review_Screening_PROVISIONAL.gpkg,True,Matches Step 16C-H source inventory
+GIS source unchanged: Kaduwela_MC_Boundary.gpkg,True,Matches Step 16C-H source inventory
+classified geometry and CRS valid,True,Features: 508
+classified feature count correct,True,Expected: 508
+unclassified geometry and CRS valid,True,Features: 130
+unclassified feature count correct,True,Expected: 130
+ambiguous geometry and CRS valid,True,Features: 171
+ambiguous feature count correct,True,Expected: 171
+boundary geometry and CRS valid,True,Features: 1
+boundary feature count correct,True,Expected: 1
+Three exclusive areas cover KMC,True,Area difference: 0.00000015 ha
+All exclusive category areas nonnegative,True,No negative areas
+Main and unknown polygons have no material overlap,True,Overlap: 0.000006 ha
+Ambiguous layer lies within mapped zoning,True,Outside: 0.000000 ha
+All supplied QA metrics reconciled,True,10/10
+Previous broad unmapped definition reproduced,True,Previous: 2262.6026 ha
+Previous difference explained by unknown zoning,True,2262.6026 = 2187.3418 + 75.2608 ha
+Frozen Step 16B dataset unchanged,True,Source SHA256 unchanged
+GIS files unchanged after analysis,True,Read-only GIS analysis

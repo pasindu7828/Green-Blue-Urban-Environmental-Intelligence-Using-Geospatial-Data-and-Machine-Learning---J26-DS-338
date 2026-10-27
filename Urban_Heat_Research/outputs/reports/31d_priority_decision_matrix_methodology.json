@@ -1,0 +1,26 @@
+{
+  "step": "31D",
+  "title": "Final Priority Decision Matrix + Direction + Normalization",
+  "grid_count": 2194,
+  "criterion_count": 6,
+  "source": "six criteria frozen in Step31C",
+  "direction_policy": {
+    "rule": "higher value = stronger priority for all six criteria",
+    "transform": "IDENTITY"
+  },
+  "normalization": {
+    "method": "min-max",
+    "formula": "(x-min)/(max-min)",
+    "range": "[0,1]",
+    "purpose": "CRITIC-ready dimensionless matrix"
+  },
+  "scenario_benefit_policy": "Negative raw modeled cooling-benefit values are preserved; no clipping or sign-forcing is applied.",
+  "not_done_here": [
+    "new indicator selection",
+    "CRITIC weighting",
+    "TOPSIS ranking",
+    "priority classification",
+    "model retraining"
+  ],
+  "next": "Step31E CRITIC weighting"
+}

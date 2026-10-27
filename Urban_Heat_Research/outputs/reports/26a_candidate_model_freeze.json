@@ -1,0 +1,44 @@
+{
+  "step": "26A",
+  "purpose": "annual thermal-level candidate development",
+  "development_target_year_max": 2023,
+  "reserved_validation_target_years": [
+    2024,
+    2025
+  ],
+  "forecast_horizons_years": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "primary_2017_policy": "retained",
+  "candidates": {
+    "Simple Exponential Smoothing": {
+      "library": "statsmodels",
+      "class": "SimpleExpSmoothing",
+      "initialization_method": "estimated",
+      "fit_optimized": true,
+      "remove_bias": false
+    },
+    "Damped Holt Trend": {
+      "library": "statsmodels",
+      "class": "Holt",
+      "damped_trend": true,
+      "initialization_method": "estimated",
+      "fit_optimized": true,
+      "remove_bias": false
+    },
+    "Theil-Sen Robust Trend": {
+      "library": "scipy",
+      "function": "scipy.stats.theilslopes",
+      "alpha": 0.95,
+      "method": "separate"
+    }
+  },
+  "selection_policy": "No final annual-level model selected in Step 26A. All three frozen candidates proceed to Step 27 reserved validation.",
+  "step27_rule": "Candidate definitions/configurations must not be changed before evaluating reserved 2024-2025 targets.",
+  "step22b_spatial_model_changed": false,
+  "future_2026_2030_generated": false
+}

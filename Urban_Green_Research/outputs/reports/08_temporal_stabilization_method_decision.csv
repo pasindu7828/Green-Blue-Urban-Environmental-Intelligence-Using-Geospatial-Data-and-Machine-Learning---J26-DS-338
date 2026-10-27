@@ -1,0 +1,2 @@
+selected_method,selection_basis,smoothing_years,year_2010_status,year_2025_status,year_2026_status,raw_maps_preserved,stabilized_maps_for_retrospective_analysis,stabilized_maps_leakage_safe_for_pressure_ml,reason_for_selection
+MODE_3YR,Step 07E sensitivity analysis,2011-2024,RAW edge year,RAW edge year; provisional 2026 excluded,RAW provisional partial-year,True,True,False,Large reduction in temporal flicker with negligible change in 2021 high-purity WorldCover benchmark agreement

@@ -1,0 +1,85 @@
+{
+  "step": "21",
+  "status": "FINAL_STRATEGY_FROZEN_BEFORE_2025",
+  "selected_strategy": "lgbm_anomaly_plus_prior_mean_level",
+  "selected_base_model": "LightGBM",
+  "selection_rule": {
+    "eligible_candidates": [
+      "raw_step17",
+      "lgbm_anomaly_plus_prior_mean_level",
+      "rf_anomaly_plus_prior_mean_level"
+    ],
+    "raw_reference": "raw_step17",
+    "reserved_2024_confirmation_gate": [
+      "MAE lower than raw tuned RF",
+      "RMSE lower than raw tuned RF",
+      "R2 higher than raw tuned RF"
+    ],
+    "among_qualifying_structural_candidates": "lowest PRE-2024 2019-2023 development mean MAE",
+    "fallback_if_none_qualify": "raw_step17"
+  },
+  "selection_reason": "The candidate independently beat raw tuned RF on reserved-2024 MAE, RMSE and R\u00b2. Among all structural candidates that passed that independent gate, it had the lowest PRE-2024 2019-2023 development mean MAE.",
+  "development_evidence_2019_2023": {
+    "mean_mae": 2.4252516895788427,
+    "mean_rmse": 2.8366901305384906,
+    "mean_r2": -0.0969452068270243,
+    "negative_r2_count": 1,
+    "worst_year_mae": 4.218759605504372
+  },
+  "reserved_2024_evidence": {
+    "mae": 0.9581459542972376,
+    "rmse": 1.2706473376077545,
+    "r2": 0.6742602513161249,
+    "mape_percent": 2.761722352676991,
+    "bias_pred_minus_actual_c": 0.5202426689522492,
+    "centered_spatial_r2": 0.7288652792217182
+  },
+  "final_model_configuration": {
+    "target": "within-year spatial anomaly = LST_C - same-year annual mean LST_C",
+    "feature_configuration": "full_93",
+    "feature_count": 93,
+    "hyperparameters": {
+      "colsample_bytree": 0.4,
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "min_child_samples": 40,
+      "n_estimators": 250,
+      "num_leaves": 31,
+      "reg_alpha": 0.5,
+      "reg_lambda": 5.0,
+      "subsample": 0.6
+    },
+    "training_years_for_2025_test_model": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "training_rows": 15358,
+    "model_artifact": "E:\\Urban_Heat_Research\\models\\final\\21_final_lightgbm_anomaly_trained_2018_2024.joblib",
+    "feature_list_artifact": "E:\\Urban_Heat_Research\\outputs\\reports\\21_final_feature_list.csv"
+  },
+  "frozen_2025_inference_rule": {
+    "annual_level_rule": "prior_mean_level",
+    "annual_level_history_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "annual_level_forecast_c": 35.65491269719623,
+    "anomaly_prediction_recentering": "subtract mean of 2025 predicted anomaly values only; do not use 2025 target",
+    "final_prediction_formula": "frozen_2025_prior_mean_annual_level + centered_2025_predicted_spatial_anomaly"
+  },
+  "hyperparameters_retuned_after_2024": false,
+  "features_changed_after_2024": false,
+  "new_strategy_created_after_2024": false,
+  "2025_loaded_or_used_in_step21": false,
+  "final_strategy_frozen_before_2025": true
+}

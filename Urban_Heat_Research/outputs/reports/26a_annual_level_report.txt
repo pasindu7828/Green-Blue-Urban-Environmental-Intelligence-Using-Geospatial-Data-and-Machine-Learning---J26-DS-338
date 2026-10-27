@@ -1,0 +1,53 @@
+STEP 26A - ANNUAL THERMAL-LEVEL FORECAST MODEL DEVELOPMENT
+====================================================================================================================
+
+PROTOCOL
+--------------------------------------------------------------------------------------------------------------------
+Candidate-development target years: <= 2023.
+Reserved Step-27 validation target years: 2024 and 2025.
+Primary analysis retains 2017.
+No-2017 sensitivity preserves the same four-observation minimum and uses common folds only; H5 has no valid no-2017 development fold.
+No final candidate is selected in Step 26A.
+
+CANDIDATE METRICS BY HORIZON
+--------------------------------------------------------------------------------------------------------------------
+                      method  horizon_years  fold_count    MAE_C   RMSE_C  MAPE_pct        R2    Bias_C
+Simple Exponential Smoothing              1           5 1.816676 2.160780  5.120662 -0.402444  0.241600
+Simple Exponential Smoothing              2           4 1.885568 2.212805  5.317771 -0.186585  0.180333
+Simple Exponential Smoothing              3           3 2.331556 3.044466  6.910301 -2.032822  1.037883
+Simple Exponential Smoothing              4           2 2.051574 2.142646  6.019995 -0.105772  0.618042
+Simple Exponential Smoothing              5           1 2.641656 2.641656  8.063131       NaN  2.641656
+           Damped Holt Trend              1           5 2.818968 3.107148  7.852740 -1.899934 -0.939946
+           Damped Holt Trend              2           4 3.215748 3.963394  8.832985 -2.806685 -1.628016
+           Damped Holt Trend              3           3 4.487273 4.510713 12.782828 -5.657561 -1.609991
+           Damped Holt Trend              4           2 3.355981 4.611486  9.142884 -4.122080 -3.355981
+           Damped Holt Trend              5           1 2.847316 2.847316  8.690865       NaN -2.847316
+      Theil-Sen Robust Trend              1           5 2.680712 3.266685  7.514893 -2.205374 -1.033353
+      Theil-Sen Robust Trend              2           4 3.733994 4.472850 10.261120 -3.848207 -2.151209
+      Theil-Sen Robust Trend              3           3 4.976701 5.173484 14.028849 -7.757719 -2.803789
+      Theil-Sen Robust Trend              4           2 5.339022 6.514718 14.764622 -9.222469 -5.339022
+      Theil-Sen Robust Trend              5           1 6.449663 6.449663 19.686313       NaN -6.449663
+
+CANDIDATE EQUAL-HORIZON DEVELOPMENT SUMMARY
+--------------------------------------------------------------------------------------------------------------------
+                      method  horizon_count  mean_horizon_MAE_C  mean_horizon_RMSE_C  mean_horizon_MAPE_pct  mean_horizon_R2  mean_abs_horizon_Bias_C
+Simple Exponential Smoothing              5            2.145406             2.440471               6.286372        -0.681905                 0.943903
+           Damped Holt Trend              5            3.345057             3.808011               9.460460        -3.621565                 2.076250
+      Theil-Sen Robust Trend              5            4.636018             5.175480              13.251159        -5.758442                 3.555407
+
+CANDIDATES + STEP-25 BASELINES ON SAME DEVELOPMENT WINDOW
+--------------------------------------------------------------------------------------------------------------------
+      model_group                       method  horizon_count  mean_horizon_MAE_C  mean_horizon_RMSE_C  mean_horizon_MAPE_pct  mean_horizon_R2  mean_abs_horizon_Bias_C
+  Step25 baseline               Expanding Mean              5            1.941761             2.199429               5.685637        -0.201287                 0.819586
+  Step25 baseline               Rolling-3 Mean              5            2.137313             2.390256               6.142366        -0.896403                 0.647792
+Step26A candidate Simple Exponential Smoothing              5            2.145406             2.440471               6.286372        -0.681905                 0.943903
+  Step25 baseline                  Persistence              5            2.272177             2.565852               6.631220        -1.065084                 0.893223
+  Step25 baseline                        Drift              5            3.240606             3.643200               9.234434        -3.027097                 1.617494
+Step26A candidate            Damped Holt Trend              5            3.345057             3.808011               9.460460        -3.621565                 2.076250
+Step26A candidate       Theil-Sen Robust Trend              5            4.636018             5.175480              13.251159        -5.758442                 3.555407
+  Step25 baseline             OLS Linear Trend              5            4.827423             5.412912              13.797010        -6.281881                 3.794010
+
+IMPORTANT
+--------------------------------------------------------------------------------------------------------------------
+All three Step-26A candidates are frozen and carried unchanged into Step 27. Development results must not be treated as reserved-validation results.
+Step 26A does not produce 2026-2030 forecasts and does not change the Step-22B production spatial-anomaly model.

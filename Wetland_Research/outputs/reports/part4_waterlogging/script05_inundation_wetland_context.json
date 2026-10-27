@@ -1,0 +1,72 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Historical inundation versus wetland context",
+  "generated_utc": "2026-10-15T09:00:31.470392+00:00",
+  "analysis_crs": "EPSG:32644",
+  "events": [
+    {
+      "event_id": "E001",
+      "event_date": "2018-05-29",
+      "event_inside_study_area_ha": 391.9886,
+      "part1_reference_window_days": 90,
+      "part1_nearest_reference_wetlands": 0,
+      "part1_references_within_30_days": 0,
+      "part1_exact_date_references": 0,
+      "part1_reference_overlap_ha": null,
+      "outside_selected_part1_reference_ha": null,
+      "part1_reference_overlap_percent": null,
+      "lulc_2020_valid_sampled_pixels": 4347,
+      "lulc_2020_nodata_sampled_pixels": 0,
+      "lulc_2020_wetland_openwater_percent": 47.6651
+    },
+    {
+      "event_id": "E002",
+      "event_date": "2018-11-25",
+      "event_inside_study_area_ha": 228.9965,
+      "part1_reference_window_days": 90,
+      "part1_nearest_reference_wetlands": 25,
+      "part1_references_within_30_days": 24,
+      "part1_exact_date_references": 5,
+      "part1_reference_overlap_ha": 0.0,
+      "outside_selected_part1_reference_ha": 228.9965,
+      "part1_reference_overlap_percent": 0.0,
+      "lulc_2020_valid_sampled_pixels": 2518,
+      "lulc_2020_nodata_sampled_pixels": 0,
+      "lulc_2020_wetland_openwater_percent": 57.4662
+    }
+  ],
+  "part1_reference_policy": {
+    "source": "Part 1 clean historical wetland observations",
+    "maximum_temporal_gap_days": 90,
+    "selection": "One nearest observation per wetland",
+    "tie_break": "Prefer earlier imagery for equal gaps",
+    "interpretation": "Selected wetlands are incomplete historical context, not exhaustive wetland ground truth."
+  },
+  "lulc_reference_policy": {
+    "source": "Part 3 historical LULC 2020",
+    "spatial_resolution_m": 30,
+    "sampling": "Raster cell centers",
+    "interpretation": "2020 land-cover context only; not confirmed 2018 land cover."
+  },
+  "interpretation_limitations": [
+    "Only 25 selected wetlands are represented in Part 1.",
+    "No Part 1 observations are available within 90 days of E001.",
+    "Part 1 observations near E002 may share imagery with the event polygons and are not independent validation.",
+    "2020 Open Water is not proof of permanent water coverage in 2018.",
+    "2020 Wetland/Marsh is not proof of waterlogging during either event.",
+    "Raster sampled areas are approximate because boundaries cross 30m cells.",
+    "Cloud cover and manual image interpretation introduce uncertainty.",
+    "Outside sampled wetlands does not mean confirmed non-wetland.",
+    "No confirmed waterlogging or non-waterlogging labels are assigned."
+  ],
+  "status": "CONTEXT_ASSESSMENT_COMPLETE_LABEL_RELIABILITY_PENDING",
+  "raw_data_modified": false,
+  "geometry_repair_policy": "Invalid event polygons were repaired in memory using buffer(0). Original KML geometries were not modified. Repaired boundaries still require interpretation-quality review.",
+  "geometry_repair_summary": {
+    "total_polygons": 49,
+    "originally_invalid": 20,
+    "repaired": 20,
+    "geometry_type_changes": 8,
+    "spatial_proximity_interpretation": "Exact geometric overlap and distance to the historical event footprint are reported separately. A small positive distance indicates proximity, not confirmed overlap or independent evidence of waterlogging. Manual digitization uncertainty must be considered."
+  }
+}

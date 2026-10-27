@@ -1,0 +1,5 @@
+class_id,class_name,mapped_worldcover_pixels,homogeneous_candidate_pixels,selected_candidate_points,target_candidate_points,target_reached
+1,Green / Vegetation,633299,479410,200,200,True
+2,Built-up,234691,103175,200,200,True
+3,Open / Bare,2689,761,45,200,False
+4,Water,17108,10121,200,200,True

@@ -1,0 +1,95 @@
+{
+  "project": "J26-DS-338",
+  "component": "Urban Green Transition, Urbanization Pressure and Conservation Intelligence",
+  "section": "03_development_suitability",
+  "stage": "16g_01",
+  "status": "PASS_SECTION03_FINAL_CONTINUOUS_SUITABILITY_WITH_DOCUMENTED_LIMITATIONS",
+  "study_area": "Kaduwela Municipal Council",
+  "grid_cells": 9240,
+  "crs": "EPSG:32644",
+  "study_area_km2": 88.82921581108508,
+  "method": "GIS_MCDA_EXPERT_AHP_WEIGHTED_LINEAR_COMBINATION",
+  "formula": "S=0.20*C1+0.60*C2+0.20*C4",
+  "suitability_field": "development_suitability_score",
+  "score_range": [
+    0.0,
+    1.0
+  ],
+  "criteria": {
+    "C1": {
+      "name": "Major Road Proximity",
+      "direction": "COST",
+      "weight": 0.2
+    },
+    "C2": {
+      "name": "Local Road Density 500m",
+      "direction": "BENEFIT",
+      "weight": 0.6
+    },
+    "C4": {
+      "name": "Terrain Slope",
+      "direction": "COST",
+      "weight": 0.2
+    }
+  },
+  "expert_consultation": {
+    "role": "Engineer",
+    "date": "2026-10-17",
+    "source": "Researcher-transcribed expert responses",
+    "expert_name_recorded": false,
+    "independently_signed": false,
+    "consistency_ratio": 0.0
+  },
+  "suitability_distribution": {
+    "minimum": 0.0,
+    "p05": 0.19951558090692076,
+    "median": 0.5435938045080602,
+    "mean": 0.5434669344169946,
+    "p95": 0.8858527526389719,
+    "maximum": 0.9989284791557644
+  },
+  "sensitivity": {
+    "scenario_count": 13,
+    "hypothetical_scenarios": 12,
+    "worst_spearman": 0.9822801085757273,
+    "minimum_top10_retention": 0.8755411255411255,
+    "minimum_top20_retention": 0.9004329004329005,
+    "real_expert_weights_changed": false,
+    "robustness_interpretation": "High overall ranking agreement; some changes near top-ranked boundaries."
+  },
+  "model_scope": {
+    "continuous_suitability_completed": true,
+    "final_policy_suitability_classes": false,
+    "flood_risk_explicitly_modelled": false,
+    "zoning_legal_compliance_modelled": false,
+    "usable_for_section05_continuous_DCI": true
+  },
+  "limitations": [
+    "Development suitability represents only the selected three criteria.",
+    "Expert weights are researcher-transcribed and not independently signed.",
+    "Drainage, flood hazard and official land-use permissions are not directly modelled by this suitability score.",
+    "Hypothetical sensitivity scenarios are not additional expert judgments.",
+    "No arbitrary final HIGH/MEDIUM/LOW suitability categories are asserted.",
+    "The score is decision-support evidence, not legal permission for development."
+  ],
+  "final_deliverables": {
+    "suitability_csv": "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.csv",
+    "suitability_gpkg": "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.gpkg",
+    "suitability_gpkg_layer": "expert_ahp_suitability_100m",
+    "sensitivity_scenarios": "data/processed/development_suitability/final_expert_ahp/16f_02_sensitivity_scenario_summary.csv",
+    "sensitivity_grid_stability": "data/processed/development_suitability/final_expert_ahp/16f_02_sensitivity_grid_stability.csv"
+  },
+  "input_sha256": {
+    "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.csv": "9b8fd5674fbfe221ab3c391b5624fa32cb24c16ecd124f3e858c2b8130b62717",
+    "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.gpkg": "f44eff26e7bf0fb2549de510855119e0440790edd91f21dd4690b053a171db87",
+    "outputs/reports/16e_02_expert_ahp_weighted_qa.json": "c1c8cb406c9678680c7a4a4dfa71e57dca0ca8905eb2e84e389c143861af42f1",
+    "data/processed/development_suitability/final_expert_ahp/16f_02_sensitivity_scenario_summary.csv": "bd5e8ebdc99fe7a1018ab1f530ae9d36227ff6cdfab721f166c3d0bf86a1a545",
+    "data/processed/development_suitability/final_expert_ahp/16f_02_sensitivity_grid_stability.csv": "618dd2b3080310d1d383658cbe721e040d5fb11809d595e0324fd3fdd3132864",
+    "outputs/reports/16f_02_expert_ahp_sensitivity_qa.json": "72fa577fef1cae384faea2453a4c7f41b7f14c1ea77a0e62475944c69ccfb8c2",
+    "outputs/reports/16d_e_expert_ahp_consistency_qa.json": "2418d5af2760529f851e0ebf3b444c163da2d8d144650887d4e8e3e19af60891",
+    "outputs/reports/16d_e_expert_ahp_weights.csv": "eae6ff21a01868d1c16ca38cdee5dcda9def81046b8609a000dbcabdf2c4af01",
+    "outputs/reports/16c_m_final_criteria_standardization_qa.json": "27ce2f59b9c2867dd76c0321d5a10f1b8a151be5550d4d9972cad9be7f291821"
+  },
+  "historical_blocker_note": "Older 16e_01 and 16f_01 status reports refer to earlier provisional stages. This new release documents the verified later expert-AHP calculation and sensitivity.",
+  "section04_outputs_modified": false
+}

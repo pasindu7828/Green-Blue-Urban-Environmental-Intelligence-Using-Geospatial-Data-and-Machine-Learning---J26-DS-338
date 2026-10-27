@@ -1,0 +1,78 @@
+{
+  "status": "ok",
+  "research_component": "Development Suitability",
+  "release_status": "PASS_SECTION03_FINAL_CONTINUOUS_SUITABILITY_WITH_DOCUMENTED_LIMITATIONS",
+  "method": "GIS_MCDA_EXPERT_AHP_WEIGHTED_LINEAR_COMBINATION",
+  "formula": "S=0.20*C1+0.60*C2+0.20*C4",
+  "criteria": {
+    "C1": {
+      "name": "Major Road Proximity",
+      "direction": "COST",
+      "weight": 0.2
+    },
+    "C2": {
+      "name": "Local Road Density 500m",
+      "direction": "BENEFIT",
+      "weight": 0.6
+    },
+    "C4": {
+      "name": "Terrain Slope",
+      "direction": "COST",
+      "weight": 0.2
+    }
+  },
+  "expert_consultation": {
+    "role": "Engineer",
+    "date": "2026-10-17",
+    "source": "Researcher-transcribed expert responses",
+    "expert_name_recorded": false,
+    "independently_signed": false,
+    "consistency_ratio": 0.0
+  },
+  "grid_count": 9240,
+  "score_field": "development_suitability_score",
+  "score_range": [
+    0,
+    1
+  ],
+  "continuous_score": true,
+  "final_policy_classes_assigned": false,
+  "distribution": {
+    "minimum": 0.0,
+    "p05": 0.19951558090692076,
+    "median": 0.5435938045080602,
+    "mean": 0.5434669344169946,
+    "p95": 0.8858527526389719,
+    "maximum": 0.9989284791557644
+  },
+  "sensitivity": {
+    "scenario_count": 13,
+    "hypothetical_scenarios": 12,
+    "worst_spearman": 0.9822801085757273,
+    "minimum_top10_retention": 0.8755411255411255,
+    "minimum_top20_retention": 0.9004329004329005,
+    "real_expert_weights_changed": false,
+    "robustness_interpretation": "High overall ranking agreement; some changes near top-ranked boundaries."
+  },
+  "limitations": [
+    "Development suitability represents only the selected three criteria.",
+    "Expert weights are researcher-transcribed and not independently signed.",
+    "Drainage, flood hazard and official land-use permissions are not directly modelled by this suitability score.",
+    "Hypothetical sensitivity scenarios are not additional expert judgments.",
+    "No arbitrary final HIGH/MEDIUM/LOW suitability categories are asserted.",
+    "The score is decision-support evidence, not legal permission for development."
+  ],
+  "source_stage": "16G",
+  "source_gis": "data/processed/development_suitability/final_expert_ahp/16e_02_expert_ahp_weighted_suitability_100m.gpkg",
+  "source_gis_layer": "expert_ahp_suitability_100m",
+  "crs": "EPSG:4326",
+  "source_crs": "EPSG:32644",
+  "geojson_file": "suitability_map.geojson",
+  "join_field": "grid_id",
+  "bounds_west_south_east_north": [
+    79.9011979168993,
+    6.857762473450249,
+    80.045022571141,
+    6.946965905437741
+  ]
+}

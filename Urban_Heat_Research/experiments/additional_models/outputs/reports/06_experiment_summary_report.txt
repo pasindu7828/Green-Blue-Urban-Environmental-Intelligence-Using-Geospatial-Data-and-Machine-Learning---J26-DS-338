@@ -1,0 +1,28 @@
+STEP 06 - SUPPLEMENTARY EXPERIMENT SUMMARY AND DECISION GATE
+
+DEVELOPMENT MODEL RANKING
+ development_rank                model  mean_mae  mean_rmse   mean_r2  mean_centered_spatial_r2
+                1 HistGradientBoosting  2.411679   2.811558 -0.094043                  0.567057
+                2             CatBoost  2.414177   2.826494 -0.091024                  0.570076
+                3             LightGBM  2.425252   2.836690 -0.096945                  0.564155
+                4          Extra Trees  2.431432   2.839655 -0.099910                  0.561190
+
+Development winner: HistGradientBoosting
+Winner mean MAE: 2.411679 C
+LightGBM mean MAE: 2.425252 C
+MAE improvement vs LightGBM: 0.5596%
+Winner MAE fold wins vs LightGBM: 2/5
+LightGBM MAE fold wins vs winner: 3/5
+
+FINAL EXPERIMENT DECISION: KEEP_CURRENT_PRODUCTION_LIGHTGBM
+HistGradientBoosting has the lowest average development MAE, but its advantage over LightGBM is only 0.5596% and it wins 2 of 5 matched MAE folds versus 3 wins for LightGBM. The evidence is therefore not sufficiently consistent to justify reopening the finalized production pipeline.
+
+Production pipeline modified: NO
+Production model replaced: NO
+Backend modified: NO
+2024 loaded by this step: NO
+2025 loaded by this step: NO
+
+Note: this statement refers only to the supplementary experiment. It does not claim that 2024/2025 were never used elsewhere in the previously finalized production pipeline.
+
+STEP 06 STATUS: PASS

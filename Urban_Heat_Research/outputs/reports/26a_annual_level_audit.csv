@@ -1,0 +1,20 @@
+check,status,details
+step25_audit,PASS,Step-25 strict audit verified fully PASS.
+step25_annual_series_hash,PASS,910fa5268bedd3fe50ff4abc0db82f48a345d1fe6cf79ffe1849be24cc004869
+step25_prediction_hash,PASS,319bf955d3c555e7b1c24111746c8c10de89b55e218241dcb22c1d7caa853007
+observed_years,PASS,"[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]"
+development_fold_counts,PASS,"actual={1: 5, 2: 4, 3: 3, 4: 2, 5: 1}, expected={1: 5, 2: 4, 3: 3, 4: 2, 5: 1}"
+candidate_targets_stop_at_2023,PASS,max_candidate_target=2023
+reserved_2024_2025_not_used_as_candidate_targets,PASS,2024 and 2025 are reserved for Step-27 validation.
+candidate_training_precedes_target,PASS,All candidate fits use only years available at forecast origin.
+origin_matches_training_cutoff,PASS,Every candidate origin equals its training-history cutoff.
+all_candidates_all_horizons,PASS,3 candidates across H1-H5.
+step25_baselines_same_dev_window,PASS,Step-25 reference baselines filtered to target years <= 2023.
+primary_retains_2017,PASS,2017 remains in primary annual-level development history.
+no2017_minimum_history_preserved,PASS,No-2017 sensitivity keeps the same minimum of four annual observations.
+no2017_common_fold_comparison,PASS,Primary vs no-2017 sensitivity metrics use identical origin-target folds.
+no_hyperparameter_grid_search,PASS,No candidate hyperparameter grid/random/Bayesian search performed.
+candidate_definitions_frozen_for_step27,PASS,All three candidate definitions saved before Step-27 reserved validation.
+no_2026_2030_forecast,PASS,No future operational annual-level forecast generated.
+step22b_spatial_model_untouched,PASS,Step-22B LightGBM is not loaded/retrained/modified in Step 26A.
+dynamic_predictor_forecasting_not_started,PASS,"NDVI/NDBI/NDWI/EVI/etc. belong to Step 26B, not Step 26A."

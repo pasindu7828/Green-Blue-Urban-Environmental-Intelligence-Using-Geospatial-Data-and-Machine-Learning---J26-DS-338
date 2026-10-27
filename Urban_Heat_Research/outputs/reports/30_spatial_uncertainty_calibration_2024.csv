@@ -1,0 +1,3 @@
+calibration_year,calibration_rows,nominal_level_percent,spatial_radius_c,score_definition,method
+2024,2194,90.0,1.7358469025061254,absolute centered spatial residual,split-conformal-style finite-sample absolute-residual quantile
+2024,2194,95.0,2.236243367602583,absolute centered spatial residual,split-conformal-style finite-sample absolute-residual quantile

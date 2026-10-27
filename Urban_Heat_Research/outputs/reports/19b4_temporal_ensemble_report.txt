@@ -1,0 +1,57 @@
+STEP 19B4 - ROBUST TEMPORAL ENSEMBLE
+================================================================================================================
+
+PURPOSE
+----------------------------------------------------------------------------------------------------------------
+Test whether combining the four finalized Step 17 rolling predictions
+improves temporal robustness without current-year target leakage.
+
+DATA POLICY
+----------------------------------------------------------------------------------------------------------------
+Input predictions: finalized Step 17 rolling-origin OOF predictions.
+Development validation years: 2019-2023.
+2024 reserved validation: NOT loaded.
+2025 final lockbox: NOT loaded.
+
+ELIGIBLE STRATEGIES
+----------------------------------------------------------------------------------------------------------------
+random_forest_single_reference
+equal_mean_all4
+median_all4
+trimmed_mean_middle2
+causal_inverse_mae_all4
+causal_inverse_rmse_all4
+
+CAUSAL WEIGHT POLICY
+----------------------------------------------------------------------------------------------------------------
+For validation year t, inverse-MAE/RMSE ensemble weights use only
+earlier rolling-origin validation years y < t.
+2019 has no prior OOF history and therefore uses equal model weights.
+
+RESIDUAL CORRELATION
+----------------------------------------------------------------------------------------------------------------
+Pooled mean absolute pairwise residual correlation: 0.976669
+Pooled minimum absolute pairwise residual correlation: 0.964207
+Pooled maximum absolute pairwise residual correlation: 0.998965
+
+DESCRIPTIVE STEP 19B4 RESULT
+----------------------------------------------------------------------------------------------------------------
+Lowest all-fold development MAE strategy: random_forest_single_reference | mean MAE=2.919948 °C | mean RMSE=3.364573 °C | mean R²=-0.547393 | negative-R² folds=2 | worst MAE=5.017248 °C | minimum R²=-3.506623 | MAE improvement vs RF=0.000000 °C.
+
+GENERALIZATION GAP
+----------------------------------------------------------------------------------------------------------------
+Not reported for ensemble strategies.
+This step combines out-of-sample validation predictions only, and
+comparable ensemble training predictions are unavailable. A gap is
+therefore intentionally not fabricated.
+
+ENSEMBLE DISAGREEMENT
+----------------------------------------------------------------------------------------------------------------
+Across-member prediction spread is diagnostic only.
+It is NOT a calibrated predictive uncertainty interval.
+
+NO FINAL SELECTION
+----------------------------------------------------------------------------------------------------------------
+Any descriptive ranking here is development evidence only.
+Step 19C must compare the legitimate Step 19 strategies before
+reserved-2024 validation.

@@ -1,0 +1,56 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18i_01_gn_area_weighted_summary",
+  "status": "PASS_GN_AREA_WEIGHTED_INTEGRATION_WITH_COVERAGE_AUDIT",
+  "gn_divisions": 57,
+  "grid_cells": 9240,
+  "crs": "EPSG:32644",
+  "kmc_area_km2": 88.82921581108494,
+  "gn_union_covered_kmc_km2": 86.69588004119444,
+  "kmc_not_covered_by_gn_km2": 2.133335769839449,
+  "gn_boundary_overlap_m2": 0.0,
+  "grid_area_covered_by_gn_km2": 86.69588004119518,
+  "grid_area_uncovered_by_gn_km2": 2.133335769889894,
+  "gn_grid_intersection_records": 10880,
+  "grid_gn_assignment_counts": {
+    "SINGLE_GN_ASSIGNED": 7243,
+    "MULTIPLE_GN_DOMINANT_ASSIGNED": 1731,
+    "GN_BOUNDARY_GAP_UNASSIGNED": 206,
+    "PARTIAL_GN_COVERAGE_DOMINANT_ASSIGNED": 60
+  },
+  "gn_area_weighted_metrics": [
+    "development_suitability_score",
+    "urbanization_pressure_score",
+    "development_conflict_index_0_1",
+    "frozen_conservation_priority_0_1"
+  ],
+  "gn_summary_method": "FRACTIONAL_POLYGON_INTERSECTION_AREA_WEIGHTS",
+  "grid_popup_gn_method": "DOMINANT_INTERSECTED_GN_AREA",
+  "uncovered_gn_area_imputed": false,
+  "historical_provisional_suitability_used": false,
+  "expert_ahp_weights_modified": false,
+  "dci_or_frozen_cp_modified": false,
+  "official_planning_classifications_assigned": false,
+  "limitations": [
+    "GN divisions may not completely cover the KMC boundary. Any uncovered area is explicitly reported.",
+    "A grid crossing multiple GN divisions contributes to each GN in proportion to its actual intersected area.",
+    "Dominant GN is for grid identification and map popups, not a replacement for fractional GN statistics.",
+    "Counts of intersecting grids across GN divisions are not additive; intersected areas are the aggregation basis.",
+    "Missing DCI and frozen CP are excluded from their respective weighted averages, not interpreted as zero.",
+    "These GN statistics are research decision-support, not official development-permission determinations."
+  ],
+  "input_sha256": {
+    "data/processed/boundaries/gn_divisions/kaduwela_gn_divisions_utm44n.gpkg": "3fd24ce6dd4999467c714f0549b1070394b4ff1bfaad164c926b5d64ac0fdc3a",
+    "data/processed/boundaries/kmc/kaduwela_kmc_boundary_utm44n.gpkg": "7a8d5e1a78a049f171f59c5fe31625897f5e4aa8e8685f2bab4bc113ed0710dc",
+    "data/processed/planning_conflict_intervention/common_grid/18b_common_grid_integration_100m.gpkg": "0875ace74f79a98a322cc4dc7bc2b46d32f3e2b8694a1c6db48325836543775b",
+    "outputs/reports/planning_conflict_intervention/18b_common_grid_integration_qa.json": "e7124e0a1f599d240345551376384a93a7e24094df45dddae2fb5e4f2df4dcdd",
+    "data/processed/planning_conflict_intervention/intervention_prioritization/18g_separate_planning_review_queues_100m.csv": "dcae15ac05cbb052d0ca64beaccd3136de33160c2c25ba2553d67cce3bcc6310",
+    "outputs/reports/planning_conflict_intervention/18g_separate_planning_review_queues_qa.json": "c102d85a60f3855fe2c93588b07e8fb25c8c2d9a7ab333f450cb4ccc5518e669"
+  },
+  "outputs": {
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_gn_grid_intersections.csv": "ebbe8394b1e9c7008a1c5ccafda46f683e37a3f6eacdea29a89bf471339ea412",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_grid_gn_assignment_100m.csv": "1367f810fbe3045bc94a285a824894565823d63dd26dd5ac01c28e3c97016fd8",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_gn_area_weighted_summary.csv": "ff013114729f9fb12741827368efbaf9842a4cc90b4d28e43170fb924e0c43f7",
+    "data/processed/planning_conflict_intervention/gn_hotspots/18i_01_gn_area_weighted_summary.gpkg": "77bc63eca0bd3a8273d8ef99e847348aed8adbe69425b7738a30b29dfdf97823"
+  }
+}

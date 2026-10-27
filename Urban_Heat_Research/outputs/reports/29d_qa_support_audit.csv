@@ -1,0 +1,11 @@
+check,status,details
+final_29d_audit,PASS,Final Step-29D strict audit verified fully PASS.
+balanced_historical_panel,PASS,"grids=2194, years=2015-2025"
+adjacent_year_differences_only,PASS,2016-2025 transitions are all true one-year differences.
+pooled_scenario_level_reproduction,PASS,max_error=8.326672684689e-17
+scenario_row_count,PASS,"actual=32910, expected=32910"
+all_scenario_grids_have_historical_support_record,PASS,matched_rows=32910
+support_flags_computed_without_lsts,PASS,Support classification uses only historical NDWI and scenario NDWI magnitude/range; no scenario LST response is used to choose or modify support thresholds.
+scenario_outputs_modified,PASS,No. Step-29D outputs are read-only inputs.
+model_retraining,PASS,None.
+causal_claim,PASS,No. This is support/extrapolation QA only.

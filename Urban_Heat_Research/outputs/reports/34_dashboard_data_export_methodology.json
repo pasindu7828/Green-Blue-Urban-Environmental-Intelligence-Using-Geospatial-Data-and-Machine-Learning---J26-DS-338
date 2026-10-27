@@ -1,0 +1,62 @@
+{
+  "step": "34_dashboard_data_export",
+  "purpose": "Convert frozen research outputs into a clean dashboard/backend data contract.",
+  "path_strategy": "All paths are relative to PROJECT_ROOT = Path(__file__).resolve().parents[1].",
+  "join_key": "grid_id",
+  "area_name_role": "display/filter/grouping metadata only; not introduced as a model or TOPSIS criterion",
+  "geometry_role": "WGS84 map geometry only",
+  "historical_export": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "rows_expected": 24134
+  },
+  "future_export": {
+    "years": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ],
+    "rows_expected": 10970,
+    "contains": [
+      "Step28 point forecast",
+      "Step30 forecast reference uncertainty",
+      "Step23B trajectory",
+      "Step28B local SHAP summary",
+      "Step32 TOPSIS rank/score",
+      "Step33 sensitivity/rank stability",
+      "Step30-enriched primary scenario summaries"
+    ]
+  },
+  "primary_scenarios": {
+    "green": "+5 percentage-point persistent green scenario",
+    "built": "MODERATE",
+    "combined": "green +10pp + built MODERATE",
+    "blue": "MODERATE"
+  },
+  "priority_policy": {
+    "source": "Step32 TOPSIS + Step33 sensitivity",
+    "new_thresholds_created": false,
+    "new_priority_classes_created": false
+  },
+  "scientific_guardrails": [
+    "No model retraining.",
+    "No feature or indicator reselection.",
+    "No CRITIC or TOPSIS recalculation.",
+    "No arbitrary priority classes invented.",
+    "Scenario outputs remain model-based sensitivities, not causal guarantees.",
+    "Step30 scenario uncertainty is a reference outcome band; no calibrated interval is claimed for intervention delta-LST."
+  ]
+}

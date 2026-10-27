@@ -1,0 +1,37 @@
+PART 1 - HISTORICAL WETLAND CHANGE
+==================================
+
+Known wetlands analysed: 25
+Total historical observations: 448
+Raw consecutive comparison pairs: 423
+High/Moderate comparison pairs: 122
+Core trusted comparison pairs: 89
+GN divisions containing known wetlands: 12
+
+Change status counts:
+change_status
+Predominantly decreasing            10
+Predominantly increasing             6
+Mixed / variable                     5
+Insufficient comparable evidence     4
+
+Fragmentation status counts:
+fragmentation_status
+Mixed / limited fragmentation change    15
+Increasing consolidation                 5
+Insufficient comparable evidence         4
+Increasing fragmentation                 1
+
+Trusted pairwise spatial transitions:
+Raw loss sum: 18.9448 ha
+Raw gain sum: 21.1245 ha
+MMU-filtered loss sum: 18.3823 ha
+MMU-filtered gain sum: 20.5805 ha
+Loss removed by MMU: 2.97%
+Gain removed by MMU: 2.58%
+
+IMPORTANT INTERPRETATION:
+Loss/gain sums are pairwise transition totals across multiple observation intervals. They are not unique cumulative land-loss or land-gain totals for Kaduwela.
+Historical status describes mapped wetland boundary behaviour under environmentally comparable observations. It does not by itself identify the cause of change.
+
+Backend validation: PASS

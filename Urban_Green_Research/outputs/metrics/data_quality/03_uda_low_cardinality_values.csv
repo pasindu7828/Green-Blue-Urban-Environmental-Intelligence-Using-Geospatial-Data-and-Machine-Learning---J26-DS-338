@@ -1,0 +1,79 @@
+field,value,count
+zone_id,7,150
+zone_id,11,122
+zone_id,10,32
+zone_id,18,30
+zone_id,20,25
+zone_id,16,24
+zone_id,4,21
+zone_id,19,20
+zone_id,12,17
+zone_id,27,11
+zone_id,15,9
+zone_id,23,9
+zone_id,24,8
+zone_id,2,7
+zone_id,22,6
+zone_id,8,6
+zone_id,5,5
+zone_id,14,4
+zone_id,1,1
+zone_id,9,1
+zone_name,Special Residential Zone III-Parliament Zone III / Special Residential Zone,150
+zone_name,Medium Sensitive Conservation Zone,122
+zone_name,High Sensitive Conservation Zone,32
+zone_name,Special Guide Zone-Frolic Island Area,30
+zone_name,Knowledge City Zone II,25
+zone_name,Low Density Residential Zone,24
+zone_name,Institutional Zone-Special Security Zone I-Parliament Zone III,21
+zone_name,Knowledge City Zone I,20
+zone_name,Low Sensitive Conservation Zone,17
+zone_name,Water Body,11
+zone_name,High Density Residential Zone-Special Security Zone II / High Density Residential Zone,9
+zone_name,Mixed Development Zone I (Commercial Base),9
+zone_name,Mixed Development Zone II (High Density Industry Base),8
+zone_name,Institutional Zone / Institutional Zone-Special Security Zone I,7
+zone_name,High Land Conservation Zone (Dedigamuwa/Koratota),6
+zone_name,Special Residential Zone II-Parliament Zone II,6
+zone_name,Institutional Zone-Parliament Zone II / Institutional Zone-Parliament Zone III / Mixed Development Zone III (Low Density Industry Base) / Mixed Development Zone IV-Kelani River Based,5
+zone_name,Special Residential Zone IV,4
+zone_name,Commercial Zone,1
+zone_name,Special Residential Zone I-Parliament Zone I,1
+group_name,Residential,194
+group_name,Conservation,177
+group_name,Knowledge,45
+group_name,Institutional,33
+group_name,Special,30
+group_name,Mixed development,17
+group_name,Water body,11
+group_name,Commercial,1
+screening,CHECK_UDA_REGULATIONS,331
+screening,CONSERVATION_REVIEW,177
+source,UDA 2024 web-map SCREENSHOT; estimated,508
+official,0,508
+confidence,LOW — image-derived,508
+other_possible,<MISSING>,337
+other_possible,Special Residential Zone III-Parliament Zone III; Special Residential Zone,150
+other_possible,High Density Residential Zone-Special Security Zone II; High Density Residential Zone,9
+other_possible,Institutional Zone; Institutional Zone-Special Security Zone I,7
+other_possible,Institutional Zone-Parliament Zone II; Institutional Zone-Parliament Zone III; Mixed Development Zone III (Low Density Industry Base); Mixed Development Zone IV-Kelani River Based,5
+research_flag,CHECK_DEVELOPMENT_RULES,257
+research_flag,CHECK_CONSERVATION_ZONE,177
+research_flag,CHECK_INSTITUTIONAL_RULES,33
+research_flag,CHECK_SPECIAL_ZONE_RULES,30
+research_flag,CHECK_WATERBODY,11
+planning_rights,NOT_DETERMINED,508
+zone_source,SCREENSHOT_ESTIMATE,508
+legal_status,UNVERIFIED,508
+usable_for_model,VISUAL_SCREENING_ONLY,508
+year_shown,2024,508
+qa_status,UNVERIFIED_SCREENSHOT_DERIVED,508
+qda_note,No official UDA polygon matched; unsuitable for automatic planning decisions,508
+is_composite,0,337
+is_composite,1,171
+needs_review,REQUIRES_OFFICIAL_ZONE_CHECK,337
+needs_review,AMBIGUOUS_COMPOSITE_ZONE_NAME,166
+needs_review,MD3_MD4_MERGED_WITH_OTHER_CLASSES,5
+use_for_ml,0,508
+use_for_legal,0,508
+geom_source,UNCHANGED_FROM_USER_ZONING_GPKG,508

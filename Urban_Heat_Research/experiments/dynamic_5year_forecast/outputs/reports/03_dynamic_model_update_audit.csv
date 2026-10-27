@@ -1,0 +1,11 @@
+check,status,details
+validated_history_used,PASS,E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\dynamic_5year_forecast\outputs\01_validated_history.csv
+frozen_feature_count,PASS,"actual=93, expected=93"
+feature_reselection,PASS,None; exact Step-21 ordered 93-feature list reused.
+hyperparameter_retuning,PASS,None; frozen production configuration retained. Baseline 2025 reuses the validated model artifact; newer histories refit the same strategy.
+step07_feature_reproduction_2025,PASS,max_abs_error=4.095421240633487e-13
+training_years,PASS,2018-2025
+training_rows,PASS,"actual=17552, expected=17552"
+within_year_anomaly_zero_mean,PASS,max_abs_year_mean=3.989920922773e-15
+current_2025_dry_run_model_comparison,PASS,"max_abs_diff=0.0, corr=1.0"
+main_research_model_modified,PASS,No; updated model saved only inside experiments/dynamic_5year_forecast/models.

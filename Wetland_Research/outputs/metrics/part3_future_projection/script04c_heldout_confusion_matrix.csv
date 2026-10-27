@@ -1,0 +1,7 @@
+,predicted_1_Wetland_Marsh,predicted_2_Open_Water,predicted_3_Built_Up,predicted_4_Paddy_Agriculture,predicted_5_Other_Vegetation,predicted_6_Bare_Fill_Disturbed
+actual_1_Wetland_Marsh,32,16,0,15,3,0
+actual_2_Open_Water,8,36,0,1,0,0
+actual_3_Built_Up,1,0,37,2,0,5
+actual_4_Paddy_Agriculture,10,0,1,13,3,0
+actual_5_Other_Vegetation,2,0,0,2,18,0
+actual_6_Bare_Fill_Disturbed,0,0,2,1,0,26

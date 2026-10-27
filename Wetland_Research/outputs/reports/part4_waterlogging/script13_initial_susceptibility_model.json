@@ -1,0 +1,75 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Exploratory susceptibility modelling",
+  "generated_utc": "2026-10-15T15:30:34.766572+00:00",
+  "method": "GIS weighted linear combination",
+  "model_type": "Untrained exploratory spatial index",
+  "study_cells": 94431,
+  "primary_general_land_cells": 51707,
+  "normalization": {
+    "slope": {
+      "reference_p05": 0.7226089417934418,
+      "reference_p95": 7.989726305007935,
+      "direction": "lower_higher_susceptibility"
+    },
+    "tpi": {
+      "reference_p05": -5.724202966690063,
+      "reference_p95": 8.124379730224609,
+      "direction": "lower_higher_susceptibility"
+    },
+    "density": {
+      "reference_p05": 0.0,
+      "reference_p95": 17.718191146850586,
+      "direction": "higher_higher_susceptibility"
+    }
+  },
+  "scenarios": {
+    "Terrain_Only": {
+      "weights": {
+        "slope": 0.5,
+        "tpi": 0.5,
+        "density": 0.0
+      },
+      "score_file": "data\\processed\\part4_waterlogging\\13_Terrain_Only_Susceptibility_Score_30m.tif",
+      "class_file": "data\\processed\\part4_waterlogging\\13_Terrain_Only_Susceptibility_Class_30m.tif",
+      "general_land_mean_score": 0.56022,
+      "general_land_p95_score": 0.868696
+    },
+    "Terrain_Urban": {
+      "weights": {
+        "slope": 0.4,
+        "tpi": 0.4,
+        "density": 0.2
+      },
+      "score_file": "data\\processed\\part4_waterlogging\\13_Terrain_Urban_Susceptibility_Score_30m.tif",
+      "class_file": "data\\processed\\part4_waterlogging\\13_Terrain_Urban_Susceptibility_Class_30m.tif",
+      "general_land_mean_score": 0.519351,
+      "general_land_p95_score": 0.780641
+    }
+  },
+  "class_thresholds": {
+    "Low": "0 <= score < 0.25",
+    "Moderate": "0.25 <= score < 0.50",
+    "High": "0.50 <= score < 0.75",
+    "Very_High": "0.75 <= score <= 1.00"
+  },
+  "general_land_class_changed_cells": 15952,
+  "general_land_class_changed_percent": 30.8508,
+  "metrics_csv": "outputs\\metrics\\part4_waterlogging\\script13_initial_susceptibility_distribution.csv",
+  "limitations": [
+    "Scores are relative indices, not calibrated flooding probabilities.",
+    "Weights and class thresholds are provisional, not empirically optimized.",
+    "Factor percentile normalization uses 2020 general-land screening cells.",
+    "Low slope and low TPI are assumed to increase terrain susceptibility.",
+    "Building density is an urban-development proxy, not measured imperviousness.",
+    "The urban factor represents 2026 OSM mapping and is not 2018 land cover.",
+    "No precipitation or drainage capacity is modelled at individual grid cells.",
+    "Flat elevated areas can receive high terrain scores; hydrological interpretation requires additional evaluation.",
+    "Scores over wetland, paddy, open water and unknown land cover require separate screening interpretation.",
+    "Two manually digitized 2018 events do not provide independent supervised ML labels.",
+    "DEM, factor, normalization and weighting sensitivity tests remain required.",
+    "No predictive accuracy is claimed."
+  ],
+  "raw_data_modified": false,
+  "status": "INITIAL_EXPLORATORY_MODEL_COMPLETE"
+}

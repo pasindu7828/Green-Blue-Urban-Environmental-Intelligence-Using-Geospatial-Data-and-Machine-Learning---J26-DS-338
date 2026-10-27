@@ -1,0 +1,35 @@
+year,sensor_era,product_type,output_file,stabilization_applied,stabilization_method,stabilization_window,provisional_year,recommended_role
+2010,Landsat 5 TM,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2010.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2010,Landsat 5 TM,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2010.tif,False,NONE,RAW_EDGE_YEAR,False,Historical edge year; interpret cautiously
+2011,Landsat 5 TM,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2011.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2011,Landsat 5 TM,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2011.tif,True,MODE_3YR,2010-2011-2012,False,Retrospective historical LULC analysis
+2012,Landsat 5 TM + Landsat 7 ETM+,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2012.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2012,Landsat 5 TM + Landsat 7 ETM+,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2012.tif,True,MODE_3YR,2011-2012-2013,False,Retrospective historical LULC analysis
+2013,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2013.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2013,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2013.tif,True,MODE_3YR,2012-2013-2014,False,Retrospective historical LULC analysis
+2014,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2014.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2014,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2014.tif,True,MODE_3YR,2013-2014-2015,False,Retrospective historical LULC analysis
+2015,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2015.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2015,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2015.tif,True,MODE_3YR,2014-2015-2016,False,Retrospective historical LULC analysis
+2016,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2016.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2016,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2016.tif,True,MODE_3YR,2015-2016-2017,False,Retrospective historical LULC analysis
+2017,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2017.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2017,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2017.tif,True,MODE_3YR,2016-2017-2018,False,Retrospective historical LULC analysis
+2018,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2018.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2018,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2018.tif,True,MODE_3YR,2017-2018-2019,False,Retrospective historical LULC analysis
+2019,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2019.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2019,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2019.tif,True,MODE_3YR,2018-2019-2020,False,Retrospective historical LULC analysis
+2020,Landsat 8 OLI,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2020.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2020,Landsat 8 OLI,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2020.tif,True,MODE_3YR,2019-2020-2021,False,Retrospective historical LULC analysis
+2021,Landsat 8 OLI + Landsat 9 OLI-2,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2021.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2021,Landsat 8 OLI + Landsat 9 OLI-2,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2021.tif,True,MODE_3YR,2020-2021-2022,False,Retrospective historical LULC analysis
+2022,Landsat 8 OLI + Landsat 9 OLI-2,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2022.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2022,Landsat 8 OLI + Landsat 9 OLI-2,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2022.tif,True,MODE_3YR,2021-2022-2023,False,Retrospective historical LULC analysis
+2023,Landsat 8 OLI + Landsat 9 OLI-2,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2023.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2023,Landsat 8 OLI + Landsat 9 OLI-2,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2023.tif,True,MODE_3YR,2022-2023-2024,False,Retrospective historical LULC analysis
+2024,Landsat 8 OLI + Landsat 9 OLI-2,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2024.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2024,Landsat 8 OLI + Landsat 9 OLI-2,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2024.tif,True,MODE_3YR,2023-2024-2025,False,Retrospective historical LULC analysis
+2025,Landsat 8 OLI + Landsat 9 OLI-2,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2025.tif,False,NONE,NONE,False,Transparent direct RF output / QA
+2025,Landsat 8 OLI + Landsat 9 OLI-2,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2025.tif,False,NONE,RAW_EDGE_YEAR_NO_2026_SMOOTHING,False,Historical edge year; provisional 2026 excluded from smoothing
+2026,Landsat 8 OLI + Landsat 9 OLI-2,RAW_RF,data/processed/lulc/annual_maps/raw/Kaduwela_LULC_RAW_2026.tif,False,NONE,NONE,True,Transparent direct RF output / QA
+2026,Landsat 8 OLI + Landsat 9 OLI-2,STABILIZED_ANALYTICAL,data/processed/lulc/annual_maps/stabilized_mode_3yr/Kaduwela_LULC_STABILIZED_2026.tif,False,NONE,RAW_PROVISIONAL_YEAR,True,Provisional partial-year output; not confirmed long-term change

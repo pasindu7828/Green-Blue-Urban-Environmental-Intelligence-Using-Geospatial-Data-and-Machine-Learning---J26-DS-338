@@ -1,0 +1,55 @@
+feature,missing_count,missing_percent,expected_structural_reason
+NDVI_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+NDVI_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+NDVI_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+NDVI_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+NDVI_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+NDVI_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+NDBI_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+NDBI_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+NDBI_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+NDBI_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+NDBI_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+NDBI_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+NDWI_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+NDWI_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+NDWI_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+NDWI_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+NDWI_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+NDWI_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+EVI_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+EVI_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+EVI_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+EVI_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+EVI_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+EVI_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+Albedo_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+Albedo_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+Albedo_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+Albedo_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+Albedo_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+Albedo_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+NDBI_ADJ_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+NDBI_ADJ_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+NDBI_ADJ_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+NDBI_ADJ_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+NDBI_ADJ_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+NDBI_ADJ_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+NDVI_ADJ_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+NDVI_ADJ_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+NDVI_ADJ_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+NDVI_ADJ_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+NDVI_ADJ_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+NDVI_ADJ_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+NightLights_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+NightLights_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+NightLights_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+NightLights_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+NightLights_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+NightLights_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.
+green_mask_lag1,2194,9.090909090909092,Expected for first year of each grid because no previous-year predictor exists.
+green_mask_lag2,4388,18.181818181818183,Expected for first two years of each grid.
+green_mask_hist3_mean,2194,9.090909090909092,Expected for first year; later rows use only available prior predictor history.
+green_mask_hist3_std,4388,18.181818181818183,Expected until at least two prior predictor observations exist.
+green_mask_hist3_slope,6582,27.272727272727273,Expected until three prior predictor observations exist.
+green_mask_delta1,2194,9.090909090909092,Expected for first year because previous-year predictor is unavailable.

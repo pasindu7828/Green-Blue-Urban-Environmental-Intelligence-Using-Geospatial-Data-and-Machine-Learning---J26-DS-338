@@ -1,0 +1,23 @@
+{
+  "step": "29D-QA",
+  "purpose": "Grid-level historical-support audit for finalized Step-29D NDWI scenarios",
+  "scenario_outputs_modified": false,
+  "model_retraining": false,
+  "support_basis": {
+    "historical_period": "2015-2025",
+    "adjacent_annual_changes": "2016-2025",
+    "positive_changes_only": true,
+    "grid_level_checks": [
+      "scenario increment <= grid historical q90 positive annual change",
+      "scenario increment <= grid historical max positive annual change",
+      "scenario NDWI within grid historical NDWI range",
+      "scenario newly exits grid historical range"
+    ]
+  },
+  "support_classes": {
+    "strong_within_grid_support": "increment within grid q90 positive-change support AND scenario NDWI within grid historical range",
+    "within_grid_max_support": "increment exceeds grid q90 but remains within grid max positive-change support AND scenario NDWI within historical range",
+    "extrapolative_for_selected_grid": "increment exceeds grid max positive annual change, grid has no positive historical change, or scenario NDWI lies outside that grid's historical NDWI range"
+  },
+  "interpretation": "Extrapolative scenarios are not deleted. They should be shown with lower-confidence / extrapolation wording for that selected grid."
+}

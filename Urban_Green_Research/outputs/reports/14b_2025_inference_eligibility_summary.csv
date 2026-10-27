@@ -1,0 +1,2 @@
+all_grid_cells,kmc_overlap_eligible_cells,past_lulc_coverage_eligible_cells,current_nonbuilt_eligible_cells,past_stability_eligible_cells,initial_inference_eligible_cells,excluded_due_incomplete_predictors,final_inference_ready_cells
+9240,8880,8975,5195,4876,4620,0,4620

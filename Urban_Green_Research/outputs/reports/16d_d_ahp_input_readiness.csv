@@ -1,0 +1,3 @@
+scenario,criteria,total_pairs,fully_answered_pairs,partially_answered_pairs,all_pairs_answered,eligible_for_calculation
+BASE_3_CRITERIA,"C1,C2,C4",3,0,0,False,False
+CONDITIONAL_4_WITH_C3,"C1,C2,C3,C4",6,0,0,False,False

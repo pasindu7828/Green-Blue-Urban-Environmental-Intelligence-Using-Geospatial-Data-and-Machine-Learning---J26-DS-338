@@ -1,0 +1,28 @@
+STEP 01 - PREPARE ADDITIONAL-MODEL EXPERIMENT DATA
+
+Project root: E:\Git Research\J26-DS-338\Urban_Heat_Research
+Experiment root: E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\additional_models
+Input: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\model_ready\tree\tree_train_2018_2023_ready.csv
+Experiment snapshot: E:\Git Research\J26-DS-338\Urban_Heat_Research\experiments\additional_models\data\01_experiment_dev_2018_2023.csv
+
+Rows: 13,164
+Unique grids: 2,194
+Years: [2018, 2019, 2020, 2021, 2022, 2023]
+Predictors: 93
+Missing predictor cells: 0
+Finite predictors: True
+
+Strict rolling-origin validation years: [2019, 2020, 2021, 2022, 2023]
+2024 reserved validation: NOT LOADED
+2025 final lockbox: NOT LOADED
+Production pipeline: UNTOUCHED
+
+Planned additional models:
+- CatBoostRegressor
+- ExtraTreesRegressor
+- HistGradientBoostingRegressor
+
+Primary development comparison metric: mean rolling-origin MAE
+Production reference: LightGBM anomaly + prior-mean annual level
+
+STEP 01 STATUS: PASS

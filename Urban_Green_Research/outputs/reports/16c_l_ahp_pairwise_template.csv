@@ -1,0 +1,10 @@
+﻿scenario,criterion_a,criterion_b,question,higher_importance,importance_strength_1_to_9,justification,reviewer_name,reviewer_role,review_date
+BASE_3_CRITERIA,C1,C2,"For general urban development suitability, which is more important: C1 or C2, and by how much?",,,,,,
+BASE_3_CRITERIA,C1,C4,"For general urban development suitability, which is more important: C1 or C4, and by how much?",,,,,,
+BASE_3_CRITERIA,C2,C4,"For general urban development suitability, which is more important: C2 or C4, and by how much?",,,,,,
+CONDITIONAL_4_WITH_C3,C1,C2,"For general urban development suitability, which is more important: C1 or C2, and by how much?",,,,,,
+CONDITIONAL_4_WITH_C3,C1,C3,"For general urban development suitability, which is more important: C1 or C3, and by how much?",,,,,,
+CONDITIONAL_4_WITH_C3,C1,C4,"For general urban development suitability, which is more important: C1 or C4, and by how much?",,,,,,
+CONDITIONAL_4_WITH_C3,C2,C3,"For general urban development suitability, which is more important: C2 or C3, and by how much?",,,,,,
+CONDITIONAL_4_WITH_C3,C2,C4,"For general urban development suitability, which is more important: C2 or C4, and by how much?",,,,,,
+CONDITIONAL_4_WITH_C3,C3,C4,"For general urban development suitability, which is more important: C3 or C4, and by how much?",,,,,,

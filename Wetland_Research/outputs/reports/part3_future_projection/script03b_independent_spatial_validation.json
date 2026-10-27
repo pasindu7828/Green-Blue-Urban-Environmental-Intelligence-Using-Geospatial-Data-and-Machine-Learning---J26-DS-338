@@ -1,0 +1,248 @@
+{
+  "component": "Part 3",
+  "validation": "Independent spatial split validation",
+  "validation_timestamp_utc": "2026-10-14T09:27:01.656089+00:00",
+  "status": "PASS",
+  "buffer_distance_m": 150.0,
+  "spatial_block_size_m": 1000,
+  "records_checked": 1118,
+  "retained_records": 1066,
+  "passed_checks": 44,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "name": "Source record count",
+      "passed": true,
+      "detail": "Found: 1118"
+    },
+    {
+      "name": "Audit record count",
+      "passed": true,
+      "detail": "Found: 1118"
+    },
+    {
+      "name": "Retained split count",
+      "passed": true,
+      "detail": "Found: 1066"
+    },
+    {
+      "name": "Duplicate exclusion count",
+      "passed": true,
+      "detail": "Found: 1"
+    },
+    {
+      "name": "train record count",
+      "passed": true,
+      "detail": "Expected 485, found 485"
+    },
+    {
+      "name": "validation record count",
+      "passed": true,
+      "detail": "Expected 347, found 347"
+    },
+    {
+      "name": "test record count",
+      "passed": true,
+      "detail": "Expected 234, found 234"
+    },
+    {
+      "name": "EXCLUDED record count",
+      "passed": true,
+      "detail": "Expected 52, found 52"
+    },
+    {
+      "name": "No unexpected audit split categories",
+      "passed": true,
+      "detail": "['EXCLUDED', 'test', 'train', 'validation']"
+    },
+    {
+      "name": "Unique audit row identifiers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Saved split matches retained audit records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Retained partition assignments agree",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No conflicting labels within pixel-year",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Unique pixel-year record accounting",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Duplicate exclusion audit is consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Year-prefix discrepancies documented",
+      "passed": true,
+      "detail": "['2015_BUI_026', '2015_WAT_041', '2015_WET_047', '2025_WET_010']"
+    },
+    {
+      "name": "Raster CRS",
+      "passed": true,
+      "detail": "EPSG:32644"
+    },
+    {
+      "name": "Raster resolution",
+      "passed": true,
+      "detail": "(30.0, 30.0)"
+    },
+    {
+      "name": "Raster grid dimensions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "split pixel indices inside raster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "audit pixel indices inside raster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Saved pixel centres match raster geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Retained pixel-year records are unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Recorded spatial groups are correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No shared spatial blocks: train/validation",
+      "passed": true,
+      "detail": "Overlapping blocks: 0"
+    },
+    {
+      "name": "No shared spatial blocks: train/test",
+      "passed": true,
+      "detail": "Overlapping blocks: 0"
+    },
+    {
+      "name": "No shared spatial blocks: validation/test",
+      "passed": true,
+      "detail": "Overlapping blocks: 0"
+    },
+    {
+      "name": "150 m pixel-centre separation: train/validation",
+      "passed": true,
+      "detail": "Minimum distance: 150.00 m"
+    },
+    {
+      "name": "150 m pixel-centre separation: train/test",
+      "passed": true,
+      "detail": "Minimum distance: 150.00 m"
+    },
+    {
+      "name": "150 m pixel-centre separation: validation/test",
+      "passed": true,
+      "detail": "Minimum distance: 150.00 m"
+    },
+    {
+      "name": "train: minimum class/year coverage",
+      "passed": true,
+      "detail": "Minimum: 12"
+    },
+    {
+      "name": "train: all historical years represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "train: all six classes represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "validation: minimum class/year coverage",
+      "passed": true,
+      "detail": "Minimum: 14"
+    },
+    {
+      "name": "validation: all historical years represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "validation: all six classes represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "test: minimum class/year coverage",
+      "passed": true,
+      "detail": "Minimum: 7"
+    },
+    {
+      "name": "test: all historical years represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "test: all six classes represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Validation buffer exclusion count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Training buffer exclusion count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Validation exclusions fall inside test buffer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Training exclusions fall inside evaluation buffer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All 52 exclusions have documented reasons",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "details": {
+    "train_vs_validation_distance_m": 150.0,
+    "train_vs_test_distance_m": 150.0,
+    "validation_vs_test_distance_m": 150.0,
+    "train_minimum_class_year": 12,
+    "validation_minimum_class_year": 14,
+    "test_minimum_class_year": 7
+  },
+  "limitations": [
+    "Spatial buffering reduces geographical proximity but does not prove statistical independence.",
+    "Four source-name/year mismatches require historical temporal-label review.",
+    "A class-year may contain relatively few held-out observations.",
+    "The final test partition must not be used for classifier tuning or split reselection."
+  ]
+}

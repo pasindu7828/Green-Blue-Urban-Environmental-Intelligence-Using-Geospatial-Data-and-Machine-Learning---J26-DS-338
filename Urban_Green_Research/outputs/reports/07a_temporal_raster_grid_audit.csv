@@ -1,0 +1,18 @@
+year,sensor_era,raster,crs,width,height,band_count,valid_pixels,valid_pixel_difference_vs_2021,band_mapping_method,grid_match_2021,band_descriptions_match_2021
+2010,Landsat 5 TM,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2010.tif,EPSG:32644,530,329,6,98399,-297,Raster band descriptions,True,True
+2011,Landsat 5 TM,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2011.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2012,Landsat 5 TM + Landsat 7 ETM+,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2012.tif,EPSG:32644,530,329,6,98547,-149,Raster band descriptions,True,True
+2013,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2013.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2014,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2014.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2015,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2015.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2016,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2016.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2017,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2017.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2018,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2018.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2019,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2019.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2020,Landsat 8 OLI,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2020.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2021,Landsat 8 OLI + Landsat 9 OLI-2,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2021.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2022,Landsat 8 OLI + Landsat 9 OLI-2,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2022.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2023,Landsat 8 OLI + Landsat 9 OLI-2,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2023.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2024,Landsat 8 OLI + Landsat 9 OLI-2,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2024.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2025,Landsat 8 OLI + Landsat 9 OLI-2,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2025.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True
+2026,Landsat 8 OLI + Landsat 9 OLI-2,data/processed/landsat/annual_composites_kmc/Kaduwela_Landsat_2026.tif,EPSG:32644,530,329,6,98696,0,Raster band descriptions,True,True

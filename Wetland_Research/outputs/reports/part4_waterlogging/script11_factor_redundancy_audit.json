@@ -1,0 +1,41 @@
+{
+  "component": "Part 4 - Seasonal Waterlogging",
+  "stage": "Cross-factor redundancy assessment",
+  "generated_utc": "2026-10-15T10:04:46.400250+00:00",
+  "study_cells": 94431,
+  "factors_checked": [
+    "Elevation",
+    "Slope",
+    "TPI_300m",
+    "All_Waterways_Distance",
+    "River_Stream_Canal_Distance",
+    "Ditch_Drain_Distance",
+    "Building_Density_300m",
+    "Building_Footprint"
+  ],
+  "method": "Pearson correlation",
+  "screening_threshold_absolute_r": 0.7,
+  "flagged_factor_pairs": [
+    {
+      "factor_1": "Elevation",
+      "factor_2": "TPI_300m",
+      "pearson_r": 0.72167
+    },
+    {
+      "factor_1": "All_Waterways_Distance",
+      "factor_2": "River_Stream_Canal_Distance",
+      "pearson_r": 0.819487
+    }
+  ],
+  "all_waterways_subgroup_identity_max_error_m": 0.0,
+  "interpretation": [
+    "This is a screening threshold, not a statistical significance decision.",
+    "Strong factor associations can cause double-counting in weighted models.",
+    "Low correlation does not prove independence.",
+    "Raster cells have spatial autocorrelation.",
+    "Alternative NASADEM terrain factors are reserved for sensitivity analysis.",
+    "No susceptibility weights are assigned."
+  ],
+  "status": "FACTOR_REDUNDANCY_AUDIT_COMPLETE",
+  "raw_data_modified": false
+}

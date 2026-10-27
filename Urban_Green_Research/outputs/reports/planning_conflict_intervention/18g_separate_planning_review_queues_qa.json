@@ -1,0 +1,52 @@
+{
+  "section": "05_planning_conflict_intervention",
+  "stage": "18g_separate_planning_review_queues",
+  "status": "PASS_SEPARATE_REVIEW_QUEUE_RANKINGS_SENSITIVITY_PENDING",
+  "total_grid_cells": 9240,
+  "pressure_domain_cells": 4620,
+  "conservation_score_cells": 4609,
+  "pressure_flagged_review_queue": 255,
+  "upper_cp_conservation_review_queue": 1153,
+  "joint_concern_review_queue": 7,
+  "evidence_gap_cells": 11,
+  "managed_growth_feasibility_screen_cells": 1,
+  "ranked_domains": {
+    "dci_rank_in_pressure_domain": 4620,
+    "cp_rank_in_conservation_domain": 4609,
+    "flagged_development_review_rank_by_dci": 255,
+    "upper_cp_conservation_review_rank_by_cp": 1153,
+    "joint_review_rank_by_dci": 7,
+    "joint_review_rank_by_cp": 7,
+    "missing_conservation_evidence_rank_by_dci": 11,
+    "managed_growth_screen_rank_by_suitability": 1
+  },
+  "tie_break": "Descending score then ascending grid_id",
+  "weighting_or_aggregation": "NO_COMPOSITE_INDEX_OR_NEW_WEIGHTS",
+  "frozen_cp_already_contains_pressure": true,
+  "historical_context_used_for_ranking": false,
+  "expert_ahp_weights_modified": false,
+  "source_outputs_modified": false,
+  "official_priorities_issued": false,
+  "limitations": [
+    "Separate queues are exploratory review orderings, not official priority tiers.",
+    "CP already includes pressure; DCI and CP must not be summed or multiplied.",
+    "Ranks from different queues are not directly comparable.",
+    "Pressure is a relative model-derived score, not a calibrated probability.",
+    "Out-of-domain and missing conservation scores are never imputed.",
+    "Historical conversion is supporting context and does not affect ranking.",
+    "The single managed-growth screening grid still requires official feasibility checks.",
+    "Review-queue sensitivity and final GIS packaging remain pending."
+  ],
+  "input_sha256": {
+    "data/processed/planning_conflict_intervention/development_conflict/18c_development_conflict_index_100m.csv": "06ba136b7aac992d8f9141861753c2c65ff3e99def8c85fdb5777f34bb6b07b6",
+    "data/processed/planning_conflict_intervention/conflict_typology/18d_planning_conflict_typology_100m.csv": "3c629152622cd0b1be94eff06b42104e3bb05ab920513437c458122cf6596b33",
+    "data/processed/planning_conflict_intervention/planning_intervention_rules/18f_explainable_planning_interventions_100m.csv": "cad9ab9885b50ddc5d576dad8b9ed5c0047d153c0463917118abd3c5b6b1dada",
+    "outputs/reports/planning_conflict_intervention/18c_development_conflict_index_qa.json": "87d610ce99471dd5ad6ba5b0b21b128182c2e8fe7fdf31f4a25965f74296012f",
+    "outputs/reports/planning_conflict_intervention/18d_planning_conflict_typology_qa.json": "0fda272d89f16375a5149f679083a7a60c5733300d2ec78030ed56d762cf890e",
+    "outputs/reports/planning_conflict_intervention/18f_explainable_planning_interventions_qa.json": "a28683223c3186faf391c85d7b68a03daf1fdf36bc776bd96112a3f2b96205d6"
+  },
+  "output": {
+    "csv": "data/processed/planning_conflict_intervention/intervention_prioritization/18g_separate_planning_review_queues_100m.csv",
+    "sha256": "dcae15ac05cbb052d0ca64beaccd3136de33160c2c25ba2553d67cce3bcc6310"
+  }
+}

@@ -1,0 +1,2 @@
+selected_model,selected_candidate,development_selection_score,operating_threshold,threshold_selected_using,temporal_threshold_years,spatial_oof_used_for_threshold_selection,spatial_oof_used_as_robustness_check,final_2022_test_used,raw_model_score_calibrated,overall_step13d_status
+XGBoost,XGB05_DEPTH3_STRONG_REG,0.12640401342716065,0.715,Temporal development OOF only,"2017,2019,2021",False,True,False,False,PASS

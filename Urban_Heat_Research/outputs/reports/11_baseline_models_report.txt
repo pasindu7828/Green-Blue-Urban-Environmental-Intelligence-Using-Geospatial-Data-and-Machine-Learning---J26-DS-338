@@ -1,0 +1,40 @@
+STEP 11 - BASELINE MODELS REPORT
+====================================================================================================
+
+DATA PROTECTION
+2018-2023 development data only.
+2024 not loaded.
+2025 not loaded.
+
+BASELINES
+1. Global Historical Mean
+2. Grid Historical Mean
+3. Last-Year Persistence
+4. 3-Year Grid Moving Average
+5. Linear Regression
+
+ROLLING-ORIGIN FOLDS
+2018 -> 2019
+2018-2019 -> 2020
+2018-2020 -> 2021
+2018-2021 -> 2022
+2018-2022 -> 2023
+
+LINEAR PREPROCESSING
+Total predictors: 23
+Scaled per fold: 22
+Preserved unscaled: ['year']
+
+BEST DEVELOPMENT BASELINE BY MEAN MAE
+Model: Grid Historical Mean
+Mean MAE: 3.040343
+Mean RMSE: 3.686032
+Mean R2: -0.573175
+
+IMPORTANT
+This is not final model selection.
+2024 remains reserved.
+2025 remains the final lockbox.
+
+NEXT
+Step 12 - Random Forest candidate model analysis.

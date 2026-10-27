@@ -1,0 +1,81 @@
+STEP 26B - DYNAMIC PREDICTOR FORECAST MODEL DEVELOPMENT
+====================================================================================================================
+
+DYNAMIC PREDICTOR AUDIT
+--------------------------------------------------------------------------------------------------------------------
+    predictor  development_min  development_max  development_mean  development_sd  binary_like  changed_transition_fraction  changed_transition_pct  mean_absolute_year_to_year_change        forecast_policy  referenced_by_frozen_feature_names
+         NDVI        -0.692460         0.870629          0.582263        0.147778        False                     1.000000              100.000000                           0.087790       dynamic_forecast                                True
+         NDBI        -0.705229         0.162819         -0.183616        0.078536        False                     1.000000              100.000000                           0.031526       dynamic_forecast                                True
+         NDWI        -0.765913         0.687110         -0.537217        0.136566        False                     1.000000              100.000000                           0.076580       dynamic_forecast                                True
+          EVI        -0.129792         0.740738          0.366289        0.097320        False                     1.000000              100.000000                           0.056414       dynamic_forecast                                True
+       Albedo         0.003213         0.845531          0.164631        0.062920        False                     1.000000              100.000000                           0.041145       dynamic_forecast                                True
+     NDBI_ADJ        -0.385324         0.011095         -0.181908        0.059462        False                     1.000000              100.000000                           0.023515       dynamic_forecast                                True
+     NDVI_ADJ         0.036778         0.839839          0.587123        0.114466        False                     1.000000              100.000000                           0.078181       dynamic_forecast                                True
+  NightLights         1.292045        19.498123          5.464945        2.559373        False                     0.999772               99.977211                           0.594105       dynamic_forecast                                True
+   green_mask         0.000000         1.000000          0.629522        0.299891        False                     0.936304               93.630356                           0.187600       dynamic_forecast                                True
+building_mask         0.000000         1.000000          0.515497        0.499760         True                     0.000000                0.000000                           0.000000 freeze_latest_observed                                True
+    road_mask         0.000000         1.000000          0.820419        0.383838         True                     0.000000                0.000000                           0.000000 freeze_latest_observed                                True
+
+DEVELOPMENT LEADERS BY PREDICTOR / HORIZON - REFERENCE ONLY
+--------------------------------------------------------------------------------------------------------------------
+  predictor  horizon_years                  method  mean_fold_MAE  mean_fold_RMSE  mean_fold_R2  mean_fold_NMAE_SD
+       NDVI              1          Rolling-3 Mean       0.073452        0.107329      0.345386           0.553879
+       NDVI              2             Persistence       0.078766        0.126284      0.012468           0.578885
+       NDVI              3          Rolling-3 Mean       0.069692        0.096461      0.303047           0.602330
+       NDVI              4             Persistence       0.060678        0.097188      0.318629           0.515405
+       NDVI              5             Persistence       0.061914        0.099699      0.186398           0.560153
+       NDBI              1          Rolling-3 Mean       0.025600        0.035460      0.782247           0.332855
+       NDBI              2          Rolling-3 Mean       0.026834        0.037041      0.764619           0.346466
+       NDBI              3          Rolling-3 Mean       0.025175        0.034119      0.802572           0.326442
+       NDBI              4             Persistence       0.027895        0.038846      0.737089           0.368294
+       NDBI              5          Rolling-3 Mean       0.028644        0.038849      0.758956           0.361996
+       NDWI              1 Bounded Theil-Sen Trend       0.061278        0.092696      0.448650           0.490395
+       NDWI              2             Persistence       0.065081        0.109632      0.141031           0.511046
+       NDWI              3          Rolling-3 Mean       0.057412        0.081006      0.445810           0.526020
+       NDWI              4             Persistence       0.049212        0.083173      0.414921           0.452309
+       NDWI              5             Persistence       0.047075        0.082898      0.338291           0.461931
+        EVI              1          Rolling-3 Mean       0.048015        0.062981      0.551164           0.506761
+        EVI              2          Rolling-3 Mean       0.050840        0.066633      0.504154           0.534418
+        EVI              3          Rolling-3 Mean       0.046087        0.059007      0.553236           0.521182
+        EVI              4             Persistence       0.046824        0.062870      0.491317           0.530605
+        EVI              5          Rolling-3 Mean       0.050303        0.063867      0.485301           0.565058
+     Albedo              1 Bounded Theil-Sen Trend       0.029015        0.052357     -0.267548           0.655517
+     Albedo              2 Bounded Theil-Sen Trend       0.035025        0.058800     -0.385730           0.735144
+     Albedo              3          Rolling-3 Mean       0.030043        0.050527     -1.663427           0.953080
+     Albedo              4             Persistence       0.024568        0.046090     -0.559373           0.663108
+     Albedo              5             Persistence       0.022237        0.043416     -0.948259           0.714895
+   NDBI_ADJ              1          Rolling-3 Mean       0.018087        0.023680      0.825492           0.313667
+   NDBI_ADJ              2          Rolling-3 Mean       0.018201        0.024116      0.822236           0.313168
+   NDBI_ADJ              3          Rolling-3 Mean       0.016986        0.022433      0.846540           0.294103
+   NDBI_ADJ              4             Persistence       0.018871        0.024907      0.807875           0.331956
+   NDBI_ADJ              5          Rolling-3 Mean       0.019488        0.024869      0.826726           0.326193
+   NDVI_ADJ              1          Rolling-3 Mean       0.063708        0.089593      0.128607           0.666696
+   NDVI_ADJ              2             Persistence       0.066520        0.103672     -0.271318           0.666658
+   NDVI_ADJ              3          Rolling-3 Mean       0.060810        0.080644     -0.017671           0.759264
+   NDVI_ADJ              4             Persistence       0.047505        0.073862      0.217030           0.568702
+   NDVI_ADJ              5             Persistence       0.050354        0.075022      0.066604           0.648449
+NightLights              1             Persistence       0.590081        0.797990      0.872625           0.249032
+NightLights              2             Persistence       0.705503        1.026103      0.790923           0.303015
+NightLights              3             Persistence       0.809703        1.129514      0.746143           0.354957
+NightLights              4             Persistence       0.740633        1.078826      0.724768           0.358976
+NightLights              5             Persistence       0.855941        1.121592      0.712810           0.408972
+ green_mask              1          Rolling-3 Mean       0.149719        0.208957      0.494578           0.500952
+ green_mask              2          Rolling-3 Mean       0.155041        0.214455      0.467122           0.518186
+ green_mask              3          Rolling-3 Mean       0.138352        0.187758      0.562612           0.485251
+ green_mask              4             Persistence       0.139814        0.213365      0.444721           0.487733
+ green_mask              5             Persistence       0.138727        0.204399      0.490144           0.484624
+
+OVERALL NORMALIZED CANDIDATE SUMMARY - DESCRIPTIVE ONLY
+--------------------------------------------------------------------------------------------------------------------
+                 method  predictor_count  mean_predictor_NMAE_SD  mean_predictor_NRMSE_SD  mean_predictor_R2
+         Rolling-3 Mean                9                0.544929                 0.771286           0.292007
+            Persistence                9                0.544943                 0.853093          -0.010211
+Bounded Theil-Sen Trend                9                0.910407                 1.243128          -0.843432
+      Bounded OLS Trend                9                1.128038                 1.559050          -2.308973
+
+IMPORTANT
+--------------------------------------------------------------------------------------------------------------------
+No final predictor forecasting method is selected here. All candidate definitions proceed unchanged to Step 27.
+2024 and 2025 remain reserved validation targets.
+Future engineered model features are reconstructed later from the forecast base-predictor sequence; they are not forecast independently.
+No 2026-2030 predictor maps or future LST maps are created in Step 26B.

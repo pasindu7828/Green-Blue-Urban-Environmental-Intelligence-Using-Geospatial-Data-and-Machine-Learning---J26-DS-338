@@ -1,0 +1,23 @@
+check,status,details
+step28_audit,PASS,Verified fully PASS.
+final_29a_v2_audit,PASS,Verified fully PASS.
+final_29b_audit,PASS,Verified fully PASS.
+baseline_raw_prediction_reproduction,PASS,max_error_c=8.881784197001e-16
+green_levels,PASS,"[5, 10, 20]"
+built_levels,PASS,"['HIGH', 'LOW', 'MODERATE']"
+shared_feature_semantics,PASS,shared=ndbi_x_vegetation_deficit; shared features are recomputed jointly
+combined_row_count,PASS,"actual=98730, expected=98730"
+nine_scenarios_per_grid_year,PASS,expected=9
+combined_outputs_finite,PASS,rows=98730
+only_intended_features_changed,PASS,Combined changes are contained in union of finalized 29A + 29B changes.
+joint_interaction_formula,PASS,ndbi_x_vegetation_deficit = scenario NDBI * (1 - scenario green_mask)
+cooling_identity,PASS,max_error_c=0.000000000000e+00
+non_additivity_identity,PASS,max_error_c=0.000000000000e+00
+combined_prediction_not_additive_sum,PASS,True joint feature vector is passed through frozen LightGBM; individual-sum is diagnostic only.
+scenario_recentering,PASS,Not applied. Local same-grid raw anomaly delta used.
+model_retraining,PASS,None. Frozen Step-22B LightGBM used.
+step28_baseline_modified,PASS,No. All 29C outputs saved separately.
+causal_synergy_claim,PASS,No. Difference from additive reference is model non-additivity only.
+uncertainty_added_here,PASS,No. Uncertainty remains Step 30.
+yearly_geojson_count,PASS,"saved=5, expected=5"
+representative_map_count,PASS,"saved=15, expected=15"

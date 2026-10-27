@@ -1,0 +1,111 @@
+{
+  "stage": "3.5",
+  "qa_status": "PASS",
+  "methodology_status": "EMPIRICAL_RELATIVE_STANDARDIZATION",
+  "study_area": "Kaduwela Municipal Council",
+  "total_cells": 9240,
+  "standardization": "P05-P95 clipped linear",
+  "weighted_candidate_criteria": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "parameters": {
+    "C1": {
+      "raw_measurement": "c1_major_road_distance_m",
+      "standardized_column": "c1_road_access_score",
+      "direction": "COST",
+      "lower_p05": 0.0,
+      "upper_p95": 607.5486649908541,
+      "method": "clipped_linear_p05_p95",
+      "meaning": "Higher score means closer to major roads",
+      "score_min": 0.0,
+      "score_median": 0.7840342120078478,
+      "score_max": 1.0,
+      "score_zero_pct": 5.0,
+      "score_one_pct": 18.841991341991342
+    },
+    "C2": {
+      "raw_measurement": "c2_road_density_500m_km_per_km2",
+      "standardized_column": "c2_road_context_score",
+      "direction": "BENEFIT",
+      "lower_p05": 3.9166697923490315,
+      "upper_p95": 17.53174928391144,
+      "method": "clipped_linear_p05_p95",
+      "meaning": "Higher score means denser local road network",
+      "score_min": 0.0,
+      "score_median": 0.4589971202632047,
+      "score_max": 1.0,
+      "score_zero_pct": 5.0,
+      "score_one_pct": 5.0
+    },
+    "C3": {
+      "raw_measurement": "c3_context_building_pct_500m",
+      "standardized_column": "c3_development_context_score",
+      "direction": "BENEFIT",
+      "lower_p05": 0.0,
+      "upper_p95": 15.228202325128636,
+      "method": "clipped_linear_p05_p95",
+      "meaning": "Higher score means more established building context",
+      "score_min": 0.0,
+      "score_median": 0.2972319220915909,
+      "score_max": 1.0,
+      "score_zero_pct": 6.893939393939394,
+      "score_one_pct": 5.0
+    },
+    "C4": {
+      "raw_measurement": "c4_slope_mean_deg",
+      "standardized_column": "c4_slope_score",
+      "direction": "COST",
+      "lower_p05": 0.8760415321209741,
+      "upper_p95": 7.091970885569082,
+      "method": "clipped_linear_p05_p95",
+      "meaning": "Higher score means gentler terrain",
+      "score_min": 0.0,
+      "score_median": 0.5876540403651924,
+      "score_max": 1.0,
+      "score_zero_pct": 5.0,
+      "score_one_pct": 5.0
+    }
+  },
+  "max_geometry_area_error_m2": 1.8189894035458565e-12,
+  "checks": {
+    "C1_direction_correct": true,
+    "C1_finite": true,
+    "C1_range_0_1": true,
+    "C2_direction_correct": true,
+    "C2_finite": true,
+    "C2_range_0_1": true,
+    "C3_direction_correct": true,
+    "C3_finite": true,
+    "C3_range_0_1": true,
+    "C4_direction_correct": true,
+    "C4_finite": true,
+    "C4_range_0_1": true,
+    "all_9240_cells_preserved": true,
+    "unique_output_ids": true,
+    "grid_id_sets_equal": true,
+    "geometry_area_reconciliation": true,
+    "correct_gis_crs": true,
+    "csv_export_count": true,
+    "gpkg_export_count": true
+  },
+  "methodology_controls": {
+    "no_pressure_inputs": true,
+    "no_shap_inputs": true,
+    "no_conservation_inputs": true,
+    "no_provisional_zoning_inputs": true,
+    "ahp_weights_assigned": false,
+    "suitability_score_calculated": false
+  },
+  "limitations": [
+    "Percentile anchors are empirical and area-specific.",
+    "Scores do not establish legal developability.",
+    "C2 and C3 positive directions are modelling assumptions.",
+    "Current-cell building occupation is not weighted.",
+    "Alternative radii remain for sensitivity analysis.",
+    "Alternative percentile anchors must be tested in Stage 3.10.",
+    "AHP judgments and final suitability remain pending."
+  ]
+}

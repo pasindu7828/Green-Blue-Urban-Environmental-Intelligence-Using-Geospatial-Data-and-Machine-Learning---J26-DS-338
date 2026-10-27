@@ -1,0 +1,14 @@
+check,status,details
+step17_and_step19_audits,PASS,Step 17 and Steps 19A-19B5 were verified fully PASS.
+comparison_window,PASS,Cross-family summary uses common 2019-2023 development rolling-origin years.
+2024_loaded_or_used,PASS,No. Step 19C reads development outputs only.
+2025_loaded_or_used,PASS,No. Step 19C reads development outputs only.
+model_training_performed,PASS,No model fitting occurs in Step 19C.
+hyperparameter_tuning_performed,PASS,No hyperparameter tuning occurs in Step 19C.
+oracle_in_shortlist,PASS,Oracle/target-leaking 19B5 diagnostics are excluded.
+raw_rf_anchor_present_once,PASS,Exactly one raw tuned RF reference anchor is retained.
+improvement_candidate_cap,PASS,"additional_candidates=2, max=2"
+all_improvement_candidates_pass_gate,PASS,Every additional candidate strictly satisfies the predeclared multi-metric gate versus raw RF.
+shortlist_fold_years_complete,PASS,Every shortlisted candidate has 2019-2023 fold metrics.
+shortlist_metrics_finite,PASS,True
+final_model_selected,PASS,No final model selected; shortlist is for first reserved 2024 comparison only.

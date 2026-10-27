@@ -1,0 +1,10 @@
+source_feature,neighbor_mean_missing,neighbor_contrast_missing,max_contrast_reconstruction_error,uses_target
+NDVI,0,0,0.0,False
+NDBI,0,0,0.0,False
+NDWI,0,0,0.0,False
+EVI,0,0,0.0,False
+Albedo,0,0,0.0,False
+NDBI_ADJ,0,0,0.0,False
+NDVI_ADJ,0,0,0.0,False
+NightLights,0,0,0.0,False
+green_mask,0,0,0.0,False

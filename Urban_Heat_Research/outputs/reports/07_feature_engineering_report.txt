@@ -1,0 +1,61 @@
+STEP 07 - FEATURE ENGINEERING REPORT
+===============================================================================================
+
+Input dataset: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_preprocessed_base.csv
+Output dataset: E:\Git Research\J26-DS-338\Urban_Heat_Research\data\processed\kaduwela_engineered_features.csv
+
+DATASET SIZE
+-----------------------------------------------------------------------------------------------
+Rows before: 24,134
+Rows after: 24,134
+Columns before: 19
+Columns after: 101
+New engineered features: 82
+
+FEATURE GROUPS
+-----------------------------------------------------------------------------------------------
+Deterministic derived features: 10
+Temporal history/change features: 54
+Spatial non-target context features: 18
+
+TEMPORAL FEATURES
+-----------------------------------------------------------------------------------------------
+Temporal source predictors:
+NDVI, NDBI, NDWI, EVI, Albedo, NDBI_ADJ, NDVI_ADJ, NightLights, green_mask
+
+For each source predictor, Step 07 created:
+- lag 1 year
+- lag 2 years
+- historical 3-year mean using t-1,t-2,t-3
+- historical 3-year standard deviation
+- historical 3-year slope
+- current-vs-previous-year predictor change
+
+SPATIAL FEATURES
+-----------------------------------------------------------------------------------------------
+Queen-contiguity row-standardized neighbor means were created for:
+NDVI, NDBI, NDWI, EVI, Albedo, NDBI_ADJ, NDVI_ADJ, NightLights, green_mask
+A local contrast = current predictor - neighbor predictor mean was also created.
+No LST_C spatial lag or neighbor-LST feature was created.
+
+STRUCTURAL MISSINGNESS
+-----------------------------------------------------------------------------------------------
+Columns with structural missingness: 54
+Lag/history missingness is expected in early years and was preserved.
+No imputation was performed.
+
+LOCKBOX / LEAKAGE
+-----------------------------------------------------------------------------------------------
+Development period: 2015-2024
+Final lockbox year: 2025
+No current/future target information was used to create predictors.
+No scaler, imputer, PCA, feature selector, or model was fitted.
+2025 target was not used for feature engineering decisions.
+
+IMPORTANT FOR LATER MODELING
+-----------------------------------------------------------------------------------------------
+grid_id must remain an identifier, not a numeric predictor.
+area_name should remain a reporting/grouping field unless a later justified spatial encoding is designed.
+Same-year spatial predictor context is built only from non-target covariates.
+Any imputation/scaling must be fitted on training data only.
+Feature selection belongs in Step 08.

@@ -1,0 +1,36 @@
+{
+  "stage": "Development Suitability Criteria and Data Readiness Audit",
+  "analysis_grid": {
+    "cells": 9240,
+    "crs": "EPSG:32644",
+    "epsg": 32644
+  },
+  "primary_core_candidate_sources": [
+    "OSM roads 2026",
+    "OSM buildings 2026",
+    "GEDTM30 terrain"
+  ],
+  "sensitivity_reference_sources": [
+    "NASADEM"
+  ],
+  "reference_context_sources": [
+    "ESA WorldCover 2021"
+  ],
+  "planning_context_only_sources": [
+    "UDA approximate high-land conservation zones",
+    "UDA provisional conservation review",
+    "UDA 2024 audited provisional GIS",
+    "UDA portable review package",
+    "UDA QGIS review project",
+    "UDA visual-only georeferenced screenshot"
+  ],
+  "explicitly_excluded_from_core_suitability_score": [
+    "Urbanization Pressure outputs",
+    "SHAP/XAI outputs",
+    "Conservation Priority outputs",
+    "Provisional UDA zoning"
+  ],
+  "ahp_weights_assigned": false,
+  "suitability_score_calculated": false,
+  "overall_step16a_status": "PASS"
+}

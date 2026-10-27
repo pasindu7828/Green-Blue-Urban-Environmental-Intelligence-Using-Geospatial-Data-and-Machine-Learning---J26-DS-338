@@ -1,0 +1,87 @@
+STEP 29A-QA - GREEN-MASK COMPARABILITY & RESPONSE VALIDITY AUDIT
+======================================================================================================================
+
+OTSU PROVENANCE
+----------------------------------------------------------------------------------------------------------------------
+Local project evidence status: NOT_FOUND_IN_LOCAL_PROJECT_TEXT_FILES
+The aggregated historical CSV has no Otsu-threshold-by-year field, so fixed-vs-year-specific threshold generation cannot be proven from the modeling table alone.
+
+YEARLY GREEN_MASK / NDVI RELATIONSHIPS
+----------------------------------------------------------------------------------------------------------------------
+ year  mean_green_mask  mean_ndvi  mean_evi  pearson_green_ndvi  pearson_green_ndvi_p  spearman_green_ndvi  spearman_green_ndvi_p  pearson_green_evi  pearson_green_evi_p  pearson_green_lst  pearson_green_lst_p  pearson_ndvi_lst  pearson_ndvi_lst_p
+ 2015         0.697625   0.632286  0.405040            0.845272                   0.0             0.954721                    0.0           0.879223         0.000000e+00          -0.420537         9.351963e-95         -0.125170        4.034177e-09
+ 2016         0.639661   0.615472  0.379900            0.925695                   0.0             0.969153                    0.0           0.871316         0.000000e+00          -0.494780        7.728034e-136         -0.323631        1.142165e-54
+ 2017         0.656861   0.495245  0.324394            0.959231                   0.0             0.954638                    0.0           0.741048         0.000000e+00           0.648254        8.822010e-262          0.662921       7.576244e-278
+ 2018         0.631915   0.578119  0.352737            0.921049                   0.0             0.962171                    0.0           0.797231         0.000000e+00          -0.219107         2.945296e-25         -0.036383        8.842389e-02
+ 2019         0.593750   0.588296  0.370133            0.918937                   0.0             0.968564                    0.0           0.831990         0.000000e+00          -0.130066         9.666906e-10         -0.016843        4.303750e-01
+ 2020         0.627295   0.519583  0.342193            0.947403                   0.0             0.961886                    0.0           0.695262        1.036750e-316           0.518914        1.557512e-151          0.580764       4.364242e-198
+ 2021         0.601479   0.617408  0.381165            0.903478                   0.0             0.966096                    0.0           0.839608         0.000000e+00          -0.468479        4.147139e-120         -0.294930        2.780003e-45
+ 2022         0.617084   0.580997  0.353007            0.927801                   0.0             0.966649                    0.0           0.760878         0.000000e+00          -0.007683         7.190884e-01          0.119219        2.130893e-08
+ 2023         0.600026   0.612957  0.388033            0.918867                   0.0             0.966320                    0.0           0.832846         0.000000e+00          -0.310100         4.105310e-50         -0.136489        1.366273e-10
+ 2024         0.603535   0.612597  0.374878            0.919345                   0.0             0.966402                    0.0           0.864746         0.000000e+00          -0.558316        4.754278e-180         -0.395983        2.825803e-83
+ 2025         0.624016   0.591170  0.358894            0.931848                   0.0             0.967980                    0.0           0.753732         0.000000e+00          -0.081047         1.445089e-04          0.057106        7.461250e-03
+
+WITHIN-GRID DELTA RELATIONSHIPS
+----------------------------------------------------------------------------------------------------------------------
+                          variant  rows  pearson_dgreen_dndvi  pearson_dgreen_dndvi_p  spearman_dgreen_dndvi  spearman_dgreen_dndvi_p  pearson_dgreen_dlst  pearson_dgreen_dlst_p  pearson_dndvi_dlst  pearson_dndvi_dlst_p
+                  ALL_TRANSITIONS 21940              0.750674                     0.0               0.562900                      0.0             0.525693                    0.0            0.575720                   0.0
+EXCLUDE_TRANSITIONS_TOUCHING_2017 17552              0.754842                     0.0               0.600711                      0.0             0.560248                    0.0            0.397401                   0.0
+
+TWO-WAY-DEMEANED CORRELATIONS
+----------------------------------------------------------------------------------------------------------------------
+variable_a  variable_b  pearson_two_way_demeaned  pearson_p  spearman_two_way_demeaned  spearman_p
+green_mask        NDVI                  0.871292   0.000000                   0.851486     0.00000
+green_mask         EVI                  0.556523   0.000000                   0.539044     0.00000
+green_mask       LST_C                  0.615772   0.000000                   0.483082     0.00000
+      NDVI       LST_C                  0.698202   0.000000                   0.561606     0.00000
+       EVI       LST_C                  0.500133   0.000000                   0.491780     0.00000
+green_mask        NDBI                 -0.484504   0.000000                  -0.505622     0.00000
+green_mask        NDWI                 -0.829509   0.000000                  -0.788266     0.00000
+green_mask      Albedo                 -0.648239   0.000000                  -0.558027     0.00000
+green_mask NightLights                 -0.000975   0.879628                  -0.016417     0.01076
+
+NESTED GREEN_MASK TWFE
+----------------------------------------------------------------------------------------------------------------------
+                    model                     controls  green_beta_c_per_fraction  green_beta_c_per_10pp  clustered_se      p_value  ci95_lower_per_10pp  ci95_upper_per_10pp     sign       ci_position  within_r2
+            G0_GREEN_ONLY                         NONE                   8.791482               0.879148      0.148096 0.000000e+00             0.850122             0.908174 POSITIVE ENTIRELY_POSITIVE   0.379175
+            G1_GREEN_NDBI                         NDBI                  10.187380               1.018738      0.184566 0.000000e+00             0.982564             1.054912 POSITIVE ENTIRELY_POSITIVE   0.410337
+       G2_GREEN_NDBI_NDWI                    NDBI;NDWI                   2.005108               0.200511      0.294731 1.023363e-11             0.142745             0.258277 POSITIVE ENTIRELY_POSITIVE   0.544331
+     G3_GREEN_PLUS_ALBEDO             NDBI;NDWI;Albedo                   1.965982               0.196598      0.209714 6.943849e-21             0.155495             0.237701 POSITIVE ENTIRELY_POSITIVE   0.581171
+G4_GREEN_FULL_V3_CONTROLS NDBI;NDWI;Albedo;NightLights                   1.971988               0.197199      0.210968 8.987076e-21             0.155850             0.238548 POSITIVE ENTIRELY_POSITIVE   0.584870
+
+NESTED NDVI TWFE
+----------------------------------------------------------------------------------------------------------------------
+                model                     controls  ndvi_beta_c_per_1_0  ndvi_beta_c_per_0_10  clustered_se       p_value  ci95_lower_per_0_10  ci95_upper_per_0_10     sign       ci_position  within_r2
+         N0_NDVI_ONLY                         NONE            20.322562              2.032256      0.368149  0.000000e+00             1.960100             2.104412 POSITIVE ENTIRELY_POSITIVE   0.487486
+         N1_NDVI_NDBI                         NDBI            22.548403              2.254840      0.603106 6.329272e-306             2.136634             2.373047 POSITIVE ENTIRELY_POSITIVE   0.514707
+    N2_NDVI_NDBI_NDWI                    NDBI;NDWI             4.213140              0.421314      1.373763  2.163195e-03             0.152061             0.690567 POSITIVE ENTIRELY_POSITIVE   0.540337
+  N3_NDVI_PLUS_ALBEDO             NDBI;NDWI;Albedo            -0.218075             -0.021808      1.178415  8.531835e-01            -0.252773             0.209158 NEGATIVE     INCLUDES_ZERO   0.576128
+N4_NDVI_FULL_CONTROLS NDBI;NDWI;Albedo;NightLights            -0.010937             -0.001094      1.165103  9.925100e-01            -0.229450             0.227262 NEGATIVE     INCLUDES_ZERO   0.579794
+
+VEGETATION INDICATOR COMPARISON
+----------------------------------------------------------------------------------------------------------------------
+ indicator      variant  beta_c_per_1_0  response_c_per_0_10  clustered_se       p_value  ci95_lower_per_0_10  ci95_upper_per_0_10     sign       ci_position  within_r2
+green_mask    ALL_YEARS        1.971988             0.197199      0.210968  8.987076e-21             0.155850             0.238548 POSITIVE ENTIRELY_POSITIVE   0.584870
+green_mask EXCLUDE_2017        2.733063             0.273306      0.223806  2.690450e-34             0.229441             0.317172 POSITIVE ENTIRELY_POSITIVE   0.548104
+      NDVI    ALL_YEARS       -0.010937            -0.001094      1.165103  9.925100e-01            -0.229450             0.227262 NEGATIVE     INCLUDES_ZERO   0.579794
+      NDVI EXCLUDE_2017       -3.164108            -0.316411      1.251489  1.146246e-02            -0.561698            -0.071123 NEGATIVE ENTIRELY_NEGATIVE   0.538702
+       EVI    ALL_YEARS       14.085191             1.408519      0.524206 4.979671e-159             1.305777             1.511262 POSITIVE ENTIRELY_POSITIVE   0.611551
+       EVI EXCLUDE_2017       15.631615             1.563161      0.550197 1.482059e-177             1.455325             1.670998 POSITIVE ENTIRELY_POSITIVE   0.581433
+
+QA FLAGS
+----------------------------------------------------------------------------------------------------------------------
+                                                 qa_item                                result                                                                                                     interpretation
+Yearly green_mask-NDVI Pearson correlations all positive                                  True          Checks whether Otsu green percentage generally tracks continuous NDVI cross-sectionally within each year.
+      Minimum yearly green_mask-NDVI Pearson correlation                              0.845272                                  Low/negative values would indicate poor same-year alignment in at least one year.
+       Median yearly green_mask-NDVI Pearson correlation                              0.921049                                                                          Descriptive same-year alignment strength.
+          Green TWFE sign reverses after adding controls                                 False                      If True, positive V3 result may involve suppression/sign reversal induced by the control set.
+   Full-control green_mask and NDVI response signs agree                                 False       If False, Otsu-derived green percentage and continuous vegetation index tell different longitudinal stories.
+   green_mask, NDVI and EVI full-control signs all agree                                 False                                                          Cross-indicator consistency check only; not causal proof.
+                        Otsu threshold provenance status NOT_FOUND_IN_LOCAL_PROJECT_TEXT_FILES Aggregated CSV cannot establish fixed-vs-year-specific Otsu thresholds. Source code/log must be manually verified.
+
+INTERPRETATION RULE
+----------------------------------------------------------------------------------------------------------------------
+If green_mask and NDVI/EVI give conflicting longitudinal response signs, do not treat Otsu green percentage as a validated numeric cooling intervention variable without resolving the measurement definition.
+If all vegetation indicators show the same robust positive within-grid association, the dataset itself does not support a numeric vegetation-cooling response estimate under these observational specifications.
+If green-only and fully controlled green models reverse sign, interpret the positive V3 coefficient as control-sensitive/suppression-affected rather than as a simple physical green effect.
+No result is causal proof.
