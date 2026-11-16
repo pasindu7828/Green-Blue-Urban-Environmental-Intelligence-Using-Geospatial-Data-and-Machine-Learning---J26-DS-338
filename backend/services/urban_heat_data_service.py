@@ -1546,7 +1546,6 @@ def get_priority_geojson() -> dict[str, Any]:
 
         COOLING_PRIORITY_GEOJSON,
 
-    GN_DIVISIONS_GEOJSON,
 
         "Urban Heat cooling priority GeoJSON",
 
