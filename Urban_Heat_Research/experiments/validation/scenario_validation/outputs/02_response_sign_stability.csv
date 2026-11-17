@@ -1,0 +1,4 @@
+treatment,full_period_sign,exclude_2017_sign,sign_stable
+green_mask,POSITIVE,POSITIVE,True
+NDBI,POSITIVE,POSITIVE,True
+NDWI,NEGATIVE,NEGATIVE,True

@@ -1,0 +1,4 @@
+scenario_family,historically_expected_cooling_benefit_sign,scenario_mean_cooling_benefit_c,scenario_mean_sign,direction_agreement,status
+GREEN,NEGATIVE,-0.142552266741273,NEGATIVE,True,AGREE
+BUILT_NDBI,POSITIVE,0.5277870494553883,POSITIVE,True,AGREE
+BLUE_NDWI,POSITIVE,0.17959765315738122,POSITIVE,True,AGREE
