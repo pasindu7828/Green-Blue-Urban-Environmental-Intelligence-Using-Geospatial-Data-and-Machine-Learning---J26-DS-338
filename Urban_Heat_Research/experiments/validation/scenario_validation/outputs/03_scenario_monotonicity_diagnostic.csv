@@ -1,0 +1,4 @@
+scenario_family,monotonic_non_decreasing_cooling_pct,monotonic_cases,total_grid_year_cases,interpretation
+GREEN,25.360072926162257,2782,10970,Diagnostic only; monotonic cooling is not forced.
+BUILT_NDBI,97.6116681859617,10708,10970,Diagnostic only; nonlinear model responses are retained.
+BLUE_NDWI,93.83773928896991,10294,10970,Diagnostic only; nonlinear model responses are retained.
