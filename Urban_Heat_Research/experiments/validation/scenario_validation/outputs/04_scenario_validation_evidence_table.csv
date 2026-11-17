@@ -1,0 +1,16 @@
+evidence_group,metric,value,unit,interpretation
+Historical support,Green +5pp support,73.35973999593743,%,Share of historical positive green-change transitions at or above the scenario increment.
+Historical support,Green +10pp support,55.240706886045096,%,Share of historical positive green-change transitions at or above the scenario increment.
+Historical support,Green +20pp support,32.18565915092423,%,Share of historical positive green-change transitions at or above the scenario increment.
+Historical scenario level,NDBI LOW,0.0217842662558228,index change,Historical annual-change quantile-derived scenario magnitude.
+Historical scenario level,NDBI MODERATE,0.0396585639223915,index change,Historical annual-change quantile-derived scenario magnitude.
+Historical scenario level,NDBI HIGH,0.0657748188392312,index change,Historical annual-change quantile-derived scenario magnitude.
+Historical scenario level,NDWI LOW,0.0295215221428253,index change,Historical positive annual-change quantile-derived scenario magnitude.
+Historical scenario level,NDWI MODERATE,0.0666914129945183,index change,Historical positive annual-change quantile-derived scenario magnitude.
+Historical scenario level,NDWI HIGH,0.175487520005394,index change,Historical positive annual-change quantile-derived scenario magnitude.
+Historical-direction agreement,GREEN,-0.142552266741273,°C,Scenario mean sign = NEGATIVE; historical expected sign = NEGATIVE; status = AGREE.
+Historical-direction agreement,BUILT_NDBI,0.5277870494553883,°C,Scenario mean sign = POSITIVE; historical expected sign = POSITIVE; status = AGREE.
+Historical-direction agreement,BLUE_NDWI,0.1795976531573812,°C,Scenario mean sign = POSITIVE; historical expected sign = POSITIVE; status = AGREE.
+Monotonicity diagnostic,GREEN,25.360072926162257,%,Diagnostic only; monotonic cooling was not required or forced.
+Monotonicity diagnostic,BUILT_NDBI,97.6116681859617,%,Diagnostic only; monotonic cooling was not required or forced.
+Monotonicity diagnostic,BLUE_NDWI,93.83773928896991,%,Diagnostic only; monotonic cooling was not required or forced.
