@@ -1,0 +1,2 @@
+bootstrap_runs,grid_sample_size_per_run,random_seed,mean_spearman_weight_rank,median_spearman_weight_rank,minimum_spearman_weight_rank,mean_kendall_weight_rank,median_kendall_weight_rank,top_weight_criterion_retained_pct,mean_max_absolute_weight_change,p95_max_absolute_weight_change
+500,2194,42,1.0,1.0,1.0,0.9999999999999998,0.9999999999999999,100.0,0.004981387514102167,0.009226633712745423
