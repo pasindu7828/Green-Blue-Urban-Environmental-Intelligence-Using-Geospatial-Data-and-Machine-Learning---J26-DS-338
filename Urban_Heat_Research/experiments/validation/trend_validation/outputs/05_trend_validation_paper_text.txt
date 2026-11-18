@@ -1,0 +1,45 @@
+TREND AND TRAJECTORY VALIDATION
+
+The historical trend and trajectory analysis was evaluated using multiple complementary
+validation procedures. First, the grid-level Mann-Kendall statistics, Sen's slopes and
+Benjamini-Hochberg false-discovery-rate adjustments were independently recomputed for all
+2,194 grid cells. The independently derived raw and FDR-adjusted trend classifications
+matched the frozen production outputs in 100% of cases, confirming computational
+reproducibility.
+
+Leave-one-year-out sensitivity analysis showed that absolute historical Sen-slope rankings
+were generally stable, with a mean Spearman correlation of
+0.903 and mean slope-direction agreement of
+92.98%. Some sensitivity was observed when
+endpoint years were removed, indicating that trend estimates should be interpreted as
+multi-year historical summaries rather than invariant quantities.
+
+The relative heat-trajectory classification was also independently reproduced with 100%
+agreement. Across leave-one-year-out analyses, mean trajectory-class agreement was
+82.67%. Reasonable perturbations of the
+operational hot and relative-slope thresholds retained a mean of
+92.61% of classifications,
+indicating that the classification is not solely dependent on one exact threshold setting.
+
+A retrospective direction-persistence analysis found that historical relative Sen slopes
+were negatively associated with subsequent three-year relative heat changes
+(mean Spearman rho =
+-0.519), with only
+26.75% same-direction agreement.
+Therefore, historical trajectory direction is not interpreted as a forecast of future
+warming or cooling direction.
+
+However, retrospective relevance testing showed that trajectory classes remained useful
+for identifying subsequent heat burden. Using only information available before the
+evaluation year, grids classified on the hot side of the trajectory framework were on
+average 1.845 C hotter in the following
+observed year than cool-side grids. They were
+3.44 times more likely to fall within the
+top 25% of actual heat and
+5.63 times more likely to fall within the
+top 10%.
+
+Accordingly, the trajectory framework is interpreted as a reproducible and planning-relevant
+historical relative heat-behaviour classification. It is useful for distinguishing locations
+with persistent or emerging heat burden, but it is not treated as a standalone forecast of
+future temperature-change direction.
