@@ -1,115 +1,146 @@
-# Priority Validation
+# Cooling-Priority Validation
 
 ## Purpose
 
-This folder validates the robustness of the Urban Heat cooling-priority
-ranking. The priority stage is a CRITIC-TOPSIS decision-ranking system, so
-validation focuses on weight stability, rank stability and sensitivity rather
-than predictive accuracy.
+This validation evaluates the robustness and temporal relevance of the
+Urban Heat CRITIC-TOPSIS cooling-priority framework.
+
+The priority output is a multi-criteria decision-support ranking.
+
+It is **not** treated as:
+- predictive accuracy,
+- ground-truth priority,
+- or causal intervention truth.
 
 ## Baseline
 
-- Study area: Kaduwela, Sri Lanka
+- Study area: Kaduwela
 - Grid cells: 2,194
 - Criteria: 6
 - Weighting: CRITIC
 - Ranking: TOPSIS
 
-## Validation Stages
+## Validation 01 - CRITIC Weight Resampling
 
-### Step 1 - CRITIC Weight Resampling Stability
+500 bootstrap samples of the 2,194-grid decision matrix were used.
 
-The 2,194-grid decision matrix was bootstrap-resampled
-500 times.
-
-- Minimum weight-rank Spearman:
-  1.0000
-- Top-weight criterion retained:
-  100.0%
+Result:
+- Criterion rank ordering retained in 100% of runs.
+- Minimum Spearman weight-rank correlation = 1.0000.
+- Highest-weight criterion retained in 100% of runs.
 
 Interpretation:
-CRITIC weight ordering was highly stable under grid resampling.
+CRITIC weighting was highly stable to grid resampling.
 
-### Step 2 - TOPSIS Rank Stability Under Resampled CRITIC Weights
+## Validation 02 - TOPSIS Rank Stability
 
-TOPSIS was recomputed
-500 times.
+TOPSIS was rerun using the 500 bootstrap CRITIC weight sets.
 
-- Minimum Spearman:
-  0.9966
-- Median Spearman:
-  0.9999
-- Minimum Top-100 overlap:
-  94.0%
-- Median Top-100 overlap:
-  98.0%
+Result:
+- Minimum Spearman = 0.9966
+- Median Spearman = 0.9999
+- Minimum Top-100 overlap = 94.0%
 
 Interpretation:
-The priority ranking remained highly stable to sampling-driven CRITIC
-weight variation.
+The priority ranking was highly stable to sampling-driven weight variation.
 
-### Existing Step 33 - Weight Sensitivity
+## Existing Step 33 - Weight Sensitivity
 
-Existing production sensitivity analysis includes:
+The original priority pipeline also includes:
+- 24 controlled one-at-a-time weight perturbations,
+- 500 simultaneous random-weight stress tests,
+- equal-weight benchmark.
 
-- 24 controlled OAT scenarios
-- 500 simultaneous random-weight scenarios
-- equal-weight benchmark
+These tests provide additional evidence of rank robustness under reasonable
+weight uncertainty.
 
-Controlled OAT minimum Spearman:
-0.9769
+## Validation 03 - Criterion Removal
 
-Monte Carlo minimum Spearman:
-0.9427
+Each criterion was removed independently.
 
-Monte Carlo median Spearman:
-0.9940
+The strongest structural dependence occurred for:
 
-### Step 3 - Criterion Removal
-
-C6 Modeled Intervention Benefit was tested conservatively because scenario
-validation requires cautious interpretation.
-
-Removing C6:
-
-- Spearman:
-  0.9987
-- Top-100 overlap:
-  95.0%
-- Mean absolute rank shift:
-  24.92
-
-Recomputing CRITIC without C6:
-
-- Spearman:
-  0.9990
-- Top-100 overlap:
-  97.0%
-
-Therefore, the final priority ranking is not materially dependent on the
-scenario-derived intervention-benefit criterion.
-
-The strongest criterion-removal effect occurred for:
-
-- Criterion:
-  C5
-- Dimension:
-  Blue-space / Water Deficit
+- Criterion: C5
+- Dimension: Blue-space / Water Deficit
 - Spearman after removal:
   0.5449
 - Top-100 overlap:
   31.0%
 
-This is treated as criterion dependence / decision importance, not as model
-accuracy failure.
+This is reported as criterion influence rather than model failure.
 
-## Final Interpretation
+### C6 Intervention-Benefit Sensitivity
 
-The cooling-priority ranking is robust to resampling and reasonable weight
-uncertainty. It also remains highly stable when the scenario-derived
-intervention-benefit criterion is removed. However, removal of certain major
-decision dimensions can materially change the ranking, showing that these
-criteria genuinely contribute to the prioritization structure.
+Removing C6 entirely:
 
-The priority output should therefore be described as a robust decision-support
-ranking, not as ground-truth priority or predictive accuracy.
+- Spearman = 0.9987
+- Top-100 overlap = 95.0%
+
+Therefore, the final ranking is not materially dependent on the
+scenario-derived intervention-benefit criterion.
+
+## Validation 05 - Historical Retrospective Backtesting
+
+Two leakage-controlled historical backtests were conducted.
+
+### 2023 -> 2024
+
+The ranking was constructed using information available through 2023 only.
+
+- Priority vs actual 2024 heat Spearman:
+  0.4411
+- Top-10% priority vs actual hottest Top-10% overlap:
+  25.45%
+- Top-25% overlap:
+  48.09%
+- Highest-priority decile minus lowest-priority decile actual LST:
+  +3.32 C
+
+### 2024 -> 2025
+
+The ranking was constructed using information available through 2024 only.
+
+- Priority vs actual 2025 heat Spearman:
+  0.3732
+- Top-10% priority vs actual hottest Top-10% overlap:
+  20.91%
+- Top-25% overlap:
+  46.27%
+- Highest-priority decile minus lowest-priority decile actual LST:
+  +2.82 C
+
+### Combined Historical Evidence
+
+- Mean priority vs later observed heat Spearman:
+  0.4072
+- Mean Top-10% overlap:
+  23.18%
+- Mean Top-25% overlap:
+  47.18%
+- Mean high-priority vs low-priority LST separation:
+  +3.07 C
+
+Interpretation:
+Historical validation provides moderate positive temporal evidence.
+High-priority grids subsequently experienced substantially higher heat burden.
+
+The ranking should not be interpreted as a pure future-heat ranking because
+it combines six planning dimensions.
+
+## Final Conclusion
+
+The cooling-priority framework is:
+
+- highly stable under CRITIC resampling,
+- highly stable under TOPSIS weight variation,
+- robust to removal of the scenario-derived C6 criterion,
+- meaningfully dependent on important planning dimensions such as blue-space
+  deficit,
+- and moderately supported by leakage-controlled retrospective validation.
+
+Therefore, the final output is interpreted as a **robust decision-support
+priority ranking**, not ground-truth or causal priority.
+
+## Validation Status
+
+**COMPLETE AND FROZEN**
