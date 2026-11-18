@@ -1,0 +1,46 @@
+scenario_family,check,status,details
+GREEN,row_count,PASS,"actual=32,910; expected=32,910"
+GREEN,unique_grid_count,PASS,"actual=2,194; expected=2,194"
+GREEN,forecast_years,PASS,"actual=[2026, 2027, 2028, 2029, 2030]; expected=[2026, 2027, 2028, 2029, 2030]"
+GREEN,unique_grid_year_scenario_key,PASS,duplicate_rows=0
+GREEN,scenario_count_per_grid_year,PASS,expected_each=3; min=3; max=3
+GREEN,finite_numeric_outputs,PASS,"rows=32,910"
+GREEN,green_change_identity,PASS,max_error=1.665334536938e-16
+GREEN,intervention_bounds,PASS,scenario_green_min=0.050000; max=1.000000
+GREEN,cooling_benefit_identity,PASS,max_error_c=7.327471962526e-15
+GREEN,effect_direction_labels,PASS,Checked against scenario LST minus baseline LST.
+BUILT_NDBI,row_count,PASS,"actual=32,910; expected=32,910"
+BUILT_NDBI,unique_grid_count,PASS,"actual=2,194; expected=2,194"
+BUILT_NDBI,forecast_years,PASS,"actual=[2026, 2027, 2028, 2029, 2030]; expected=[2026, 2027, 2028, 2029, 2030]"
+BUILT_NDBI,unique_grid_year_scenario_key,PASS,duplicate_rows=0
+BUILT_NDBI,scenario_count_per_grid_year,PASS,expected_each=3; min=3; max=3
+BUILT_NDBI,finite_numeric_outputs,PASS,"rows=32,910"
+BUILT_NDBI,ndbi_reduction_identity,PASS,max_error=1.179611963664e-16
+BUILT_NDBI,intervention_bounds,PASS,actual_reduction_min=0.021784; max=0.065775
+BUILT_NDBI,modeled_lst_change_identity,PASS,max_error_c=1.065814103640e-14
+BUILT_NDBI,cooling_benefit_identity,PASS,max_error_c=7.549516567451e-15
+BUILT_NDBI,effect_direction_labels,PASS,Checked against modeled LST change.
+BLUE_NDWI,row_count,PASS,"actual=32,910; expected=32,910"
+BLUE_NDWI,unique_grid_count,PASS,"actual=2,194; expected=2,194"
+BLUE_NDWI,forecast_years,PASS,"actual=[2026, 2027, 2028, 2029, 2030]; expected=[2026, 2027, 2028, 2029, 2030]"
+BLUE_NDWI,unique_grid_year_scenario_key,PASS,duplicate_rows=0
+BLUE_NDWI,scenario_count_per_grid_year,PASS,expected_each=3; min=3; max=3
+BLUE_NDWI,finite_numeric_outputs,PASS,"rows=32,910"
+BLUE_NDWI,ndwi_increase_identity,PASS,max_error=1.942890293094e-16
+BLUE_NDWI,intervention_bounds,PASS,actual_increase_min=0.029522; max=0.175488
+BLUE_NDWI,modeled_lst_change_identity,PASS,max_error_c=1.075181610410e-14
+BLUE_NDWI,cooling_benefit_identity,PASS,max_error_c=7.549516567451e-15
+BLUE_NDWI,effect_direction_labels,PASS,Checked against modeled LST change.
+COMBINED,row_count,PASS,"actual=98,730; expected=98,730"
+COMBINED,unique_grid_count,PASS,"actual=2,194; expected=2,194"
+COMBINED,forecast_years,PASS,"actual=[2026, 2027, 2028, 2029, 2030]; expected=[2026, 2027, 2028, 2029, 2030]"
+COMBINED,unique_grid_year_scenario_key,PASS,duplicate_rows=0
+COMBINED,scenario_count_per_grid_year,PASS,expected_each=9; min=9; max=9
+COMBINED,finite_numeric_outputs,PASS,"rows=98,730"
+COMBINED,green_change_identity,PASS,max_error=5.551115123126e-17
+COMBINED,ndbi_change_identity,PASS,max_error=9.714451465470e-17
+COMBINED,combined_lst_change_identity,PASS,max_error_c=1.075181610410e-14
+COMBINED,combined_cooling_identity,PASS,max_error_c=1.075181610410e-14
+COMBINED,additive_reference_identity,PASS,max_error_c=8.881784197001e-16
+COMBINED,non_additivity_identity,PASS,max_error_c=7.494005416220e-16
+COMBINED,effect_direction_labels,PASS,Checked against combined modeled LST change.

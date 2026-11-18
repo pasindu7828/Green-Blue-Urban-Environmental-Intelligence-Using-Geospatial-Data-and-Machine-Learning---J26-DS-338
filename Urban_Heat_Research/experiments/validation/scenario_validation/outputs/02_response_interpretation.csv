@@ -1,0 +1,4 @@
+treatment,sign_stable,interpretation
+green_mask,True,Positive historical green-cover association indicates that increased green cover was not associated with cooling in this observational panel after controls. The result must be reported without forcing a cooling direction.
+NDBI,True,Positive historical association means higher NDBI is associated with higher LST; therefore an NDBI reduction is cooling-compatible.
+NDWI,True,Negative historical association means higher NDWI is associated with lower LST; therefore an NDWI increase is cooling-compatible.

@@ -1,0 +1,24 @@
+{
+  "validation_component": "Urban Heat Trend and Trajectory Validation",
+  "status": "COMPLETE_AND_FROZEN",
+  "production_logic_changed": false,
+  "thresholds_retuned_using_validation": false,
+  "validated_claims": [
+    "Mann-Kendall and Sen slope computation is reproducible.",
+    "Absolute historical trend estimates are generally stable under leave-one-year-out analysis.",
+    "Relative trajectory classification is independently reproducible.",
+    "Trajectory classes are reasonably robust to threshold perturbation.",
+    "Trajectory classes identify subsequent relative heat burden."
+  ],
+  "unsupported_claims": [
+    "Historical Sen slope direction reliably predicts future warming direction.",
+    "Trajectory class is a future temperature forecast.",
+    "Trajectory class is equivalent to statistically significant absolute warming."
+  ],
+  "final_outputs": [
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\validation\\trend_validation\\outputs\\05_trend_validation_final_summary.csv",
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\validation\\trend_validation\\outputs\\05_trend_validation_evidence_table.csv",
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\validation\\trend_validation\\outputs\\05_trend_validation_paper_text.txt",
+    "E:\\Git Research\\J26-DS-338\\Urban_Heat_Research\\experiments\\validation\\trend_validation\\README.md"
+  ]
+}

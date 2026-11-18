@@ -1,0 +1,4 @@
+scenario_family,scenario_level,requested_magnitude,historical_positive_change_count,historical_transitions_at_or_above_level,historical_support_pct,historical_percentile_position,within_observed_global_max
+GREEN,+5pp,5,9846,7223,73.35973999593743,26.640260004062565,True
+GREEN,+10pp,10,9846,5439,55.240706886045096,44.759293113954904,True
+GREEN,+20pp,20,9846,3169,32.18565915092423,67.81434084907578,True

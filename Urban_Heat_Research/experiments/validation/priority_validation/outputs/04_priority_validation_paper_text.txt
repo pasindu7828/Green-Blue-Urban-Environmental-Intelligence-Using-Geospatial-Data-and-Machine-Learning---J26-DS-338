@@ -1,0 +1,53 @@
+PRIORITY VALIDATION - PAPER-READY INTERPRETATION
+
+The cooling-priority ranking was evaluated using multiple complementary
+robustness and sensitivity analyses rather than predictive accuracy, because
+the CRITIC-TOPSIS stage produces a decision ranking and no external
+ground-truth priority labels are available.
+
+First, CRITIC weight stability was assessed using
+500 bootstrap resamples of the 2,194-grid decision
+matrix. The criterion ordering remained stable, with a minimum Spearman
+weight-rank correlation of
+1.0000 and the highest-weight criterion
+retained in 100.0% of runs.
+
+Second, TOPSIS was recomputed using all
+500 resampled CRITIC weight sets. Rank
+agreement with the baseline was very high
+(median Spearman rho = 0.9999;
+minimum rho = 0.9966), while the minimum Top-100 overlap
+was 94.0%.
+
+The original Step-33 sensitivity analysis provided additional controlled and
+simultaneous weight-stress tests. Across
+24 controlled one-at-a-time weight
+perturbations and 500 simultaneous random
+weight scenarios, ranking stability was quantified using Spearman and Kendall
+correlations, top-k overlap, and absolute rank shifts.
+
+Because the modeled intervention-benefit criterion was derived from what-if
+scenario outputs, an additional conservative test removed this criterion
+entirely. The resulting ranking remained highly similar to the baseline
+(Spearman rho = 0.9987; Top-100 overlap =
+95.0%). Recomputing CRITIC after removing the
+criterion produced similarly high agreement
+(rho = 0.9990; Top-100 overlap =
+97.0%).
+
+Leave-one-criterion-out analysis also showed that
+C5
+(Blue-space / Water Deficit) had the greatest structural
+influence on the ranking. Removing it reduced Spearman agreement to
+0.5449 and Top-100 overlap to
+31.0%. This is reported
+as criterion dependence rather than an accuracy failure, because MCDA rankings
+are expected to respond when an influential decision dimension is completely
+removed.
+
+Overall, the evidence indicates that the CRITIC-TOPSIS cooling-priority
+ranking is highly robust to sampling variation and reasonable weight
+uncertainty, while remaining meaningfully responsive to the decision
+dimensions that define the prioritization problem. Priority outputs are
+therefore interpreted as robust decision-support rankings rather than
+ground-truth or causal labels.
