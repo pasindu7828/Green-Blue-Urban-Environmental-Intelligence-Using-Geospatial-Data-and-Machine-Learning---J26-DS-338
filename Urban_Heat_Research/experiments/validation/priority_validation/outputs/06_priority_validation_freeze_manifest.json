@@ -1,0 +1,46 @@
+{
+  "validation_component": "Cooling Priority",
+  "validation_method": "CRITIC-TOPSIS robustness, sensitivity and retrospective temporal validation",
+  "status": "COMPLETE_AND_FROZEN",
+  "grid_count": 2194,
+  "criteria_count": 6,
+  "historical_backtests": [
+    {
+      "training_information_through": 2023,
+      "evaluation_year": 2024
+    },
+    {
+      "training_information_through": 2024,
+      "evaluation_year": 2025
+    }
+  ],
+  "interpretation": "Priority validation supports robustness and moderate retrospective temporal relevance. Priority scores are decision-support rankings, not ground-truth or causal labels.",
+  "frozen_evidence_files": {
+    "04_priority_validation_final_summary": {
+      "relative_path": "experiments\\validation\\priority_validation\\outputs\\04_priority_validation_final_summary.csv",
+      "sha256": "092978132516b510fe4a3e30154937428f7cb30f2d9b66d53ec74173c114607b"
+    },
+    "04_priority_validation_evidence_table": {
+      "relative_path": "experiments\\validation\\priority_validation\\outputs\\04_priority_validation_evidence_table.csv",
+      "sha256": "b6136b9d45fdb7eab9f65b14d77cca48d0ef05ae1431d70d3f9c63c1fcd3922f"
+    },
+    "05_historical_priority_backtest_metrics": {
+      "relative_path": "experiments\\validation\\priority_validation\\outputs\\05_historical_priority_backtest_metrics.csv",
+      "sha256": "160b1d41205fadda0a1a5dd4ae2d1819b744cc25ec960910948cfbb874f7b355"
+    },
+    "05_historical_priority_backtest_summary": {
+      "relative_path": "experiments\\validation\\priority_validation\\outputs\\05_historical_priority_backtest_summary.csv",
+      "sha256": "06c7650c694510a1803c6f20772873f0214e3cf4fefef4945e056d03b6e76b7d"
+    },
+    "05_historical_priority_critic_weights": {
+      "relative_path": "experiments\\validation\\priority_validation\\outputs\\05_historical_priority_critic_weights.csv",
+      "sha256": "a24dc2323a9104ac2a6420cad3d655c979ab9f7ff93e25e0b46b54dce4eea873"
+    }
+  },
+  "final_outputs": [
+    "experiments\\validation\\priority_validation\\outputs\\06_priority_validation_final_summary.csv",
+    "experiments\\validation\\priority_validation\\outputs\\06_priority_validation_evidence_table.csv",
+    "experiments\\validation\\priority_validation\\outputs\\06_priority_validation_paper_text.txt",
+    "experiments\\validation\\priority_validation\\README.md"
+  ]
+}

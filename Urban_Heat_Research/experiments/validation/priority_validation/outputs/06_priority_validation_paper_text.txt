@@ -1,0 +1,68 @@
+Cooling-Priority Validation
+
+The cooling-priority framework was validated using complementary robustness,
+sensitivity and retrospective temporal analyses rather than conventional
+predictive accuracy, because the CRITIC-TOPSIS stage produces a multi-criteria
+decision ranking and no external ground-truth priority labels are available.
+
+CRITIC weight stability was first evaluated using
+500 bootstrap resamples of the 2,194-grid
+decision matrix. Criterion ordering was fully retained. TOPSIS was then
+recomputed using the bootstrap-derived weight sets. Rank agreement remained
+very high, with a minimum Spearman correlation of
+0.9966, a median correlation of
+0.9999, and a minimum Top-100 overlap
+of 94.0%.
+
+The existing sensitivity analysis further tested 24 controlled one-at-a-time
+weight perturbations, 500 simultaneous random-weight scenarios and an
+equal-weight benchmark. These analyses showed that the ranking remained
+generally stable under reasonable weight uncertainty.
+
+Because the modeled intervention-benefit criterion was derived from
+model-based what-if scenarios, its influence was additionally tested by
+removing it entirely. The resulting ranking remained highly similar to the
+baseline, with a Spearman correlation of
+0.9987 and a Top-100 overlap of
+95.0%. This indicates that the final
+priority ranking is not materially dependent on the scenario-derived
+intervention-benefit criterion.
+
+Leave-one-criterion-out analysis identified
+C5
+(Blue-space / Water Deficit) as the most structurally
+influential criterion. Removing this decision dimension reduced Spearman
+agreement to 0.5449 and Top-100
+overlap to 31.0%.
+This is interpreted as criterion dependence rather than predictive failure,
+because multi-criteria rankings are expected to change when an influential
+decision dimension is completely removed.
+
+Finally, retrospective temporal validation reconstructed the priority
+framework using only information available before each evaluation year.
+Using data through 2023 to construct a 2024 priority ranking produced a
+Spearman correlation of
+0.4411 with subsequently
+observed 2024 heat, while the equivalent 2025 backtest produced a correlation
+of 0.3732. The highest-priority
+decile was 3.32 C hotter than the
+lowest-priority decile in 2024 and
+2.82 C hotter in 2025. Across the
+two backtests, the mean priority-to-observed-heat Spearman correlation was
+0.4072, and the average
+temperature separation between the highest- and lowest-priority deciles was
+3.07 C.
+
+The historical backtests therefore provide moderate temporal support for the
+decision framework. Exact hottest-grid overlap was not expected to be
+perfect because the priority score represents a broader planning construct
+combining future heat severity, trend urgency, vegetation deficit, built-up
+pressure, blue-space deficit and modeled intervention benefit rather than a
+pure future-LST ranking.
+
+Overall, the combined validation evidence indicates that the CRITIC-TOPSIS
+cooling-priority framework is highly robust to sampling and weight uncertainty
+and shows meaningful retrospective association with subsequently observed
+heat burden. The resulting priority scores are interpreted as robust
+decision-support rankings rather than ground-truth, causal, or predictive
+priority labels.

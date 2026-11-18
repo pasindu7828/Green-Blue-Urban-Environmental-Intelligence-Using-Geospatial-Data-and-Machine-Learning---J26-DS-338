@@ -1,0 +1,2 @@
+backtest_count,mean_priority_vs_actual_heat_spearman,minimum_priority_vs_actual_heat_spearman,mean_top100_hot_overlap_pct,mean_top10pct_hot_overlap_pct,mean_top25pct_hot_overlap_pct,mean_top10_minus_bottom10_actual_lst_c,interpretation
+2,0.40715896784002403,0.37322842437437703,9.0,23.18181818181818,47.17668488160291,3.0738069222882807,Retrospective one-year hindcast validation of the final priority framework. Rankings were constructed without target-year observed LST or target-year observed environmental predictors.
