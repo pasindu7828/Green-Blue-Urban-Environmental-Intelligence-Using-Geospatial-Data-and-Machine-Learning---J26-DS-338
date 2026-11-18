@@ -1,0 +1,6 @@
+validation_stage,main_evidence,result,interpretation
+Step 1 - Formula reproducibility,"Independent Mann-Kendall, Sen slope and BH-FDR recomputation",100% raw and FDR class reproduction,Production trend calculations are reproducible.
+Step 2 - Absolute trend leave-one-year-out stability,Remove each year from 2015-2025 and recompute trends,Mean Sen-slope Spearman=0.903; mean direction agreement=92.98%,"Absolute historical trend ordering is generally stable, with sensitivity to endpoint years."
+Step 3 - Relative trajectory stability,"Independent reproduction, leave-one-year-out and threshold sensitivity",Independent reproduction=100%; mean LOO class agreement=82.67%; mean threshold agreement=92.61%,"Trajectory classification is reproducible and reasonably robust, but temporally sensitive when endpoint years are removed."
+Step 4 - Future-direction persistence,History-only Sen slope compared with subsequent 3-year change,Mean relative Spearman=-0.519; direction agreement=26.75%,Historical slope direction should NOT be used as a forecast of subsequent warming or cooling direction.
+Step 4B - Subsequent heat-burden relevance,History-only trajectory classes evaluated against next-year actual heat,Hot-side grids were on average 1.845 C hotter; Top-25% heat risk ratio=3.44x,Trajectory classes provide meaningful evidence of subsequent relative heat burden.
